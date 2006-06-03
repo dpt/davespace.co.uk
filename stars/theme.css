@@ -1,0 +1,123 @@
+/* theme */
+
+/* color,
+ * background,
+ * border,
+ * list */
+
+body#www-davespace-co-uk {
+ color:black;
+ background-color:#ffc;
+ background-image:url(opummu.png);
+}
+
+#page {
+}
+
+#left {
+}
+
+#middle {
+ border-left:1px dotted #630;
+}
+
+#right {
+ border-left:1px dotted #630;
+ background:#ffc url(paperedge.png) repeat-y right top;
+}
+
+#left .container {
+}
+
+#middle .container {
+}
+
+#right .container {
+}
+
+#left .content {
+}
+
+#middle .content {
+}
+
+#right .content {
+}
+
+#logo h1#heading {
+ background:url(logo.gif) no-repeat top left;
+}
+
+#marble {
+}
+
+#news h2.heading {
+ background:url(news.gif) no-repeat top left;
+}
+
+#news .item {
+ border-left:1px dotted #ffc080;
+}
+
+#stylesheets h2.heading {
+ background:url(stylesheets.png) no-repeat top left;
+}
+
+#links h2.heading {
+ background:url(links.gif) no-repeat top left;
+}
+
+#contact h2.heading {
+ background:url(contact.gif) no-repeat top left;
+}
+
+#apps h2.heading {
+ background:url(apps.gif) no-repeat top left;
+}
+
+#apps h3#riscos {
+ background:url(riscos.gif) no-repeat top left;
+}
+
+#scripts h2.heading {
+ background:url(scripts.gif) no-repeat top left;
+}
+
+#scripts h3#python {
+ background:url(python.gif) no-repeat top left;
+}
+
+ul.links {
+ list-style-type:disc outside;
+ list-style-image:url(bullet.gif);
+}
+
+ul.links li {
+}
+
+dt {
+}
+
+dd {
+}
+
+.icon {
+ border:1px solid black;
+ background:url(t1.png) no-repeat center;
+}
+
+a:link {
+ color:#f40;
+}
+
+a:visited {
+ color:#630;
+}
+
+a:active {
+ color:#f40;
+}
+
+a:hover {
+}
+

@@ -1,0 +1,145 @@
+/* structure */
+
+/* position,
+ * height,
+ * width,
+ * margin,
+ * padding */
+
+body#www-davespace-co-uk {
+ margin:0;
+ padding:0;
+}
+
+#page {
+}
+
+#left {
+ position:absolute;
+ left:0;
+ top:0;
+ width:17em;
+ min-height:1024px;
+ padding:1em;
+}
+
+#middle {
+ margin-left:19em;
+ margin-right:19em;
+ min-height:1024px;
+ padding:1em;
+}
+
+#right {
+ position:absolute;
+ right:0;
+ top:0;
+ width:17em;
+ min-height:1024px;
+ padding:1em;
+}
+
+#left .container {
+}
+
+#middle .container {
+}
+
+#right .container {
+}
+
+#left .content {
+}
+
+#middle .content {
+}
+
+#right .content {
+}
+
+#logo h1#heading {
+ width:228px;
+ height:261px;
+}
+
+#marble {
+}
+
+#news h2.heading {
+ height:2.5em;
+}
+
+#news .item {
+ margin-left:0;
+ padding-left:1em;
+}
+
+#stylesheets h2.heading {
+ height:2.5em;
+}
+
+#stylesheets .item {
+ margin-left:0;
+ padding-left:1em;
+}
+
+#links h2.heading {
+ height:2.5em;
+}
+
+#contact h2.heading {
+ height:2.5em;
+}
+
+#apps h2.heading {
+ height:2.5em;
+}
+
+#apps h3#riscos {
+ height:1em;
+}
+
+#scripts h2.heading {
+ height:2.5em;
+}
+
+#scripts h3#python {
+ height:1em;
+}
+
+ul.links {
+ margin:0.25em 0 0;
+ padding:0.25em 0 0;
+}
+
+ul.links li {
+ margin:0.25em;
+ padding:0;
+}
+
+dt {
+}
+
+dd {
+ margin:0 0.5em;
+ padding:0 0.5em 0.5em;
+}
+
+.icon {
+ float:right;
+ margin:0.5em;
+ padding:0.5em;
+}
+
+a:link {
+}
+
+a:visited {
+}
+
+a:active {
+}
+
+a:hover {
+}
+
