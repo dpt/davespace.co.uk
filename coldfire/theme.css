@@ -1,134 +1,22 @@
-/* theme */
-
-/* color,
- * background,
- * border,
- * list */
-
-body#www-davespace-co-uk {
- color:black;
- background:#c7d9c3;
-}
-
-#page {
-}
-
-#left {
-}
-
-#middle {
- background:#c7d9c3 url(leftbg.png) repeat-y left;
-}
-
-#right {
- background:#c7d9c3 url(rightbg.png) repeat-y right;
-}
-
-#left .container {
-}
-
-#middle .container {
- border:1px solid white;
- border-width: 0 1px;
- margin:0px 8px;
-}
-
-#right .container {
- border:1px solid white;
- border-width: 0 1px;
- margin:0px 8px;
-}
-
-#left .content {
-}
-
-#middle .content {
- border:1px solid white;
- background:url(middleforebg.png) repeat-y center;
-}
-
-#right .content {
- border:1px solid white;
- background:url(rightforebg.png) repeat-y center;
-}
-
-#logo h1#heading {
- background:url(logo.png) no-repeat center center;
-}
-
-/* Internet Explorer PNG transparency workaround */
-#marble {
- filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='coldfire/marble.png',sizing='scale');
-}
-#marble[id] {
- background:url(marble.png) no-repeat center;
-}
-
-#news h2.heading {
- background:url(news.png) no-repeat top left;
-}
-
-#news .item {
-}
-
-#stylesheets h2.heading {
- background:url(stylesheets.png) no-repeat top left;
-}
-
-#links h2.heading {
- background:url(links.png) no-repeat top left;
-}
-
-#contact h2.heading {
- background:url(contact.png) no-repeat top left;
-}
-
-#apps h2.heading {
- background:url(apps.png) no-repeat top left;
-}
-
-#apps h3#riscos {
- background:url(riscos.png) no-repeat top left;
-}
-
-#scripts h2.heading {
- background:url(scripts.png) no-repeat top left;
-}
-
-#scripts h3#python {
- background:url(python.png) no-repeat top left;
-}
-
-ul.links {
- list-style:disc outside;
-}
-
-ul.links li {
-}
-
-dt {
-}
-
-dd {
-}
-
-.icon {
- border:1px solid white;
- background:url(t1.png) no-repeat center;
-}
-
-a:link {
- color:blue;
-}
-
-a:visited {
- color:#88f;
-}
-
-a:active {
- color:black;
-}
-
-a:hover {
-}
-
+body#www-davespace-co-uk{color:#000;background:#c7d9c3;}
+#middle{background:#c7d9c3 url(leftbg.png) repeat-y left;}
+#right{background:#c7d9c3 url(rightbg.png) repeat-y right;}
+#middle .content{border:1px solid #FFF;background:url(middleforebg.png) repeat-y center;}
+#right .content{border:1px solid #FFF;background:url(rightforebg.png) repeat-y center;}
+#logo h1#heading{background:url(logo.png) no-repeat center center;}
+#marble{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='coldfire/marble.png',sizing='scale');}
+#marble[id]{background:url(marble.png) no-repeat center;}
+#news h2.heading{background:url(news.png) no-repeat top left;}
+#stylesheets h2.heading{background:url(stylesheets.png) no-repeat top left;}
+#links h2.heading{background:url(links.png) no-repeat top left;}
+#contact h2.heading{background:url(contact.png) no-repeat top left;}
+#apps h2.heading{background:url(apps.png) no-repeat top left;}
+#apps h3#riscos{background:url(riscos.png) no-repeat top left;}
+#scripts h2.heading{background:url(scripts.png) no-repeat top left;}
+#scripts h3#python{background:url(python.png) no-repeat top left;}
+ul.links{list-style:disc outside;}
+.icon{border:1px solid #FFF;background:url(t1.png) no-repeat center;}
+a:link{color:blue;}
+a:visited{color:#88f;}
+a:active{color:#000;}
+#middle .container,#right .container{border:1px solid #FFF;border-width:0 1px;margin:0 8px;}
