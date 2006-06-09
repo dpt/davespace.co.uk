@@ -34,10 +34,3 @@ do
 done
 
 exit 0
-
-#
-# rsync -r --delete . pike.pepperfish.net:websites/davespace.co.uk/www/html
-#
-# the --delete is only required when deleting anything which doesn't exist on
-# the server
-
