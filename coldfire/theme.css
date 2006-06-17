@@ -1,22 +1,23 @@
 body#www-davespace-co-uk{color:#000;background:#c7d9c3;}
-#middle{background:#c7d9c3 url(leftbg.png) repeat-y left;}
-#right{background:#c7d9c3 url(rightbg.png) repeat-y right;}
-#middle .content{border:1px solid #FFF;background:url(middleforebg.png) repeat-y center;}
-#right .content{border:1px solid #FFF;background:url(rightforebg.png) repeat-y center;}
-#logo h1#heading{background:url(logo.png) no-repeat center center;}
+#utterances{background:#c7d9c3 url(leftbg.png) repeat-y left;}
+#software{background:#c7d9c3 url(rightbg.png) repeat-y right;}
+#utterances .container,#software .container{margin:0 8px;}
+#utterances .content,#software .content{border:1px solid #FFF;border-width:0 1px;}
+#utterances .content{background:url(middleforebg.png) repeat-y center;}
+#software .content{background:url(rightforebg.png) repeat-y center;}
+#logo h1{background:url(logo.png) no-repeat center;}
 #marble{filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='coldfire/marble.png',sizing='scale');}
 #marble[id]{background:url(marble.png) no-repeat center;}
-#news h2.heading{background:url(news.png) no-repeat top left;}
-#stylesheets h2.heading{background:url(stylesheets.png) no-repeat top left;}
-#links h2.heading{background:url(links.png) no-repeat top left;}
-#contact h2.heading{background:url(contact.png) no-repeat top left;}
-#apps h2.heading{background:url(apps.png) no-repeat top left;}
-#apps h3#riscos{background:url(riscos.png) no-repeat top left;}
-#scripts h2.heading{background:url(scripts.png) no-repeat top left;}
-#scripts h3#python{background:url(python.png) no-repeat top left;}
+#news h2{background:url(news.png) no-repeat center;}
+#stylesheets h2{background:url(stylesheets.png) no-repeat center;}
+#links h2{background:url(links.png) no-repeat center;}
+#contact h2{background:url(contact.png) no-repeat center;}
+#apps h2{background:url(apps.png) no-repeat center;}
+#apps h3#riscos{background:url(riscos.png) no-repeat center;}
+#scripts h2{background:url(scripts.png) no-repeat center;}
+#scripts h3#python{background:url(python.png) no-repeat center;}
 ul.links{list-style:disc outside;}
 .icon{border:1px solid #FFF;background:url(t1.png) no-repeat center;}
 a:link{color:blue;}
 a:visited{color:#88f;}
 a:active{color:#000;}
-#middle .container,#right .container{border:1px solid #FFF;border-width:0 1px;margin:0 8px;}

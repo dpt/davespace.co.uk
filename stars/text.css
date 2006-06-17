@@ -4,6 +4,6 @@ ul.links{text-align:left;}
 ul.links li{text-align:left;text-transform:lowercase;}
 dt{font-weight:bolder;}
 dd{font-size:smaller;}
-a:hover{text-decoration:underline;}
-#logo h1#heading,#news h2.heading,#stylesheets h2.heading,#links h2.heading,#contact h2.heading,#apps h2.heading,#apps h3#riscos,#scripts h2.heading,#scripts h3#python{text-indent:-1000em;}
+h1,h2,h3{text-indent:-1000em;}
 a:link,a:visited,a:active{text-decoration:none;}
+a:hover{text-decoration:underline;}

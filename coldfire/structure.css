@@ -1,16 +1,16 @@
 body#www-davespace-co-uk{margin:0;padding:0;}
 #page{position:relative;width:800px;margin:0 auto;}
-#left{position:absolute;left:45%;top:0;width:60px;padding:10px;}
-#middle{position:absolute;left:0;top:0;width:364px;}
-#right{position:absolute;right:0;top:0;width:364px;}
-#logo h1#heading{width:61px;height:566px;}
+#heading{position:absolute;left:45%;top:0;width:60px;padding:10px;}
+#utterances{position:absolute;left:0;top:0;width:364px;}
+#software{position:absolute;right:0;top:0;width:364px;}
+#logo h1{width:61px;height:566px;}
 #marble{width:166px;height:169px;margin:0 0 0 auto;}
 #news .item{margin-left:0;padding-left:1em;}
 ul.links{margin:0.25em 0 0;padding:0.25em 0 0;}
 ul.links li{margin:0.25em;padding:0;}
 dd{margin:0 0.5em;padding:0 0.5em 0.5em;}
 .icon{float:right;margin:0.5em;padding:0.5em;}
-#middle .content,#right .content{margin:20px;padding:10px;}
-#news h2.heading,#stylesheets h2.heading,#links h2.heading,#contact h2.heading{height:64px;}
-#apps h2.heading,#scripts h2.heading{height:48px;}
-#apps h3#riscos,#scripts h3#python{height:32px;}
+#utterances .content,#software .content{margin:20px;padding:10px;}
+#utterances h2{height:64px;}
+#software h2{height:48px;}
+#software h3{height:32px;}
