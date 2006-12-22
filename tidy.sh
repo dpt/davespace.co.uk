@@ -6,8 +6,8 @@ then
     exit 65
 fi
 
-HTML=`find . -name *.html`
-CSS=`find . -name *.css`
+HTML=`find . -name "*.html"`
+CSS=`find . -name "*.css"`
 
 if [ $1 == "-edit" ]
 then
