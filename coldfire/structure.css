@@ -10,6 +10,7 @@ ul.links{margin:0.25em 0 0;padding:0.25em 0 0;}
 ul.links li{margin:0.25em;padding:0;}
 dd{margin:0 0.5em;padding:0 0.5em 0.5em;}
 .icon{float:right;margin:0.5em;padding:0.5em;}
+.figure{display:block;border-style:none;margin:0 auto;}
 #utterances .content,#software .content{margin:20px;padding:10px;}
 #utterances h2{height:64px;}
 #software h2{height:48px;}
