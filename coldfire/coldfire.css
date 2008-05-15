@@ -10,7 +10,7 @@ p{margin:0 0 0.5em;}
 ul{list-style:disc outside;margin:0;padding:0;}
 ul li{margin:0 0 0.5em 1em;padding:0;}
 ul.links li{text-transform:lowercase;margin-bottom:0;}
-.icon{width:68px;height:37px;float:right;border:1px solid #999;background:#ddd;margin:0;padding:0.25em;}
+.icon{width:68px;height:37px;float:right;border:1px solid #999;background:#ddd;text-align:center;margin:0;padding:0.25em;}
 .figure{display:block;border-style:none;margin:0 auto;}
 #utterances .content,#software .content{border:1px solid #FFF;border-width:0 1px;margin:20px;padding:10px;}
 dl{margin:0 0 1em;padding:0;}
@@ -38,3 +38,4 @@ a:active{color:#000;}
 #news h5{text-align:left;}
 #software h3{height:36px;}
 #utterances h2,#software h2{height:48px;}
+hr{border:0;width:47px;height:19px;background:url(hr.png) no-repeat center;}
