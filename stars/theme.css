@@ -12,6 +12,6 @@ body#www-davespace-co-uk{color:#000;background-color:#ffc;background-image:url(o
 #scripts h2{background:url(scripts.gif) no-repeat top left;}
 #scripts h3#python{background:url(python.gif) no-repeat top left;}
 ul.links{list-style:disc outside;list-style-image:url(bullet.gif);}
-.icon{width:68px;height:37px;border:1px solid #999;background:#ddd;margin:0;padding:0.333em;}
+.icon{width:68px;height:37px;border:1px solid #999;background:#ddd;margin:0;padding:.333em;}
 a:link,a:active,a:hover{color:#f40;}
 a:visited{color:#630;}

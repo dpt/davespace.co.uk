@@ -3,10 +3,10 @@ body#www-davespace-co-uk{margin:0;padding:0;}
 #utterances{margin-left:19em;margin-right:19em;min-height:1024px;padding:1em;}
 #software{position:absolute;right:0;top:0;width:17em;min-height:1024px;padding:1em;}
 #logo h1{width:228px;height:261px;}
-ul.links{margin:0.25em 0 0;padding:0.25em 0 0;}
-ul.links li{margin:0.25em;padding:0;}
-dd{margin:0 0.5em;padding:0 0.5em 0.5em;}
-.icon{float:right;margin:0.5em;padding:0.5em;}
+ul.links{margin:.25em 0 0;padding:.25em 0 0;}
+ul.links li{margin:.25em;padding:0;}
+dd{margin:0 .5em;padding:0 .5em .5em;}
+.icon{float:right;margin:.5em;padding:.5em;}
 .figure{display:block;border-style:none;margin:0 auto;}
 h2{height:2.5em;}
 #news .item,#stylesheets .item{margin-left:0;padding-left:1em;}
