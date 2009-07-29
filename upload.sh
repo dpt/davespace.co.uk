@@ -9,7 +9,7 @@
 # --delete  is only required when deleting anything which doesn't exist on
 #           the server
 
-rsync -Crtvz --exclude="Thumbs.db" . pike.pepperfish.net:websites/davespace.co.uk/www/html
+rsync -Crtvz --exclude="Thumbs.db" . octopus.pepperfish.net:websites/davespace.co.uk/www/html
 
 exit 0
 
