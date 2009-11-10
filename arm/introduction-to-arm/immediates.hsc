@@ -33,16 +33,17 @@
   r0,#0xFFFFFFFF</code> could be assembled as <code>MVN r0,#0</code>.</p>
 </slide>
 <commentary>
-  <p>The impact of this is that some constants are &ldquo;ARM
-  friendly&rdquo;. Some are not. Study of the numbers you&rsquo;re using can
-  sometimes reveal scope for optimisation.</p>
+  <p>The impact of this is that some constants are &ldquo;ARM friendly&rdquo;.
+  Some are not. Study of the numbers you&rsquo;re using can sometimes reveal
+  scope for <a href="../efficient-c-for-arm/biasing.html">optimisation</a>.</p>
 </commentary>
 <slide title="Loading Wide Values">
-  <p>You can form constants wider than those available in single instructions
-  by using a sequence of instructions to build up the constant. For example:</p>
-  <armsyntax>MOV r2, #0x55           ; 0x00000055
-ORR r2, r2, r2, LSL #8  ; 0x00005555
-ORR r2, r2, r2, LSL #16 ; 0x55555555</armsyntax>
+  <p>You can form constants wider than those available in a single instruction
+  by using a sequence of instructions to build up the constant. For
+  example:</p>
+  <armsyntax>MOV r2, #0x55           ; R2 = 0x00000055
+ORR r2, r2, r2, LSL #8  ; R2 = 0x00005555
+ORR r2, r2, r2, LSL #16 ; R2 = 0x55555555</armsyntax>
     <p>...or load the value from memory:</p>
     <armsyntax>LDR r2, =0x55555555</armsyntax>
     <p>The pseudo-instruction <code>LDR Rx,=const</code> tries to form the

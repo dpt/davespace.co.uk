@@ -22,8 +22,6 @@
     can dispense with the stacking overhead. Because of this it is known as a
     <dfn>leaf</dfn> function.</p>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

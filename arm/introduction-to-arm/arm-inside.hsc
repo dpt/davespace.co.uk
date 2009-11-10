@@ -77,8 +77,6 @@
       </tbody>
     </table>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

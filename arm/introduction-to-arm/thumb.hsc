@@ -29,10 +29,10 @@
     pinch of salt.</p>
   </commentary>
   <slide title="Limitations">
-  <p>Thumb is <strong>not</strong> a complete architecture: you can&rsquo;t
-  have a Thumb-only CPU.</p>
+  <p>Thumb is not a complete architecture: you can&rsquo;t have a Thumb-only
+  CPU.</p>
 
-    <p>Limitations of Thumb mode include:</p>
+    <p>Some of the limitations of Thumb mode include:</p>
     <ul>
       <li>Conditional execution only exists for branch instructions.</li>
       <li>Data processing ops use a two-address format, as opposed to

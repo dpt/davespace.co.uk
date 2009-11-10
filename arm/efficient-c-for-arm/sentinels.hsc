@@ -9,7 +9,8 @@
       <li>Compare loop index against maximum.</li>
       <li>Compare current key against desired key.</li>
     </ul>
-    <p>That&rsquo;s two flow conditions inside a tight loop.</p>
+    <p>That&rsquo;s two flow conditions inside a tight loop, which is bad on
+    modern pipelined CPUs.</p>
     <p>Solution:</p>
     <ul>
       <li>Augment the array with the desired value at the end.</li>
@@ -17,12 +18,8 @@
       <li>But needs one extra element.</li>
     </ul>
   </slide>
-  <commentary>
-    <p>This is from http://www.azillionmonkeys.com/qed/case4.html.</p>
-    <p><dfn>Sentinel</dfn>: Computers. a symbol, mark, or other labelling
-    device indicating the beginning or end of a unit of information.</p>
-  </commentary>
-  <slide title="Original Code">
+  <examples>
+    <p>Original routine:</p>
 <csyntax>int search1(int *list, int N, int want)
 {
   int i;
@@ -46,8 +43,7 @@ loop CMP   r3,r1     ; i &lt; N
      BLT   test
      MVN   r0,#0     ; -1
      MOV   pc,lr</armsyntax>
-  </slide>
-  <slide title="Transformed Code">
+    <p>Revised routine:</p>
 <csyntax>int search2(int *list, int N, int want)
 {
   int i;
@@ -74,8 +70,11 @@ loop LDR   r12,[r0,r3,LSL #2]
      MOVNE r0,r3
      MVNEQ r0,#0     ; -1
      MOV   pc,lr</armsyntax>
-  </slide>
+  </examples>
   <commentary>
+    <p><dfn>Sentinel</dfn>: Computers. a symbol, mark, or other labelling
+    device indicating the beginning or end of a unit of information.</p>
+    <p>This is from <a class="external" href="http://www.azillionmonkeys.com/qed/case4.html">http://www.azillionmonkeys.com/qed/case4.html</a>.</p>
     <p>Obviously you need to ensure that <code>list[N]</code> is both available
     and writable.</p>
     <p>This can be improved further by <a href="indexing.html">replacing array

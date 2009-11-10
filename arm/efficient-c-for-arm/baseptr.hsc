@@ -12,8 +12,14 @@
     accessed through one known offset.</p>
   </slide>
   <commentary>
-http://www.arm.com/support/faqdev/1490.html
-http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf
+    <p>
+      <a class="external"
+        href="http://www.arm.com/support/faqdev/1490.html">http://www.arm.com/support/faqdev/1490.html</a>
+    </p>
+    <p>
+      <a class="external"
+        href="http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf">http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf</a>
+    </p>
   </commentary>
   <footer>
   </heading>

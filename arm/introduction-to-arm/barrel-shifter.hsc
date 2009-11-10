@@ -10,34 +10,36 @@
   <table id="barrelshifts">
     <tr>
       <td>
-        <h4><code>LSL</code><br/>Logical Shift Left<br/></h4>
+        <h4><code>LSL</code> &ndash; Logical Shift Left<br/></h4>
         <diagram src="barrel-lsl.png" alt="LSL" width="157" height="118">
-        e.g. multiplication by a power of 2. Equivalent to <code>&lt;&lt;</code> in C.
+        e.g. multiplication by a power of 2.<br />
+        Equivalent to <code>&lt;&lt;</code> in C.
       </td>
       <td>
-        <h4><code>LSR</code><br/>Logical Shift Right<br/></h4>
-        CONVERT THIS TO USE DIAGRAM MACRO
-        <a href="img/dia/lg/barrel-lsr.png"><img src="img/dia/barrel-lsr.png" alt="LSR" /></a><br/>
-        e.g. division by a power of 2. Equivalent to <code>&gt;&gt;</code> in C.
+        <h4><code>LSR</code> &ndash; Logical Shift Right<br/></h4>
+        <diagram src="barrel-lsr.png" alt="LSR" width="159" height="118">
+        e.g. division by a power of 2.<br />
+        Equivalent to <code>&gt;&gt;</code> in C.
       </td>
       </tr>
       <tr>
         <td colspan="2">
-          <h4><code>ASR</code><br/>Arithmetic Shift Right<br/></h4>
-          <a href="img/dia/lg/barrel-asr0.png"><img src="img/dia/barrel-asr0.png" alt="ASR +ve" /></a>
-          <a href="img/dia/lg/barrel-asr1.png"><img src="img/dia/barrel-asr1.png" alt="ASR -ve" /></a><br/>
-          e.g. signed division by a power of 2. Equivalent to <code>&gt;&gt;</code> in C.
+          <h4><code>ASR</code> &ndash; Arithmetic Shift Right<br/></h4>
+          <diagram src="barrel-asr0.png" alt="ASR +ve" width="159" height="118">
+          <diagram src="barrel-asr1.png" alt="ASR -ve" width="159" height="118">
+          e.g. signed division by a power of 2.<br />
+          Equivalent to <code>&gt;&gt;</code> in C.
         </td>
       </tr>
       <tr>
         <td>
-          <h4><code>ROR</code><br/>Rotate Right<br/></h4>
-          <a href="img/dia/lg/barrel-ror.png"><img src="img/dia/barrel-ror.png" alt="ROR" /><br/></a>
+          <h4><code>ROR</code> &ndash; Rotate Right<br/></h4>
+          <diagram src="barrel-ror.png" alt="ROR" width="180" height="118">
           Bit rotate with wrap-around.
         </td>
         <td>
-          <h4><code>RRX</code><br/>Rotate Right Extended<br/></h4>
-          <a href="img/dia/lg/barrel-rrx.png"><img src="img/dia/barrel-rrx.png" alt="RRX" /><br/></a>
+          <h4><code>RRX</code> &ndash; Rotate Right Extended<br/></h4>
+          <diagram src="barrel-rrx.png" alt="RRX" width="191" height="118">
           Bit rotate with wrap-around including carry bit.
         </td>
       </tr>

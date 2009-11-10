@@ -6,7 +6,7 @@
   <slide>
   <p>We need to store the processor state when making nested calls.</p>
   <p>The multiple data transfer instructions provide a mechanism for storing
-  state on the <dfn>stack</dfn> (R13).</p>
+  state on the <dfn>stack</dfn> (pointed to by R13).</p>
   <p>The <code>STM</code> and <code>LDM</code> instructions&rsquo; modes have
   aliases for accessing stacks:
     <dl>

@@ -48,7 +48,12 @@
   <p>15 instructions, 3 cycles/bit.</p>
   </examples>
   <commentary>
-  <p>Duff's Device.</p>
+    <p>See <a class="external"
+      href="http://en.wikipedia.org/wiki/Loop_unwinding">Loop unwinding</a> on
+    Wikipedia.</p>
+    <p>See <a class="external"
+      href="http://en.wikipedia.org/wiki/Duff's_device">Duff's Device</a> on
+    Wikipedia.</p>
   </commentary>
   <footer>
   </heading>

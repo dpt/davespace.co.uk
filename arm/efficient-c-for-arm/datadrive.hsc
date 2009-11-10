@@ -37,6 +37,7 @@
         MOVEQ    r0,#2       ; retval
         LDMEQFD  sp!,{r4,pc} ; return
         ; ... more for each case ...</armsyntax>
+    <p>FIXME STATS</p>
     <p>If we generalise the code, storing the data in a table which maps the
     input names to output numbers then we can save a significant amount of
     code:</p>
@@ -77,6 +78,7 @@ loop          ADD      r0,r4,r4,LSL #1 ;
               BLT      loop            ; ..of data
               MVN      r0,#0
               LDMFD    sp!,{r4-r6,pc}  ; return -1</armsyntax>
+    <p>FIXME STATS</p>
   </examples>
   <footer>
   </heading>

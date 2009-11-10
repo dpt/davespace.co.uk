@@ -34,7 +34,8 @@
     twice. <strong>That does not happen.</strong></p>
   </examples>
   <commentary>
-    <p>This is from section 5.6 of ARM System Developer's Guide.</p>
+  <p>This is from section 5.6 of <a href="references.html">ARM System
+    Developer&rsquo;s Guide.</a></p>
   </commentary>
   <footer>
   </heading>

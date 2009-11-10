@@ -21,7 +21,7 @@
   <csyntax class="c">int nameToNumber3(const char *name)
 {
   static const struct map {
-    const char name[7]; /* NB. PIC */ FIXME PICSELISM
+    const char name[7]; /* NB. PIC */
     int        value;
   } map[] = ...
 
@@ -54,8 +54,6 @@ loop          MOV      r1,r4           ; R1 = entry-&gt;name
 exit          MVN      r0,#0
               LDMFD    sp!,{r4-r6,pc}  ; return -1</armsyntax>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

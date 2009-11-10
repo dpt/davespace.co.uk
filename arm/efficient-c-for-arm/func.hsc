@@ -8,8 +8,10 @@
 
     <p>The remainder of the arguments are passed on the stack.</p>
 
-    <p>Therefore, functions taking four or fewer arguments avoid the stack,
-    which allows for greater efficiency.</p>
+    <ul>
+      <li>Therefore, functions taking four or fewer arguments avoid the stack,
+      which allows for greater efficiency.</li>
+    </ul>
 
     <p>Almost always more efficient to group subsequent args together and pass
     them together as a <code>struct</code>.</p>

@@ -6,14 +6,14 @@
   <slide>
     <dl>
       <dt>v7A, v7R</dt>
-      <dd>Dynamic Compiler Support.</dd>
-      <dd>Execution Environment (Thumb-2EE).</dd>
-      <dd>VFP v3 (Vector Floating Point).</dd>
-      <dd>NEON advanced SIMD.</dd>
-      <dd>Thumb-2 mandated.</dd>
+      <dd>&ndash; Dynamic Compiler Support.</dd>
+      <dd>&ndash; Execution Environment (Thumb-2EE).</dd>
+      <dd>&ndash; VFP v3 (Vector Floating Point).</dd>
+      <dd>&ndash; NEON advanced SIMD.</dd>
+      <dd>&ndash; Thumb-2 mandated.</dd>
       <dt>v7M</dt>
-      <dd>Minimalist variant for embedded uses.</dd>
-      <dd>Thumb-2 only.</dd>
+      <dd>&ndash; Minimalist variant for embedded uses.</dd>
+      <dd>&ndash; Thumb-2 only.</dd>
     </dl>
   </slide>
   <commentary>

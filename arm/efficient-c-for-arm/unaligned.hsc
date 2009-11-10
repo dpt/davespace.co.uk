@@ -23,8 +23,6 @@ LDRB Rt,[Ra,#3]
 ORR  Rd,Rd,Rt,LSL #24</armsyntax>
 
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

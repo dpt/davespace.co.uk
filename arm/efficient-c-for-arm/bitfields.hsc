@@ -46,8 +46,6 @@ ShipFlags getShipFlags2(const ShipData2 *d)
 
 THIS IS NOT A TERRIBLY GOOD EXAMPLE.
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

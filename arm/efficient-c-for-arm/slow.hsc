@@ -13,8 +13,6 @@
       <dd>&ndash; ARM prefers word-aligned data.</dd>
     </dl>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

@@ -22,8 +22,6 @@
     guarantees that structure members will be laid out in the order that
     they're specified.</p>
   </slide>
-  <commentary>
-  </commentary>
   <slide title="Minimising Structure Padding">
 <csyntax class="bad">struct
 {
@@ -45,8 +43,6 @@ DIAGRAM
 
     <p>Structure has been reduced by four bytes (a third).</p>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

@@ -71,29 +71,15 @@ BODY {
 	margin: 16px 8px 0px;
 	padding: 16px 8px 0px;
 }
-#bgtop {
-	background: #ececec url(img/bg-top.png) repeat-y 0 0;
-	height: 64px;
-	left: 0;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: -1;
-}
 H1,H2,H3 {
 	font-family: Georgia,Times,'Times New Roman',serif;
 }
 CODE,PRE {
-	color: #085a8c;
 	font-family: 'Lucida Console','Courier New',Courier,monospace;
 	font-size: 90%;
-	padding: 0.25em;
 }
-PRE {
-	background-color: #eaf1f5;
-	border: 1px solid #adc8d9;
-	line-height: 110%;
-	padding: 0.5em;
+CODE {
+	color: #085a8c;
 }
 BLOCKQUOTE {
 	background: url(img/dquote-l.png) no-repeat left top;
@@ -213,7 +199,7 @@ DIV#nav DIV#w3c > P {
 }
 
 /******************************************************************************/
-/* CONTENT */
+/* CONTENT 																	  */
 /******************************************************************************/
 
 DIV#content {
@@ -287,6 +273,16 @@ DIV#content DL.books > DD > IMG {
 /******************************************************************************/
 /* HEADERS AND FOOTERS														  */
 /******************************************************************************/
+
+#masthead {
+	background: #ececec url(img/bg-top.png) repeat-y 0 0;
+	height: 64px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
 
 DIV#content > H1,
 DIV#content > H2,
@@ -378,11 +374,11 @@ DIV.slide TABLE TD {
 	line-height: 150%;
 }
 DIV.slide TABLE TH {
-	border-bottom: 1pt dotted #085a8c;
+	border-bottom: 1pt solid #adc8d9;
 	text-align: center;
 }
 DIV.slide TABLE TD {
-	border-bottom: 1pt dotted #085a8c;
+	border-bottom: 1pt solid #eaf1f5;
 }
 
 DIV.slide TABLE#barrelshifts {
@@ -410,6 +406,10 @@ DIV.slide TABLE#cores TD {
 }
 DIV.slide TABLE#cores TD {
 	white-space: nowrap;
+}
+DIV.slide TABLE#cores TD.wrap {
+	white-space: normal;
+	line-height: 150%;
 }
 
 /******************************************************************************/
@@ -455,9 +455,9 @@ PRE.routine .Special { color: #ffdead; }
 PRE.routine .Statement { color: #f0e68c; font-weight: bold; }
 PRE.routine .Type { color: #bdb76b; font-weight: bold; }*/
 PRE.routine {
-	border: none;
-	color: #fff;
 	background-color: #333;
+	color: #fff;
+	line-height: 110%;
 	padding: 0.5em;
 }
 

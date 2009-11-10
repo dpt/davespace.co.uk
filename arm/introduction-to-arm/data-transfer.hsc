@@ -14,21 +14,30 @@
     </dl>
     <p><var>{size}</var> is specified to transfer bytes or half-words:</p>
     <dl>
-      <dt><code>&lt;op&gt;B</code> <dfn>unsigned byte</dfn></dt>
-      <dt><code>&lt;op&gt;SB</code> <dfn>signed byte</dfn></dt>
-      <dt><code>&lt;op&gt;H</code> <dfn>unsigned half-word</dfn></dt>
-      <dt><code>&lt;op&gt;SH</code> <dfn>signed half-word</dfn></dt>
+      <dt><code>&lt;operation&gt;B</code></dt>
+      <dd><dfn>unsigned byte</dfn></dd>
+      <dt><code>&lt;operation&gt;SB</code></dt>
+      <dd><dfn>signed byte</dfn></dd>
+      <dt><code>&lt;operation&gt;H</code></dt>
+      <dd><dfn>unsigned half-word</dfn></dd>
+      <dt><code>&lt;operation&gt;SH</code></dt>
+      <dd><dfn>signed half-word</dfn></dd>
     </dl>
   </slide>
+  <examples>
+    <dl>
+      <dt><code>LDR r0,[r1]</code></dt>
+      <dd>Load word addressed by R1 into R0.</dd>
+      <dt><code>LDRB r0,[r1]</code></dt>
+      <dd>The same as above but loads a byte.</dd>
+    </dl>
+  </examples>
   <commentary>
-    <p>Half-word accesses were a later addition to the instruction set so have
-    some restrictions.</p>
-    <p><code>SB</code> and <code>SH</code> modes are not available in
+    <p>The instructions for accessing half-words were a later addition to the
+    instruction set so have some restrictions (described on the next page).</p>
+    <p><code>SB</code> and <code>SH</code> modes are not available with
     <code>STR</code>.</p>
   </commentary>
-  <examples>
-    FIXME WRITE SOME EXAMPLES
-  </examples>
   <slide title="Alignment Restrictions">
     <p>In general, values loaded from or stored to memory must be aligned to
     the size of the data type:</p>

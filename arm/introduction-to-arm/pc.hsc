@@ -24,7 +24,7 @@
     </dl>
   </slide>
   <commentary>
-  <p>R15 or PC.</p>
+  <p>R15 is the PC.</p>
   <p>&ldquo;word&rdquo; and &ldquo;half-word&rdquo; mean 4-byte and 2-byte
   quantities respectively.</p>
   <p>It&rsquo;s not mentioned on the slide, but when in Jazelle state:

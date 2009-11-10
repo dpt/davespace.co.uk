@@ -9,7 +9,7 @@
   <ul>
     <li>That way the code costs just once, rather than on every loop
     iteration.</li>
-    <li>Keeps code out of the way - denser code.</li>
+    <li>Keeps code out of the way &ndash; denser code.</li>
   </ul>
   </slide>
   <examples>

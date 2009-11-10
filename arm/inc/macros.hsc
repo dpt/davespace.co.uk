@@ -1,4 +1,67 @@
+<* macros for the entire site *>
+
 <* $Id$ *>
+
+<$macro masterpage group:string author:string keywords:string desc:string heading:string rev:string cur:string fwd:string>
+
+<$define pagegroup:string/global="">
+<$if cond=(set group)>
+  <$let pagegroup=(group)>
+</$if>
+
+<$define pageheading:string/global="">
+<$if cond=(set heading)>
+  <$let pageheading=(heading)>
+</$if>
+
+<$define previouspage:string/global="">
+<$if cond=(set rev)>
+  <$let previouspage=(rev)>
+</$if>
+
+<$define currentpage:string/global="">
+<$if cond=(set cur)>
+  <$let currentpage=(cur)>
+</$if>
+
+<$define nextpage:string/global="">
+<$if cond=(set fwd)>
+  <$let nextpage=(fwd)>
+</$if>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<* 'xml:lang="en"' is barfed at even in XHTML mode *>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title><(group)>: <(pageheading)></title>
+    <$if cond=(author <> "")>
+      <meta name="author" content=(author) />
+    </$if>
+    <$if cond=(keywords <> "")>
+      <meta name="keywords" content=(keywords) />
+    </$if>
+    <$if cond=(desc <> "")>
+      <meta name="description" content=(desc) />
+    </$if>
+    <* would like to resolve stylesheet location better *>
+    <link rel="stylesheet" type="text/css" href="../styles.css" title="default" />
+    <link rel="index" href="index.html" />
+    <$if cond=(fwd <> "")>
+      <link rel="next" href=(fwd + ".html") />
+    </$if>
+    <$if cond=(rev <> "")>
+      <link rel="prev" href=(rev + ".html") />
+    </$if>
+  </head>
+  <body>
+</$macro>
+
+<$macro /masterpage>
+  </body>
+</html>
+</$macro>
 
 <* a control to flip between pages *>
 <$macro flipper>
@@ -6,35 +69,56 @@
   <$if cond=(previouspage <> "" or nextpage <> "")>
   <ul>
     <$if cond=(previouspage <> "")>
-    <li id="prev"><a href=(previouspage + ".html")>Previous</a></li>
+      <li id="prev"><a href=(previouspage + ".html")>Previous</a></li>
     </$if>
     <$if cond=(nextpage <> "")>
-    <li id="next"><a href=(nextpage + ".html")>Next</a></li>
+      <li id="next"><a href=(nextpage + ".html")>Next</a></li>
     </$if>
   </ul>
   </$if>
 </div>
 </$macro>
 
+<$macro mastercontents>
+<div id="contents">
+</$macro>
+
+<$macro /mastercontents>
+</div>
+</$macro>
+
 <$macro clink dst:string title:string>
 <$if cond=(currentpage = dst)>
-<li class="current"><(title)></li>
+  <li class="current"><(title)></li>
 <$else>
-<li><a href=(dst + ".html")><(title)></a></li>
+  <li><a href=(dst + ".html")><(title)></a></li>
 </$if>
 </$macro>
 
 <$macro w3c>
-  <div id="w3c">
-    <p><a href="http://validator.w3.org/check/referer"><img src="../img/w3c.xhtml.png" alt="Valid XHTML" width="80" height="15" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="../img/w3c.css.png" alt="Valid CSS" width="80" height="15" /></a></p>
-  </div>
+<div id="w3c">
+  <p><a href="http://validator.w3.org/check/referer"><img src="../img/w3c.xhtml.png" alt="Valid XHTML" width="80" height="15" /></a> <a href="http://jigsaw.w3.org/css-validator/check/referer"><img src="../img/w3c.css.png" alt="Valid CSS" width="80" height="15" /></a></p>
+</div>
 </$macro>
 
 <$macro nav>
 <div id="nav">
   <flipper>
-  <contents>
+  <mastercontents>
+    <contents>
+  </mastercontents>
   <w3c>
+</div>
+</$macro>
+
+<$macro heading>
+<div id="content">
+  <h1><a href="index.html"><(pagegroup)></a></h1>
+  <h2><(pageheading)></h2>
+  <div id="masthead"></div>
+</$macro>
+
+<$macro /heading>
 </div>
 </$macro>
 
@@ -103,8 +187,8 @@
 </div>
 </$macro>
 
-<* The following is packed tightly due to PRE being sensitive to any spaces in
-   the input. *>
+<* The following are packed tightly due to PRE being sensitive to any spaces in the input. *>
+
 <$macro csyntax /close class:string>
   <$export file="perlinput" data=(HSC.Content)>
   <$if cond=(set class)><pre class=("routine " + class)><$else><pre class=("routine")></$if><$exec command="perl ..\csyntaxcolour.pl < perlinput" include></pre>

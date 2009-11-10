@@ -11,9 +11,8 @@
 
     <p><a class="external" href="http://www.aggregate.org/MAGIC/">http://www.aggregate.org/MAGIC/</a></p>
     <p><a class="external" href="http://www.azillionmonkeys.com/">http://www.azillionmonkeys.com/</a></p>
+    <p><a class="external" href="http://www.compileroptimizations.com/">http://www.compileroptimizations.com/</a></p>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

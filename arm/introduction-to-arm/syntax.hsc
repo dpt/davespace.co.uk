@@ -11,7 +11,7 @@
     <dt><code>{cond}</code></dt>
     <dd>An optional two-letter condition code, e.g. <code>EQ</code> or <code>CS</code>.</dd>
     <dt><code>{flags}</code></dt>
-    <dd>An optional additional flags.</dd>
+    <dd>An optional additional flags. e.g. <code>S</code>.</dd>
     <dt><code>Rd</code></dt>
     <dd>The destination register.</dd>
     <dt><code>Rn</code></dt>
@@ -28,9 +28,10 @@
     <p>Leftmost register <code>Rd</code> is the destination.</p>
     <p>Instructions are generally single-cycle (except write to <abbr>PC</abbr>
     and register-controlled shift).</p>
-    <p>There is a newer form which ARM have recently introduced called <abbr
-      title="Unified Assembler Language">UAL</abbr> (Unified Assembler
-    Language), which allows the condition code to go after the flags.</p>
+    <p>There is a <a class="external" href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</a> form for the assembly which ARM have recently
+    introduced called <abbr title="Unified Assembler Language">UAL</abbr>
+    (Unified Assembler Language), which allows the condition code to go after
+    the flags.</p>
   </commentary>
   <footer>
   </heading>

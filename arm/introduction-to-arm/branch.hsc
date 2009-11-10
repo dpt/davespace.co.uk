@@ -15,19 +15,6 @@
     <p>How do we return from the subroutine which <code>BL</code> invoked?</p>
     <p><code>MOV pc, r14</code></p>
   </slide>
-  <commentary>
-    <p>So how do we implement control structures like <tt>for</tt>,
-    <tt>while</tt>, <tt>loops</tt> etc?</p>
-    <p>Branch instructions are used to alter control flow.</p>
-    <p>They are PC relative. +/-32M range (24 bits * 4 bytes.)</p>
-    <p>Use to allow position independent code. It allows restricted branch
-    range to jump to nearby addresses. This solves some problems with BREW.</p>
-    <p>How to perform longer branches? How to access full 32-bit address space?
-    Can set up LR manually if needed, then load into PC: <code>MOV lr,pc LDR
-      pc,=dest</code></p>
-    <p>ADS's linker will automatically generate long branch veneers for
-    branches beyond 32Mb range.</p>
-  </commentary>
   <examples>
     <p>Branching forward, to skip over some code:</p>
 <armsyntax>    ...
@@ -38,8 +25,6 @@ fwd</armsyntax>
 <armsyntax>back
     ...         ; more code here
     B back      ; jump to label 'back'</armsyntax>
-  </examples>
-  <examples>
     <p>Using BL to call a subroutine:
 <armsyntax>    ...
     ...
@@ -49,8 +34,21 @@ fwd</armsyntax>
 
 calc            ; function body
     ...         ; do some work here
-    MOV pc, r14 ; R14 = PC to return</armsyntax></p>
+    MOV pc, r14 ; PC = R14 to return</armsyntax></p>
   </examples>
+  <commentary>
+    <p>So how do we implement control structures like <tt>for</tt> and
+    <tt>while</tt> loops etc?</p>
+    <p>Branch instructions are used to alter control flow.</p>
+    <p>They are PC relative. +/-32M range (24 bits * 4 bytes).</p>
+    <p>Use to allow position independent code. It allows restricted branch
+    range to jump to nearby addresses. This solves some problems with BREW.</p>
+    <p>How to perform longer branches? How to access full 32-bit address space?
+    Can set up LR manually if needed, then load into PC: <code>MOV lr,pc LDR
+      pc,=dest</code></p>
+    <p>ADS's linker will automatically generate long branch veneers for
+    branches beyond 32Mb range.</p>
+  </commentary>
   <footer>
   </heading>
 </page>

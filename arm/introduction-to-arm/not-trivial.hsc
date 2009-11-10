@@ -7,15 +7,20 @@
   <slide>
     <p>There are often features in the CPU which don&rsquo;t always map onto
     C:</p>
-    <ul>
-      <li>Processor flags &ndash; e.g. the carry flag.</li>
-      <li>Vector instructions &ndash; <acronym title="Single Instruction Multiple Data">SIMD</acronym> operations.</li>
-      <li>Multiple-register transfers &ndash; bulk data loads/stores.</li>
-      <li>Specialised operations &ndash; population count.</li>
-      <li>Atomic test-and-set instructions &ndash; mutexes.</li>
-      <li>On-chip hardware &ndash; <acronym
-      title="Multiply-Accumulate">MAC</acronym> units.</li>
-    </ul>
+    <dl>
+      <dt>Processor flags</dt>
+      <dd>&ndash; e.g. the carry flag.</dd>
+      <dt>Vector instructions</dt>
+      <dd>&ndash; <acronym title="Single Instruction Multiple Data">SIMD</acronym> operations.</dd>
+      <dt>Multiple-register transfers</dt>
+      <dd>&ndash; bulk data loads/stores.</dd>
+      <dt>Specialised operations</dt>
+      <dd>&ndash; population count.</dd>
+      <dt>Atomic test-and-set instructions</dt>
+      <dd>&ndash; mutexes.</dd>
+      <dt>On-chip hardware</dt>
+      <dd>&ndash; <acronym title="Multiply-Accumulate">MAC</acronym> units.</dd>
+    </dl>
 
     <p>These benefits may be lost if plain, or na&iuml;ve, C code is used.</p>
   </slide>

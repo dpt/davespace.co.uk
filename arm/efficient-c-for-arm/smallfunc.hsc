@@ -17,8 +17,6 @@
     language code. Functions may appear to vanish when they&rsquo;re subsumed
     into the caller.</p>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

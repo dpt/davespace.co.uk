@@ -8,7 +8,6 @@
     ARM.</p>
     <ul>
       <li>Strengths and weaknesses of the platform will affect results.</li>
-      <li>e.g. Wasp is comparatively slower on x86 (just C) than ARM (dedicated ARM optimised assembler version). FIXME PICSEL SPECIFIC</li>
     </ul>
 
     <p>Profiles will show you where most time is spent.</p>
@@ -28,8 +27,6 @@
       </ul>
     </ul>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

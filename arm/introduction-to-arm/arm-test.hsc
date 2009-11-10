@@ -13,8 +13,6 @@
       <dt>What about an &ldquo;ARM1156T2F-S&rdquo;?</dt>
     </dl>
   </slide>
-  <commentary>
-  </commentary>
   <footer>
   </heading>
 </page>

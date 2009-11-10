@@ -48,7 +48,7 @@ void setPos2(Object *o)
         MOV pc,lr</armsyntax>
   </slide>
   <commentary>
-    <p>This is from ARM Application Note 34, Section 8.2.3.</p>
+    <p>This is from ARM Application Note 34, Section 8.2.3. (Now withdrawn?)</p>
     <p>The compiler does not know that <code>o-&gt;pos-&gt;x</code> is not an
     alias for <code>o-&gt;pos</code>.</p>
   </commentary>
