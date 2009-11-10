@@ -1,0 +1,44 @@
+$Id$
+
+notes
+~~~~~
+
+  merge first two pages together?
+x darken code example text colour (joty)
+x syntax colour examples (tlsa)
+  green+yellow doesn't work for the colourblind (rjek)
+  statement about armcc making better use of conditional execution questioned (rjek)
+x ASR != << (jmb)
+x add a changelog + version
+  answers for tasks
+  amazon referrer thing for books
+  syntax colour branch.hsc, conditional.hsc, thumb-example.hsc
+
+
+
+scraps of css
+~~~~~~~~~~~~~
+
+DIV#nav > H2{
+	xpadding: 1em;
+	xmargin: 0;
+	xmargin-top: 1em;
+}
+/*DIV#nav > ul > li:before {
+	content: "\00BB \0020";
+	}*/
+
+
+/* highlights 2,3,4...th element */
+/*DIV.slide > TABLE > TBODY > TR + TR > TD{
+ color: red;
+}*/
+
+/*td:first-child {
+ width: 190px;
+}
+td + td {
+ text-align: left;
+}*/
+
+
