@@ -343,6 +343,7 @@ P.format {
 	white-space: nowrap;
 }
 P.format > CODE {
+	background-color: #eaf1f5;
 	border: 1pt solid #bdc1d7; /* light blue */
 	padding: 0.5em;
 }
