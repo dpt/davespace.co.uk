@@ -18,12 +18,14 @@
 
   <p>If we rewrite the <tt>nameToNumber</tt> example routine from earlier as
   follows:</p>
-  <csyntax class="c">int nameToNumber3(const char *name)
+  <csyntax>int nameToNumber3(const char *name)
 {
-  static const struct map {
+  static const struct map
+  {
     const char name[7]; /* NB. PIC */
     int        value;
-  } map[] = ...
+  }
+  map[] = ...
 
   const struct map *entry, *end;
 
@@ -35,8 +37,8 @@
   return -1; /* default case */
 }</csyntax>
 
-  <p>ARMCC outputs the following:</p>
-<armsyntax class="arm">nameToNumber3 STMFD    sp!,{r4-r6,lr}
+  <p>ARMCC <tt>-O2</tt> <tt>-Otime</tt> outputs the following:</p>
+<armsyntax>nameToNumber3 STMFD    sp!,{r4-r6,lr}
               LDR      r4,=mapaddr     ; address of ‘map’
               MOV      r6,r0           ; stash copy of name
               ADD      r5,r4,#0x30     ; R5 = end

@@ -101,11 +101,11 @@ A:link, A:visited, A:active, A:hover {
 
 /* external links */
 A.external:link {
-	background: url(img/extlink1.png) no-repeat 100% 3px;
+	background: url(img/extlink1.png) no-repeat 100% 6px;
 	padding-right: 14px;
 }
 A.external:visited, A.external:active {
-	background: url(img/extlink2.png) no-repeat 100% 3px;
+	background: url(img/extlink2.png) no-repeat 100% 6px;
 	padding-right: 14px;
 }
 /* hint text in external links */
@@ -275,13 +275,20 @@ DIV#content DL.books > DD > IMG {
 /******************************************************************************/
 
 #masthead {
-	background: #ececec url(img/bg-top.png) repeat-y 0 0;
-	height: 64px;
+	background: #ececec url(img/bg-top.png) no-repeat 0 0;
+	height: 22px;
 	left: 0;
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: -1;
+}
+
+/* Home icon */
+#masthead > A > IMG {
+	display: block;
+	height: 16px;
+	width: 16px;
+	margin: 8px 0 0 8px;
 }
 
 DIV#content > H1,
@@ -354,14 +361,6 @@ P.diagram IMG {
 /* disable borders around linked images */
 P.diagram A IMG {
 	border: none;
-}
-
-PRE.good {
-	border: 2px dotted gray;
-}
-
-PRE.bad {
-	border: 2px dotted red;
 }
 
 /******************************************************************************/

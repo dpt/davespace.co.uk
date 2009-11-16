@@ -12,7 +12,7 @@
   </slide>
   <examples>
     <p>The following routine maps a name to a number:</p>
-<csyntax class="c bad">int nameToNumber(const char *name)
+<csyntax>int nameToNumber(const char *name)
 {
     if      (strcmp(name, "John")   == 0) return 5;
     else if (strcmp(name, "Paul")   == 0) return 2;
@@ -22,7 +22,7 @@
 }</csyntax>
     <p>Because each case is written out individually, the compiler will
     emit code for every individual case:</p>
-<armsyntax class="arm bad">nameToNumber
+<armsyntax>nameToNumber
         STMFD    sp!,{r4,lr}
         MOV      r4,r0       ; name
         ADR      r1,|L1.104| ; "John"
@@ -37,19 +37,25 @@
         MOVEQ    r0,#2       ; retval
         LDMEQFD  sp!,{r4,pc} ; return
         ; ... more for each case ...</armsyntax>
-    <p>FIXME STATS</p>
+    <p>26 instructions &times; 4 bytes = 104 bytes.</p>
     <p>If we generalise the code, storing the data in a table which maps the
     input names to output numbers then we can save a significant amount of
     code:</p>
-<csyntax class="c good">#define NELEMS(a) ((int) (sizeof(a) / sizeof(a[0])))
+<csyntax>#define NELEMS(a) ((int) (sizeof(a) / sizeof(a[0])))
 
 int nameToNumber2(const char *name)
 {
-  static const struct {
+  static const struct
+  {
     const char name[7]; /* NB. PIC */
     int        value;
-  } map[] = {
-    {"John",5}, {"Paul",2}, {"George",9}, {"Ringo",3}
+  }
+  map[] =
+  {
+    { "John",   5 },
+    { "Paul",   2 },
+    { "George", 9 },
+    { "Ringo",  3 }
   };
   int i;
 
@@ -60,7 +66,7 @@ int nameToNumber2(const char *name)
   return -1; /* default case */
 }</csyntax>
 
-<armsyntax class="arm good">nameToNumber2 STMFD    sp!,{r4-r6,lr}
+<armsyntax>nameToNumber2 STMFD    sp!,{r4-r6,lr}
               LDR      r6,=mapaddr     ; address of 'map'
               MOV      r5,r0           ; stash copy of name
               MOV      r4,#0           ; i
@@ -78,7 +84,7 @@ loop          ADD      r0,r4,r4,LSL #1 ;
               BLT      loop            ; ..of data
               MVN      r0,#0
               LDMFD    sp!,{r4-r6,pc}  ; return -1</armsyntax>
-    <p>FIXME STATS</p>
+    <p>18 instructions &times; 4 bytes = 72 bytes.</p>
   </examples>
   <footer>
   </heading>

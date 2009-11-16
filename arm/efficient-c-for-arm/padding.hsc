@@ -23,7 +23,7 @@
     they're specified.</p>
   </slide>
   <slide title="Minimising Structure Padding">
-<csyntax class="bad">struct
+<csyntax>struct
 {
   unsigned char type;
   int           product;
@@ -32,7 +32,7 @@
 
 DIAGRAM
 
-<csyntax class="good">struct
+<csyntax>struct
 {
   int           product;
   short         delta;

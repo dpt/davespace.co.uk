@@ -10,10 +10,8 @@
       reformed.</li>
     </ul>
 
-    <!-- class = "good" -->
     <armsyntax>LDR Rd,[Ra]</armsyntax>
 
-    <!-- class = "bad" -->
     <armsyntax>LDRB Rd,[Ra,#0]
 LDRB Rt,[Ra,#1]
 ORR  Rd,Rd,Rt,LSL #8

@@ -32,6 +32,14 @@
         MOV pc,r14</armsyntax>
     <p>You'd expect <code>*step</code> to be pulled from memory once and used
     twice. <strong>That does not happen.</strong></p>
+  <csyntax>void timers2(int *t1, int *t2, int *step)
+{
+  int s = *step;
+  *t1 += s;
+  *t2 += s;
+}</csyntax> REWRITE
+<armsyntax>timers2 ... ; FILL ME IN
+        MOV pc,r14</armsyntax>
   </examples>
   <commentary>
   <p>This is from section 5.6 of <a href="references.html">ARM System

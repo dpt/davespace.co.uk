@@ -13,7 +13,7 @@
     biasing the values so that they can fit in ARM&rsquo;s available range.</dt>
   </dl>
 
-  <csyntax class="c">return c == UNICODE_THAI_MAI_HAN_AKAT  ||  /* 0x0E31 */
+  <csyntax>return c == UNICODE_THAI_MAI_HAN_AKAT  ||  /* 0x0E31 */
        c == UNICODE_THAI_SARA_AM       ||  /* 0x0E33 */
        c == UNICODE_THAI_SARA_I        ||  /* 0x0E34 */
        c == UNICODE_THAI_SARA_II       ||  /* 0x0E35 */
@@ -32,7 +32,7 @@
        c == UNICODE_THAI_NIKHAHIT      ||  /* 0x0E4D */
        c == UNICODE_THAI_YAMAKKAN;         /* 0x0E4E */</csyntax>
 
-       <armsyntax class="arm">bias1 SUB   r12,r0,#0xe00
+       <armsyntax>bias1 SUB   r12,r0,#0xe00
       SUBS  r12,r12,#0x31
       LDRNE r12,|L1.552|
       CMPNE r0,r12
@@ -52,7 +52,7 @@
 
       <p>In this revised version we bias the input character <var>c</var> by 0xE00.</p>
 
-       <csyntax class="c">C -= 0xE00;
+       <csyntax>C -= 0xE00;
 return c == (UNICODE_THAI_MAI_HAN_AKAT  – 0xE00) ||
        c == (UNICODE_THAI_SARA_AM       – 0xE00) ||
        c == (UNICODE_THAI_SARA_I        – 0xE00) ||
@@ -72,7 +72,7 @@ return c == (UNICODE_THAI_MAI_HAN_AKAT  – 0xE00) ||
        c == (UNICODE_THAI_NIKHAHIT      – 0xE00) ||
        c == (UNICODE_THAI_YAMAKKAN      – 0xE00);</csyntax>
 
-      <armsyntax class="arm">bias2 SUB      r0,r0,#0xe00
+      <armsyntax>bias2 SUB      r0,r0,#0xe00
       CMP      r0,#0x31
       CMPNE    r0,#0x33
       CMPNE    r0,#0x34
