@@ -1,4 +1,3 @@
-User-agent: Slurp
-Crawl-delay: 100
+User-agent: *
 Disallow: /software/
 
