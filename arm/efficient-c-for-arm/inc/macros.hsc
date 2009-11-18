@@ -42,7 +42,7 @@
     <clink dst="profilers" title="Profilers">
   </ul>
   </li>
-  <li>Stuff That's Slow on ARM
+  <li>Stuff That&rsquo;s Slow on ARM
   <ul>
     <clink dst="slow" title="Stuff That&rsquo;s Slow on ARM">
     <clink dst="fp" title="Floating Point">

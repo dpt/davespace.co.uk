@@ -11,7 +11,8 @@
   </ul>
   </slide>
   <examples>
-    <p>The following routine maps a name to a number:</p>
+    <before>
+      <p>The following routine maps a name to a number:</p>
 <csyntax>int nameToNumber(const char *name)
 {
     if      (strcmp(name, "John")   == 0) return 5;
@@ -37,10 +38,12 @@
         MOVEQ    r0,#2       ; retval
         LDMEQFD  sp!,{r4,pc} ; return
         ; ... more for each case ...</armsyntax>
-    <p>26 instructions &times; 4 bytes = 104 bytes.</p>
-    <p>If we generalise the code, storing the data in a table which maps the
-    input names to output numbers then we can save a significant amount of
-    code:</p>
+      <p>26 instructions &times; 4 bytes = 104 bytes.</p>
+    </before>
+    <after>
+      <p>If we generalise the code, storing the data in a table which maps the
+      input names to output numbers then we can save a significant amount of
+      code:</p>
 <csyntax>#define NELEMS(a) ((int) (sizeof(a) / sizeof(a[0])))
 
 int nameToNumber2(const char *name)
@@ -84,7 +87,8 @@ loop          ADD      r0,r4,r4,LSL #1 ;
               BLT      loop            ; ..of data
               MVN      r0,#0
               LDMFD    sp!,{r4-r6,pc}  ; return -1</armsyntax>
-    <p>18 instructions &times; 4 bytes = 72 bytes.</p>
+      <p>18 instructions &times; 4 bytes = 72 bytes.</p>
+    </after>
   </examples>
   <footer>
   </heading>

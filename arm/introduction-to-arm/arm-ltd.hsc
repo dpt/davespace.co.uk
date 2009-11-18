@@ -29,13 +29,14 @@
       computers, which were widely used in UK schools, they were looking for
       replacement for its 6502 processor. None of the 16-bit architectures
       becoming available at that time met their requirements, so they designed
-      their own 32-bit
-    processor. It was the world's first commercial RISC processor.</blockquote>
+      their own 32-bit processor. It was the world&rsquo;s first commercial
+      RISC processor.</blockquote>
     <blockquote>Later, other companies became interested in this processor,
       including Apple who were looking for a processor for their PDA project
       (which became the Newton MessagePad). After much discussion this led to
-      Acorn's processor design team splitting off from Acorn at the end of 1990
-      to become Advanced RISC Machines Ltd, now just ARM Ltd.</blockquote>
+      Acorn&rsquo;s processor design team splitting off from Acorn at the end
+      of 1990 to become Advanced RISC Machines Ltd, now just ARM
+      Ltd.</blockquote>
     <blockquote>Thus ARM Ltd now designs the ARM family of RISC processor
       cores, together with a range of other supporting
       technologies.</blockquote>

@@ -12,7 +12,11 @@
     <dt>When dealing with numbers restricted to a certain range it may be worth
     biasing the values so that they can fit in ARM&rsquo;s available range.</dt>
   </dl>
-
+  </slide>
+  <examples>
+  <before>
+  <p>This fragment tests whether Unicode character <var>c</var> is a Thai
+  dependent character.</p>
   <csyntax>return c == UNICODE_THAI_MAI_HAN_AKAT  ||  /* 0x0E31 */
        c == UNICODE_THAI_SARA_AM       ||  /* 0x0E33 */
        c == UNICODE_THAI_SARA_I        ||  /* 0x0E34 */
@@ -49,10 +53,11 @@
       LDRNE r12,|L1.576|
       CMPNE r0,r12
       ...</armsyntax>
-
+    </before>
+    <after>
       <p>In this revised version we bias the input character <var>c</var> by 0xE00.</p>
 
-       <csyntax>C -= 0xE00;
+       <csyntax>c -= 0xE00;
 return c == (UNICODE_THAI_MAI_HAN_AKAT  – 0xE00) ||
        c == (UNICODE_THAI_SARA_AM       – 0xE00) ||
        c == (UNICODE_THAI_SARA_I        – 0xE00) ||
@@ -90,12 +95,13 @@ return c == (UNICODE_THAI_MAI_HAN_AKAT  – 0xE00) ||
       CMP      r0,#0x4a
       ...</armsyntax>
 
-      <p>Comparing the output assembler:</p>
+      <p>Comparing the output assembly:</p>
       <ul>
         <li>bias1: 41 instructions + 14 data values = 220 bytes</li>
         <li>bias2: 24 instructions = 96 bytes</li>
       </ul>
-  </slide>
+    </after>
+  </examples>
   <footer>
   </heading>
 </page>

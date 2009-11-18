@@ -13,7 +13,8 @@
   </ul>
   </slide>
   <examples>
-  <p>Doing the same test repeatedly in a loop:</p>
+    <before>
+      <p>Doing the same test repeatedly in a loop:</p>
 <csyntax>txt-&gt;flags |= METRICS; /* for example */
 
 for (i = 0; i &lt; N; i++)
@@ -25,7 +26,9 @@ for (i = 0; i &lt; N; i++)
   else
     draw(i);
 }</csyntax>
-  <p>We hoist out the loop:</p>
+    </before>
+    <after>
+      <p>We hoist out the loop:</p>
 <csyntax>if (txt-&gt;flags &amp; TRANSLATE)
 {
   for (i = 0; i &lt; N; i++)
@@ -41,6 +44,7 @@ else
   for (i = 0; i &lt; N; i++)
     draw(i);
 }</csyntax>
+    </after>
   </examples>
   <commentary>
   <p>

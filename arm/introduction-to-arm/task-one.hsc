@@ -7,9 +7,9 @@
     <p>At this point in the presentation we stop to try out a couple of tasks.
     These help us put together the information just laid out.</p>
     <p><em>The original tasks used ARM Developer Suite as the environment. All
-    of the assembler examples given in the presentation use armasm format. For
-    now, if you're using a different environment you will have to convert the
-    assembler to the correct format.</em></p>
+      of the assembler examples given in the presentation use armasm format.
+      For now, if you&rsquo;re using a different environment you will have to
+      convert the assembler to the correct format.</em></p>
 
 <csyntax>#include &lt;stdio.h&gt;
 
@@ -43,27 +43,28 @@ mystery
 
     END</armsyntax>
 
-    <p>It's a "mystery" assembly language routine.</p>
+    <p>It&rsquo;s a "mystery" assembly language routine.</p>
 
     <ul>
       <li>What does it do?</li>
-      <li>It should be obvious that it's doing some sort of character
+      <li>It should be obvious that it&rsquo;s doing some sort of character
       processing. But what exactly?</li>
       <li>And how does it work?</li>
     </ul>
   </slide>
 
   <slide title="ARM Architecture Procedure Calling Standard">
-    <p>The ARM Architecture Procedure Calling Standard governs how procedures
-    call each other in high-level languages such as C.</p>
-    <p>We&rsquo;re going to call into an ARM assembly routine from C.</p>
+    <p>The ARM Architecture Procedure Calling Standard (AAPCS) governs how
+    procedures call each other in high-level languages such as C.</p>
+    <p>We&rsquo;re going to call into an ARM assembly routine from C. AAPCS
+    specifies that:</p>
 
-    <ul>
-      <li>Arguments are passed in R0-R3.</li>
-      <li>Subsequent arguments are passed on the stack.</li>
-      <li>Arguments are returned in R0-R3.</li>
-      <li>Typically only R0 is used.</li>
-    </ul>
+    <dl>
+      <dt>The first four arguments are passed in R0-R3.</dt>
+      <dd>&ndash; Any subsequent arguments are passed on the stack.</dd>
+      <dt>The return value, if any, is passed back in R0-R3.</dt>
+      <dd>&ndash; Typically only R0 is used.</dd>
+    </dl>
   </slide>
 
   <slide title="Answers">

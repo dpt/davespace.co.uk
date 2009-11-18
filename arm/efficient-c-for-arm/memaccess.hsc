@@ -18,8 +18,9 @@
   </slide>
   <slide title="Memory Instructions Through The Ages">
     <p>Since not all memory access instructions were present in the original
-    ARM ISA, they have had to be 'shoehorned' in later on. This means that they
-    are subject to greater restrictions than the original instructions.</p>
+    ARM ISA, they have had to be &lsquo;shoehorned&rsquo; in later on. This
+    means that they are subject to greater restrictions than the original
+    instructions.</p>
     <table id="cores">
     <tbody>
       <tr>

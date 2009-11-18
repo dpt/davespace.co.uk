@@ -54,12 +54,12 @@ loop
     &lsquo;free&rsquo; with <code>int</code>s, but not with
     <code>char</code>s.</p>
 
-    <p>Let's look at the annotated compiler output.</p>
+    <p>Let&rsquo;s look at the annotated compiler output.</p>
     <p>The compiler is emitting an <code>AND</code> instruction even though it
     <em>should</em> know that <var>i</var> never exceeds 63.</p>
     <p>When we change <var>i</var> from <code>char</code> to <code>unsigned
     int</code> the <code>AND</code> disappears.</p>
-    <p>It's no longer necessary to account for wrap-around.</p>
+    <p>It&rsquo;s no longer necessary to account for wrap-around.</p>
     <p>Remember that this isn&rsquo;t just a saving of one instruction or
     cycle. It saves 64 instructions: <em>one for each iteration</em>.</p>
     <p>This is an <dfn>inner loop</dfn>. Optimisations to inner loops are

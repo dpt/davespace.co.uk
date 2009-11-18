@@ -17,7 +17,8 @@
     them together as a <code>struct</code>.</p>
   </slide>
   <commentary>
-    <p>This is from section 5.5 of ARM System Developer's Guide.</p>
+    <p>This is from section 5.5 of <a href="references.html#asdg">ARM System
+      Developer&rsquo;s Guide</a>.</p>
     <p><code>long long</code> / <code>double</code> use two registers.</p>
     <p>The benefit is not on the callee side, but on the caller side where it
     will have to perform fewer register setups and less register

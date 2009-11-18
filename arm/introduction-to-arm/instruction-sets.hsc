@@ -4,21 +4,19 @@
   <nav>
   <heading>
   <slide>
-    <p>Modern ARM processors have <em>four</em> instruction sets:
+    <p>Modern ARM processors have <em>several</em> instruction sets:
     <ul>
       <li>The fully-featured 32-bit <acronym title="Advanced RISC Machine">ARM</acronym> instruction set,</li>
       <li>The more restricted, but space efficient, 16-bit <dfn>Thumb</dfn> instruction set,</li>
-      <li>The newer mixed 16/32-bit <dfn>Thumb-2</dfn>,</li>
-      <li>and <dfn><a href="http://en.wikipedia.org/wiki/Jazelle">Jazelle <abbr
-      title="Direct Bytecode eXecution">DBX</abbr></a></dfn> for Java byte
-      codes.</li>
+      <li>The newer mixed 16/32-bit <dfn>Thumb-2</dfn> instruction set,</li>
+      <li><dfn><a href="http://en.wikipedia.org/wiki/Jazelle">Jazelle <abbr title="Direct Bytecode eXecution">DBX</abbr></a></dfn> for Java byte codes,</li>
+      <li>The <dfn>NEON</dfn> 64/128-bit SIMD instruction set,</li>
+      <li>The <dfn>VFP</dfn> vector floating point instruction set.</li>
     </ul></p>
-    <p>For the purposes of this course we are just interested in the ARM and
+    <p>For the purposes of this course we are only interested in the ARM and
     Thumb instruction sets.</p>
   </slide>
   <commentary>
-    <p>We haven't even mentioned the various floating point and SIMD
-    coprocessors, such as <dfn>VFP</dfn> and <dfn>NEON</dfn> respectively.</p>
     <p>Thumb instructions are a 16-bit compressed form of the most commonly
     used ARM instructions. Instructions are (can be) dynamically decompressed
     in the instruction pipeline. Thumb increases code density (commonly by 25%)
@@ -31,7 +29,6 @@
     <p>Thumb-2 is the progression of Thumb (strictly it is Thumb v3). It
     improves performance whilst keeping the code density tight by allowing a
     mixture of 16- and 32-bit instructions.</p>
-    <p>Mixing ARM and Thumb code is called &ldquo;interworking&rdquo;.</p>
   </commentary>
   <footer>
   </heading>

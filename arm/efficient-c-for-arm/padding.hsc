@@ -4,34 +4,39 @@
   <nav>
   <heading>
   <slide>
-    <p>Structures are <dfn>padded</dfn>.</p>
-    <ul>
-      <li>Because of host&rsquo;s data type restrictions.</li>
-      <li>e.g. ARM keeps ints on a 32-bit boundary.</li>
-    </ul>
-    <p>Easy to waste memory if not careful.</p>
+    <p>Structures often end up containing <dfn>padding</dfn>.</p>
+    <dl>
+      <dt>Required because of target&rsquo;s data type restrictions.</dt>
+      <dd>&ndash; e.g. ARM keeps <code>int</code>s on a 32-bit boundary.</dd>
+    </dl>
+    <p>Easy to waste memory if you&rsquo;re not aware of where padding is
+    inserted.</p>
     <p>Solution:</p>
     <ul>
       <li>Sort elements in the structure by size:</li>
       <ul>
-        <li>Small-to-large or large-to-small.</li>
+        <li>Place elements in small-to-large or large-to-small order.</li>
         <li>This minimises the amount of padding.</li>
       </ul>
     </ul>
     <p>The compiler cannot perform this transformation itself as the C standard
     guarantees that structure members will be laid out in the order that
-    they're specified.</p>
+    they&rsquo;re specified.</p>
   </slide>
-  <slide title="Minimising Structure Padding">
+  <examples>
+    <before>
+      <p>Consider the structure:</p>
 <csyntax>struct
 {
   unsigned char type;
   int           product;
   short         delta;
 }</csyntax>
-
-DIAGRAM
-
+      <p>It is laid out in memory like this:</p>
+      <diagram src="padding1.png" alt="Structure layout in memory - before." width="189" height="95">
+    </before>
+    <after>
+      <p>If we sort the structure members by size:</p>
 <csyntax>struct
 {
   int           product;
@@ -39,10 +44,12 @@ DIAGRAM
   unsigned char type;
 }</csyntax>
 
-DIAGRAM
+      <diagram src="padding2.png" alt="Structure layout in memory - before." width="189" height="67">
 
-    <p>Structure has been reduced by four bytes (a third).</p>
-  </slide>
+      <p>The padding can be removed and the structure reduces by four bytes (a
+    third).</p>
+    </after>
+  </examples>
   <footer>
   </heading>
 </page>

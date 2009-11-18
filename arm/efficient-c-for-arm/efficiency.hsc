@@ -8,11 +8,11 @@
     <dl>
       <dt>Competitive advantage</dt>
       <dd>&ndash; Software that runs faster and in less space [than our
-      competitors']</dd>
+      competitors&rsquo;</dd>
 
       <dt>Increased possibilities</dt>
       <dd>&ndash; Increased speed and smaller binaries allow for additional
-      functionality [over our competitors']</dd>
+      functionality [over our competitors&rsquo;]</dd>
 
       <dt>Gets us into more markets</dt>
       <dd>&ndash; A smaller app can run on smaller devices [more devices, more

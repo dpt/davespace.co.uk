@@ -1,6 +1,6 @@
 <* $Id$ *>
 
-<page heading="What's inside various devices?" rev="arm-cores" cur="arm-inside" fwd="arm-test">
+<page heading="What&rsquo;s inside various devices?" rev="arm-cores" cur="arm-inside" fwd="arm-test">
   <nav>
   <heading>
   <slide>

@@ -17,9 +17,9 @@
     made to execute <em>conditionally</em>.</p>
   </slide>
   <commentary>
-    <p>However, certain newer instructions can't be conditionally executed,
-    e.g. <code>PLD</code> or <code>BLX</code>. These are encoded using the
-    obsolete 'NV' (never execute) condition code.</p>
+    <p>However, certain newer instructions can&rsquo;t be conditionally
+    executed, e.g. <code>PLD</code> or <code>BLX</code>. These are encoded
+    using the obsolete &lsquo;NV&rsquo; (never execute) condition code.</p>
     <p>By default, data processing instructions do not affect the condition
     code flags but can be made to by suffixing . The comparison instructions
     <code>CMP</code>, <code>TST</code>, <code>TEQ</code>, etc. do this

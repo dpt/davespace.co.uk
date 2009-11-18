@@ -19,7 +19,7 @@
     </ul>
   </slide>
   <examples>
-    <p>Original routine:</p>
+    <before>
 <csyntax>int search1(int *list, int N, int want)
 {
   int i;
@@ -43,7 +43,8 @@ loop CMP   r3,r1     ; i &lt; N
      BLT   test
      MVN   r0,#0     ; -1
      MOV   pc,lr</armsyntax>
-    <p>Revised routine:</p>
+   </before>
+   <after>
 <csyntax>int search2(int *list, int N, int want)
 {
   int i;
@@ -70,6 +71,7 @@ loop LDR   r12,[r0,r3,LSL #2]
      MOVNE r0,r3
      MVNEQ r0,#0     ; -1
      MOV   pc,lr</armsyntax>
+    </after>
   </examples>
   <commentary>
     <p><dfn>Sentinel</dfn>: Computers. a symbol, mark, or other labelling

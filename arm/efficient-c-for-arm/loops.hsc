@@ -10,7 +10,8 @@
     </ul>
   </slide>
   <examples>
-      <p>Here's a routine to calculate a factorial.</p>
+    <before>
+      <p>Here&rsquo;s a routine to calculate a factorial.</p>
 <csyntax>int fact1(int N)
 {
   int i, fact = 1;
@@ -27,7 +28,8 @@ loop  CMP   r1,r0    ; i &lt;= N
       BLE   loop
       MOV   r0,r2
       MOV   pc,lr</armsyntax>
-
+    </before>
+    <after>
       <p>The revised routine counts down.</p>
 <csyntax>int fact2(int N)
 {
@@ -49,6 +51,13 @@ loop  MUL  r1,r0,r1
         <code>SUBS</code>.</li>
         <li>The inner loop is now an instruction shorter.</li>
       </ul>
+      <p>But do note the subtly different behaviour:</p>
+      <ul>
+        <li>Iterates at least once (ie. N == 0 won&rsquo;t work, causing an
+        infinite loop.)</li>
+        <li>Uses a pre-decrement combined with test.</li>
+      </ul>
+    </after>
   </examples>
   <commentary>
     <p>Inner loop is 4 instructions.</p>
@@ -65,13 +74,6 @@ loop  MUL  r1,r0,r1
     <p><var>i</var> has been removed reducing register pressure.</p>
     <p>The counting up <code>for</code> loop was changed to a counting down
     <code>do .. while</code> loop.</p>
-    <p>But note the subtly different behaviour:</p>
-    <ul>
-      <li>Iterates at least once (ie. N == 0 won&rsquo;t work, causing an
-      infinite loop.)</li>
-      <li>Uses a pre-decrement combined with test.</li>
-    </ul>
-
   </commentary>
   <footer>
   </heading>

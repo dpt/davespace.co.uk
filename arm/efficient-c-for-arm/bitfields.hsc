@@ -12,6 +12,10 @@
 
     <p>On the whole, you&rsquo;re better off using a flags word.</p>
 
+  </slide>
+  <examples>
+    <before>
+
 <csyntax>typedef struct {
   unsigned int hasLasers   : 1;
   unsigned int hasMissiles : 1;
@@ -26,11 +30,11 @@ ShipFlags getShipFlags(const ShipData *d)
          (d-&gt;hasBomb     &lt;&lt; 2) |
          (d-&gt;hasECM      &lt;&lt; 3);
 }</csyntax>
-
 <armsyntax>getShipFlags LDR r0,[r0,#0]
              AND r0,r0,#0xf
              MOV pc,lr</armsyntax>
-
+    </before>
+    <after>
 <csyntax>typedef struct {
   ShipFlags flags;
 } ShipData2;
@@ -42,10 +46,8 @@ ShipFlags getShipFlags2(const ShipData2 *d)
 
 <armsyntax>getShipFlags2 LDR r0,[r0,#0]
               MOV pc,lr</armsyntax>
-
-
-THIS IS NOT A TERRIBLY GOOD EXAMPLE.
-  </slide>
+    </after>
+  </examples>
   <footer>
   </heading>
 </page>

@@ -22,7 +22,7 @@
   </p>
   </slide>
   <commentary>
-    <p>As you'll recall R13 points to the stack.</p>
+    <p>As you&rsquo;ll recall R13 points to the stack.</p>
     <dl>
       <dt><code>FD</code> = Full Descending</dt>
       <dd><code>STMFD</code>/<code>LDMFD</code> = <code>STMDB</code>/<code>LDMIA</code></dd>

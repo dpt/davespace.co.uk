@@ -16,11 +16,12 @@
     significantly reduce code efficiency.</p>
   </slide>
   <examples>
-  <csyntax>void timers1(int *t1, int *t2, int *step)
+    <before>
+      <csyntax>void timers1(int *t1, int *t2, int *step)
 {
   *t1 += *step;
   *t2 += *step;
-}</csyntax> REWRITE
+}</csyntax>
 <armsyntax>timers1 LDR r3,[r0]   ; r3 = *t1
         LDR r12,[r2]  ; r12 = *step
         ADD r3,r3,r12 ; r3 += r12
@@ -30,20 +31,23 @@
         ADD r0,r0,r2  ; r0 += r2
         STR r0,[r1]   ; *t2 = r0
         MOV pc,r14</armsyntax>
-    <p>You'd expect <code>*step</code> to be pulled from memory once and used
-    twice. <strong>That does not happen.</strong></p>
-  <csyntax>void timers2(int *t1, int *t2, int *step)
+      <p>You&rsquo;d expect <code>*step</code> to be pulled from memory once and
+      used twice. <strong>That does not happen.</strong></p>
+    </before>
+    <after>
+      <csyntax>void timers2(int *t1, int *t2, int *step)
 {
   int s = *step;
   *t1 += s;
   *t2 += s;
-}</csyntax> REWRITE
+}</csyntax>
 <armsyntax>timers2 ... ; FILL ME IN
         MOV pc,r14</armsyntax>
+    </after>
   </examples>
   <commentary>
-  <p>This is from section 5.6 of <a href="references.html">ARM System
-    Developer&rsquo;s Guide.</a></p>
+  <p>This is from section 5.6 of <a href="references.html#asdg">ARM System
+    Developer&rsquo;s Guide</a>.</p>
   </commentary>
   <footer>
   </heading>

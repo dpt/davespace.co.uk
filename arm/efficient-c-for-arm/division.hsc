@@ -5,8 +5,8 @@
   <heading>
   <slide>
     <p>Like floating point, division is also <strong>emulated</strong>.</p>
-    <p>It's implemented by two runtime library functions. In ADS they're
-    called:</p>
+    <p>It&rsquo;s implemented by two runtime library functions. In ARM&rsquo;s
+    tools they&rsquo;re called:</p>
     <ul>
       <li><tt>__rt_sdiv</tt> for signed values.</li>
       <li><tt>__rt_udiv</tt> for unsigned values.</li>
@@ -16,7 +16,7 @@
       <li>10-100&times; slower than equivalent shift operations (20-140 cycles)
       depending on the values.</li>
     </ul>
-    <p>It's not always so bad for divisions by a constant:</p>
+    <p>It&rsquo;s not always so bad for divisions by a constant:</p>
     <ul>
       <li>Often optimised away by the compiler.</li>
       <li>If you divide by a power of two the compiler may be able to emit a

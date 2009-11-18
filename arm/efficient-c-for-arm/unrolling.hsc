@@ -21,7 +21,8 @@
   </ul>
   </slide>
   <examples>
-  <p>Before unrolling:</p>
+    <before>
+      <p>Before unrolling:</p>
 <csyntax>int countbits1(unsigned int N)
 {
   int nbits = 0;
@@ -31,8 +32,10 @@
   }
   return nbits;
 }</csyntax>
-  <p>9 instructions, 6 cycles/bit.</p>
-  <p>After unrolling:</p>
+      <p>9 instructions, 6 cycles/bit.</p>
+    </before>
+    <after>
+      <p>After unrolling:</p>
 <csyntax>int countbits2(unsigned int N)
 {
   int nbits = 0;
@@ -45,15 +48,16 @@
   }
   return nbits;
 }</csyntax>
-  <p>15 instructions, 3 cycles/bit.</p>
+      <p>15 instructions, 3 cycles/bit.</p>
+    </after>
   </examples>
   <commentary>
     <p>See <a class="external"
       href="http://en.wikipedia.org/wiki/Loop_unwinding">Loop unwinding</a> on
     Wikipedia.</p>
     <p>See <a class="external"
-      href="http://en.wikipedia.org/wiki/Duff's_device">Duff's Device</a> on
-    Wikipedia.</p>
+      href="http://en.wikipedia.org/wiki/Duff's_device">Duff&rsquo;s Device</a>
+    on Wikipedia.</p>
   </commentary>
   <footer>
   </heading>

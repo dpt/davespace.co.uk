@@ -90,6 +90,13 @@ BLOCKQUOTE {
 P,DL,PRE,BLOCKQUOTE {
 	margin-bottom: 0.5em;
 }
+ABBR,ACRONYM {
+	border-bottom: 1px dotted #ccc;
+	cursor: help;
+}
+ABBR {
+	font-size: 90%;
+}
 
 /******************************************************************************/
 /* LINKS																	  */
@@ -213,6 +220,15 @@ DIV#content > DIV.commentary {
 	margin-bottom: 2em;
 }
 
+DIV#content > DIV.examples > DIV.before {
+	padding-bottom: 69px;
+	margin-bottom: 3px;
+	background: transparent url(img/arr-down.png) no-repeat center bottom;
+}
+
+DIV#content > DIV.examples > DIV.after {
+}
+
 DIV#content UL {
 	margin-bottom: 0.5em;
 	margin-left: 1em;
@@ -289,6 +305,16 @@ DIV#content DL.books > DD > IMG {
 	height: 16px;
 	width: 16px;
 	margin: 8px 0 0 8px;
+}
+
+#logo {
+	background: transparent url(img/logo.png) no-repeat 50% 20px;
+	height: 233px;
+	left: 0;
+	padding: 20px 20px 0 20px;
+	position: absolute;
+	top: 0;
+	width: 185px;
 }
 
 DIV#content > H1,

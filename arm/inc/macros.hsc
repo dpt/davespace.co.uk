@@ -156,8 +156,24 @@
 </div>
 </$macro>
 
+<$macro before>
+<div class="before">
+</$macro>
+
+<$macro /before>
+</div>
+</$macro>
+
+<$macro after>
+<div class="after">
+</$macro>
+
+<$macro /after>
+</div>
+</$macro>
+
 <$macro commentary>
-<h3>Comments</h3>
+<h3>Remarks</h3>
 <div class="commentary">
 </$macro>
 
@@ -170,8 +186,8 @@
   <| <p id="close"><a href="#" onclick="(function(){var x=document.getElementById('close').parentElement;x.parentElement.removeChild(x);})();"><span>Close this note.</span></a></p> |>
   <p>These pages are a work in progress. I am currently converting them from
   their original PowerPoint format into HTML. References may still remain to my
-  employer's technology and environment which will be pruned or replaced in due
-  course.</p>
+  employer&rsquo;s technology and environment which will be pruned or replaced
+  in due course.</p>
   <p>If you have any suggestions to improve it you can email me at <em>dave at
   davespace dot co dot uk</em>.</p>
 </div>

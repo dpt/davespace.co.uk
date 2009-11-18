@@ -53,7 +53,8 @@
     </ul>
   </examples>
   <commentary>
-    <p>This is from ARM System Developer's Guide section 5.2.2.</p>
+    <p>This is from <a href="references.html#asdg">ARM System Developer&rsquo;s
+      Guide</a> section 5.2.2.</p>
     <ul>
       <li>This sort of behaviour differs from toolchain to toolchain.</li>
       <li>It makes it hard to mix objects reliably between compilers.</li>

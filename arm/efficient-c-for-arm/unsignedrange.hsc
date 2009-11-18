@@ -15,6 +15,7 @@
     <p>Eliminates branching.</p>
   </slide>
   <examples>
+  <before>
   <csyntax>int insideRange1(int v, int min, int max)
 {
   return v &gt;= min &amp;&amp; v &lt; max;
@@ -27,6 +28,8 @@
 |L1.20|
              MOV   r0,#0
              MOV   pc,lr</armsyntax>
+  </before>
+  <after>
 <csyntax>int insideRange2(int v, int min, int max)
 {
   return (unsigned) (v - min) &lt; (max - min);
@@ -37,6 +40,7 @@
              MOVCS r0,#0
              MOVCC r0,#1
              MOV   pc,lr</armsyntax>
+  </after>
   </examples>
   <commentary>
     <p>In some cases the compiler can make this transformation itself.</p>
