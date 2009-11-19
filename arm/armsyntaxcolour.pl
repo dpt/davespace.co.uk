@@ -6,29 +6,31 @@
 
 binmode STDOUT;
 
-@lines = <>;
-#chomp(@lines);
-$lines = join("", @lines);
+while ($line = <>) {
+    chomp($line);
 
-# separate comments field
-#
-# if (m/;/) ?
+    # use a split limit so that any ;'s in comments will be ignored
+    ($command, $comment) = split("; ", $line, 2);
 
-# ARM constants
-$lines =~ s!(\b[0-9]+\b)!<span class="decval">$1</span>!g;
-# ARM hex constants
-$lines =~ s!(\b0x[0-9A-Fa-f]+\b)!<span class="decval">$1</span>!g;
-# ARM comments
-$lines =~ s!(;.*)!<span class="comment">$1</span>!g;
-# ARM mnemonics
-$lines =~ s!\b(((MOV)|(MVN)|(ADD)|(ADC)|(SUB)|(SBC)|(RSB)|(RSC)|(AND)|(EOR)|(ORR)|(BIC)|(CMP)|(CMN)|(TST)|(TEQ)|(B)|(BL)|(BX)|(MUL)|(MLA)|(UMULL)|(UMLAL)|(SMULL)|(SMLAL)|(LDR)|(STR)|(LDM)|(STM)|(ADR))[A-Z]*)\b!<span class="keyword">$1</span>!g;
-$lines =~ s!\b((LSL)|(LSR)|(ASR)|(ROR)|(RRX))\b!<span class="keyword">$1</span>!g;
+    if (defined $command) {
+        # unescape HTML entities? (then reescape afterwards)
 
-# match 1 or 0 times
+        # integer constants
+        $command =~ s!(\b[0-9]+\b)!<span class="decval">$1</span>!g;
+        # hex constants
+        $command =~ s!(\b0x[0-9A-Fa-f]+\b)!<span class="decval">$1</span>!;
+        # mnemonics
+        $command =~ s!\b(((MOV)|(MVN)|(ADD)|(ADC)|(SUB)|(SBC)|(RSB)|(RSC)|(AND)|(EOR)|(ORR)|(BIC)|(CMP)|(CMN)|(TST)|(TEQ)|(B)|(BL)|(BX)|(MUL)|(MLA)|(UMULL)|(UMLAL)|(SMULL)|(SMLAL)|(LDR)|(STR)|(LDM)|(STM)|(ADR))[A-Z]*)\b!<span class="keyword">$1</span>!;
+        $command =~ s!\b((LSL)|(LSR)|(ASR)|(ROR)|(RRX))\b!<span class="keyword">$1</span>!;
 
-#(mem suffixes)
-#LSL LSR ASR ROR RRX
-#IA IB DA DB FD ED FA EA
+        # |.*| labels
 
-print $lines;
+        #(mem suffixes)
+        #IA IB DA DB FD ED FA EA
+    }
+
+    print "$command" if (defined $command);
+    print "; <span class=\"comment\">$comment</span>" if (defined $comment);
+    print "\n";
+}
 
