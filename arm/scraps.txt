@@ -6,13 +6,13 @@ notes
   merge first two pages together?
 x darken code example text colour (joty)
 x syntax colour examples (tlsa)
-  green+yellow doesn't work for the colourblind (rjek)
+x green+yellow doesn't work for the colourblind (rjek)
   statement about armcc making better use of conditional execution questioned (rjek)
 x ASR != << (jmb)
 x add a changelog + version
-  answers for tasks
+x answers for tasks
   amazon referrer thing for books
-  syntax colour branch.hsc, conditional.hsc, thumb-example.hsc
+x syntax colour branch.hsc, conditional.hsc, thumb-example.hsc
 
 
 

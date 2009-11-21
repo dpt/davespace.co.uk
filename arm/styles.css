@@ -59,6 +59,16 @@ TABLE {
 	border-spacing: 0;
 }
 
+SUP {
+	font-size: 50%;
+	vertical-align: top;
+}
+
+SUB {
+	font-size: 50%;
+	vertical-align: bottom;
+}
+
 /******************************************************************************/
 /* BASIC TAGS                                                                 */
 /******************************************************************************/
@@ -300,21 +310,9 @@ DIV#content DL.books > DD > IMG {
 }
 
 /* Home icon */
-#masthead > A > IMG {
+#masthead IMG {
 	display: block;
-	height: 16px;
-	width: 16px;
 	margin: 8px 0 0 8px;
-}
-
-#logo {
-	background: transparent url(img/logo.png) no-repeat 50% 20px;
-	height: 233px;
-	left: 0;
-	padding: 20px 20px 0 20px;
-	position: absolute;
-	top: 0;
-	width: 185px;
 }
 
 DIV#content > H1,

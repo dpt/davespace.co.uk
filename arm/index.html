@@ -11,15 +11,16 @@
 <body>
   <div id="content">
 
+    <div id="masthead"><img src="img/logolg.png" width="208" height="263" alt="Home" /></div>
     <h1>ARM Training</h1>
-    <div id="masthead"></div>
-    <div id="logo"></div>
 
+    <h2>Hello</h2>
     <div class="slide">
-      <p>Here are two courses written to introduce my former colleagues at <a
-        class="external" href="http://www.picsel.com/">Picsel Technologies</a>
-      to the joys of programming in <a class="external"
-        href="http://www.arm.com/">ARM assembly language</a>.</p>
+      <p>Here are two training courses originally written to introduce my
+      former colleagues at <a class="external"
+        href="http://www.picsel.com/">Picsel</a> to the joys of programming in
+      <a class="external" href="http://www.arm.com/">ARM assembly
+        language</a>.</p>
       <dl>
         <dt><a href="introduction-to-arm/index.html">Introduction to ARM</a></dt>
         <dd>The first course introduces the reader to ARM assembly
@@ -31,40 +32,81 @@
         <dd>The second course is about tuning. It looks at how we can produce
         efficient ARM code by altering the way we write our C code.</dd>
       </dl>
-      <p>The courses were presented to over 70 engineers in Glasgow, Edinburgh,
-      Reading, Malaysia and Korea.</p>
+      <p>The courses were presented to over 70 engineers in the UK (Glasgow,
+      Edinburgh, Reading), Malaysia (Kuala Lumupr) and Korea (Seoul).</p>
       <p>When delivered, each course would usually take three hours to run
       through. The course would be presented sandwich style: two lecture parts
       and a delicious centre filling where the student gets to experiment with
       some small routines.</p>
     </div>
-    <h2>Caveats</h2>
+    <h2>Some caveats</h2>
     <div class="slide">
-      <p>The courses were manually converted across from the PowerPoint slides
-      and separate trainer's notes I used when presenting the courses. This may
-      show in the terseness of some of the pages.  Some detail is sacrificed
-      for the sake of making a point.</p>
+      <p>The courses have been (manually) converted across from the PowerPoint
+      slides and separate trainer's notes I used when presenting the courses.
+      This may show in the terseness of some of the pages. Some detail is
+      sacrificed for the sake of making a point.</p>
       <p>Some closely related sections have been merged together, some were
-      left separate. Some pages are of substantially different lengths.</p>
+      left separate. Some of the pages are of substantially different
+      lengths.</p>
       <p>Over time I'll rework the content to better suit its new format.</p>
-      <p>The courses were written for an environment where ARM Developer Suite
-      (ADS) was available, so all of the assembler examples are in ADS format.
-      If you intend to try the examples on a more affordable compiler, such as
-      <a class="external" href="http://gcc.gnu.org/">GCC</a>, you will need to
-      use <a class="external" href="http://microcross.com/GNU-ARM-Assy-Quick-Ref.pdf">GNU ARM assembler
-        syntax</a>.</p>
-      <p>Assembler examples were compiled with ADS 1.2's armcc and GCC 2.95.
-      You will find that other compilers produce different code, of varying
-      quality.</p>
+    </div>
+    <h2>Toolchains</h2>
+    <div class="slide">
+      <p>The courses were written for an environment where the <a
+        class="external"
+        href="http://www.arm.com/products/DevTools/ADS.html">ARM Developer
+        Suite</a> (ADS) was available, so all of the assembler examples are in
+      ADS format.  If you intend to try the examples on a more affordable
+      compiler, such as <a class="external" href="http://gcc.gnu.org/">GCC</a>,
+      you will need to use <a class="external"
+        href="http://microcross.com/GNU-ARM-Assy-Quick-Ref.pdf">GNU ARM
+        assembler syntax</a>.</p>
+      <p>Assembler examples were compiled with (the now rather old pair of) ADS
+      1.2's armcc and GCC 2.95.2. You will find that other compilers produce
+      different code, of varying quality. (In my experience WinCE's compiler in
+      particular generates some particularly poor code).</p>
+    </div>
+    <h2>Changelog</h2>
+    <div class="slide">
+      <p>Most recent changes first.</p>
+      <dl>
+        <dt>19<sup>th</sup> November 2009</dt>
+        <dd>&ndash; New front logo (<a class="external"
+          href="http://fontfabric.com/?p=585">font</a>).</dd>
+        <dd>&ndash; Assembler syntax colouring improved. It no longer highlights
+        things inside of comments.</dd>
+
+        <dt>October/November 2009</dt>
+        <dd>&ndash; Various changes I've forgotten to note properly, including...</dd>
+        <dd>&ndash; The C code examples are now automatically syntax coloured
+        using <a class="external"
+          href="http://search.cpan.org/~szabgab/Syntax-Highlight-Engine-Kate-0.06/">Syntax-Highlight-Engine-Kate</a>.</dd>
+        <dd>&ndash; Assembler examples coloured too, using a not very good
+        script of my own.</dd>
+
+        <dt>25<sup>th</sup> October 2009</dt>
+        <dd>&ndash; Changelog started. :-)</dd>
+        <dd>&ndash; Darkened the text colour of <code>&lt;CODE&gt;</code>
+        elements. (joty)</dd>
+        <dd>&ndash; Syntax coloured the code in <a href="task-one.html">Task
+          One</a> using Vim (<code>:tohtml</code>). (tlsa)</dd>
+        <dd>&ndash; <code>ASR</code> != &lt;&lt; &mdash; cut and paste error.
+        (jmb)</dd>
+      </dl>
     </div>
     <h2>Credits</h2>
     <div class="slide">
       <p>Many thanks go to the following kind souls for reviewing the
       content and making suggestions:</p>
       <ul>
+        <li>Alex Macfarlane Smith</li>
+        <li>Christopher Bazley</li>
         <li>Graham Borland</li>
+        <li>John Tytgat</li>
+        <li>John-Mark Bell</li>
         <li>Justin Fletcher</li>
         <li>Matt Holgate</li>
+        <li>Michael Drake</li>
         <li>Robin Watts</li>
       </ul>
     </div>

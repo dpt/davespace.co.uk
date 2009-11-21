@@ -112,10 +112,10 @@
 </$macro>
 
 <$macro heading>
+<div id="masthead"><a href="../index.html"><img src="../img/logo.png" width="104" height="132" alt="Home" /></a></div>
 <div id="content">
   <h1><a href="index.html"><(pagegroup)></a></h1>
   <h2><(pageheading)></h2>
-  <div id="masthead"><a href="../index.html"><img src="../img/home.png" width="16" height="16" alt="Home" /></a></div>
 </$macro>
 
 <$macro /heading>
