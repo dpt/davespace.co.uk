@@ -6,12 +6,13 @@
   <heading>
 
   <slide>
-    <p>This course is all about tuning your code. It's about how you can
+    <p>This course is all about tuning your code. It&rsquo;s about how you can
     improve your C specifically for ARM CPUs so that it runs faster, takes up
     less space or possibly both.</p>
 
-    <p>The first half covers basic optimisations. Theoretically most of these
-    improvements should apply to the majority of CPUs.</p>
+    <p>After groundwork, the first half covers basic optimisations.
+    Theoretically most of these improvements should apply to the majority of
+    CPUs.</p>
 
     <p>The second half introduces techniques which tend to rely on the specific
     nature of the ARM architecture to improve the code.</p>

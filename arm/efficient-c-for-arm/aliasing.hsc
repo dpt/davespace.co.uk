@@ -57,8 +57,10 @@ timers2 LDR r2,[r2]  ; R2 = *step
     </after>
   </examples>
   <commentary>
-    <p>C99's <code>restrict</code> qualifier goes some way towards mitigating
-    the effects of pointer aliasing.</p>
+    <p>C99&rsquo;s <code>restrict</code> qualifier goes some way towards
+    mitigating the effects of pointer aliasing. <a class="external"
+    href="http://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html">Understanding
+    strict aliasing.</a></p>
     <p>This is from section 5.6 of <a href="references.html#asdg">ARM System
       Developer&rsquo;s Guide</a>.</p>
   </commentary>
