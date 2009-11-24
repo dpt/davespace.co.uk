@@ -15,6 +15,16 @@ x answers for tasks
 x syntax colour branch.hsc, conditional.hsc, thumb-example.hsc
 
 
+sbrodie:
+
+I read all of the first part, and most of the second part.  Excellent
+slides, I thought.  In all of what I read, I didn't spot any real errors
+which, given the amount of material there, is amazing.  I spotted just one
+minor inefficiency (in a sample answer, a MOVEQ pc, r14 can be removed if
+you make the next instruction SUBNES) and one bit of implementation-defined
+C that wasn't noted as such (right shift of signed int).
+
+
 
 scraps of css
 ~~~~~~~~~~~~~

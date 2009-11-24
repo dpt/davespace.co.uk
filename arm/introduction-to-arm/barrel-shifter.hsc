@@ -28,7 +28,7 @@
           <diagram src="barrel-asr0.png" alt="ASR +ve" width="159" height="118">
           <diagram src="barrel-asr1.png" alt="ASR -ve" width="159" height="118">
           e.g. signed division by a power of 2.<br />
-          Equivalent to <code>&gt;&gt;</code> in C.
+          Equivalent to <code>&gt;&gt;</code> in C.<a href="#implementationdefined">&dagger;</a>
         </td>
       </tr>
       <tr>
@@ -54,6 +54,11 @@
     couple of those operations.</p>
     <p>Certain ARM instructions such as <code>MUL</code>, <code>CLZ</code> and
     <code>QADD</code> cannot use the barrel shifter.</p>
+    <p id="implementationdefined">&dagger; Note that right shifting negative
+    signed quantities is strictly <dfn>implementation defined</dfn> behaviour
+    in C. The compiler is allowed to choose whether it performs a logical or an
+    arithmetic shift. (That said, it&rsquo;s always an arithmetic shift in all
+    of the ARM toolchains the author&rsquo;s used.)</p>
   </commentary>
   <footer>
   </heading>
