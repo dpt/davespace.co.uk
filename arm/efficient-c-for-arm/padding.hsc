@@ -7,7 +7,7 @@
     <p>Structures often end up containing <dfn>padding</dfn>.</p>
     <dl>
       <dt>Required because of target&rsquo;s data type restrictions.</dt>
-      <dd>&ndash; e.g. ARM keeps <code>int</code>s on a 32-bit boundary.</dd>
+      <dd>&ndash; e.g. <ARM> keeps <code>int</code>s on a 32-bit boundary.</dd>
     </dl>
     <p>Easy to waste memory if you&rsquo;re not aware of where padding is
     inserted.</p>

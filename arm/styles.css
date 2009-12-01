@@ -101,10 +101,11 @@ P,DL,PRE,BLOCKQUOTE {
 	margin-bottom: 0.5em;
 }
 ABBR,ACRONYM {
-	border-bottom: 1px dotted #ccc;
+	border-bottom: 1px solid #ddd;
 	cursor: help;
 }
-ABBR {
+ACRONYM
+{
 	font-size: 90%;
 }
 

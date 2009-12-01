@@ -22,8 +22,8 @@
     </ul>
   </slide>
   <slide title="AAPCS Registers">
-    <p>AAPCS is the ARM Architecture Procedure Calling Standard. It is a
-    convention which allows high level languages to interwork.</p>
+    <p><AAPCS> is the <dfn>ARM Architecture Procedure Calling Standard</dfn>.
+    It is a convention which allows high level languages to interwork.</p>
     <p>It&rsquo;s had a number of different names over the years:</p>
     <ul>
       <li>APCS &rarr; ARM Procedure Calling Standard.</li>

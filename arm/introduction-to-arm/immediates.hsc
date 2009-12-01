@@ -5,10 +5,10 @@
 <heading>
 <slide>
   <p>You can&rsquo;t fit an arbitrary 32-bit value into a 32-bit instruction
-  word. ARM data processing instructions have 12 bits of space for values in
+  word. <ARM> data processing instructions have 12 bits of space for values in
   their instruction word. This is arranged as a four-bit rotate value and an
-  eight-bit immediate value:</p>
-  <diagram src="immediate.png" alt="Immediate values." width="544" height="238">
+  eight-bit immediate value:</p> <diagram src="immediate.png" alt="Immediate
+  values." width="544" height="238">
   <p>The 4-bit rotate value stored in bits 11-8 is multiplied by two giving a
   range of 0-30 in steps of two.</p>
   <p>Using this scheme we can express immediate constants such as:</p>
@@ -33,9 +33,10 @@
   r0,#0xFFFFFFFF</code> could be assembled as <code>MVN r0,#0</code>.</p>
 </slide>
 <commentary>
-  <p>The impact of this is that some constants are &ldquo;ARM friendly&rdquo;.
-  Some are not. Study of the numbers you&rsquo;re using can sometimes reveal
-  scope for <a href="../efficient-c-for-arm/biasing.html">optimisation</a>.</p>
+  <p>The impact of this is that some constants are &ldquo;<ARM>
+  friendly&rdquo;. Some are not. Study of the numbers you&rsquo;re using can
+  sometimes reveal scope for <a
+    href="../efficient-c-for-arm/biasing.html">optimisation</a>.</p>
 </commentary>
 <slide title="Loading Wide Values">
   <p>You can form constants wider than those available in a single instruction

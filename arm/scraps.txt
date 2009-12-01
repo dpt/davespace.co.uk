@@ -25,6 +25,10 @@ you make the next instruction SUBNES) and one bit of implementation-defined
 C that wasn't noted as such (right shift of signed int).
 
 
+tlsa:
+
+spanners: there's an abbr on CPSR with no title on http://www.davespace.co.uk/arm/introduction-to-arm/organisation.html
+
 
 scraps of css
 ~~~~~~~~~~~~~

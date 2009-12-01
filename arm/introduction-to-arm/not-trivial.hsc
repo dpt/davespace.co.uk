@@ -28,12 +28,13 @@
 
   <commentary>
     <p>
-      SIMD = Single Instruction Multiple Data.<br/>
-      MAC = Multiply Accumulate.
+      <wiki subj="SIMD">SIMD</wiki> = Single Instruction Multiple Data.<br/>
+      <wiki subj="Multiply-accumulate">MAC</wiki> = Multiply Accumulate.
     </p>
     <p>
       C compilers aren&rsquo;t capable of producing every operation which a CPU
-      can perform. Many compilers have <dfn>intrinsics</dfn>, which look like
+      can perform. Many compilers have <wiki
+      subj="Intrinsic_function"><dfn>intrinsics</dfn></wiki>, which look like
       functions but emit the desired operations into the instruction stream.
       But no language can provide complete coverage for every CPU.
     </p>
@@ -44,10 +45,9 @@
       compiler could have produced.
     </p>
     <p>
-      The <a class="external"
-        href="http://en.wikipedia.org/wiki/Pareto_principle">80-20 rule</a>:
-      80% of the time is spent executing 20% of the program.  Concentrate on
-      the 20%. It&rsquo;s a rule of thumb.
+      The <wiki subj="Pareto_principle">80-20 rule</wiki>: 80% of the time is
+      spent executing 20% of the program.  Concentrate on the 20%. It&rsquo;s a
+      rule of thumb.
     </p>
   </commentary>
 

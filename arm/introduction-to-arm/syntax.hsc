@@ -26,10 +26,12 @@
     identical.</p>
     <p>In the syntax line, curly brackets indicate optional parts.</p>
     <p>Leftmost register <code>Rd</code> is the destination.</p>
-    <p>Instructions are generally single-cycle (except write to <abbr>PC</abbr>
+    <p>Instructions are generally single-cycle (except write to <abbr
+      title="Program Counter">PC</abbr>
     and register-controlled shift).</p>
-    <p>There is a <a class="external" href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</a> form for the assembly which ARM have recently
-    introduced called <abbr title="Unified Assembler Language">UAL</abbr>
+    <p>There is a <a class="external"
+      href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</a>
+    form for the assembly which <ARM> have recently introduced called <UAL>
     (Unified Assembler Language), which allows the condition code to go after
     the flags.</p>
   </commentary>

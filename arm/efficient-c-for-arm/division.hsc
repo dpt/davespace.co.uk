@@ -5,8 +5,8 @@
   <heading>
   <slide>
     <p>Like floating point, division is also <strong>emulated</strong>.</p>
-    <p>It&rsquo;s implemented by two runtime library functions. In ARM&rsquo;s
-    tools they&rsquo;re called:</p>
+    <p>It&rsquo;s implemented by two runtime library functions. In
+    <ARM>&rsquo;s tools they&rsquo;re called:</p>
     <ul>
       <li><tt>__rt_sdiv</tt> for signed values.</li>
       <li><tt>__rt_udiv</tt> for unsigned values.</li>

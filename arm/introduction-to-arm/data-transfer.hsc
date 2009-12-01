@@ -46,13 +46,13 @@
       <li>16-bit half-words must be 2-byte aligned.</li>
       <li>Bytes &ndash; no restriction.</li>
     </ul>
-    <p>This restriction was relaxed in v6.</p>
+    <p>This restriction was relaxed in <ARMv6>.</p>
   </slide>
   <commentary>
     <p>Values can only be loaded from, or stored to, memory at a multiple of
     that type size. For example, a half-word can only be loaded from even
-    addresses. (Doubles are an exception and can live on 4-byte boundaries in
-    some architecture versions).</p>
+    addresses. (<code>double</code>s are an exception and can live on 4-byte
+    boundaries in some architecture versions).</p>
   </commentary>
   <footer>
   </heading>

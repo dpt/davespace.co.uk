@@ -10,7 +10,7 @@
       <li>Compare current key against desired key.</li>
     </ul>
     <p>That&rsquo;s two flow conditions inside a tight loop, which is bad on
-    modern pipelined CPUs.</p>
+    modern pipelined <CPU>s.</p>
     <p>Solution:</p>
     <ul>
       <li>Augment the array with the desired value at the end.</li>

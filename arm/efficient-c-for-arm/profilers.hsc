@@ -5,7 +5,7 @@
   <heading>
   <slide>
     <p>When profiling on x86 don&rsquo;t expect the results to be accurate for
-    ARM.</p>
+    <ARM>.</p>
     <ul>
       <li>Strengths and weaknesses of the platform will affect results.</li>
     </ul>

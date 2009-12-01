@@ -5,12 +5,13 @@
   <heading>
   <slide>
   <dl>
-    <dt>ARM instructions are able to encode a limited range of immediate
+    <dt><ARM> instructions are able to encode a limited range of immediate
     values.</dt>
     <dd>For example, a single instruction can encode the integer constant 0x33
     but not 0xE33.</dd>
     <dt>When dealing with numbers restricted to a certain range it may be worth
-    biasing the values so that they can fit in ARM&rsquo;s available range.</dt>
+    biasing the values so that they can fit in <ARM>&rsquo;s available
+    range.</dt>
   </dl>
   </slide>
   <examples>

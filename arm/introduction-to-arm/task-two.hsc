@@ -4,7 +4,7 @@
   <nav>
   <heading>
   <slide title="Compute a Factorial">
-    <p>Write, from scratch, your own ARM assembly language routine to compute
+    <p>Write, from scratch, your own <ARM> assembly language routine to compute
     the factorial of an input number <var>N</var>.</p>
     <ul>
       <li>Don&rsquo;t worry about the N == 0 case: just get the basics

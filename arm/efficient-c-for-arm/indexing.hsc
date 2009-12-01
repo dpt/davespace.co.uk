@@ -37,7 +37,7 @@
   return -1; /* default case */
 }</csyntax>
 
-  <p>ARMCC <tt>-O2</tt> <tt>-Otime</tt> outputs the following:</p>
+    <p><ARMCC> <tt>-O2</tt> <tt>-Otime</tt> outputs the following:</p>
 <armsyntax>nameToNumber3 STMFD    sp!,{r4-r6,lr}
               LDR      r4,=mapaddr     ; address of ‘map’
               MOV      r6,r0           ; stash copy of name

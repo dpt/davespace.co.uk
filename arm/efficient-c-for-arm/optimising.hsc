@@ -4,8 +4,8 @@
   <nav>
   <heading>
   <slide>
-    <p>The goal is to write C code which compiles into perfect, efficient, ARM
-    code which:</p>
+    <p>The goal is to write C code which compiles into perfect, efficient,
+    <ARM> code which:</p>
     <ul>
       <li>Runs as fast as possible, and</li>
       <li>Is as small as possible.</li>

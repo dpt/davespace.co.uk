@@ -39,7 +39,8 @@
   </examples>
   <commentary>
     <p>The <var>&lt;address&gt;</var> form is a pseudo instruction: the
-    assembler generates a PC-relative <code>LDR</code> or <code>STR</code>.</p>
+    assembler generates a <PC>-relative <code>LDR</code> or
+    <code>STR</code>.</p>
     <p>For halfword and signed halfword/byte instructions, which were later
     additions to the instruction set, the offset is restricted and can be:
       <ul>

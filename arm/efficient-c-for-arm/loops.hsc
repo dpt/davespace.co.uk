@@ -19,7 +19,7 @@
     fact *= i;
   return fact;
 }</csyntax>
-      <p>Compiled by ARM ADS:</p>
+      <p>Compiled by <ARM> <ADS>:</p>
 <armsyntax>fact1 MOV   r2,#1    ; fact
       MOV   r1,#1    ; i
 loop  CMP   r1,r0    ; i &lt;= N
@@ -39,7 +39,7 @@ loop  CMP   r1,r0    ; i &lt;= N
   while (--N != 0);
   return fact;
 }</csyntax>
-      <p>Compiled by ARM ADS:</p>
+      <p>Compiled by <ARM> <ADS>:</p>
 <armsyntax>fact2 MOV  r1,#1
 loop  MUL  r1,r0,r1
       SUBS r0,r0,#1

@@ -4,7 +4,7 @@
   <nav>
   <heading>
   <slide>
-    <p>ARM data processing are 32-bit.</p>
+    <p><ARM> data processing is 32-bit.</p>
     <ul>
       <li>Use a 32-bit data type for local variables.</li>
       <li>Avoid <code>char</code> and <code>short</code> as local variable
@@ -44,7 +44,7 @@ loop
     <p>You might think <code>char</code> is an efficient choice for
     <var>i</var>; using less stack space or register space than an
     <code>int</code> might.</p>
-    <p>On the ARM, this is wrong:</p>
+    <p>On the <ARM>, this is wrong:</p>
     <ul>
       <li>Stack entries are at least 32 bits wide.</li>
       <li>Registers are 32 bits wide.</li>

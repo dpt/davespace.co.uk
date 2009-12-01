@@ -15,10 +15,10 @@
       it.</li>
       <li>It <code>BL</code>&rsquo;s to routine C. (R14 &larr; return address,
       PC &larr; Routine C).</li>
-      <li>Routine C does its work, then returns using MOV pc,r14. Its return
-      value is passed back in R0. R1 is corrupted. (R0..R3 are allowed to be
-      corrupted in <abbr title="ARM Architecture Procedure Calling Standard">AAPCS</abbr>).</li>
-      <li>We return to Routine C after the <code>BL</code> instruction.</li>
+      <li>Routine C does its work, then returns using <code>MOV pc,r14</code>.
+      Its return value is passed back in R0. R1 is corrupted. (R0..R3 are
+      allowed to be corrupted in <AAPCS>).</li>
+      <li>We return to Routine B after the <code>BL</code> instruction.</li>
       <li>It restores R14 from the stack.</li>
       <li>A return is effected and we end up at the instruction after the
       original <code>BL</code>.</li>

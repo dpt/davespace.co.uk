@@ -4,7 +4,8 @@
   <nav>
   <heading>
   <slide>
-    <p>Floating Point is usually <strong>emulated</strong> on ARM systems.</p>
+    <p>Floating Point is usually <strong>emulated</strong> on <ARM>
+    systems.</p>
     <ul>
       <li>Slow.
       <ul>
@@ -15,7 +16,7 @@
     </ul>
     <p>Possible solution:</p>
     <ul>
-      <li><a class="external" href="http://en.wikipedia.org/wiki/Fixed-point_arithmetic"><dfn>Fixed point</dfn> maths</a>.
+      <li><wiki subj="Fixed-point_arithmetic"><dfn>Fixed point</dfn> maths</wiki>.
       <ul>
         <li>Requires more thought.</li>
         <li>Consequently more error prone.</li>

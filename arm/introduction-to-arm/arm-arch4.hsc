@@ -18,9 +18,9 @@
   <commentary>
   <p>This is the first architecture to have a full formal definition.</p>
   <ul>
-    <li>Ops which yielded pc+12 in earlier ARMs are declared
+    <li>Ops which yielded <PC>+12 in earlier <ARM>s are declared
     UNPREDICTABLE.</li>
-    <li>Reserves some of the SWI space for architecturally-defined
+    <li>Reserves some of the <SWI> space for architecturally-defined
     operations.</li>
 </ul>
   </commentary>

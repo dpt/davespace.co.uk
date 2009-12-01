@@ -22,16 +22,14 @@
   <commentary>
     <p>A couple of definitions:</p>
     <ul>
-      <li>Acting or producing effectively with a minimum of waste, expense, or unnecessary effort.</li>
+      <li>Acting or producing effectively with a minimum of waste, expense, or
+      unnecessary effort.</li>
       <li>Exhibiting a high ratio of output to input.</li>
     </ul>
     <p>Moore&rsquo;s law defence:</p>
     <ul>
       <li>Computers double in speed every 18 months. Why bother re-working your
       code when you can just wait 18 months and get a faster machine?</li>
-      <li>But, it doesn&rsquo;t seem to work that way for embedded devices.
-      e.g. We started out coding ePAGE for StrongARM iPAQs. The devices
-      we&rsquo;re using now simply aren&rsquo;t as powerful.</li>
     </ul>
     <p>Overly-simplistic example:</p>
     <ul>

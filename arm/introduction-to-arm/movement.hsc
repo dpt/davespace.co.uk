@@ -22,8 +22,7 @@
       <dt><code>MVN r1, r0</code></dt>
       <dd>R1 = NOT(R0) = -43</dd>
       <dt><code>MOV r0, r0</code></dt>
-      <dd>A <acronym title="No Operation">NOP</acronym> (no operation)
-      instruction.</dd>
+      <dd>A <NOP> (no operation) instruction.</dd>
     </dl>
   </examples>
   <footer>

@@ -19,7 +19,7 @@ int main(void)
     for (i = 0; i &lt; 13; i++)
         printf("The factorial of %d is %d.\n", i, factorial(i));
 }</csyntax>
-<p>Assembler factorial routine (Using ARM&rsquo;s assembler format):</p>
+<p>Assembler factorial routine:</p>
 <armsyntax>    AREA    |.text|, CODE, READONLY
 
 ;   int factorial(int N);

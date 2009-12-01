@@ -10,7 +10,7 @@
     <p>Rm and Rn are the source values.</p>
     <p>Rn is used directly.</p>
     <p>Rm is processed into &lsquo;Operand2&rsquo; (described later).</p>
-    <p><abbr>CPSR</abbr> is kind of a side effect. Logically it&rsquo;s a register, but we
+    <p><CPSR> is kind of a side effect. Logically it&rsquo;s a register, but we
     like to show it separately.</p>
   </commentary>
   <footer>

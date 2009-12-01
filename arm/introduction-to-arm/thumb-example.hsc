@@ -15,7 +15,7 @@ exit
         BX  lr</armsyntax>
     <p>There are more instructions, but the instructions are half the size:</p>
     <ul>
-      <li>In ARM it&rsquo;s 5 &times; 4 bytes = 20 bytes.</li>
+      <li>In <ARM> it&rsquo;s 5 &times; 4 bytes = 20 bytes.</li>
       <li>In Thumb it&rsquo;s 6 &times; 2 bytes = 12 bytes &ndash; a 40% saving.</li>
     </ul>
   </slide>

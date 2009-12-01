@@ -4,8 +4,8 @@
   <nav>
   <heading>
   <slide>
-  <p>The routine turns an <acronym>ASCII</acronym> character lower-case. In C
-  it would be written like this:</p>
+  <p>The routine turns an <ASCII> character lower-case. In C it would be
+  written like this:</p>
   <csyntax>int mystery(int c)
 {
   unsigned int t;
@@ -16,11 +16,12 @@
 
   return c;
 }</csyntax>
-  <p>The tricky thing here is the coercion to <code>unsigned</code> which
+  <p>The tricky thing here is the coercion to <code>unsigned int</code> which
   allows us to replace two comparisons with a single one. This trick, the
   <dfn>unsigned range optimisation</dfn>, is <a
-    href="../efficient-c-for-arm/unsignedrange.html">discussed</a> in the
-  Efficient C for ARM course.</p>
+    href="../efficient-c-for-arm/unsignedrange.html">discussed</a> in the <a
+    href="../efficient-c-for-arm/index.html">Efficient C for ARM</a>
+  course.</p>
   <p>We can write it in a more expected way like this:</p>
   <csyntax>int mystery2(int c)
 {

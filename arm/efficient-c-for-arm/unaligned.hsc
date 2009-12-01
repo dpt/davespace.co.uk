@@ -5,7 +5,7 @@
   <heading>
   <slide>
     <ul>
-      <li>ARM favours 32-bit aligned addresses.</li>
+      <li><ARM> favours 32-bit aligned addresses.</li>
       <li>Unaligned values have to be pulled from memory a byte at a time and
       reformed.</li>
     </ul>

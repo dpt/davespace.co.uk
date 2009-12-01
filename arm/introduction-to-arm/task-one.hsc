@@ -54,9 +54,9 @@ mystery
   </slide>
 
   <slide title="ARM Architecture Procedure Calling Standard">
-    <p>The ARM Architecture Procedure Calling Standard (AAPCS) governs how
+    <p>The ARM Architecture Procedure Calling Standard (<AAPCS>) governs how
     procedures call each other in high-level languages such as C.</p>
-    <p>We&rsquo;re going to call into an ARM assembly routine from C. AAPCS
+    <p>We&rsquo;re going to call into an <ARM> assembly routine from C. <AAPCS>
     specifies that:</p>
 
     <dl>

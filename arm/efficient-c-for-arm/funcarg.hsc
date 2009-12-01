@@ -29,7 +29,7 @@
   </ul>
   </slide>
   <examples>
-    <p>For the above example, ARMCC generates:</p>
+    <p>For the above example, <ARMCC> generates:</p>
   <armsyntax>addshorts1
   ADD r0,r0,r1,ASR #1  ; r0 = (int)a + ((int)b&gt;&gt;1)
   MOV r0,r0,LSL #16
@@ -38,7 +38,7 @@
     <ul>
       <li>It assumes input values are in the correct range.</li>
     </ul>
-    <p>GCC generates:</p>
+    <p><GCC> generates:</p>
 <armsyntax>addshorts1
   MOV r0,r0,LSL #16
   MOV r1,r1,LSL #16
@@ -61,7 +61,7 @@
     </ul>
     <p>The <code>LSL #16</code> + <code>ASR #16</code> is a sign extending
     operation.</p>
-    <p>ARMCC passes narrow arguments and return value. GCC passes wide but
+    <p><ARMCC> passes narrow arguments and return value. <GCC> passes wide but
     returns narrow.</p>
     <p>You can see from this that simply mixing objects between different
     compilers can cause all sorts of problems.</p>

@@ -7,8 +7,8 @@
 
   <slide>
     <p>The <dfn>Introduction to ARM</dfn> course aims to bring the reader up to
-    speed on programming in ARM assembly language. Its goal is <em>not</em> to
-    get you to write entire programs in assembly, but to give you enough
+    speed on programming in <ARM> assembly language. Its goal is <em>not</em>
+    to get you to write entire programs in assembly, but to give you enough
     knowledge to make judicious use of it.</p>
 
     <p>There are a number of reasons for delving down to the assembly language
@@ -26,14 +26,14 @@
     mode&rsquo; world. Vectors, exceptions, interrupts, processor modes, etc.,
     are not presently discussed.</p>
 
-    <p>You can begin reading <a href="why-learn.html">here.</a> Move between
-    pages using the links on the left hand side of this page.</p>
+    <p>Move between pages using the links on the left hand side of the page. <a
+      href="why-learn.html">Begin reading here.</a> </p>
   </slide>
 
   <slide title="Further Reading">
-    <p>This is the first part of a two-part ARM training course, the second is
-    called <a href="../efficient-c-for-arm/index.html"><dfn>Efficient C for
-        ARM</dfn></a>.</p>
+    <p>This is the first part of a two-part <ARM> training course, the second
+    is called <a href="../efficient-c-for-arm/index.html"><dfn>Efficient C for
+    ARM</dfn></a>.</p>
   </slide>
 
   <footer>

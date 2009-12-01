@@ -6,7 +6,7 @@
   <slide>
     <dl>
       <dt>v5T</dt>
-      <dd>&ndash; Superset of ARMv4T.</dd>
+      <dd>&ndash; Superset of <ARMv4T>.</dd>
       <dd>&ndash; New instructions: <code>BLX</code>, <code>CLZ</code> and
       <code>BKPT</code>.</dd>
       <dt>v5TE</dt>

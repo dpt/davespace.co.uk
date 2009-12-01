@@ -4,16 +4,16 @@
   <nav>
   <heading>
   <slide>
-    <p>A beneficial feature of the ARM architecture is that every instruction
+    <p>A beneficial feature of the <ARM> architecture is that every instruction
     can be made to execute conditionally. This is common in other
-    architectures&rsquo; branch or jump instructions, but ARM allows its use in
-    most instructions.</p>
+    architectures&rsquo; branch or jump instructions, but <ARM> allows its use
+    in most instructions.</p>
     <p>If the condition is not met the instruction is treated as a no-op.</p>
     <p>This feature often removes the need to branch, avoiding pipeline stalls
     and increasing speed. It also increases code density.</p>
-    <p>Condition codes are set using compare instructions or using an
-    ALU instruction with the &ldquo;S&rdquo; bit set.</p>
-    <p>By adding a two-letter suffix to the mnemonic, ARM instructions can be
+    <p>Condition codes are set using compare instructions or using an <ALU>
+    instruction with the &ldquo;S&rdquo; bit set.</p>
+    <p>By adding a two-letter suffix to the mnemonic, <ARM> instructions can be
     made to execute <em>conditionally</em>.</p>
   </slide>
   <commentary>
@@ -21,9 +21,9 @@
     executed, e.g. <code>PLD</code> or <code>BLX</code>. These are encoded
     using the obsolete &lsquo;NV&rsquo; (never execute) condition code.</p>
     <p>By default, data processing instructions do not affect the condition
-    code flags but can be made to by suffixing . The comparison instructions
-    <code>CMP</code>, <code>TST</code>, <code>TEQ</code>, etc. do this
-    implicitly.</p>
+    code flags but can be made to by suffixing &ldquo;S&rdquo;. The comparison
+    instructions <code>CMP</code>, <code>TST</code>, <code>TEQ</code>, etc. do
+    this implicitly.</p>
     <armsyntax>loop
 	...
 	SUBS  r1, r1, #1
@@ -33,12 +33,12 @@
     <code>ADDEQS r0, r1, r2.</code></p>
     <p>Data processing instructions won&rsquo;t affect the flags unless you
     specify the &ldquo;S&rdquo; bit.</p>
-    <p>Only ARMCC outputs assembly language which properly uses conditional
+    <p>Only <ARMCC> outputs assembly language which properly uses conditional
     execution.</p>
   </commentary>
   <slide title="Condition Code Flags">
     <diagram src="nzcv.png" alt="NZCV" width="495" height="191">
-    <p>Where an ALU operation changes the flags:</p>
+    <p>Where an <ALU> operation changes the flags:</p>
     <dl>
       <dt>N &ndash; Negative</dt>
       <dd>Set if the result of a data processing instruction was negative.</dd>
@@ -56,7 +56,7 @@
   <commentary>
     <p>There is also...</p>
     <ul>
-      <li>Q: introduced with ARMv5E.</li>
+      <li>Q: introduced with <ARMv5E>.</li>
     </ul>
     <p>This bit is sticky and is set when one of the Q instructions saturates.</p>
   </commentary>
@@ -106,8 +106,9 @@ next
   <commentary>
     <p>By transforming the sequence like this an instruction can be removed by
     using conditional execution.</p>
-    <p>The only compiler which makes extensive use of condition codes is ARMCC.
-    It applies them in an optimisation pass called branch removal.</p>
+    <p>The only compiler which makes extensive use of condition codes is
+    <ARMCC>.  It applies them in an optimisation pass called <dfn>branch
+    removal</dfn>.</p>
   </commentary>
   <examples>
     <p>Use a sequence of several conditional instructions:</p>
@@ -128,7 +129,7 @@ next
     will be executed only if the compare returns EQual. They move 10 into R0,
     then call &lsquo;fn&rsquo; (branch with link, <code>BL</code>).</p>
     <p>When is it worth branching over condition codes? Depends on the
-    CPU&rsquo;s branch penalty, but it&rsquo;s often 4..6 instructions.</p>
+    <CPU>&rsquo;s branch penalty, but it&rsquo;s often 4..6 instructions.</p>
   </commentary>
   <footer>
   </heading>

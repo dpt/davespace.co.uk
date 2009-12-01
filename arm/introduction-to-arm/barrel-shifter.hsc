@@ -6,7 +6,7 @@
   <slide>
     <p>The <dfn>barrel shifter</dfn> is a functional unit which can be used in
     a number of different circumstances. (These are not operations themselves
-    in ARM mode.)</p>
+    in <ARM> mode.)</p>
   <table id="barrelshifts">
     <tr>
       <td>
@@ -46,19 +46,19 @@
     </table>
   </slide>
   <commentary>
-    <p>Here&rsquo;s how we implement the C shift operations in ARM. Note that
+    <p>Here&rsquo;s how we implement the C shift operations in <ARM>. Note that
     these are unsigned operators. If we want to perform a shift which preserves
     the sign of a value, we need to use <code>ASR</code>.</p>
     <p>At the start I mentioned that certain C operations don&rsquo;t map onto
-    available CPU operations. <code>ROR</code> and <code>RRX</code> are a
+    available <CPU> operations. <code>ROR</code> and <code>RRX</code> are a
     couple of those operations.</p>
-    <p>Certain ARM instructions such as <code>MUL</code>, <code>CLZ</code> and
-    <code>QADD</code> cannot use the barrel shifter.</p>
+    <p>Certain <ARM> instructions such as <code>MUL</code>, <code>CLZ</code>
+    and <code>QADD</code> cannot use the barrel shifter.</p>
     <p id="implementationdefined">&dagger; Note that right shifting negative
     signed quantities is strictly <dfn>implementation defined</dfn> behaviour
     in C. The compiler is allowed to choose whether it performs a logical or an
     arithmetic shift. (That said, it&rsquo;s always an arithmetic shift in all
-    of the ARM toolchains the author&rsquo;s used.)</p>
+    of the <ARM> toolchains the author has used.)</p>
   </commentary>
   <footer>
   </heading>

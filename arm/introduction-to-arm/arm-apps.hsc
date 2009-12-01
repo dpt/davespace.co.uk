@@ -5,13 +5,13 @@
   <heading>
   <slide>
     <dl>
-      <dt>Mobile Phones, PDAs</dt>
+      <dt>Mobile Phones, <PDA>s</dt>
       <dd>&ndash; Almost all</dd>
       <dt>Portable Games Consoles</dt>
       <dd>&ndash; Nintendo DS, PlayStation Portable</dd>
       <dd>&ndash; GameBoy Advance, GP2x</dd>
       <dt>Portable Media Players, Camcorders</dt>
-      <dd>&ndash; iPod</dd>
+      <dd>&ndash; Apple iPod</dd>
       <dt>GPS Navigation Systems</dt>
       <dd>&ndash; Tom Tom 300</dd>
       <dt>Set Top Boxes, TVs, Hard Discs, Routers, ...</dt>

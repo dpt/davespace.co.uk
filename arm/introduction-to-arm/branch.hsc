@@ -15,7 +15,7 @@
     <p>How do we return from the subroutine which <code>BL</code> invoked?</p>
     <p><code>MOV pc, r14</code></p>
     <p>or</p>
-    <p><code>BX r14</code> (on ARMv4T or later)</p>
+    <p><code>BX r14</code> (on <ARMv4T> or later)</p>
   </slide>
   <examples>
     <p>Branching forward, to skip over some code:</p>
@@ -42,14 +42,14 @@ calc             ; function body
     <p>So how do we implement control structures like <tt>for</tt> and
     <tt>while</tt> loops etc?</p>
     <p>Branch instructions are used to alter control flow.</p>
-    <p>They are PC relative. +/-32M range (24 bits &times; 4 bytes).</p>
+    <p>They are <PC> relative. +/-32M range (24 bits &times; 4 bytes).</p>
     <p>Use to allow position independent code. It allows restricted branch
-    range to jump to nearby addresses. This solves some problems with BREW.</p>
+    range to jump to nearby addresses. This solves some problems with <BREW>.</p>
     <p>How to perform longer branches? How to access full 32-bit address space?
-    You can set up the LR manually if needed, then load into PC: <code>MOV
+    You can set up the <LR> manually if needed, then load into <PC>: <code>MOV
       lr,pc LDR pc,=dest</code></p>
-    <p>ADS&rsquo;s linker will automatically generate long branch veneers for
-    branches beyond 32M range.</p>
+    <p>The linker will automatically generate long branch veneers for branches
+    beyond 32M range.</p>
   </commentary>
   <footer>
   </heading>

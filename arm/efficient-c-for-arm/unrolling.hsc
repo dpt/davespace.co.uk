@@ -52,12 +52,9 @@
     </after>
   </examples>
   <commentary>
-    <p>See <a class="external"
-      href="http://en.wikipedia.org/wiki/Loop_unwinding">Loop unwinding</a> on
+    <p>See <wiki subj="Loop_unwinding">Loop unwinding</wiki> on Wikipedia.</p>
+    <p>See <wiki subj="Duff's_device">Duff&rsquo;s Device</wiki> on
     Wikipedia.</p>
-    <p>See <a class="external"
-      href="http://en.wikipedia.org/wiki/Duff's_device">Duff&rsquo;s Device</a>
-    on Wikipedia.</p>
   </commentary>
   <footer>
   </heading>
