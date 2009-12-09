@@ -7,8 +7,8 @@
   <p>You can&rsquo;t fit an arbitrary 32-bit value into a 32-bit instruction
   word. <ARM> data processing instructions have 12 bits of space for values in
   their instruction word. This is arranged as a four-bit rotate value and an
-  eight-bit immediate value:</p> <diagram src="immediate.png" alt="Immediate
-  values." width="544" height="238">
+  eight-bit immediate value:</p> <diagram src="immediate.png"
+  alt="Immediate values." width="544" height="238">
   <p>The 4-bit rotate value stored in bits 11-8 is multiplied by two giving a
   range of 0-30 in steps of two.</p>
   <p>Using this scheme we can express immediate constants such as:</p>

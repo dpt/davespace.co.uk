@@ -126,7 +126,7 @@ A.external:visited, A.external:active {
 	background: url(img/extlink2.png) no-repeat 100% 6px;
 	padding-right: 14px;
 }
-/* hint text in external links */
+/* hide hint text in external links */
 A.external SPAN {
 	display: none;
 }
@@ -164,7 +164,6 @@ DIV#nav DIV#flipper > UL > LI {
 	display: block;
 	font-size: 80%;
 	line-height: 150%;
-	list-style-type: none;
 }
 DIV#nav DIV#flipper > UL > LI#prev {
 	background: url(img/tri-b-l.png) no-repeat left 6px;
@@ -178,28 +177,21 @@ DIV#nav DIV#flipper > UL > LI#next {
 }
 
 DIV#nav DIV#contents > UL > LI {
-	line-height: 120%;
-	list-style-type: none;
-	padding-bottom: 0.66em;
+	line-height: 150%;
+	padding-bottom: 1em;
 	text-align: right;
 }
-DIV#nav DIV#contents > UL > LI + LI {
-	padding-top: 0.66em;
+DIV#nav DIV#contents > UL > UL {
+	padding-bottom: 1em;
 }
-DIV#nav DIV#contents > UL > LI > UL {
-	padding-top: 0.66em;
-}
-DIV#nav DIV#contents > UL > LI > UL > LI {
+DIV#nav DIV#contents > UL > UL > LI {
 	background: url(img/tri-b-l.png) no-repeat right 5px;
 	font-size: 80%;
-	font-weight: normal;
-	line-height: 120%;
-	list-style-type: none;
-	padding-bottom: 0.33em;
-	padding-right: 1em;
+	line-height: 150%;
+	padding-right: 10px;
 	text-align: right;
 }
-DIV#nav DIV#contents > UL > LI > UL > LI.current {
+DIV#nav DIV#contents > UL > UL > LI.current {
 	background: url(img/tri-bk-l.png) no-repeat right 4px;
 	color: black;
 }
@@ -207,8 +199,8 @@ DIV#nav DIV#contents > UL > LI > UL > LI.current {
 DIV#nav DIV#w3c {
 	border-bottom: 1pt dotted #085a8c;
 	border-top: 1pt dotted #085a8c;
-	padding-bottom: 0.66em;
-	padding-top: 0.66em;
+	padding-bottom: 1em;
+	padding-top: 1em;
 }
 DIV#nav DIV#w3c > P {
 	margin-bottom: 0; /* squash rule for P */

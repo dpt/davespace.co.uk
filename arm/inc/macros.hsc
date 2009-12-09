@@ -89,11 +89,9 @@
 </div>
 </$macro>
 
-<$macro mastercontents>
+<$macro mastercontents /close>
 <div id="contents">
-</$macro>
-
-<$macro /mastercontents>
+<$content>
 </div>
 </$macro>
 
@@ -121,34 +119,26 @@
 </div>
 </$macro>
 
-<$macro heading>
+<$macro heading /close>
 <div id="masthead"><a href="../index.html"><img src="../img/logo.png" width="104" height="132" alt="Home" /></a></div>
 <div id="content">
   <h1><a href="index.html"><(pagegroup)></a></h1>
   <h2><(pageheading)></h2>
-</$macro>
-
-<$macro /heading>
+<$content>
 </div>
 </$macro>
 
-<$macro slide title:string>
+<$macro slide /close title:string>
 <$if cond=(set title)>
   <h2><(title)></h2>
 </$if>
 <div class="slide">
-</$macro>
-
-<$macro /slide>
+<$content>
 </div>
 </$macro>
 
-<$macro format>
-<p class="format"><code>
-</$macro>
-
-<$macro /format>
-</code></p>
+<$macro format /close>
+<p class="format"><code><$content></code></p>
 </$macro>
 
 <$macro diagram src:string alt:string width:string height:string>
@@ -157,37 +147,29 @@
 </p>
 </$macro>
 
-<$macro examples>
+<$macro examples /close>
 <h3>Examples</h3>
 <div class="examples">
-</$macro>
-
-<$macro /examples>
+<$content>
 </div>
 </$macro>
 
-<$macro before>
+<$macro before /close>
 <div class="before">
-</$macro>
-
-<$macro /before>
+<$content>
 </div>
 </$macro>
 
-<$macro after>
+<$macro after /close>
 <div class="after">
-</$macro>
-
-<$macro /after>
+<$content>
 </div>
 </$macro>
 
-<$macro commentary>
+<$macro commentary /close>
 <h3>Remarks</h3>
 <div class="commentary">
-</$macro>
-
-<$macro /commentary>
+<$content>
 </div>
 </$macro>
 
@@ -227,15 +209,24 @@
   <$if cond=(set class)><pre class=("routine " + class)><$else><pre class=("routine")></$if><$exec command="perl ..\armsyntaxcolour.pl < perlinput" include></pre>
 </$macro>
 
+<* external links *>
+<$macro ext /close url:string>
+<a class="external" href=(url)><$content></a>
+</$macro>
+
 <* wikipedia links *>
 <$macro wiki /close subj:string>
-<a class="external" href=("http://en.wikipedia.org/wiki/" + subj)><$content></a>
+<a class="external wikipedia" href=("http://en.wikipedia.org/wiki/" + subj)><$content></a>
 </$macro>
 
 <* symbols *>
 
 <$macro ndash>
 &ndash;
+</$macro>
+
+<$macro mdash>
+&mdash;
 </$macro>
 
 <* definition lists *>
@@ -408,6 +399,10 @@ ARM Ltd.
 
 <$macro UAL>
 <abbr title="Unified Assembler Language">UAL</abbr>
+</$macro>
+
+<$macro UK>
+<abbr title="United Kingdom">UK</abbr>
 </$macro>
 
 <$macro VFP>

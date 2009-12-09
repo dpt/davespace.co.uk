@@ -31,27 +31,24 @@
 
 <$macro contents>
 <ul>
-  <li>Efficiency
+  <li>Efficiency</li>
   <ul>
     <clink dst="efficiency" title="Efficiency">
     <clink dst="before-tuning" title="Before Tuning...">
   </ul>
-  </li>
-  <li>Optimising
+  <li>Optimising</li>
   <ul>
     <clink dst="optimising" title="Optimising">
     <clink dst="profilers" title="Profilers">
   </ul>
-  </li>
-  <li>Stuff That&rsquo;s Slow on ARM
+  <li>Stuff That&rsquo;s Slow on ARM</li>
   <ul>
     <clink dst="slow" title="Stuff That&rsquo;s Slow on ARM">
     <clink dst="fp" title="Floating Point">
     <clink dst="division" title="Division">
     <clink dst="unaligned" title="Unaligned Data Access">
   </ul>
-  </li>
-  <li>Basic Optimisations
+  <li>Basic Optimisations</li>
   <ul>
     <clink dst="bools" title="Bools">
     <clink dst="bitfields" title="Bitfields">
@@ -64,8 +61,7 @@
     <clink dst="sentinels" title="Sentinels">
     <clink dst="unrolling" title="Loop Unrolling">
   </ul>
-  </li>
-  <li>Targeted Optimisations
+  <li>Targeted Optimisations</li>
   <ul>
     <clink dst="datatypes" title="C Data Types">
     <clink dst="memaccess" title="Memory Access">
@@ -80,12 +76,10 @@
     <clink dst="unsignedrange" title="Unsigned Ranges">
     <clink dst="baseptr" title="Base Pointer Optimisation">
   </ul>
-  </li>
-  <li>References
+  <li>References</li>
   <ul>
     <clink dst="references" title="References">
   </ul>
-  </li>
 </ul>
 </$macro>
 

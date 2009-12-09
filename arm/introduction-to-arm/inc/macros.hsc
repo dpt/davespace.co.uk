@@ -31,13 +31,12 @@
 
 <$macro contents>
 <ul>
-  <li>Rationale
+  <li>Rationale</li>
   <ul>
     <clink dst="why-learn" title="Why Learn Assembly?">
     <clink dst="not-trivial" title="Not A Trivial Mapping">
   </ul>
-  </li>
-  <li>ARM Assembly Language
+  <li>ARM Assembly Language</li>
   <ul>
     <clink dst="instruction-sets" title="Instruction Sets">
     <clink dst="registers" title="Registers">
@@ -60,22 +59,19 @@
     <clink dst="stack" title="The Stack">
     <clink dst="chain" title="A Call Chain">
   </ul>
-  </li>
-  <li>Worked Examples
+  <li>Worked Examples</li>
   <ul>
     <clink dst="task-one" title="Task One">
     <clink dst="task-two" title="Task Two">
   </ul>
-  </li>
-  <li>Thumb
+  <li>Thumb</li>
   <ul>
     <clink dst="thumb" title="Thumb">
     <clink dst="interworking" title="Interworking">
     <clink dst="thumb-example" title="Thumb Example">
     <clink dst="thumb-2" title="Thumb-2">
   </ul>
-  </li>
-  <li>ARM &amp; Its Architectures
+  <li>ARM &amp; Its Architectures</li>
   <ul>
     <clink dst="arm-ltd" title="ARM Ltd.">
     <clink dst="arm-tools" title="Tools">
@@ -90,12 +86,10 @@
     <clink dst="arm-inside" title="What&rsquo;s Inside Various Devices?">
     <clink dst="arm-test" title="Test">
   </ul>
-  </li>
-  <li>References
+  <li>References</li>
   <ul>
     <clink dst="books" title="Books">
   </ul>
-  </li>
 </ul>
 </$macro>
 
