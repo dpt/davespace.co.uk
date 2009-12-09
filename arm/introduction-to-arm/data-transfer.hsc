@@ -44,7 +44,7 @@
     <ul>
       <li>32-bit words must be 4-byte aligned.</li>
       <li>16-bit half-words must be 2-byte aligned.</li>
-      <li>Bytes &ndash; no restriction.</li>
+      <li>Bytes <ndash> no restriction.</li>
     </ul>
     <p>This restriction was relaxed in <ARMv6>.</p>
   </slide>

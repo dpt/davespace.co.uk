@@ -1,23 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>ARM Training</title>
-  <meta name="author" content="David Thomas" />
-  <meta name="keywords" content="programming, assembler, arm" />
-  <meta name="description" content="ARM training courses." />
-  <link rel="stylesheet" type="text/css" href="styles.css" title="default" />
-</head>
-<body>
+<* $Id$ *>
+
+<masterpage author="David Thomas"
+            keywords="Assembler, Assembly, Programming, ARM, CPU"
+            desc="ARM training courses."
+            root=""
+            heading="ARM Training">
+  <div id="masthead"><img src="img/logolg.png" width="208" height="263" alt="Home" /></div>
   <div id="content">
-
-    <div id="masthead"><img src="img/logolg.png" width="208" height="263" alt="Home" /></div>
     <h1>ARM Training</h1>
-
-    <h2>Hello</h2>
-    <div class="slide">
+    <slide title="Hello">
       <p>Here are two training courses originally written to introduce my
-      former colleagues to the joys of programming in
+      former colleagues at <a class="external"
+        href="http://www.picsel.com/">Picsel</a> to the joys of programming in
       <a class="external" href="http://www.arm.com/">ARM assembly
         language</a>.</p>
       <dl>
@@ -37,9 +31,8 @@
       would be presented sandwich style: two lecture parts and a delicious
       centre filling where the student gets to experiment with some small
       routines.</p>
-    </div>
-    <h2>Some caveats</h2>
-    <div class="slide">
+    </slide>
+    <slide title="Some caveats">
       <p>The courses have been (manually) converted across from the PowerPoint
       slides and separate trainer's notes I used when presenting the courses.
       This may show in the terseness of some of the pages. Some detail is
@@ -48,9 +41,8 @@
       left separate. Some of the pages are of substantially different
       lengths.</p>
       <p>Over time I'll rework the content to better suit its new format.</p>
-    </div>
-    <h2>Toolchains</h2>
-    <div class="slide">
+    </slide>
+    <slide title="Toolchains">
       <p>The courses were written for an environment where the <a
         class="external"
         href="http://www.arm.com/products/DevTools/ADS.html">ARM Developer
@@ -64,55 +56,46 @@
       1.2's armcc and GCC 2.95.2. You will find that other compilers produce
       different code, of varying quality. (In my experience WinCE's compiler in
       particular generates some particularly poor code).</p>
-    </div>
-    <h2>Changelog</h2>
-    <div class="slide">
+    </slide>
+    <slide title="Changelog">
       <p>The most recent changes are listed first.</p>
       <dl>
-        <dt>1<sup>st</sup> December 2009</dt>
-        <dd>&ndash; All of the acronyms and abbreviations used now have titles.
-        (Words underlined in grey - hover over them to get their definition).
-        (tlsa)</dd>
-        <dd>&ndash; A few new Wikipedia links in various places.</dd>
-        <dd>&ndash; Removed a sentence on the 'Efficiency' slide which was
-        no longer relevant.</dd>
         <dt>24<sup>th</sup> November 2009</dt>
-        <dd>&ndash; Added a note about implementation-defined behaviour to the
+        <ddd>Added a note about implementation-defined behaviour to the
         <a href="introduction-to-arm/barrel-shifter.html">barrel shifter</a>
         page. (<a
           href="http://groups.google.co.uk/group/comp.sys.acorn.programmer/msg/74c65ca783493669">sbrodie</a>)</dd>
-        <dd>&ndash; Fixed the factorial task <a
+        <ddd>Fixed the factorial task <a
           href="introduction-to-arm/task-two-answers.html">answer to Task
           Two</a>: its <code>MOVEQ pc,r14</code> should have been <code>MOVEQ
           r0,#1</code> to return the correct result for 0!. (sbrodie)</dd>
 
         <dt>19<sup>th</sup> November 2009</dt>
-        <dd>&ndash; New logo throughout (<a class="external"
+        <ddd>New logo throughout (<a class="external"
           href="http://fontfabric.com/?p=585">its font</a>).</dd>
-        <dd>&ndash; Assembler syntax colouring has been improved. It no longer
+        <ddd>Assembler syntax colouring has been improved. It no longer
         highlights things inside of comments.</dd>
 
         <dt>October/November 2009</dt>
-        <dd>&ndash; Various changes I've forgotten to note properly, including...</dd>
-        <dd>&ndash; The C code examples are now automatically syntax coloured
+        <ddd>Various changes I've forgotten to note properly, including...</dd>
+        <ddd>The C code examples are now automatically syntax coloured
         using <a class="external"
           href="http://search.cpan.org/~szabgab/Syntax-Highlight-Engine-Kate-0.06/">Syntax-Highlight-Engine-Kate</a>.</dd>
-        <dd>&ndash; Assembler examples coloured too, using a not very good
+        <ddd>Assembler examples coloured too, using a not very good
         script of my own.</dd>
 
         <dt>25<sup>th</sup> October 2009</dt>
-        <dd>&ndash; Changelog started. :-)</dd>
-        <dd>&ndash; Darkened the text colour of <code>&lt;CODE&gt;</code>
+        <ddd>Changelog started. :-)</dd>
+        <ddd>Darkened the text colour of <code>&lt;CODE&gt;</code>
         elements. (joty)</dd>
-        <dd>&ndash; Syntax coloured the code in <a
+        <ddd>Syntax coloured the code in <a
           href="introduction-to-arm/task-one.html">Task One</a> using Vim
         (<code>:tohtml</code>). (tlsa)</dd>
-        <dd>&ndash; <code>ASR</code> != &lt;&lt; &mdash; cut and paste error.
+        <ddd><code>ASR</code> != &lt;&lt; <mdash> cut and paste error.
         (jmb)</dd>
       </dl>
-    </div>
-    <h2>Credits</h2>
-    <div class="slide">
+    </slide>
+    <slide title="Credits">
       <p>Many thanks go to the following kind souls for reviewing the
       content and making suggestions:</p>
       <ul>
@@ -127,21 +110,15 @@
         <li>Robin Watts</li>
         <li>Stewart Brodie</li>
       </ul>
-    </div>
-    <h2>Acknowledgements</h2>
-    <div class="slide">
+    </slide>
+    <slide title="Acknowledgements">
       <p>ARM&reg; is a trademark of <a class="external" href="http://www.arm.com/">ARM Limited</a>.</p>
-    </div>
-    <h2>Comments</h2>
-    <div class="slide">
+    </slide>
+    <slide title="Comments">
       <p>If you have any suggestions for improving these pages you can email me
       at dave at davespace dot co dot uk.</p>
-    </div>
-
-    <div id="footer">
-      <p>by David Thomas, &copy; 2009.
-    </div>
-
+    </slide>
+    <footer>
   </div>
-</body>
-</html>
+</masterpage>
+

@@ -8,12 +8,12 @@
     <dl>
       <dt>An address expression:</dt>
       <dd><var>&lt;expression&gt;</var></dd>
-      <dt>A <dfn>pre-indexed</dfn> address &ndash; where the address generated
+      <dt>A <dfn>pre-indexed</dfn> address <ndash> where the address generated
       is immediately:</dt>
       <dd><code>[Rn, <var>&lt;expression&gt;</var>]{!}</code></dd>
       <dd><code>[Rn, {-}Rm]{!}</code></dd>
       <dd><code>[Rn, {-}Rm <var>&lt;shift&gt;</var> count]{!}</code></dd>
-      <dt>A <dfn>post-indexed</dfn> address &ndash; where the address generated
+      <dt>A <dfn>post-indexed</dfn> address <ndash> where the address generated
       later replaces the base register:</dt>
       <dd><code>[Rn], <var>&lt;expression&gt;</var></code></dd>
       <dd><code>[Rn], {-}Rm</code></dd>

@@ -14,7 +14,7 @@
     <ul>
       <li>That&rsquo;s not going to highlight any algorithmic mistakes.</li>
       <ul>
-        <li>You can tune a bubble sort to perfection...</li>
+        <lid>You can tune a bubble sort to perfection...</li>
       </ul>
     </ul>
 
@@ -22,8 +22,8 @@
     <ul>
       <li>Including debugging code may skew your results:</li>
       <ul>
-        <li>Debug mode normally inhibits compiler optimisations.</li>
-        <li>Debug builds enable a variety of extra bits (assertions, debug output).</li>
+        <lid>Debug mode normally inhibits compiler optimisations.</li>
+        <lid>Debug builds enable a variety of extra bits (assertions, debug output).</li>
       </ul>
     </ul>
   </slide>

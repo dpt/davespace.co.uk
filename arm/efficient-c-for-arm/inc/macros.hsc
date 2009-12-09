@@ -21,6 +21,7 @@
             author="David Thomas"
             keywords="Assembler, Assembly, Programming, ARM, CPU"
             desc="How to write efficient C code for the ARM processor."
+            root="../"
             heading=(HEADING) rev=(REV) cur=(CUR) fwd=(FWD)>
 </$macro>
 

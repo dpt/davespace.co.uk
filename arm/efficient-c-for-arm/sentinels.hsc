@@ -10,12 +10,14 @@
       <li>Compare current key against desired key.</li>
     </ul>
     <p>That&rsquo;s two flow conditions inside a tight loop, which is bad on
-    modern pipelined <CPU>s.</p>
+    modern <wiki subj="Pipeline_(computing)">pipelined</wiki> <CPU>s.</p>
     <p>Solution:</p>
     <ul>
       <li>Augment the array with the desired value at the end.</li>
-      <li>Allows both comparisons to be merged.</li>
-      <li>But needs one extra element.</li>
+      <ul>
+        <lid>This allows both comparisons to be merged.</li>
+        <lid>But it requires one extra element.</li>
+      </ul>
     </ul>
   </slide>
   <examples>

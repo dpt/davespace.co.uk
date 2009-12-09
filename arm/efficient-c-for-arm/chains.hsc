@@ -5,7 +5,9 @@
   <heading>
   <slide>
     <p>Pointer chains are frequently used to access data in structures.</p>
-    <p>Subject to <a href="aliasing.html">pointer aliasing</a>.</p>
+    <ul>
+      <li>Subject to <a href="aliasing.html">pointer aliasing</a>.</li>
+    </ul>
   </slide>
   <examples>
   <before>
@@ -31,7 +33,7 @@ void setPos1(Object *o)
   <after>
     <p>This improved version caches <code>o-&gt;pos</code> in a local
     variable.</p>
-    <p>Another possibility is to include <code>Point3</code> in the
+    <p>Another possibility is to fold <code>Point3</code> into its parent
     <code>Object</code> structure.</p>
 <csyntax>typedef struct { int x,y,z; } Point3;
 typedef struct { Point3 *pos, *dir; } Object;
@@ -52,10 +54,11 @@ void setPos2(Object *o)
   </after>
   </examples>
   <commentary>
+    <p>To put it another way, the compiler does not know that
+    <code>o-&gt;pos-&gt;x</code> is not an alias for
+    <code>o-&gt;pos</code>.</p>
     <p>This is from <ARM> Application Note 34, Section 8.2.3. (Now
-    withdrawn?)</p>
-    <p>The compiler does not know that <code>o-&gt;pos-&gt;x</code> is not an
-    alias for <code>o-&gt;pos</code>.</p>
+    withdrawn? I can no longer find it online.)</p>
   </commentary>
   <footer>
   </heading>

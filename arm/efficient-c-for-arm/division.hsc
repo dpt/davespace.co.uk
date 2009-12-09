@@ -27,7 +27,7 @@
       <li>Multiply by a fixed-point reciprocal then shift.</li>
       <li>Avoid where possible by algebraic substitution.
       <ul>
-        <li>e.g. rewrite <tt>(x
+        <lid>e.g. rewrite <tt>(x
           &divide; y) &gt; z</tt> as <tt>x &gt; (z &times; y)</tt></li>
       </ul>
       </li>

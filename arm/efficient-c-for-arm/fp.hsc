@@ -7,21 +7,20 @@
     <p>Floating Point is usually <strong>emulated</strong> on <ARM>
     systems.</p>
     <ul>
-      <li>Slow.
+      <li>Slow.</li>
       <ul>
-        <li>50-300&times; slower than equivalent integer ops.</li>
-        <li>Depending on library, environment.</li>
+        <lid>50-300&times; slower than equivalent integer ops.</li>
+        <lid>Depending on library, environment.</li>
       </ul>
-      </li>
     </ul>
     <p>Possible solution:</p>
     <ul>
-      <li><wiki subj="Fixed-point_arithmetic"><dfn>Fixed point</dfn> maths</wiki>.
+      <li><wiki subj="Fixed-point_arithmetic"><dfn>Fixed point</dfn>
+      maths</wiki>.</li>
       <ul>
-        <li>Requires more thought.</li>
-        <li>Consequently more error prone.</li>
+        <lid>Requires more thought.</li>
+        <lid>Consequently more error prone.</li>
       </ul>
-      </li>
     </ul>
   </slide>
   <commentary>

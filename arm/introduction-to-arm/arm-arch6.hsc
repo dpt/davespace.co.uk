@@ -6,15 +6,15 @@
   <slide>
     <dl>
       <dt>v6</dt>
-      <dd>&ndash; Mixed endian data handling: <code>SETEND</code>, <code>REV</code>,
+      <ddd>Mixed endian data handling: <code>SETEND</code>, <code>REV</code>,
       <code>REV16</code>, <code>REVSH</code>.</dd>
-      <dd>&ndash; 60+ new SIMD instructions: <code>SMUSD</code>, <code>SMUADX</code>,
+      <ddd>60+ new SIMD instructions: <code>SMUSD</code>, <code>SMUADX</code>,
       <code>USAD8</code>, <code>USADA8</code>.</dd>
-      <dd>&ndash; Unaligned data handling.</dd>
-      <dd>&ndash; New multiprocessing instructions: <code>LDREX</code>,
+      <ddd>Unaligned data handling.</dd>
+      <ddd>New multiprocessing instructions: <code>LDREX</code>,
       <code>STREX</code>.</dd>
       <dt>v6T2</dt>
-      <dd>&ndash; Thumb-2.</dd>
+      <ddd>Thumb-2.</dd>
     </dl>
   </slide>
   <commentary>

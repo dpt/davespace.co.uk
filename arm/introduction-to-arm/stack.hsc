@@ -11,13 +11,13 @@
   aliases for accessing stacks:
     <dl>
       <dt><code>FD</code></dt>
-      <dd>&ndash; Full Descending</dd>
+      <ddd>Full Descending</dd>
       <dt><code>ED</code></dt>
-      <dd>&ndash; Empty Descending</dd>
+      <ddd>Empty Descending</dd>
       <dt><code>FA</code></dt>
-      <dd>&ndash; Full Ascending</dd>
+      <ddd>Full Ascending</dd>
       <dt><code>EA</code></dt>
-      <dd>&ndash; Empty Ascending</dd>
+      <ddd>Empty Ascending</dd>
     </dl>
   </p>
   </slide>
@@ -37,11 +37,11 @@
   </commentary>
   <examples>
   <p>
-  <code>STMFD r13!, {r4-r7}</code> &ndash; Push R4,R5,R6 and R7 onto the stack.
+  <code>STMFD r13!, {r4-r7}</code> <ndash> Push R4,R5,R6 and R7 onto the stack.
   </p>
   <diagram src="stmfd.png" alt="STMFD" width="379" height="258">
   <p>
-  <code>LDMFD r13!, {r4-r7}</code> &ndash; Pop R4,R5,R6 and R7 from the stack.
+  <code>LDMFD r13!, {r4-r7}</code> <ndash> Pop R4,R5,R6 and R7 from the stack.
   </p>
   <diagram src="ldmfd.png" alt="LDMFD" width="379" height="258">
   </examples>

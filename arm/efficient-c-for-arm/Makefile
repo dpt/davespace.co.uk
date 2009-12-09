@@ -8,7 +8,7 @@ RELEASEDIR = release
 IGNORE	= IGN="21|87"
 STDINC	= ../inc/macros.hsc inc/macros.hsc
 SCRIPTS = ../armsyntaxcolour.pl ../csyntaxcolour.pl
-HSCMISC	= PREFSFILE=hsc.prefs MAXMSG=0 MAXERR=0 XHTML COMPACT
+HSCMISC	= PREFSFILE=../hsc.prefs MAXMSG=0 MAXERR=0 XHTML COMPACT
 
 HSCFLAGS= $(HSCMISC) $(IGNORE) $(STDINC)
 HSC     = hsc

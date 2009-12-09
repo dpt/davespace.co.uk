@@ -7,10 +7,10 @@
     <p><ARMLtd> develop the tools needed to design <ARM>-powered products.</p>
     <dl>
       <dt>Software tools</dt>
-      <dd>&ndash; ARM Software Development Toolkit (<SDT>)</dd>
-      <dd>&ndash; ARM Developer Suite (<ADS>)</dd>
-      <dd>&ndash; RealView Compiler Tools (<RVCT>)</dd>
-      <dd>&ndash; RealView Development Suite (<RVDS>)</dd>
+      <ddd>ARM Software Development Toolkit (<SDT>)</dd>
+      <ddd>ARM Developer Suite (<ADS>)</dd>
+      <ddd>RealView Compiler Tools (<RVCT>)</dd>
+      <ddd>RealView Development Suite (<RVDS>)</dd>
       <dt>Development boards</dt>
       <dt>Debug hardware, etc.</dt>
     </dl>

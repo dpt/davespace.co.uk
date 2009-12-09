@@ -5,8 +5,8 @@
   <heading>
   <slide>
     <p>If the compiler can &lsquo;see&rsquo; the definition of a
-    function&mdash; i.e. its definition is present in the same source
-    file&mdash;it can optimise it further:</p>
+    function<mdash> i.e. its definition is present in the same source
+    file<mdash>it can optimise it further:</p>
     <ul>
       <li>The function can be subsumed entirely into its caller -
       <dfn>inlining</dfn>.</li>

@@ -9,11 +9,11 @@
     <p>All registers are general purpose, save for:</p>
     <dl>
       <dt>R13 / <SP></dt>
-      <dd>&ndash; Holds the stack pointer. <a href="#note1">&dagger;</a></dd>
+      <ddd>Holds the stack pointer. <a href="#note1">&dagger;</a></dd>
       <dt>R14 / <LR></dt>
-      <dd>&ndash; Is the callers&rsquo;s return address.</dd>
+      <ddd>Is the callers&rsquo;s return address.</dd>
       <dt>R15 / <PC></dt>
-      <dd>&ndash; Contains the program counter.</dd>
+      <ddd>Contains the program counter.</dd>
     </dl>
     <p><CPSR> is the current program status register. This holds flags.</p>
   </slide>
@@ -23,7 +23,7 @@
     hardwired.</p>
     <p>This is the <dfn>user mode</dfn> register set.</p>
     <p>The registers also have aliases, subject to the current calling
-    convention. The ones shown here are for <AAPCS> &ndash; the <ARM> standard
+    convention. The ones shown here are for <AAPCS> <ndash> the <ARM> standard
     calling convention.</p>
   </commentary>
   <slide title="Load-Store">

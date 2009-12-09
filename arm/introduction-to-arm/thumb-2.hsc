@@ -14,7 +14,7 @@
     </ul>
     <p>What does Thumb-2 assembly language look like?</p>
     <p>It&rsquo;s pretty much like <ARM> assembler. <ARM> Ltd. have unified the
-    <ARM> and Thumb assembler formats into <dfn><UAL></dfn> &ndash; a Unified
+    <ARM> and Thumb assembler formats into <dfn><UAL></dfn> <ndash> a Unified
     Assembler Language. New <ARM> assemblers can take <UAL> format assembler
     and output to <ARM> <em>or</em> Thumb-2.</p>
   </slide>

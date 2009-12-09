@@ -7,8 +7,10 @@
   <p>Small loops can be <dfn>unrolled</dfn>.</p>
   <ul>
     <li>Inner part repeated multiple times.</li>
-    <li>Higher performance.</li>
-    <li>At the expense of increased code size.</li>
+    <ul>
+      <lid>Higher performance.</li>
+      <lid>At the expense of increased code size.</li>
+    </ul>
   </ul>
   <p>When unrolled:</p>
   <ul>

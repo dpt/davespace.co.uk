@@ -40,15 +40,15 @@
     <diagram src="nzcv.png" alt="NZCV" width="495" height="191">
     <p>Where an <ALU> operation changes the flags:</p>
     <dl>
-      <dt>N &ndash; Negative</dt>
+      <dt>N <ndash> Negative</dt>
       <dd>Set if the result of a data processing instruction was negative.</dd>
-      <dt>Z &ndash; Zero</dt>
+      <dt>Z <ndash> Zero</dt>
       <dd>Set if the result was zero.</dd>
-      <dt>C &ndash; Carry</dt>
+      <dt>C <ndash> Carry</dt>
       <dd>Set if an addition, subtraction or compare causes a result bigger
       than 32 bits, or is set from the output of the shifter for move and
       logical instructions.</dd>
-      <dt>V &ndash; Overflow</dt>
+      <dt>V <ndash> Overflow</dt>
       <dd>Set if an addition, subtraction or compare produces a signed result
       bigger than 31 bits.</dd>
     </dl>

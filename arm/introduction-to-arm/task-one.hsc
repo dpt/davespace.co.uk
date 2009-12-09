@@ -61,9 +61,9 @@ mystery
 
     <dl>
       <dt>The first four arguments are passed in R0-R3.</dt>
-      <dd>&ndash; Any subsequent arguments are passed on the stack.</dd>
+      <ddd>Any subsequent arguments are passed on the stack.</dd>
       <dt>The return value, if any, is passed back in R0-R3.</dt>
-      <dd>&ndash; Typically only R0 is used.</dd>
+      <ddd>Typically only R0 is used.</dd>
     </dl>
   </slide>
 

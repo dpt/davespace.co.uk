@@ -249,6 +249,13 @@ DIV#content UL > LI {
 	padding-left: 1em;
 }
 
+DIV#content UL UL {
+}
+DIV#content UL UL > LI {
+	background: none;
+	padding-left: 0;
+}
+
 DIV#content OL {
 	margin-bottom: 0.5em;
 	margin-left: 2em;
@@ -355,8 +362,27 @@ DIV#content > DIV#footer {
 	color: #085a8c;
 	font-size: 80%;
 	line-height: 150%;
-	padding-top: 0.5em;
+	padding-top: 2em;
 	text-align: center;
+	margin-bottom: 2em;
+}
+
+DIV#content > DIV#footer UL {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+DIV#content > DIV#footer UL LI  {
+	background-image: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0.5em 0 0;
+}
+
+DIV#content > DIV#footer UL LI + LI {
+	border-left: 1pt solid #adc8d9;
+	padding: 0 0 0 0.5em;
 }
 
 /******************************************************************************/

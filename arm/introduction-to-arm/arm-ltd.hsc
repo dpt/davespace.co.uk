@@ -42,7 +42,7 @@
       cores, together with a range of other supporting
       technologies.</blockquote>
     <blockquote>One important point about <ARMLtd> is that it does not
-      fabricate silicon itself, but instead produces designs - ARM is an
+      fabricate silicon itself, but instead produces designs <ndash> ARM is an
       Intellectual Property (or <IP>) company. Instead silicon is produced by
       companies who license the <ARM> processor designs. <ARM> controls the
       architecture too (so no-one can just make an <ARM> compatible

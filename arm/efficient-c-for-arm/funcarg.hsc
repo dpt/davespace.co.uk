@@ -9,13 +9,14 @@
   return (short) (a + (b &gt;&gt; 1));
 }</csyntax>
   <ul>
-    <li>The same rule holds for arguments to functions.</li>
-    <li>In this example, input and output values are both <code>short</code>.
+    <li>The same rule seen on the previous page also holds for arguments passed
+    to functions.</li>
+    <li>In this example the input and output values are both
+    <code>short</code>.</li>
     <ul>
-      <li>Yet the values will be passed in (and out) in 32-bit-wide
+      <lid>Yet the values will be passed in (and out) in 32-bit-wide
       registers.</li>
     </ul>
-    </li>
   </ul>
   <ul>
     <li>Should the compiler assume values are already in the range of a
@@ -48,8 +49,8 @@
   MOV r0,r1,ASR #16    ; r0 = (short)r1
   MOV pc,lr            ; return r0</armsyntax>
     <ul>
-    <li>It makes no assumptions about the range of argument values and forcibly
-    sign extends the values on entry.</li>
+      <li>It makes no assumptions about the range of argument values so sign
+      extends the values on entry.</li>
     </ul>
   </examples>
   <commentary>

@@ -7,9 +7,9 @@
     <format>&lt;operation&gt;{cond}{S} Rd,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
-      <dt><code>MOV</code> &ndash; <dfn>move</dfn></dt>
+      <dt><code>MOV</code> <ndash> <dfn>move</dfn></dt>
       <dd>Rd := Operand2</dd>
-      <dt><code>MVN</code> &ndash; <dfn>move negated</dfn></dt>
+      <dt><code>MVN</code> <ndash> <dfn>move negated</dfn></dt>
       <dd>Rd := 0xFFFFFFFF EOR Operand2</dd>
     </dl>
   </slide>

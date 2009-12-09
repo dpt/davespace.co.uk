@@ -15,6 +15,7 @@
     arithmetic (e.g. 255+1 = 0).</p>
   </slide>
   <examples>
+    <p>This example code checksums a packet of 64 words:</p>
 <csyntax>int checksum1(const int *data)
 {
   char i;
@@ -25,6 +26,8 @@
 
   return sum;
 }</csyntax>
+
+    <p>Let&rsquo;s look at the annotated compiler output:</p>
 
 <armsyntax>checksum1
         MOV     r2,r0             ; r2 = data
@@ -38,13 +41,22 @@ loop
         ADD     r0,r3,r0          ; sum += r3
         BCC     loop              ; if (i&lt;64) loop
         MOV     pc,r14            ; return sum</armsyntax>
+
+    <p>The compiler is emitting an <code>AND</code> instruction even though it
+    <em>should</em> know that <var>i</var> never exceeds 64.</p>
+    <p>When we change <var>i</var> from <code>char</code> to <code>unsigned
+    int</code> the <code>AND</code> disappears as it&rsquo;s no longer
+    necessary to account for wrap-around.</p>
+    <p>Remember that this isn&rsquo;t just a saving of one instruction or
+    cycle. It saves <strong>64 instructions</strong>: <em>one for each
+      iteration</em>.</p>
+    <p>This is an <dfn>inner loop</dfn>. Optimisations to inner loops are
+    highly beneficial.</p>
   </examples>
   <commentary>
-    <p>The example code checksums a packet of 64 words.</p>
     <p>You might think <code>char</code> is an efficient choice for
     <var>i</var>; using less stack space or register space than an
-    <code>int</code> might.</p>
-    <p>On the <ARM>, this is wrong:</p>
+    <code>int</code> might. On the <ARM>, this is wrong:</p>
     <ul>
       <li>Stack entries are at least 32 bits wide.</li>
       <li>Registers are 32 bits wide.</li>
@@ -53,17 +65,6 @@ loop
     account for the case where <var>i</var> will wrap around which you get for
     &lsquo;free&rsquo; with <code>int</code>s, but not with
     <code>char</code>s.</p>
-
-    <p>Let&rsquo;s look at the annotated compiler output.</p>
-    <p>The compiler is emitting an <code>AND</code> instruction even though it
-    <em>should</em> know that <var>i</var> never exceeds 63.</p>
-    <p>When we change <var>i</var> from <code>char</code> to <code>unsigned
-    int</code> the <code>AND</code> disappears.</p>
-    <p>It&rsquo;s no longer necessary to account for wrap-around.</p>
-    <p>Remember that this isn&rsquo;t just a saving of one instruction or
-    cycle. It saves 64 instructions: <em>one for each iteration</em>.</p>
-    <p>This is an <dfn>inner loop</dfn>. Optimisations to inner loops are
-    highly beneficial.</p>
   </commentary>
   <footer>
   </heading>

@@ -6,9 +6,11 @@
   <slide>
     <p>Certain C data types are more efficient to use for local variables than
     others.</p>
-    <p><ARM> has 32-bit wide registers and 32-bit data processing
-    instructions.</p>
-    <p>Therefore the natural machine word type, <code>int</code>, is
+    <ul>
+      <li><ARM> has 32-bit wide registers and 32-bit data processing
+      instructions.</li>
+    </ul>
+    <p>Therefore the machine&rsquo;s natural word type, <code>int</code>, is
     32-bit.</p>
 
     <table id="cores">

@@ -7,13 +7,13 @@
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
-      <dt><code>AND</code> &ndash; <dfn>logical AND</dfn></dt>
+      <dt><code>AND</code> <ndash> <dfn>logical AND</dfn></dt>
       <dd>Rd := Rn AND Operand2</dd>
-      <dt><code>EOR</code> &ndash; <dfn>exclusive OR</dfn></dt>
+      <dt><code>EOR</code> <ndash> <dfn>exclusive OR</dfn></dt>
       <dd>Rd := Rn EOR Operand2</dd>
-      <dt><code>ORR</code> &ndash; <dfn>logical OR</dfn></dt>
+      <dt><code>ORR</code> <ndash> <dfn>logical OR</dfn></dt>
       <dd>Rd := Rn OR Operand2</dd>
-      <dt><code>BIC</code> &ndash; <dfn>bitwise clear</dfn></dt>
+      <dt><code>BIC</code> <ndash> <dfn>bitwise clear</dfn></dt>
       <dd>Rd := Rn AND NOT Operand2</dd>
     </dl>
   </slide>

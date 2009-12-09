@@ -6,13 +6,13 @@
   <slide>
     <dl>
       <dt>v4 is the oldest supported architecture today. It added:</dt>
-      <dd>&ndash; Load/store instructions for signed and unsigned halfwords and
+      <ddd>Load/store instructions for signed and unsigned halfwords and
       bytes.</dd>
-      <dd>&ndash; <code>LDRH</code>, <code>LDRSH</code>, <code>LDRSB</code>.</dd>
-      <dd>&ndash; System mode - privileged mode using user registers.</dd>
-      <dd>&ndash; 26-bit addressing no longer supported.</dd>
+      <ddd><code>LDRH</code>, <code>LDRSH</code>, <code>LDRSB</code>.</dd>
+      <ddd>System mode <ndash> privileged mode using user registers.</dd>
+      <ddd>26-bit addressing no longer supported.</dd>
       <dt>v4T added:</dt>
-      <dd>&ndash; Thumb mode.</dd>
+      <ddd>Thumb mode.</dd>
     </dl>
   </slide>
   <commentary>

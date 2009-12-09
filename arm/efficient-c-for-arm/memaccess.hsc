@@ -4,7 +4,7 @@
   <nav>
   <heading>
   <slide>
-  <p><ARM> is a load-store architecture:</p>
+  <p><ARM> is a <dfn>load-store</dfn> architecture:</p>
     <ul>
       <li>Data must be loaded into registers from memory before it can be
       operated upon.</li>
@@ -16,11 +16,11 @@
       <li>So <code>char</code> is unsigned by default on <ARM>.</li>
     </ul>
   </slide>
-  <slide title="Memory Instructions Through The Ages">
-    <p>Since not all memory access instructions were present in the original
-    <ARM> <ISA>, they have had to be &lsquo;shoehorned&rsquo; in later on. This
-    means that they are subject to greater restrictions than the original
-    instructions.</p>
+  <slide title="Memory Instructions Throughout the Ages">
+    <p>Not all of the current memory access instructions were present in the
+    original <ARM> <ISA>. They have had to be &lsquo;shoehorned&rsquo; in for
+    later architectures. This means that they are not as flexible as the
+    original instructions.</p>
     <table id="cores">
     <tbody>
       <tr>
@@ -85,8 +85,8 @@
     </tbody>
     </table>
 
-    <p>You could get better performance by using <code>LDR</code> over
-    <code>LDRH</code> for example.</p>
+    <p>You may get better performance by using <code>LDR</code> instead of
+    <code>LDRH</code>, for example.</p>
   </slide>
   <commentary>
   <p><ARMv4> introduced signed and halfword memory access types.</p>
@@ -95,9 +95,10 @@
       <li><code>LDRD</code> and <code>STRD</code> require addresses aligned to
       an 8-byte boundary.</li>
     </ul>
-    <p>(Robin Watts says) "Using the newer types, such as half-word/short, is
-    intrinsically less efficient on <ARM>s. Array indexing of shorts costs one
-    more cycle than ints."</p>
+    <p><ARM> coding guru Robin Watts says <q>"Using the newer types, such as
+    half-word/<code>short</code>, is intrinsically less efficient on <ARM>s.
+    Array indexing of <code>short</code>s costs one more cycle than
+    <code>int</code>s."</q></p>
   </commentary>
   <footer>
   </heading>

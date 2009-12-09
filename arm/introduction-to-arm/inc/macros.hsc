@@ -21,6 +21,7 @@
             author="David Thomas"
             keywords="Assembler, Assembly, Programming, ARM, CPU"
             desc="An introduction to programming in ARM assembly language."
+            root="../"
             heading=(HEADING) rev=(REV) cur=(CUR) fwd=(FWD)>
 </$macro>
 

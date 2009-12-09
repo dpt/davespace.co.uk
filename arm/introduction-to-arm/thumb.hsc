@@ -17,9 +17,9 @@
 
     <dl>
       <dt>With 32-bit memory:</dt>
-      <dd>&ndash; <ARM> code is 40% faster than Thumb code.</dd>
+      <ddd><ARM> code is 40% faster than Thumb code.</dd>
       <dt>With 16-bit memory:</dt>
-      <dd>&ndash; Thumb code is 45% faster than <ARM> code.</dd>
+      <ddd>Thumb code is 45% faster than <ARM> code.</dd>
     </dl>
 
     <p>Uses 30% less external memory power than <ARM> code.</p>
@@ -40,7 +40,7 @@
       <li>Its instruction encodings are less regular than <ARM>&rsquo;s.</li>
     </ul>
 
-    <p>Thumb uses the same register set as <ARM> &mdash; but only R0-R7.</p>
+    <p>Thumb uses the same register set as <ARM> <mdash> but only R0-R7.</p>
   </slide>
   <commentary>
     <p>Whereas R13&rsquo;s role as the stack pointer is a convention in <ARM>

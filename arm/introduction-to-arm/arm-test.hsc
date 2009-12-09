@@ -6,9 +6,9 @@
   <slide>
     <dl>
       <dt>An &ldquo;ARM7TDMI&rdquo; ...</dt>
-      <dd>&ndash; What is the architecture version?</dd>
-      <dd>&ndash; Does it have Thumb?</dd>
-      <dd>&ndash; Does it have long multiplies?</dd>
+      <ddd>What is the architecture version?</dd>
+      <ddd>Does it have Thumb?</dd>
+      <ddd>Does it have long multiplies?</dd>
 
       <dt>What about an &ldquo;ARM1156T2F-S&rdquo;?</dt>
     </dl>

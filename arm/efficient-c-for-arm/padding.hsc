@@ -7,7 +7,7 @@
     <p>Structures often end up containing <dfn>padding</dfn>.</p>
     <dl>
       <dt>Required because of target&rsquo;s data type restrictions.</dt>
-      <dd>&ndash; e.g. <ARM> keeps <code>int</code>s on a 32-bit boundary.</dd>
+      <ddd>e.g. <ARM> keeps <code>int</code>s on a 32-bit boundary.</dd>
     </dl>
     <p>Easy to waste memory if you&rsquo;re not aware of where padding is
     inserted.</p>
@@ -15,8 +15,8 @@
     <ul>
       <li>Sort elements in the structure by size:</li>
       <ul>
-        <li>Place elements in small-to-large or large-to-small order.</li>
-        <li>This minimises the amount of padding.</li>
+        <lid>Place elements in small-to-large or large-to-small order.</li>
+        <lid>This minimises the amount of padding.</li>
       </ul>
     </ul>
     <p>The compiler cannot perform this transformation itself as the C standard

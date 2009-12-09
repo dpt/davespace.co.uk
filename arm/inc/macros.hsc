@@ -2,7 +2,13 @@
 
 <* $Id$ *>
 
-<$macro masterpage group:string author:string keywords:string desc:string heading:string rev:string cur:string fwd:string>
+<* specify 'group' to have "group: heading" in page titles, else just "heading" *>
+<* specify 'author', 'keywords', 'desc' for meta values *>
+<* specify 'heading' for the page title *>
+<* specify 'rev', 'cur', 'fwd' to fill out link rel navigation *>
+
+<$macro masterpage group:string author:string keywords:string desc:string
+        root:string heading:string rev:string cur:string fwd:string>
 
 <$define pagegroup:string/global="">
 <$if cond=(set group)>
@@ -35,7 +41,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title><(group)>: <(pageheading)></title>
+    <$if cond=(pagegroup <> "")>
+      <title><(pagegroup)>: <(pageheading)></title>
+    <$else>
+      <title><(pageheading)></title>
+    </$if>
     <$if cond=(author <> "")>
       <meta name="author" content=(author) />
     </$if>
@@ -46,13 +56,13 @@
       <meta name="description" content=(desc) />
     </$if>
     <* would like to resolve stylesheet location better *>
-    <link rel="stylesheet" type="text/css" href="../styles.css" title="default" />
+    <link rel="stylesheet" type="text/css" href=(root + "styles.css") title="default" />
     <link rel="index" href="index.html" />
-    <$if cond=(fwd <> "")>
-      <link rel="next" href=(fwd + ".html") />
+    <$if cond=(nextpage <> "")>
+      <link rel="next" href=(nextpage + ".html") />
     </$if>
-    <$if cond=(rev <> "")>
-      <link rel="prev" href=(rev + ".html") />
+    <$if cond=(previouspage <> "")>
+      <link rel="prev" href=(previouspage + ".html") />
     </$if>
   </head>
   <body>
@@ -196,12 +206,12 @@
 </$macro>
 
 <$macro footer>
+<$define _ttf:string=(HSC.Format.Time)>
 <div id="footer">
-  <$define _ttf:string=(HSC.Format.Time)>
-  <$let HSC.Format.Time="%Y">
-  <p>by David Thomas, &copy; <(GetTime())>.<br />
-  <$let HSC.Format.Time=(_ttf)>
-  Last modified at <(GetTime())>.</p>
+  <ul>
+    <li class="date">Last modified on <$let HSC.Format.Time=(_ttf)><(GetTime())></li>
+    <li>by David Thomas, &copy; <$let HSC.Format.Time="%Y"><(GetTime())></li>
+  </ul>
 </div>
 </$macro>
 
@@ -220,6 +230,24 @@
 <* wikipedia links *>
 <$macro wiki /close subj:string>
 <a class="external" href=("http://en.wikipedia.org/wiki/" + subj)><$content></a>
+</$macro>
+
+<* symbols *>
+
+<$macro ndash>
+&ndash;
+</$macro>
+
+<* definition lists *>
+
+<* dd + ndash *>
+<$macro ddd>
+<dd class="dash"><ndash>&#x20;
+</$macro>
+
+<* li + ndash *>
+<$macro lid>
+<li class="dash"><ndash>&#x20;
 </$macro>
 
 <* shortcuts *>
@@ -385,5 +413,4 @@ ARM Ltd.
 <$macro VFP>
 <abbr title="Vector Floating Point">VFP</abbr>
 </$macro>
-
 

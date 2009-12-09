@@ -9,17 +9,17 @@
     don&rsquo;t map onto C:</p>
     <dl>
       <dt>Processor flags</dt>
-      <dd>&ndash; the carry flag.</dd>
+      <ddd>the carry flag.</dd>
       <dt>Vector operations</dt>
-      <dd>&ndash; <acronym title="Single Instruction Multiple Data">SIMD</acronym> instructions.</dd>
+      <ddd><acronym title="Single Instruction Multiple Data">SIMD</acronym> instructions.</dd>
       <dt>Bulk transfers</dt>
-      <dd>&ndash; multiple-register loads and stores.</dd>
+      <ddd>multiple-register loads and stores.</dd>
       <dt>Specialised operations</dt>
-      <dd>&ndash; population count.</dd>
+      <ddd>population count.</dd>
       <dt>Atomic test-and-set instructions</dt>
-      <dd>&ndash; mutexes.</dd>
+      <ddd>mutexes.</dd>
       <dt>Other on-chip hardware</dt>
-      <dd>&ndash; <acronym title="Multiply-Accumulate">MAC</acronym> units.</dd>
+      <ddd><acronym title="Multiply-Accumulate">MAC</acronym> units.</dd>
     </dl>
 
     <p>The benefits of these features may be lost if plain, or na&iuml;ve, C

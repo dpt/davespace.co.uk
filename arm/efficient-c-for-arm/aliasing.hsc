@@ -6,15 +6,15 @@
   <slide>
     <dl>
       <dt>Pointers <dfn>alias</dfn> when they point to the same address.</dt>
-      <dd>&ndash; Writing via one pointer will change the value read through
+      <ddd>Writing via one pointer will change the value read through
       another.</dd>
     </dl>
     <dl>
       <dt>The compiler often doesn&rsquo;t know which pointers alias.</dt>
-      <dd>&ndash; The compiler must assume that <strong>any</strong> write
+      <ddd>The compiler must assume that <strong>any</strong> write
       through a pointer may affect the value read from
       <strong>any</strong> another pointer!</dd>
-      <dd>&ndash; This can significantly reduce code efficiency.</dd>
+      <ddd>This can significantly reduce code efficiency.</dd>
     </dl>
   </slide>
   <examples>

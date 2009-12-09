@@ -6,14 +6,14 @@
   <slide>
   <dl>
     <dt>Accessing an array element uses two variables</dt>
-    <dd>&ndash; <var>Base</var> and <var>Index</var>.</dd>
+    <ddd><var>Base</var> and <var>Index</var>.</dd>
     <dt>Usually there&rsquo;s a limit value to test against too.</dt>
-    <dd>&ndash; e.g. length of array.</dd>
+    <ddd>e.g. length of array.</dd>
     <dt>If you can substitute a single pointer variable instead of
     <var>Base</var> and <var>Index</var>, you can:</dt>
-    <dd>&ndash; Replace per-access computations with a periodically
+    <ddd>Replace per-access computations with a periodically
     incrementing pointer.</dd>
-    <dd>&ndash; Usually save a register (3 variables -&gt; 2 variables).</dd>
+    <ddd>Usually save a register (3 variables -&gt; 2 variables).</dd>
   </dl>
 
   <p>If we rewrite the <tt>nameToNumber</tt> example routine from earlier as
