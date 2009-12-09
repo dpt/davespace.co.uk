@@ -27,7 +27,7 @@
     <p>Is this the most fundamental thing?</p>
     <p>Floating point is therefore slow and should be avoided unless
     you&rsquo;re dealing with one special case. This applies even to Java.</p>
-    <p><a class="external" href="http://en.wikibooks.org/wiki/Embedded_Systems/Embedded_System_Basics/Fixed-Point_Arithmetic">http://en.wikibooks.org/wiki/Embedded_Systems/Embedded_System_Basics/Fixed-Point_Arithmetic</a></p>
+    <p><ext url="http://en.wikibooks.org/wiki/Embedded_Systems/Embedded_System_Basics/Fixed-Point_Arithmetic">http://en.wikibooks.org/wiki/Embedded_Systems/Embedded_System_Basics/Fixed-Point_Arithmetic</ext></p>
   </commentary>
   <footer>
   </heading>

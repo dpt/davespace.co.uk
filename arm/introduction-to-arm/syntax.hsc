@@ -29,8 +29,7 @@
     <p>Instructions are generally single-cycle (except write to <abbr
       title="Program Counter">PC</abbr>
     and register-controlled shift).</p>
-    <p>There is a <a class="external"
-      href="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</a>
+    <p>There is a <ext url="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</ext>
     form for the assembly which <ARM> have recently introduced called <UAL>
     (Unified Assembler Language), which allows the condition code to go after
     the flags.</p>

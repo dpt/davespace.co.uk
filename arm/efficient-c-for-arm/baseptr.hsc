@@ -13,12 +13,10 @@
   </slide>
   <commentary>
     <p>
-      <a class="external"
-        href="http://www.arm.com/support/faqdev/1490.html">http://www.arm.com/support/faqdev/1490.html</a>
+      <ext url="http://www.arm.com/support/faqdev/1490.html">http://www.arm.com/support/faqdev/1490.html</ext>
     </p>
     <p>
-      <a class="external"
-        href="http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf">http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf</a>
+      <ext url="http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf">http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf</ext>
     </p>
   </commentary>
   <footer>

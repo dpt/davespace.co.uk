@@ -211,7 +211,7 @@
 
 <* external links *>
 <$macro ext /close url:string>
-<a class="external" href=(url)><$content></a>
+<a class="external" href=(url)><$content> <span>(external link)</span></a>
 </$macro>
 
 <* wikipedia links *>

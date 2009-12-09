@@ -5,7 +5,7 @@
   <heading>
   <slide>
     <ul>
-      <li><a class="external" href="http://www.arm.com/"><ARMLtd></a> were
+      <li><ext url="http://www.arm.com/"><ARMLtd></ext> were
       founded in November 1990 as <em>Advanced RISC Machines Ltd</em>.</li>
       <li>A joint venture between Acorn Computers, Apple Computer and VLSI
       Technology.</li>

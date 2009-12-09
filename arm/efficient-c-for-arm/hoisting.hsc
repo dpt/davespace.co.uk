@@ -48,7 +48,7 @@ else
   </examples>
   <commentary>
   <p>
-    <a class="external" href="http://www.compileroptimizations.com/category/hoisting.htm">http://www.compileroptimizations.com/category/hoisting.htm</a>
+    <ext url="http://www.compileroptimizations.com/category/hoisting.htm">http://www.compileroptimizations.com/category/hoisting.htm</ext>
   </p>
   </commentary>
   <footer>

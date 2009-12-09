@@ -78,7 +78,7 @@ loop LDR   r12,[r0,r3,LSL #2]
   <commentary>
     <p><dfn>Sentinel</dfn>: Computers. a symbol, mark, or other labelling
     device indicating the beginning or end of a unit of information.</p>
-    <p>This is from <a class="external" href="http://www.azillionmonkeys.com/qed/case4.html">http://www.azillionmonkeys.com/qed/case4.html</a>.</p>
+    <p>This is from <ext url="http://www.azillionmonkeys.com/qed/case4.html">http://www.azillionmonkeys.com/qed/case4.html</ext>.</p>
     <p>Obviously you need to ensure that <code>list[N]</code> is both available
     and writable.</p>
     <p>This can be improved further by <a href="indexing.html">replacing array
