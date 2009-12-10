@@ -26,9 +26,8 @@
     identical.</p>
     <p>In the syntax line, curly brackets indicate optional parts.</p>
     <p>Leftmost register <code>Rd</code> is the destination.</p>
-    <p>Instructions are generally single-cycle (except write to <abbr
-      title="Program Counter">PC</abbr>
-    and register-controlled shift).</p>
+    <p>Instructions are generally single-cycle (except write to <PC> and
+    register-controlled shift).</p>
     <p>There is a <ext url="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</ext>
     form for the assembly which <ARM> have recently introduced called <UAL>
     (Unified Assembler Language), which allows the condition code to go after

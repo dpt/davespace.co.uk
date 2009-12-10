@@ -329,16 +329,20 @@ ARM Ltd.
 <abbr title="Digital Signal Processing">DSP</abbr>
 </$macro>
 
+<$macro GCC>
+<abbr title="GNU C Compiler">GCC</abbr>
+</$macro>
+
+<$macro HLL>
+<abbr title="High Level Language">HLL</abbr>
+</$macro>
+
 <$macro IP>
 <abbr title="Intellectual Property">IP</abbr>
 </$macro>
 
 <$macro IRQ>
 <abbr title="Interrupt Request">IRQ</abbr>
-</$macro>
-
-<$macro GCC>
-<abbr title="GNU C Compiler">GCC</abbr>
 </$macro>
 
 <$macro ISA>
@@ -351,6 +355,10 @@ ARM Ltd.
 
 <$macro NOP>
 <acronym title="No Operation">NOP</acronym>
+</$macro>
+
+<$macro MAC>
+<acronym title="Multiply-Accumulate">MAC</acronym>
 </$macro>
 
 <$macro MIPS>

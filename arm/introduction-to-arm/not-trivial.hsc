@@ -11,7 +11,7 @@
       <dt>Processor flags</dt>
       <ddd>the carry flag.</dd>
       <dt>Vector operations</dt>
-      <ddd><acronym title="Single Instruction Multiple Data">SIMD</acronym> instructions.</dd>
+      <ddd><SIMD> instructions.</dd>
       <dt>Bulk transfers</dt>
       <ddd>multiple-register loads and stores.</dd>
       <dt>Specialised operations</dt>
@@ -19,7 +19,7 @@
       <dt>Atomic test-and-set instructions</dt>
       <ddd>mutexes.</dd>
       <dt>Other on-chip hardware</dt>
-      <ddd><acronym title="Multiply-Accumulate">MAC</acronym> units.</dd>
+      <ddd><MAC> units.</dd>
     </dl>
 
     <p>The benefits of these features may be lost if plain, or na&iuml;ve, C
