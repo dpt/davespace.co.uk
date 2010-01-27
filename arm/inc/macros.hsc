@@ -219,6 +219,21 @@
 <a class="external wikipedia" href=("http://en.wikipedia.org/wiki/" + subj)><$content></a>
 </$macro>
 
+<* will need width and height too *>
+<$macro captionedimage /close url:string dsc:string>
+<div class="captionedimage">
+  <img src=(url) alt=(dsc) />
+  <p class="caption"><$content></p>
+</div>
+</$macro>
+
+<$macro date>
+<$define _ttf:string=(HSC.Format.Time)>
+<div id="date">
+  <$let HSC.Format.Time="%A, %d %B %Y"><(GetTime())>
+</div>
+</$macro>
+
 <* symbols *>
 
 <$macro ndash>
@@ -227,6 +242,22 @@
 
 <$macro mdash>
 &mdash;
+</$macro>
+
+<$macro lq>
+&lsquo;
+</$macro>
+
+<$macro rq>
+&rsquo;
+</$macro>
+
+<$macro ldq>
+&ldquo;
+</$macro>
+
+<$macro rdq>
+&rdquo;
 </$macro>
 
 <* definition lists *>
