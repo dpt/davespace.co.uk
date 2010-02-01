@@ -5,7 +5,7 @@
             desc="Replacing the case on a Castle Iyonix computer."
             root=""
             heading="davespace.co.uk: Replacing an Iyonix's Case">
-  <div id="masthead"><img src="img/logolg.png" width="208" height="283" alt="Home" /></div>
+  <div id="masthead"><img src="img/logolg.png" width="208" height="291" alt="Home" /></div>
   <div id="content">
     <date>
     <h1>Replacing an Iyonix's Case</h1>
