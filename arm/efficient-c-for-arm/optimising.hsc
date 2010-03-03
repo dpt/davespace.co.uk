@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Optimising" rev="before-tuning" cur="optimising" fwd="profilers">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>The goal is to write C code which compiles into perfect, efficient,
     <ARM> code which:</p>
     <ul>
@@ -15,12 +16,12 @@
     <p>Optimisation is not the same as fixing, reworking or refactoring your
     code.</p>
     <p>Optimisation takes time and may reduce readability.</p>
-  </slide>
+  </article>
   <commentary>
     <p>Optimisation is an iterative process, often involving much
     discovery.</p>
   </commentary>
-  <slide title="When To Optimise">
+  <article title="When To Optimise">
     <p><strong>Only</strong> optimise heavily-used routines.</p>
     <p>Discover heavily-used routines by:</p>
     <ul>
@@ -29,7 +30,7 @@
     </ul>
     <p>The act of discovery is often surprising; sometimes embarrassing:</p>
     <blockquote>&ldquo;He was calling strlen() in a loop.&rdquo;</blockquote>
-  </slide>
+  </article>
   <commentary>
     <p>It might be worth optimising big routines for space.</p>
     <p>Inspection is important: just reading the code can show up a multitude
@@ -38,7 +39,7 @@
     earlier. A fresh perspective can make a difference to how you view the
     code.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

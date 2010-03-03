@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Biasing Values" rev="smallfunc" cur="biasing" fwd="unsignedrange">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <dl>
     <dt><ARM> instructions are able to encode a limited range of immediate
     values.</dt>
@@ -13,7 +14,7 @@
     biasing the values so that they can fit in <ARM>&rsquo;s available
     range.</dt>
   </dl>
-  </slide>
+  </article>
   <examples>
   <before>
   <p>This fragment tests whether Unicode character <var>c</var> is a Thai
@@ -59,24 +60,24 @@
       <p>In this revised version we bias the input character <var>c</var> by 0xE00.</p>
 
        <csyntax>c -= 0xE00;
-return c == (UNICODE_THAI_MAI_HAN_AKAT  – 0xE00) ||
-       c == (UNICODE_THAI_SARA_AM       – 0xE00) ||
-       c == (UNICODE_THAI_SARA_I        – 0xE00) ||
-       c == (UNICODE_THAI_SARA_II       – 0xE00) ||
-       c == (UNICODE_THAI_SARA_UE       – 0xE00) ||
-       c == (UNICODE_THAI_SARA_UEE      – 0xE00) ||
-       c == (UNICODE_THAI_SARA_U        – 0xE00) ||
-       c == (UNICODE_THAI_SARA_UU       – 0xE00) ||
-       c == (UNICODE_THAI_PHINTHU       – 0xE00) ||
-       c == (UNICODE_THAI_LAKKHANGYAO   – 0xE00) ||
-       c == (UNICODE_THAI_MAITAIKHU     – 0xE00) ||
-       c == (UNICODE_THAI_MAI_EK        – 0xE00) ||
-       c == (UNICODE_THAI_MAI_THO       – 0xE00) ||
-       c == (UNICODE_THAI_MAI_TRI       – 0xE00) ||
-       c == (UNICODE_THAI_MAI_CHATTA_WA – 0xE00) ||
-       c == (UNICODE_THAI_THANTHAKHAT   – 0xE00) ||
-       c == (UNICODE_THAI_NIKHAHIT      – 0xE00) ||
-       c == (UNICODE_THAI_YAMAKKAN      – 0xE00);</csyntax>
+return c == (UNICODE_THAI_MAI_HAN_AKAT  - 0xE00) ||
+       c == (UNICODE_THAI_SARA_AM       - 0xE00) ||
+       c == (UNICODE_THAI_SARA_I        - 0xE00) ||
+       c == (UNICODE_THAI_SARA_II       - 0xE00) ||
+       c == (UNICODE_THAI_SARA_UE       - 0xE00) ||
+       c == (UNICODE_THAI_SARA_UEE      - 0xE00) ||
+       c == (UNICODE_THAI_SARA_U        - 0xE00) ||
+       c == (UNICODE_THAI_SARA_UU       - 0xE00) ||
+       c == (UNICODE_THAI_PHINTHU       - 0xE00) ||
+       c == (UNICODE_THAI_LAKKHANGYAO   - 0xE00) ||
+       c == (UNICODE_THAI_MAITAIKHU     - 0xE00) ||
+       c == (UNICODE_THAI_MAI_EK        - 0xE00) ||
+       c == (UNICODE_THAI_MAI_THO       - 0xE00) ||
+       c == (UNICODE_THAI_MAI_TRI       - 0xE00) ||
+       c == (UNICODE_THAI_MAI_CHATTA_WA - 0xE00) ||
+       c == (UNICODE_THAI_THANTHAKHAT   - 0xE00) ||
+       c == (UNICODE_THAI_NIKHAHIT      - 0xE00) ||
+       c == (UNICODE_THAI_YAMAKKAN      - 0xE00);</csyntax>
 
       <armsyntax>bias2 SUB      r0,r0,#0xe00
       CMP      r0,#0x31
@@ -103,7 +104,7 @@ return c == (UNICODE_THAI_MAI_HAN_AKAT  – 0xE00) ||
       </ul>
     </after>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

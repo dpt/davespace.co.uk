@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Profilers" rev="optimising" cur="profilers" fwd="slow">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>When profiling on x86 don&rsquo;t expect the results to be accurate for
     <ARM>.</p>
     <ul>
@@ -26,8 +27,8 @@
         <lid>Debug builds enable a variety of extra bits (assertions, debug output).</li>
       </ul>
     </ul>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

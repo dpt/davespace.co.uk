@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Local Variable Types" rev="memaccess" cur="localvar" fwd="funcarg">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p><ARM> data processing is 32-bit.</p>
     <ul>
       <li>Use a 32-bit data type for local variables.</li>
@@ -13,7 +14,7 @@
     </ul>
     <p>The exception to this is when you require wrap-around or modulo
     arithmetic (e.g. 255+1 = 0).</p>
-  </slide>
+  </article>
   <examples>
     <p>This example code checksums a packet of 64 words:</p>
 <csyntax>int checksum1(const int *data)
@@ -66,7 +67,7 @@ loop
     &lsquo;free&rsquo; with <code>int</code>s, but not with
     <code>char</code>s.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Thumb-2" rev="thumb-example" cur="thumb-2" fwd="arm-ltd">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <ul>
       <li>Thumb-2 is the newest version of Thumb.</li>
       <li>It&rsquo;s present in the Cortex <CPU> series (or any v7).</li>
@@ -17,8 +18,8 @@
     <ARM> and Thumb assembler formats into <dfn><UAL></dfn> <ndash> a Unified
     Assembler Language. New <ARM> assemblers can take <UAL> format assembler
     and output to <ARM> <em>or</em> Thumb-2.</p>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

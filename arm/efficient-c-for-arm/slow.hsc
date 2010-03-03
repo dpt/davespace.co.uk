@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Stuff That&rsquo;s Slow on ARM" rev="profilers" cur="slow" fwd="fp">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl>
       <dt>Floating Point</dt>
       <ddd>Most <ARM>s don&rsquo;t have floating point units.</dd>
@@ -12,8 +13,8 @@
       <dt>Unaligned data access</dt>
       <ddd><ARM> prefers word-aligned data.</dd>
     </dl>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

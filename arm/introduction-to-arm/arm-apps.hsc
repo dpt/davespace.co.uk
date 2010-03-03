@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Applications" rev="arm-tools" cur="arm-apps" fwd="arm-arch">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl>
       <dt>Mobile Phones, <PDA>s</dt>
       <ddd>Almost all</dd>
@@ -16,8 +17,8 @@
       <ddd>Tom Tom 300</dd>
       <dt>Set Top Boxes, TVs, Hard Discs, Routers, ...</dt>
     </dl>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

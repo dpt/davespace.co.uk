@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="What&rsquo;s inside various devices?" rev="arm-cores" cur="arm-inside" fwd="arm-test">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <table id="cores">
       <thead>
         <tr>
@@ -76,8 +77,8 @@
         </tr>
       </tbody>
     </table>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

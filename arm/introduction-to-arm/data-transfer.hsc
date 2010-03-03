@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Single Register Data Transfer" rev="multiply" cur="data-transfer" fwd="addressing">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <format>&lt;operation&gt;{cond}{size} Rd, &lt;address&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -23,7 +24,7 @@
       <dt><code>&lt;operation&gt;SH</code></dt>
       <dd><dfn>signed half-word</dfn></dd>
     </dl>
-  </slide>
+  </article>
   <examples>
     <dl>
       <dt><code>LDR r0,[r1]</code></dt>
@@ -38,7 +39,7 @@
     <p><code>SB</code> and <code>SH</code> modes are not available with
     <code>STR</code>.</p>
   </commentary>
-  <slide title="Alignment Restrictions">
+  <article title="Alignment Restrictions">
     <p>In general, values loaded from or stored to memory must be aligned to
     the size of the data type:</p>
     <ul>
@@ -47,14 +48,14 @@
       <li>Bytes <ndash> no restriction.</li>
     </ul>
     <p>This restriction was relaxed in <ARMv6>.</p>
-  </slide>
+  </article>
   <commentary>
     <p>Values can only be loaded from, or stored to, memory at a multiple of
     that type size. For example, a half-word can only be loaded from even
     addresses. (<code>double</code>s are an exception and can live on 4-byte
     boundaries in some architecture versions).</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

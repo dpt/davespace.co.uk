@@ -1,11 +1,11 @@
 <* $Id$ *>
 
 <page heading="Introduction" cur="index" fwd="why-learn">
-  <nav>
+  <header>
+  <sidebar>
+  <content>
 
-  <heading>
-
-  <slide>
+  <article>
     <p>The <dfn>Introduction to ARM</dfn> course aims to bring the reader up to
     speed on programming in <ARM> assembly language. Its goal is <em>not</em>
     to get you to write entire programs in assembly, but to give you enough
@@ -28,15 +28,15 @@
 
     <p>Move between pages using the links on the left hand side of the page. <a
       href="why-learn.html">Begin reading here.</a> </p>
-  </slide>
+  </article>
 
-  <slide title="Further Reading">
+  <article title="Further Reading">
     <p>This is the first part of a two-part <ARM> training course, the second
     is called <a href="../efficient-c-for-arm/index.html"><dfn>Efficient C for
     ARM</dfn></a>.</p>
-  </slide>
+  </article>
 
+  </content>
   <footer>
-  </heading>
 </page>
 

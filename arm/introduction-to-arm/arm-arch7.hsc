@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Architecture 7" rev="arm-arch6" cur="arm-arch7" fwd="arm-cores">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl>
       <dt>v7A, v7R</dt>
       <ddd>Dynamic Compiler Support.</dd>
@@ -15,7 +16,7 @@
       <ddd>Minimalist variant for embedded uses.</dd>
       <ddd>Thumb-2 only.</dd>
     </dl>
-  </slide>
+  </article>
   <commentary>
     <p>Only the newest tools currently target v7. e.g. <ext url="http://www.codesourcery.com/sgpp/lite/arm">CodeSourcery&rsquo;s GCC
       ARM toolchain</ext>.</p>
@@ -27,7 +28,7 @@
     <ARMv5> and 2x the performance of <ARMv6> <SIMD> on a range of media and <DSP>
     applications.</blockquote>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

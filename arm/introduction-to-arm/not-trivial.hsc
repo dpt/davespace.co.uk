@@ -1,10 +1,11 @@
 <* $Id$ *>
 
 <page heading="Not a Trivial Mapping" rev="why-learn" cur="not-trivial" fwd="instruction-sets">
-  <nav>
-  <heading>
+  <header>
+  <sidebar>
+  <content>
 
-  <slide>
+  <article>
     <p>There are features available to the assembler programmer which
     don&rsquo;t map onto C:</p>
     <dl>
@@ -24,7 +25,7 @@
 
     <p>The benefits of these features may be lost if plain, or na&iuml;ve, C
     code is used.</p>
-  </slide>
+  </article>
 
   <commentary>
     <p>
@@ -51,7 +52,7 @@
     </p>
   </commentary>
 
+  </content>
   <footer>
-  </heading>
 </page>
 

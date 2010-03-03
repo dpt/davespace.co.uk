@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Barrel Shifter" rev="compare" cur="barrel-shifter" fwd="operand2">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>The <dfn>barrel shifter</dfn> is a functional unit which can be used in
     a number of different circumstances. (These are not operations themselves
     in <ARM> mode.)</p>
@@ -11,13 +12,13 @@
     <tr>
       <td>
         <h4><code>LSL</code> <ndash> Logical Shift Left<br/></h4>
-        <diagram src="barrel-lsl.png" alt="LSL" width="157" height="118">
+        <diagram src="barrel-lsl.png" alt="LSL">
         e.g. multiplication by a power of 2.<br />
         Equivalent to <code>&lt;&lt;</code> in C.
       </td>
       <td>
         <h4><code>LSR</code> <ndash> Logical Shift Right<br/></h4>
-        <diagram src="barrel-lsr.png" alt="LSR" width="159" height="118">
+        <diagram src="barrel-lsr.png" alt="LSR">
         e.g. division by a power of 2.<br />
         Equivalent to <code>&gt;&gt;</code> in C.
       </td>
@@ -25,8 +26,8 @@
       <tr>
         <td colspan="2">
           <h4><code>ASR</code> <ndash> Arithmetic Shift Right<br/></h4>
-          <diagram src="barrel-asr0.png" alt="ASR +ve" width="159" height="118">
-          <diagram src="barrel-asr1.png" alt="ASR -ve" width="159" height="118">
+          <diagram src="barrel-asr0.png" alt="ASR +ve">
+          <diagram src="barrel-asr1.png" alt="ASR -ve">
           e.g. signed division by a power of 2.<br />
           Equivalent to <code>&gt;&gt;</code> in C.<a href="#implementationdefined">&dagger;</a>
         </td>
@@ -34,17 +35,17 @@
       <tr>
         <td>
           <h4><code>ROR</code> <ndash> Rotate Right<br/></h4>
-          <diagram src="barrel-ror.png" alt="ROR" width="180" height="118">
+          <diagram src="barrel-ror.png" alt="ROR">
           Bit rotate with wrap-around.
         </td>
         <td>
           <h4><code>RRX</code> <ndash> Rotate Right Extended<br/></h4>
-          <diagram src="barrel-rrx.png" alt="RRX" width="191" height="118">
+          <diagram src="barrel-rrx.png" alt="RRX">
           Bit rotate with wrap-around including carry bit.
         </td>
       </tr>
     </table>
-  </slide>
+  </article>
   <commentary>
     <p>Here&rsquo;s how we implement the C shift operations in <ARM>. Note that
     these are unsigned operators. If we want to perform a shift which preserves
@@ -60,7 +61,7 @@
     arithmetic shift. (That said, it&rsquo;s always an arithmetic shift in all
     of the <ARM> toolchains the author has used.)</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

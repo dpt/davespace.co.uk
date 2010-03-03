@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Function Argument Types" rev="localvar" cur="funcarg" fwd="varaddr">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <csyntax>short addshorts1(short a, short b)
 {
   return (short) (a + (b &gt;&gt; 1));
@@ -28,7 +29,7 @@
     <li>The compiler must make a compatible decision for both the caller and
     the callee.</li>
   </ul>
-  </slide>
+  </article>
   <examples>
     <p>For the above example, <ARMCC> generates:</p>
   <armsyntax>addshorts1
@@ -67,7 +68,7 @@
     <p>You can see from this that simply mixing objects between different
     compilers can cause all sorts of problems.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

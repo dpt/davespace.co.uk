@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Logical Instructions" rev="arithmetic" cur="logical" fwd="compare">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -16,7 +17,7 @@
       <dt><code>BIC</code> <ndash> <dfn>bitwise clear</dfn></dt>
       <dd>Rd := Rn AND NOT Operand2</dd>
     </dl>
-  </slide>
+  </article>
   <examples>
     <dl>
       <dt><code>AND r8, r7, r2</code></dt>
@@ -29,7 +30,7 @@
       <dd>R11 ^= 1</dd>
     </dl>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Loop Unrolling" rev="sentinels" cur="unrolling" fwd="datatypes">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <p>Small loops can be <dfn>unrolled</dfn>.</p>
   <ul>
     <li>Inner part repeated multiple times.</li>
@@ -21,7 +22,7 @@
   <ul>
     <li>All test/branch overhead vanishes.</li>
   </ul>
-  </slide>
+  </article>
   <examples>
     <before>
       <p>Before unrolling:</p>
@@ -58,7 +59,7 @@
     <p>See <wiki subj="Duff's_device">Duff&rsquo;s Device</wiki> on
     Wikipedia.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

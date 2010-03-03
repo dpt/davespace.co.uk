@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Tools" rev="arm-ltd" cur="arm-tools" fwd="arm-apps">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p><ARMLtd> develop the tools needed to design <ARM>-powered products.</p>
     <dl>
       <dt>Software tools</dt>
@@ -14,7 +15,7 @@
       <dt>Development boards</dt>
       <dt>Debug hardware, etc.</dt>
     </dl>
-  </slide>
+  </article>
   <commentary>
     <p><SDT> is old. <ADS> is old-ish. The others are more recent. <RVCT> 4 is
     the latest.</p>
@@ -22,7 +23,7 @@
     other companies including Keil (now part of <ARM>), Green Hills and
     Metrowerks.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Memory Access" rev="datatypes" cur="memaccess" fwd="localvar">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <p><ARM> is a <dfn>load-store</dfn> architecture:</p>
     <ul>
       <li>Data must be loaded into registers from memory before it can be
@@ -15,8 +16,8 @@
     <ul>
       <li>So <code>char</code> is unsigned by default on <ARM>.</li>
     </ul>
-  </slide>
-  <slide title="Memory Instructions Throughout the Ages">
+  </article>
+  <article title="Memory Instructions Throughout the Ages">
     <p>Not all of the current memory access instructions were present in the
     original <ARM> <ISA>. They have had to be &lsquo;shoehorned&rsquo; in for
     later architectures. This means that they are not as flexible as the
@@ -87,7 +88,7 @@
 
     <p>You may get better performance by using <code>LDR</code> instead of
     <code>LDRH</code>, for example.</p>
-  </slide>
+  </article>
   <commentary>
   <p><ARMv4> introduced signed and halfword memory access types.</p>
     <p><ARMv5> introduced double-word accesses.</p>
@@ -100,7 +101,7 @@
     Array indexing of <code>short</code>s costs one more cycle than
     <code>int</code>s."</q></p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

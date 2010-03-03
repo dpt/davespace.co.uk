@@ -1,14 +1,15 @@
 <* $Id$ *>
 
 <page heading="Looping Structures" rev="varaddr" cur="loops" fwd="regalloc">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>Loop termination condition can have a significant overhead.</p>
     <ul>
       <li>You should write loops to count down.</li>
     </ul>
-  </slide>
+  </article>
   <examples>
     <before>
       <p>Here&rsquo;s a routine to calculate a factorial.</p>
@@ -75,7 +76,7 @@ loop  MUL  r1,r0,r1
     <p>The counting up <code>for</code> loop was changed to a counting down
     <code>do .. while</code> loop.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

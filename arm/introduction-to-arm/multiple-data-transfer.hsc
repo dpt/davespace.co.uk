@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Multiple Register Data Transfer" rev="addressing" cur="multiple-data-transfer" fwd="stack">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <format>&lt;operation&gt;{cond}&lt;mode&gt; Rn{!}, &lt;reglist&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -21,7 +22,7 @@
     </dl>
     <p><var>&lt;reglist&gt;</var> is the list of registers to load or store. It
     can be a comma-separated list or an Rx-Ry style range.</p>
-  </slide>
+  </article>
   <examples>
     <dl>
       <dt><code>LDMIA r0, {r3,r7}</code></dt>
@@ -36,7 +37,7 @@
           Decrement Before each store.</dd>
     </dl>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

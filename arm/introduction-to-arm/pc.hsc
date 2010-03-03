@@ -1,28 +1,27 @@
 <* $Id$ *>
 
 <page heading="Program Counter" rev="registers" cur="pc" fwd="syntax">
-  <nav>
-  <heading>
-  <slide>
-    <dl>
-    <dt>When in <ARM> mode:</dt>
-    <dd>
+  <header>
+  <sidebar>
+  <content>
+  <article>
+    <ul>
+    <li>When in <ARM> mode:
       <ul>
         <li>Instructions are 32 bits wide.</li>
         <li>All instructions must be word-aligned.</li>
         <li>The <PC> is in bits [31:2] and bits [1:0] are undefined.</li>
       </ul>
-    </dd>
-    <dt>When in Thumb mode:</dt>
-    <dd>
+    </li>
+    <li>When in Thumb mode:
       <ul>
         <li>Instructions are 16 bits wide.</li>
         <li>All instructions must be halfword-aligned.</li>
         <li>The <PC> is in bits [31:1] and bit 0 is undefined.</li>
       </ul>
-    </dd>
-    </dl>
-  </slide>
+    </li>
+    </ul>
+  </article>
   <commentary>
   <p>R15 is the <PC>.</p>
   <p>&ldquo;word&rdquo; and &ldquo;half-word&rdquo; mean 4-byte and 2-byte
@@ -34,7 +33,7 @@
     </ul>
   </p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,0 +1,679 @@
+/* $Id$ */
+
+/******************************************************************************/
+/* CSS RESET																  */
+/******************************************************************************/
+
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+HTML, BODY, DIV, SPAN, APPLET, OBJECT, IFRAME,
+H1, H2, H3, H4, H5, H6, P, BLOCKQUOTE, PRE,
+A, ABBR, ACRONYM, ADDRESS, BIG, CITE, CODE,
+DEL, DFN, EM, FONT, IMG, INS, KBD, Q, S, SAMP,
+SMALL, STRIKE, STRONG, SUB, SUP, TT, VAR,
+B, U, I, CENTER,
+DL, DT, DD, OL, UL, LI,
+FIELDSET, FORM, LABEL, LEGEND,
+TABLE, CAPTION, TBODY, TFOOT, THEAD, TR, TH, TD {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+BODY {
+	line-height: 1;
+}
+/*OL, UL {*/
+UL {
+	list-style: none;
+}
+BLOCKQUOTE, Q {
+	quotes: none;
+}
+BLOCKQUOTE:before, BLOCKQUOTE:after,
+Q:before, Q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+INS {
+	text-decoration: none;
+}
+DEL {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+TABLE {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+SUP {
+	font-size: 50%;
+	vertical-align: top;
+}
+
+SUB {
+	font-size: 50%;
+	vertical-align: bottom;
+}
+
+/* extras to defeat Netsurf's default styles */
+DT {
+	font-weight: normal;
+}
+DFN {
+	text-decoration: none;
+	font-style: normal;
+}
+ACRONYM {
+	font-variant: normal;
+}
+
+/******************************************************************************/
+/* BASIC TAGS                                                                 */
+/******************************************************************************/
+
+BODY {
+	background: #f2f2f2 url(img/bg.png) repeat-y 0 0;
+	color: #000;
+	font-family: Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
+	line-height: 150%;
+	margin: 0 8px 0;
+	padding: 0 8px 0;
+}
+H1,H2,H3 {
+	font-family: Georgia,Times,'Times New Roman',serif;
+}
+CODE,PRE {
+	font-family: 'Lucida Console','Courier New',Courier,monospace;
+	font-size: 90%;
+}
+CODE {
+	color: #085a8c;
+}
+BLOCKQUOTE {
+	background: transparent url(img/dquote-l.png) no-repeat left top;
+	font-style: italic;
+	padding-left: 36px;
+	quotes: "\201C" "\201D";
+}
+P,DL,PRE,BLOCKQUOTE {
+	margin-bottom: 0.5em;
+}
+ABBR,ACRONYM {
+	border-bottom: 1px solid #ddd;
+	cursor: help;
+}
+ACRONYM
+{
+	font-size: 80%; /* mucks up in Netsurf */
+}
+
+/******************************************************************************/
+/* LINKS																	  */
+/******************************************************************************/
+
+A:link, A:visited, A:active, A:hover {
+	color: #085a8c;
+}
+
+/* external links */
+A.external:link {
+	background: transparent url(img/small.png) no-repeat 100% 6px;
+	padding-right: 14px;
+}
+A.external:visited, A.external:active, A.external:hover {
+	background: transparent url(img/small.png) no-repeat 100% -16px;
+	padding-right: 14px;
+}
+/* hide hint text in external links */
+A.external SPAN {
+	display: none;
+}
+
+/******************************************************************************/
+/* HEADER                                                                     */
+/******************************************************************************/
+
+#pagetopshadow {
+	background: #f2f2f2 url(img/bg-top.png) repeat-x 0 0;
+	height: 128px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1; /* not quite sure why i need this */
+}
+
+/* header graphic */
+
+#header {
+	margin: 4px 0 4px 176px;
+	padding: 0;
+}
+
+#header H1 {
+    background: transparent url(img/title.png) no-repeat;
+    height: 96px;
+    width: 768px;
+}
+
+#header H1 A {
+    display: block;
+    height: 96px;
+    width: 768px;
+}
+
+#header H1 SPAN {
+    display: none;
+}
+
+/* header tabs */
+
+#tabs {
+    padding: 0;
+    margin: 0;
+    height: 48px;
+    width: 768px;
+}
+#tabs LI {
+    list-style-type: none;
+}
+#tabs LI A {
+    background: transparent url(img/title.png) no-repeat 0 0;
+    display: block;
+    float: left;
+    height: 48px;
+}
+
+#tabs #hometab A    { width:  38px; }
+#tabs #riscostab A,
+#tabs #armtab A     { width: 243px; }
+#tabs #pythontab A  { width: 244px; }
+
+#tabs LI A SPAN {
+  display: none;
+}
+
+/* tabs for all sections */
+
+#tabs #hometab A                 { background-position:    0px  -96px; }
+#tabs #riscostab A               { background-position:  -38px  -96px; }
+#tabs #armtab A                  { background-position: -281px  -96px; }
+#tabs #pythontab A               { background-position: -524px  -96px; }
+
+#tabs #hometab A:hover           { background-position:    0px -144px; }
+#tabs #riscostab A:hover         { background-position:  -38px -144px; }
+#tabs #armtab A:hover            { background-position: -281px -144px; }
+#tabs #pythontab A:hover         { background-position: -524px -144px; }
+
+/* tabs for the current section (first #id is the page BODY#d) */
+
+#index #tabs #hometab A          { background-position:    0px -192px; }
+#riscos #tabs #riscostab A       { background-position:  -38px -192px; }
+#arm #tabs #armtab A             { background-position: -281px -192px; }
+#python #tabs #pythontab A       { background-position: -524px -192px; }
+
+#index #tabs #hometab A:hover    { background-position:    0px -240px; }
+#riscos #tabs #riscostab A:hover { background-position:  -38px -240px; }
+#arm #tabs #armtab A:hover       { background-position: -281px -240px; }
+#python #tabs #pythontab A:hover { background-position: -524px -240px; }
+
+/******************************************************************************/
+/* SIDEBAR                                                                    */
+/******************************************************************************/
+
+#sidebar {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 160px;
+}
+
+#sidebar > H1 {
+	display: none;
+}
+
+#sidebar A:link,
+#sidebar A:visited,
+#sidebar A:active {
+	text-decoration: none;
+}
+#sidebar A:hover {
+	text-decoration: underline;
+}
+
+#sidebar
+{
+	border-top: 1pt dotted #085a8c;
+	border-bottom: 1pt dotted #085a8c;
+	padding: 1em 0 0 0;
+}
+
+#sidebar H2 {
+	font-weight: normal;
+	line-height: 150%;
+	padding-bottom: 1em;
+	text-align: right;
+}
+
+#sidebar UL {
+	padding-bottom: 1em;
+}
+
+#sidebar LI {
+	font-size: 80%;
+	line-height: 150%;
+	padding-right: 10px;
+	text-align: right;
+}
+#sidebar LI {
+	background: transparent url(img/small.png) no-repeat right -296px;
+}
+#sidebar LI.current {
+	background: transparent url(img/small.png) no-repeat right -39px;
+}
+
+/******************************************************************************/
+/* FLIPPER                                                                    */
+/******************************************************************************/
+
+#flipper {
+	clear: right;
+	margin-left: 192px;
+	max-width: 736px; /* 768-16-16 */
+	padding: 0.5em 0 0.5em 0;
+}
+
+#flipper > H1 {
+	display: none;
+}
+
+#flipper UL {
+	text-align: right;
+}
+#flipper LI {
+	display: inline-block;
+	height: 62px;
+	width: 41px;
+}
+#flipper LI A {
+	display: block;
+	height: 54px;
+	width: 33px;
+}
+#flipper LI SPAN {
+	display: none;
+}
+#flipper LI#prev A {
+	background: transparent url(img/arrows.png) no-repeat 0px 0px;
+}
+#flipper LI#next A {
+	background: transparent url(img/arrows.png) no-repeat 0px -54px;
+}
+#flipper LI#prev A:hover {
+	background: transparent url(img/arrows.png) no-repeat 0px -108px;
+}
+#flipper LI#next A:hover {
+	background: transparent url(img/arrows.png) no-repeat 0px -162px;
+}
+
+/******************************************************************************/
+/* CONTENT																	  */
+/******************************************************************************/
+
+#content {
+	margin-left: 192px;
+	max-width: 736px; /* 768-16-16 */
+}
+
+#content > .article,
+#content > .examples,
+#content > .commentary {
+	margin-bottom: 2em;
+}
+
+#content > .examples > .before {
+	padding-bottom: 69px;
+	margin-bottom: 3px;
+	background: transparent url(img/arr-down.png) no-repeat center bottom;
+}
+
+#content > .examples > .after {
+}
+
+#content UL {
+	margin-bottom: 0.5em;
+	margin-left: 1em;
+}
+#content UL > LI {
+	background: transparent url(img/small.png) no-repeat left -163px;
+	padding-left: 1em;
+}
+
+#content UL UL {
+	margin-bottom: 0;
+}
+#content UL UL > LI {
+	background: transparent url(img/small.png) no-repeat left -419px;
+	padding-left: 1em;
+}
+
+#content OL {
+	margin-bottom: 0.5em;
+	margin-left: 2em;
+}
+
+/* regular split level DL */
+#content DL {
+	margin-bottom: 0.5em;
+	margin-left: 1em; /* in sync with UL */
+}
+#content DT {
+	background: transparent url(img/small.png) no-repeat left -163px;
+	padding-left: 1em;
+}
+#content DD {
+	background: transparent url(img/small.png) no-repeat left -419px;
+	padding-left: 1em;
+	margin-left: 1em;
+}
+#content DD + DT {
+	margin-top: 0.25em;
+}
+
+/* two column DL */
+#content .columns {
+	display: table-cell; /* we have this to force a new float context */
+	margin-bottom: 0.5em;
+	margin-left: 1em; /* in sync with UL */
+}
+#content .columns > DT {
+	background: transparent url(img/small.png) no-repeat left -163px;
+	clear: left;
+	float: left;
+	margin-left: 1em;
+	width: 5em;
+}
+#content .columns > DD {
+	float: left;
+}
+
+/* book covers */
+/* slightly tenuous rule */
+#content .books > DD + DD + DD + DD {
+	clear: right;
+}
+#content .books > DD > IMG {
+	float: right;
+	margin-bottom: 1em;
+}
+
+/* download box */
+#content #downloadbox {
+	float: right;
+	margin-left: 0.5em;
+	width: 160px;
+	background: transparent url(img/downloadbg.png) repeat-y 0 0;
+}
+
+#content #downloadbox H2 {
+	background: transparent url(img/downloads.png) no-repeat 0 0;
+	height: 47px;
+	text-indent: -9999px;
+	width: 165px;
+}
+
+/******************************************************************************/
+/* HEADERS																	  */
+/******************************************************************************/
+
+#content > #date {
+	font-size: smaller;
+	font-style: italic;
+	padding-bottom: 0.75em;
+	margin-bottom: 0.75em;
+	text-align: right;
+}
+
+/* bottom space split between margin and padding so that border sits halfway */
+#content > H1,
+#content > H2,
+#content > H3 {
+	padding-top: 0.75em;
+	margin-bottom: 0.75em;
+	padding-bottom: 0.75em;
+}
+
+#content > H1 {
+	border-bottom: 1pt dotted #5a91b2;
+	color: #5a91b2;
+	font-size: 200%;
+}
+/* Hide link behaviour, change colour on hover as a hint. */
+#content > H1 > A {
+	color: #5a91b2;
+	text-decoration: none;
+}
+#content > H1 > A:hover {
+	text-decoration: underline;
+}
+
+#content > H2 {
+	border-bottom: 1pt dotted #085a8c;
+	color: #085a8c;
+	font-size: 150%;
+}
+
+#content > H3 {
+	border-bottom: 1pt dotted #085a8c;
+	color: #085a8c;
+	font-size: 125%;
+}
+
+/******************************************************************************/
+/* FOOTER																	  */
+/******************************************************************************/
+
+#footer {
+	margin-left: 192px;
+	max-width: 736px; /* 768-16-16 */
+
+	border-top: 1pt dotted #085a8c;
+	clear: both;
+	color: #085a8c;
+	font-size: 80%;
+	line-height: 150%;
+	padding-top: 2em;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+#footer UL {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+#footer UL > LI  {
+	background: none;
+	display: inline;
+	margin: 0;
+	padding: 0 0.5em 0 0;
+}
+
+#footer UL > LI + LI {
+	border-left: 1pt solid #adc8d9;
+	padding: 0 0 0 0.5em;
+}
+
+/* this is the last element in the nav bar, so has both bottom and top
+ * dashed borders */
+#footer #w3c {
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
+#footer #w3c > P {
+	margin-bottom: 0; /* squash rule for P */
+	padding: 1px 0 0 0;
+	text-align: center;
+}
+
+/******************************************************************************/
+/* STUFF ON SLIDES AND COMMENTARY											  */
+/******************************************************************************/
+
+/* instruction syntax: large, centred, non-wrapping */
+.format {
+	font-size: 150%;
+	padding: 0.5em;
+	text-align: center;
+	white-space: nowrap;
+}
+.format > CODE {
+	background-color: #eaf1f5;
+	border: 1pt solid #bdc1d7; /* light blue */
+	padding: 0.5em;
+}
+
+/* diagram, centred */
+.diagram IMG {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.5em;
+}
+/* disable borders around linked images */
+.diagram A IMG {
+	border: none;
+}
+
+.captionedimage {
+	width: 544px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+}
+
+/* images by themselves become block level */
+.captionedimage IMG {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.captionedimage .caption {
+	font-size: smaller;
+	font-style: italic;
+	line-height: 150%; /* needed to re-calculate the rule */
+	text-align: center;
+}
+
+/******************************************************************************/
+/* TABLES																	  */
+/******************************************************************************/
+
+.article TABLE TH,
+.article TABLE TD {
+	padding: 0 0.5em;
+	line-height: 150%;
+}
+.article TABLE TH {
+	border-bottom: 1pt solid #adc8d9;
+	text-align: center;
+}
+.article TABLE TD {
+	border-bottom: 1pt solid #eaf1f5;
+}
+
+.article #barrelshifts {
+	border-spacing: 0;
+	margin: 0 auto; /* centre */
+}
+.article #barrelshifts TD {
+	padding: 1em;
+	text-align: center;
+}
+.article #barrelshifts TD IMG {
+	padding: 1em;
+}
+
+/* Slightly compacted table used in arm-cores.hsc, arm-inside.hsc and
+ * conditional.hsc. */
+.article #cores {
+	border-spacing: 0;
+	margin: 0 auto 0.5em auto; /* centre */
+}
+.article #cores TH,
+.article #cores TD {
+	font-size: 95%;
+	line-height: 180%;
+}
+.article #cores TD {
+	white-space: nowrap;
+}
+.article #cores TD.wrap {
+	white-space: normal;
+	line-height: 150%;
+}
+
+/******************************************************************************/
+/* SYNTAX HIGHLIGHTING TYPES FROM VIM										  */
+/******************************************************************************/
+
+.routine {
+	background-color: #333;
+	color: #fff;
+	line-height: 110%;
+	padding: 0.5em;
+}
+.routine .Comment		{ color: #87ceeb; }
+.routine .Constant		{ color: #ffa0a0; }
+.routine .PreProc		{ color: #cd5c5c; }
+.routine .Special		{ color: #ffdead; }
+.routine .Statement		{ color: #f0e68c; font-weight: bold; }
+.routine .Type			{ color: #bdb76b; font-weight: bold; }
+
+/* New style. Anything down as red I've not yet seen output. */
+
+.routine .alert			{ color: red;		}
+.routine .basen			{ color: #ffa0a0;	}
+.routine .bstring		{ color: red;		}
+.routine .char			{ color: #ffdead;	}
+.routine .comment		{ color: #87ceeb;	}
+.routine .datatype		{ color: #bdb76b;	}
+.routine .decval		{ color: #ffa0a0;	}
+.routine .error			{ color: red;		}
+.routine .float			{ color: #ffa0a0;	}
+.routine .function		{ color: red;		}
+.routine .istring		{ color: red;		}
+.routine .keyword		{ color: #f0e68c;	}
+.routine .operator		{ color: red;		}
+.routine .others		{ color: #cd5c5c;	}
+.routine .regionmarker	{ color: red;		}
+.routine .reserved		{ color: red;		}
+.routine .string		{ color: #ffa0a0;	}
+.routine .variable		{ color: red;		}
+.routine .warning		{ color: red;		}
+
+.console {
+	background-color: #333;
+	color: #fff;
+	line-height: 110%;
+	padding: 0.5em;
+}
+
+.console KBD { color: #87ceeb; }
+

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Avoid Array Indexing" rev="datadrive" cur="indexing" fwd="aliasing">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <dl>
     <dt>Accessing an array element uses two variables</dt>
     <ddd><var>Base</var> and <var>Index</var>.</dd>
@@ -39,7 +40,7 @@
 
     <p><ARMCC> <tt>-O2</tt> <tt>-Otime</tt> outputs the following:</p>
 <armsyntax>nameToNumber3 STMFD    sp!,{r4-r6,lr}
-              LDR      r4,=mapaddr     ; address of ‘map’
+              LDR      r4,=mapaddr     ; address of "map"
               MOV      r6,r0           ; stash copy of name
               ADD      r5,r4,#0x30     ; R5 = end
               CMP      r4,r5           ; out of data?
@@ -55,8 +56,8 @@ loop          MOV      r1,r4           ; R1 = entry-&gt;name
               BCC      loop            ; ..of data
 exit          MVN      r0,#0
               LDMFD    sp!,{r4-r6,pc}  ; return -1</armsyntax>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

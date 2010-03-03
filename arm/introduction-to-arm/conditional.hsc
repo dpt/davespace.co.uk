@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Conditional Execution" rev="branch" cur="conditional" fwd="multiply">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>A beneficial feature of the <ARM> architecture is that every instruction
     can be made to execute conditionally. This is common in other
     architectures&rsquo; branch or jump instructions, but <ARM> allows its use
@@ -15,7 +16,7 @@
     instruction with the &ldquo;S&rdquo; bit set.</p>
     <p>By adding a two-letter suffix to the mnemonic, <ARM> instructions can be
     made to execute <em>conditionally</em>.</p>
-  </slide>
+  </article>
   <commentary>
     <p>However, certain newer instructions can&rsquo;t be conditionally
     executed, e.g. <code>PLD</code> or <code>BLX</code>. These are encoded
@@ -36,8 +37,8 @@
     <p>Only <ARMCC> outputs assembly language which properly uses conditional
     execution.</p>
   </commentary>
-  <slide title="Condition Code Flags">
-    <diagram src="nzcv.png" alt="NZCV" width="495" height="191">
+  <article title="Condition Code Flags">
+    <diagram src="nzcv.png" alt="NZCV">
     <p>Where an <ALU> operation changes the flags:</p>
     <dl>
       <dt>N <ndash> Negative</dt>
@@ -52,7 +53,7 @@
       <dd>Set if an addition, subtraction or compare produces a signed result
       bigger than 31 bits.</dd>
     </dl>
-  </slide>
+  </article>
   <commentary>
     <p>There is also...</p>
     <ul>
@@ -60,7 +61,7 @@
     </ul>
     <p>This bit is sticky and is set when one of the Q instructions saturates.</p>
   </commentary>
-  <slide title="Condition Codes">
+  <article title="Condition Codes">
     <table id="cores">
       <thead>
         <tr><th>Code</th><th>Suffix</th><th>Description</th><th>Flags</th></tr>
@@ -83,7 +84,7 @@
         <tr><td>1110</td><td><code>AL</code></td>     <td>Always (default)</td>                   <td>any</td>     </tr>
       </tbody>
     </table>
-  </slide>
+  </article>
   <commentary>
     <p>The (omitted from slide) <code>NV</code> condition code is deprecated.
     Though it originally provided an analogue for the <code>AL</code> condition
@@ -131,7 +132,7 @@ next
     <p>When is it worth branching over condition codes? Depends on the
     <CPU>&rsquo;s branch penalty, but it&rsquo;s often 4..6 instructions.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

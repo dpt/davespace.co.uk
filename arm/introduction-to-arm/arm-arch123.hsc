@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Early Architectures" rev="arm-arch" cur="arm-arch123" fwd="arm-arch4">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl>
       <dt>v1</dt>
       <ddd>Developed at Acorn, Cambridge, UK. Between October 1983 and April 1985.</dd>
@@ -24,7 +25,7 @@
       instructions: <code>SMULL</code>, <code>SMLAL</code>, <code>UMULL</code>,
       <code>UMLAL</code>.</dd>
     </dl>
-  </slide>
+  </article>
   <commentary>
     <p>We&rsquo;ll now discuss the various architecture versions that <ARM>
     processors come in. This shows how the architecture has grown since it was
@@ -52,7 +53,7 @@
     version of <BBC> <BASIC>."</blockquote>
     <p>Acorn also used this <ARM> internally in Archimedes prototypes.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Architecture 5" rev="arm-arch4" cur="arm-arch5" fwd="arm-arch6">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl>
       <dt>v5T</dt>
       <ddd>Superset of <ARMv4T>.</dd>
@@ -20,8 +21,8 @@
       <dt>v5TEJ</dt>
       <ddd>Java acceleration.</dd>
     </dl>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

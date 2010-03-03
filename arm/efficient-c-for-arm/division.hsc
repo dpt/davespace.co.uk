@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Division" rev="fp" cur="division" fwd="unaligned">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>Like floating point, division is also <strong>emulated</strong>.</p>
     <p>It&rsquo;s implemented by two runtime library functions. In
     <ARM>&rsquo;s tools they&rsquo;re called:</p>
@@ -35,15 +36,15 @@
       <li>Avoid modulo with a wrap-around counter.</li>
       <li>Use lookup tables for small problems.</li>
     </ul>
-  </slide>
-  <slide title="Modulus">
+  </article>
+  <article title="Modulus">
     <p>Modulus is implemented by the same routine as division.</p>
     <ul>
       <li>The routine produces both results simultaneously.</li>
       <li>One or the other can be computed for free.</li>
     </ul>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

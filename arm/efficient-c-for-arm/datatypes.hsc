@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="C Data Types" rev="unrolling" cur="datatypes" fwd="memaccess">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>Certain C data types are more efficient to use for local variables than
     others.</p>
     <ul>
@@ -13,7 +14,7 @@
     <p>Therefore the machine&rsquo;s natural word type, <code>int</code>, is
     32-bit.</p>
 
-    <table id="cores">
+    <table id="cores" summary="C data types' physical sizes.">
     <tbody>
 
       <tr>
@@ -49,8 +50,8 @@
     </tbody>
     </table>
 
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

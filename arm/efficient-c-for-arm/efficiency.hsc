@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Efficiency" rev="index" cur="efficiency" fwd="before-tuning">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>Why do we need efficient software?</p>
     <dl>
       <dt>Competitive advantage</dt>
@@ -18,7 +19,7 @@
       <ddd>A smaller app can run on smaller devices (more devices, more
       royalties)</dd>
     </dl>
-  </slide>
+  </article>
   <commentary>
     <p>A couple of definitions:</p>
     <ul>
@@ -46,7 +47,7 @@
       software. Which will have even more features to support.</li>
     </ul>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

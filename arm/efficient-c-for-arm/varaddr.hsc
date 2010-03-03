@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Taking a Variable&rsquo;s Address" rev="funcarg" cur="varaddr" fwd="loops">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
 <csyntax>int N;
 
 getlimit(&amp;N);
@@ -19,13 +20,13 @@ for (i = 0; i &lt; N; i++)
       <li>Make a second, non-memory-bound, copy of the variable for intensive
       use.</li>
     </ul>
-  </slide>
+  </article>
   <commentary>
     <p>When you take the address of a variable it is then memory-bound for its
     lifetime. So even if, as in this example, you only take the address once
     then use it later it&rsquo;s still a memory-bound variable.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

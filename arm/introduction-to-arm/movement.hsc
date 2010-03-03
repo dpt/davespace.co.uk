@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Movement Instructions" rev="organisation" cur="movement" fwd="arithmetic">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <format>&lt;operation&gt;{cond}{S} Rd,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -12,7 +13,7 @@
       <dt><code>MVN</code> <ndash> <dfn>move negated</dfn></dt>
       <dd>Rd := 0xFFFFFFFF EOR Operand2</dd>
     </dl>
-  </slide>
+  </article>
   <examples>
     <dl>
       <dt><code>MOV r0, #42</code></dt>
@@ -25,7 +26,7 @@
       <dd>A <NOP> (no operation) instruction.</dd>
     </dl>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

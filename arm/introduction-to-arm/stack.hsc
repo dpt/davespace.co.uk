@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="The Stack" rev="multiple-data-transfer" cur="stack" fwd="chain">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <p>We need to store the processor state when making nested calls.</p>
   <p>The multiple data transfer instructions provide a mechanism for storing
   state on the <dfn>stack</dfn> (pointed to by R13).</p>
@@ -20,7 +21,7 @@
       <ddd>Empty Ascending</dd>
     </dl>
   </p>
-  </slide>
+  </article>
   <commentary>
     <p>As you&rsquo;ll recall R13 points to the stack.</p>
     <dl>
@@ -39,13 +40,13 @@
   <p>
   <code>STMFD r13!, {r4-r7}</code> <ndash> Push R4,R5,R6 and R7 onto the stack.
   </p>
-  <diagram src="stmfd.png" alt="STMFD" width="379" height="258">
+  <diagram src="stmfd.png" alt="STMFD">
   <p>
   <code>LDMFD r13!, {r4-r7}</code> <ndash> Pop R4,R5,R6 and R7 from the stack.
   </p>
-  <diagram src="ldmfd.png" alt="LDMFD" width="379" height="258">
+  <diagram src="ldmfd.png" alt="LDMFD">
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

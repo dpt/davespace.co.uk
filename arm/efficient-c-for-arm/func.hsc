@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Function Calls" rev="regalloc" cur="func" fwd="smallfunc">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>First four arguments to a function are passed in R0-R3.</p>
 
     <p>The remainder of the arguments are passed on the stack.</p>
@@ -15,7 +16,7 @@
 
     <p>Almost always more efficient to group subsequent args together and pass
     them together as a <code>struct</code>.</p>
-  </slide>
+  </article>
   <commentary>
     <p>This is from section 5.5 of <a href="references.html#asdg">ARM System
       Developer&rsquo;s Guide</a>.</p>
@@ -24,7 +25,7 @@
     will have to perform fewer register setups and less register
     rearrangement.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

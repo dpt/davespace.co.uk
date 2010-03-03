@@ -1,10 +1,11 @@
 <* $Id$ *>
 
 <page heading="A Call Chain" rev="stack" cur="chain" fwd="task-one">
-  <nav>
-  <heading>
-  <slide>
-    <diagram src="call.png" alt="Diagram of a call chain." width="354" height="305">
+  <header>
+  <sidebar>
+  <content>
+  <article>
+    <diagram src="call.png" alt="Diagram of a call chain.">
     <ol>
       <li>Routine A branches with link (<code>BL</code>) to routine B. This
       saves its return address, the address of the next instruction, into R14
@@ -26,8 +27,8 @@
     <p>Routine C does not call any subroutines; it is known as a
     <dfn>leaf</dfn> routine. Leaf routines can dispense with the overhead of
     storing their return address on the stack.</p>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Task One" rev="chain" cur="task-one" fwd="task-two">
-  <nav>
-  <heading>
-  <slide title="Mystery Routine">
+  <header>
+  <sidebar>
+  <content>
+  <article title="Mystery Routine">
     <p>At this point in the presentation we stop to try out a couple of tasks.
     These help us put together the information just laid out.</p>
     <p><em>The original tasks used ARM Developer Suite as the environment. All
@@ -51,9 +52,9 @@ mystery
       processing. But what exactly?</li>
       <li>And how does it work?</li>
     </ul>
-  </slide>
+  </article>
 
-  <slide title="ARM Architecture Procedure Calling Standard">
+  <article title="ARM Architecture Procedure Calling Standard">
     <p>The ARM Architecture Procedure Calling Standard (<AAPCS>) governs how
     procedures call each other in high-level languages such as C.</p>
     <p>We&rsquo;re going to call into an <ARM> assembly routine from C. <AAPCS>
@@ -65,12 +66,12 @@ mystery
       <dt>The return value, if any, is passed back in R0-R3.</dt>
       <ddd>Typically only R0 is used.</dd>
     </dl>
-  </slide>
+  </article>
 
-  <slide title="Answers">
+  <article title="Answers">
     <p>Answers are <a href="task-one-answers.html">here.</a></p>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

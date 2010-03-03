@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Pointer Aliasing" rev="indexing" cur="aliasing" fwd="chains">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl>
       <dt>Pointers <dfn>alias</dfn> when they point to the same address.</dt>
       <ddd>Writing via one pointer will change the value read through
@@ -16,7 +17,7 @@
       <strong>any</strong> another pointer!</dd>
       <ddd>This can significantly reduce code efficiency.</dd>
     </dl>
-  </slide>
+  </article>
   <examples>
     <before>
       <csyntax>void timers1(int *t1, int *t2, int *step)
@@ -63,7 +64,7 @@ timers2 LDR r2,[r2]  ; R2 = *step
     <p>This is from section 5.6 of <a href="references.html#asdg">ARM System
       Developer&rsquo;s Guide</a>.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Compare Instructions" rev="logical" cur="compare" fwd="barrel-shifter">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <format>&lt;operation&gt;{cond} Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -20,7 +21,7 @@
     Ordinary instructions will also set condition codes if the &ldquo;S&rdquo;
     bit is set. The &ldquo;S&rdquo; bit is implied for comparison
     instructions.</p>
-  </slide>
+  </article>
   <examples>
     <dl>
       <dt><code>CMP r0, #42</code></dt>
@@ -45,7 +46,7 @@
       numbers gives result of zero).</li>
     </ul>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

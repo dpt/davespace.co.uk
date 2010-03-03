@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Bools" rev="unaligned" cur="bools" fwd="bitfields">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>Problem:</p>
 
     <ul>
@@ -26,7 +27,7 @@
     <p>This reduces register pressure and allows for convenient
     multiple-<code>bool</code> tests to be carried out with a single logical
     operation.</p>
-  </slide>
+  </article>
 
   <examples>
     <before>
@@ -72,7 +73,7 @@ bool isEnemy2(ShipFlags flags)
          MOV   pc,lr</armsyntax>
     </after>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

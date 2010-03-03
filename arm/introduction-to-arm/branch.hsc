@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Branch Instructions" rev="immediates" cur="branch" fwd="conditional">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <format>&lt;operation&gt;{cond} &lt;address&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -16,7 +17,7 @@
     <p><code>MOV pc, r14</code></p>
     <p>or</p>
     <p><code>BX r14</code> (on <ARMv4T> or later)</p>
-  </slide>
+  </article>
   <examples>
     <p>Branching forward, to skip over some code:</p>
 <armsyntax>    ...
@@ -51,7 +52,7 @@ calc             ; function body
     <p>The linker will automatically generate long branch veneers for branches
     beyond 32M range.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

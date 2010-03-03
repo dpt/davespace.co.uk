@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Unsigned Ranges" rev="biasing" cur="unsignedrange" fwd="baseptr">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>When testing for a value within a range we can apply the <dfn>unsigned
     range optimisation</dfn>:</p>
     <ul>
@@ -13,7 +14,7 @@
     </ul>
     <p>This means we can do a single test rather than two.</p>
     <p>Eliminates branching.</p>
-  </slide>
+  </article>
   <examples>
   <before>
   <csyntax>int insideRange1(int v, int min, int max)
@@ -48,7 +49,7 @@
     <p>This is especially beneficial when &lsquo;min&rsquo; is zero. Of course
     this becomes even more beneficial when testing 2D and 3D ranges.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,15 +1,16 @@
 <* $Id$ *>
 
 <page heading="Data Drive" rev="hoisting" cur="datadrive" fwd="indexing">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <ul>
     <li>Avoid mixing code and data together.</li>
     <li>Instead separate out the data and write a simple loop.</li>
     <li>Doing this generates <strong>less</strong> code.</li>
   </ul>
-  </slide>
+  </article>
   <examples>
     <before>
       <p>The following routine maps a name to a number:</p>
@@ -90,7 +91,7 @@ loop          ADD      r0,r4,r4,LSL #1 ;
       <p>18 instructions &times; 4 bytes = 72 bytes.</p>
     </after>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

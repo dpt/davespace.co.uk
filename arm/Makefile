@@ -1,45 +1,36 @@
-# Makefile for ARM Courses
+# Makefile for www.davespace.co.uk/arm/
 # $Id$
 
-#DESTDIR	= docs
-DESTDIR	= .
-RELEASEDIR = release
-#RELEASEDIR = ..
-IGNORE	= IGN="21|87"
-STDINC	= inc/macros.hsc
-SCRIPTS = armsyntaxcolour.pl csyntaxcolour.pl
-HSCMISC	= PREFSFILE=hsc.prefs MAXMSG=0 MAXERR=0 XHTML COMPACT
+DESTDIR	   = .
+IGNORE	   = IGN="21|87"
+STDINC	   = ../macros/site.hsc macros/section.hsc macros/group.hsc
+SCRIPTS	   = armsyntaxcolour.pl csyntaxcolour.pl
+HSCMISC	   = PREFSFILE=../hsc.prefs MAXMSG=0 MAXERR=0 XHTML COMPACT GETSIZE
 
-HSCFLAGS= $(HSCMISC) $(IGNORE) $(STDINC)
-HSC     = hsc
-
-#HSCDEPP	= hscdepp
-#HSCPITT	= hscpitt
+HSCFLAGS   = $(HSCMISC) $(IGNORE) $(STDINC)
+HSC	   = hsc
 
 .SUFFIXES:	# Delete the default suffixes
 .SUFFIXES: .hsc .html
 
-.PHONY:	all clean
+.PHONY:	all clean subs
 
 SOURCES	= $(wildcard *.hsc)
-#SOURCES	= why-learn.hsc not-trivial.hsc
 OBJECTS = $(SOURCES:.hsc=.html)
 SCRATCH = perlinput *.tmp
 
 # Remember that the stylesheet isn't a build time dependency.
-all:	$(OBJECTS)
+all:	$(OBJECTS) subs
 
 # Objects depend on any macros or scripts changing.
 $(OBJECTS):	$(STDINC) $(SCRIPTS)
 
 .hsc.html:;	$(HSC) $(HSCFLAGS) TO=$(DESTDIR)/$@ $<
 
-release:
-	rm -rf $(RELEASEDIR)
-	make all
-	mkdir $(RELEASEDIR)
-	cp -R img *.html styles.css $(RELEASEDIR)
-	find $(RELEASEDIR) \( -name "Thumbs.db" -or -name "CVS" \) | xargs rm -rf
+subs:;	make -C introduction-to-arm
+	make -C efficient-c-for-arm
 
 clean:;	rm -f $(OBJECTS) $(SCRATCH)
+	make -C introduction-to-arm clean
+	make -C efficient-c-for-arm clean
 

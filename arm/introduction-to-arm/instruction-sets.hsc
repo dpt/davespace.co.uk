@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Instruction Sets" rev="not-trivial" cur="instruction-sets" fwd="registers">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <p>Modern <ARM> processors have <em>several</em> instruction sets:
     <ul>
       <li>The fully-featured 32-bit <ARM> instruction set,</li>
@@ -15,7 +16,7 @@
     </ul></p>
     <p>For the purposes of this course we are only interested in the <ARM> and
     Thumb instruction sets.</p>
-  </slide>
+  </article>
   <commentary>
     <p>Thumb instructions are a 16-bit compressed form of the most commonly
     used <ARM> instructions. Instructions are (can be) dynamically decompressed
@@ -30,7 +31,7 @@
     improves performance whilst keeping the code density tight by allowing a
     mixture of 16- and 32-bit instructions.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

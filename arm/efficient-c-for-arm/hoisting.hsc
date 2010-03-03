@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Hoisting" rev="padding" cur="hoisting" fwd="datadrive">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <p>Constant expressions inside a loop can be <dfn>hoisted</dfn> to outside of
   the loop.</p>
   <ul>
@@ -11,7 +12,7 @@
     iteration.</li>
     <li>Keeps code out of the way <ndash> denser code.</li>
   </ul>
-  </slide>
+  </article>
   <examples>
     <before>
       <p>Doing the same test repeatedly in a loop:</p>
@@ -51,7 +52,7 @@ else
     <ext url="http://www.compileroptimizations.com/category/hoisting.htm">http://www.compileroptimizations.com/category/hoisting.htm</ext>
   </p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

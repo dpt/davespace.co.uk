@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Arithmetic" rev="movement" cur="arithmetic" fwd="logical">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -20,7 +21,7 @@
       <dt><code>RSC</code> <ndash> <dfn>reverse subtract with carry</dfn></dt>
       <dd>Rd := Operand2 &minus; Rn &minus; NOT(Carry)</dd>
     </dl>
-  </slide>
+  </article>
   <examples>
     <dl>
       <dt><code>ADD r0, r1, r2</code></dt>
@@ -38,7 +39,7 @@
     <p>No divide <ndash> compiler uses run-time library or shifts to perform
     division.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

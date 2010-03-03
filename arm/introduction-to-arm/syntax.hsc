@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Instruction Syntax" rev="pc" cur="syntax" fwd="organisation">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <format>&lt;op&gt;{cond}{flags} Rd, Rn, Operand2</format>
   <dl class="columns">
     <dt><code>&lt;op&gt;</code></dt>
@@ -19,7 +20,7 @@
     <dt><code>Operand2</code></dt>
     <dd>A flexible second operand.</dd>
   </dl>
-  </slide>
+  </article>
   <commentary>
     <p>This is the <em>general</em> form of the arithmetic and logical
     instructions. Many instructions have a similar syntax to this, but are not
@@ -33,7 +34,7 @@
     (Unified Assembler Language), which allows the condition code to go after
     the flags.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="ARM Ltd." rev="thumb-2" cur="arm-ltd" fwd="arm-tools">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <ul>
       <li><ext url="http://www.arm.com/"><ARMLtd></ext> were
       founded in November 1990 as <em>Advanced RISC Machines Ltd</em>.</li>
@@ -22,7 +23,7 @@
       sell them to their customers.</li>
       <li>Controls the <ARM> architecture.</li>
     </ul>
-  </slide>
+  </article>
   <commentary>
     <blockquote>The <ARM> processor originated within British computer company
       Acorn. In 1983, when designing the successor to the <BBC> Micro series of
@@ -48,7 +49,7 @@
       architecture too (so no-one can just make an <ARM> compatible
       chip).</blockquote>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

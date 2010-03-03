@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Sentinels" rev="chains" cur="sentinels" fwd="unrolling">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>When searching through a list we normally do two comparisons:</p>
     <ul>
       <li>Compare loop index against maximum.</li>
@@ -19,7 +20,7 @@
         <lid>But it requires one extra element.</li>
       </ul>
     </ul>
-  </slide>
+  </article>
   <examples>
     <before>
 <csyntax>int search1(int *list, int N, int want)
@@ -84,7 +85,7 @@ loop LDR   r12,[r0,r3,LSL #2]
     <p>This can be improved further by <a href="indexing.html">replacing array
     indexing with pointers</a>.</p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Bitfields" rev="bools" cur="bitfields" fwd="padding">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <ul>
       <li>Mini structure members.</li>
       <li>Subject to pointer aliasing.</li>
@@ -12,7 +13,7 @@
 
     <p>On the whole, you&rsquo;re better off using a flags word.</p>
 
-  </slide>
+  </article>
   <examples>
     <before>
 
@@ -48,7 +49,7 @@ ShipFlags getShipFlags2(const ShipData2 *d)
               MOV pc,lr</armsyntax>
     </after>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

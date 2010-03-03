@@ -1,20 +1,14 @@
-# Makefile for Efficient C for ARM
+# Makefile for www.davespace.co.uk/arm/efficient-c-for-arm/
 # $Id$
 
-#DESTDIR	= docs
-DESTDIR	= .
-RELEASEDIR = release
-#RELEASEDIR = ..
-IGNORE	= IGN="21|87"
-STDINC	= ../inc/macros.hsc inc/macros.hsc
-SCRIPTS = ../armsyntaxcolour.pl ../csyntaxcolour.pl
-HSCMISC	= PREFSFILE=../hsc.prefs MAXMSG=0 MAXERR=0 XHTML COMPACT
+DESTDIR	   = .
+IGNORE	   = IGN="21|87"
+STDINC	   = ../../macros/site.hsc ../macros/section.hsc macros/group.hsc
+SCRIPTS    = ../armsyntaxcolour.pl ../csyntaxcolour.pl
+HSCMISC	   = PREFSFILE=../../hsc.prefs MAXMSG=0 MAXERR=0 XHTML COMPACT GETSIZE
 
-HSCFLAGS= $(HSCMISC) $(IGNORE) $(STDINC)
-HSC     = hsc
-
-#HSCDEPP	= hscdepp
-#HSCPITT	= hscpitt
+HSCFLAGS   = $(HSCMISC) $(IGNORE) $(STDINC)
+HSC        = hsc
 
 .SUFFIXES:	# Delete the default suffixes
 .SUFFIXES: .hsc .html
@@ -22,7 +16,6 @@ HSC     = hsc
 .PHONY:	all clean
 
 SOURCES	= $(wildcard *.hsc)
-#SOURCES	= why-learn.hsc not-trivial.hsc
 OBJECTS = $(SOURCES:.hsc=.html)
 SCRATCH = perlinput *.tmp
 
@@ -33,13 +26,6 @@ all:	$(OBJECTS)
 $(OBJECTS):	$(STDINC) $(SCRIPTS)
 
 .hsc.html:;	$(HSC) $(HSCFLAGS) TO=$(DESTDIR)/$@ $<
-
-release:
-	rm -rf $(RELEASEDIR)
-	make all
-	mkdir $(RELEASEDIR)
-	cp -R img *.html styles.css $(RELEASEDIR)
-	find $(RELEASEDIR) \( -name "Thumbs.db" -or -name "CVS" \) | xargs rm -rf
 
 clean:;	rm -f $(OBJECTS) $(SCRATCH)
 

@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Architecture 4" rev="arm-arch123" cur="arm-arch4" fwd="arm-arch5">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl>
       <dt>v4 is the oldest supported architecture today. It added:</dt>
       <ddd>Load/store instructions for signed and unsigned halfwords and
@@ -14,7 +15,7 @@
       <dt>v4T added:</dt>
       <ddd>Thumb mode.</dd>
     </dl>
-  </slide>
+  </article>
   <commentary>
   <p>This is the first architecture to have a full formal definition.</p>
   <ul>
@@ -24,7 +25,7 @@
     operations.</li>
 </ul>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 

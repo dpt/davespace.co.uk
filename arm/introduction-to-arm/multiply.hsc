@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Multiply Instructions" rev="conditional" cur="multiply" fwd="data-transfer">
-  <nav>
-  <heading>
-  <slide title="32&times;32&rarr;32 Multiply Instructions">
+  <header>
+  <sidebar>
+  <content>
+  <article title="32&times;32&rarr;32 Multiply Instructions">
     <format>&lt;operation&gt;{cond}{S} Rd, Rm, Rs {, Rn}</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -17,9 +18,9 @@
     <p>Specifying the same register for <var>Rm</var> and <var>Rs</var> has
     UNPREDICTABLE results. UNPREDICTABLE means that the result of an
     instruction cannot be relied upon.</p>
-  </slide>
+  </article>
 
-  <slide title="32&times;32&rarr;64 Multiply Instructions">
+  <article title="32&times;32&rarr;64 Multiply Instructions">
     <format>&lt;operation&gt;{cond}{S} RdLo, RdHi, Rm, Rs</format>
     <p>64-bit result output into two registers.</p>
     <p><var>&lt;operation&gt;</var></p>
@@ -35,8 +36,8 @@
     </dl>
     <p>Note that they have the same form, but they treat the sign bit
     differently.</p>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

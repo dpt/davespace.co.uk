@@ -1,11 +1,11 @@
 <* $Id$ *>
 
 <page heading="Introduction" cur="index" fwd="efficiency">
-  <nav>
+  <header>
+  <sidebar>
+  <content>
 
-  <heading>
-
-  <slide>
+  <article>
     <p>This course is all about tuning your code. It&rsquo;s about how you can
     improve your C specifically for <ARM> <CPU>s so that it runs faster, takes
     up less space or possibly both.</p>
@@ -19,16 +19,16 @@
 
     <p>Move between pages using the links on the left hand side of the page. <a
       href="efficiency.html">Begin reading here.</a></p>
-  </slide>
+  </article>
 
-  <slide title="Further Reading">
+  <article title="Further Reading">
     <p>This is the second part of a two-part <ARM> training course, the first
     part is called <a
       href="../introduction-to-arm/index.html"><dfn>Introduction to
         ARM</dfn></a>.</p>
-  </slide>
+  </article>
 
+  </content>
   <footer>
-  </heading>
 </page>
 

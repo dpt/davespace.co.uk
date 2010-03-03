@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Summary of current ARM cores" rev="arm-arch7" cur="arm-cores" fwd="arm-inside">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <table id="cores">
       <thead>
         <tr><th>Processor</th><th>Class</th><th>Arch.</th><th>Speed</th><th>Notes</th></tr>
@@ -28,8 +29,8 @@
         <tr><td>Cortex-A9</td><td>App</td><td>v7A</td><td>2.0 <DMIPS>/MHz</td><td></td></tr>
       </tbody>
     </table>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

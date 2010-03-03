@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Task One Answers">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
   <p>The routine turns an <ASCII> character lower-case. In C it would be
   written like this:</p>
   <csyntax>int mystery(int c)
@@ -31,8 +32,8 @@
   return c;
 }
 </csyntax>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

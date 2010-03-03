@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="References" rev="baseptr" cur="references">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <dl class="books" id="asdg">
       <dd><img src="../introduction-to-arm/img/book/asdg.jpg" alt="Cover."/></dd>
       <dt><ext url="http://www.amazon.co.uk/ARM-System-Developers-Guide-Architecture/dp/1558608745/">ARM System Developer&rsquo;s Guide</ext></dt>
@@ -20,8 +21,8 @@
       <dd></dd>
       <dt><ext url="http://www.compileroptimizations.com/">http://www.compileroptimizations.com/</ext></dt>
     </dl>
-  </slide>
+  </article>
+  </content>
   <footer>
-  </heading>
 </page>
 

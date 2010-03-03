@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Padding" rev="bools" cur="padding" fwd="hoisting">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>Structures often end up containing <dfn>padding</dfn>.</p>
     <dl>
       <dt>Required because of target&rsquo;s data type restrictions.</dt>
@@ -22,7 +23,7 @@
     <p>The compiler cannot perform this transformation itself as the C standard
     guarantees that structure members will be laid out in the order that
     they&rsquo;re specified.</p>
-  </slide>
+  </article>
   <examples>
     <before>
       <p>Consider the structure:</p>
@@ -33,7 +34,7 @@
   short         delta;
 }</csyntax>
       <p>It is laid out in memory like this:</p>
-      <diagram src="padding1.png" alt="Structure layout in memory - before." width="189" height="95">
+      <diagram src="padding1.png" alt="Structure layout in memory - before.">
     </before>
     <after>
       <p>If we sort the structure members by size:</p>
@@ -43,14 +44,12 @@
   short         delta;
   unsigned char type;
 }</csyntax>
-
-      <diagram src="padding2.png" alt="Structure layout in memory - before." width="189" height="67">
-
+      <diagram src="padding2.png" alt="Structure layout in memory - before.">
       <p>The padding can be removed and the structure reduces by four bytes (a
-    third).</p>
+      third).</p>
     </after>
   </examples>
+  </content>
   <footer>
-  </heading>
 </page>
 

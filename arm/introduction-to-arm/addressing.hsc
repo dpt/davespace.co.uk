@@ -1,9 +1,10 @@
 <* $Id$ *>
 
 <page heading="Addressing Modes" rev="data-transfer" cur="addressing" fwd="multiple-data-transfer">
-  <nav>
-  <heading>
-  <slide>
+  <header>
+  <sidebar>
+  <content>
+  <article>
     <p>An <var>&lt;address&gt;</var> can take multiple forms:</p>
     <dl>
       <dt>An address expression:</dt>
@@ -24,7 +25,7 @@
     described <a href="barrel-shifter.html">earlier</a>.</p>
     <p>Pre-indexed <dfn>writeback</dfn> denoted by <code>{!}</code> causes the
     final address generated to be written back into <var>Rn</var>.</p>
-  </slide>
+  </article>
   <examples>
     <dl>
       <dt><code>LDR r0,[r1,#4]</code></dt>
@@ -49,7 +50,7 @@
       </ul>
     </p>
   </commentary>
+  </content>
   <footer>
-  </heading>
 </page>
 
