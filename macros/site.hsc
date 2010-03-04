@@ -73,8 +73,9 @@
     <$if cond=(desc <> "")>
       <meta name="description" content=(desc) />
     </$if>
-    <* would like to resolve stylesheet location better *>
-    <link rel="stylesheet" type="text/css" href=(pageroot + "style3/styles.css") title="default" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href=(pageroot + "favicon.ico") />
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href=(pageroot + "favicon.ico") />
+    <link rel="stylesheet" title="default" type="text/css" href=(pageroot + "style3/styles.css") />
     <link rel="index" href="index.html" />
     <$if cond=(nextpage <> "")>
       <link rel="next" href=(nextpage + ".html") />

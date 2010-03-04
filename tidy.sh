@@ -17,7 +17,7 @@ elif [ $1 == "-squish" ]
 then
     HTMLTIDYOPTS="-q -m -w 997"
     CSSTIDYOPTS="--template=high"
-    find . -type f -not \( -iname "*.html" -or -iname "*.css" -or -iname "*.png" -or -iname "*.gif" -or -iname "*.zip" -or -iname "*.pdf" -or -iname "*.py" -or -iname "*.jpg" \) | xargs rm -rf
+    find . -type f -not \( -iname "*.html" -or -iname "*.css" -or -iname "*.png" -or -iname "*.gif" -or -iname "*.zip" -or -iname "*.pdf" -or -iname "*.py" -or -iname "*.jpg" -or -iname "*.ico" -or -iname "*.sh" \) | xargs rm -rf
     prune.py .
 else
     echo "Usage: `basename $0` <-edit|-squish>"
