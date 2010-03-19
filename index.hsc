@@ -37,11 +37,11 @@
         href="http://adrianl.drobe.co.uk/geminus.html">free download</a>. Its
       sprite caching provides a substantial speedup for <a
         href="risc.os/photofiler.html">PhotoFiler</a> and its JPEG acceleration greatly
-      benefits <a href="risc.os/privateeye">PrivateEye</a>.</p>
+      benefits <a href="risc.os/privateeye.html">PrivateEye</a>.</p>
     </article>
 
     <article title="June 3<sup>rd</sup>, 2008">
-      <p><a href="risc.os/privateeye">PrivateEye</a> 2.85 with enhanced transparency
+      <p><a href="risc.os/privateeye.html">PrivateEye</a> 2.85 with enhanced transparency
       and <acronym title="Portable Network Graphics">PNG</acronym> support.</p>
       <uncaptionedimage url="software/eyesnap4t.png"
       bigurl="software/eyesnap4.png" dsc="Snapshot.">
@@ -65,7 +65,7 @@
     </article>
 
     <article title="January 14<sup>th</sup>, 2008">
-      <p><a href="risc.os/privateeye">PrivateEye</a> 2.75 with JPEG metadata
+      <p><a href="risc.os/privateeye.html">PrivateEye</a> 2.75 with JPEG metadata
       support.</p>
       <uncaptionedimage url="software/eyesnap3t.png"
       bigurl="software/eyesnap3.png" dsc="Snapshot.">
