@@ -6,9 +6,9 @@
   <content>
 
     <article>
-      <p>I've written PD, freeware, shareware and commercial programs for RISC
-      OS since 1990. The vast majority of them are utter tripe, the remainder I
-      keep here for your entertainment.</p>
+      <p>I<rq>ve written PD, freeware, shareware and commercial programs for
+      RISC OS since 1990. The vast majority of them are utter tripe, the
+      remainder I keep here for your entertainment.</p>
 
       <ul>
         <li><a href="photofiler.html">PhotoFiler</a> lets the Filer show
