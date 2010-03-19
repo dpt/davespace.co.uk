@@ -135,9 +135,9 @@
         open on the same image.</li>
         <li><strong>Luminance histogram window.</strong></li>
         <li><strong>&amp; more...</strong> smooth scrolling, movement through
-        files, <a href="http://www.tinct.net/tinct.asp">Tinct</a> support,
-        autofiletype, FFG support, fit to screen, fit to window, shiny new
-        sprites, all-new PDF manual, ...</li>
+        files, <a href="http://www.tinct.net/Downloads/Tinct.aspx">Tinct</a>
+        support, autofiletype, FFG support, fit to screen, fit to window, shiny
+        new sprites, all-new PDF manual, ...</li>
       </ul>
     </article>
 
