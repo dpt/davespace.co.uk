@@ -43,7 +43,7 @@
 
   <article title="Toolchains">
     <p>The courses were written for an environment where the <ext
-    url="http://www.arm.com/products/DevTools/ADS.html">ARM Developer
+    url="http://www.keil.com/support/legacy.asp">ARM Developer
     Suite</ext> (<ADS>) was available, so all of the assembler examples are
     in <ADS> format.  If you intend to try the examples on a more affordable
     compiler, such as <ext url="http://gcc.gnu.org/"><GCC></ext>, you will
@@ -74,7 +74,7 @@
         r0,#1</code> to return the correct result for 0!. (sbrodie)</dd>
 
       <dt>19<sup>th</sup> November 2009</dt>
-      <ddd>New logo throughout (<ext url="http://fontfabric.com/?p=585">its
+      <ddd>New logo throughout (<ext url="http://fontfabric.com/val-font/">its
       font</ext>).</dd>
       <ddd>Assembler syntax colouring has been improved. It no longer
       highlights things inside of comments.</dd>

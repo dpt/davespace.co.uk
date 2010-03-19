@@ -20,7 +20,7 @@
   <commentary>
     <p>Only the newest tools currently target v7. e.g. <ext url="http://www.codesourcery.com/sgpp/lite/arm">CodeSourcery&rsquo;s GCC
       ARM toolchain</ext>.</p>
-    <blockquote><ext url="http://www.arm.com/products/CPUs/NEON.html">NEON technology</ext> is
+    <blockquote><ext url="http://www.arm.com/products/processors/technologies/neon.php">NEON technology</ext> is
     a 64/128-bit hybrid <SIMD> architecture developed by <ARM> to accelerate the
     performance of multimedia and signal processing applications
     [...].</blockquote>

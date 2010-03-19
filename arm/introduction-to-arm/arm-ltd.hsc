@@ -34,7 +34,7 @@
       world&rsquo;s first commercial <RISC> processor.</blockquote>
     <blockquote>Later, other companies became interested in this processor,
       including Apple who were looking for a processor for their <PDA> project
-      (which became the <wiki subj="NMessagePad">Newton MessagePad</wiki>).
+      (which became the <wiki subj="MessagePad">Newton MessagePad</wiki>).
       After much discussion this led to Acorn&rsquo;s processor design team
       splitting off from Acorn at the end
       of 1990 to become Advanced RISC Machines Ltd, now just
