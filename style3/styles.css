@@ -426,7 +426,7 @@ A.external SPAN {
 	background: transparent url(img/downloadbg.png) repeat-y 50% 0%;
 	border: 1px solid #eee;
 	float: right;
-	margin: 0;
+	margin: 0 0 0 0.5em;
 	padding: 0.5em 0;
 	width: 256px;
 }
