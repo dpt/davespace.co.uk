@@ -6,7 +6,7 @@
   <content>
 
   <downloadbox>
-    <download href="../software/resetjpegdpi.py">Download</download>
+    <download><a href="../software/resetjpegdpi.py">Download</a></download>
   </downloadbox>
 
   <article>

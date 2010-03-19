@@ -6,7 +6,7 @@
   <content>
 
   <downloadbox>
-    <download href="../software/rerename.py">Download</download>
+    <download><a href="../software/rerename.py">Download</a></download>
   </downloadbox>
 
   <article>

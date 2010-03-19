@@ -199,8 +199,8 @@
 </div>
 </$macro>
 
-<$macro download /close href:string>
-<li><a href=(href)><$content></a></li>
+<$macro download /close>
+<li><$content></li>
 </$macro>
 
 <$macro examples /close>

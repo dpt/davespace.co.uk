@@ -5,9 +5,9 @@
   <sidebar>
   <content>
   <downloadbox>
-    <download href="../software/privateeye285.zip">Download</download> (235k <acronym>Zip</acronym>)
-    <download href="../software/privateeye285manual.pdf">Manual</download> (373k <acronym>PDF</acronym>)
-    <download href="../software/eyesnap4.png">Screenshot</download> (333k <acronym>PNG</acronym>)
+    <download><a href="../software/privateeye285.zip">Download</a> (235k Zip)</download>
+    <download><a href="../software/privateeye285manual.pdf">Manual</a> (373k <acronym>PDF</acronym>)</download>
+    <download><a href="../software/eyesnap4.png">Screenshot</a> (333k <acronym>PNG</acronym>)</download>
   </downloadbox>
   <article>
     <p class="icon"><img src="img/privateeye.png" alt="icon" /></p>

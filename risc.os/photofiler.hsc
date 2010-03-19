@@ -6,11 +6,8 @@
   <content>
 
   <downloadbox>
-    <download href="../software/photofiler208.zip">Download</download> (71k
-    <acronym>Zip</acronym>)
-    <download href="../software/photospr.zip">Example directory
-    sprites</download> <ndash> RISC&nbsp;OS 3 style (15k
-    <acronym>Zip</acronym>)
+    <download><a href="../software/photofiler208.zip">Download</a> (71k Zip)</download>
+    <download><a href="../software/photospr.zip">Example directory sprites</a> <ndash> RISC&nbsp;OS 3 style (15k Zip)</download>
   </downloadbox>
 
   <article>

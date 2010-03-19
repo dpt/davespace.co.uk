@@ -5,8 +5,8 @@
   <sidebar>
   <content>
   <downloadbox>
-    <download href="../software/toolbar121.zip">Download</download> (15k <acronym>Zip</acronym>)
-    <download href="../software/toolsnap1.png">Screenshot</download> (258k <acronym>PNG</acronym>)
+    <download><a href="../software/toolbar121.zip">Download</a> (15k Zip)</download>
+    <download><a href="../software/toolsnap1.png">Screenshot</a> (258k <acronym>PNG</acronym>)</download>
   </downloadbox>
   <article>
     <p class="icon"><img src="img/toolbar.png" alt="icon" /></p>

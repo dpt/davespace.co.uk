@@ -6,7 +6,7 @@
   <content>
 
   <downloadbox>
-    <download href="../software/remove-duplicates.py">Download</download>
+    <download><a href="../software/remove-duplicates.py">Download</a></download>
   </downloadbox>
 
   <article>
