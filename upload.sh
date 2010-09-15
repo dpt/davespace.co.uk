@@ -14,7 +14,7 @@ find . \( -type d -name CVS -prune \) -or \( -type f -print0 \) | xargs -0 chmod
 # --delete  is only required when deleting anything which doesn't exist on
 #           the server
 #
-rsync -Crtvz --exclude="CVS" --exclude="Thumbs.db" --exclude="*.hsc" --exclude="*.tmp" --exclude="hsc.prefs" --include="*.html" . octopus.pepperfish.net:websites/davespace.co.uk/www/html
+rsync -Crtvz --exclude="source" --exclude="CVS" --exclude="Thumbs.db" --exclude="*.hsc" --exclude="*.tmp" --exclude="hsc.prefs" --include="*.html" . octopus.pepperfish.net:websites/davespace.co.uk/www/html
 
 exit 0
 
