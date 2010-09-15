@@ -43,8 +43,8 @@
 <ul>
   <clink dst="risc.os/photofiler"  title="PhotoFiler">
   <clink dst="risc.os/privateeye"  title="PrivateEye">
-  <clink dst="risc.os/quickfiler"  title="QuickFiler">
   <clink dst="risc.os/toolbar"     title="Toolbar">
+  <clink dst="risc.os/quickfiler"  title="QuickFiler">
   <* clink dst="risc.os/iyonix.case" title="Replacing an Iyonix<rq>s Case" *>
 </ul>
 
