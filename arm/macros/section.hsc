@@ -6,12 +6,12 @@
 
 <$macro csyntax /close class:string>
   <$export file="perlinput" data=(HSC.Content)>
-  <$if cond=(set class)><pre class=("routine " + class)><$else><pre class=("routine")></$if><$exec command="perl ..\csyntaxcolour.pl < perlinput" include></pre>
+  <$if cond=(set class)><pre class=("routine " + class)><$else><pre class=("routine")></$if><$exec command="perl ../csyntaxcolour.pl < perlinput" include></pre>
 </$macro>
 
 <$macro armsyntax /close class:string>
   <$export file="perlinput" data=(HSC.Content)>
-  <$if cond=(set class)><pre class=("routine " + class)><$else><pre class=("routine")></$if><$exec command="perl ..\armsyntaxcolour.pl < perlinput" include></pre>
+  <$if cond=(set class)><pre class=("routine " + class)><$else><pre class=("routine")></$if><$exec command="perl ../armsyntaxcolour.pl < perlinput" include></pre>
 </$macro>
 
 <* shortcuts *>
