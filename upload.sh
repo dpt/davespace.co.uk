@@ -4,6 +4,7 @@
 #
 find . \( -type d -not -name CVS -print0 \) | xargs -0 chmod 755
 find . \( -type d -name CVS -prune \) -or \( -type f -print0 \) | xargs -0 chmod 644
+find . \( -type f -name "*.sh" -print0 \) | xargs -0 chmod 755
 
 # -C        auto-ignore files in the same way CVS does
 # -r        recurse
