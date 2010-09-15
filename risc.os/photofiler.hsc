@@ -72,6 +72,16 @@
     lot from scratch as PhotoFiler.</p>
   </article>
 
+  <article title="Source Code">
+    <p>
+      The PhotoFiler source lives at <a
+        href="svn://svn.riscos.info/photofiler">svn://svn.riscos.info/photofiler</a>.
+      Use <a
+        href="http://www.riscos.info/websvn/listing.php?repname=photofiler">http://www.riscos.info/websvn/listing.php?repname=photofiler</a>
+      for the web-based repository viewer.
+    </p>
+  </article>
+
   </content>
   <footer>
 </page>

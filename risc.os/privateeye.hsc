@@ -56,6 +56,16 @@
     <captionedimage url="../software/eyesnap2t.png" bigurl="../software/eyesnap2.png" dsc="Screenshot."><wiki subj="Eva_Green">Eva Green</wiki> demonstrates the effects window.<br/>(First appeared in version 2.50)</captionedimage>
     <captionedimage url="../software/eyesnap1t.png" bigurl="../software/eyesnap1.png" dsc="Screenshot.">Tigger the cat demonstrates the interactive rotation dialogue.<br/>(First appeared in version 2.00)</captionedimage>
   </article>
+
+  <article title="Source Code">
+    <p>
+      The PrivateEye source lives at <a
+        href="svn://svn.riscos.info/privateeye">svn://svn.riscos.info/privateeye</a>.
+      Use <a
+        href="http://www.riscos.info/websvn/listing.php?repname=privateeye">http://www.riscos.info/websvn/listing.php?repname=privateeye</a>
+      for the web-based repository viewer.
+    </p>
+  </article>
   </content>
   <footer>
 </page>
