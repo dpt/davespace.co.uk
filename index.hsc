@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-    <article title="September 20<sup>th</sup>, 2010">
+    <article title="September 15<sup>th</sup>, 2010">
       <p>
         I<rq>ve noticed in the site<rq>s logs that people were occasionally
         arriving here after searching for the source code to <a
