@@ -4,6 +4,53 @@
   <header>
   <sidebar>
   <content>
+    <article title="September 20<sup>th</sup>, 2010">
+      <p>
+        I<rq>ve noticed in the site<rq>s logs that people were occasionally
+        arriving here after searching for the source code to <a
+          href="risc.os/privateeye.html">PrivateEye</a>. I'd not generally made
+        its source available as the people who had previously asked for it had
+        received it, then they went all quiet. I presumed that was a bad sign.
+      </p>
+      <p>
+        <a href="risc.os/photofiler.html">PhotoFiler</a> has previously had its
+        source released but not one bit feedback came of that. Presumably
+        it<rq>s perfect.
+      </p>
+      <p>
+        I've uploaded the source code to both <a
+          href="risc.os/photofiler.html">PhotoFiler</a> and <a
+          href="risc.os/privateeye.html">PrivateEye</a> to <a
+          href="http://www.riscos.info/">riscos.info</a>'s subversion server.
+      </p>
+      <ul>
+        <li>
+          The PhotoFiler source lives <a
+            href="svn://svn.riscos.info/photofiler">here</a> (<tt>svn://</tt>)
+          or <a
+            href="http://www.riscos.info/websvn/listing.php?repname=photofiler">here</a>
+          for the web-based repository viewer.
+        </li>
+        <li>
+          The PrivateEye source live <a
+            href="svn://svn.riscos.info/privateeye">here</a> (<tt>svn://</tt>)
+          or <a
+            href="http://www.riscos.info/websvn/listing.php?repname=privateeye">here</a>
+          for the web-based repository viewer.
+        </li>
+      </ul>
+      <p>
+        Now I would like to carry on beavering away on both utilities but, to
+        be honest, the Iyonix doesn't get switched on that much these days. I
+        have grand things planned, with image tagging, tag clouds, thumbnails,
+        searching and magical flying ponies called Geoff. All of that work in
+        in the released source but it's not in anywhere near a useful state.
+      </p>
+      <p>
+        Enjoy!
+      </p>
+    </article>
+
     <article title="March 3<sup>rd</sup>, 2010">
       <ul>
         <li>New site design.</li>
