@@ -30,7 +30,7 @@ $(OBJECTS):	$(STDINC) $(SCRIPTS)
 subs:;	make -C introduction-to-arm
 	make -C efficient-c-for-arm
 
-clean:;	rm -f $(OBJECTS) $(SCRATCH)
+clean:;	-rm -f $(OBJECTS) $(SCRATCH)
 	make -C introduction-to-arm clean
 	make -C efficient-c-for-arm clean
 

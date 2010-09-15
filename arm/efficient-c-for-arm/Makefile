@@ -27,5 +27,5 @@ $(OBJECTS):	$(STDINC) $(SCRIPTS)
 
 .hsc.html:;	$(HSC) $(HSCFLAGS) TO=$(DESTDIR)/$@ $<
 
-clean:;	rm -f $(OBJECTS) $(SCRATCH)
+clean:;	-rm -f $(OBJECTS) $(SCRATCH)
 

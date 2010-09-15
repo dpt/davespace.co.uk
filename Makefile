@@ -31,7 +31,7 @@ subs:;	make -C arm
 
 #subs:;	make -C risc.os
 
-clean:;	rm -f $(OBJECTS) $(SCRATCH)
+clean:;	-rm -f $(OBJECTS) $(SCRATCH)
 	make -C arm clean
 	make -C risc.os clean
 	make -C python clean
