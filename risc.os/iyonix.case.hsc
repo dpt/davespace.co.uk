@@ -61,7 +61,7 @@
       <li>Front USB <mdash> My Iyo has an NEC &micro;PD720100A-based USB PCI
       card with two rear ports and two internal ports (which upon closer
       investigation turned out to have another unused port). After a bit of
-      circuit tracing I confirmed that the the case connector would match.
+      circuit tracing I confirmed that the case connector would match.
       However the case connector had a blocked out pin. Should I chop the pin
       off of the board or drill out the blocked pin hole? I settled for the
       latter.</li>
