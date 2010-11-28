@@ -120,6 +120,10 @@ ACRONYM
 {
 	font-size: 80%; /* mucks up in Netsurf */
 }
+DFN
+{
+	font-style: italic;
+}
 
 /******************************************************************************/
 /* LINKS																	  */
