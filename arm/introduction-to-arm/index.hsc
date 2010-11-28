@@ -26,8 +26,8 @@
     mode&rsquo; world. Vectors, exceptions, interrupts, processor modes, etc.,
     are not presently discussed.</p>
 
-    <p>Move between pages using the links on the left hand side of the page. <a
-      href="why-learn.html">Begin reading here.</a> </p>
+    <p>Move between pages using the arrows at the bottom right-hand side of the
+    page. <a href="why-learn.html">Begin reading here.</a> </p>
   </article>
 
   <article title="Further Reading">

@@ -17,8 +17,8 @@
     <p>The second half introduces techniques which tend to rely on the specific
     nature of the <ARM> architecture to improve the code.</p>
 
-    <p>Move between pages using the links on the left hand side of the page. <a
-      href="efficiency.html">Begin reading here.</a></p>
+    <p>Move between pages using the arrows at the bottom right-hand side of the
+    page. <a href="efficiency.html">Begin reading here.</a></p>
   </article>
 
   <article title="Further Reading">
