@@ -5,18 +5,21 @@
   <sidebar>
   <content>
   <article>
-    <p><ARM> data processing is 32-bit.</p>
+    <p>The <ARM> data processing operations always operate on 32-bit
+    quantities. You should therefore:</p>
     <ul>
-      <li>Use a 32-bit data type for local variables.</li>
-      <li>Avoid <code>char</code> and <code>short</code> as local variable
-      types, even if you&rsquo;re manipulating a <code>char</code> or
+      <li>Use a 32-bit data type (e.g. <code>int</code>) for local
+      variables.</li>
+      <li>Avoid <code>char</code> and <code>short</code> for local variables,
+      even if you&rsquo;re manipulating a <code>char</code> or
       <code>short</code> value.</li>
     </ul>
     <p>The exception to this is when you require wrap-around or modulo
     arithmetic (e.g. 255+1 = 0).</p>
   </article>
   <examples>
-    <p>This example code checksums a packet of 64 words:</p>
+    <p>This example code calculates a simple checksum on a packet of 64
+    words:</p>
 <csyntax>int checksum1(const int *data)
 {
   char i;
@@ -31,23 +34,23 @@
     <p>Let&rsquo;s look at the annotated compiler output:</p>
 
 <armsyntax>checksum1
-        MOV     r2,r0             ; r2 = data
+        MOV     r2,r0             ; R2 = data
         MOV     r0,#0             ; sum = 0
         MOV     r1,#0             ; i = 0
 loop
-        LDR     r3,[r2,r1,LSL #2] ; r3 = data[i]
-        ADD     r1,r1,#1          ; r1 = i+1
-        AND     r1,r1,#0xff       ; i = (char)r1   *** UNNECESSARY ***
-        CMP     r1,#0x40          ; compare i, 64
-        ADD     r0,r3,r0          ; sum += r3
+        LDR     r3,[r2,r1,LSL #2] ; R3 = data[i]
+        ADD     r1,r1,#1          ; R1 = i+1
+        AND     r1,r1,#0xff       ; i = (char)R1   *** UNNECESSARY ***
+        CMP     r1,#0x40          ; compare i to 64
+        ADD     r0,r3,r0          ; sum += R3
         BCC     loop              ; if (i&lt;64) loop
         MOV     pc,r14            ; return sum</armsyntax>
 
-    <p>The compiler is emitting an <code>AND</code> instruction even though it
-    <em>should</em> know that <var>i</var> never exceeds 64.</p>
-    <p>When we change <var>i</var> from <code>char</code> to <code>unsigned
-    int</code> the <code>AND</code> disappears as it&rsquo;s no longer
-    necessary to account for wrap-around.</p>
+    <p>The compiler is emitting an <code>AND r1,r1,#0xff</code> instruction
+    even though it <em>should</em> know that <var>i</var> never exceeds 64. If
+    we change <var>i</var> from <code>char</code> to <code>unsigned int</code>
+    the <code>AND</code> disappears: it&rsquo;s no longer necessary to account
+    for wrap-around.</p>
     <p>Remember that this isn&rsquo;t just a saving of one instruction or
     cycle. It saves <strong>64 instructions</strong>: <em>one for each
       iteration</em>.</p>
