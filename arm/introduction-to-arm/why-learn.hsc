@@ -13,8 +13,10 @@
       <li>But C is an abstraction: The code that you write is <em>not</em> what
       the <CPU> really executes.</li>
       <li>Sometimes compilers aren&rsquo;t very good. They may produce
-      unnecessary extra code which we call <dfn>slop</dfn>. Slop increases
-      size and decreases speed.</li>
+      unnecessary extra code which we call <dfn>slop</dfn>.</li>
+      <ul>
+        <lid>Slop increases size and decreases speed.</li>
+      </ul>
       <li>To dispense with the slop we need to instruct the machine in its
       native language.</li>
     </ul>
