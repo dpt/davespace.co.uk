@@ -29,10 +29,11 @@
     <p>Leftmost register <code>Rd</code> is the destination.</p>
     <p>Instructions are generally single-cycle (except write to <PC> and
     register-controlled shift).</p>
-    <p>There is a <ext url="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</ext>
-    form for the assembly which <ARM> have recently introduced called <UAL>
-    (Unified Assembler Language), which allows the condition code to go after
-    the flags.</p>
+    <p>There is a <ext
+    url="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</ext>
+    form of the assembly language, which <ARM> have recently introduced, called
+    <UAL> (Unified Assembler Language). This allows the condition code to go
+    after the flags.</p>
   </commentary>
   </content>
   <footer>
