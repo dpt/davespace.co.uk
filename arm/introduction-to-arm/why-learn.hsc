@@ -30,12 +30,12 @@
     <p>The C code you write is <em>not</em> the instructions which the <CPU>
     executes. It&rsquo;s an abstraction which insulates you from the weaknesses
     and the strengths of the machine. We tend to forget this.</p>
-    <p>Also... It&rsquo;s useful for knowing where you are when debugging at
-    the low level. It&rsquo;s useful because compilers aren&rsquo;t infallible
-    and can <em>sometimes</em> generate incorrect code. (We encountered a tool
-    chain at Picsel which thought that N&times;10==N). Also knowledge of
-    assembly language can help you understand the semantics of the compiler
-    language more fully.</p>
+    <p>It&rsquo;s also useful for knowing where you are when debugging at the
+    low level. It&rsquo;s useful because compilers aren&rsquo;t infallible and
+    can <em>sometimes</em> generate incorrect code. (We encountered a tool
+    chain at Picsel which in one instance thought that N&times;10==N). Also
+    knowledge of assembly language can help you understand the semantics of the
+    compiler language more fully.</p>
   </commentary>
   </content>
   <footer>
