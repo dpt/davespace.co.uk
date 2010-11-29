@@ -5,14 +5,25 @@
   <sidebar>
   <content>
   <article>
+    <p>ARM has a three-address format:
+      <ul>
+        <li>Rd (destination register)</li>
+        <li>Rn (source register)</li>
+        <li>Rm (source register)</li>
+      </ul>
+    </p>
+    <p>Before being used Rm is passed through the <dfn>barrel shifter</dfn>: a
+    functional unit which can rotate and shift values. The result of this is
+    called <dfn>Operand2</dfn>.</p>
+    <p>Rn is used directly.</p>
     <diagram src="org.png" alt="Diagram of CPU organisation.">
+    <p>The two operands are processed by the <ALU> and the result written to
+    Rd.</p>
   </article>
   <commentary>
-    <p>Rm and Rn are the source values.</p>
-    <p>Rn is used directly.</p>
-    <p>Rm is processed into &lsquo;Operand2&rsquo; (described later).</p>
-    <p><CPSR> is kind of a side effect. Logically it&rsquo;s a register, but we
-    like to show it separately.</p>
+    <p>Although it&rsquo;s a register, we show the <CPSR> separately on the
+    diagram to indicate that it may be used in both the barrel shifter and the
+    ALU stages.</p>
   </commentary>
   </content>
   <footer>
