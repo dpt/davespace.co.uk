@@ -5,12 +5,15 @@
   <sidebar>
   <content>
   <article>
+    <p>So how do we implement control structures like <tt>for</tt> and
+    <tt>while</tt> loops? <dfn>Branch</dfn> instructions are used to alter
+    control flow.</p>
     <format>&lt;operation&gt;{cond} &lt;address&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
-      <dt><code>B</code> <dfn>branch</dfn></dt>
+      <dt><code>B</code> <ndash> <dfn>branch</dfn></dt>
       <dd>PC := &lt;address&gt;</dd>
-      <dt><code>BL</code> <dfn>branch with link</dfn></dt>
+      <dt><code>BL</code> <ndash> <dfn>branch with link</dfn></dt>
       <dd>R14 := address of next instruction, PC := &lt;address&gt;</dd>
     </dl>
     <p>How do we return from the subroutine which <code>BL</code> invoked?</p>
@@ -20,7 +23,7 @@
   </article>
   <examples>
     <p>Branching forward, to skip over some code:</p>
-<armsyntax>    ...
+<armsyntax>    ...          ; some code here
     B fwd        ; jump to label 'fwd'
     ...          ; more code here
 fwd</armsyntax>
@@ -40,17 +43,13 @@ calc             ; function body
     MOV pc, r14  ; PC = R14 to return</armsyntax></p>
   </examples>
   <commentary>
-    <p>So how do we implement control structures like <tt>for</tt> and
-    <tt>while</tt> loops etc?</p>
-    <p>Branch instructions are used to alter control flow.</p>
-    <p>They are <PC> relative. +/-32M range (24 bits &times; 4 bytes).</p>
-    <p>Use to allow position independent code. It allows restricted branch
-    range to jump to nearby addresses. This solves some problems with <BREW>.</p>
-    <p>How to perform longer branches? How to access full 32-bit address space?
-    You can set up the <LR> manually if needed, then load into <PC>: <code>MOV
-      lr,pc LDR pc,=dest</code></p>
-    <p>The linker will automatically generate long branch veneers for branches
-    beyond 32M range.</p>
+    <p>Branches are <PC> relative. +/-32M range (24 bits &times; 4 bytes).</p>
+    <p>Since <ARM>&rsquo;s branch instructions are <PC> relative the code
+    produced is <dfn>position independent</dfn> <mdash> it can execute from any
+    address in memory. Certain systems such as <BREW> use this.</p>
+    <p>How can we perform longer branches which access the full 32-bit address
+    space?  You can set up the <LR> manually if needed, then load into <PC>:
+    <code>MOV lr,pc LDR pc,=dest</code></p>
   </commentary>
   </content>
   <footer>
