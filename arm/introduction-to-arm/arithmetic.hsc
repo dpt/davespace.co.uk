@@ -8,11 +8,11 @@
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
-      <dt><code>ADD</code> <ndash> <dfn>addition</dfn></dt>
+      <dt><code>ADD</code> <ndash> <dfn>add</dfn></dt>
       <dd>Rd := Rn + Operand2</dd>
       <dt><code>ADC</code> <ndash> <dfn>add with carry</dfn></dt>
       <dd>Rd := Rn + Operand2 + Carry</dd>
-      <dt><code>SUB</code> <ndash> <dfn>subtraction</dfn></dt>
+      <dt><code>SUB</code> <ndash> <dfn>subtract</dfn></dt>
       <dd>Rd := Rn &minus; Operand2</dd>
       <dt><code>SBC</code> <ndash> <dfn>subtract with carry</dfn></dt>
       <dd>Rd := Rn &minus; Operand2 &minus; NOT(Carry)</dd>
@@ -36,8 +36,8 @@
     <p><code>RSB</code> and <code>RSC</code> subtract in reverse order (e.g. y
     &minus; x not x &minus; y).</p>
     <p>Multiplication has a different format and is described later.</p>
-    <p>No divide <ndash> compiler uses run-time library or shifts to perform
-    division.</p>
+    <p>There is no divide instruction <ndash> the compiler uses a run-time
+    library function or shifts to perform division.</p>
   </commentary>
   </content>
   <footer>
