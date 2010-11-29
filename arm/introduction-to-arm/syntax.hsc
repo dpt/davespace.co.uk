@@ -32,8 +32,8 @@
     <p>There is a <ext
     url="http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.dui0204i/Cjagjjbc.html">revised</ext>
     form of the assembly language, which <ARM> have recently introduced, called
-    <UAL> (Unified Assembler Language). This allows the condition code to go
-    after the flags.</p>
+    <UAL> (Unified Assembler Language). Among many other changes this allows
+    the condition code to go after the flags.</p>
   </commentary>
   </content>
   <footer>
