@@ -17,6 +17,19 @@
       </dl>
     </p>
   </article>
+  <examples>
+    <dl>
+      <dt><code>MOV r0, #42</code></dt>
+      <dt><code>ORR r1, r1, #0xFF00</code></dt>
+      <dd>Immediate values.</dd>
+      <dt><code>MOV r2, r2, LSR #1</code></dt>
+      <dt><code>RSB r10, r5, r14, ASR #14</code></dt>
+      <dd>Registers shifted by values.</dd>
+      <dt><code>BIC r11, r11, r1, LSL r0</code></dt>
+      <dt><code>CMP r9, r8, ROR r0</code></dt>
+      <dd>Registers shifted by registers.</dd>
+    </dl>
+  </examples>
   </content>
   <footer>
 </page>
