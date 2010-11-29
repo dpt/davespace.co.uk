@@ -5,62 +5,48 @@
   <sidebar>
   <content>
   <article>
-    <p>A beneficial feature of the <ARM> architecture is that every instruction
-    can be made to execute conditionally. This is common in other
-    architectures&rsquo; branch or jump instructions, but <ARM> allows its use
-    in most instructions.</p>
-    <p>If the condition is not met the instruction is treated as a no-op.</p>
+    <p>A beneficial feature of the <ARM> architecture is that instructions can
+    be made to execute <em>conditionally</em>. This is common in other
+    architectures&rsquo; branch or jump instructions but <ARM> allows its use
+    with most mnemonics.</p>
+    <p>The condition is specified with a two-letter suffix, such as
+    <code>EQ</code> or <code>CC</code>, appended to the mnemonic. The condition
+    is tested against the current processor flags and if not met the
+    instruction is treated as a no-op.</p>
     <p>This feature often removes the need to branch, avoiding pipeline stalls
-    and increasing speed. It also increases code density.</p>
-    <p>Condition codes are set using compare instructions or using an <ALU>
-    instruction with the &ldquo;S&rdquo; bit set.</p>
-    <p>By adding a two-letter suffix to the mnemonic, <ARM> instructions can be
-    made to execute <em>conditionally</em>.</p>
+    and increasing speed. It can also increase code density.</p>
+    <p>By default the data processing instructions do not affect the condition
+    code flags but can be made to by suffixing <code>S</code>. The comparison
+    instructions <code>CMP</code>, <code>TST</code>, and co.
+    do this implicitly.</p>
   </article>
-  <commentary>
-    <p>However, certain newer instructions can&rsquo;t be conditionally
-    executed, e.g. <code>PLD</code> or <code>BLX</code>. These are encoded
-    using the obsolete &lsquo;NV&rsquo; (never execute) condition code.</p>
-    <p>By default, data processing instructions do not affect the condition
-    code flags but can be made to by suffixing &ldquo;S&rdquo;. The comparison
-    instructions <code>CMP</code>, <code>TST</code>, <code>TEQ</code>, etc. do
-    this implicitly.</p>
-    <armsyntax>loop
+  <examples>
+    <p>The following code fragment is a loop which runs until the counter in R1
+    hits zero, at which point the condition code <code>NE</code> (not equal to
+    zero) controlling the branch becomes false.</p>
+    <armsyntax>	MOV   r1, #10
+loop
 	...
 	SUBS  r1, r1, #1
 	BNE   loop</armsyntax>
-    <p>The &ldquo;S&rdquo; bit is implicit in compare instructions.</p>
-    <p>Can combine &ldquo;S&rdquo; bit with conditional execution, e.g.
-    <code>ADDEQS r0, r1, r2.</code></p>
-    <p>Data processing instructions won&rsquo;t affect the flags unless you
-    specify the &ldquo;S&rdquo; bit.</p>
-    <p>Only <ARMCC> outputs assembly language which properly uses conditional
-    execution.</p>
-  </commentary>
-  <article title="Condition Code Flags">
+  </examples>
+  <article title="Flags">
     <diagram src="nzcv.png" alt="NZCV">
-    <p>Where an <ALU> operation changes the flags:</p>
+    <p>When an <ALU> operation changes the flags:</p>
     <dl>
       <dt>N <ndash> Negative</dt>
-      <dd>Set if the result of a data processing instruction was negative.</dd>
+      <dd>is set if the result of a data processing instruction was negative.</dd>
       <dt>Z <ndash> Zero</dt>
-      <dd>Set if the result was zero.</dd>
+      <dd>is set if the result was zero.</dd>
       <dt>C <ndash> Carry</dt>
-      <dd>Set if an addition, subtraction or compare causes a result bigger
+      <dd>is set if an addition, subtraction or compare causes a result bigger
       than 32 bits, or is set from the output of the shifter for move and
       logical instructions.</dd>
       <dt>V <ndash> Overflow</dt>
-      <dd>Set if an addition, subtraction or compare produces a signed result
+      <dd>is set if an addition, subtraction or compare produces a signed result
       bigger than 31 bits.</dd>
     </dl>
   </article>
-  <commentary>
-    <p>There is also...</p>
-    <ul>
-      <li>Q: introduced with <ARMv5E>.</li>
-    </ul>
-    <p>This bit is sticky and is set when one of the Q instructions saturates.</p>
-  </commentary>
   <article title="Condition Codes">
     <table id="cores">
       <thead>
@@ -88,34 +74,18 @@
   <commentary>
     <p>The (omitted from slide) <code>NV</code> condition code is deprecated.
     Though it originally provided an analogue for the <code>AL</code> condition
-    code, it was more useful to recover the 2<sup>24</sup> instructions it used
-    up.</p>
-  </commentary>
-  <examples>
-<armsyntax>    CMP   r3, #0
-    BEQ   next
-    ADD   r0, r0, r1
-    SUB   r0, r0, r2
-next
-    ...</armsyntax>
-      <p>Can become...</p>
-<armsyntax>    CMP   r3, #0
-    ADDNE r0, r0, r1
-    SUBNE r0, r0, r2
-    ...</armsyntax>
-  </examples>
-  <commentary>
-    <p>By transforming the sequence like this an instruction can be removed by
-    using conditional execution.</p>
-    <p>The only compiler which makes extensive use of condition codes is
-    <ARMCC>.  It applies them in an optimisation pass called <dfn>branch
-    removal</dfn>.</p>
+    code, it was more useful to recover the 2<sup>24</sup> instructions its
+    presence consumed.</p>
   </commentary>
   <examples>
     <p>Use a sequence of several conditional instructions:</p>
     <armsyntax>    CMP   r0, #5   ; if (a == 5)
     MOVEQ r0, #10  ;
     BLEQ  fn       ;   fn(10)</armsyntax>
+    <p>(Assume <var>a</var> is in R0. Compare R0 to 5. The next two
+    instructions will be executed only if the compare returns EQual. They move
+    10 into R0, then call &lsquo;fn&rsquo; (branch with link,
+    <code>BL</code>).)</p>
     <p>Set the flags, then use various condition codes:</p>
     <armsyntax>    CMP   r0, #0   ; if (x &lt; 0)
     MOVLE r0, #0   ;   x = 0;
@@ -124,11 +94,34 @@ next
     <armsyntax>    CMP   r0, #'A' ; if (c == 'A'
     CMPNE r0, #'B' ;  || c == 'B')
     MOVEQ r1, #1   ;   y = 1;</armsyntax>
+    <before>
+      <p>A sequence which doesn&rsquo;t use conditional execution:</p>
+<armsyntax>    CMP   r3, #0
+    BEQ   next
+    ADD   r0, r0, r1
+    SUB   r0, r0, r2
+next
+...</armsyntax>
+    </before>
+    <after>
+      <p>By transforming the sequence with conditional execution an instruction
+      can be removed:</p>
+<armsyntax>    CMP   r3, #0
+    ADDNE r0, r0, r1
+    SUBNE r0, r0, r2
+    ...</armsyntax>
+    </after>
   </examples>
   <commentary>
-    <p>Assume <var>a</var> is in R0. Compare R0 to 5. The next two instructions
-    will be executed only if the compare returns EQual. They move 10 into R0,
-    then call &lsquo;fn&rsquo; (branch with link, <code>BL</code>).</p>
+    <p>Some of the newer instructions such as <code>PLD</code> or
+    <code>BLX</code> <strong>can&rsquo;t</strong> be conditionally executed.
+    These are encoded using the instruction space occupied by the now-obsolete
+    <code>NV</code> (never execute) condition code.</p>
+    <p>It&rsquo;s possible to combine the <code>S</code> bit with conditional
+    execution, e.g.  <code>ADDEQS r0, r1, r2.</code></p>
+    <p>The only compiler which makes extensive use of condition codes is
+    <ARMCC>.  It applies them in an optimisation pass called <dfn>branch
+    removal</dfn>.</p>
     <p>When is it worth branching over condition codes? Depends on the
     <CPU>&rsquo;s branch penalty, but it&rsquo;s often 4..6 instructions.</p>
   </commentary>
