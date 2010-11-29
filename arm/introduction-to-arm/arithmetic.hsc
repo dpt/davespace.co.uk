@@ -28,7 +28,7 @@
       <dd>R0 = R1 + R2</dd>
       <dt><code>SUB r5, r3, #10</code></dt>
       <dd>R5 = R3 &minus; 10</dd>
-      <dt><code>RSB r2, r5, #&amp;FF00</code></dt>
+      <dt><code>RSB r2, r5, #0xFF00</code></dt>
       <dd>R2 = 0xFF00 &minus; R5</dd>
     </dl>
   </examples>
