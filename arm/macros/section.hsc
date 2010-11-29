@@ -174,6 +174,10 @@ ARM Ltd.
 <abbr title="Stack Pointer">SP</abbr>
 </$macro>
 
+<$macro SPSR>
+<abbr title="Saved Program Status Register">SPSR</abbr>
+</$macro>
+
 <$macro SWI>
 <acronym title="Software Interrupt">SWI</acronym>
 </$macro>

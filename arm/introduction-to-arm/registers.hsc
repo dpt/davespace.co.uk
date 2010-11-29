@@ -5,36 +5,45 @@
   <sidebar>
   <content>
   <article>
-    <p><ARM> has sixteen registers, called R0 to R15. All are 32 bits wide.</p>
-    <diagram src="regs.png" alt="Diagram of registers and their aliases.">
-    <p>All registers are general purpose, save for:</p>
+    <p><ARM> has sixteen registers visible at any one time. They are named R0
+    to R15. All are 32 bits wide.</p>
+    <diagram src="regs.png" alt="Diagram of registers.">
+    <p>The registers may also be known by the following aliases<a
+      href="#note1">&dagger;</a>:</p>
+    <diagram src="regaliases.png" alt="Diagram of registers' aliases.">
+    <p>All of the registers are general purpose, save for:</p>
     <dl>
       <dt>R13 / <SP></dt>
-      <ddd>Holds the stack pointer. <a href="#note1">&dagger;</a></dd>
+      <ddd>which holds the <dfn>stack pointer</dfn>. <a
+        href="#note2">&Dagger;</a></dd>
       <dt>R14 / <LR></dt>
-      <ddd>Is the callers&rsquo;s return address.</dd>
+      <ddd>the <dfn>link register</dfn> which holds the callers&rsquo;s return
+      address.</dd>
       <dt>R15 / <PC></dt>
-      <ddd>Contains the program counter.</dd>
+      <ddd>which holds the <dfn>program counter</dfn>.</dd>
     </dl>
-    <p><CPSR> is the current program status register. This holds flags.</p>
+    <p>In addition to the main registers there is also a status register:</p>
+    <diagram src="regpsr.png" alt="Diagram of status registers.">
+    <p><CPSR> is the <dfn>current program status register</dfn>. This holds
+    flags: results of aritmetic and logical operations.</p>
   </article>
-  <commentary>
-    <p><a name="note1">&dagger;</a> Strictly R13 is used for the stack pointer
-    by convention, rather than a rule, in <ARM> mode. In Thumb mode it is more
-    hardwired.</p>
-    <p>This is the <dfn>user mode</dfn> register set.</p>
-    <p>The registers also have aliases, subject to the current calling
-    convention. The ones shown here are for <AAPCS> <ndash> the <ARM> standard
-    calling convention.</p>
-  </commentary>
-  <article title="Load-Store">
-    <p><ARM> is a load-store architecture:</p>
+  <article title="Load-Store Architecture">
+    <p><ARM> is a <dfn>load-store architecture</dfn>:</p>
     <ul>
       <li>You must load values into registers in order to operate upon
       them.</li>
       <li>No instructions directly operate on values in memory.</li>
     </ul>
   </article>
+  <commentary>
+    <p>This slide shows the <dfn>user mode</dfn> register set.</p>
+    <p><a name="note1">&dagger;</a> Register aliases are subject to the current
+    calling convention. The ones shown here are apply to <AAPCS> <ndash> the
+    <ARM> standard calling convention.</p>
+    <p><a name="note2">&Dagger;</a> Strictly R13 is used for the stack pointer
+    by convention, rather than a rule, in <ARM> mode. In Thumb mode it is more
+    hardwired.</p>
+  </commentary>
   </content>
   <footer>
   </page>
