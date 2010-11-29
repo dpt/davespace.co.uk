@@ -23,15 +23,14 @@
     </ul>
   </article>
   <commentary>
-  <p>R15 is the <PC>.</p>
-  <p>&ldquo;word&rdquo; and &ldquo;half-word&rdquo; mean 4-byte and 2-byte
-  quantities respectively.</p>
-  <p>It&rsquo;s not mentioned on the slide, but when in Jazelle state:
-    <ul>
-      <li>instructions are 8 bits wide</li>
-      <li>four are fetched at a time</li>
-    </ul>
-  </p>
+    <p>&ldquo;word&rdquo; and &ldquo;halfword&rdquo; mean 4-byte and 2-byte
+    quantities respectively.</p>
+    <p>It&rsquo;s not mentioned on the slide, but when in Jazelle mode:
+      <ul>
+        <li>Instructions are 8 bits wide.</li>
+        <li>Four are fetched at a time.</li>
+      </ul>
+    </p>
   </commentary>
   </content>
   <footer>
