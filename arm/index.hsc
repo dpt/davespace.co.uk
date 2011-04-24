@@ -60,6 +60,10 @@
   <article title="Changelog">
     <p>The most recent changes are listed first.</p>
     <dl>
+      <dt>29<sup>th</sup> November 2010</dt>
+      <ddd>Many adjustments and clarifications to the first half of
+      Introduction to ARM.</dd>
+
       <dt>9<sup>th</sup> December 2009</dt>
       <ddd>Various minor tweaks to the text.</dd>
 
