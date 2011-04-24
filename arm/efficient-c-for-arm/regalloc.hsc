@@ -4,14 +4,14 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>The compiler attempts to allocate a register to each local variable.</p>
     <p>It tries to use the same register for different local variables if the
     use of the variables does not overlap.</p>
     <p>When number of local variables exceeds number of available registers
     then the excess variables are stored on the stack.</p>
-  </article>
-  <article title="Spilling">
+  </slide>
+  <slide title="Spilling">
     <p>Such stacked variables are called <dfn>spilled</dfn> since they are
     written out to memory.</p>
     <p>Spilled variables are slow to access compared to variables allocated to
@@ -21,8 +21,8 @@
       <li>Minimise the number of spilled variables.</li>
       <li>Ensure that critical variables are stored in registers.</li>
     </ul>
-  </article>
-  <article title="AAPCS Registers">
+  </slide>
+  <slide title="AAPCS Registers">
     <p><AAPCS> is the <dfn>ARM Architecture Procedure Calling Standard</dfn>.
     It is a convention which allows high level languages to interwork.</p>
     <p>It&rsquo;s had a number of different names over the years:</p>
@@ -47,8 +47,8 @@
         <tr><td>R15</td><td>PC</td><td class="wrap">The program counter.</td></tr>
       </tbody>
     </table>
-  </article>
-  <article title="Available Registers">
+  </slide>
+  <slide title="Available Registers">
     <ul>
       <li>R0..R12, R14 can all hold variables.</li>
       <li>Must save R4..R11, R14 on the stack if using these registers.</li>
@@ -66,7 +66,7 @@
       <li>You can tell the compiler about important variables by using them
       within the innermost loop.</li>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <p>Variable lifetime analysis.</p>
 

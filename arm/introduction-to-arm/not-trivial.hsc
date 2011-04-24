@@ -5,7 +5,7 @@
   <sidebar>
   <content>
 
-  <article>
+  <slide>
     <p>There are features available to the assembler programmer which
     don&rsquo;t map onto C:</p>
     <dl>
@@ -25,7 +25,7 @@
 
     <p>The benefits of these features may be lost if plain, or na&iuml;ve, C
     code is used.</p>
-  </article>
+  </slide>
 
   <commentary>
     <p>

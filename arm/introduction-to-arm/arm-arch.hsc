@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl>
       <dt>Programming in <ARM> is like having a &lsquo;big&rsquo; 6502.</dt>
       <ddd>Many familiar instructions.</dd>
@@ -15,7 +15,7 @@
       <ddd>Architecture numbers aren&rsquo;t model numbers.<br/>
       e.g. an ARM9 chip might be <ARMv4> or <ARMv5>.</dd>
     </dl>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

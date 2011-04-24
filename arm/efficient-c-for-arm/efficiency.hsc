@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Why do we need efficient software?</p>
     <dl>
       <dt>Competitive advantage</dt>
@@ -19,7 +19,7 @@
       <ddd>A smaller app can run on smaller devices (more devices, more
       royalties)</dd>
     </dl>
-  </article>
+  </slide>
   <commentary>
     <p>A couple of definitions:</p>
     <ul>

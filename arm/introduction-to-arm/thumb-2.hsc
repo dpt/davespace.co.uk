@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <ul>
       <li>Thumb-2 is the newest version of Thumb.</li>
       <li>It&rsquo;s present in the Cortex <CPU> series (or any v7).</li>
@@ -18,7 +18,7 @@
     <ARM> and Thumb assembler formats into <dfn><UAL></dfn> <ndash> a Unified
     Assembler Language. New <ARM> assemblers can take <UAL> format assembler
     and output to <ARM> <em>or</em> Thumb-2.</p>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

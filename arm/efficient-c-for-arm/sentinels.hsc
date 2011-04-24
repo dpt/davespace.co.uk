@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>When searching through a list we normally do two comparisons:</p>
     <ul>
       <li>Compare loop index against maximum.</li>
@@ -20,7 +20,7 @@
         <lid>But it requires one extra element.</li>
       </ul>
     </ul>
-  </article>
+  </slide>
   <examples>
     <before>
 <csyntax>int search1(int *list, int N, int want)

@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>The <dfn>barrel shifter</dfn> is a functional unit which can be used in
     a number of different circumstances. It provides five types of shifts and
     rotates which can be applied to Operand2. (These are not operations
@@ -46,7 +46,7 @@
         </td>
       </tr>
     </table>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>MOV r0, r0, LSL #1</code></dt>

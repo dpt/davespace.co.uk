@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>ARM has a three-address format:
       <ul>
         <li>Rd (destination register)</li>
@@ -19,7 +19,7 @@
     <diagram src="org.png" alt="Diagram of CPU organisation.">
     <p>The two operands are processed by the <ALU> and the result written to
     Rd.</p>
-  </article>
+  </slide>
   <commentary>
     <p>Although it&rsquo;s a register, we show the <CPSR> separately on the
     diagram to indicate that it may be used in both the barrel shifter and the

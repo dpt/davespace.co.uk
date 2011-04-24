@@ -4,12 +4,12 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Loop termination condition can have a significant overhead.</p>
     <ul>
       <li>You should write loops to count down.</li>
     </ul>
-  </article>
+  </slide>
   <examples>
     <before>
       <p>Here&rsquo;s a routine to calculate a factorial.</p>

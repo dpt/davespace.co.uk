@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p><ARM> has sixteen registers visible at any one time. They are named R0
     to R15. All are 32 bits wide.</p>
     <diagram src="regs.png" alt="Diagram of registers.">
@@ -26,15 +26,15 @@
     <diagram src="regpsr.png" alt="Diagram of status registers.">
     <p><CPSR> is the <dfn>current program status register</dfn>. This holds
     flags: results of aritmetic and logical operations.</p>
-  </article>
-  <article title="Load-Store Architecture">
+  </slide>
+  <slide title="Load-Store Architecture">
     <p><ARM> is a <dfn>load-store architecture</dfn>:</p>
     <ul>
       <li>You must load values into registers in order to operate upon
       them.</li>
       <li>No instructions directly operate on values in memory.</li>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <p>This slide shows the <dfn>user mode</dfn> register set.</p>
     <p><a name="note1">&dagger;</a> Register aliases are subject to the current

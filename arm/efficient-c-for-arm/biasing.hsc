@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <dl>
     <dt><ARM> instructions are able to encode a limited range of immediate
     values.</dt>
@@ -14,7 +14,7 @@
     biasing the values so that they can fit in <ARM>&rsquo;s available
     range.</dt>
   </dl>
-  </article>
+  </slide>
   <examples>
   <before>
   <p>This fragment tests whether Unicode character <var>c</var> is a Thai

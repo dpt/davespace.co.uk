@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <dl>
     <dt>Accessing an array element uses two variables</dt>
     <ddd><var>Base</var> and <var>Index</var>.</dd>
@@ -56,7 +56,7 @@ loop          MOV      r1,r4           ; R1 = entry-&gt;name
               BCC      loop            ; ..of data
 exit          MVN      r0,#0
               LDMFD    sp!,{r4-r6,pc}  ; return -1</armsyntax>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

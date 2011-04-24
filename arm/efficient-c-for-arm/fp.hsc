@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Floating Point is usually <strong>emulated</strong> on <ARM>
     systems.</p>
     <ul>
@@ -24,7 +24,7 @@
         <lid>Consequently more error prone.</li>
       </ul>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <p>Is this the most fundamental thing?</p>
     <p>Floating point is therefore slow and should be avoided unless

@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>First four arguments to a function are passed in R0-R3.</p>
 
     <p>The remainder of the arguments are passed on the stack.</p>
@@ -16,7 +16,7 @@
 
     <p>Almost always more efficient to group subsequent args together and pass
     them together as a <code>struct</code>.</p>
-  </article>
+  </slide>
   <commentary>
     <p>This is from section 5.5 of <a href="references.html#asdg">ARM System
       Developer&rsquo;s Guide</a>.</p>

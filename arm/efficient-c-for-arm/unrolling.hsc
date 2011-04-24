@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <p>Small loops can be <dfn>unrolled</dfn>.</p>
   <ul>
     <li>Inner part repeated multiple times.</li>
@@ -22,7 +22,7 @@
   <ul>
     <li>All test/branch overhead vanishes.</li>
   </ul>
-  </article>
+  </slide>
   <examples>
     <before>
       <p>Before unrolling:</p>

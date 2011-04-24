@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>The <ARM> data processing operations always operate on 32-bit
     quantities. You should therefore:</p>
     <ul>
@@ -16,7 +16,7 @@
     </ul>
     <p>The exception to this is when you require wrap-around or modulo
     arithmetic (e.g. 255+1 = 0).</p>
-  </article>
+  </slide>
   <examples>
     <p>This example code calculates a simple checksum on a packet of 64
     words:</p>

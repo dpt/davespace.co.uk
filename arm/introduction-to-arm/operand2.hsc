@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p><dfn>Operand2</dfn> is the flexible second operand to most instructions.
     It can take one of three different forms:
       <dl>
@@ -16,7 +16,7 @@
         <ddd>The bottom 8 bits of a register.</dd>
       </dl>
     </p>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>MOV r0, #42</code></dt>

@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <table id="cores">
       <thead>
         <tr>
@@ -77,7 +77,7 @@
         </tr>
       </tbody>
     </table>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

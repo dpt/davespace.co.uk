@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <format>&lt;operation&gt;{cond} Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -21,7 +21,7 @@
     Ordinary instructions will also set condition codes if the &ldquo;S&rdquo;
     bit is set. The &ldquo;S&rdquo; bit is implied for comparison
     instructions.</p>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>CMP r0, #42</code></dt>

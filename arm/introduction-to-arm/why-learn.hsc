@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <ul>
       <li>Ideally we would never need to write assembly language.</li>
       <ul>
@@ -20,7 +20,7 @@
       <li>To dispense with the slop we need to instruct the machine in its
       native language.</li>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <p>Our goal is to write small, efficient programs to run on our target
     platforms. We can&rsquo;t always assume that compilers will make all the

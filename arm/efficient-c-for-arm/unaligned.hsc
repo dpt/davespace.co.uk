@@ -4,13 +4,13 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <ul>
       <li><ARM> favours 32-bit aligned addresses.</li>
       <li>Unaligned values have to be pulled from memory a byte at a time and
       reformed.</li>
     </ul>
-  </article>
+  </slide>
   <examples>
     <p>A load from a guaranteed alignment:</p>
     <armsyntax>LDR Rd,[Ra]</armsyntax>

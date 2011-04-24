@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl>
       <dt>v6</dt>
       <ddd>Mixed endian data handling: <code>SETEND</code>, <code>REV</code>,
@@ -17,7 +17,7 @@
       <dt>v6T2</dt>
       <ddd>Thumb-2.</dd>
     </dl>
-  </article>
+  </slide>
   <commentary>
     <p>Mandates the &ldquo;TEJ&rdquo; features for this and all subsequent
     architectures.</p>

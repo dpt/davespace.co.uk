@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <ul>
       <li><ext url="http://www.arm.com/"><ARMLtd></ext> were
       founded in November 1990 as <em>Advanced RISC Machines Ltd</em>.</li>
@@ -23,7 +23,7 @@
       sell them to their customers.</li>
       <li>Controls the <ARM> architecture.</li>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <blockquote>The <ARM> processor originated within British computer company
       Acorn. In 1983, when designing the successor to the <BBC> Micro series of

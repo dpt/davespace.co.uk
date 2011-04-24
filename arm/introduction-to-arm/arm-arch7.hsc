@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl>
       <dt>v7A, v7R</dt>
       <ddd>Dynamic Compiler Support.</dd>
@@ -16,7 +16,7 @@
       <ddd>Minimalist variant for embedded uses.</dd>
       <ddd>Thumb-2 only.</dd>
     </dl>
-  </article>
+  </slide>
   <commentary>
     <p>Only the newest tools currently target v7. e.g. <ext url="http://www.codesourcery.com/sgpp/lite/arm">CodeSourcery&rsquo;s GCC
       ARM toolchain</ext>.</p>

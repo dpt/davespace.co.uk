@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <csyntax>short addshorts1(short a, short b)
 {
   return (short) (a + (b &gt;&gt; 1));
@@ -29,7 +29,7 @@
     <li>The compiler must make a compatible decision for both the caller and
     the callee.</li>
   </ul>
-  </article>
+  </slide>
   <examples>
     <p>For the above example, <ARMCC> generates:</p>
   <armsyntax>addshorts1

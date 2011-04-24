@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <p><ARM> is a <dfn>load-store</dfn> architecture:</p>
     <ul>
       <li>Data must be loaded into registers from memory before it can be
@@ -16,8 +16,8 @@
     <ul>
       <li>So <code>char</code> is unsigned by default on <ARM>.</li>
     </ul>
-  </article>
-  <article title="Memory Instructions Throughout the Ages">
+  </slide>
+  <slide title="Memory Instructions Throughout the Ages">
     <p>Not all of the memory access instructions available in the current <ARM>
     <ISA> were present in the original <ARM>. Newer instructions, such as those
     for processing half-words, have had to be squeezed into later
@@ -89,7 +89,7 @@
 
     <p>You may get better performance by using <code>LDR</code> to process
     packed pairs of half-words instead of <code>LDRH</code>, for example.</p>
-  </article>
+  </slide>
   <commentary>
   <p><ARMv4> introduced signed and halfword memory access types.</p>
     <p><ARMv5> introduced double-word accesses.</p>

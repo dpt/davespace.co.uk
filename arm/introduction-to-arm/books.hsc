@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl class="books">
       <dd><img src="img/book/asdg.jpg" alt="Cover."/></dd>
       <dt><ext url="http://www.amazon.co.uk/ARM-System-Developers-Guide-Architecture/dp/1558608745/">ARM System Developer&rsquo;s Guide</ext></dt>
@@ -30,7 +30,7 @@
       <dd>Addison-Wesley</dd>
       <dd>ISBN 0201624109</dd>
     </dl>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
 <csyntax>int N;
 
 getlimit(&amp;N);
@@ -20,7 +20,7 @@ for (i = 0; i &lt; N; i++)
       <li>Make a second, non-memory-bound, copy of the variable for intensive
       use.</li>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <p>When you take the address of a variable it is then memory-bound for its
     lifetime. So even if, as in this example, you only take the address once

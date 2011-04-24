@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article title="Compute a Factorial">
+  <slide title="Compute a Factorial">
     <p>Write, from scratch, your own <ARM> assembly language routine to compute
     the factorial of an input number <var>N</var>.</p>
     <ul>
@@ -13,10 +13,10 @@
       <li>Don&rsquo;t try disassembling the C version until you&rsquo;ve first
       had a go!</li>
     </ul>
-  </article>
-  <article title="Answers">
+  </slide>
+  <slide title="Answers">
     <p>Answers are <a href="task-two-answers.html">here.</a></p>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

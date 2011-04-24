@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl>
       <dt>v5T</dt>
       <ddd>Superset of <ARMv4T>.</dd>
@@ -21,7 +21,7 @@
       <dt>v5TEJ</dt>
       <ddd>Java acceleration.</dd>
     </dl>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

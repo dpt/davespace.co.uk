@@ -4,12 +4,12 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Pointer chains are frequently used to access data in structures.</p>
     <ul>
       <li>Subject to <a href="aliasing.html">pointer aliasing</a>.</li>
     </ul>
-  </article>
+  </slide>
   <examples>
   <before>
     <p>This code must reload <code>o-&gt;pos</code> after each assignment.</p>

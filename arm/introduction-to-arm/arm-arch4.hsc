@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl>
       <dt>v4 is the oldest supported architecture today. It added:</dt>
       <ddd>Load/store instructions for signed and unsigned halfwords and
@@ -15,7 +15,7 @@
       <dt>v4T added:</dt>
       <ddd>Thumb mode.</dd>
     </dl>
-  </article>
+  </slide>
   <commentary>
   <p>This is the first architecture to have a full formal definition.</p>
   <ul>

@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <format>&lt;operation&gt;{cond}&lt;mode&gt; Rn{!}, &lt;reglist&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -22,7 +22,7 @@
     </dl>
     <p><var>&lt;reglist&gt;</var> is the list of registers to load or store. It
     can be a comma-separated list or an Rx-Ry style range.</p>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>LDMIA r0, {r3,r7}</code></dt>

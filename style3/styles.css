@@ -344,12 +344,13 @@ A.external SPAN {
 }
 
 #content > .article,
+#content > .slide,
 #content > .examples,
 #content > .commentary {
 	margin-bottom: 2em;
 }
 
-#content > .article,
+#content > .slide,
 #content > .examples {
 	background-color: #f2f2f2;
 	border-radius: 10px;
@@ -599,46 +600,46 @@ A.external SPAN {
 /* TABLES																	  */
 /******************************************************************************/
 
-.article TABLE TH,
-.article TABLE TD {
+.slide TABLE TH,
+.slide TABLE TD {
 	padding: 0 0.5em;
 	line-height: 150%;
 }
-.article TABLE TH {
+.slide TABLE TH {
 	border-bottom: 1px solid #adc8d9;
 	text-align: center;
 }
-.article TABLE TD {
+.slide TABLE TD {
 	border-bottom: 1px solid #eaf1f5;
 }
 
-.article #barrelshifts {
+.slide #barrelshifts {
 	border-spacing: 0;
 	margin: 0 auto; /* centre */
 }
-.article #barrelshifts TD {
+.slide #barrelshifts TD {
 	padding: 1em;
 	text-align: center;
 }
-.article #barrelshifts TD IMG {
+.slide #barrelshifts TD IMG {
 	padding: 1em;
 }
 
 /* Slightly compacted table used in arm-cores.hsc, arm-inside.hsc and
  * conditional.hsc. */
-.article #cores {
+.slide #cores {
 	border-spacing: 0;
 	margin: 0 auto 0.5em auto; /* centre */
 }
-.article #cores TH,
-.article #cores TD {
+.slide #cores TH,
+.slide #cores TD {
 	font-size: 95%;
 	line-height: 180%;
 }
-.article #cores TD {
+.slide #cores TD {
 	white-space: nowrap;
 }
-.article #cores TD.wrap {
+.slide #cores TD.wrap {
 	white-space: normal;
 	line-height: 150%;
 }

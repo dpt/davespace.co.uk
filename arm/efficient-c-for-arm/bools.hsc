@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Problem:</p>
 
     <ul>
@@ -27,7 +27,7 @@
     <p>This reduces register pressure and allows for convenient
     multiple-<code>bool</code> tests to be carried out with a single logical
     operation.</p>
-  </article>
+  </slide>
 
   <examples>
     <before>

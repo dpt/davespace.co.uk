@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <p>We need to store the processor state when making nested calls.</p>
   <p>The multiple data transfer instructions provide a mechanism for storing
   state on the <dfn>stack</dfn> (pointed to by R13).</p>
@@ -21,7 +21,7 @@
       <ddd>Empty Ascending</dd>
     </dl>
   </p>
-  </article>
+  </slide>
   <commentary>
     <p>As you&rsquo;ll recall R13 points to the stack.</p>
     <dl>

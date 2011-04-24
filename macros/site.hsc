@@ -166,6 +166,15 @@
 </div>
 </$macro>
 
+<$macro slide /close title:string>
+<$if cond=(set title)>
+  <h2><(title)></h2>
+</$if>
+<div class="slide">
+  <$content>
+</div>
+</$macro>
+
 <$macro format /close>
 <p class="format"><code><$content></code></p>
 </$macro>

@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>When profiling on x86 don&rsquo;t expect the results to be accurate for
     <ARM>.</p>
     <ul>
@@ -27,7 +27,7 @@
         <lid>Debug builds enable a variety of extra bits (assertions, debug output).</li>
       </ul>
     </ul>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

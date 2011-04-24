@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Thumb is a subset of the <ARM> instruction set encoded in 16-bit-wide
     instructions.</p>
 
@@ -24,12 +24,12 @@
     </dl>
 
     <p>Uses 30% less external memory power than <ARM> code.</p>
-  </article>
+  </slide>
   <commentary>
     <p>The slide quotes <ARM>&rsquo;s &ldquo;ideal&rdquo; values. Take with a
     pinch of salt.</p>
   </commentary>
-  <article title="Limitations">
+  <slide title="Limitations">
     <p>Thumb is not a complete architecture: you can&rsquo;t have a Thumb-only
     <CPU>.</p>
 
@@ -42,7 +42,7 @@
     </ul>
 
     <p>Thumb uses the same register set as <ARM> <mdash> but only R0-R7.</p>
-  </article>
+  </slide>
   <commentary>
     <p>Whereas R13&rsquo;s role as the stack pointer is a convention in <ARM>
     mode, in Thumb mode it&rsquo;s more hard-wired.</p>

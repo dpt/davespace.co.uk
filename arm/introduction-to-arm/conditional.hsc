@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>A beneficial feature of the <ARM> architecture is that instructions can
     be made to execute <em>conditionally</em>. This is common in other
     architectures&rsquo; branch or jump instructions but <ARM> allows its use
@@ -19,7 +19,7 @@
     code flags but can be made to by suffixing <code>S</code>. The comparison
     instructions <code>CMP</code>, <code>TST</code>, and co.
     do this implicitly.</p>
-  </article>
+  </slide>
   <examples>
     <p>The following code fragment is a loop which runs until the counter in R1
     hits zero, at which point the condition code <code>NE</code> (not equal to
@@ -30,7 +30,7 @@ loop
 	SUBS  r1, r1, #1
 	BNE   loop</armsyntax>
   </examples>
-  <article title="Flags">
+  <slide title="Flags">
     <diagram src="nzcv.png" alt="NZCV">
     <p>When an <ALU> operation changes the flags:</p>
     <dl>
@@ -46,8 +46,8 @@ loop
       <dd>is set if an addition, subtraction or compare produces a signed result
       bigger than 31 bits.</dd>
     </dl>
-  </article>
-  <article title="Condition Codes">
+  </slide>
+  <slide title="Condition Codes">
     <table id="cores">
       <thead>
         <tr><th>Code</th><th>Suffix</th><th>Description</th><th>Flags</th></tr>
@@ -70,7 +70,7 @@ loop
         <tr><td>1110</td><td><code>AL</code></td>     <td>Always (default)</td>                   <td>any</td>     </tr>
       </tbody>
     </table>
-  </article>
+  </slide>
   <commentary>
     <p>The (omitted from slide) <code>NV</code> condition code is deprecated.
     Though it originally provided an analogue for the <code>AL</code> condition

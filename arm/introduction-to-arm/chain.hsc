@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <diagram src="call.png" alt="Diagram of a call chain.">
     <ol>
       <li>Routine A branches with link (<code>BL</code>) to routine B. This
@@ -27,7 +27,7 @@
     <p>Routine C does not call any subroutines; it is known as a
     <dfn>leaf</dfn> routine. Leaf routines can dispense with the overhead of
     storing their return address on the stack.</p>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

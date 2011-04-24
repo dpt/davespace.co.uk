@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <format>&lt;op&gt;{cond}{flags} Rd, Rn, Operand2</format>
   <dl class="columns">
     <dt><code>&lt;op&gt;</code></dt>
@@ -20,7 +20,7 @@
     <dt><code>Operand2</code></dt>
     <dd>A flexible second operand.</dd>
   </dl>
-  </article>
+  </slide>
   <commentary>
     <p>This is the <em>general</em> form of the arithmetic and logical
     instructions. Many instructions have a similar syntax to this, but are not

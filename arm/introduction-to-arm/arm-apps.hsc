@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl>
       <dt>Mobile Phones, <PDA>s</dt>
       <ddd>Almost all</dd>
@@ -17,7 +17,7 @@
       <ddd>Tom Tom 300</dd>
       <dt>Set Top Boxes, TVs, Hard Discs, Routers, ...</dt>
     </dl>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

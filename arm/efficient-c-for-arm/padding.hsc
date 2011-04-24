@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Structures often end up containing <dfn>padding</dfn>.</p>
     <dl>
       <dt>Required because of target&rsquo;s data type restrictions.</dt>
@@ -23,7 +23,7 @@
     <p>The compiler cannot perform this transformation itself as the C standard
     guarantees that structure members will be laid out in the order that
     they&rsquo;re specified.</p>
-  </article>
+  </slide>
   <examples>
     <before>
       <p>Consider the structure:</p>

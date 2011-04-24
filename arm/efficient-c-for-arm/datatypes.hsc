@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>Certain C data types are more efficient to use for local variables than
     others.</p>
     <ul>
@@ -50,7 +50,7 @@
     </tbody>
     </table>
 
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>An <var>&lt;address&gt;</var> can take multiple forms:</p>
     <dl>
       <dt>An address expression:</dt>
@@ -25,7 +25,7 @@
     described <a href="barrel-shifter.html">earlier</a>.</p>
     <p>Pre-indexed <dfn>writeback</dfn> denoted by <code>{!}</code> causes the
     final address generated to be written back into <var>Rn</var>.</p>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>LDR r0,[r1,#4]</code></dt>

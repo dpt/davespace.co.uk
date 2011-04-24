@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <p>The routine turns an <ASCII> character lower-case. In C it would be
   written like this:</p>
   <csyntax>int mystery(int c)
@@ -32,7 +32,7 @@
   return c;
 }
 </csyntax>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

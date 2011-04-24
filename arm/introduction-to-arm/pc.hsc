@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <ul>
     <li>When in <ARM> mode:
       <ul>
@@ -21,7 +21,7 @@
       </ul>
     </li>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <p>&ldquo;word&rdquo; and &ldquo;halfword&rdquo; mean 4-byte and 2-byte
     quantities respectively.</p>

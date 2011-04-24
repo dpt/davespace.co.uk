@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <p>Constant expressions inside a loop can be <dfn>hoisted</dfn> to outside of
   the loop.</p>
   <ul>
@@ -12,7 +12,7 @@
     iteration.</li>
     <li>Keeps code out of the way <ndash> denser code.</li>
   </ul>
-  </article>
+  </slide>
   <examples>
     <before>
       <p>Doing the same test repeatedly in a loop:</p>

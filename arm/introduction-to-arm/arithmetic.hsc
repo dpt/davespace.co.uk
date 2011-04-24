@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -21,7 +21,7 @@
       <dt><code>RSC</code> <ndash> <dfn>reverse subtract with carry</dfn></dt>
       <dd>Rd := Operand2 &minus; Rn &minus; NOT(Carry)</dd>
     </dl>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>ADD r0, r1, r2</code></dt>

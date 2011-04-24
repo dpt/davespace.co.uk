@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <ul>
       <li>Mini structure members.</li>
       <li>Subject to pointer aliasing.</li>
@@ -13,7 +13,7 @@
 
     <p>On the whole, you&rsquo;re better off using a flags word.</p>
 
-  </article>
+  </slide>
   <examples>
     <before>
 

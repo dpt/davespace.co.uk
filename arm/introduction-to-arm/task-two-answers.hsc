@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <p>C test shell:</p>
   <csyntax>#include &lt;stdio.h&gt;
 
@@ -37,7 +37,7 @@ loop
     MOV     pc, r14     ; Return with result in R0.
 
     END</armsyntax>
-  </article>
+  </slide>
   </content>
   <footer>
 </page>

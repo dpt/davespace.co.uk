@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>When testing for a value within a range we can apply the <dfn>unsigned
     range optimisation</dfn>:</p>
     <ul>
@@ -14,7 +14,7 @@
     </ul>
     <p>This means we can do a single test rather than two.</p>
     <p>Eliminates branching.</p>
-  </article>
+  </slide>
   <examples>
   <before>
   <csyntax>int insideRange1(int v, int min, int max)

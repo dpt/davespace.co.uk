@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -17,7 +17,7 @@
       <dt><code>BIC</code> <ndash> <dfn>bitwise clear</dfn></dt>
       <dd>Rd := Rn AND NOT Operand2</dd>
     </dl>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>AND r8, r7, r2</code></dt>

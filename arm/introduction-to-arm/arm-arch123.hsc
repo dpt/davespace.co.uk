@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <dl>
       <dt>v1</dt>
       <ddd>Developed at Acorn, Cambridge, UK. Between October 1983 and April 1985.</dd>
@@ -25,7 +25,7 @@
       instructions: <code>SMULL</code>, <code>SMLAL</code>, <code>UMULL</code>,
       <code>UMLAL</code>.</dd>
     </dl>
-  </article>
+  </slide>
   <commentary>
     <p>We&rsquo;ll now discuss the various architecture versions that <ARM>
     processors come in. This shows how the architecture has grown since it was

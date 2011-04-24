@@ -4,14 +4,14 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <p>Before you do any code tuning...</p>
     <ul>
       <li>Choose the right algorithm.</li>
       <li>Choose the right language.</li>
       <li>Implement a correct solution.</li>
     </ul>
-  </article>
+  </slide>
   <commentary>
     <blockquote>The efficiency of non-working software is zero.</blockquote>
     <p>What I&rsquo;m about to cover is a load of tips to be used when you just

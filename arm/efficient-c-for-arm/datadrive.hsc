@@ -4,13 +4,13 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
   <ul>
     <li>Avoid mixing code and data together.</li>
     <li>Instead separate out the data and write a simple loop.</li>
     <li>Doing this generates <strong>less</strong> code.</li>
   </ul>
-  </article>
+  </slide>
   <examples>
     <before>
       <p>The following routine maps a name to a number:</p>

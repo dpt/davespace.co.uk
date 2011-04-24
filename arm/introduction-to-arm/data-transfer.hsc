@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <format>&lt;operation&gt;{cond}{size} Rd, &lt;address&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
     <dl>
@@ -24,7 +24,7 @@
       <dt><code>&lt;operation&gt;SH</code></dt>
       <dd><dfn>signed half-word</dfn></dd>
     </dl>
-  </article>
+  </slide>
   <examples>
     <dl>
       <dt><code>LDR r0,[r1]</code></dt>
@@ -39,7 +39,7 @@
     <p><code>SB</code> and <code>SH</code> modes are not available with
     <code>STR</code>.</p>
   </commentary>
-  <article title="Alignment Restrictions">
+  <slide title="Alignment Restrictions">
     <p>In general, values loaded from or stored to memory must be aligned to
     the size of the data type:</p>
     <ul>
@@ -48,7 +48,7 @@
       <li>Bytes <ndash> no restriction.</li>
     </ul>
     <p>This restriction was relaxed in <ARMv6>.</p>
-  </article>
+  </slide>
   <commentary>
     <p>Values can only be loaded from, or stored to, memory at a multiple of
     that type size. For example, a half-word can only be loaded from even

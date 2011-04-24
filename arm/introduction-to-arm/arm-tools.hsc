@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p><ARMLtd> develop the tools needed to design <ARM>-powered products.</p>
     <dl>
       <dt>Software tools</dt>
@@ -15,7 +15,7 @@
       <dt>Development boards</dt>
       <dt>Debug hardware, etc.</dt>
     </dl>
-  </article>
+  </slide>
   <commentary>
     <p><SDT> is old. <ADS> is old-ish. The others are more recent. <RVCT> 4 is
     the latest.</p>

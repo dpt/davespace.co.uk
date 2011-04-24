@@ -4,7 +4,7 @@
   <header>
   <sidebar>
   <content>
-  <article>
+  <slide>
     <p>So how do we implement control structures like <tt>for</tt> and
     <tt>while</tt> loops? <dfn>Branch</dfn> instructions are used to alter
     control flow.</p>
@@ -20,7 +20,7 @@
     <p><code>MOV pc, r14</code></p>
     <p>or</p>
     <p><code>BX r14</code> (on <ARMv4T> or later)</p>
-  </article>
+  </slide>
   <examples>
     <p>Branching forward, to skip over some code:</p>
 <armsyntax>    ...          ; some code here
