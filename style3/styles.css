@@ -356,6 +356,21 @@ A.external SPAN {
 	border-radius: 10px;
 	border: 1px solid #d0d0d0;
 	padding: 1em;
+	position: relative;
+}
+
+#content > .slide:after,
+#content > .examples:after {
+	-moz-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+	-webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+	content: "";
+	position: absolute;
+	z-index: -1;
+    bottom: 8px;
+    height: 10%;
+    left: 0.5%;
+    width: 99%;
 }
 
 #content > .examples > .before {
