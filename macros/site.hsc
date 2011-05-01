@@ -89,6 +89,7 @@
   <$else>
     <body>
   </$if>
+      <div id="container">
 </$macro>
 
 <$macro /masterpage>
@@ -254,6 +255,7 @@
 <$macro footer>
 <flipper>
 <$define _ttf:string=(HSC.Format.Time)>
+</div> <* shut container group *>
 <div id="footer">
   <ul>
     <li class="date">Last modified on <$let HSC.Format.Time=(_ttf)><(GetTime())></li>

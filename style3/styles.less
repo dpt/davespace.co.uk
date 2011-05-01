@@ -1,0 +1,737 @@
+/* $Id$ */
+
+@import "reset.css";
+
+/******************************************************************************/
+/* CONFIGURATION															  */
+/******************************************************************************/
+
+@textcolour: #000000;
+@blue: #5a91b2; // H1 headers
+@niceblue: #085a8c; // links, H2 headers, dashed lines, ...
+@backgroundcolour: #F2F2F2;
+@shadowcolour: rgba(0, 0, 0, 0.25);
+@slidebackground: #F8F8F8;
+@slideborder: #D0D0D0;
+@feintlines: #ADC8D9;
+@codebackground: #EAF1F5;
+@codeborder: #BDC1D7;
+
+@bodyfontfamily: Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
+@monofontfamily: 'Lucida Console','Courier New',Courier,monospace;
+
+@left: 192px;
+@width: 768px;
+@gutter: 16px;
+@sidebarwidth: 160px;
+
+@headerheight: 96px;
+@footerheight: 96px;
+
+@vertpadding: 2em; // after each article, slide, example and after flipper
+
+/******************************************************************************/
+/* BASIC TAGS																  */
+/******************************************************************************/
+
+HTML, BODY {
+	height: 100%;
+}
+BODY > #container {
+	height: auto;
+	min-height: 100%;
+	padding-bottom: @footerheight;
+}
+
+BODY {
+	background: @backgroundcolour url(img/bg.png) repeat-y 0 0;
+	color: @textcolour;
+	font-family: @bodyfontfamily;
+	line-height: 150%;
+	margin: 0;
+	padding: 0 @gutter 0;
+}
+H1,H2,H3 {
+	font-family: @bodyfontfamily;
+	font-weight: bold;
+}
+CODE,PRE {
+	font-family: @monofontfamily;
+	font-size: 90%;
+}
+CODE {
+	color: @niceblue;
+}
+BLOCKQUOTE {
+	background: transparent url(img/dquote-l.png) no-repeat left top;
+	font-style: italic;
+	padding-left: 36px; /* leave space for dquote */
+	quotes: "\201C" "\201D";
+}
+P,DL,PRE,BLOCKQUOTE {
+	margin-bottom: 0.5em;
+}
+ABBR,ACRONYM {
+	border-bottom: 1px solid @slideborder;
+	cursor: help;
+}
+ACRONYM {
+	font-size: 80%;
+}
+SUP {
+	font-size: 50%;
+	vertical-align: super;
+}
+SUB {
+	font-size: 50%;
+	vertical-align: sub;
+}
+DT {
+	font-weight: normal;
+}
+DFN {
+	text-decoration: none;
+	font-style: italic;
+}
+
+/******************************************************************************/
+/* LINKS																	  */
+/******************************************************************************/
+
+A:link, A:visited, A:active, A:hover {
+	color: @niceblue;
+}
+
+/* external links */
+A.external:link {
+	background: transparent url(img/small.png) no-repeat 100% 6px;
+	padding-right: 14px;
+}
+A.external:visited, A.external:active, A.external:hover {
+	background: transparent url(img/small.png) no-repeat 100% -16px;
+	padding-right: 14px;
+}
+/* hide hint text in external links */
+A.external SPAN {
+	display: none;
+}
+
+/******************************************************************************/
+/* HEADER																	  */
+/******************************************************************************/
+
+#pagetopshadow {
+	background: @backgroundcolour url(img/bg-top.png) repeat-x 0 0;
+	height: 128px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1; /* not quite sure why i need this */
+}
+
+/* header graphic */
+
+#header {
+	padding: 4px 0 4px (@left - @gutter);
+
+	H1 {
+		background: transparent url(img/title.png) no-repeat;
+		height: @headerheight;
+		width: @width;
+
+		A {
+			display: block;
+			height: @headerheight;
+			width: @width;
+
+			SPAN {
+				display: none;
+			}
+		}
+	}
+}
+
+/* header tabs */
+
+@tabsetw0: 38px;
+@tabsetw1: 243px;
+@tabsetw2: 243px;
+@tabsetw3: 244px;
+
+@tabsety: 96px;
+@tabheight: 48px;
+
+@tabsetx0: 0;
+@tabsetx1: (@tabsetx0 - @tabsetw0);
+@tabsetx2: (@tabsetx1 - @tabsetw1);
+@tabsetx3: (@tabsetx2 - @tabsetw2);
+
+@tabsety0: (0 - @tabsety);
+@tabsety1: (@tabsety0 - @tabheight);
+@tabsety2: (@tabsety1 - @tabheight);
+@tabsety3: (@tabsety2 - @tabheight);
+
+#tabs {
+	height: @tabheight;
+	width: @width;
+
+	LI {
+		list-style-type: none;
+
+		A {
+			background: transparent url(img/title.png) no-repeat 0 0;
+			display: block;
+			float: left;
+			height: @tabheight;
+
+			SPAN {
+				display: none;
+			}
+		}
+	}
+
+	#hometab A	 { width: @tabsetw0; }
+	#riscostab A { width: @tabsetw1; }
+	#armtab A	 { width: @tabsetw2; }
+	#pythontab A { width: @tabsetw3; }
+
+	/* tabs for all sections */
+
+	#hometab A		   { background-position: @tabsetx0 @tabsety0; }
+	#riscostab A	   { background-position: @tabsetx1 @tabsety0; }
+	#armtab A		   { background-position: @tabsetx2 @tabsety0; }
+	#pythontab A	   { background-position: @tabsetx3 @tabsety0; }
+
+	#hometab A:hover   { background-position: @tabsetx0 @tabsety1; }
+	#riscostab A:hover { background-position: @tabsetx1 @tabsety1; }
+	#armtab A:hover	   { background-position: @tabsetx2 @tabsety1; }
+	#pythontab A:hover { background-position: @tabsetx3 @tabsety1; }
+}
+
+/* tabs for the current section (first #id is the page BODY#id) */
+
+#index #tabs #hometab A			 { background-position: @tabsetx0 @tabsety2; }
+#riscos #tabs #riscostab A		 { background-position: @tabsetx1 @tabsety2; }
+#arm #tabs #armtab A			 { background-position: @tabsetx2 @tabsety2; }
+#python #tabs #pythontab A		 { background-position: @tabsetx3 @tabsety2; }
+
+#index #tabs #hometab A:hover	 { background-position: @tabsetx0 @tabsety3; }
+#riscos #tabs #riscostab A:hover { background-position: @tabsetx1 @tabsety3; }
+#arm #tabs #armtab A:hover		 { background-position: @tabsetx2 @tabsety3; }
+#python #tabs #pythontab A:hover { background-position: @tabsetx3 @tabsety3; }
+
+/******************************************************************************/
+/* SIDEBAR																	  */
+/******************************************************************************/
+
+#sidebar {
+	border-bottom: 1px dotted @niceblue;
+	border-top: 1px dotted @niceblue;
+	float: left;
+	padding-top: 0.5em;
+	width: @sidebarwidth;
+
+	H1 {
+		display: none;
+	}
+
+	H2 {
+		font-weight: normal;
+		line-height: 150%;
+		padding-bottom: 0.5em;
+		text-align: right;
+	}
+
+	UL {
+		padding-bottom: 1.5em;
+
+		:last-child {
+			padding-bottom: 0.5em;
+		}
+
+		LI {
+			background: transparent url(img/small.png) no-repeat right -296px;
+			font-size: 80%;
+			line-height: 150%;
+			padding-right: 10px;
+			text-align: right;
+		}
+
+		/* this didn't work when i put it inside the parent rule as &.current */
+		LI.current {
+			background: transparent url(img/small.png) no-repeat right -39px;
+		}
+	}
+
+	A:link,
+	A:visited,
+	A:active {
+		text-decoration: none;
+	}
+	A:hover {
+		text-decoration: underline;
+	}
+}
+
+/******************************************************************************/
+/* FLIPPER																	  */
+/******************************************************************************/
+
+#flipper {
+	clear: right;
+	margin-left: @left;
+	max-width: @width - @gutter * 2;
+	margin-bottom: @vertpadding;
+
+	H1 {
+		display: none;
+	}
+
+	UL {
+		text-align: right;
+	}
+
+	LI {
+		display: inline-block;
+		height: 62px;
+		width: 41px;
+
+		A {
+			display: block;
+			height: 54px;
+			width: 33px;
+
+			SPAN {
+				display: none;
+			}
+		}
+	}
+
+	/* ought to merge the following two with above but & syntax does not work */
+
+	LI#prev A {
+		background: transparent url(img/arrows.png) no-repeat 0px 0px;
+
+		:hover {
+			background-position: 0px -108px;
+		}
+	}
+
+	LI#next A {
+		background: transparent url(img/arrows.png) no-repeat 0px -54px;
+
+		:hover {
+			background-position: 0px -162px;
+		}
+	}
+}
+
+/******************************************************************************/
+/* CONTENT																	  */
+/******************************************************************************/
+
+.shadow (@radius: 10px) {
+	box-shadow: 0 10px @radius @shadowcolour;
+	-webkit-box-shadow: 0 10px @radius @shadowcolour;
+	-moz-box-shadow: 0 10px @radius @shadowcolour;
+}
+
+.innershadow (@radius: 5px) {
+	-moz-box-shadow: inset 5px 5px @radius @shadowcolour;
+	-webkit-box-shadow: inset 5px 5px @radius @shadowcolour;
+	box-shadow: inset 5px 5px @radius @shadowcolour;
+}
+
+#content {
+	margin-left: @left;
+	max-width: @width - @gutter * 2;
+	xpadding-bottom: 128px;
+
+	> .article,
+	> .slide,
+	> .examples,
+	> .commentary {
+		margin-bottom: @vertpadding;
+	}
+
+	> .slide,
+	> .examples {
+		background-color: @slidebackground;
+		border-radius: 10px;
+		border: 1px solid @slideborder;
+		padding: @gutter;
+		position: relative;
+
+		:after {
+			.shadow;
+			content: "";
+			position: absolute;
+			z-index: -1;
+			bottom: 8px;
+			height: 10%;
+			left: 0.5%;
+			width: 99%;
+		}
+
+		> .routine {
+			.innershadow;
+		}
+	}
+
+	> .examples {
+		> .before {
+			padding-bottom: 69px;
+			margin-bottom: 3px;
+			background: transparent url(img/arr-down.png) no-repeat center bottom;
+		}
+
+		> .after {
+		}
+	}
+
+	UL {
+		margin-bottom: 0.5em;
+		margin-left: 1em;
+
+		> LI {
+			background: transparent url(img/small.png) no-repeat left -163px;
+			padding-left: 1em;
+		}
+
+		UL {
+			margin-bottom: 0;
+
+			> LI {
+				background: transparent url(img/small.png) no-repeat left -419px;
+				padding-left: 1em;
+			}
+		}
+	}
+
+	OL {
+		margin-bottom: 0.5em;
+		margin-left: 2em;
+	}
+
+	/* regular split level DL */
+	DL {
+		margin-bottom: 0.5em;
+		margin-left: 1em; /* in sync with UL */
+	}
+	DT {
+		background: transparent url(img/small.png) no-repeat left -163px;
+		padding-left: 1em;
+	}
+	DD {
+		background: transparent url(img/small.png) no-repeat left -419px;
+		padding-left: 1em;
+		margin-left: 1em;
+	}
+	DD + DT {
+		margin-top: 0.25em;
+	}
+
+	/* two column DL */
+	.columns {
+		display: table-cell; /* we have this to force a new float context */
+		margin-bottom: 0.5em;
+		margin-left: 1em; /* in sync with UL */
+
+		> DT {
+			background: transparent url(img/small.png) no-repeat left -163px;
+			clear: left;
+			float: left;
+			margin-left: 1em;
+			width: 5em;
+		}
+
+		> DD {
+			float: left;
+		}
+	}
+
+	/* book covers */
+	/* slightly tenuous rule */
+	.books > DD + DD + DD + DD {
+		clear: right;
+	}
+	.books > DD > IMG {
+		float: right;
+		margin-bottom: 1em;
+	}
+
+	/* download box */
+	#downloadbox {
+		background: transparent url(img/downloadbg.png) repeat-y 50% 0%;
+		border: 1px solid @slideborder;
+		float: right;
+		margin: 0 0 0 0.5em;
+		padding: 0.5em 0;
+		width: 256px;
+
+		H2 {
+			background: transparent url(img/downloads.png) no-repeat 50% 0%;
+			height: 47px;
+			text-indent: -9999px;
+			width: 256px;
+		}
+	}
+}
+
+/******************************************************************************/
+/* HEADERS																	  */
+/******************************************************************************/
+
+#content {
+	> #date {
+		font-size: smaller;
+		font-style: italic;
+		padding-bottom: 0.75em;
+		margin-bottom: 0.75em;
+		text-align: right;
+	}
+
+	/* bottom space split between margin and padding so that border sits halfway */
+	> H1,
+	> H2,
+	> H3 {
+		padding-top: 0.75em;
+		margin-bottom: 0.75em;
+		padding-bottom: 0.75em;
+	}
+
+	> H1 {
+		border-bottom: 1px dotted @blue;
+		color: @blue;
+		font-size: 200%;
+
+		/* Hide link behaviour. */
+		> A {
+			color: @blue;
+			text-decoration: none;
+		}
+
+		> A:hover {
+			text-decoration: underline;
+		}
+	}
+
+	> H2 {
+		border-bottom: 1px dotted @niceblue;
+		color: @niceblue;
+		font-size: 150%;
+	}
+
+	> H3 {
+		border-bottom: 1px dotted @niceblue;
+		color: @niceblue;
+		font-size: 125%;
+	}
+}
+
+/******************************************************************************/
+/* FOOTER																	  */
+/******************************************************************************/
+
+#footer {
+	background: transparent url(img/footer.png) no-repeat left bottom;
+	clear: both;
+	color: @niceblue;
+	font-size: 80%;
+	height: @footerheight;
+	line-height: 150%;
+	margin-left: @left - 40px;
+	margin-top: @footerheight * -1; /* move up into the space we've allowed for */
+	padding-top: @vertpadding;
+	position: relative;
+	text-align: center;
+	width: @width + 24px * 2;
+	z-index: 10;
+
+	UL {
+		display: block;
+		margin: 0;
+		padding: 0;
+
+		> LI {
+			background: none;
+			display: inline;
+			margin: 0;
+			padding: 0 0.5em 0 0;
+		}
+
+		> LI + LI {
+			border-left: 1px solid @feintlines;
+			padding: 0 0 0 0.5em;
+		}
+	}
+
+	#w3c {
+		padding-bottom: 1em;
+		padding-top: 1em;
+
+		> P {
+			margin-bottom: 0; /* squash rule for P */
+			padding: 1px 0 0 0;
+			text-align: center;
+		}
+	}
+}
+
+/******************************************************************************/
+/* STUFF ON SLIDES AND COMMENTARY											  */
+/******************************************************************************/
+
+/* instruction syntax: large, centred, non-wrapping */
+.format {
+	font-size: 150%;
+	padding: 0.5em;
+	text-align: center;
+	white-space: nowrap;
+
+	> CODE {
+		background-color: @codebackground;
+		border: 1px solid @codeborder;
+		padding: 0.5em;
+	}
+}
+
+/* diagram, centred */
+.diagram IMG {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0.5em;
+}
+/* disable borders around linked images */
+.diagram A IMG {
+	border: none;
+}
+
+.captionedimage {
+	width: 544px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
+
+	/* images by themselves become block level */
+	IMG {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.caption {
+		font-size: smaller;
+		font-style: italic;
+		line-height: 150%; /* needed to re-calculate the rule */
+		text-align: center;
+	}
+}
+
+/******************************************************************************/
+/* TABLES																	  */
+/******************************************************************************/
+
+.slide {
+	TABLE TH,
+	TABLE TD {
+		padding: 0 0.5em;
+		line-height: 150%;
+	}
+	TABLE TH {
+		border-bottom: 1px solid @feintlines;
+		text-align: center;
+	}
+	TABLE TD {
+		border-bottom: 1px solid @codebackground;
+	}
+
+	#barrelshifts {
+		border-spacing: 0;
+		margin: 0 auto; /* centre */
+
+		TD {
+			padding: 1em;
+			text-align: center;
+
+			IMG {
+				padding: 1em;
+			}
+		}
+	}
+
+	/* Slightly compacted table used in arm-cores.hsc, arm-inside.hsc and
+	 * conditional.hsc. */
+	#cores {
+		border-spacing: 0;
+		margin: 0 auto 0.5em auto; /* centre */
+
+		TH, TD {
+			font-size: 95%;
+			line-height: 180%;
+		}
+
+		TD {
+			white-space: nowrap;
+		}
+
+		TD.wrap {
+			white-space: normal;
+			line-height: 150%;
+		}
+	}
+}
+
+/******************************************************************************/
+/* SYNTAX HIGHLIGHTING TYPES FROM VIM										  */
+/******************************************************************************/
+
+.routine {
+	background-color: #333;
+	color: #fff;
+	line-height: 110%;
+	padding: 1em;
+
+	.Comment		{ color: #87ceeb; }
+	.Constant		{ color: #ffa0a0; }
+	.PreProc		{ color: #cd5c5c; }
+	.Special		{ color: #ffdead; }
+	.Statement		{ color: #f0e68c; font-weight: bold; }
+	.Type			{ color: #bdb76b; font-weight: bold; }
+
+	/* New style. Anything down as red I've not yet seen output. */
+
+	.alert			{ color: red;		}
+	.basen			{ color: #ffa0a0;	}
+	.bstring		{ color: red;		}
+	.char			{ color: #ffdead;	}
+	.comment		{ color: #87ceeb;	}
+	.datatype		{ color: #bdb76b;	}
+	.decval			{ color: #ffa0a0;	}
+	.error			{ color: red;		}
+	.float			{ color: #ffa0a0;	}
+	.function		{ color: red;		}
+	.istring		{ color: red;		}
+	.keyword		{ color: #f0e68c;	}
+	.operator		{ color: red;		}
+	.others			{ color: #cd5c5c;	}
+	.regionmarker	{ color: red;		}
+	.reserved		{ color: red;		}
+	.string			{ color: #ffa0a0;	}
+	.variable		{ color: red;		}
+	.warning		{ color: red;		}
+}
+
+.console {
+	background-color: #333;
+	color: #fff;
+	line-height: 110%;
+	padding: 0.5em;
+
+	KBD {
+		color: #87ceeb;
+	}
+}
+

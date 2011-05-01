@@ -28,6 +28,7 @@ $(OBJECTS):	$(STDINC) $(SCRIPTS)
 subs:;	make -C arm
 	make -C risc.os
 	make -C python
+	make -C style3
 
 #subs:;	make -C risc.os
 
@@ -35,4 +36,5 @@ clean:;	-rm -f $(OBJECTS) $(SCRATCH)
 	make -C arm clean
 	make -C risc.os clean
 	make -C python clean
+	make -C style3 clean
 
