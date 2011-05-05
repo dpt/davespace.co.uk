@@ -29,6 +29,8 @@
       <dd>by Alex van Someren and Carol Atack</dd>
       <dd>Addison-Wesley</dd>
       <dd>ISBN 0201624109</dd>
+
+      <div class="clearfix"></div>
     </dl>
   </slide>
   </content>

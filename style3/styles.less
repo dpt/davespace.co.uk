@@ -332,15 +332,27 @@ A.external SPAN {
 /******************************************************************************/
 
 .shadow (@radius: 10px) {
-	box-shadow: 0 10px @radius @shadowcolour;
-	-webkit-box-shadow: 0 10px @radius @shadowcolour;
 	-moz-box-shadow: 0 10px @radius @shadowcolour;
+	-webkit-box-shadow: 0 10px @radius @shadowcolour;
+	box-shadow: 0 10px @radius @shadowcolour;
 }
 
 .innershadow (@radius: 5px) {
 	-moz-box-shadow: inset 5px 5px @radius @shadowcolour;
 	-webkit-box-shadow: inset 5px 5px @radius @shadowcolour;
 	box-shadow: inset 5px 5px @radius @shadowcolour;
+}
+
+// in books.hsc we need to stretch the containing slide to accommodate the book
+// images which are floated right. 'overflow: auto' fixed the issue also but
+// stopped shadows from working.
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: right;
+	visibility: hidden;
 }
 
 #content {
@@ -359,6 +371,8 @@ A.external SPAN {
 	> .examples {
 		background-color: @slidebackground;
 		border-radius: 10px;
+		-moz-border-radius: 10px;
+		-webkit-border-radius: 10px;
 		border: 1px solid @slideborder;
 		padding: @gutter;
 		position: relative;
