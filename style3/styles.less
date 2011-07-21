@@ -121,7 +121,7 @@ A.external SPAN {
 /******************************************************************************/
 
 #pagetopshadow {
-	background: @backgroundcolour url(img/bg-top.png) repeat-x 0 0;
+	background: transparent url(img/bg-top.png) repeat-x 0 0;
 	height: 128px;
 	left: 0;
 	position: absolute;
@@ -331,10 +331,10 @@ A.external SPAN {
 /* CONTENT																	  */
 /******************************************************************************/
 
-.shadow (@radius: 10px) {
-	-moz-box-shadow: 0 10px @radius @shadowcolour;
-	-webkit-box-shadow: 0 10px @radius @shadowcolour;
-	box-shadow: 0 10px @radius @shadowcolour;
+.shadow (@radius: 10px, @y: 10px) {
+	-moz-box-shadow: 0 @y @radius @shadowcolour;
+	-webkit-box-shadow: 0 @y @radius @shadowcolour;
+	box-shadow: 0 @y @radius @shadowcolour;
 }
 
 .innershadow (@radius: 5px) {
@@ -466,11 +466,12 @@ A.external SPAN {
 	}
 
 	/* book covers */
-	/* slightly tenuous rule */
+	/* slightly tenuous rule (want last-child or something?) */
 	.books > DD + DD + DD + DD {
 		clear: right;
 	}
 	.books > DD > IMG {
+		.shadow(5px, 3px);
 		float: right;
 		margin-bottom: 1em;
 	}
@@ -555,7 +556,7 @@ A.external SPAN {
 	font-size: 80%;
 	height: @footerheight;
 	line-height: 150%;
-	margin-left: @left - 40px;
+	margin-left: @left - 48px;
 	margin-top: @footerheight * -1; /* move up into the space we've allowed for */
 	padding-top: @vertpadding;
 	position: relative;
