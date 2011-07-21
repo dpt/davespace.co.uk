@@ -4,6 +4,14 @@
   <header>
   <sidebar>
   <content>
+    <article title="July 22<sup>nd</sup>, 2011">
+      <p>I've been working on a C library called <dfn><a href="https://github.com/dpt/Containers">Containers</a></dfn>. This implements various different associative array structures, such as arrays, linked lists, binary search trees, tries and crit-bit trees. It's now hosted on <a href="http://github.com">github</a>.</p>
+      <p>Also, I've made some small-ish tweaks to the site:</p>
+      <ul>
+        <li>The slides on the <a href="arm/index.html">ARM training pages</a> now have a background box with rounded corners and shadows where available.</li>
+        <li>There's a nice new footer at the bottom of every page on the site.</li>
+      </ul>
+    </article>
     <article title="September 15<sup>th</sup>, 2010">
       <p>
         I<rq>ve noticed in the site<rq>s logs that people were occasionally
