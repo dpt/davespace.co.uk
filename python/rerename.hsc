@@ -22,14 +22,14 @@
 index.html -&gt; index.xhtml
 remove-duplicates.html -&gt; remove-duplicates.xhtml
 rerename.html -&gt; rerename.xhtml
-resetjpegdpi.html -&gt; resetjpegdpi.xhtm</pre>
+resetjpegdpi.html -&gt; resetjpegdpi.xhtml</pre>
     <p>If you<rq>re happy with that then you can run it for real without
     <tt>-p</tt>:</p>
     <pre class="console">$ <kbd>rerename.py '(.*).html' '\1.xhtml' .</kbd>
 index.html -&gt; index.xhtml
 remove-duplicates.html -&gt; remove-duplicates.xhtml
 rerename.html -&gt; rerename.xhtml
-resetjpegdpi.html -&gt; resetjpegdpi.xhtm3
+resetjpegdpi.html -&gt; resetjpegdpi.xhtml
 3 objects renamed</pre>
   </article>
 
