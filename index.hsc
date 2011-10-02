@@ -22,7 +22,7 @@
       </p>
       <p>
         <a href="risc.os/photofiler.html">PhotoFiler</a> has previously had its
-        source released but not one bit feedback came of that. Presumably
+        source released but not one bit of feedback came of that. Presumably
         it<rq>s perfect.
       </p>
       <p>
