@@ -4,6 +4,20 @@
   <header>
   <sidebar>
   <content>
+    <article title="February 5<sup>th</sup>, 2012">
+      <p>Here<rq>s <a href="risc.os/privateeye.html">PrivateEye</a> 2.99 with a selection of small-ish changes:</p>
+      <ul>
+        <li>Rebuilt from the open source codebase for ARMv7 compatibility.</li>
+        <li>PrivateEye is now licensed under a BSD license.</li>
+        <li>Improved the blur effect. You can now select box or gaussian blurs with up to a 47 pixel radius.</li>
+        <li><lq>Midpoint<rq> curve effect added.</li>
+        <li>FFG (TransFSI, TranTIFF+, etc.) import improved.</li>
+        <li>libjpeg updated to version 8c.</li>
+        <li>Image cache can go up to 256M.</li>
+        <li>Wider range of default scale values.</li>
+        <li>and various other bits and pieces.</li>
+      </ul>
+    </article>
     <article title="July 22<sup>nd</sup>, 2011">
       <p>I've been working on a C library called <dfn><a href="https://github.com/dpt/Containers">Containers</a></dfn>. This implements various different associative array structures, such as arrays, linked lists, binary search trees, tries and crit-bit trees. It's now hosted on <a href="http://github.com">github</a>.</p>
       <p>Also, I've made some small-ish tweaks to the site:</p>

@@ -5,16 +5,16 @@
   <sidebar>
   <content>
   <downloadbox>
-    <download><a href="../software/privateeye285.zip">Download</a> (235k Zip)</download>
-    <download><a href="../software/privateeye285manual.pdf">Manual</a> (373k <acronym>PDF</acronym>)</download>
+    <download><a href="../software/privateeye299.zip">Download</a> (242k Zip)</download>
+    <download><a href="../software/privateeye299manual.pdf">Manual</a> (343k <acronym>PDF</acronym>)</download>
     <download><a href="../software/eyesnap4.png">Screenshot</a> (333k <acronym>PNG</acronym>)</download>
   </downloadbox>
   <article>
     <p class="icon"><img src="img/privateeye.png" alt="icon" /></p>
 
-    <p>Current version: 2.85 (03-Jun-2008)</p>
+    <p>Current version: 2.99 (05-Feb-2012)</p>
 
-    <p>PrivateEye is a freeware image viewer for RISC&nbsp;OS.</p>
+    <p>PrivateEye is an image viewer for RISC&nbsp;OS.</p>
 
     <p>It requires RISC&nbsp;OS 3.6 or later and a Boot sequence with the
     Nested Wimp and a 32-bit Shared C Library.</p>
