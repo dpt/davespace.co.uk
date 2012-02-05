@@ -80,7 +80,7 @@
 </$if>
 
 <* some HSC defaults *>
-<$define HSC.CLICK-HERE:string/c="click|here|klicken">
+<$define HSC.CLICK-HERE:string/c="click|click here|klicken">
 <$define HSC.COLOR-NAMES:string/c=("aqua|black|blue|fuchsia|gray|green|lime|" +
   "maroon|navy|olive|purple|red|silver|teal|white|yellow" +
   "activeborder|activeborder|activecaption|appworkspace|background|" +
