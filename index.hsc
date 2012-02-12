@@ -4,6 +4,10 @@
   <header>
   <sidebar>
   <content>
+    <article title="February 11<sup>th</sup>, 2012">
+    <p>Added an article about <a href="risc.os/iyonix.case.html">putting an
+      Iyonix in a new case.</a></p>
+    </article>
     <article title="February 5<sup>th</sup>, 2012">
       <p>Here<rq>s <a href="risc.os/privateeye.html">PrivateEye</a> 2.99 with a selection of small-ish changes:</p>
       <ul>

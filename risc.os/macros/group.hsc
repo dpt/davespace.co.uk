@@ -35,12 +35,16 @@
 </$macro>
 
 <$macro contents>
+<h2>Software</h2>
 <ul>
   <clink dst="photofiler"  title="PhotoFiler">
   <clink dst="privateeye"  title="PrivateEye">
   <clink dst="toolbar"     title="Toolbar">
   <clink dst="quickfiler"  title="QuickFiler">
-  <* clink dst="iyonix.case" title="Replacing an Iyonix<rq>s Case" *>
+</ul>
+<h2>Other stuff</h2>
+<ul>
+  <clink dst="iyonix.case" title="Re-case an Iyonix">
 </ul>
 </$macro>
 

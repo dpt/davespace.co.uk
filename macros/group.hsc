@@ -40,12 +40,16 @@
 
 <$macro contents>
 <h2>RISC&nbsp;OS</h2>
+<h3>Software</h3>
 <ul>
   <clink dst="risc.os/photofiler"  title="PhotoFiler">
   <clink dst="risc.os/privateeye"  title="PrivateEye">
   <clink dst="risc.os/toolbar"     title="Toolbar">
   <clink dst="risc.os/quickfiler"  title="QuickFiler">
-  <* clink dst="risc.os/iyonix.case" title="Replacing an Iyonix<rq>s Case" *>
+</ul>
+<h3>Other stuff</h3>
+<ul>
+  <clink dst="risc.os/iyonix.case" title="Re-case an Iyonix">
 </ul>
 
 <h2>ARM</h2>
