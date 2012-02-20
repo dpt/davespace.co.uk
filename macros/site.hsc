@@ -269,7 +269,7 @@
 <div id="footer">
   <ul>
     <li class="date">Last modified on <$let HSC.Format.Time=(_ttf)><(GetTime())></li>
-    <li>by David Thomas, &copy; <$let HSC.Format.Time="%Y"><(GetTime())></li>
+    <li>by David Thomas, &copy; 2006-<$let HSC.Format.Time="%Y"><(GetTime())></li>
   </ul>
   <w3c>
 </div>
