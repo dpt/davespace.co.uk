@@ -1,10 +1,12 @@
-/* $Id$ */
+// $Id$
 
 @import "reset.css";
+@import url('http://fonts.googleapis.com/css?family=Rokkitt:400,700');
+@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic');
 
-/******************************************************************************/
-/* CONFIGURATION															  */
-/******************************************************************************/
+//
+// CONFIGURATION
+//
 
 @textcolour: #000000;
 @blue: #5a91b2; // H1 headers
@@ -17,22 +19,33 @@
 @codebackground: #EAF1F5;
 @codeborder: #BDC1D7;
 
-@bodyfontfamily: Georgia,Palatino,'Palatino Linotype',Times,'Times New Roman',serif;
-@monofontfamily: 'Lucida Console','Courier New',Courier,monospace;
+@headingfontfamily: 'Rokkitt',sans-serif;
+@bodyfontfamily: 'PT Sans',sans-serif;
+@monofontfamily: 'Lucida Console',monospace;
+//@headingfontfamily: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+//@bodyfontfamily: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+//@monofontfamily: 'Lucida Console', 'Courier New', Courier, monospace;
 
 @left: 192px;
 @width: 768px;
 @gutter: 16px;
-@sidebarwidth: 160px;
+@sidebarwidth: @left - @gutter * 2;
+
+@bodyfontsize: 100%;
+@h1fontsize: 2.25em;
+@h2fontsize: 1.5em;
+@h3fontsize: 1.125em;
+@pfontsize: 1em;
+@smallfontsize: 0.875em;
 
 @headerheight: 96px;
 @footerheight: 96px;
 
 @vertpadding: 2em; // after each article, slide, example and after flipper
 
-/******************************************************************************/
-/* BASIC TAGS																  */
-/******************************************************************************/
+//
+// BASIC TAGS
+//
 
 HTML, BODY {
 	height: 100%;
@@ -47,17 +60,18 @@ BODY {
 	background: @backgroundcolour url(img/bg.png) repeat-y 0 0;
 	color: @textcolour;
 	font-family: @bodyfontfamily;
+	font-size: @bodyfontsize;
 	line-height: 150%;
 	margin: 0;
 	padding: 0 @gutter 0;
 }
 H1,H2,H3 {
-	font-family: @bodyfontfamily;
-	font-weight: bold;
+	font-family: @headingfontfamily;
+	font-weight: 700;
 }
 CODE,PRE {
 	font-family: @monofontfamily;
-	font-size: 90%;
+	font-size: @smallfontsize; // monospaced fonts come out looking too big
 }
 CODE {
 	color: @niceblue;
@@ -65,7 +79,7 @@ CODE {
 BLOCKQUOTE {
 	background: transparent url(img/dquote-l.png) no-repeat left top;
 	font-style: italic;
-	padding-left: 36px; /* leave space for dquote */
+	padding-left: 36px; // leave space for dquote
 	quotes: "\201C" "\201D";
 }
 P,DL,PRE,BLOCKQUOTE {
@@ -97,31 +111,34 @@ EM {
 	font-style: italic;
 }
 
-/******************************************************************************/
-/* LINKS																	  */
-/******************************************************************************/
+//
+// LINKS
+//
+A {
+	&:link, &:visited, &:active, &:hover {
+		color: @niceblue;
+	}
 
-A:link, A:visited, A:active, A:hover {
-	color: @niceblue;
+	// external links
+	&.external {
+		&:link {
+			background: transparent url(img/small.png) no-repeat 100% 6px;
+			padding-right: 14px;
+		}
+		&:visited, &:active, &:hover {
+			background: transparent url(img/small.png) no-repeat 100% -16px;
+			padding-right: 14px;
+		}
+		// hide hint text in external links 
+		SPAN {
+			display: none;
+		}
+	}
 }
 
-/* external links */
-A.external:link {
-	background: transparent url(img/small.png) no-repeat 100% 6px;
-	padding-right: 14px;
-}
-A.external:visited, A.external:active, A.external:hover {
-	background: transparent url(img/small.png) no-repeat 100% -16px;
-	padding-right: 14px;
-}
-/* hide hint text in external links */
-A.external SPAN {
-	display: none;
-}
-
-/******************************************************************************/
-/* HEADER																	  */
-/******************************************************************************/
+//
+// HEADER
+//
 
 #pagetopshadow {
 	background: transparent url(img/bg-top.png) repeat-x 0 0;
@@ -130,10 +147,10 @@ A.external SPAN {
 	position: absolute;
 	top: 0;
 	width: 100%;
-	z-index: -1; /* not quite sure why i need this */
+	z-index: -1; // not quite sure why i need this
 }
 
-/* header graphic */
+// header graphic
 
 #header {
 	padding: 4px 0 4px (@left - @gutter);
@@ -155,7 +172,7 @@ A.external SPAN {
 	}
 }
 
-/* header tabs */
+// header tabs
 
 @tabsetw0: 38px;
 @tabsetw1: 243px;
@@ -194,39 +211,39 @@ A.external SPAN {
 		}
 	}
 
-	#hometab A	 { width: @tabsetw0; }
-	#riscostab A { width: @tabsetw1; }
-	#armtab A	 { width: @tabsetw2; }
-	#pythontab A { width: @tabsetw3; }
+	#hometab A					{ width: @tabsetw0; }
+	#riscostab A				{ width: @tabsetw1; }
+	#armtab A						{ width: @tabsetw2; }
+	#pythontab A				{ width: @tabsetw3; }
 
-	/* tabs for all sections */
+	// tabs for all sections
 
-	#hometab A		   { background-position: @tabsetx0 @tabsety0; }
-	#riscostab A	   { background-position: @tabsetx1 @tabsety0; }
-	#armtab A		   { background-position: @tabsetx2 @tabsety0; }
-	#pythontab A	   { background-position: @tabsetx3 @tabsety0; }
+	#hometab A					{ background-position: @tabsetx0 @tabsety0; }
+	#riscostab A				{ background-position: @tabsetx1 @tabsety0; }
+	#armtab A						{ background-position: @tabsetx2 @tabsety0; }
+	#pythontab A				{ background-position: @tabsetx3 @tabsety0; }
 
-	#hometab A:hover   { background-position: @tabsetx0 @tabsety1; }
-	#riscostab A:hover { background-position: @tabsetx1 @tabsety1; }
-	#armtab A:hover	   { background-position: @tabsetx2 @tabsety1; }
-	#pythontab A:hover { background-position: @tabsetx3 @tabsety1; }
+	#hometab A:hover		{ background-position: @tabsetx0 @tabsety1; }
+	#riscostab A:hover	{ background-position: @tabsetx1 @tabsety1; }
+	#armtab A:hover			{ background-position: @tabsetx2 @tabsety1; }
+	#pythontab A:hover	{ background-position: @tabsetx3 @tabsety1; }
 }
 
-/* tabs for the current section (first #id is the page BODY#id) */
+// tabs for the current section (first #id is the page BODY#id)
 
-#index #tabs #hometab A			 { background-position: @tabsetx0 @tabsety2; }
-#riscos #tabs #riscostab A		 { background-position: @tabsetx1 @tabsety2; }
-#arm #tabs #armtab A			 { background-position: @tabsetx2 @tabsety2; }
-#python #tabs #pythontab A		 { background-position: @tabsetx3 @tabsety2; }
+#index #tabs #hometab A						{ background-position: @tabsetx0 @tabsety2; }
+#riscos #tabs #riscostab A				{ background-position: @tabsetx1 @tabsety2; }
+#arm #tabs #armtab A							{ background-position: @tabsetx2 @tabsety2; }
+#python #tabs #pythontab A				{ background-position: @tabsetx3 @tabsety2; }
 
-#index #tabs #hometab A:hover	 { background-position: @tabsetx0 @tabsety3; }
-#riscos #tabs #riscostab A:hover { background-position: @tabsetx1 @tabsety3; }
-#arm #tabs #armtab A:hover		 { background-position: @tabsetx2 @tabsety3; }
-#python #tabs #pythontab A:hover { background-position: @tabsetx3 @tabsety3; }
+#index #tabs #hometab A:hover			{ background-position: @tabsetx0 @tabsety3; }
+#riscos #tabs #riscostab A:hover	{ background-position: @tabsetx1 @tabsety3; }
+#arm #tabs #armtab A:hover				{ background-position: @tabsetx2 @tabsety3; }
+#python #tabs #pythontab A:hover	{ background-position: @tabsetx3 @tabsety3; }
 
-/******************************************************************************/
-/* SIDEBAR																	  */
-/******************************************************************************/
+//
+// SIDEBAR
+//
 
 #sidebar {
 	border-bottom: 1px dotted @niceblue;
@@ -235,23 +252,25 @@ A.external SPAN {
 	padding-top: 0.5em;
 	width: @sidebarwidth;
 
+	H1,H2,H3 {
+		font-family: @headingfontfamily;
+		font-weight: 400;
+		line-height: 150%;
+		padding-bottom: 0.5em;
+		padding-right: 10px; // align with LI which has space for arrow
+		text-align: right;
+	}
+
 	H1 {
 		display: none;
 	}
 
 	H2 {
-		font-weight: normal;
-		line-height: 150%;
-		padding-bottom: 0.5em;
-		text-align: right;
+		font-size: @smallfontsize;
 	}
 
 	H3 {
-		font-weight: normal;
-		font-size: 80%;
-		line-height: 150%;
-		padding-bottom: 0.5em;
-		text-align: right;
+		font-size: @smallfontsize;
 	}
 
 	UL {
@@ -263,31 +282,30 @@ A.external SPAN {
 
 		LI {
 			background: transparent url(img/small.png) no-repeat right -296px;
-			font-size: 80%;
+			font-size: @smallfontsize;
 			line-height: 150%;
 			padding-right: 10px;
 			text-align: right;
-		}
 
-		/* this didn't work when i put it inside the parent rule as &.current */
-		LI.current {
-			background: transparent url(img/small.png) no-repeat right -39px;
+			&.current {
+				background: transparent url(img/small.png) no-repeat right -39px;
+			}
 		}
 	}
 
-	A:link,
-	A:visited,
-	A:active {
-		text-decoration: none;
-	}
-	A:hover {
-		text-decoration: underline;
+	A {
+		&:link, &:visited, &:active {
+			text-decoration: none;
+		}
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
-/******************************************************************************/
-/* FLIPPER																	  */
-/******************************************************************************/
+//
+// FLIPPER
+//
 
 #flipper {
 	clear: right;
@@ -319,7 +337,7 @@ A.external SPAN {
 		}
 	}
 
-	/* ought to merge the following two with above but & syntax does not work */
+	// ought to merge the following two with above but & syntax does not work
 
 	LI#prev A {
 		background: transparent url(img/arrows.png) no-repeat 0px 0px;
@@ -338,9 +356,9 @@ A.external SPAN {
 	}
 }
 
-/******************************************************************************/
-/* CONTENT																	  */
-/******************************************************************************/
+//
+// CONTENT
+//
 
 .shadow (@radius: 10px, @y: 10px) {
 	-moz-box-shadow: 0 @y @radius @shadowcolour;
@@ -369,7 +387,7 @@ A.external SPAN {
 #content {
 	margin-left: @left;
 	max-width: @width - @gutter * 2;
-	xpadding-bottom: 128px;
+	//xpadding-bottom: 128px;
 
 	> .article,
 	> .slide,
@@ -388,7 +406,11 @@ A.external SPAN {
 		padding: @gutter;
 		position: relative;
 
-		:after {
+		.routine {
+			.innershadow;
+		}
+
+		&:after {
 			.shadow;
 			content: "";
 			position: absolute;
@@ -397,10 +419,6 @@ A.external SPAN {
 			height: 10%;
 			left: 0.5%;
 			width: 99%;
-		}
-
-		> .routine {
-			.innershadow;
 		}
 	}
 
@@ -439,10 +457,10 @@ A.external SPAN {
 		margin-left: 2em;
 	}
 
-	/* regular split level DL */
+	// regular split level DL
 	DL {
 		margin-bottom: 0.5em;
-		margin-left: 1em; /* in sync with UL */
+		margin-left: 1em; // in sync with UL
 	}
 	DT {
 		background: transparent url(img/small.png) no-repeat left -163px;
@@ -457,11 +475,11 @@ A.external SPAN {
 		margin-top: 0.25em;
 	}
 
-	/* two column DL */
+	// two column DL
 	.columns {
-		display: table-cell; /* we have this to force a new float context */
+		display: table-cell; // we have this to force a new float context
 		margin-bottom: 0.5em;
-		margin-left: 1em; /* in sync with UL */
+		margin-left: 1em; // in sync with UL
 
 		> DT {
 			background: transparent url(img/small.png) no-repeat left -163px;
@@ -476,8 +494,8 @@ A.external SPAN {
 		}
 	}
 
-	/* book covers */
-	/* slightly tenuous rule (want last-child or something?) */
+	// book covers
+	// slightly tenuous rule (want last-child or something?)
 	.books > DD + DD + DD + DD {
 		clear: right;
 	}
@@ -487,7 +505,7 @@ A.external SPAN {
 		margin-bottom: 1em;
 	}
 
-	/* download box */
+	// download box
 	#downloadbox {
 		background: transparent url(img/downloadbg.png) repeat-y 50% 0%;
 		border: 1px solid @slideborder;
@@ -505,20 +523,19 @@ A.external SPAN {
 	}
 }
 
-/******************************************************************************/
-/* HEADERS																	  */
-/******************************************************************************/
+//
+// HEADERS
+//
 
 #content {
 	> #date {
-		font-size: smaller;
 		font-style: italic;
 		padding-bottom: 0.75em;
 		margin-bottom: 0.75em;
 		text-align: right;
 	}
 
-	/* bottom space split between margin and padding so that border sits halfway */
+	// bottom space split between margin and padding so that border sits halfway
 	> H1,
 	> H2,
 	> H3 {
@@ -530,45 +547,49 @@ A.external SPAN {
 	> H1 {
 		border-bottom: 1px dotted @blue;
 		color: @blue;
-		font-size: 200%;
+		font-size: @h1fontsize;
 
-		/* Hide link behaviour. */
+		// Hide link behaviour
 		> A {
 			color: @blue;
 			text-decoration: none;
-		}
 
-		> A:hover {
-			text-decoration: underline;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 
 	> H2 {
 		border-bottom: 1px dotted @niceblue;
 		color: @niceblue;
-		font-size: 150%;
+		font-size: @h2fontsize;
 	}
 
 	> H3 {
 		border-bottom: 1px dotted @niceblue;
 		color: @niceblue;
-		font-size: 125%;
+		font-size: @h3fontsize;
+	}
+
+	DIV {
+		font-size: @pfontsize;
 	}
 }
 
-/******************************************************************************/
-/* FOOTER																	  */
-/******************************************************************************/
+//
+// FOOTER
+//
 
 #footer {
 	background: transparent url(img/footer.png) no-repeat left bottom;
 	clear: both;
 	color: @niceblue;
-	font-size: 80%;
+	font-size: @smallfontsize;
 	height: @footerheight;
 	line-height: 150%;
 	margin-left: @left - 48px;
-	margin-top: @footerheight * -1; /* move up into the space we've allowed for */
+	margin-top: @footerheight * -1; // move up into the space we've allowed for
 	padding-top: @vertpadding;
 	position: relative;
 	text-align: center;
@@ -598,18 +619,18 @@ A.external SPAN {
 		padding-top: 1em;
 
 		> P {
-			margin-bottom: 0; /* squash rule for P */
+			margin-bottom: 0; // squash rule for P
 			padding: 1px 0 0 0;
 			text-align: center;
 		}
 	}
 }
 
-/******************************************************************************/
-/* STUFF ON SLIDES AND COMMENTARY											  */
-/******************************************************************************/
+//
+// STUFF ON SLIDES AND COMMENTARY
+//
 
-/* instruction syntax: large, centred, non-wrapping */
+// instruction syntax: large, centred, non-wrapping
 .format {
 	font-size: 150%;
 	padding: 0.5em;
@@ -623,14 +644,14 @@ A.external SPAN {
 	}
 }
 
-/* diagram, centred */
+// diagram, centred
 .diagram IMG {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0.5em;
 }
-/* disable borders around linked images */
+// disable borders around linked images
 .diagram A IMG {
 	border: none;
 }
@@ -641,7 +662,7 @@ A.external SPAN {
 	margin-right: auto;
 	margin-bottom: 1em;
 
-	/* images by themselves become block level */
+	// images by themselves become block level
 	IMG {
 		display: block;
 		margin-left: auto;
@@ -651,14 +672,14 @@ A.external SPAN {
 	.caption {
 		font-size: smaller;
 		font-style: italic;
-		line-height: 150%; /* needed to re-calculate the rule */
+		line-height: 150%; // needed to re-calculate the rule
 		text-align: center;
 	}
 }
 
-/******************************************************************************/
-/* TABLES																	  */
-/******************************************************************************/
+//
+// TABLES
+//
 
 .slide {
 	TABLE TH,
@@ -676,7 +697,7 @@ A.external SPAN {
 
 	#barrelshifts {
 		border-spacing: 0;
-		margin: 0 auto; /* centre */
+		margin: 0 auto; // centre
 
 		TD {
 			padding: 1em;
@@ -688,11 +709,11 @@ A.external SPAN {
 		}
 	}
 
-	/* Slightly compacted table used in arm-cores.hsc, arm-inside.hsc and
-	 * conditional.hsc. */
+	// Slightly compacted table used in arm-cores.hsc, arm-inside.hsc and
+	// conditional.hsc.
 	#cores {
 		border-spacing: 0;
-		margin: 0 auto 0.5em auto; /* centre */
+		margin: 0 auto 0.5em auto; // centre
 
 		TH, TD {
 			font-size: 95%;
@@ -710,9 +731,9 @@ A.external SPAN {
 	}
 }
 
-/******************************************************************************/
-/* SYNTAX HIGHLIGHTING TYPES FROM VIM										  */
-/******************************************************************************/
+//
+// SYNTAX HIGHLIGHTING TYPES FROM VIM
+//
 
 .routine {
 	background-color: #333;
@@ -727,25 +748,25 @@ A.external SPAN {
 	.Statement		{ color: #f0e68c; font-weight: bold; }
 	.Type			{ color: #bdb76b; font-weight: bold; }
 
-	/* New style. Anything down as red I've not yet seen output. */
+	// New style. Anything down as red I've not yet seen output.
 
 	.alert			{ color: red;		}
-	.basen			{ color: #ffa0a0;	}
+	.basen			{ color: #ffa0a0; }
 	.bstring		{ color: red;		}
-	.char			{ color: #ffdead;	}
-	.comment		{ color: #87ceeb;	}
-	.datatype		{ color: #bdb76b;	}
-	.decval			{ color: #ffa0a0;	}
+	.char			{ color: #ffdead; }
+	.comment		{ color: #87ceeb; }
+	.datatype		{ color: #bdb76b; }
+	.decval			{ color: #ffa0a0; }
 	.error			{ color: red;		}
-	.float			{ color: #ffa0a0;	}
+	.float			{ color: #ffa0a0; }
 	.function		{ color: red;		}
 	.istring		{ color: red;		}
-	.keyword		{ color: #f0e68c;	}
+	.keyword		{ color: #f0e68c; }
 	.operator		{ color: red;		}
-	.others			{ color: #cd5c5c;	}
-	.regionmarker	{ color: red;		}
+	.others			{ color: #cd5c5c; }
+	.regionmarker { color: red;		}
 	.reserved		{ color: red;		}
-	.string			{ color: #ffa0a0;	}
+	.string			{ color: #ffa0a0; }
 	.variable		{ color: red;		}
 	.warning		{ color: red;		}
 }
