@@ -1,8 +1,9 @@
 // $Id$
 
+// vim: ts=8 sts=8 sw=8 noet tw=0
+
 @import "reset.css";
-@import url('http://fonts.googleapis.com/css?family=Rokkitt:400,700');
-@import url('http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic');
+@import url('http://fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic');
 
 //
 // CONFIGURATION
@@ -19,12 +20,14 @@
 @codebackground: #EAF1F5;
 @codeborder: #BDC1D7;
 
-@headingfontfamily: 'Rokkitt',sans-serif;
-@bodyfontfamily: 'PT Sans',sans-serif;
+@headingfontfamily: 'Asap',sans-serif;
+@bodyfontfamily: 'Asap',sans-serif;
 @monofontfamily: 'Lucida Console',monospace;
 //@headingfontfamily: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 //@bodyfontfamily: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 //@monofontfamily: 'Lucida Console', 'Courier New', Courier, monospace;
+
+@monoletterspacing: 0.1em;
 
 @left: 192px;
 @width: 768px;
@@ -69,12 +72,19 @@ H1,H2,H3 {
 	font-family: @headingfontfamily;
 	font-weight: 700;
 }
-CODE,PRE {
+PRE {
 	font-family: @monofontfamily;
 	font-size: @smallfontsize; // monospaced fonts come out looking too big
+	letter-spacing: @monoletterspacing;
 }
 CODE {
-	color: @niceblue;
+	background-color: @codebackground;
+	border-radius: 4px;
+	border: 1px dotted @codeborder;
+	font-family: @monofontfamily;
+	font-size: @smallfontsize; // monospaced fonts come out looking too big
+	letter-spacing: @monoletterspacing;
+	padding: 0.15em;
 }
 BLOCKQUOTE {
 	background: transparent url(img/dquote-l.png) no-repeat left top;
@@ -211,34 +221,34 @@ A {
 		}
 	}
 
-	#hometab A					{ width: @tabsetw0; }
-	#riscostab A				{ width: @tabsetw1; }
-	#armtab A						{ width: @tabsetw2; }
-	#pythontab A				{ width: @tabsetw3; }
+	#hometab A		{ width: @tabsetw0; }
+	#riscostab A		{ width: @tabsetw1; }
+	#armtab A		{ width: @tabsetw2; }
+	#pythontab A		{ width: @tabsetw3; }
 
 	// tabs for all sections
 
-	#hometab A					{ background-position: @tabsetx0 @tabsety0; }
-	#riscostab A				{ background-position: @tabsetx1 @tabsety0; }
-	#armtab A						{ background-position: @tabsetx2 @tabsety0; }
-	#pythontab A				{ background-position: @tabsetx3 @tabsety0; }
+	#hometab A		{ background-position: @tabsetx0 @tabsety0; }
+	#riscostab A		{ background-position: @tabsetx1 @tabsety0; }
+	#armtab A		{ background-position: @tabsetx2 @tabsety0; }
+	#pythontab A		{ background-position: @tabsetx3 @tabsety0; }
 
-	#hometab A:hover		{ background-position: @tabsetx0 @tabsety1; }
+	#hometab A:hover	{ background-position: @tabsetx0 @tabsety1; }
 	#riscostab A:hover	{ background-position: @tabsetx1 @tabsety1; }
-	#armtab A:hover			{ background-position: @tabsetx2 @tabsety1; }
+	#armtab A:hover		{ background-position: @tabsetx2 @tabsety1; }
 	#pythontab A:hover	{ background-position: @tabsetx3 @tabsety1; }
 }
 
 // tabs for the current section (first #id is the page BODY#id)
 
-#index #tabs #hometab A						{ background-position: @tabsetx0 @tabsety2; }
-#riscos #tabs #riscostab A				{ background-position: @tabsetx1 @tabsety2; }
-#arm #tabs #armtab A							{ background-position: @tabsetx2 @tabsety2; }
-#python #tabs #pythontab A				{ background-position: @tabsetx3 @tabsety2; }
+#index #tabs #hometab A			{ background-position: @tabsetx0 @tabsety2; }
+#riscos #tabs #riscostab A		{ background-position: @tabsetx1 @tabsety2; }
+#arm #tabs #armtab A			{ background-position: @tabsetx2 @tabsety2; }
+#python #tabs #pythontab A		{ background-position: @tabsetx3 @tabsety2; }
 
-#index #tabs #hometab A:hover			{ background-position: @tabsetx0 @tabsety3; }
+#index #tabs #hometab A:hover		{ background-position: @tabsetx0 @tabsety3; }
 #riscos #tabs #riscostab A:hover	{ background-position: @tabsetx1 @tabsety3; }
-#arm #tabs #armtab A:hover				{ background-position: @tabsetx2 @tabsety3; }
+#arm #tabs #armtab A:hover		{ background-position: @tabsetx2 @tabsety3; }
 #python #tabs #pythontab A:hover	{ background-position: @tabsetx3 @tabsety3; }
 
 //
@@ -253,8 +263,9 @@ A {
 	width: @sidebarwidth;
 
 	H1,H2,H3 {
+		color: @niceblue;
 		font-family: @headingfontfamily;
-		font-weight: 400;
+		font-weight: 700;
 		line-height: 150%;
 		padding-bottom: 0.5em;
 		padding-right: 10px; // align with LI which has space for arrow
@@ -276,12 +287,9 @@ A {
 	UL {
 		padding-bottom: 1.5em;
 
-		:last-child {
-			padding-bottom: 0.5em;
-		}
-
 		LI {
 			background: transparent url(img/small.png) no-repeat right -296px;
+			color: @blue;
 			font-size: @smallfontsize;
 			line-height: 150%;
 			padding-right: 10px;
@@ -290,6 +298,10 @@ A {
 			&.current {
 				background: transparent url(img/small.png) no-repeat right -39px;
 			}
+		}
+
+		&:last-child {
+			padding-bottom: 0.5em;
 		}
 	}
 
@@ -335,23 +347,21 @@ A {
 				display: none;
 			}
 		}
-	}
 
-	// ought to merge the following two with above but & syntax does not work
+		&#prev A {
+			background: transparent url(img/arrows.png) no-repeat 0px 0px;
 
-	LI#prev A {
-		background: transparent url(img/arrows.png) no-repeat 0px 0px;
-
-		:hover {
-			background-position: 0px -108px;
+			&:hover {
+				background-position: 0px -108px;
+			}
 		}
-	}
 
-	LI#next A {
-		background: transparent url(img/arrows.png) no-repeat 0px -54px;
+		&#next A {
+			background: transparent url(img/arrows.png) no-repeat 0px -54px;
 
-		:hover {
-			background-position: 0px -162px;
+			&:hover {
+				background-position: 0px -162px;
+			}
 		}
 	}
 }
@@ -433,10 +443,12 @@ A {
 		}
 	}
 
-	UL {
+	UL, OL, DL {
 		margin-bottom: 0.5em;
 		margin-left: 1em;
+	}
 
+	UL {
 		> LI {
 			background: transparent url(img/small.png) no-repeat left -163px;
 			padding-left: 1em;
@@ -452,16 +464,15 @@ A {
 		}
 	}
 
+	// only chain.hsc uses OL at the moment
 	OL {
-		margin-bottom: 0.5em;
-		margin-left: 2em;
+		> LI {
+			background: transparent url(img/small.png) no-repeat left -163px;
+			padding-left: 1em;
+		}
 	}
 
 	// regular split level DL
-	DL {
-		margin-bottom: 0.5em;
-		margin-left: 1em; // in sync with UL
-	}
 	DT {
 		background: transparent url(img/small.png) no-repeat left -163px;
 		padding-left: 1em;
@@ -638,22 +649,25 @@ A {
 	white-space: nowrap;
 
 	> CODE {
-		background-color: @codebackground;
-		border: 1px solid @codeborder;
+		font-weight: 700; 
+		letter-spacing: 0em; // defeat rule in CODE
 		padding: 0.5em;
 	}
 }
 
 // diagram, centred
-.diagram IMG {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 0.5em;
-}
-// disable borders around linked images
-.diagram A IMG {
-	border: none;
+.diagram {
+	IMG {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0.5em;
+	}
+
+	// disable borders around linked images
+	A IMG {
+		border: none;
+	}
 }
 
 .captionedimage {
