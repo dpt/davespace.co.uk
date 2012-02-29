@@ -6,7 +6,7 @@
   <content>
   <slide>
     <p>ARM has a three-address format:
-      <ul>
+      <ul class="packed">
         <li>Rd (destination register)</li>
         <li>Rn (source register)</li>
         <li>Rm (source register)</li>

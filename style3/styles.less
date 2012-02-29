@@ -22,7 +22,7 @@
 
 @headingfontfamily: 'Asap',sans-serif;
 @bodyfontfamily: 'Asap',sans-serif;
-@monofontfamily: 'Lucida Console',monospace;
+@monofontfamily: Menlo,'Lucida Console',monospace;
 //@headingfontfamily: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 //@bodyfontfamily: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 //@monofontfamily: 'Lucida Console', 'Courier New', Courier, monospace;
@@ -92,15 +92,15 @@ BLOCKQUOTE {
 	padding-left: 36px; // leave space for dquote
 	quotes: "\201C" "\201D";
 }
-P,DL,PRE,BLOCKQUOTE {
+P,PRE,BLOCKQUOTE {
 	margin-bottom: 0.5em;
 }
 ABBR,ACRONYM {
 	border-bottom: 1px solid @slideborder;
 	cursor: help;
 }
-ACRONYM {
-	font-size: 80%;
+A ABBR,A ACRONYM {
+	border-bottom: none; // avoid underlines clashing inside links
 }
 SUP {
 	font-size: 50%;
@@ -130,10 +130,11 @@ A {
 	}
 
 	// external links
-	&.external {
+	&[rel~="external"] {
 		&:link {
 			background: transparent url(img/small.png) no-repeat 100% 6px;
 			padding-right: 14px;
+			margin-right: 4px;
 		}
 		&:visited, &:active, &:hover {
 			background: transparent url(img/small.png) no-repeat 100% -16px;
@@ -382,6 +383,16 @@ A {
 	box-shadow: inset 5px 5px @radius @shadowcolour;
 }
 
+.level1arrow {
+	background: transparent url(img/small.png) no-repeat left -163px;
+	padding-left: 1em;
+}
+
+.level2arrow {
+	background: transparent url(img/small.png) no-repeat left -419px;
+	padding-left: 1em;
+}
+
 // in books.hsc we need to stretch the containing slide to accommodate the book
 // images which are floated right. 'overflow: auto' fixed the issue also but
 // stopped shadows from working.
@@ -409,9 +420,9 @@ A {
 	> .slide,
 	> .examples {
 		background-color: @slidebackground;
-		border-radius: 10px;
-		-moz-border-radius: 10px;
-		-webkit-border-radius: 10px;
+		border-radius: 20px;
+		-moz-border-radius: 20px;
+		-webkit-border-radius: 20px;
 		border: 1px solid @slideborder;
 		padding: @gutter;
 		position: relative;
@@ -444,64 +455,108 @@ A {
 	}
 
 	UL, OL, DL {
-		margin-bottom: 0.5em;
-		margin-left: 1em;
+		padding-bottom: 0.5em;
 	}
 
 	UL {
+		UL {
+			> LI {
+				.level2arrow;
+				margin-left: 1em;
+
+				> UL {
+					margin-top: 0.5em;
+				}			
+			}
+		}		
+		
 		> LI {
-			background: transparent url(img/small.png) no-repeat left -163px;
-			padding-left: 1em;
+			.level1arrow;
+
+			> UL {
+				margin-bottom: 0.5em;
+			}
 		}
 
-		UL {
-			margin-bottom: 0;
+		> UL + LI {
+			margin-top: 0.5em; // gaps after ULs
+		}
 
-			> LI {
-				background: transparent url(img/small.png) no-repeat left -419px;
-				padding-left: 1em;
-			}
+		> LI + LI {
+			margin-top: 0.5em; // gaps inbetween adjacent LIs
+		}
+	}
+
+	UL.packed {
+		> UL + LI,
+		> LI + LI {
+			margin-top: 0;
 		}
 	}
 
 	// only chain.hsc uses OL at the moment
 	OL {
 		> LI {
-			background: transparent url(img/small.png) no-repeat left -163px;
+			list-style-position: inside;
+			list-style-type: decimal;
 			padding-left: 1em;
+			text-indent: -1em;
+
+			> OL {
+				margin-bottom: 0.5em;
+				//border: 1px solid red;
+			}
+		}
+		> LI + LI {
+			margin-top: 0.5em; // gaps inbetween adjacent LIs
 		}
 	}
 
 	// regular split level DL
-	DT {
-		background: transparent url(img/small.png) no-repeat left -163px;
-		padding-left: 1em;
-	}
-	DD {
-		background: transparent url(img/small.png) no-repeat left -419px;
-		padding-left: 1em;
-		margin-left: 1em;
-	}
-	DD + DT {
-		margin-top: 0.25em;
+	DL
+	{
+		DT {
+			.level1arrow;
+		}
+
+		DD {
+			.level2arrow;
+			margin-left: 1em;
+		}
+
+		DD + DT {
+			// put the margins on the TOP of subsequent blocks rather than
+			// at the end of the prior block
+			margin-top: 0.5em;
+		}	
 	}
 
 	// two column DL
-	.columns {
+	DL.columns {
 		display: table-cell; // we have this to force a new float context
 		margin-bottom: 0.5em;
-		margin-left: 1em; // in sync with UL
+		margin-left: 1em; // in sync with UL, DL, etc.
 
 		> DT {
-			background: transparent url(img/small.png) no-repeat left -163px;
+			.level1arrow;
 			clear: left;
 			float: left;
 			margin-left: 1em;
 			width: 5em;
+			// outline: 1px solid green;
 		}
 
 		> DD {
 			float: left;
+			// outline: 1px solid blue;
+		}
+
+		DT + DD {
+			margin-bottom: 0.5em;
+		}
+
+		DD + DT {
+			margin-top: inherit;
 		}
 	}
 

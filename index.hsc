@@ -10,7 +10,7 @@
     </article>
     <article title="February 5<sup>th</sup>, 2012">
       <p>Here<rq>s <a href="risc.os/privateeye.html">PrivateEye</a> 2.99 with a selection of small-ish changes:</p>
-      <ul>
+      <ul class="packed">
         <li>Rebuilt from the open source codebase for ARMv7 compatibility.</li>
         <li>PrivateEye is now licensed under a BSD license.</li>
         <li>Improved the blur effect. You can now select box or gaussian blurs with up to a 47 pixel radius.</li>
@@ -25,7 +25,7 @@
     <article title="July 22<sup>nd</sup>, 2011">
       <p>I've been working on a C library called <dfn><a href="https://github.com/dpt/Containers">Containers</a></dfn>. This implements various different associative array structures, such as arrays, linked lists, binary search trees, tries and crit-bit trees. It's now hosted on <a href="http://github.com">github</a>.</p>
       <p>Also, I've made some small-ish tweaks to the site:</p>
-      <ul>
+      <ul class="packed">
         <li>The slides on the <a href="arm/index.html">ARM training pages</a> now have a background box with rounded corners and shadows where available.</li>
         <li>There's a nice new footer at the bottom of every page on the site.</li>
       </ul>
@@ -49,7 +49,7 @@
           href="risc.os/privateeye.html">PrivateEye</a> to <a
           href="http://www.riscos.info/">riscos.info</a>'s subversion server.
       </p>
-      <ul>
+      <ul class="packed">
         <li>
           The PhotoFiler source lives <a
             href="svn://svn.riscos.info/photofiler">here</a> (<tt>svn://</tt>)
@@ -78,7 +78,7 @@
     </article>
 
     <article title="March 3<sup>rd</sup>, 2010">
-      <ul>
+      <ul class="packed">
         <li>New site design.</li>
         <li>New <a href="arm/index.html">ARM assembly language section</a>
         featuring two ARM training courses.</li>
@@ -94,7 +94,7 @@
         href="risc.os/toolbar.html">Toolbar</a> 1.20 with a few tweaks.</p>
       <uncaptionedimage url="software/toolsnap1t.png"
       bigurl="software/toolsnap1.png" dsc="Snapshot.">
-      <ul>
+      <ul class="packed">
         <li>The toolbar now opens and closes independently of desktop speed. So
         if a greedy process is hogging your desktop, the toolbar will now
         unfurl and retract in the same amount of time.</li>
@@ -169,7 +169,7 @@
       url="software/eyesnap2t.png" bigurl="software/eyesnap2.png"
       dsc="Snapshot.">
       <p>Features:</p>
-      <ul>
+      <ul class="packed">
         <li><strong>Bitmap effects</strong><br /> New bitmap effects window
         allows adjustment of brightness, contrast, gamma, tinting, blurring,
         sharpening, histogram-based adjustments and more.</li>
@@ -192,7 +192,7 @@
       url="software/eyesnap1t.png" bigurl="software/eyesnap1.png"
       dsc="Snapshot.">
       <p>Features:</p>
-      <ul>
+      <ul class="packed">
         <li><strong>Viewer windows gain input focus.</strong><br /> Many
         key-activated functions have been added.</li>
         <li><strong>Viewer windows can fill the whole desktop.</strong><br />

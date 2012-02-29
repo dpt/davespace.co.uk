@@ -10,10 +10,11 @@
       <ul>
         <lid>Because it requires more effort to code than <HLL>s like C.</li>
       </ul>
-      <li>But C is an abstraction: The code that you write is <em>not</em> what
+      <li>But C is an <em>abstraction</em>: The code that you write is <em>not</em> what
       the <CPU> really executes.</li>
-      <li>Sometimes compilers aren&rsquo;t very good. They may produce
-      unnecessary extra code which we call <dfn>slop</dfn>.</li>
+      <li>Sometimes compilers aren&rsquo;t very good.</li>
+      <li>They may produce unnecessary extra code which we call
+      <dfn>slop</dfn>.</li>
       <ul>
         <lid>Slop increases size and decreases speed.</li>
       </ul>

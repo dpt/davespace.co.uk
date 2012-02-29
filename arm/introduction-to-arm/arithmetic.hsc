@@ -1,6 +1,6 @@
 <* $Id$ *>
 
-<page heading="Arithmetic" rev="movement" cur="arithmetic" fwd="logical">
+<page heading="Arithmetic Instructions" rev="movement" cur="arithmetic" fwd="logical">
   <header>
   <sidebar>
   <content>

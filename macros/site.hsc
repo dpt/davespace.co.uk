@@ -279,12 +279,12 @@
 
 <* external links *>
 <$macro ext /close url:string>
-<a class="external" href=(url)><$content> <span>(external link)</span></a>
+<a rel="external" href=(url)><$content> <span>(external link)</span></a>
 </$macro>
 
 <* wikipedia links *>
 <$macro wiki /close subj:string>
-<a class="external" href=("http://en.wikipedia.org/wiki/" + subj)><$content></a>
+<a rel="external wikipedia" href=("http://en.wikipedia.org/wiki/" + subj)><$content></a>
 </$macro>
 
 <$macro date>
