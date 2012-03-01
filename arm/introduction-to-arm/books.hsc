@@ -31,6 +31,8 @@
         <dd>ISBN 0201675196</dd>
         <dd>Published Aug 2000</dd>
       </dl>
+      <p>Written by one of the creators of the ARM this is a more in-depth look
+      at the ARM architecture.</p>
     </div>
 
     <div class="books">
@@ -41,6 +43,10 @@
         <dd>Addison-Wesley</dd>
         <dd>ISBN 0201737191</dd>
       </dl>
+      <p>Expensive and superseded by PDF versions available from ARM's website,
+      only buy this if you can find a copy for a sensible price and you object
+      to screen reading PDFs. This is equivalent to the revision 'E' ARM
+      ARM.</p>
     </div>
 
     <div class="books">
