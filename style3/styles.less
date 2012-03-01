@@ -573,18 +573,27 @@ A {
 
 	// download box
 	#downloadbox {
-		background: transparent url(img/downloadbg.png) repeat-y 50% 0%;
+		.shadow;
+		background: #fff url(img/downloadbg.png) repeat-y 50% 0%;
 		border: 1px solid @slideborder;
 		float: right;
-		margin: 0 0 0 0.5em;
-		padding: 0.5em 0;
-		width: 256px;
+		margin: 0 0 0.5em 0.5em;
+		min-width: 145px;
+		padding: 1em;
 
 		H2 {
 			background: transparent url(img/downloads.png) no-repeat 50% 0%;
-			height: 47px;
+			height: 35px;
+			padding-bottom: 1em;
 			text-indent: -9999px;
-			width: 256px;
+		}
+
+		UL {
+			padding-bottom: 0;
+		}
+
+		LI + LI {
+			margin-top: 0;
 		}
 	}
 }
