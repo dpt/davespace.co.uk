@@ -561,14 +561,14 @@ A {
 	}
 
 	// book covers
-	// slightly tenuous rule (want last-child or something?)
-	.books > DD + DD + DD + DD {
+	.books {
 		clear: right;
+		padding-bottom: 1em;
 	}
-	.books > DD > IMG {
+	.books IMG {
 		.shadow(5px, 3px);
 		float: right;
-		margin-bottom: 1em;
+		margin: 0 0 1em 1em;
 	}
 
 	// download box
