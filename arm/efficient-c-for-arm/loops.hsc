@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Looping Structures" rev="varaddr" cur="loops" fwd="regalloc">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Loop termination condition can have a significant overhead.</p>
     <ul>
@@ -76,7 +73,5 @@ loop  MUL  r1,r0,r1
     <p>The counting up <code>for</code> loop was changed to a counting down
     <code>do .. while</code> loop.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Multiple Register Data Transfer" rev="addressing" cur="multiple-data-transfer" fwd="stack">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <format>&lt;operation&gt;{cond}&lt;mode&gt; Rn{!}, &lt;reglist&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
@@ -37,7 +34,5 @@
           Decrement Before each store.</dd>
     </dl>
   </examples>
-  </content>
-  <footer>
 </page>
 

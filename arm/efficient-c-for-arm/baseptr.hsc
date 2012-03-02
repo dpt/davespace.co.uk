@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Base Pointer Optimisation" rev="unsignedrange" cur="baseptr" fwd="references">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Grouping global or <code>static</code> variables together into a
     <code>struct</code> allows the compiler to refer to them through a single
@@ -20,7 +17,5 @@
       <ext url="http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf">http://www.arm.com/pdfs/DAI0036B_c_globaldata.pdf</ext>
     </p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

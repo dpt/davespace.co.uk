@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Multiply Instructions" rev="conditional" cur="multiply" fwd="data-transfer">
-  <header>
-  <sidebar>
-  <content>
   <slide title="32&times;32&rarr;32 Multiply Instructions">
     <format>&lt;operation&gt;{cond}{S} Rd, Rm, Rs {, Rn}</format>
     <p><var>&lt;operation&gt;</var></p>
@@ -37,7 +34,5 @@
     <p>Note that they have the same form, but they treat the sign bit
     differently.</p>
   </slide>
-  </content>
-  <footer>
 </page>
 

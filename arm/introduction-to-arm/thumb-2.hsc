@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Thumb-2" rev="thumb-example" cur="thumb-2" fwd="arm-ltd">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <ul>
       <li>Thumb-2 is the newest version of Thumb.</li>
@@ -19,7 +16,5 @@
     Assembler Language. New <ARM> assemblers can take <UAL> format assembler
     and output to <ARM> <em>or</em> Thumb-2.</p>
   </slide>
-  </content>
-  <footer>
 </page>
 

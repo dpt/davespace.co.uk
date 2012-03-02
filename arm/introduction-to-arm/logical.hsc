@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Logical Instructions" rev="arithmetic" cur="logical" fwd="compare">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
@@ -30,7 +27,5 @@
       <dd>R11 ^= 1</dd>
     </dl>
   </examples>
-  </content>
-  <footer>
 </page>
 

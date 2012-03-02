@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Books" rev="arm-test" cur="books">
-  <header>
-  <sidebar>
-  <content>
   <article>
   <p>There are a few printed ARM books available. Below is a list of the books
   I've encountered in the past with some notes about how they stack up today in
@@ -78,7 +75,5 @@
 
     <div class="clearfix"></div>
   </slide>
-  </content>
-  <footer>
 </page>
 

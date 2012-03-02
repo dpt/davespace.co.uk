@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Efficiency" rev="index" cur="efficiency" fwd="before-tuning">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Why do we need efficient software?</p>
     <dl>
@@ -47,7 +44,5 @@
       software. Which will have even more features to support.</li>
     </ul>
   </commentary>
-  </content>
-  <footer>
 </page>
 

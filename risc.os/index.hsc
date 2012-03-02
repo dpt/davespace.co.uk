@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page cur="index">
-  <header>
-  <sidebar>
-  <content>
 
     <article>
       <p>I<rq>ve written PD, freeware, shareware and commercial programs for
@@ -23,7 +20,5 @@
 
     <comments>
 
-  </content>
-  <footer>
 </page>
 

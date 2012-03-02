@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Barrel Shifter" rev="compare" cur="barrel-shifter" fwd="operand2">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>The <dfn>barrel shifter</dfn> is a functional unit which can be used in
     a number of different circumstances. It provides five types of shifts and
@@ -75,7 +72,5 @@
     arithmetic shift. (That said, it&rsquo;s always implemented as an
     arithmetic shift in all of the <ARM> toolchains the author has used.)</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

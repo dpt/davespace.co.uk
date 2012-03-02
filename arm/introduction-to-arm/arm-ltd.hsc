@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="ARM Ltd." rev="thumb-2" cur="arm-ltd" fwd="arm-tools">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <ul>
       <li><ext url="http://www.arm.com/"><ARMLtd></ext> were
@@ -49,7 +46,5 @@
       architecture too (so no-one can just make an <ARM> compatible
       chip).</blockquote>
   </commentary>
-  </content>
-  <footer>
 </page>
 

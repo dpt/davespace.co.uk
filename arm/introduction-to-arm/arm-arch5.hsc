@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Architecture 5" rev="arm-arch4" cur="arm-arch5" fwd="arm-arch6">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>v5T</dt>
@@ -22,7 +19,5 @@
       <ddd>Java acceleration.</dd>
     </dl>
   </slide>
-  </content>
-  <footer>
 </page>
 

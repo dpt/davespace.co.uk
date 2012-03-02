@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Bools" rev="unaligned" cur="bools" fwd="bitfields">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Problem:</p>
 
@@ -73,7 +70,5 @@ bool isEnemy2(ShipFlags flags)
          MOV   pc,lr</armsyntax>
     </after>
   </examples>
-  </content>
-  <footer>
 </page>
 

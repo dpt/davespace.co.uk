@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Conditional Execution" rev="branch" cur="conditional" fwd="multiply">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>A beneficial feature of the <ARM> architecture is that instructions can
     be made to execute <em>conditionally</em>. This is common in other
@@ -125,7 +122,5 @@ next
     <p>When is it worth branching over condition codes? Depends on the
     <CPU>&rsquo;s branch penalty, but it&rsquo;s often 4..6 instructions.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

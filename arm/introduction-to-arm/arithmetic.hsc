@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Arithmetic Instructions" rev="movement" cur="arithmetic" fwd="logical">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <format>&lt;operation&gt;{cond}{S} Rd,Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
@@ -39,7 +36,5 @@
     <p>There is no divide instruction <ndash> the compiler uses a run-time
     library function or shifts to perform division.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

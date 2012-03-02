@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Sentinels" rev="chains" cur="sentinels" fwd="unrolling">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>When searching through a list we normally do two comparisons:</p>
     <ul>
@@ -85,7 +82,5 @@ loop LDR   r12,[r0,r3,LSL #2]
     <p>This can be improved further by <a href="indexing.html">replacing array
     indexing with pointers</a>.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

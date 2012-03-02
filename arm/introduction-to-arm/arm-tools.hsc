@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Tools" rev="arm-ltd" cur="arm-tools" fwd="arm-apps">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p><ARMLtd> develop the tools needed to design <ARM>-powered products.</p>
     <dl>
@@ -23,7 +20,5 @@
     other companies including Keil (now part of <ARM>), Green Hills and
     Metrowerks.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

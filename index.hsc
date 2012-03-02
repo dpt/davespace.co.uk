@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page cur="index">
-  <header>
-  <sidebar>
-  <content>
     <article title="February 11<sup>th</sup>, 2012">
     <p>Added an article about <a href="risc.os/iyonix.case.html">putting an
       Iyonix in a new case.</a></p>
@@ -223,7 +220,5 @@
     </article>
 
     <comments>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="ARM Architecture" rev="arm-apps" cur="arm-arch" fwd="arm-arch123">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>Programming in <ARM> is like having a &lsquo;big&rsquo; 6502.</dt>
@@ -16,7 +13,5 @@
       e.g. an ARM9 chip might be <ARMv4> or <ARMv5>.</dd>
     </dl>
   </slide>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Summary of current ARM cores" rev="arm-arch7" cur="arm-cores" fwd="arm-inside">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <table id="cores">
       <thead>
@@ -30,7 +27,5 @@
       </tbody>
     </table>
   </slide>
-  </content>
-  <footer>
 </page>
 

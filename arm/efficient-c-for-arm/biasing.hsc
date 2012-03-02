@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Biasing Values" rev="smallfunc" cur="biasing" fwd="unsignedrange">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <dl>
     <dt><ARM> instructions are able to encode a limited range of immediate
@@ -104,7 +101,5 @@ return c == (UNICODE_THAI_MAI_HAN_AKAT  - 0xE00) ||
       </ul>
     </after>
   </examples>
-  </content>
-  <footer>
 </page>
 

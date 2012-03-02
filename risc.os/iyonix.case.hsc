@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Re-case an Iyonix" cur="iyonix.case">
-  <header>
-  <sidebar>
-  <content>
   <date>
 
   <article>
@@ -285,7 +282,5 @@
 
   </article>
 
-  </content>
-  <footer>
 </page>
 

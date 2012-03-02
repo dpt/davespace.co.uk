@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Bitfields" rev="bools" cur="bitfields" fwd="padding">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <ul>
       <li>Mini structure members.</li>
@@ -49,7 +46,5 @@ ShipFlags getShipFlags2(const ShipData2 *d)
               MOV pc,lr</armsyntax>
     </after>
   </examples>
-  </content>
-  <footer>
 </page>
 

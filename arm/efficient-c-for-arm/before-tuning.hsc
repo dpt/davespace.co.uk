@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Before Tuning..." rev="efficiency" cur="before-tuning" fwd="optimising">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <p>Before you do any code tuning...</p>
     <ul>
@@ -20,7 +17,5 @@
     <p>It&rsquo;s vital to know your code works before you start trying to
     rework it. You must have a solid baseline against which to test.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

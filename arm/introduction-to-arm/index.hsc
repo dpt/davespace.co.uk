@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Introduction" cur="index" fwd="why-learn">
-  <header>
-  <sidebar>
-  <content>
 
   <article>
     <p>The <dfn>Introduction to ARM</dfn> course aims to bring the reader up to
@@ -36,7 +33,5 @@
     ARM</dfn></a>.</p>
   </article>
 
-  </content>
-  <footer>
 </page>
 

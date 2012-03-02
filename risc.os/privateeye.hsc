@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="PrivateEye" cur="privateeye">
-  <header>
-  <sidebar>
-  <content>
   <downloadbox>
     <download><a href="../software/privateeye299.zip">Download</a> (242k Zip)</download>
     <download><a href="../software/privateeye299manual.pdf">Manual</a> (343k <acronym>PDF</acronym>)</download>
@@ -66,7 +63,5 @@
       for the web-based repository viewer.
     </p>
   </article>
-  </content>
-  <footer>
 </page>
 

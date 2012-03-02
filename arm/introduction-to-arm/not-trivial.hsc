@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Not a Trivial Mapping" rev="why-learn" cur="not-trivial" fwd="instruction-sets">
-  <header>
-  <sidebar>
-  <content>
 
   <slide>
     <p>There are features available to the assembler programmer which
@@ -52,7 +49,5 @@
     </p>
   </commentary>
 
-  </content>
-  <footer>
 </page>
 

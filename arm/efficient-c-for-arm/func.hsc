@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Function Calls" rev="regalloc" cur="func" fwd="smallfunc">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>First four arguments to a function are passed in R0-R3.</p>
 
@@ -25,7 +22,5 @@
     will have to perform fewer register setups and less register
     rearrangement.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

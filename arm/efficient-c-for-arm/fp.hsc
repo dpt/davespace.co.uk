@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Floating Point" rev="slow" cur="fp" fwd="division">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Floating Point is usually <strong>emulated</strong> on <ARM>
     systems.</p>
@@ -31,7 +28,5 @@
     you&rsquo;re dealing with one special case. This applies even to Java.</p>
     <p><ext url="http://en.wikibooks.org/wiki/Embedded_Systems/Embedded_System_Basics/Fixed-Point_Arithmetic">http://en.wikibooks.org/wiki/Embedded_Systems/Embedded_System_Basics/Fixed-Point_Arithmetic</ext></p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

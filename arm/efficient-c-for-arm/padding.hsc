@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Padding" rev="bools" cur="padding" fwd="hoisting">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Structures often end up containing <dfn>padding</dfn>.</p>
     <dl>
@@ -49,7 +46,5 @@
       third).</p>
     </after>
   </examples>
-  </content>
-  <footer>
 </page>
 

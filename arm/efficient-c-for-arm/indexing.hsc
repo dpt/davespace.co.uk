@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Avoid Array Indexing" rev="datadrive" cur="indexing" fwd="aliasing">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <dl>
     <dt>Accessing an array element uses two variables</dt>
@@ -57,7 +54,5 @@ loop          MOV      r1,r4           ; R1 = entry-&gt;name
 exit          MVN      r0,#0
               LDMFD    sp!,{r4-r6,pc}  ; return -1</armsyntax>
   </slide>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Taking a Variable&rsquo;s Address" rev="funcarg" cur="varaddr" fwd="loops">
-  <header>
-  <sidebar>
-  <content>
   <slide>
 <csyntax>int N;
 
@@ -26,7 +23,5 @@ for (i = 0; i &lt; N; i++)
     lifetime. So even if, as in this example, you only take the address once
     then use it later it&rsquo;s still a memory-bound variable.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

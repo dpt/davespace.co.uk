@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Profilers" rev="optimising" cur="profilers" fwd="slow">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>When profiling on x86 don&rsquo;t expect the results to be accurate for
     <ARM>.</p>
@@ -28,7 +25,5 @@
       </ul>
     </ul>
   </slide>
-  </content>
-  <footer>
 </page>
 

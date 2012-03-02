@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Pointer Chains" rev="aliasing" cur="chains" fwd="sentinels">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Pointer chains are frequently used to access data in structures.</p>
     <ul>
@@ -61,7 +58,5 @@ void setPos2(Object *o)
     <p>This is from <ARM> Application Note 34, Section 8.2.3. (Now
     withdrawn? I can no longer find it online.)</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

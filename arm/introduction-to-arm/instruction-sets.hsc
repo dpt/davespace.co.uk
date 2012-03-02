@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Instruction Sets" rev="not-trivial" cur="instruction-sets" fwd="registers">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <p>Modern <ARM> processors have <em>several</em> instruction sets:
     <ul>
@@ -31,7 +28,5 @@
     improves performance whilst keeping the code density tight by allowing a
     mixture of 16- and 32-bit instructions.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

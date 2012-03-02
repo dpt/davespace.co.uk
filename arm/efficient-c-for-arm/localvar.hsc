@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Local Variable Types" rev="memaccess" cur="localvar" fwd="funcarg">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>The <ARM> data processing operations always operate on 32-bit
     quantities. You should therefore:</p>
@@ -70,7 +67,5 @@ loop
     &lsquo;free&rsquo; with <code>int</code>s, but not with
     <code>char</code>s.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

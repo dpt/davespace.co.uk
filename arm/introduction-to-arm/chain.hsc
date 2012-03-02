@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="A Call Chain" rev="stack" cur="chain" fwd="task-one">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <diagram src="call.png" alt="Diagram of a call chain.">
     <ol>
@@ -28,7 +25,5 @@
     <dfn>leaf</dfn> routine. Leaf routines can dispense with the overhead of
     storing their return address on the stack.</p>
   </slide>
-  </content>
-  <footer>
 </page>
 

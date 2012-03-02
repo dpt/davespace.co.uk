@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Data Drive" rev="hoisting" cur="datadrive" fwd="indexing">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <ul>
     <li>Avoid mixing code and data together.</li>
@@ -91,7 +88,5 @@ loop          ADD      r0,r4,r4,LSL #1 ;
       <p>18 instructions &times; 4 bytes = 72 bytes.</p>
     </after>
   </examples>
-  </content>
-  <footer>
 </page>
 

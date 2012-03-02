@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Registers" rev="instruction-sets" cur="registers" fwd="pc">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p><ARM> has sixteen registers visible at any one time. They are named R0
     to R15. All are 32 bits wide.</p>
@@ -44,6 +41,4 @@
     by convention, rather than a rule, in <ARM> mode. In Thumb mode it is more
     hardwired.</p>
   </commentary>
-  </content>
-  <footer>
   </page>

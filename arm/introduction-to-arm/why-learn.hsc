@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Why Learn Assembly?" rev="index" cur="why-learn" fwd="not-trivial">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <ul>
       <li>Ideally we would never need to write assembly language.</li>
@@ -38,7 +35,5 @@
     knowledge of assembly language can help you understand the semantics of the
     compiler language more fully.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page cur="index">
-  <header>
-  <sidebar>
-  <content>
 
     <article>
       <p>This section holds a few useful <a
@@ -13,7 +10,5 @@
 
     <comments>
 
-  </content>
-  <footer>
 </page>
 

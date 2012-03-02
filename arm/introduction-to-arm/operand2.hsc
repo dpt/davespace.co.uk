@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Operand2" rev="barrel-shifter" cur="operand2" fwd="immediates">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p><dfn>Operand2</dfn> is the flexible second operand to most instructions.
     It can take one of three different forms:
@@ -30,7 +27,5 @@
       <dd>Registers shifted by registers.</dd>
     </dl>
   </examples>
-  </content>
-  <footer>
 </page>
 

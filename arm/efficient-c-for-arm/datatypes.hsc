@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="C Data Types" rev="unrolling" cur="datatypes" fwd="memaccess">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Certain C data types are more efficient to use for local variables than
     others.</p>
@@ -51,7 +48,5 @@
     </table>
 
   </slide>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Division" rev="fp" cur="division" fwd="unaligned">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Like floating point, division is also <strong>emulated</strong>.</p>
     <p>It&rsquo;s implemented by two runtime library functions. In
@@ -44,7 +41,5 @@
       <li>One or the other can be computed for free.</li>
     </ul>
   </slide>
-  </content>
-  <footer>
 </page>
 

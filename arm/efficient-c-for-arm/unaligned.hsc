@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Unaligned Data Access" rev="division" cur="unaligned" fwd="bools">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <ul>
       <li><ARM> favours 32-bit aligned addresses.</li>
@@ -24,7 +21,5 @@ LDRB Rt,[Ra,#3]
 ORR  Rd,Rd,Rt,LSL #24</armsyntax>
     <p>Each byte must be individually fetched and merged into the result.</p>
   </examples>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Function Argument Types" rev="localvar" cur="funcarg" fwd="varaddr">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <csyntax>short addshorts1(short a, short b)
 {
@@ -68,7 +65,5 @@
     <p>You can see from this that simply mixing objects between different
     compilers can cause all sorts of problems.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

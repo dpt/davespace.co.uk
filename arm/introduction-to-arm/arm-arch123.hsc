@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Early Architectures" rev="arm-arch" cur="arm-arch123" fwd="arm-arch4">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>v1</dt>
@@ -53,7 +50,5 @@
     version of <BBC> <BASIC>."</blockquote>
     <p>Acorn also used this <ARM> internally in Archimedes prototypes.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

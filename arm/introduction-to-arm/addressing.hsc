@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Addressing Modes" rev="data-transfer" cur="addressing" fwd="multiple-data-transfer">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>An <var>&lt;address&gt;</var> can take multiple forms:</p>
     <dl>
@@ -50,7 +47,5 @@
       </ul>
     </p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

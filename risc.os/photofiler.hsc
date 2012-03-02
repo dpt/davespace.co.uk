@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="PhotoFiler" cur="photofiler">
-  <header>
-  <sidebar>
-  <content>
 
   <downloadbox>
     <download><a href="../software/photofiler208.zip">Download</a> (71k Zip)</download>
@@ -82,7 +79,5 @@
     </p>
   </article>
 
-  </content>
-  <footer>
 </page>
 

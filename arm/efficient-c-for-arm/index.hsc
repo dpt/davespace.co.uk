@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Introduction" cur="index" fwd="efficiency">
-  <header>
-  <sidebar>
-  <content>
 
   <article>
     <p>This course is all about tuning your code. It&rsquo;s about how you can
@@ -28,7 +25,5 @@
         ARM</dfn></a>.</p>
   </article>
 
-  </content>
-  <footer>
 </page>
 

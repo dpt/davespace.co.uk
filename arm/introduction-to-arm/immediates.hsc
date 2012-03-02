@@ -2,8 +2,6 @@
 
 <page heading="Immediate Values" rev="operand2" cur="immediates" fwd="branch">
 <header>
-  <sidebar>
-  <content>
 <slide>
   <p>You can&rsquo;t fit an arbitrary 32-bit value into a 32-bit instruction
   word. <ARM> data processing instructions have 12 bits of space for values in
@@ -52,6 +50,4 @@ ORR r2, r2, r2, LSL #16 ; R2 = 0x55555555</armsyntax>
     constant in a single instruction, if possible, otherwise it will generate
     an <code>LDR</code>.</p>
   </slide>
-  </content>
-  <footer>
 </page>

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Task One" rev="chain" cur="task-one" fwd="task-two">
-  <header>
-  <sidebar>
-  <content>
   <slide title="Mystery Routine">
     <p>At this point in the presentation we stop to try out a couple of tasks.
     These help us put together the information just laid out.</p>
@@ -71,7 +68,5 @@ mystery
   <slide title="Answers">
     <p>Answers are <a href="task-one-answers.html">here.</a></p>
   </slide>
-  </content>
-  <footer>
 </page>
 

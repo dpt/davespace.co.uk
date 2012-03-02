@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="References" rev="baseptr" cur="references">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl class="books" id="asdg">
       <dd><img src="../introduction-to-arm/img/book/asdg.jpg" alt="Cover."/></dd>
@@ -22,7 +19,5 @@
       <dt><ext url="http://www.compileroptimizations.com/">http://www.compileroptimizations.com/</ext></dt>
     </dl>
   </slide>
-  </content>
-  <footer>
 </page>
 

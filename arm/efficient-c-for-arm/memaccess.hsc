@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Memory Access" rev="datatypes" cur="memaccess" fwd="localvar">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <p><ARM> is a <dfn>load-store</dfn> architecture:</p>
     <ul>
@@ -102,7 +99,5 @@
     Array indexing of <code>short</code>s costs one more cycle than
     <code>int</code>s."</q></p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

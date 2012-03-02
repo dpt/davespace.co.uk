@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="resetjpegdpi.py" cur="resetjpegdpi">
-  <header>
-  <sidebar>
-  <content>
 
   <downloadbox>
     <download><a href="../software/resetjpegdpi.py">Download</a></download>
@@ -23,7 +20,5 @@
     <pre class="console">$ <kbd>resetjpegdpi.py ./photos/</kbd></pre>
   </article>
 
-  </content>
-  <footer>
 </page>
 

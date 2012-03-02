@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Compare Instructions" rev="logical" cur="compare" fwd="barrel-shifter">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <format>&lt;operation&gt;{cond} Rn,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
@@ -46,7 +43,5 @@
       numbers gives result of zero).</li>
     </ul>
   </commentary>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Loop Unrolling" rev="sentinels" cur="unrolling" fwd="datatypes">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <p>Small loops can be <dfn>unrolled</dfn>.</p>
   <ul>
@@ -59,7 +56,5 @@
     <p>See <wiki subj="Duff's_device">Duff&rsquo;s Device</wiki> on
     Wikipedia.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

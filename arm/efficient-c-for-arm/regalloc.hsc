@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Register Allocation" rev="loops" cur="regalloc" fwd="func">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>The compiler attempts to allocate a register to each local variable.</p>
     <p>It tries to use the same register for different local variables if the
@@ -78,7 +75,5 @@
     reserves R9 for its use for all code.</p>
 
   </commentary>
-  </content>
-  <footer>
 </page>
 

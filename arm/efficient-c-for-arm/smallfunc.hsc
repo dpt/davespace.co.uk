@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Small Functions" rev="func" cur="smallfunc" fwd="biasing">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>If the compiler can &lsquo;see&rsquo; the definition of a
     function<mdash> i.e. its definition is present in the same source
@@ -18,7 +15,5 @@
     language code. Functions may appear to vanish when they&rsquo;re subsumed
     into the caller.</p>
   </slide>
-  </content>
-  <footer>
 </page>
 

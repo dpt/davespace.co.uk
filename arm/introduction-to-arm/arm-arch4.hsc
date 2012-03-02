@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Architecture 4" rev="arm-arch123" cur="arm-arch4" fwd="arm-arch5">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>v4 is the oldest supported architecture today. It added:</dt>
@@ -25,7 +22,5 @@
     operations.</li>
 </ul>
   </commentary>
-  </content>
-  <footer>
 </page>
 

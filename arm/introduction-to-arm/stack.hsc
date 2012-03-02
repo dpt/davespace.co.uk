@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="The Stack" rev="multiple-data-transfer" cur="stack" fwd="chain">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <p>We need to store the processor state when making nested calls.</p>
   <p>The multiple data transfer instructions provide a mechanism for storing
@@ -46,7 +43,5 @@
   </p>
   <diagram src="ldmfd.png" alt="LDMFD">
   </examples>
-  </content>
-  <footer>
 </page>
 

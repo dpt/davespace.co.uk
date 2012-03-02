@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Optimising" rev="before-tuning" cur="optimising" fwd="profilers">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>The goal is to write C code which compiles into perfect, efficient,
     <ARM> code which:</p>
@@ -39,7 +36,5 @@
     earlier. A fresh perspective can make a difference to how you view the
     code.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

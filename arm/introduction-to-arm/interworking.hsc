@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Interworking" rev="thumb" cur="interworking" fwd="thumb-example">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>You can mix and match <ARM> and Thumb code within the same binary. This
     is called <dfn>interworking</dfn> and it lets you take advantage of the
@@ -30,7 +27,5 @@
       <li>and other changes which make interworking much more pleasant.</li>
     </ul>
   </slide>
-  </content>
-  <footer>
 </page>
 

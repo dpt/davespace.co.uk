@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Unsigned Ranges" rev="biasing" cur="unsignedrange" fwd="baseptr">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>When testing for a value within a range we can apply the <dfn>unsigned
     range optimisation</dfn>:</p>
@@ -49,7 +46,5 @@
     <p>This is especially beneficial when &lsquo;min&rsquo; is zero. Of course
     this becomes even more beneficial when testing 2D and 3D ranges.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

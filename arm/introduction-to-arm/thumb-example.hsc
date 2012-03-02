@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Thumb Example" rev="interworking" cur="thumb-example" fwd="thumb-2">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Here&rsquo;s the &lsquo;mystery&rsquo; routine from earlier rewritten in
     Thumb assembly language.</p>
@@ -26,7 +23,5 @@ exit
     some branch instructions are encoded as a pair of 16-bit instructions (high
     and low halves).</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

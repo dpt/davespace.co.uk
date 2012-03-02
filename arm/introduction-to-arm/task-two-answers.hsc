@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Task Two Answers">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <p>C test shell:</p>
   <csyntax>#include &lt;stdio.h&gt;
@@ -38,7 +35,5 @@ loop
 
     END</armsyntax>
   </slide>
-  </content>
-  <footer>
 </page>
 

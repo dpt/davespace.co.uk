@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Test" rev="arm-inside" cur="arm-test" fwd="books">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>An &ldquo;ARM7TDMI&rdquo; ...</dt>
@@ -14,7 +11,5 @@
       <dt>What about an &ldquo;ARM1156T2F-S&rdquo;?</dt>
     </dl>
   </slide>
-  </content>
-  <footer>
 </page>
 

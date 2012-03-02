@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Program Counter" rev="registers" cur="pc" fwd="syntax">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <ul>
     <li>When in <ARM> mode:
@@ -32,7 +29,5 @@
       </ul>
     </p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

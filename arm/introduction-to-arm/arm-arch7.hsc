@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Architecture 7" rev="arm-arch6" cur="arm-arch7" fwd="arm-cores">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>v7A, v7R</dt>
@@ -28,7 +25,5 @@
     <ARMv5> and 2x the performance of <ARMv6> <SIMD> on a range of media and <DSP>
     applications.</blockquote>
   </commentary>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Applications" rev="arm-tools" cur="arm-apps" fwd="arm-arch">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>Mobile Phones, <PDA>s</dt>
@@ -18,7 +15,5 @@
       <dt>Set Top Boxes, TVs, Hard Discs, Routers, ...</dt>
     </dl>
   </slide>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="remove-duplicates.py" cur="remove-duplicates">
-  <header>
-  <sidebar>
-  <content>
 
   <downloadbox>
     <download><a href="../software/remove-duplicates.py">Download</a></download>
@@ -23,7 +20,5 @@
     <pre class="console">$ <kbd>remove-duplicates.py ./photos/</kbd></pre>
   </article>
 
-  </content>
-  <footer>
 </page>
 

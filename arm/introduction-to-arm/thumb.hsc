@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Thumb" rev="task-two" cur="thumb" fwd="interworking">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>Thumb is a subset of the <ARM> instruction set encoded in 16-bit-wide
     instructions.</p>
@@ -47,7 +44,5 @@
     <p>Whereas R13&rsquo;s role as the stack pointer is a convention in <ARM>
     mode, in Thumb mode it&rsquo;s more hard-wired.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

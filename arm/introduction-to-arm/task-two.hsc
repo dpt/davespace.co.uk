@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Task Two" rev="task-one" cur="task-two" fwd="thumb">
-  <header>
-  <sidebar>
-  <content>
   <slide title="Compute a Factorial">
     <p>Write, from scratch, your own <ARM> assembly language routine to compute
     the factorial of an input number <var>N</var>.</p>
@@ -17,7 +14,5 @@
   <slide title="Answers">
     <p>Answers are <a href="task-two-answers.html">here.</a></p>
   </slide>
-  </content>
-  <footer>
 </page>
 

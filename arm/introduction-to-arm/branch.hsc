@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Branch Instructions" rev="immediates" cur="branch" fwd="conditional">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>So how do we implement control structures like <tt>for</tt> and
     <tt>while</tt> loops? <dfn>Branch</dfn> instructions are used to alter
@@ -51,7 +48,5 @@ calc             ; function body
     space?  You can set up the <LR> manually if needed, then load into <PC>:
     <code>MOV lr,pc LDR pc,=dest</code></p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Single Register Data Transfer" rev="multiply" cur="data-transfer" fwd="addressing">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <format>&lt;operation&gt;{cond}{size} Rd, &lt;address&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
@@ -55,7 +52,5 @@
     addresses. (<code>double</code>s are an exception and can live on 4-byte
     boundaries in some architecture versions).</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

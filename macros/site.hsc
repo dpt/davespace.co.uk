@@ -83,6 +83,7 @@
     <$if cond=(previouspage <> "")>
       <link rel="prev" href=(previouspage + ".html") />
     </$if>
+
     <script type="text/javascript">
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-29131837-1']);
@@ -99,10 +100,16 @@
   <$else>
     <body>
   </$if>
-      <div id="container">
+  <div id="container">
+    <header>
+    <sidebar>
+    <content>
 </$macro>
 
 <$macro /masterpage>
+    </content>
+  </div>
+  <footer>
   </body>
 </html>
 </$macro>
@@ -139,6 +146,12 @@
 </div>
 </$macro>
 
+<$macro crumb href:string title:string>
+<span class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+  <a href=(href) itemprop="url"><span itemprop="title"><(title)></span></a>
+</span>
+</$macro>
+
 <$macro header title:string>
 <div id="header">
   <div id="pagetopshadow"></div>
@@ -149,10 +162,16 @@
     <li id="armtab"><a href=(pageroot + "arm/index.html")><span>ARM</span></a></li>
     <li id="pythontab"><a href=(pageroot + "python/index.html")><span>Python</span></a></li>
   </ul>
+  <div class="breadcrumbs">
+    <crumb href=(pageroot + "index.html") title="DaveSpace"> &rsaquo;
+    <crumb href="../" title="ARM Assembly Language"> &rsaquo;
+    <crumb href="introfoo.html" title="Introduction to ARM"> &rsaquo;
+    <crumb href="chain.html" title="Pointer Chaining">
+  </div>
 </div>
 </$macro>
 
-<$macro content /close title:string>
+<$macro content title:string>
 <div id="content">
   <$if cond=(set title)>
     <h1><(title)></h1>
@@ -164,7 +183,9 @@
       <h2><(pageheading)></h2>
     </$if>
   </$if>
-  <$content>
+</$macro>
+
+<$macro /content>
 </div>
 </$macro>
 
@@ -265,7 +286,6 @@
 <$macro footer>
 <flipper>
 <$define _ttf:string=(HSC.Format.Time)>
-</div> <* shut container group *>
 <div id="footer">
   <ul>
     <li class="date">Last modified on <$let HSC.Format.Time=(_ttf)><(GetTime())></li>

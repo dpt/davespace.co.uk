@@ -29,11 +29,6 @@
             heading=(HEADING) rev=(REV) cur=(CUR) fwd=(FWD)>
 </$macro>
 
-<* ### google verify thing, favicons, *>
-<* ### body id *>
-
-
-
 <$macro /page>
 </masterpage>
 </$macro>

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Architecture 6" rev="arm-arch5" cur="arm-arch6" fwd="arm-arch7">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>v6</dt>
@@ -23,7 +20,5 @@
     architectures.</p>
     <p><code>USADxx</code>: Sum of absolute differences.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

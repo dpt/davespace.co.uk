@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Toolbar" cur="toolbar">
-  <header>
-  <sidebar>
-  <content>
   <downloadbox>
     <download><a href="../software/toolbar121.zip">Download</a> (15k Zip)</download>
     <download><a href="../software/toolsnap1.png">Screenshot</a> (258k <acronym>PNG</acronym>)</download>
@@ -21,7 +18,5 @@
   <article title="Screenshots">
     <captionedimage url="../software/toolsnap1t.png" bigurl="../software/toolsnap1.png" dsc="Screenshot.">Toolbar in action.</captionedimage>
   </article>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page cur="index">
-  <header>
-  <sidebar>
-  <content>
 
   <article title="Training Courses">
     <p>These pages contain two training courses originally written to introduce
@@ -130,7 +127,5 @@
 
   <comments>
 
-  </content>
-  <footer>
 </page>
 

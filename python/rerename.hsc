@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="rerename.py" cur="rerename">
-  <header>
-  <sidebar>
-  <content>
 
   <downloadbox>
     <download><a href="../software/rerename.py">Download</a></download>
@@ -33,7 +30,5 @@ resetjpegdpi.html -&gt; resetjpegdpi.xhtml
 3 objects renamed</pre>
   </article>
 
-  </content>
-  <footer>
 </page>
 

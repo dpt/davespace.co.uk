@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Movement Instructions" rev="organisation" cur="movement" fwd="arithmetic">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <format>&lt;operation&gt;{cond}{S} Rd,&lt;Operand2&gt;</format>
     <p><var>&lt;operation&gt;</var></p>
@@ -26,7 +23,5 @@
       <dd>A <NOP> (no operation) instruction.</dd>
     </dl>
   </examples>
-  </content>
-  <footer>
 </page>
 

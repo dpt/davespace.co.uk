@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Stuff That&rsquo;s Slow on ARM" rev="profilers" cur="slow" fwd="fp">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <dl>
       <dt>Floating Point</dt>
@@ -14,7 +11,5 @@
       <ddd><ARM> prefers word-aligned data.</dd>
     </dl>
   </slide>
-  </content>
-  <footer>
 </page>
 

@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Hoisting" rev="padding" cur="hoisting" fwd="datadrive">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <p>Constant expressions inside a loop can be <dfn>hoisted</dfn> to outside of
   the loop.</p>
@@ -52,7 +49,5 @@ else
     <ext url="http://www.compileroptimizations.com/category/hoisting.htm">http://www.compileroptimizations.com/category/hoisting.htm</ext>
   </p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

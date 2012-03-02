@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Instruction Syntax" rev="pc" cur="syntax" fwd="organisation">
-  <header>
-  <sidebar>
-  <content>
   <slide>
   <format>&lt;op&gt;{cond}{flags} Rd, Rn, Operand2</format>
   <dl class="columns">
@@ -35,7 +32,5 @@
     <UAL> (Unified Assembler Language). Among many other changes this allows
     the condition code to go after the flags.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 

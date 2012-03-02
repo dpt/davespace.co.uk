@@ -1,9 +1,6 @@
 <* $Id$ *>
 
 <page heading="Organisation" rev="syntax" cur="organisation" fwd="movement">
-  <header>
-  <sidebar>
-  <content>
   <slide>
     <p>ARM has a three-address format:
       <ul class="packed">
@@ -25,7 +22,5 @@
     diagram to indicate that it may be used in both the barrel shifter and the
     ALU stages.</p>
   </commentary>
-  </content>
-  <footer>
 </page>
 
