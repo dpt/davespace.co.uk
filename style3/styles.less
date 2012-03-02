@@ -178,6 +178,23 @@ A {
 			}
 		}
 	}
+
+	UL.breadcrumbs {
+		height: @tabheight;
+		list-style-type: none;
+
+		LI {
+			display: block;
+			float: left;
+			height: @tabheight;
+			padding-right: 0.5em;
+		}
+
+		LI + LI::before {
+			content: "\203a";
+			display: inline;
+		}
+	}
 }
 
 // header tabs

@@ -147,9 +147,9 @@
 </$macro>
 
 <$macro crumb href:string title:string>
-<span class="breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
+<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
   <a href=(href) itemprop="url"><span itemprop="title"><(title)></span></a>
-</span>
+</li>
 </$macro>
 
 <$macro header title:string>
@@ -162,12 +162,19 @@
     <li id="armtab"><a href=(pageroot + "arm/index.html")><span>ARM</span></a></li>
     <li id="pythontab"><a href=(pageroot + "python/index.html")><span>Python</span></a></li>
   </ul>
-  <div class="breadcrumbs">
-    <crumb href=(pageroot + "index.html") title="DaveSpace"> &rsaquo;
-    <crumb href="../" title="ARM Assembly Language"> &rsaquo;
-    <crumb href="introfoo.html" title="Introduction to ARM"> &rsaquo;
-    <crumb href="chain.html" title="Pointer Chaining">
-  </div>
+  <ul class="breadcrumbs">
+
+    <crumb href=(pageroot + "index.html") title="DaveSpace">
+
+    <$if cond=(pagegroup <> "")>
+    <crumb href="index.html" title=(pagegroup)>
+    </$if>
+
+    <$if cond=(pageheading <> "")>
+    <crumb href=(Hsc.Document.Name) title=(pageheading)>
+    </$if>
+
+  </ul>
 </div>
 </$macro>
 
