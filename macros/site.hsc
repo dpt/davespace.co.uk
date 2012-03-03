@@ -48,6 +48,8 @@
   <$let nextpage=(fwd)>
 </$if>
 
+<$define site:string/global="DaveSpace">
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <* 'xml:lang="en"' is barfed at even in XHTML mode *>
@@ -56,13 +58,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <* the additional brackets here seem to be required *>
     <$if cond=((pagegroup <> "") and (pageheading <> ""))>
-      <title>davespace.co.uk: <(pagegroup)>: <(pageheading)></title>
+      <title><(site)> &rsaquo; <(pagegroup)> &rsaquo; <(pageheading)></title>
     <$elseif cond=(pagegroup <> "")>
-      <title>davespace.co.uk: <(pagegroup)></title>
+      <title><(site)> &rsaquo; <(pagegroup)></title>
     <$elseif cond=(pageheading <> "")>
-      <title>davespace.co.uk: <(pageheading)></title>
+      <title><(site)> &rsaquo; <(pageheading)></title>
     <$else>
-      <title>davespace.co.uk</title>
+      <title><(site)></title>
     </$if>
     <$if cond=(author <> "")>
       <meta name="author" content=(author) />
@@ -163,17 +165,13 @@
     <li id="pythontab"><a href=(pageroot + "python/index.html")><span>Python</span></a></li>
   </ul>
   <ul class="breadcrumbs">
-
     <crumb href=(pageroot + "index.html") title="DaveSpace">
-
     <$if cond=(pagegroup <> "")>
     <crumb href="index.html" title=(pagegroup)>
     </$if>
-
     <$if cond=(pageheading <> "")>
     <crumb href=(Hsc.Document.Name) title=(pageheading)>
     </$if>
-
   </ul>
 </div>
 </$macro>
@@ -280,7 +278,7 @@
 <$macro comments>
 <article title="Comments">
   <p>If you have any suggestions for improving these pages you can email me
-  at webmaster at davespace dot co dot uk.</p>
+  at dave at davespace dot co dot uk.</p>
 </article>
 </$macro>
 
