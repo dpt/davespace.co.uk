@@ -33,12 +33,14 @@
         <dd>ISBN 0201675196</dd>
         <dd>Published Aug 2000</dd>
       </dl>
-      <p>Written by one of the principal creators of the ARM this is a
-      hardware-focused book, looking at how the ARM architecture came about and
-      discussing multiple different implementations it.</p>
-      <p>A lovely book but is over a decade old. The chips it discusses are now
-      very dated. That said as you'd expect its fundamentals are as sound as
-      ever.</p>
+      <p>Written by one of the principal creators of the ARM this, as the name
+      suggests, looks at ARM from an architectural point of view. It covers
+      ARM history and discusses multiple different implementations of the
+      architecture from ARM7 up to ARM10.</p>
+      <p>A great book. One particular pleasing aspect is the number of
+      high-quality diagrams. However it is over a decade old now. The chips it
+      discusses are quite dated. That said as you'd expect its fundamentals are
+      as sound as ever.</p>
     </div>
 
     <div class="books">
