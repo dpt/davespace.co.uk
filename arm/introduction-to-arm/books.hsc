@@ -2,8 +2,8 @@
 
 <page heading="Books" rev="arm-test" cur="books">
   <article>
-  <p>There are a few printed ARM books available. Below is a list of the books
-  I've encountered in the past with some notes about how they stack up today in
+  <p>There are a number of printed ARM books available. Below is a list of the
+  books I've encountered with some notes about how they stack up today in
   2012.</p>
   </article>
   <slide>
@@ -33,12 +33,12 @@
         <dd>ISBN 0201675196</dd>
         <dd>Published Aug 2000</dd>
       </dl>
-      <p>Written by one of the creators of the ARM this is a more of a hardware
-      book, looking at how the ARM architecture came about and a discussion of
-      multiple different implementations it.</p>
-      <p>It's a lovely book but is over a decade old now so discusses some now
-      dated chips. The fundamentals of what it describes is still all true
-      however.</p>
+      <p>Written by one of the principal creators of the ARM this is a
+      hardware-focused book, looking at how the ARM architecture came about and
+      discussing multiple different implementations it.</p>
+      <p>A lovely book but is over a decade old. The chips it discusses are now
+      very dated. That said as you'd expect its fundamentals are as sound as
+      ever.</p>
     </div>
 
     <div class="books">
@@ -50,14 +50,15 @@
         <dd>ISBN 0201737191</dd>
         <dd>Published Dec 2000</dd>
       </dl>
-      <p>This is the bible for the ARM architecture. Never a sit-down read but
-      a reference manual we dig through the ARM ARM when we need to know the
-      exact behaviour of an instruction.</p>
-      <p>The book is expensive and superseded by PDF versions freely available
-      from ARM's website. Only buy this if you can find a copy for a sensible
-      price or you object to reading PDFs on-screen.</p>
-      <p>This is equivalent to the revision 'E' ARM ARM covering up to
-      ARMv5TE.</p>
+      <p>This is the bible for the ARM architecture. Not exactly a sit-down
+      read but as a reference manual we trawl the ARM ARM when we need to know
+      the exact behaviour of an instruction.</p>
+      <p>The printed book is expensive and superseded by PDF versions freely
+      available from ARM's website (you may need to register for the latest ARM
+      ARM which covers ARMv7). Only buy this if you can find a copy for a
+      sensible price or you object to reading PDFs on-screen.</p>
+      <p>The edition shown is equivalent to the revision 'E' ARM ARM, which
+      covers up to ARMv5TE.</p>
     </div>
 
     <div class="books">
@@ -69,8 +70,9 @@
         <dd>ISBN 0201624109</dd>
         <dd>Published Oct 1993</dd>
       </dl>
-      <p>Nearly 20 years old, grab this only if you need a historical
-      perspective on the ARM6 family cores used in the Newton MessagePad.</p>
+      <p>Nearly 20 years old, grab this and blow off the dust only if you need
+      a historical perspective on the ARM6 family cores used in the Newton
+      MessagePad.</p>
     </div>
 
     <div class="clearfix"></div>

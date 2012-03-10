@@ -59,6 +59,10 @@
   <article title="Changelog">
     <p>The most recent changes are listed first.</p>
     <dl>
+      <dt>3<sup>rd</sup> March 2012</dt>
+      <ddd>Added some mini reviews of the books pointed to by the <a
+      href="introduction-to-arm/books.html">books</a> page.</dd>
+
       <dt>29<sup>th</sup> November 2010</dt>
       <ddd>Many adjustments and clarifications to the first half of
       Introduction to ARM.</dd>
