@@ -11,9 +11,19 @@
                    desc:string root:string logo:string heading:string
                    rev:string cur:string fwd:string>
 
-<$define pagegroup:string/global="">
+<* split 'group' up, by section *>
+<$define pagegroup0:string/global="">
+<$define pagegroup1:string/global="">
+<$define pagegroup2:string/global="">
 <$if cond=(set group)>
-  <$let pagegroup=(group)>
+  <* test for the most matches first to avoid greedy over-matching *>
+  <$if cond=(group match "(.*) \| (.*) \| (.*)")>
+    <$match s=(group) re="(.*) \| (.*) \| (.*)" c1=pagegroup2 c2=pagegroup1 c3=pagegroup0>
+  <$elseif cond=(group match "(.*) \| (.*)")>
+    <$match s=(group) re="(.*) \| (.*)" c1=pagegroup1 c2=pagegroup0>
+  <$else>
+    <$let pagegroup0=(group)>
+  </$if>
 </$if>
 
 <$define pageroot:string/global="">
@@ -56,16 +66,22 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <* the additional brackets here seem to be required *>
-    <$if cond=((pagegroup <> "") and (pageheading <> ""))>
-      <title><(site)> &rsaquo; <(pagegroup)> &rsaquo; <(pageheading)></title>
-    <$elseif cond=(pagegroup <> "")>
-      <title><(site)> &rsaquo; <(pagegroup)></title>
-    <$elseif cond=(pageheading <> "")>
-      <title><(site)> &rsaquo; <(pageheading)></title>
-    <$else>
-      <title><(site)></title>
+
+    <$define title:string=(site)>
+    <$if cond=(pagegroup2 <> "")>
+      <$let title=(title + " &rsaquo; " + pagegroup2)>
     </$if>
+    <$if cond=(pagegroup1 <> "")>
+      <$let title=(title + " &rsaquo; " + pagegroup1)> 
+    </$if>
+    <$if cond=(pagegroup0 <> "")>
+      <$let title=(title + " &rsaquo; " + pagegroup0)>
+    </$if>
+    <$if cond=(pageheading <> "")>
+      <$let title=(title + " &rsaquo; " + pageheading)>
+    </$if>
+    <title><(title)></title>
+
     <$if cond=(author <> "")>
       <meta name="author" content=(author) />
     </$if>
@@ -165,12 +181,18 @@
     <li id="pythontab"><a href=(pageroot + "python/index.html")><span>Python</span></a></li>
   </ul>
   <ul class="breadcrumbs">
-    <crumb href=(pageroot + "index.html") title="DaveSpace">
-    <$if cond=(pagegroup <> "")>
-    <crumb href="index.html" title=(pagegroup)>
+    <crumb href=(pageroot + "index.html") title=(site)>
+    <$if cond=(pagegroup2 <> "")>
+      <crumb href="../../index.html" title=(pagegroup2)>
+    </$if>
+    <$if cond=(pagegroup1 <> "")>
+      <crumb href="../index.html" title=(pagegroup1)>
+    </$if>
+    <$if cond=(pagegroup0 <> "")>
+      <crumb href="index.html" title=(pagegroup0)>
     </$if>
     <$if cond=(pageheading <> "")>
-    <crumb href=(Hsc.Document.Name) title=(pageheading)>
+      <crumb href=(Hsc.Document.Name) title=(pageheading)>
     </$if>
   </ul>
 </div>
@@ -181,8 +203,8 @@
   <$if cond=(set title)>
     <h1><(title)></h1>
   <$else>
-    <$if cond=(pagegroup <> "")>
-      <h1><a href="index.html"><(pagegroup)></a></h1>
+    <$if cond=(pagegroup0 <> "")>
+      <h1><a href="index.html"><(pagegroup0)></a></h1>
     </$if>
     <$if cond=(pageheading <> "")>
       <h2><(pageheading)></h2>

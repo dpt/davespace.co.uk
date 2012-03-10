@@ -17,7 +17,7 @@
   <$let fwd="">
 </$if>
 
-<masterpage group="Introduction to ARM"
+<masterpage group="ARM Assembly Language | Introduction to ARM"
             groupcssid="arm"
             author="David Thomas"
             keywords="Assembler, Assembly, Programming, ARM, CPU"

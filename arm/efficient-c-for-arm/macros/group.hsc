@@ -17,7 +17,7 @@
   <$let fwd="">
 </$if>
 
-<masterpage group="Efficient C for ARM"
+<masterpage group="ARM Assembly Language | Efficient C for ARM"
             groupcssid="arm"
             author="David Thomas"
             keywords="Assembler, Assembly, Programming, ARM, CPU"
