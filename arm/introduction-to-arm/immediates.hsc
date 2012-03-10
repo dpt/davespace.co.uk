@@ -1,7 +1,6 @@
 <* $Id$ *>
 
 <page heading="Immediate Values" rev="operand2" cur="immediates" fwd="branch">
-<header>
 <slide>
   <p>You can&rsquo;t fit an arbitrary 32-bit value into a 32-bit instruction
   word. <ARM> data processing instructions have 12 bits of space for values in
