@@ -63,7 +63,7 @@ BODY {
 	> #container {
 		height: auto !important;
 		min-height: 100%;
-		padding-bottom: @footerheight;
+		//margin-bottom: -@footerheight;
 	}
 }
 H1,H2,H3 {
@@ -671,17 +671,18 @@ A {
 //
 // FOOTER
 //
+#footer, #push {
+	height: @footerheight;
+}
 
 #footer {
 	background: transparent url(img/footer.png) no-repeat left bottom;
 	clear: both;
 	color: @niceblue;
 	font-size: @smallfontsize;
-	height: @footerheight;
 	line-height: 150%;
 	margin-left: @left - 48px;
 	margin-top: -@footerheight; // move up into the space we've allowed for
-	padding-top: @vertpadding;
 	position: relative;
 	text-align: center;
 	width: @width + 24px * 2;
