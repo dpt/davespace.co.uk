@@ -126,6 +126,7 @@
 
 <$macro /masterpage>
     </content>
+    <flipper>
   </div>
   <footer>
   </body>
@@ -311,7 +312,6 @@
 </$macro>
 
 <$macro footer>
-<flipper>
 <$define _ttf:string=(HSC.Format.Time)>
 <div id="footer">
   <ul>

@@ -50,11 +50,6 @@
 HTML, BODY {
 	height: 100%;
 }
-BODY > #container {
-	height: auto;
-	min-height: 100%;
-	padding-bottom: @footerheight;
-}
 
 BODY {
 	background: @backgroundcolour url(img/bg.png) repeat-y 0 0;
@@ -64,6 +59,12 @@ BODY {
 	line-height: 150%;
 	margin: 0;
 	padding: 0 @gutter 0;
+
+	> #container {
+		height: auto !important;
+		min-height: 100%;
+		padding-bottom: @footerheight;
+	}
 }
 H1,H2,H3 {
 	font-family: @headingfontfamily;
