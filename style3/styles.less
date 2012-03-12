@@ -50,7 +50,6 @@
 HTML, BODY {
 	height: 100%;
 }
-
 BODY {
 	background: @backgroundcolour url(img/bg.png) repeat-y 0 0;
 	color: @textcolour;
@@ -63,25 +62,25 @@ BODY {
 	> #container {
 		height: auto !important;
 		min-height: 100%;
-		//margin-bottom: -@footerheight;
 	}
 }
 H1,H2,H3 {
 	font-family: @headingfontfamily;
 	font-weight: 700;
 }
-PRE {
+.monospaced {
 	font-family: @monofontfamily;
 	font-size: @smallfontsize; // monospaced fonts come out looking too big
 	letter-spacing: @monoletterspacing;
 }
+PRE {
+	.monospaced;
+}
 CODE {
+	.monospaced;
 	background-color: @codebackground;
 	border-radius: 4px;
 	border: 1px dotted @codeborder;
-	font-family: @monofontfamily;
-	font-size: @smallfontsize; // monospaced fonts come out looking too big
-	letter-spacing: @monoletterspacing;
 	padding: 0.15em;
 }
 BLOCKQUOTE {
@@ -671,7 +670,7 @@ A {
 //
 // FOOTER
 //
-#footer, #push {
+#footer, #push { // push gives us extra space for the footer's negative margin
 	height: @footerheight;
 }
 
