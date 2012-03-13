@@ -38,10 +38,12 @@
 @pfontsize: 1em;
 @smallfontsize: 0.875em;
 
+@headingpadding: 0.5em;
+
 @headerheight: 96px;
 @footerheight: 96px;
 
-@vertpadding: 2em; // after each article, slide, example and after flipper
+@vertpadding: 1em; // after each article, slide, example and after flipper
 
 //
 // BASIC TAGS
@@ -339,7 +341,7 @@ A {
 	clear: right;
 	margin-left: @left;
 	max-width: @width - @gutter * 2;
-	margin-bottom: @vertpadding;
+	padding-bottom: @vertpadding;
 
 	H1 {
 		display: none;
@@ -431,7 +433,7 @@ A {
 	> .slide,
 	> .examples,
 	> .commentary {
-		margin-bottom: @vertpadding;
+		padding-bottom: @vertpadding;
 	}
 
 	> .slide,
@@ -521,7 +523,6 @@ A {
 
 			> OL {
 				margin-bottom: 0.5em;
-				//border: 1px solid red;
 			}
 		}
 		> LI + LI {
@@ -622,8 +623,8 @@ A {
 #content {
 	> #date {
 		font-style: italic;
-		padding-bottom: 0.75em;
-		margin-bottom: 0.75em;
+		padding-bottom: @headingpadding;
+		margin-bottom: @headingpadding;
 		text-align: right;
 	}
 
@@ -631,9 +632,10 @@ A {
 	> H1,
 	> H2,
 	> H3 {
-		padding-top: 0.75em;
-		margin-bottom: 0.75em;
-		padding-bottom: 0.75em;
+		line-height: 100%;
+		padding-top: @headingpadding;
+		margin-bottom: @headingpadding;
+		padding-bottom: @headingpadding;
 	}
 
 	> H1 {
@@ -886,7 +888,7 @@ A {
 // MEDIA QUERIES
 //
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 976px) {
 	BODY {
 		background-position: (-@left + @gutter) 0; 
 		//padding: 0;
@@ -898,8 +900,38 @@ A {
 		padding: 4px 0 4px 0;
 		margin-left: 0;
 	}
-    #sidebar {
-		display: none;
+	#sidebar {
+		border: none;
+		display: block;
+		float: none;
+		width: inherit;
+		max-width: @width - @gutter * 2;
+		padding: 0 @gutter;
+
+		H1, H2, H3 {
+			line-height: 100%;
+			line-height: inherit;
+			margin-bottom: @headingpadding;
+			padding: @headingpadding 0;
+			text-align: inherit;
+		}		
+	
+		H1 {
+			border-bottom: 1px dotted @blue;
+			color: @blue;
+			display: block;
+			font-size: @h1fontsize;
+		}
+
+		UL {
+			padding-bottom: 0;
+		}
+
+		UL LI {
+			text-align: inherit;
+			background: transparent url(img/small.png) no-repeat left -166px;
+			padding-left: 10px;
+		}
 	}
 	#content {
 		margin-left: 0;

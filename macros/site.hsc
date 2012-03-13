@@ -161,7 +161,11 @@
 
 <$macro sidebar>
 <div id="sidebar">
-  <h1>Contents</h1>
+  <$if cond=(pagegroup0 <> "")>
+    <h1>Section Contents <ndash> <(pagegroup0)></h1>
+  <$else>
+    <h1>Section Contents</h1>
+  </$if>  
   <contents>
 </div>
 </$macro>
