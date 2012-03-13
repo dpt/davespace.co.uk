@@ -421,8 +421,10 @@ A {
 }
 
 #content {
-	margin-left: @left;
+	margin-left: @left - @gutter;
 	max-width: @width - @gutter * 2;
+	padding-left: @gutter;
+	padding-right: @gutter;
 	//xpadding-bottom: 128px;
 
 	> .article,
@@ -873,6 +875,37 @@ A {
 
 	KBD {
 		color: #87ceeb;
+	}
+}
+
+
+
+
+
+//
+// MEDIA QUERIES
+//
+
+@media only screen and (max-width: 800px) {
+	BODY {
+		background-position: (-@left + @gutter) 0; 
+		//padding: 0;
+	}
+	#pagetopshadow {
+		background-position: (-@left + @gutter) 0;
+	}
+	#header {
+		padding: 4px 0 4px 0;
+		margin-left: 0;
+	}
+    #sidebar {
+		display: none;
+	}
+	#content {
+		margin-left: 0;
+	}
+	#footer {
+		margin-left: -2 * @gutter;
 	}
 }
 
