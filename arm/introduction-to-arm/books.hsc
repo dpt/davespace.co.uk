@@ -16,12 +16,12 @@
         <dd>ISBN 1558608745</dd>
         <dd>Published May 2004</dd>
       </dl>
-      <p>This the single best book about writing software for ARM processors.
-      It covers ARM, Thumb, efficient C programming, optimising ARM assembly,
-      optimised primitives, digital signal processing, exception and interrupt
-      handling, firmware, caches, MPUs, MMUs. It details ARM and Thumb
-      instructions up to ARMv6 and lists cycle timings for a variety of cores
-      up to and including the ARM11.</p>
+      <p>This is the single best book about writing software for <ARM>
+      processors. It covers <ARM>, Thumb, efficient C programming, optimising
+      <ARM> assembly, optimised primitives, digital signal processing,
+      exception and interrupt handling, firmware, caches, <MPU>s, <MMU>s. It
+      details <ARM> and Thumb instructions up to <ARMv6> and lists cycle
+      timings for a variety of cores up to and including the ARM11.</p>
     </div>
 
     <div class="books">
@@ -33,10 +33,11 @@
         <dd>ISBN 0201675196</dd>
         <dd>Published Aug 2000</dd>
       </dl>
-      <p>Written by one of the principal creators of the ARM this, as the name
-      suggests, looks at ARM from an architectural point of view. It covers
-      ARM history and discusses multiple different implementations of the
-      architecture from ARM7 up to ARM10.</p>
+      <p>Written by one of the principal creators of the <ARM> this, as the
+      name suggests, looks at <ARM> processors from an architectural point of
+      view. It covers the history of the architecture and discusses multiple
+      different implementations of the architecture from ARM7TDMI up to
+      ARM10.</p>
       <p>A great book. One particular pleasing aspect is the number of
       high-quality diagrams. However it is over a decade old now. The chips it
       discusses are quite dated. That said as you'd expect its fundamentals are
@@ -52,15 +53,15 @@
         <dd>ISBN 0201737191</dd>
         <dd>Published Dec 2000</dd>
       </dl>
-      <p>This is the bible for the ARM architecture. Not exactly a sit-down
-      read but as a reference manual we trawl the ARM ARM when we need to know
+      <p>This is the bible for the <ARM> architecture. Not exactly a sit-down
+      read but as a reference manual we trawl the <ARMARM> when we need to know
       the exact behaviour of an instruction.</p>
-      <p>The printed book is expensive and superseded by PDF versions freely
-      available from ARM's website (you may need to register for the latest ARM
-      ARM which covers ARMv7). Only buy this if you can find a copy for a
-      sensible price or you object to reading PDFs on-screen.</p>
-      <p>The edition shown is equivalent to the revision 'E' ARM ARM, which
-      covers up to ARMv5TE.</p>
+      <p>The printed book is expensive and superseded by <PDF> versions freely
+      available from <ARMLtd>'s website (you may need to register for the
+      latest <ARMARM> which covers <ARMv7>). Only buy this if you can find a
+      copy for a sensible price or you object to reading <PDF>s on-screen.</p>
+      <p>The edition shown is equivalent to the revision 'E' <ARMARM>, which
+      covers up to <ARMv5TE>.</p>
     </div>
 
     <div class="books">
@@ -77,7 +78,7 @@
       MessagePad.</p>
     </div>
 
-    <div class="clearfix"></div>
+    <div class="clearfix"></div> <* stretch slide to after end of book images *>
   </slide>
 </page>
 

@@ -51,7 +51,7 @@ ARM Ltd.
 </$macro>
 
 <$macro ARMv5E>
-<acronym title="ARM Architecture v5 with enhanced instructions">ARMv5E</acronym>
+<acronym title="ARM Architecture v5 with Enhanced instructions">ARMv5E</acronym>
 </$macro>
 
 <$macro ARMv5>
@@ -62,8 +62,16 @@ ARM Ltd.
 <acronym title="ARM Architecture v5 with Thumb">ARMv5T</acronym>
 </$macro>
 
+<$macro ARMv5TE>
+<acronym title="ARM Architecture v5 with Thumb and Enhanced instructions">ARMv5T</acronym>
+</$macro>
+
 <$macro ARMv6>
 <acronym title="ARM Architecture v6">ARMv6</acronym>
+</$macro>
+
+<$macro ARMARM>
+<acronym title="ARM Architecture Reference Manual">ARM ARM</acronym>
 </$macro>
 
 <$macro ASCII>
@@ -136,6 +144,14 @@ ARM Ltd.
 
 <$macro MIPS>
 <acronym title="Million Instructions Per Second">MIPS</acronym>
+</$macro>
+
+<$macro MPU>
+<acronym title="Memory Protection Unit">MPU</acronym>
+</$macro>
+
+<$macro MMU>
+<acronym title="Memory Management Unit">MMU</acronym>
 </$macro>
 
 <$macro PC>
