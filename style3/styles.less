@@ -314,7 +314,7 @@ A {
 			text-align: right;
 
 			&.current {
-				background: transparent url(img/small.png) no-repeat right -39px;
+				background: transparent url(img/small.png) no-repeat right -39px; // wrong colour
 			}
 		}
 
@@ -632,7 +632,7 @@ A {
 	> H1,
 	> H2,
 	> H3 {
-		line-height: 100%;
+		line-height: 80%;
 		padding-top: @headingpadding;
 		margin-bottom: @headingpadding;
 		padding-bottom: @headingpadding;
@@ -909,9 +909,8 @@ A {
 		padding: 0 @gutter;
 
 		H1, H2, H3 {
-			line-height: 100%;
-			line-height: inherit;
-			margin-bottom: @headingpadding;
+			line-height: 80%;
+			//margin-bottom: @headingpadding;
 			padding: @headingpadding 0;
 			text-align: inherit;
 		}		
@@ -925,12 +924,17 @@ A {
 
 		UL {
 			padding-bottom: 0;
-		}
 
-		UL LI {
-			text-align: inherit;
-			background: transparent url(img/small.png) no-repeat left -166px;
-			padding-left: 10px;
+			LI {
+				text-align: inherit;
+				background: transparent url(img/small.png) no-repeat left -166px;
+				padding-left: 10px;
+				display: inline-block;
+
+				&.current {
+					background: transparent url(img/small.png) no-repeat left -166px;
+				}
+			}
 		}
 	}
 	#content {
