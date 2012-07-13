@@ -120,7 +120,8 @@
   </$if>
   <div id="container">
     <header>
-    <sidebar>
+    <leftbar>
+    <rightbar>
     <content>
 </$macro>
 
@@ -159,14 +160,30 @@
 </$if>
 </$macro>
 
-<$macro sidebar>
-<div id="sidebar">
+<$macro leftbar>
+<div id="leftbar">
   <$if cond=(pagegroup0 <> "")>
     <h1>Section Contents <ndash> <(pagegroup0)></h1>
   <$else>
     <h1>Section Contents</h1>
   </$if>  
   <contents>
+</div>
+</$macro>
+
+<$macro rightbar>
+<div id="rightbar">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-7740294931961271";
+/* My first advert */
+google_ad_slot = "4621237884";
+google_ad_width = 160;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
 </div>
 </$macro>
 

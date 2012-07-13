@@ -26,10 +26,15 @@
 
 @monoletterspacing: 0.1em;
 
-@left: 192px;
-@width: 768px;
+@totalwidth: 1152px;
+@contentwidth: 768px;
+@barwidth: (@totalwidth - @contentwidth) / 2;
+@left: @barwidth;
+@right: @barwidth;
 @gutter: 16px;
-@sidebarwidth: @left - @gutter * 2;
+@leftbarwidth: @left - @gutter * 2;
+@rightbarleft: @left + @contentwidth;
+@rightbarwidth: @totalwidth - (@left + @contentwidth + @gutter + @gutter);
 
 @bodyfontsize: 100%;
 @h1fontsize: 2.25em;
@@ -168,12 +173,12 @@ A {
 	H1 {
 		background: transparent url(img/title.png) no-repeat;
 		height: @headerheight; // needed?
-		width: @width; // needed?
+		width: @contentwidth; // needed?
 
 		A {
 			display: block;
 			height: @headerheight;
-			width: @width;
+			width: @contentwidth;
 
 			SPAN {
 				display: none;
@@ -222,7 +227,7 @@ A {
 
 #tabs {
 	height: @tabheight;
-	width: @width;
+	width: @contentwidth;
 
 	LI {
 		list-style-type: none;
@@ -270,15 +275,15 @@ A {
 #python #tabs #pythontab A:hover	{ background-position: @tabsetx3 @tabsety3; }
 
 //
-// SIDEBAR
+// LEFTBAR
 //
 
-#sidebar {
+#leftbar {
 	border-bottom: 1px dotted @niceblue;
 	border-top: 1px dotted @niceblue;
 	float: left;
 	padding-top: 0.5em;
-	width: @sidebarwidth;
+	width: @leftbarwidth;
 
 	H1,H2,H3 {
 		color: @niceblue;
@@ -334,13 +339,26 @@ A {
 }
 
 //
+// RIGHTBAR
+//
+
+#rightbar {
+	border-bottom: 1px dotted @niceblue;
+	border-top: 1px dotted @niceblue;
+	margin-left: @rightbarleft;
+	padding-top: 0.5em;
+	position: absolute;
+	width: @rightbarwidth;
+}
+
+//
 // FLIPPER
 //
 
 #flipper {
 	clear: right;
 	margin-left: @left;
-	max-width: @width - @gutter * 2;
+	max-width: @contentwidth - @gutter * 2;
 	padding-bottom: @vertpadding;
 
 	H1 {
@@ -424,7 +442,7 @@ A {
 
 #content {
 	margin-left: @left - @gutter;
-	max-width: @width - @gutter * 2;
+	max-width: @contentwidth - @gutter * 2;
 	padding-left: @gutter;
 	padding-right: @gutter;
 	//xpadding-bottom: 128px;
@@ -688,7 +706,7 @@ A {
 	margin-top: -@footerheight; // move up into the space we've allowed for
 	position: relative;
 	text-align: center;
-	width: @width + 24px * 2;
+	width: @contentwidth + 24px * 2;
 	z-index: 10;
 
 	UL {
@@ -888,60 +906,60 @@ A {
 // MEDIA QUERIES
 //
 
-@media only screen and (max-width: 976px) {
-	BODY {
-		background-position: (-@left + @gutter) 0; 
-		//padding: 0;
-	}
-	#pagetopshadow {
-		background-position: (-@left + @gutter) 0;
-	}
-	#header {
-		padding: 4px 0 4px 0;
-		margin-left: 0;
-	}
-	#sidebar {
-		border: none;
-		display: block;
-		float: none;
-		width: inherit;
-		max-width: @width - @gutter * 2;
-		padding: 0 @gutter;
-
-		H1, H2, H3 {
-			line-height: 80%;
-			//margin-bottom: @headingpadding;
-			padding: @headingpadding 0;
-			text-align: inherit;
-		}		
-	
-		H1 {
-			border-bottom: 1px dotted @blue;
-			color: @blue;
-			display: block;
-			font-size: @h1fontsize;
-		}
-
-		UL {
-			padding-bottom: 0;
-
-			LI {
-				text-align: inherit;
-				background: transparent url(img/small.png) no-repeat left -166px;
-				padding-left: 10px;
-				display: inline-block;
-
-				&.current {
-					background: transparent url(img/small.png) no-repeat left -166px;
-				}
-			}
-		}
-	}
-	#content {
-		margin-left: 0;
-	}
-	#footer {
-		margin-left: -2 * @gutter;
-	}
-}
+// @media only screen and (max-width: 976px) {
+// 	BODY {
+// 		background-position: (-@left + @gutter) 0; 
+// 		//padding: 0;
+// 	}
+// 	#pagetopshadow {
+// 		background-position: (-@left + @gutter) 0;
+// 	}
+// 	#header {
+// 		padding: 4px 0 4px 0;
+// 		margin-left: 0;
+// 	}
+// 	#leftbar {
+// 		border: none;
+// 		display: block;
+// 		float: none;
+// 		width: inherit;
+// 		max-width: @contentwidth - @gutter * 2;
+// 		padding: 0 @gutter;
+// 
+// 		H1, H2, H3 {
+// 			line-height: 80%;
+// 			//margin-bottom: @headingpadding;
+// 			padding: @headingpadding 0;
+// 			text-align: inherit;
+// 		}		
+// 	
+// 		H1 {
+// 			border-bottom: 1px dotted @blue;
+// 			color: @blue;
+// 			display: block;
+// 			font-size: @h1fontsize;
+// 		}
+// 
+// 		UL {
+// 			padding-bottom: 0;
+// 
+// 			LI {
+// 				text-align: inherit;
+// 				background: transparent url(img/small.png) no-repeat left -166px;
+// 				padding-left: 10px;
+// 				display: inline-block;
+// 
+// 				&.current {
+// 					background: transparent url(img/small.png) no-repeat left -166px;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	#content {
+// 		margin-left: 0;
+// 	}
+// 	#footer {
+// 		margin-left: -2 * @gutter;
+// 	}
+// }
 
