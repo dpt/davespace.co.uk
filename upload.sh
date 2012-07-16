@@ -7,6 +7,8 @@ find . \( -type d -name CVS -prune \) -or \( -type f -print0 \) | xargs -0 chmod
 find . \( -type f -name "*.sh" -print0 \) | xargs -0 chmod 755
 
 # -C        auto-ignore files in the same way CVS does
+# THIS SEEMS TO DELETE ALL THE HTML FILES... GREAT
+
 # -r        recurse
 # -t        preserve times
 # -v        verbose
@@ -15,7 +17,7 @@ find . \( -type f -name "*.sh" -print0 \) | xargs -0 chmod 755
 # --delete  is only required when deleting anything which doesn't exist on
 #           the server
 #
-rsync -Crtvz . octopus.pepperfish.net:websites/davespace.co.uk/www/html --exclude-from=upload.excludes --delete --delete-after --delete-excluded
+rsync -rtvz . octopus.pepperfish.net:websites/davespace.co.uk/www/html --exclude-from=upload.excludes --delete --delete-after --delete-excluded
 
 exit 0
 
