@@ -3,7 +3,7 @@
 <page heading="Books" rev="arm-test" cur="books">
   <article>
   <p>There are a number of printed ARM books available. Below is a list of the
-  books I've encountered with some notes about how they stack up today in
+  books I&rsquo;ve encountered with some notes about how they stack up today in
   2012.</p>
   </article>
   <slide>
@@ -19,7 +19,7 @@
       <p>This is the single best book about writing software for <ARM>
       processors. It covers <ARM>, Thumb, efficient C programming, optimising
       <ARM> assembly, optimised primitives, digital signal processing,
-      exception and interrupt handling, firmware, caches, <MPU>s, <MMU>s. It
+      exception and interrupt handling, firmware, caches, <MPU>s and <MMU>s. It
       details <ARM> and Thumb instructions up to <ARMv6> and lists cycle
       timings for a variety of cores up to and including the ARM11.</p>
     </div>
@@ -34,14 +34,14 @@
         <dd>Published Aug 2000</dd>
       </dl>
       <p>Written by one of the principal creators of the <ARM> this, as the
-      name suggests, looks at <ARM> processors from an architectural point of
-      view. It covers the history of the architecture and discusses multiple
-      different implementations of the architecture from ARM7TDMI up to
+      name indicates, looks at <ARM> processors from an architectural point of
+      view. It covers the history of the architecture and describes multiple
+      different implementations of the architecture from the ARM7TDMI up to
       ARM10.</p>
       <p>A great book. One particular pleasing aspect is the number of
       high-quality diagrams. However it is over a decade old now. The chips it
-      discusses are quite dated. That said as you'd expect its fundamentals are
-      as sound as ever.</p>
+      discusses are quite dated. That said as you&rsquo;d expect its
+      fundamentals are as sound as ever.</p>
     </div>
 
     <div class="books">
@@ -57,11 +57,11 @@
       read but as a reference manual we trawl the <ARMARM> when we need to know
       the exact behaviour of an instruction.</p>
       <p>The printed book is expensive and superseded by <PDF> versions freely
-      available from <ARMLtd>'s website (you may need to register for the
+      available from <ARMLtd>&rsquo;s website (you may need to register for the
       latest <ARMARM> which covers <ARMv7>). Only buy this if you can find a
       copy for a sensible price or you object to reading <PDF>s on-screen.</p>
-      <p>The edition shown is equivalent to the revision 'E' <ARMARM>, which
-      covers up to <ARMv5TE>.</p>
+      <p>The edition shown is equivalent to the revision &lsquo;E&rsquo;
+      <ARMARM>, which covers up to <ARMv5TE>.</p>
     </div>
 
     <div class="books">
