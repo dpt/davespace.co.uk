@@ -8,6 +8,7 @@
 *~
 .DS_Store 
 .cvsignore
+CVS
 Makefile
 Thumbs.db
 hsc.prefs
