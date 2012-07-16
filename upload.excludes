@@ -1,0 +1,15 @@
+*.hsc
+*.less
+*.pl
+*.sh
+*.tmp
+*.txt
+*.xar
+*~
+.DS_Store 
+.cvsignore
+Makefile
+Thumbs.db
+hsc.prefs
+source
+upload.excludes

@@ -15,7 +15,7 @@ find . \( -type f -name "*.sh" -print0 \) | xargs -0 chmod 755
 # --delete  is only required when deleting anything which doesn't exist on
 #           the server
 #
-rsync -Crtvz --delete-after --exclude="source" --exclude="CVS" --exclude="Thumbs.db" --exclude="*.hsc" --exclude="*.tmp" --exclude="hsc.prefs" --exclude ".DS_Store" --include="*.html" --include "*.css" . octopus.pepperfish.net:websites/davespace.co.uk/www/html
+rsync -Crtvz . octopus.pepperfish.net:websites/davespace.co.uk/www/html --exclude-from=upload.excludes --delete --delete-after --delete-excluded
 
 exit 0
 
