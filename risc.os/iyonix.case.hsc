@@ -223,13 +223,13 @@
 
   <p>To resolve the <ldq>pyjamas<rdq> reset problem I<rq>d, a couple of years
   previously, replaced its original GeForce 2 MX400 card with a GeForce FX5500
-  model which has a small on-board fan. I had tried replacing the on-board fan]
-  with a fanless northbridge heatsink, but it got too hot &mdash; even with the
-  front 120mm fans blowing &mdash; so a fan mounted on the card is necessary.
-  So I replaced the heatsink with a super-quiet fan copper <VGA> cooler from
-  <QuietPC>. Unlike the stock cooler this can<rq>t be powered from the video
-  card itself, so is instead connected up to a spare power rail from the
-  <PSU>.</p>
+  model which has a small on-board fan. I had tried replacing the on-board fan
+  with a fanless northbridge heatsink, but it became too hot &mdash; even with
+  the front 120mm fans blowing &mdash; so a fan mounted on the card is
+  necessary. I replaced the heatsink with a super-quiet fan copper <VGA>
+  cooler from <QuietPC>. Unlike the stock cooler this can<rq>t be powered from
+  the video card itself, so is instead connected up to a spare power rail from
+  the <PSU>.</p>
 
   <captionedimage url="iyonix.case.photos/DSCF2940.JPG" dsc="fnord!">GeForce
   FX5500 with new copper fan and heatsink mounted on the CPU and individual
