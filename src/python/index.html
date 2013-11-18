@@ -1,0 +1,17 @@
+section: python
+title: Python
+date: 2013-04-07
+tags: Script, Python
+layout: page
+pageOrder: 0
+----
+
+<h2>{{ template "iconforpage" . }} Python</h2>
+
+<p>This section holds a few useful <a href="http://www.python.org/">Python</a> scripts I’ve created for managing collections of photos and digital music.</p>
+
+<ul class="fa-ul">
+  {{ range .Site.Pages.Children "python/" }}
+  <li>{{ template "iconforlist" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a>{{ if .Other.Subtitle }} – {{ .Other.Subtitle }}{{ end }}</li>
+  {{ end }}
+</ul>

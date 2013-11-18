@@ -1,0 +1,242 @@
+{{ define "header" }}<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="{{ html .Site.Other.Author }}">
+  <meta name="keywords" content="DaveSpace, David Thomas, Dave Thomas">
+  <meta name="description" content="David Thomas's website.">
+
+  <title>{{ .Site.Other.Title }}{{ if .Title }} – {{ .Title }}{{ end }}</title>
+
+  <link rel="icon" type="image/vnd.microsoft.icon" href="{{ .Rel "favicon.ico" }}" />
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ .Rel "favicon.ico" }}" />
+
+  <link rel="stylesheet" type="text/css" href="{{ .Rel "style/flat.css" }}">
+
+  <link rel="alternate" type="application/atom+xml" title="{{ html .Site.Other.Title }} feed" href="{{ .Rel "blog.atom" }}">
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-29131837-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+</head>
+<body{{ if .Other.Section }} id="{{ html .Other.Section }}"{{end}}>
+
+  <div id="header">
+    <h1><i class="fa fa-cogs"></i> <a href="{{ .Rel "/" }}">DaveSpace</a></h1>
+  </div>
+
+  <div id="nav">
+    <h4>About me</h4>
+    {{ template "nav-about" . }}
+    <h4>Categories</h4>
+    {{ template "nav-categories" . }}
+    <h4>Recent Posts</h4>
+    {{ template "nav-recent" . }}
+    <h4>Tags</h4>
+    {{ template "nav-tags" . }}
+    <h4>GitHub</h4>
+    {{ template "nav-github" . }}
+    <h4>Twitter</h4>
+    {{ template "nav-twitter" . }}
+    <h4>Delicious</h4>
+    {{ template "nav-delicious" . }}
+    <h4>Email</h4>
+    {{ template "nav-email" . }}
+  </div>
+{{ end }}
+
+{{ define "nav-about" }}
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-male"></i> David Thomas</li>
+  <li><i class="fa-li fa fa-wrench"></i> Software Engineer</li>
+  <li><i class="fa-li fa fa-location-arrow"></i> Glasgow, Scotland</li>
+</ul>
+{{ end }}
+
+{{ define "nav-categories" }}
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/arm/" }}">ARM</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/doodles/" }}">Doodles</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/projects/" }}">Projects</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/python/" }}">Python</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/risc.os/" }}">RISC&nbsp;OS</a></li>
+</ul>
+{{ end }}
+
+{{ define "nav-recent" }}
+<ul class="fa-ul">
+  {{ with .Site.Pages.Children "blog/" }}
+  {{ range .Slice 0 5 }}
+  <li><i class="fa-li fa fa-bookmark"></i> <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
+  {{ end }}
+  {{ end }}
+</ul>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-rss"></i> <a href="{{ .Rel "blog.atom" }}">Recent posts</a></li>
+  <li><i class="fa-li fa fa-rss"></i> <a href="{{ .Rel "blog-all.atom" }}">All posts</a></li>
+</ul>
+{{ end }}
+
+{{ define "nav-tags" }}
+<p>{{ range .Site.Pages.Children "tags/" }}<a href="{{ $.Rel .Url }}">{{ .Title }}</a> {{ end }}</p>
+{{ end }}
+
+{{ define "nav-twitter" }}
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-twitter"></i> <a href="https://twitter.com/bagospanners">@bagospanners</a><br/>
+  – jibber jabber</li>
+  <li><i class="fa-li fa fa-twitter"></i> <a href="https://twitter.com/bagospannersurl">@bagospannersurl</a><br/>
+  – interesting reads</li>
+</ul>
+{{ end }}
+
+{{ define "nav-github" }}
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-github"></i> <a href="https://github.com/dpt">dpt on GitHub</a></li>
+</ul>
+{{ end }}
+
+{{ define "nav-delicious" }}
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-paperclip"></i> <a href="https://delicious.com/dpt">dpt on delicious</a><br/>
+  – no longer updated</li>
+</ul>
+{{ end }}
+
+{{ define "nav-email" }}
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-envelope"></i> <a href="dave@davespace.co.uk">dave@davespace.co.uk</a></li>
+</ul>
+{{ end }}
+
+
+{{ define "page" }}
+{{ template "header" . }}
+<!-- start page -->
+{{ .Content }}
+<!-- end page -->
+{{ template "footer" . }}
+{{ end }}
+
+
+{{ define "post" }}
+<!-- start post -->
+<article>
+  <header>
+    <!-- start post header -->
+    <h1>{{ template "iconforpostpage" . }} {{ .Title }}</h1>
+    {{ template "meta" . }}
+    <!-- end post header -->
+  </header>
+  {{/* These comments are used by index.html to locate content to extract. */}}
+  <!-- start post content -->
+  <section>
+    {{ .Content }}
+  </section>
+  <!-- end post content -->
+  {{ template "flip" . }}
+</article>
+<!-- end post -->
+{{ end }}
+
+
+{{ define "date" }}<time datetime="{{ .Format "2006-01-02T15:04:05Z07:00" }}">{{ .Format "02 January 2006" }}</time>{{ end }}
+
+
+{{ define "iconforpage"     }}<i class="fa fa-{{ if .Other.Icon }}{{ .Other.Icon }}{{ else }}bookmark{{ end }}"></i>{{ end }}
+{{ define "iconforlist"     }}<i class="fa-li fa fa-{{ if .Other.Icon }}{{ .Other.Icon }}{{ else }}chevron-circle-right{{ end }}"></i>{{ end }}
+
+{{ define "iconforpostpage" }}<i class="fa fa-{{ if .Other.Icon }}{{ .Other.Icon }}{{ else }}cog{{ end }}"></i>{{ end }}
+
+{{ define "iconfortagpage"  }}<i class="fa fa-{{ if .Other.Icon }}{{ .Other.Icon }}{{ else }}tags{{ end }}"></i>{{ end }}
+{{ define "iconfortaglist"  }}<i class="fa-li fa fa-{{ if .Other.Icon }}{{ .Other.Icon }}{{ else }}tag{{ end }}"></i>{{ end }}
+
+
+{{ define "tag" }}
+<h2>{{ template "iconfortagpage" }} Pages tagged with “{{ .Title }}”</h2>
+{{/* Note significant whitespace - placing end marker on next line would cause spurious paragraphs to be emitted by markdown. */}}
+<ul class="fa-ul">
+  {{ range .Site.Pages.WithTag .Title }}
+  <li>{{ template "iconfortaglist" . }} {{ template "date" .Date }} – <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
+  {{ end }}
+</ul>
+{{ end }}
+
+
+{{ define "meta" }}
+<!-- start meta -->
+<div class="meta">
+  by <span class="author">{{ html .Site.Other.Author }}</span> on {{ template "date" .Date }} &mdash;
+  <ul>
+    {{ range $i, $t := .Tags }}<li><i class="fa fa-tag"></i> <a href="{{ $.Rel (printf "/tags/%s.html" $t) }}">{{ $t }}</a></li>
+{{ end }}
+  </ul>
+</div>
+<!-- end meta -->
+{{ end }}
+
+
+{{ define "flip" }}
+<!-- start flip -->
+{{ if or .Other.Previous .Other.Next }}
+<h2>Navigate</h2>
+<div class="flip">
+  <div class="previous">
+    {{ if .Other.Previous }}<i class="fa fa-chevron-circle-left"></i> <a href="{{ .Other.Previous }}.html">{{ template "titleofprev" . }}</a>{{ end }}
+  </div>
+  <div class="next">
+    {{ if .Other.Next }}<a href="{{ .Other.Next }}.html">{{ template "titleofnext" . }}</a> <i class="fa fa-chevron-circle-right"></i>{{ end }}
+  </div>
+</div>
+{{ end }}
+<!-- end flip -->
+{{ end }}
+
+{{/* Ugh. Because there's no equality operator I have to use UrlMatches and feed it a regexp concatenated using printf. There must be a better way than this. */}}
+
+{{ define "titleofprev" }}
+{{ $arg := .Other.Previous }}
+{{ range .Site.Pages.Children "arm/" }}
+  {{ if .UrlMatches (printf "/%s\\.html" $arg) }}
+  {{ .Title }}
+  {{ end }}
+{{ end }}
+{{ end }}
+
+{{ define "titleofnext" }}
+{{ $arg := .Other.Next }}
+{{ range .Site.Pages.Children "arm/" }}
+  {{ if .UrlMatches (printf "/%s\\.html" $arg) }}
+  {{ .Title }}
+  {{ end }}
+{{ end }}
+{{ end }}
+
+
+{{ define "allpages" }}
+<ul>
+{{ range .Site.Pages.Children "arm/" }}
+  {{ if .UrlMatches ".*\\.html" }}
+  <li>{{ .Title }}</li>
+  {{ end }}
+{{ end }}
+</ul>
+{{ end }}
+
+
+{{ define "footer" }}
+  <div id="footer">
+    Copyright &copy; David Thomas, 2013<br/>
+    Built using <i class="fa fa-leaf"></i> <a href="https://github.com/piranha/gostatic">gostatic</a> and <i class="fa fa-flag"></i> <a href="http://fontawesome.io/">Font Awesome</a>.
+  </div>
+</body>
+</html>
+{{ end }}
+

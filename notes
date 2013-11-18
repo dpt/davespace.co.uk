@@ -1,0 +1,89 @@
+TODO
+
+- blog fragments on the main index page
+  - ie. splitting at <!-- more --> markers
+
+- need a page squishing pass
+  - get back old scripts for page compression?
+
+- sync motionmasks page with github version of the same
+
+
+FUTURE
+
+- tip jar / begging
+
+- ideas for content:
+    - drawings / doodles
+    - icons i drew on RO
+    - old apps
+    - bring back Tristone content
+    - stick figures
+
+
+DONE
+
+- populate the 'tags' bit on the main index page
+  - possible within gostatic, or will it need some python?
+
+- stop fractions appearing in markdown output [built custom gostatic binary]
+
+- syntax highlighting - use pygments
+  - return to ARM highlighter [just re-used old one converted to python and integrated into highlightsyntax.py]
+
+    ['monokai', 'manni', 'rrt', 'perldoc', 'borland', 'colorful', 'default', 'murphy', 'vs', 'trac', 'tango', 'fruity', 'autumn', 'bw', 'emacs', 'vim', 'pastie', 'friendly', 'native']
+
+    murphy - not good on dark bg
+
+
+    with no cache:
+
+    dave@macbook ~/Dropbox/Projects/blog.gostatic $ time gostatic -f ./config
+    Rendering 248 changed pages of 248 total
+
+    real	0m23.400s
+    user	0m14.881s
+    sys	0m5.468s
+
+    with cache enabled:
+
+    dave@macbook ~/Dropbox/Projects/blog.gostatic $ time gostatic -f ./config
+    Rendering 248 changed pages of 248 total
+
+    real	0m11.917s
+    user	0m6.180s
+    sys	0m3.432s
+
+- navigation for the arm courses
+  - dropdown rather than flippers or what?
+  - [done] simple text next/prev flippers
+
+- 'recent posts'
+  - sorted list on the main index page [done, but check sorting]
+
+- large scale slides
+  - [abandoned], didn't look right: content would need re-formatting for the 'smaller' amount of space
+
+- reset.css
+  - needed?
+
+- remove/abandon adverts
+
+- tags in nav bar ordered correctly?
+  - need to check that these are in a sensible order. they don't look alphabetic to me.
+
+- ive made the arm pages use # ## and ### for headings but the other pages still have to use ### #### 
+  - need to wrap the other pages in section tags
+  - [done] i think
+
+- ensure page icons are consistent
+  - photofiler => camera, privateeye => search, etc.
+
+- add google analytics meta header
+
+- make all images a multiple of 20px high
+  [tried, gave up]
+
+- re-link up the large versions of images
+  [later, maybe]
+

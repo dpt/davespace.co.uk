@@ -1,0 +1,548 @@
+// flat.less
+//
+// by dpt
+
+// fonts:
+// - 16px base on 20px line height
+// - 36, 20, 16, 12 px sizes
+//
+// colours:
+// - 0F687D mid blue
+// - 078E9F light blue
+// - D3E2EB lightblue
+// - D7990C yellow
+// - 26292F slate
+//
+// learned:
+// - borders around elements will shift the alignment, so either the border has to be absent or 20px or a multiple thereof
+
+@import "src/style/elements.less";
+
+// This needs to be a path from the CSD, not relative to the stylesheet. (wtf)
+//@import "src/style/font-awesome-4.0.0/less/font-awesome.less";
+@import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css');
+
+@import url('//fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic');
+@import url('//fonts.googleapis.com/css?family=Cabin:700');
+@import url('normalize.css');
+@import url('syntax.css');
+
+// COLOURS
+@blue:			rgb( 15, 104, 125);
+@midblue:		rgb(  7, 142, 159);
+@lightblue:		rgb(211, 226, 235);
+@yellow:		rgb(215, 153,  12);
+@slate:			rgb( 38,  41,  47);
+@linkblue:		rgb(  0,   0, 255);
+
+@shadow:		0.333333;
+
+// TYPOGRAPHY
+@bodyfontfamily:	'Asap', Calibri, Helvetica, Arial, sans-serif;
+@headingfontfamily:	'Cabin', Corbel, Helvetica, Arial, sans-serif;
+@monofontfamily:	Menlo, 'Lucida Console', Courier, 'Courier New', monospace;
+
+@bodyfontsize:		16px;
+@bodyleading:		1.25; // == 20px == @grid
+
+// WIDTHS
+@grid:			20px;
+@left:			200px;
+
+// MIXINS
+
+.monospaced
+{
+	font-family:		@monofontfamily;
+	letter-spacing:		0.005em;
+}
+
+
+// Convert the pixel size to ems for font size.
+// Round the line height to a multiple of @grid.
+// Specify the line-height and margin-bottom relatively.
+//
+.font (@size: 16px; @margin: @grid; @spacing: 0)
+{
+	font-size:		unit(@size / @bodyfontsize, em);
+	line-height:		unit((floor((@size + @grid - 1) / @grid) * @grid) / @size);
+	margin-bottom:		unit(@margin / @size, em);
+	margin-top:		0;
+
+	letter-spacing:		@spacing;
+}
+
+
+.whiteonslate
+{
+	color:			white;
+	background:		@slate;
+}
+
+.whiteonblue
+{
+	color:			white;
+	background:		@blue;
+}
+
+.whiteonmidblue
+{
+	color:			white;
+	background:		@midblue;
+}
+
+.heading1
+{
+	.font(72px, @spacing: -0.02em);
+	.whiteonslate;
+	.textshadow;
+
+	padding-bottom:		12px;
+	padding-top:		8px; // manual adjustment
+
+	A
+	{
+		.undecoratedlink;
+		color:		white;
+	}
+}
+
+.heading2
+{
+	.font(28px);
+	.whiteonblue;
+	.textshadow(@shadow);
+
+	padding-top:		8px; // manual adjustment
+	padding-bottom:		12px;
+}
+
+.heading3
+{
+	.font(20px);
+	.whiteonmidblue;
+	.textshadow(@shadow);
+
+	padding-top:		9px; // manual adjustment
+	padding-bottom:		11px;
+}
+
+.heading4
+{
+        .font;
+	.whiteonslate;
+	.textshadow;
+
+	padding-top:		0px; // manual adjustment
+	padding-bottom:		0px;
+}
+
+.textshadow (@alpha: 1.0)
+{
+	text-shadow:		1px 1px 0px rgba(0, 0, 0, @alpha);
+}
+
+.undecoratedlink
+{
+	&:link, &:visited, &:active
+	{
+		text-decoration: none;
+	}
+	&:hover
+	{
+		text-decoration: underline;
+	}
+}
+
+.center
+{
+	display:		table;
+	margin:			0 auto @grid auto;
+}
+
+// BASIC TAGS
+
+HTML
+{
+	background-color:	#fff;
+}
+
+BODY
+{
+	margin:			@grid @grid @grid @left;
+	padding:		0;
+
+	font:			@bodyfontsize/@bodyleading @bodyfontfamily;
+	vertical-align:		baseline;
+}
+
+ARTICLE
+{
+	margin-bottom:		@grid;
+
+	.meta
+	{
+		P
+		{
+				.font(14px);
+		}
+	}
+
+	H1 { .heading2; text-transform: none; }
+	H2 { .heading3; }
+	H3 { .heading4; }
+	h4 { color: red; } // should never be used
+
+        &::after
+        {
+            display:		block;
+
+	    color:		@slate;
+            content:		"\f085";
+            font-family:	FontAwesome;
+            text-align:		center;
+        }
+}
+
+// summarised articles have reduced fonit sizes
+ARTICLE.summarised
+{
+	H1 { .heading3; text-transform: none; }
+	H2 { .heading4; }
+	h3, h4 { color: red; } // should never be used
+}
+
+H1, H2, H3, H4
+{
+	// Using relative units here even though the left hand edge of the text will be different across different headers.
+	padding-left:		0.3333em;
+	padding-right:		0.3333em;
+
+	.rounded(0.25em);
+	color:			white;
+	font-family:		@headingfontfamily;
+}
+
+H1 { .heading1; text-transform: lowercase; }
+H2 { .heading2; }
+H3 { .heading3; }
+H4 { .heading4; }
+
+P
+{
+	.font;
+}
+
+UL, OL
+{
+	.font;
+}
+
+// Have to stop gaps appearing at the end of sub-lists.
+UL UL, OL OL
+{
+	margin-bottom:		0;
+}
+
+BLOCKQUOTE
+{
+	.font;
+
+	padding:		@grid; // 40px total
+
+	.inner-shadow(4px, 4px, 8px, @shadow);
+	.rounded(0.25em);
+	background-color:	@yellow;
+	font-style:		italic;
+
+	&:before
+	{
+		color:		@midblue;
+		content:	open-quote;
+		font-size:	4em;
+		font-weight:	900;
+		line-height:	0.1em;
+		margin-right:	0.25em;
+		quotes:		'\201C' '\201D' '\2018' '\2019';
+		vertical-align:	-0.4em;
+	}
+
+	// Fix trailing extra spacing problem.
+	> :last-child
+	{
+		margin-bottom:	0;
+	}
+}
+
+.highlight
+{
+	.font(14px);
+	padding:		@grid; // 40px total
+
+	.inner-shadow(4px, 4px, 8px, @shadow);
+	.monospaced;
+	.rounded(0.5em);
+
+	// Leave all colours up to the syntax highlighting stylesheet.
+}
+
+PRE
+{
+	padding:		0;
+	margin:			0 0 @grid 0;
+}
+
+// Images must be manually resized to a multiple of @grid vertically in order for the grid alignment to work.
+IMG
+{
+	.center;
+
+	// Vague rule to handle hyperlinked captions.
+	+ A[href]
+	{
+		.font(14px);
+		.center;
+		margin-top: -@grid;
+	}
+}
+
+TABLE
+{
+	margin:			0 auto @grid auto; // Centre
+
+	THEAD TD
+	{
+		border-bottom:	1px solid @blue;
+		font-weight:	bold;
+		text-align:	center;
+	}
+
+	TH, TD
+	{
+		font-size:	1.0000000em; // 16px
+		line-height:	1.2500000em; // 20px
+
+		padding-left:	0.25em;
+		padding-right:	0.25em;
+	}
+	TD
+	{
+		border-bottom:	1px solid @midblue;
+	}
+}
+
+// INLINE ELEMENTS
+
+KBD
+{
+	padding-left:		0.5em;
+	padding-right:		0.5em;
+
+	.rounded(0.25em);
+	.whiteonslate;
+}
+
+// trying to debug here inconsistent line heights when monospace used
+// 16px height font coming out in 17px high units
+// evidently these '16px' fonts are bigger than expected so force the line downwards
+// or possible mistake with line-height
+
+DFN, EM, STRONG, VAR
+{
+	font-size:		1.0000000em;	// 16px
+	line-height:		1.0;		// 16px NOT 20px!
+}
+
+CODE, KBD, SAMP
+{
+	.monospaced;
+	font-size:		0.875em;	// 14px
+	line-height:		1.0;		// 16px NOT 20px!
+}
+
+// USER ELEMENTS
+
+#nav
+{
+	margin-left:		-@left + @grid;
+
+	float:			left;
+	position:		absolute:
+	top:			0;
+	left:			0;
+	width:			160px;
+
+	P
+	{
+		.font(12px);
+		text-align:	center;
+	}
+
+	UL
+	{
+		padding-left:	0;
+	}
+
+	LI
+	{
+		.font(12px; 0);
+		text-align:	right;
+		color:		@slate;
+		list-style:	none;
+		text-indent:	0;
+
+                I
+                {
+                    font-size: 133%; // Increase icon size.
+                }
+	}
+}
+
+.meta
+{
+	.font(14px);
+
+	UL
+	{
+		display:	inline;
+
+		padding-left:	0;
+
+		list-style:	none;
+	}
+
+	LI
+	{
+		display:	inline;
+
+		padding:	0.25em 0.5em;
+
+		.rounded(0.25em);
+		background-color: @lightblue;
+		color:		@blue;
+
+		A
+		{
+			.undecoratedlink;
+			color:	@midblue; // defeat inbuilt style
+		}
+	}
+}
+
+.slide, .examples
+{
+	margin-bottom:		@grid;
+	padding:		@grid;
+
+	background-color:	@lightblue;
+	.rounded(@grid);
+	position:		relative; // for shadows
+
+	// Fix trailing extra spacing problem.
+	> :last-child
+	{
+		margin-bottom:	0;
+	}
+
+// this stuff is trying to make slides scale up
+// 	P
+// 	{
+// 		.font(24px);
+// 	}
+// 
+// 	UL, OL
+// 	{
+// 		.font(24px);
+// 	}
+// 
+// 	UL UL, OL OL
+// 	{
+// 		font-size: 1em;
+// 		line-height: 1.4444; // or something
+// 	}
+}
+
+.slide::after, .examples::after
+{
+	bottom:			6px;
+	.drop-shadow(0px, 10px, 10px, @shadow);
+	content:		"";
+	height:			5%;
+	left:			1%;
+	position:		absolute;
+	width:			98%;
+	z-index:		-1;
+}
+
+.remarks
+{
+}
+
+// instruction syntax: large, centred, non-wrapping
+.format
+{
+	.center;
+	.rounded(0.5em); // feels like a bodge
+	background-color:	@yellow;
+	padding:		@grid; // 40px total
+	text-align:		center;
+	white-space:		nowrap;
+
+	.inner-shadow(4px, 4px, 8px, @shadow);
+
+	> CODE
+	{
+		.font(20px);
+		.monospaced;
+	}
+}
+
+
+.icon
+{
+        border-radius: 1em;
+        border: 10px solid #808080;
+        margin: 12px;
+        padding: 18px;
+
+        IMG
+        {
+            margin-bottom:      0; // defeat IMG rule
+        }
+}
+
+
+.flip
+{
+        display:                inline-block; // seems to work...
+        width:                  100%;
+
+	.previous
+        {
+            float: left;
+        }
+	.next
+        {
+            float: right;
+        }
+}
+
+
+#footer
+{
+	.font(12px);
+
+        clear:                  both;
+
+	padding:		@grid; // 40px total
+
+	.rounded(18px); // 72px * 0.25em, feels bodgey
+	.whiteonslate;
+	.textshadow;
+	text-align:		center;
+
+	A
+	{
+		color:		white;
+	}
+}

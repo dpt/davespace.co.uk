@@ -1,0 +1,71 @@
+# davespace.co.uk config for gostatic
+#
+# by dpt
+
+# I can't seem to add a dependency on site.tmpl and have it update those files.
+
+TEMPLATES = site.tmpl
+SOURCE = src
+OUTPUT = generated
+TITLE = DaveSpace
+URL = http://www.davespace.co.uk/
+AUTHOR = David Thomas
+
+blog/*.md:
+	config
+	ext .html
+	tags tags/*.tag
+	markdown
+	template post
+	template page
+
+# Only ARM slides need makeslides.py
+arm/*/*.md:
+	config
+	ext .html
+	tags tags/*.tag
+	:python scripts/highlightsyntax.py
+	markdown
+	:python scripts/makeslides.py
+	template post
+	template page
+
+doodles/index.html: doodles/*.md
+	config
+	inner-template
+	template page
+
+*.md:
+	config
+	ext .html
+	tags tags/*.tag
+	markdown
+	template post
+	template page
+
+# Special rule to output pages for the tags formed in 'tags ...' processes of above rules.
+# Dependencies seem to need to be fully specified here (x/y/z/*.md).
+*.tag: blog/*.md arm/*/*.md python/*.md *.md
+	ext .html
+	template tag
+	template page
+
+style/*.less:
+	ext .css
+	:lessc -
+
+blog.atom: blog/*.md
+	inner-template
+
+blog-all.atom: blog/*.md
+	inner-template
+
+index.html: blog/*.md
+	config
+	inner-template
+	template page
+
+index-all.html: blog/*.md
+	config
+	inner-template
+	template page

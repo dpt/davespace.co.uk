@@ -1,0 +1,14 @@
+section: projects
+title: Projects
+icon: wrench
+date: 2013-10-29
+tags: Project
+----
+
+<h2>{{ template "iconforpage" . }} Projects</h2>
+
+<ul class="fa-ul">
+  {{ range .Site.Pages.Children "projects/" }}
+  <li>{{ template "iconforlist" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a>{{ if .Other.Subtitle }} – {{ .Other.Subtitle }}{{ end }}</li>
+  {{ end }}
+</ul>

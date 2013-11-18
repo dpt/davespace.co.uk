@@ -1,0 +1,16 @@
+icon: home
+----
+
+<h2>Recent Posts</h2>
+{{ with .Site.Pages.Children "blog/" }}
+{{ range .Slice 0 5 }}
+<article class="summarised">
+  <h1>{{ template "iconforpage" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a></h1>
+  {{ template "meta" . }}
+  {{/* I presume this is a greedy match. */}}
+  {{ with cut .Process.Content "<section>" "</section>" }}
+    {{ . }}
+  {{ end }}
+</article>
+{{ end }}
+{{ end }}
