@@ -1,12 +1,10 @@
 TODO
 
-- blog fragments on the main index page
+- use blog fragments on the main index page
   - ie. splitting at <!-- more --> markers
 
 - need a page squishing pass
   - get back old scripts for page compression?
-
-- sync motionmasks page with github version of the same
 
 
 FUTURE
@@ -86,4 +84,6 @@ DONE
 
 - re-link up the large versions of images
   [later, maybe]
+
+- sync motionmasks page with github version of the same
 
