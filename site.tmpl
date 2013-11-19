@@ -189,10 +189,10 @@
 <h2>Navigate</h2>
 <div class="flip">
   <div class="previous">
-    {{ if .Other.Previous }}<i class="fa fa-chevron-circle-left"></i> <a href="{{ .Other.Previous }}.html">{{ template "titleofprev" . }}</a>{{ end }}
+    {{ if .Other.Previous }}<a href="{{ .Other.Previous }}.html"><i class="fa fa-chevron-circle-left"></i> {{ template "titleofprev" . }}</a>{{ end }}
   </div>
   <div class="next">
-    {{ if .Other.Next }}<a href="{{ .Other.Next }}.html">{{ template "titleofnext" . }}</a> <i class="fa fa-chevron-circle-right"></i>{{ end }}
+    {{ if .Other.Next }}<a href="{{ .Other.Next }}.html">{{ template "titleofnext" . }} <i class="fa fa-chevron-circle-right"></i></a>{{ end }}
   </div>
 </div>
 {{ end }}
