@@ -8,7 +8,10 @@ tags: Project
 <h2>{{ template "iconforpage" . }} Projects</h2>
 
 <ul class="fa-ul">
+  {{/* This captures every file in the hierarchy... so we add a UrlMatches check too. */}}
   {{ range .Site.Pages.Children "projects/" }}
+  {{ if .UrlMatches ".*\\.html" }}
   <li>{{ template "iconforlist" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a>{{ if .Other.Subtitle }} – {{ .Other.Subtitle }}{{ end }}</li>
+  {{ end }}
   {{ end }}
 </ul>

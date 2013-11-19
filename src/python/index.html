@@ -11,7 +11,10 @@ pageOrder: 0
 <p>This section holds a few useful <a href="http://www.python.org/">Python</a> scripts I’ve created for managing collections of photos and digital music.</p>
 
 <ul class="fa-ul">
+  {{/* This captures every file in the hierarchy... so we add a UrlMatches check too. */}}
   {{ range .Site.Pages.Children "python/" }}
+  {{ if .UrlMatches ".*\\.html" }}
   <li>{{ template "iconforlist" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a>{{ if .Other.Subtitle }} – {{ .Other.Subtitle }}{{ end }}</li>
+  {{ end }}
   {{ end }}
 </ul>
