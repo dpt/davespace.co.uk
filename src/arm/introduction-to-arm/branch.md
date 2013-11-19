@@ -82,4 +82,4 @@ You can set up the LR manually if needed, then load into PC:
 ``` arm
 MOV lr,pc
 LDR pc,=dest
-````
+```
