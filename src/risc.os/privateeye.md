@@ -42,7 +42,7 @@ It requires RISC OS 3.6 or later and a Boot sequence with the Nested Wimp and a 
   
 ## Screenshots
 
-![Screenshot](/software/eyesnap4t.png)
+![Screenshot](/software/thumbs/eyesnap4.png)
 [Enlarge](/software/eyesnap4.png)
 
 [Pixeloo’s untooned Jessica Rabbit](http://pixeloo.blogspot.com/2008/04/jessica-rabbit-untooned.html) demonstrates improved transparency support. (First appeared in version 2.85)

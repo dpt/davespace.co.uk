@@ -22,7 +22,7 @@ This version includes an uncrunched `!RunImage`.
 
 ## Screenshots
 
-![Screenshot](../software/toolsnap1t.png)
+![Screenshot](../software/thumbs/toolsnap1.png)
 [Toolbar in action](../software/toolsnap1.png)
 
 ## Downloads
