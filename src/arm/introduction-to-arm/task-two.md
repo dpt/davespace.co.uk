@@ -5,7 +5,7 @@ date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
 layout: page
 pageOrder: 1250
-next: task-two-answers
+next: thumb
 previous: task-one-answers
 ----
 
