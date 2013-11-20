@@ -47,17 +47,17 @@ It requires RISC OS 3.6 or later and a Boot sequence with the Nested Wimp and a 
 
 [Pixeloo’s untooned Jessica Rabbit](http://pixeloo.blogspot.com/2008/04/jessica-rabbit-untooned.html) demonstrates improved transparency support. (First appeared in version 2.85)
 
-![Screenshot](/software/eyesnap3t.png)
+![Screenshot](/software/thumbs/eyesnap3.png)
 [Enlarge](/software/eyesnap3.png)
 
 Olivia Wilde demonstrates JPEG metadata display. (First appeared in version 2.75)
 
-![Screenshot](/software/eyesnap2t.png)
+![Screenshot](/software/thumbs/eyesnap2.png)
 [Enlarge](/software/eyesnap2.png)
 
 Eva Green demonstrates the effects window. (First appeared in version 2.50)
 
-![Screenshot](/software/eyesnap1t.png)
+![Screenshot](/software/thumbs/eyesnap1.png)
 [Enlarge](/software/eyesnap1.png)
 
 Tigger the cat demonstrates the interactive rotation dialogue. (First appeared in version 2.00)
