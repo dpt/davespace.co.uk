@@ -1,4 +1,8 @@
 #!/bin/bash
+#
+# Upload davespace.co.uk to pepperfish.
+#
+# by dpt
 
 DIR=generated
 
