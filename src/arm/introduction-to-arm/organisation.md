@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Organisation
+section: ARM,Introduction to ARM
+title: Organisation
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

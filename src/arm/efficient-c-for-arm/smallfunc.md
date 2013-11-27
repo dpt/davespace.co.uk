@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Small Functions
+section: ARM,Efficient C for ARM
+title: Small Functions
 icon: rocket
 date: 2012-03-03
 layout: page

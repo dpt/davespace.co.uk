@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Pointer Aliasing
+section: ARM,Efficient C for ARM
+title: Pointer Aliasing
 icon: rocket
 date: 2012-03-03
 layout: page

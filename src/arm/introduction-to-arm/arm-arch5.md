@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Architecture 5
+section: ARM,Introduction to ARM
+title: Architecture 5
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

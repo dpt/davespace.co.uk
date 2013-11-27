@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Division and Modulus
+section: ARM,Efficient C for ARM
+title: Division and Modulus
 icon: rocket
 date: 2012-03-03
 layout: page

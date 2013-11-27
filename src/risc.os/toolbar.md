@@ -1,4 +1,4 @@
-section: riscos
+section: RISC OS
 title: Toolbar
 subtitle: Application launcher.
 icon: bolt

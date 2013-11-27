@@ -1,11 +1,12 @@
-section: arm
-title: Introduction to ARM: Why Learn Assembly Language?
+section: ARM,Introduction to ARM
+title: Why Learn Assembly Language?
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
 layout: page
 pageOrder: 1010
 next: not-trivial
+previous: index
 ----
 
 %% Slide

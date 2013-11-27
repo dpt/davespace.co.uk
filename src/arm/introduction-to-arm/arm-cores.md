@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Summary of current ARM cores
+section: ARM,Introduction to ARM
+title: Summary of current ARM cores
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

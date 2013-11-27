@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Unaligned Data Access
+section: ARM,Efficient C for ARM
+title: Unaligned Data Access
 icon: rocket
 date: 2012-03-03
 layout: page

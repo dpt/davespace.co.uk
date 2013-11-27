@@ -1,4 +1,4 @@
-section: riscos
+section: RISC OS
 title: PrivateEye
 subtitle: Image viewer with some editing features.
 icon: search

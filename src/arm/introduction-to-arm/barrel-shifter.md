@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Barrel Shifter
+section: ARM,Introduction to ARM
+title: Barrel Shifter
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

@@ -1,4 +1,4 @@
-section: python
+section: Python
 title: remove-duplicates.py
 subtitle: Deletes duplicate files with the same checksum.
 date: 2013-04-07

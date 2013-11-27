@@ -1,3 +1,4 @@
+section: Projects
 title: Motion Masks
 subtitle: Bitmap compositing driven by RLE-compressed alpha masks.
 icon: star

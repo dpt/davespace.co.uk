@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: The Stack
+section: ARM,Introduction to ARM
+title: The Stack
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

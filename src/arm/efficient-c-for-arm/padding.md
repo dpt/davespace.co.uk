@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Padding
+section: ARM,Efficient C for ARM
+title: Padding
 icon: rocket
 date: 2012-03-03
 layout: page

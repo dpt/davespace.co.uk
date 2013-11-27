@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Single Register Data Transfer
+section: ARM,Introduction to ARM
+title: Single Register Data Transfer
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

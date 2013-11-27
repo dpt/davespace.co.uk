@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Addressing Modes
+section: ARM,Introduction to ARM
+title: Addressing Modes
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Pointer Chains
+section: ARM,Efficient C for ARM
+title: Pointer Chains
 icon: rocket
 date: 2012-03-03
 layout: page

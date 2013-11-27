@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Early Architectures
+section: ARM,Introduction to ARM
+title: Early Architectures
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

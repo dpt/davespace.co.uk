@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Function Argument Types
+section: ARM,Efficient C for ARM
+title: Function Argument Types
 icon: rocket
 date: 2012-03-03
 layout: page

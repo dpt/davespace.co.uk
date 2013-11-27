@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Immediate Values
+section: ARM,Introduction to ARM
+title: Immediate Values
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

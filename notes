@@ -1,16 +1,10 @@
 TODO
 
-- need an index for the ARM courses
-  - tags page alone is not sufficient
-
 - use blog fragments on the main index page
   - ie. splitting at <!-- more --> markers
 
 - need a page squishing pass
   - get back old scripts for page compression?
-
-
-FUTURE
 
 - tip jar / begging
 
@@ -89,4 +83,7 @@ DONE
   [later, maybe]
 
 - sync motionmasks page with github version of the same
+
+- need an index for the ARM courses
+  - tags page alone is not sufficient
 

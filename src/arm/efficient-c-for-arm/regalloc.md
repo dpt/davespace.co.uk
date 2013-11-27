@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Register Allocation
+section: ARM,Efficient C for ARM
+title: Register Allocation
 icon: rocket
 date: 2012-03-03
 layout: page

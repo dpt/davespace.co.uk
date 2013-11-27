@@ -1,3 +1,4 @@
+section: Projects
 title: Containers
 subtitle: Associative arrays implemented using binary trees.
 icon: truck

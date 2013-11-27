@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Base Pointer Optimisation
+section: ARM,Efficient C for ARM
+title: Base Pointer Optimisation
 icon: rocket
 date: 2012-03-03
 layout: page

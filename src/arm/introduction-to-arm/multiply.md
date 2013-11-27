@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Multiply Instructions
+section: ARM,Introduction to ARM
+title: Multiply Instructions
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

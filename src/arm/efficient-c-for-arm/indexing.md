@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Avoid Array Indexing
+section: ARM,Efficient C for ARM
+title: Avoid Array Indexing
 icon: rocket
 date: 2012-03-03
 layout: page

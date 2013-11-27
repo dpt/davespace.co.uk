@@ -1,4 +1,4 @@
-section: riscos
+section: RISC OS
 title: PhotoFiler
 subtitle: Turns the RISC OS Filer into an image thumbnailing tool.
 icon: camera

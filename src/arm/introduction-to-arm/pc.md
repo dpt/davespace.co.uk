@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Program Counter
+section: ARM,Introduction to ARM
+title: Program Counter
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

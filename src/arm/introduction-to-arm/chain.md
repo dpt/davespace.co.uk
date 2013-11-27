@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: A Call Chain
+section: ARM,Introduction to ARM
+title: A Call Chain
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

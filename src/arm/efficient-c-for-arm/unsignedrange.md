@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Unsigned Ranges
+section: ARM,Efficient C for ARM
+title: Unsigned Ranges
 icon: rocket
 date: 2012-03-03
 layout: page

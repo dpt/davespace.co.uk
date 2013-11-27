@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Not a Trivial Mapping
+section: ARM,Introduction to ARM
+title: Not a Trivial Mapping
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

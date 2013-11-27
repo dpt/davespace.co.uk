@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Interworking
+section: ARM,Introduction to ARM
+title: Interworking
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

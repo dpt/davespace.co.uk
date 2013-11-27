@@ -1,3 +1,4 @@
+section: Doodles
 title: Sydney Savage
 subtitle: from J. Scott Campbell’s Danger Girl
 icon: pencil

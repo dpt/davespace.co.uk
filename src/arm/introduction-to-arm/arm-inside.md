@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: What’s inside various devices?
+section: ARM,Introduction to ARM
+title: What’s inside various devices?
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

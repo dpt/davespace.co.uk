@@ -1,4 +1,4 @@
-section: riscos
+section: RISC OS
 title: QuickFiler
 subtitle: Adds keyboard shortcuts to the Filer.
 icon: keyboard-o

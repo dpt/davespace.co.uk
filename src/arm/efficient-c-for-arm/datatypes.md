@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: C Data Types
+section: ARM,Efficient C for ARM
+title: C Data Types
 icon: rocket
 date: 2012-03-03
 layout: page

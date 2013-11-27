@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: Taking a Variable’s Address
+section: ARM,Efficient C for ARM
+title: Taking a Variable’s Address
 icon: rocket
 date: 2012-03-03
 layout: page

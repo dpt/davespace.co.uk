@@ -6,7 +6,7 @@
   <meta name="keywords" content="DaveSpace, David Thomas, Dave Thomas">
   <meta name="description" content="David Thomas's website.">
 
-  <title>{{ .Site.Other.Title }}{{ if .Title }} – {{ .Title }}{{ end }}</title>
+  <title>{{ .Site.Other.Title }}{{ if .Title }} - {{ .FullTitle ": " }}{{ end }}</title>
 
   <link rel="icon" type="image/vnd.microsoft.icon" href="{{ .Rel "favicon.ico" }}" />
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ .Rel "favicon.ico" }}" />
@@ -26,51 +26,31 @@
     })();
   </script>
 </head>
-<body{{ if .Other.Section }} id="{{ html .Other.Section }}"{{end}}>
+<body{{ if .Section }} id="{{ .AsIdent ( .SectionAtDepth 0 ) }}"{{ end }}>
 
   <div id="header">
     <h1><i class="fa fa-cogs"></i> <a href="{{ .Rel "/" }}">DaveSpace</a></h1>
   </div>
 
   <div id="nav">
-    <h4>About me</h4>
-    {{ template "nav-about" . }}
-    <h4>Categories</h4>
+    {{ template "nav-section" . }}
     {{ template "nav-categories" . }}
-    <h4>Recent Posts</h4>
-    {{ template "nav-recent" . }}
-    <h4>Tags</h4>
     {{ template "nav-tags" . }}
-    <h4>GitHub</h4>
-    {{ template "nav-github" . }}
-    <h4>Twitter</h4>
-    {{ template "nav-twitter" . }}
-    <h4>Delicious</h4>
-    {{ template "nav-delicious" . }}
-    <h4>Email</h4>
-    {{ template "nav-email" . }}
+
+    {{ template "about" . }}
   </div>
 {{ end }}
 
-{{ define "nav-about" }}
+{{ define "nav-section" }}
+{{ if .Section }}
+<h4>{{ .SectionName ":<br/>" }}</h4>
 <ul class="fa-ul">
-  <li><i class="fa-li fa fa-male"></i> David Thomas</li>
-  <li><i class="fa-li fa fa-wrench"></i> Software Engineer</li>
-  <li><i class="fa-li fa fa-location-arrow"></i> Glasgow, Scotland</li>
+  {{ range .Site.Pages.ChildrenInSection .GetSection }}
+  <li><i class="fa-li fa fa-{{ if .Is $.Url }}dot-{{ end }}circle-o"></i> <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
+  {{ end }}
 </ul>
-{{ end }}
-
-{{ define "nav-categories" }}
-<ul class="fa-ul">
-  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/arm/" }}">ARM</a></li>
-  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/doodles/" }}">Doodles</a></li>
-  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/projects/" }}">Projects</a></li>
-  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/python/" }}">Python</a></li>
-  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/risc.os/" }}">RISC&nbsp;OS</a></li>
-</ul>
-{{ end }}
-
-{{ define "nav-recent" }}
+{{ else }}
+<h4>Recent Posts</h4>
 <ul class="fa-ul">
   {{ with .Site.Pages.Children "blog/" }}
   {{ range .Slice 0 5 }}
@@ -83,36 +63,48 @@
   <li><i class="fa-li fa fa-rss"></i> <a href="{{ .Rel "blog-all.atom" }}">All posts</a></li>
 </ul>
 {{ end }}
+{{ end }}
+
+{{ define "nav-categories" }}
+<h4>Categories</h4>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/arm/" }}">ARM</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/doodles/" }}">Doodles</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/projects/" }}">Projects</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/python/" }}">Python</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/risc.os/" }}">RISC&nbsp;OS</a></li>
+</ul>
+{{ end }}
 
 {{ define "nav-tags" }}
+<h4>Tags</h4>
 <p>{{ range .Site.Pages.Children "tags/" }}<a href="{{ $.Rel .Url }}">{{ .Title }}</a> {{ end }}</p>
 {{ end }}
 
-{{ define "nav-twitter" }}
+
+{{ define "about" }}
+<h4>About me</h4>
 <ul class="fa-ul">
-  <li><i class="fa-li fa fa-twitter"></i> <a href="https://twitter.com/bagospanners">@bagospanners</a><br/>
-  – jibber jabber</li>
+  <li><i class="fa-li fa fa-male"></i> David Thomas</li>
+  <li><i class="fa-li fa fa-wrench"></i> Software Engineer</li>
+  <li><i class="fa-li fa fa-location-arrow"></i> Glasgow, Scotland</li>
+</ul>
+
+<h5>Contact</h5>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-envelope"></i> Email<br/> <a href="dave@davespace.co.uk">dave@davespace.co.uk</a></li>
+  <li><i class="fa-li fa fa-twitter"></i> Twitter<br/> <a href="https://twitter.com/bagospanners">@bagospanners</a></li>
+  <li><i class="fa-li fa fa-users"></i> IRC<br/> <em>spanners</em> on <a href="http://freenode.net/">Freenode</a></li>
+</ul>
+
+<h5>Tasty Links</h5>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-github"></i> <a href="https://github.com/dpt">dpt on GitHub</a><br/>
+  – my projects</li>
   <li><i class="fa-li fa fa-twitter"></i> <a href="https://twitter.com/bagospannersurl">@bagospannersurl</a><br/>
-  – interesting reads</li>
-</ul>
-{{ end }}
-
-{{ define "nav-github" }}
-<ul class="fa-ul">
-  <li><i class="fa-li fa fa-github"></i> <a href="https://github.com/dpt">dpt on GitHub</a></li>
-</ul>
-{{ end }}
-
-{{ define "nav-delicious" }}
-<ul class="fa-ul">
+  – interesting links</li>
   <li><i class="fa-li fa fa-paperclip"></i> <a href="https://delicious.com/dpt">dpt on delicious</a><br/>
-  – no longer updated</li>
-</ul>
-{{ end }}
-
-{{ define "nav-email" }}
-<ul class="fa-ul">
-  <li><i class="fa-li fa fa-envelope"></i> <a href="dave@davespace.co.uk">dave@davespace.co.uk</a></li>
+  – older interesting links</li>
 </ul>
 {{ end }}
 
@@ -131,17 +123,18 @@
 <article>
   <header>
     <!-- start post header -->
-    <h1>{{ template "iconforpostpage" . }} {{ .Title }}</h1>
+    <h1>{{ template "iconforpostpage" . }} {{ .FullTitle ": " }}</h1>
     {{ template "meta" . }}
     <!-- end post header -->
   </header>
+
   {{/* These comments are used by index.html to locate content to extract. */}}
   <!-- start post content -->
   <section>
     {{ .Content }}
+    {{ template "flip" . }}
   </section>
   <!-- end post content -->
-  {{ template "flip" . }}
 </article>
 <!-- end post -->
 {{ end }}
@@ -164,7 +157,7 @@
 {{/* Note significant whitespace - placing end marker on next line would cause spurious paragraphs to be emitted by markdown. */}}
 <ul class="fa-ul">
   {{ range .Site.Pages.WithTag .Title }}
-  <li>{{ template "iconfortaglist" . }} {{ template "date" .Date }} – <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
+  <li>{{ template "iconfortaglist" . }} {{ template "date" .Date }} – <a href="{{ $.Rel .Url }}">{{ .FullTitle ": " }}</a></li>
   {{ end }}
 </ul>
 {{ end }}
@@ -186,13 +179,13 @@
 {{ define "flip" }}
 <!-- start flip -->
 {{ if or .Other.Previous .Other.Next }}
-<h2>Navigate</h2>
 <div class="flip">
+  <h2>Navigate</h2>
   <div class="previous">
-    {{ if .Other.Previous }}<a href="{{ .Other.Previous }}.html"><i class="fa fa-chevron-circle-left"></i> {{ template "titleofprev" . }}</a>{{ end }}
+    {{ if .Other.Previous }}<a href="{{ .Other.Previous }}.html"><i class="fa fa-arrow-circle-left"></i> {{ template "titleofprev" . }}</a>{{ end }}
   </div>
   <div class="next">
-    {{ if .Other.Next }}<a href="{{ .Other.Next }}.html">{{ template "titleofnext" . }} <i class="fa fa-chevron-circle-right"></i></a>{{ end }}
+    {{ if .Other.Next }}<a href="{{ .Other.Next }}.html">{{ template "titleofnext" . }} <i class="fa fa-arrow-circle-right"></i></a>{{ end }}
   </div>
 </div>
 {{ end }}
@@ -200,27 +193,26 @@
 {{ end }}
 
 {{/* Ugh. Because there's no equality operator I have to use UrlMatches and feed it a regexp concatenated using printf. There must be a better way than this. */}}
+{{/* urlmatches gets multiple matches here for 'index'... */}}
 
 {{ define "titleofprev" }}
-{{ $arg := .Other.Previous }}
 {{ range .Site.Pages.Children "arm/" }}
-  {{ if .UrlMatches (printf "/%s\\.html" $arg) }}
+  {{ if .UrlMatches (printf "/%s\\.html" $.Other.Previous) }}
   {{ .Title }}
   {{ end }}
 {{ end }}
 {{ end }}
 
 {{ define "titleofnext" }}
-{{ $arg := .Other.Next }}
 {{ range .Site.Pages.Children "arm/" }}
-  {{ if .UrlMatches (printf "/%s\\.html" $arg) }}
+  {{ if .UrlMatches (printf "/%s\\.html" $.Other.Next) }}
   {{ .Title }}
   {{ end }}
 {{ end }}
 {{ end }}
 
 
-{{ define "allpages" }}
+{{ define "allarmpages" }}
 <ul>
 {{ range .Site.Pages.Children "arm/" }}
   {{ if .UrlMatches ".*\\.html" }}

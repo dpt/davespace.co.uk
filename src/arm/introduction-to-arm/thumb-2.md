@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Thumb-2
+section: ARM,Introduction to ARM
+title: Thumb-2
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

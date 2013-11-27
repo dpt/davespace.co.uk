@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Multiple Register Data Transfer
+section: ARM,Introduction to ARM
+title: Multiple Register Data Transfer
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

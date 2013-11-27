@@ -1,4 +1,4 @@
-section: python
+section: Python
 title: rerename.py
 subtitle: Allows you to rename files using regular expressions.
 date: 2013-04-07

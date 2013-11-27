@@ -1,5 +1,5 @@
-section: arm
-title: Efficient C for ARM: References
+section: ARM,Efficient C for ARM
+title: References
 icon: rocket
 date: 2012-03-03
 layout: page

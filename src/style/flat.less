@@ -129,12 +129,18 @@
 
 .heading4
 {
-        .font;
+	.font;
 	.whiteonslate;
-	.textshadow;
+	.textshadow(@shadow);
 
 	padding-top:		0px; // manual adjustment
 	padding-bottom:		0px;
+}
+
+.heading5
+{
+	.font(14px);
+	color:			@slate;
 }
 
 .textshadow (@alpha: 1.0)
@@ -191,17 +197,16 @@ ARTICLE
 	H1 { .heading2; text-transform: none; }
 	H2 { .heading3; }
 	H3 { .heading4; }
-	h4 { color: red; } // should never be used
 
-        &::after
-        {
-            display:		block;
+	&::after
+	{
+	    display:		block;
 
 	    color:		@slate;
-            content:		"\f085";
-            font-family:	FontAwesome;
-            text-align:		center;
-        }
+	    content:		"\f085";
+	    font-family:	FontAwesome;
+	    text-align:		center;
+	}
 }
 
 // summarised articles have reduced fonit sizes
@@ -209,10 +214,9 @@ ARTICLE.summarised
 {
 	H1 { .heading3; text-transform: none; }
 	H2 { .heading4; }
-	h3, h4 { color: red; } // should never be used
 }
 
-H1, H2, H3, H4
+H1, H2, H3, H4, H5
 {
 	// Using relative units here even though the left hand edge of the text will be different across different headers.
 	padding-left:		0.3333em;
@@ -227,6 +231,7 @@ H1 { .heading1; text-transform: lowercase; }
 H2 { .heading2; }
 H3 { .heading3; }
 H4 { .heading4; }
+H5 { .heading5; }
 
 P
 {
@@ -396,10 +401,10 @@ CODE, KBD, SAMP
 		list-style:	none;
 		text-indent:	0;
 
-                I
-                {
-                    font-size: 133%; // Increase icon size.
-                }
+		I
+		{
+		    font-size: 133%; // Increase icon size.
+		}
 	}
 }
 
@@ -450,21 +455,21 @@ CODE, KBD, SAMP
 	}
 
 // this stuff is trying to make slides scale up
-// 	P
-// 	{
-// 		.font(24px);
-// 	}
+//	P
+//	{
+//		.font(24px);
+//	}
 // 
-// 	UL, OL
-// 	{
-// 		.font(24px);
-// 	}
+//	UL, OL
+//	{
+//		.font(24px);
+//	}
 // 
-// 	UL UL, OL OL
-// 	{
-// 		font-size: 1em;
-// 		line-height: 1.4444; // or something
-// 	}
+//	UL UL, OL OL
+//	{
+//		font-size: 1em;
+//		line-height: 1.4444; // or something
+//	}
 }
 
 .slide::after, .examples::after
@@ -505,31 +510,32 @@ CODE, KBD, SAMP
 
 .icon
 {
-        border-radius: 1em;
-        border: 10px solid #808080;
-        margin: 12px;
-        padding: 18px;
+	border-radius: 1em;
+	border: 10px solid #808080;
+	margin: 12px;
+	padding: 18px;
 
-        IMG
-        {
-            margin-bottom:      0; // defeat IMG rule
-        }
+	IMG
+	{
+	    margin-bottom:	0; // defeat IMG rule
+	}
 }
 
 
 .flip
 {
-        display:                inline-block; // seems to work...
-        width:                  100%;
+	display:		inline-block; // chosen as it seems to work...
+	margin-bottom:		@grid;
+	width:			100%;
 
 	.previous
-        {
-            float: left;
-        }
+	{
+	    float: left;
+	}
 	.next
-        {
-            float: right;
-        }
+	{
+	    float: right;
+	}
 }
 
 
@@ -537,7 +543,7 @@ CODE, KBD, SAMP
 {
 	.font(12px);
 
-        clear:                  both;
+	clear:			both;
 
 	padding:		@grid; // 40px total
 

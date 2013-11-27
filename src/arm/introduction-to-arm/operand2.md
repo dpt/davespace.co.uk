@@ -1,5 +1,5 @@
-section: arm
-title: Introduction to ARM: Operand2
+section: ARM,Introduction to ARM
+title: Operand2
 icon: compass
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide

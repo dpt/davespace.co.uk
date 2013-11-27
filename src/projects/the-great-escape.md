@@ -1,3 +1,4 @@
+section: Projects
 title: The Great Escape
 subtitle: Reverse engineering and rebuilding the ZX Spectrum 48K classic game from 1986.
 icon: bell

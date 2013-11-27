@@ -1,4 +1,4 @@
-section: riscos
+section: RISC OS
 title: Replace an Iyonix’s Case
 icon: wrench
 date: 2013-04-07

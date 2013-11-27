@@ -1,4 +1,4 @@
-section: python
+section: Python
 title: resetjpegdpi.py
 subtitle: Resets the header of a set of JPEGs.
 date: 2013-04-07
