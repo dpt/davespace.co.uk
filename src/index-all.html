@@ -1,0 +1,14 @@
+icon: suitcase
+----
+
+<h2>All Posts, Ever</h2>
+{{ range .Site.Pages.Children "blog/" }}
+<article class="summarised">
+  <h1>{{ template "iconforpage" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a></h1>
+  {{ template "meta" . }}
+  {{/* I presume this is a greedy match.*/}}
+  {{ with cut .Process.Content "<section>" "</section>" }}
+    {{ . }}
+  {{ end }}
+</article>
+{{ end }}

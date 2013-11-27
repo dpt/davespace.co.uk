@@ -1,0 +1,110 @@
+section: arm
+title: Efficient C for ARM » Data Drive
+date: 2012-07-13
+layout: page
+tags: ARM, EfficientC, Slide, BasicOptimisation
+pageOrder: 2130
+next: indexing
+previous: hoisting
+----
+
+%% Slide
+
+### Slide
+
+* Avoid mixing code and data together.
+* Instead separate out the data and write a simple loop.
+* Doing this generates less code.
+
+%% Examples
+
+### Examples
+
+The following simple routine maps a name to a number:
+
+<div class="highlight"><pre><span class="kt">int</span> <span class="nf">nameToNumber</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">if</span>      <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;John&quot;</span><span class="p">)</span>   <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">5</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;Paul&quot;</span><span class="p">)</span>   <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;George&quot;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">9</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="s">&quot;Ringo&quot;</span><span class="p">)</span>  <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="mi">3</span><span class="p">;</span>
+    <span class="k">else</span> <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="cm">/* default case */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+Because each case is written out individually, the compiler will emit code for
+every individual case:
+
+<div class="highlight"><pre><span class="nf">nameToNumber</span>
+        <span class="k">STMFD</span>    sp!,{r4,lr}
+        <span class="k">MOV</span>      r4,r0       <span class="c1">; name</span>
+        <span class="k">ADR</span>      r1,|L1.104| <span class="c1">; "John"</span>
+        <span class="k">BL</span>       strcmp
+        <span class="k">CMP</span>      r0,<span class="mi">#0</span>       <span class="c1">; yes?</span>
+        <span class="k">MOVEQ</span>    r0,<span class="mi">#5</span>       <span class="c1">; retval</span>
+        <span class="k">LDMEQFD</span>  sp!,{r4,pc} <span class="c1">; return</span>
+        <span class="k">MOV</span>      r0,r4       <span class="c1">; name</span>
+        <span class="k">ADR</span>      r1,|L1.112| <span class="c1">; "Paul"</span>
+        <span class="k">BL</span>       strcmp
+        <span class="k">CMP</span>      r0,<span class="mi">#0</span>       <span class="c1">; yes?</span>
+        <span class="k">MOVEQ</span>    r0,<span class="mi">#2</span>       <span class="c1">; retval</span>
+        <span class="k">LDMEQFD</span>  sp!,{r4,pc} <span class="c1">; return</span>
+        <span class="c1">; ... more for each case ...</span>
+</pre></div>
+
+That’s 26 instructions × 4 bytes = **104 bytes**.
+
+If we generalise the code, storing the data in a table which maps the input
+names to output numbers, then we can save a significant amount of code:
+
+<div class="highlight"><pre><span class="cp">#define NELEMS(a) ((int) (sizeof(a) / sizeof(a[0])))</span>
+
+<span class="kt">int</span> <span class="nf">nameToNumber2</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span> <span class="o">*</span><span class="n">name</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="k">static</span> <span class="k">const</span> <span class="k">struct</span>
+    <span class="p">{</span>
+        <span class="k">const</span> <span class="kt">char</span> <span class="n">name</span><span class="p">[</span><span class="mi">7</span><span class="p">];</span> <span class="cm">/* NB. PIC */</span>
+        <span class="kt">int</span>        <span class="n">value</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="n">map</span><span class="p">[]</span> <span class="o">=</span>
+    <span class="p">{</span>
+        <span class="p">{</span> <span class="s">&quot;John&quot;</span><span class="p">,</span>   <span class="mi">5</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="s">&quot;Paul&quot;</span><span class="p">,</span>   <span class="mi">2</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="s">&quot;George&quot;</span><span class="p">,</span> <span class="mi">9</span> <span class="p">},</span>
+        <span class="p">{</span> <span class="s">&quot;Ringo&quot;</span><span class="p">,</span>  <span class="mi">3</span> <span class="p">}</span>
+    <span class="p">};</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">NELEMS</span><span class="p">(</span><span class="n">map</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">strcmp</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">name</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">value</span><span class="p">;</span>
+
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="cm">/* default case */</span>
+<span class="p">}</span>
+</pre></div>
+
+
+Compiles to:
+
+<div class="highlight"><pre><span class="nf">nameToNumber2</span>   <span class="k">STMFD</span>    sp!,{r4-r6,lr}
+                <span class="k">LDR</span>      r6,=mapaddr     <span class="c1">; address of 'map'</span>
+                <span class="k">MOV</span>      r5,r0           <span class="c1">; stash copy of name</span>
+                <span class="k">MOV</span>      r4,<span class="mi">#0</span>           <span class="c1">; i</span>
+<span class="nf">loop</span>            <span class="k">ADD</span>      r0,r4,r4,<span class="k">LSL</span> <span class="mi">#1</span> 
+                <span class="k">ADD</span>      r1,r6,r0,<span class="k">LSL</span> <span class="mi">#2</span> <span class="c1">; map + i*12</span>
+                <span class="k">MOV</span>      r0,r5           <span class="c1">; = name</span>
+                <span class="k">BL</span>       strcmp
+                <span class="k">CMP</span>      r0,<span class="mi">#0</span>           <span class="c1">; match?</span>
+                <span class="k">ADDEQ</span>    r0,r4,r4,<span class="k">LSL</span> <span class="mi">#1</span> <span class="c1">; yes</span>
+                <span class="k">ADDEQ</span>    r0,r6,r0,<span class="k">LSL</span> <span class="mi">#2</span> <span class="c1">; map + i*12 again</span>
+                <span class="k">LDREQ</span>    r0,[r0,<span class="mi">#8</span>]      <span class="c1">; fetch map[i].value</span>
+                <span class="k">LDMEQFD</span>  sp!,{r4-r6,pc}  <span class="c1">; return it</span>
+                <span class="k">ADD</span>      r4,r4,<span class="mi">#1</span>        <span class="c1">; otherwise no match</span>
+                <span class="k">CMP</span>      r4,<span class="mi">#4</span>           <span class="c1">; loop until out..</span>
+                <span class="k">BLT</span>      loop            <span class="c1">; ..of data</span>
+                <span class="k">MVN</span>      r0,<span class="mi">#0</span>
+                <span class="k">LDMFD</span>    sp!,{r4-r6,pc}  <span class="c1">; return -1</span>
+</pre></div>
+
+Which is 18 instructions × 4 bytes = **72 bytes**, saving of 32 bytes.

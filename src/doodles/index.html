@@ -1,0 +1,20 @@
+section: Doodles
+title: Overview
+icon: pencil
+date: 2013-10-29
+tags: Doodle
+layout: page
+----
+
+<h2>{{ template "iconforpage" . }} Doodles</h2>
+
+<p>I’m no artist but I do tinker. Here are some drawings I’ve done.</p>
+
+<ul class="fa-ul">
+  {{/* This captures every file in the hierarchy... so we add a UrlMatches check too. */}}
+  {{ range .Site.Pages.Children "doodles/" }}
+  {{ if .UrlMatches ".*\\.html" }}
+  <li>{{ template "iconforlist" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a>{{ if .Other.Subtitle }} – {{ .Other.Subtitle }}{{ end }}</li>
+  {{ end }}
+  {{ end }}
+</ul>

@@ -1,0 +1,25 @@
+section: RISC OS
+title: Overview
+icon: cog
+date: 2013-04-07
+tags: RISC OS
+layout: page
+pageOrder: 0
+----
+
+<h2>{{ template "iconforpage" . }} RISC OS</h2>
+
+<p>I’ve written PD, freeware, shareware and commercial programs for RISC OS since 1990. The vast majority of them are utter tripe, the remainder I keep here for your entertainment.</p>
+
+<ul class="fa-ul">
+  {{/* This captures every file in the hierarchy... so we add a UrlMatches check too. */}}
+  {{ range .Site.Pages.Children "risc.os/" }}
+  {{ if .UrlMatches ".*\\.html" }}
+  <li>{{ template "iconforlist" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a>{{ if .Other.Subtitle }} – {{ .Other.Subtitle }}{{ end }}</li>
+  {{ end }}
+  {{ end }}
+</ul>
+
+<h3>Older Stuff</h3>
+
+<p>There’s a bunch of older stuff still living on <a href="http://www.tristone.co.uk/davespace">Tristone</a>.</p>

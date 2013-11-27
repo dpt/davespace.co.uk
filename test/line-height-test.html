@@ -1,0 +1,524 @@
+<!--
+
+This is a test of a layout intended to provide a page with vertical rhythm.
+Lines are aligned to a 20px grid. This is achieved by careful measurements for
+spacing being chosen.
+
+-->
+
+<!doctype html>
+<html>
+  <head>
+    <title>css line-height is a can of worms</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style>
+
+/* fonts:
+16px base on 20px line height
+36, 20, 16, 12 px sizes
+
+colours:
+0F687D mid blue
+078E9F light blue
+D3E2EB whitey
+D7990C yellow
+26292F slate
+
+todo:
+- slides
+- page title
+- left bar/nav
+
+learned:
+- borders around elements will shift the alignment, so either the border has to be absent or 20px or a multiple thereof
+
+*/
+
+HTML
+{
+  background-color:     #fff;
+  background-image:     url(20px.png);
+  background-size:      40px 40px;
+  background-position:  0 0;
+}
+
+BODY
+{
+  margin: 20px 40px 20px 200px;
+  padding: 0;
+
+  font: 16px/1.25 'PT Sans',sans-serif;
+
+  vertical-align:   baseline;
+
+  xfont-size:   16px;
+  xline-height: 120%; /* percentage: 120% of 16px = 19.2px, which is then inherited */
+  xline-height: 20px; /* length value: inherited */
+  xline-height: normal; /* normal value: elements inherit and handle */
+  xline-height: 1.5; /* number value: inherited and calculated per element */
+}
+
+H1
+{
+  font-size:        2.2500000em; /* 36px */
+  line-height:      1.1111111em; /* 40px */
+  margin-bottom:    0.5555556em; /* 20px */
+  margin-top:       0;
+  background-color: rgba(38, 41, 47, 1.0); /* #26292F; */
+
+  padding-top:      8px; /* manual adjustment */
+  padding-bottom:   12px;
+}
+
+H2
+{
+  font-size:        1.7500000em; /* 28px */
+  line-height:      1.4285714em; /* 40px */
+  margin-bottom:    0.7142857em; /* 20px */
+  margin-top:       0;
+  background-color: rgba(15, 104, 125, 1.0); /* #0F687D; */
+
+  padding-top:      8px; /* manual adjustment */
+  padding-bottom:   12px;
+}
+
+H3
+{
+  font-size:        1.2500000em; /* 20px */
+  line-height:      1.0000000em; /* 20px */
+  margin-bottom:    1.0000000em; /* 20px */
+  margin-top:       0;
+  background-color: rgba(7, 142, 159, 1.0); /* #078E9F; */
+
+  padding-top:      9px; /* manual adjustment */
+  padding-bottom:   11px;
+}
+
+H4
+{
+  background-color: rgba(38, 41, 47, 1.0); /* #26292F; */
+
+  padding-top:      0px; /* manual adjustment */
+  padding-bottom:   0px;
+}
+
+H1, H2, H3, H4
+{
+  color:            white;
+  border-radius:    0.25em;
+  /* Using relative units here even though the left hand edge of the text will
+   * be different across different headers. */
+  padding-left:     0.3333em;
+  padding-right:    0.3333em;
+}
+
+H4, BLOCKQUOTE, P
+{
+  font-size:        1.0000000em; /* 16px */
+  line-height:      1.2500000em; /* 20px */
+  margin-bottom:    1.2500000em;
+  margin-top:       0;
+}
+
+UL, OL
+{
+  font-size:        1.0000000em; /* 16px */
+  line-height:      1.2500000em; /* 20px */
+  margin-bottom:    1.2500000em;
+  margin-top:       0;
+}
+
+/* Have to stop gaps appearing at the end of sub-lists. */
+UL UL, OL OL
+{
+  margin-bottom:    0;
+}
+
+BLOCKQUOTE
+{
+  background-color: rgba(211, 226, 235, 1.0); /* #D3E2EB; */
+  padding:          20px; /* 40px total */
+  border-radius:    0.25em;
+
+  font-style:       italic;
+  box-shadow:       inset 4px 4px 8px 0px rgba(0, 0, 0, 0.333);
+}
+
+PRE
+{
+  font-size:        0.8750000em; /* 14px */
+  line-height:      1.4285714em; /* 20px */
+  margin-bottom:    1.4285714em;
+  margin-top:       0;
+
+  background-color: rgba(38, 41, 47, 1.0); /* #26292F; */
+  border-radius:    0.5em;
+  color:            white;
+  font-family:      'Monaco'; /* Courier ok, Monaco and Consolas BAD */
+  padding:          20px; /* 40px total */
+
+  box-shadow:       inset 4px 4px 8px 0px rgba(0, 0, 0, 1.0);
+}
+
+
+/* INLINE ELEMENTS */
+
+KBD
+{
+  background-color: rgba(38, 41, 47, 1.0); /* #26292F; */
+  border-radius:    0.25em;
+  border-width:     1px;
+  color:            white;
+  padding-left:     4px;
+  padding-right:    4px;
+}
+
+/* trying to debug here inconsistent line heights when monospace used
+   16px height font coming out in 17px high units
+   evidently these '16px' fonts are bigger than expected so force the line downwards
+or possible mistake with line-height
+*/
+
+CODE, DFN, EM, KBD, SAMP, STRONG, VAR
+{
+  font-size:        1.0000000em; /* 16px */
+  line-height:      1.0;         /* 16px */ /* NOT 20px! */
+}
+
+CODE, KBD, SAMP
+{
+  font-family:      'Monaco'; /* Courier ok, Monaco and Consolas BAD */
+  font-size:        14px; /* 14px */
+}
+
+/* USER ELEMENTS */
+
+#nav
+{
+  float:            left;
+  left:             0;
+  margin-left:      -180px;
+  position:         absolute:
+  top:              0;
+  width:            160px;
+
+  text-align:       right;
+}
+
+#nav UL
+{
+  padding-left:     0;
+}
+
+#nav LI
+{
+  list-style:       none;
+  margin: 0;
+  padding: 0;
+
+  text-indent:      0;
+}
+
+.post-meta
+{
+  margin-bottom:    1.2500000em;
+}
+
+.post-meta UL
+{
+  display: inline;
+  list-style: none;
+}
+
+.post-meta LI
+{
+  display: inline;
+  background-color: rgba(15, 104, 125, 1.0); /* #0F687D; */
+  border-radius:    0.25em;
+  border-width:     1px;
+  color:            white;
+  padding-left:     4px;
+  padding-right:    4px;
+}
+
+.section
+{
+}
+
+.slide, .examples
+{
+  background-color: rgba(211, 226, 235, 1.0); /* #D3E2EB; */
+  
+  border-radius: 20px;
+  padding: 20px;
+  position: relative; /* for shadows */
+
+  margin-bottom: 20px;
+
+  zoom: 1.25; /* will break grid alignment */
+}
+
+.slide::after, .examples::after
+{
+  position: absolute;
+  left: 1%;
+  width: 98%;
+  bottom: 6px;
+  z-index: -1;
+  height: 5%;
+  content: "";
+
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.25);
+}
+
+.remarks
+{
+}
+
+#footer
+{
+  background-color: #D7990C;
+  font-size:        0.7500000em; /* 12px */
+  line-height:      1.6666667em; /* 20px */
+  margin-bottom:    1.6666667em;
+  margin-top:       0;
+
+  border-radius:    0.25em;
+  padding:          20px; /* 40px total */
+}
+
+PRE .keyword
+{
+  color:            pink;
+}
+    </style>
+  </head>
+  <body>
+    <div id="header"><h1>davespace</h1></div>
+
+    <div id="nav">
+      <h4>About me</h4>
+      <p>David Thomas. Software Engineer. Glasgow, Scotland.</p>
+
+      <h4>Categories</h4>
+      <ul>
+        <li><a href="#">ARM</a></li>
+        <li><a href="#">RISC&nbsp;OS</a></li>
+        <li><a href="#">Python</a></li>
+      </ul>
+
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three has a long title</a></li>
+        <li><a href="#">four</a></li>
+        <li><a href="#">five goes off on a tangent and nobody knows why</a></li>
+      </ul>
+
+      <h4>Recent Posts</h4>
+      <ul>
+        <li><a href="#">one</a></li>
+        <li><a href="#">two</a></li>
+        <li><a href="#">three has a long title</a></li>
+        <li><a href="#">four</a></li>
+        <li><a href="#">five goes off on a tangent and nobody knows why</a></li>
+      </ul>
+
+      <h4>Twitter</h4>
+      <p>bagospanners</p>
+    </div>
+
+    <article>
+      <h1>Section » Topic » Using setjmp and longjmp to create nonlocal jumps</h1>
+
+      <div class="post-meta">
+        Posted by David Thomas on 17th Juntober 1896.
+        <ul>
+          <li>Tag1</li>
+          <li>Tag2</li>
+          <li>Tag3</li>
+          <li>Tag4</li>
+        </ul>
+      </div>
+
+      <p>Experimenting with a <em>design</em> for my <strong>revised website</strong>. Would like to keep it as simple and as clean as possible. Filling out this space on the page with some meaningless drivel to bulk it out. Have been investigating keeping a vertical rhythm going by using cunningly-chosen font sizes and spacing.</p>
+
+      <p>The second paragraph is less wordy.</p>
+
+      <ul>
+        <li>Text for context. <code>A piece of computer code.</code> Following text.</li>
+        <li>Text for context. <dfn>Definition term.</dfn> Following text.</li>
+        <li>Text for context. <em>Emphasized text.</em> Following text.</li>
+        <li>Text for context. <kbd>Keyboard input.</kbd> Following text.</li>
+        <li>Text for context. <samp>Sample output from a computer program.</samp> Following text.</li>
+        <li>Text for context. <strong>Strong text.</strong> Following text.</li>
+        <li>Text for context. <var>Variable.</var> Following text.</li>
+      </ul>
+
+      <p>Let's now have a blockquote:</p>
+
+      <blockquote>
+  <@hzsp> I danced with a chap the other day and he was rather good. it's a bit odd how women are comfortable dancing with women, but not men with men (generally)
+      </blockquote>
+
+      <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+      <h2>H2: Second header within the article with a long title to cause the text to wrap</h2>
+
+      <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+      <p>Now we'll introduce a bulleted list:</p>
+
+      <ul>
+        <li>This is the first element of the list.</li>
+
+        <li>This is the second element of the list.<br/>
+        Surprise! This one has a sub-list.
+        <ul>
+          <li>Llamas.</li>
+          <li>Puffins.</li>
+          <li>Geese!</li>
+        </ul>
+        </li>
+
+        <li>This is the third element of the list.
+        <ul>
+          <li>Two deep
+          <ul>
+            <li>Three deep
+            <ul>
+              <li>Four deep</li>
+            </ul>
+            </li>
+          </ul>
+          </li>
+        </ul>
+        </li>
+
+        <li>This is the fourth element of the list which has very long elements in it.
+        <ul>
+          <li>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+          <ul>
+            <li>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+            <ul>
+              <li>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</li>
+            </ul>
+            </li>
+          </ul>
+          </li>
+        </ul>
+        </li>
+      </ul>
+
+      <p>Now we'll introduce an ordered list:</p>
+
+      <ol>
+        <li>This is the first element of the list.</li>
+
+        <li>This is the second element of the list.<br/>
+        Surprise! This one has a sub-list.
+        <ol>
+          <li>Llamas.</li>
+          <li>Puffins.</li>
+          <li>Geese!</li>
+        </ol>
+        </li>
+
+        <li>This is the third element of the list.
+        <ol>
+          <li>Two deep
+          <ol>
+            <li>Three deep
+            <ol>
+              <li>Four deep</li>
+            </ol>
+            </li>
+          </ol>
+          </li>
+        </ol>
+        </li>
+
+        <li>This is the fourth element of the list which has very long elements in it.
+        <ol>
+          <li>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+          <ol>
+            <li>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
+            <ol>
+              <li>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</li>
+            </ol>
+            </li>
+          </ol>
+          </li>
+        </ol>
+        </li>
+      </ol>
+
+      <p>Monospaced fonts are going to be essential, so let's try those out:</p>
+
+      <pre>
+<span class="keyword">int</span> main(<span class="keyword">int</span> argc, <span class="keyword">char</span> *argv[])
+{
+  <span class="keyword">int</span> i;
+
+  <span class="keyword">for</span> (i = 0; i &lt; 10; i++)
+  {
+    printf("Hello, world!\n");
+  }
+} /* end of example */
+</pre>
+
+      <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+      <h3>H3: Five boxing wizards vex the quick brown fox with a long title to cause the text to wrap with a long title to cause the text to wrap</h3>
+
+      <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+      <h4>H4: Greedy cat</h4>
+
+      <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+      <div class="section slide">
+        <h2>h2 in a slide</h2>
+
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+        <h3>h3 in a slide</h3>
+
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+        <h4>h4 in a slide</h4>
+
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+      </div>
+
+      <div class="section examples">
+        <h2>h2 in a slide</h2>
+
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+        <h3>h3 in a slide</h3>
+
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+      </div>
+
+      <div class="section remarks">
+        <h2>h2 in a slide</h2>
+
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+        <h3>h3 in a slide</h3>
+
+        <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
+
+      </div>
+
+    </article>
+
+    <div id="footer">
+      Robin Watts: There is a trick you can use to solve it. Pass the address of every automatic that might get blown away out of the function scope.
+    </div>
+
+  </body>
+</html>
+
