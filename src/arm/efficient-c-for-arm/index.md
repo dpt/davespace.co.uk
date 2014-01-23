@@ -20,4 +20,4 @@ Move between pages using the arrows at the bottom right-hand side of the page. [
 
 ## Further Reading
 
-This is the second part of a two-part ARM training course, the first part is called [Introduction to ARM](introduction-to-arm/index.html).
+This is the second part of a two-part ARM training course, the first part is called [Introduction to ARM](../introduction-to-arm/index.html).

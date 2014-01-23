@@ -62,7 +62,7 @@ It makes no assumptions about the range of argument values so sign extends the v
 
 ## Remarks
 
-This is from [ARM System Developer’s Guide](http://www.davespace.co.uk/arm/efficient-c-for-arm/references.html#asdg) section 5.2.2.
+This is from [ARM System Developer’s Guide](references.html#asdg) section 5.2.2.
 
 * This sort of behaviour differs from toolchain to toolchain.
 * It makes it hard to mix objects reliably between compilers.

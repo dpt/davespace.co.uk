@@ -30,4 +30,4 @@ Move between pages using the arrows at the bottom of the page.
 
 ### Further Reading
 
-This is the first part of a two-part ARM training course, the second is called Efficient C for ARM and is available [here](http://www.davespace.co.uk/arm/efficient-c-for-arm/index.html).
+This is the first part of a two-part ARM training course, the second is called Efficient C for ARM and is available [here](../efficient-c-for-arm/index.html).

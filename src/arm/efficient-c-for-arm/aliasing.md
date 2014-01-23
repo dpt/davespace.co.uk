@@ -73,5 +73,5 @@ timers2 LDR r2,[r2]  ; R2 = *step
 
 C99’s `restrict` qualifier goes some way towards mitigating the effects of pointer aliasing. [Understanding strict aliasing](http://cellperformance.beyond3d.com/articles/2006/06/understanding-strict-aliasing.html).
 
-This is based on section 5.6 of [ARM System Developer’s Guide](http://www.davespace.co.uk/arm/efficient-c-for-arm/references.html#asdg).
+This is based on section 5.6 of [ARM System Developer’s Guide](references.html#asdg).
 
