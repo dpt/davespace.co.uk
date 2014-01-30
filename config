@@ -7,9 +7,14 @@
 TEMPLATES = site.tmpl
 SOURCE = src
 OUTPUT = generated
-TITLE = DaveSpace
+
+# .Site.Other
+#
 URL = http://www.davespace.co.uk/
+TITLE = DaveSpace
 AUTHOR = David Thomas
+KEYWORDS = DaveSpace, David Thomas, Dave Thomas
+COPYRIGHT = Copyright © David Thomas, 2013-2014
 
 blog/*.md:
 	config
