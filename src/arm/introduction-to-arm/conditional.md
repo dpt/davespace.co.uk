@@ -70,7 +70,7 @@ Code | Suffix  | Description                         | Flags
 1010 | GE      | Signed greater than or equal        | N == V
 1011 | LT      | Signed less than                    | N != V
 1100 | GT      | Signed greater than                 | !Z && (N == V)
-1111 | LE      | Signed less than or equal           | Z || (N != V)
+1101 | LE      | Signed less than or equal           | Z || (N != V)
 1110 | AL      | Always (default)                    | any
   
 %% Remarks
