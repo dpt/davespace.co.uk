@@ -69,8 +69,8 @@ Code | Suffix  | Description                         | Flags
 1001 | LS      | Unsigned lower or same              | !C or Z
 1010 | GE      | Signed greater than or equal        | N == V
 1011 | LT      | Signed less than                    | N != V
-1100 | GT      | Signed greater than                 | !Z && (N == V)
-1101 | LE      | Signed less than or equal           | Z || (N != V)
+1100 | GT      | Signed greater than                 | !Z and (N == V)
+1101 | LE      | Signed less than or equal           | Z or (N != V)
 1110 | AL      | Always (default)                    | any
   
 %% Remarks
