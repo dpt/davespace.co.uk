@@ -109,4 +109,4 @@ This is from [http://www.azillionmonkeys.com/qed/case4.html](http://www.azillion
 
 Obviously you need to ensure that `list[N]` is both available and writable.
 
-This can be improved further by [replacing array indexing with pointers](arm/efficient-c-for-arm/indexing.html).
+This can be improved further by [replacing array indexing with pointers](indexing.html).
