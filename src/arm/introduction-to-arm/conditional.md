@@ -98,7 +98,7 @@ executed only if the compare returns EQual. They move 10 into R0, then call
 Set the flags, then use various condition codes:
 
 ``` arm
-    CMP   r0, #0   ; if (x < 0)
+    CMP   r0, #0   ; if (x <= 0)
     MOVLE r0, #0   ;   x = 0;
     MOVGT r0, #1   ; else x = 1;
 ```
