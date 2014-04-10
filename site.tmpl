@@ -6,7 +6,7 @@
   <meta name="keywords" content="{{ html .Site.Other.Keywords }}">
   <meta name="description" content="David Thomas's website.">
 
-  <title>{{ .Site.Other.Title }}{{ if .Title }} - {{ .FullTitle ": " }}{{ end }}</title>
+  <title>{{ if .Title }}{{ .FullTitle ": " }} | {{ end }}{{ .Site.Other.Title }}</title>
 
   <link rel="icon" type="image/vnd.microsoft.icon" href="{{ .Rel "favicon.ico" }}" />
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="{{ .Rel "favicon.ico" }}" />
