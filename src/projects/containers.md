@@ -4,6 +4,8 @@ subtitle: Associative arrays implemented using binary trees.
 icon: truck
 date: 2013-04-10
 tags: Project, Containers
+layout: page
+pageOrder: 1000
 ----
 
 *Containers* is a library of associative array data structures implemented as binary trees in C.

@@ -4,6 +4,8 @@ subtitle: from J. Scott Campbell’s Danger Girl
 icon: pencil
 date: 2013-10-29
 tags: Doodle, Trace
+layout: page
+pageOrder: 1000
 ----
 
 [Sydney Savage](http://dangergirl.wikia.com/wiki/Sydney_Savage) - one of the main characters from J. Scott Campbell and Andy Hartnell's [Danger Girl](http://en.wikipedia.org/wiki/Danger_Girl) comic book series.
