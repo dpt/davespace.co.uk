@@ -12,5 +12,6 @@ CVS
 Makefile
 Thumbs.db
 hsc.prefs
+old
 source
 upload.excludes
