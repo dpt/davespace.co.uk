@@ -19,7 +19,7 @@ previous: organisation
 
 * `MOV` – move
   * Rd := Operand2
-* `MVN` – move negated
+* `MVN` – move NOT
   * Rd := 0xFFFFFFFF EOR Operand2
   
 %% Examples
