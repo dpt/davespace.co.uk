@@ -18,7 +18,7 @@ When searching through a list we normally do two comparisons:
 1. Compare loop index against maximum.
 2. Compare current key against desired key.
 
-That’s two flow conditions inside a tight loop, which is bad on modern [pipelined](http://en.wikipedia.org/wiki/Pipeline_(computing)) CPUs.
+That’s two flow conditions inside a tight loop, which is bad on modern [pipelined](http://en.wikipedia.org/wiki/Instruction_pipeline) CPUs.
 
 Solution:
 
