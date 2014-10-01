@@ -7,10 +7,12 @@ icon: home
 <article class="summarised">
   <h1>{{ template "iconforpage" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a></h1>
   {{ template "meta" . }}
+  <section class="summarised-content">
   {{/* I presume this is a greedy match. */}}
-  {{ with cut .Process.Content "<section>" "</section>" }}
+  {{ with cut .Process.Content "<section class=\"content\">" "</section>" }}
     {{ . }}
   {{ end }}
+  </section>
 </article>
 {{ end }}
 {{ end }}

@@ -1,5 +1,7 @@
 // flat.less
 //
+// DaveSpace stylesheet.
+//
 // by dpt
 
 // fonts:
@@ -14,7 +16,8 @@
 // - 26292F slate
 //
 // learned:
-// - borders around elements will shift the alignment, so either the border has to be absent or 20px or a multiple thereof
+// - Borders around elements will shift the alignment, so either the border has
+//   to be absent or 20px or a multiple thereof.
 
 @import "src/style/elements.less";
 
@@ -181,10 +184,14 @@ BODY
 	vertical-align:		baseline;
 }
 
-ARTICLE
+// Add vertical space after articles and sections.
+ARTICLE, SECTION
 {
 	margin-bottom:		@grid;
+}
 
+ARTICLE
+{
 	.meta
 	{
 		P
@@ -197,18 +204,20 @@ ARTICLE
 	H2 { .heading3; }
 	H3 { .heading4; }
 
-	&::after
+	// Insert a "cog" signature following article sections.
+	> SECTION::after
 	{
 	    display:		block;
 
-	    color:		@slate;
+	    color:		@lightblue;
 	    content:		"\f085";
 	    font-family:	FontAwesome;
+	    font-size:		2em;
 	    text-align:		center;
 	}
 }
 
-// summarised articles have reduced fonit sizes
+// Summarised articles have reduced font sizes.
 ARTICLE.summarised
 {
 	H1 { .heading3; text-transform: none; }
@@ -217,7 +226,8 @@ ARTICLE.summarised
 
 H1, H2, H3, H4, H5
 {
-	// Using relative units here even though the left hand edge of the text will be different across different headers.
+	// I'm using relative units here even though the left hand edge of the
+	// text will be different across different headers.
 	padding-left:		0.3333em;
 	padding-right:		0.3333em;
 
@@ -242,7 +252,7 @@ UL, OL
 	.font;
 }
 
-// Have to stop gaps appearing at the end of sub-lists.
+// This is to stop gaps appearing at the end of sub-lists.
 UL UL, OL OL, UL OL, OL UL
 {
 	margin-bottom:		0;
@@ -301,7 +311,8 @@ PRE
 	margin:			0 0 @grid 0;
 }
 
-// Images must be manually resized to a multiple of @grid vertically in order for the grid alignment to work.
+// Images must be manually resized to a multiple of @grid vertically in order
+// for the grid alignment to work.
 IMG
 {
 	.center;
@@ -351,10 +362,10 @@ KBD
 	.whiteonslate;
 }
 
-// trying to debug here inconsistent line heights when monospace used
-// 16px height font coming out in 17px high units
-// evidently these '16px' fonts are bigger than expected so force the line downwards
-// or possible mistake with line-height
+// Trying to debug here inconsistent line heights when monospace is used.
+// 16px height font coming out in 17px high units.
+// Evidently these '16px' fonts are bigger than expected so force the line
+// downwards or possible mistake with line-height.
 
 DFN, EM, STRONG, VAR
 {
@@ -556,3 +567,10 @@ CODE, KBD, SAMP
 		color:		white;
 	}
 }
+
+// Bodge muut whitespace.
+#comments .m-replyform::after
+{
+	clear: none !important;
+}
+

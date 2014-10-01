@@ -130,11 +130,13 @@
 
   {{/* These comments are used by index.html to locate content to extract. */}}
   <!-- start post content -->
-  <section>
+  <section class="content">
     {{ .Content }}
-    {{ template "flip" . }}
   </section>
   <!-- end post content -->
+
+  {{ template "flip" . }}
+  {{ template "comment" . }}
 </article>
 <!-- end post -->
 {{ end }}
@@ -173,6 +175,15 @@
   </ul>
 </div>
 <!-- end meta -->
+{{ end }}
+
+
+{{ define "comment" }}
+<section id="comments">
+  <h2>Comments</h2>
+  <a class="muut" href="https://muut.com/i/davespace/comments:{{ .AsIdent ( .FullTitle "-" ) }}">Real-time discussions right on your site</a>
+  <script src="//cdn.muut.com/1/moot.min.js"></script>
+</section>
 {{ end }}
 
 
