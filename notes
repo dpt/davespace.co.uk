@@ -8,7 +8,7 @@ TODO
 - need a page squishing pass
   - get back old scripts for page compression?
 
-- tip jar / begging
+- tip jar / begging [half done]
 
 - ideas for content:
     - drawings / doodles
@@ -16,6 +16,8 @@ TODO
     - old apps
     - bring back Tristone content
     - stick figures
+
+- gostatic does not use the 'layout:' header.
 
 
 DONE
