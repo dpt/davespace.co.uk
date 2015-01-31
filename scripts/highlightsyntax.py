@@ -79,7 +79,7 @@ content = sys.stdin.read()
 chunks = re.split('```', content)
 # => every odd chunk is interesting
 
-# pass interesting chunks into pygmentize, and replace
+# pass interesting chunks into a highlighter, and replace
 for index, chunk in enumerate(chunks):
 	if index % 2 == 0:
 		continue
@@ -91,10 +91,11 @@ for index, chunk in enumerate(chunks):
 		language = splittered[0].strip()
 		fragment = '\n'.join(splittered[1:])
 
-		if language == '':
-			language = 'c'
-
-		if language != 'arm':
+		if language == 'arm':
+			stdout = highlightarm(fragment)
+		elif language == '':
+			stdout = '<div class="highlight"><pre>' + fragment + '</pre></div>'
+		else:
 			p = subprocess.Popen(['pygmentize', '-f','html', '-l',language],
 				stdin=subprocess.PIPE,
 				stdout=subprocess.PIPE,
@@ -103,8 +104,6 @@ for index, chunk in enumerate(chunks):
 
 			if stderr:
 				print stderr
-		else:
-			stdout = highlightarm(fragment)
 
 		chunks[index] = cache[chunk] = stdout
 
