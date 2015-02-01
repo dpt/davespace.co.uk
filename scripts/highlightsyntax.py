@@ -94,7 +94,7 @@ for index, chunk in enumerate(chunks):
 		if language == 'arm':
 			stdout = highlightarm(fragment)
 		elif language == '':
-			stdout = '<div class="highlight"><pre>' + fragment + '</pre></div>'
+			stdout = '<div class="highlight"><pre>' + fragment + '</pre></div>\n'
 		else:
 			p = subprocess.Popen(['pygmentize', '-f','html', '-l',language],
 				stdin=subprocess.PIPE,
