@@ -23,7 +23,7 @@ find $DIR \( -type f -name "*.sh" -print0 \) | xargs -0 chmod 755
 # --delete  is only required when deleting anything which doesn't exist on
 #           the server
 #
-rsync -rtvz $DIR/* octopus.pepperfish.net:websites/davespace.co.uk/www/html/ \
+rsync -rtvz $DIR/* platypus.pepperfish.net:websites/davespace.co.uk/www/html/ \
   --exclude-from=upload.excludes \
   --delete \
   --delete-after \

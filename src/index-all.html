@@ -6,9 +6,11 @@ icon: suitcase
 <article class="summarised">
   <h1>{{ template "iconforpage" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a></h1>
   {{ template "meta" . }}
-  {{/* I presume this is a greedy match.*/}}
-  {{ with cut .Process.Content "<section>" "</section>" }}
+  <section class="summarised-content">
+  {{/* I presume this is a greedy match. */}}
+  {{ with cut .Process.Content "<section class=\"content\">" "</section>" }}
     {{ . }}
   {{ end }}
+  </section>
 </article>
 {{ end }}

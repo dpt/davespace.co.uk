@@ -14,12 +14,13 @@ URL = http://www.davespace.co.uk/
 TITLE = DaveSpace
 AUTHOR = David Thomas
 KEYWORDS = DaveSpace, David Thomas, Dave Thomas
-COPYRIGHT = Copyright © David Thomas, 2005-2014
+COPYRIGHT = Copyright © David Thomas, 2005-2015
 
 blog/*.md:
 	config
 	ext .html
 	tags tags/*.tag
+	:python scripts/highlightsyntax.py
 	markdown
 	template post
 	template page
