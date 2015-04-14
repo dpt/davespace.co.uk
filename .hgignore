@@ -1,3 +1,4 @@
 syntax: glob
 generated
 tmp
+generated.prev
