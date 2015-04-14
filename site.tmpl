@@ -128,7 +128,7 @@
     <!-- end post header -->
   </header>
 
-  {{/* These comments are used by index.html to locate content to extract. */}}
+  {{/* These comments are used by index.html &co. to locate content to extract. */}}
   <!-- start post content -->
   <section class="content">
     {{ .Content }}
@@ -136,7 +136,6 @@
   <!-- end post content -->
 
   {{ template "flip" . }}
-  {{ template "comment" . }}
 </article>
 <!-- end post -->
 {{ end }}
