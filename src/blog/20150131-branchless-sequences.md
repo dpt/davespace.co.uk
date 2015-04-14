@@ -11,17 +11,18 @@ tags: Aha, GitHub, Project, EfficientC
 
 Sometimes when programming we need to tune a small portion of code which is critical to an implementation. For example an inner loop may involve a pixel bashing operation which dominates the program's overall performance. If this operation uses a comparison, and that results in the compiled code branching, it can hurt performance on pipelined CPUs. It may be better to find a branch-free alternative even if it appears to make the code slightly more complex.
 
-But how do we find these alternatives? Sufficiently small sequences can be discovered with a _superoptimiser_ program. Superoptimisers are not as clever as the name might suggest: they are typically an exhaustive search through a virtual instruction set, trying every conceivable permutation of instructions until it finds one which—for the given input values—works.
+But how do we find these branch-free alternatives? Sufficiently small sequences can be discovered with a _superoptimiser_ program. Superoptimisers are not as clever as the name might suggest: they are typically an exhaustive search through a (virtual) instruction set, trying every conceivable permutation of instructions until it finds one which—for the given input values—works.
 
-Two examples of this are [GNU superopt](http://directory.fsf.org/wiki/Superopt) (1995) and [Aha! - A Hacker's Assistant](http://www.hackersdelight.org/) (2008). In this article I'll discuss Aha.
+Two examples of this are [GNU superopt](http://directory.fsf.org/wiki/Superopt) (1995) and [Aha! - A Hacker's Assistant](http://www.hackersdelight.org/) (2008). In this article I'll only discuss Aha.
 
 <!-- end summary -->
 
+
 ### A Hacker's Assistant
 
-Aha exhaustively tries all reasonable combinations of instructions from a customisable set. Its supplied instruction set corresponds to no real CPU but is sufficiently general and RISC-like to be applicable to most CPUs.
+Aha exhaustively tries all reasonable combinations of instructions from a customisable set. The instruction set corresponds to no real CPU but is sufficiently general and RISC-like to be applicable to most CPUs.
 
-It currently simulates 32-bit calculations only and knows nothing about processor flags.
+It simulates 32-bit calculations only and knows nothing about processor flags.
 
 Aha was written by Henry S. Warren, Jr. author of the indispensable book on bit twiddling: [Hacker's Delight](http://www.amazon.co.uk/gp/product/0321842685/).
 
@@ -33,8 +34,7 @@ I maintain [a version of Aha on Github](https://github.com/dpt/Aha) which includ
 First, clone and enter the Aha repo:
 
 ```
-$ git clone git@github.com:dpt/Aha.git
-$ cd Aha
+$ git clone git@github.com:dpt/Aha.git$ cd Aha
 ```
 
 Let's cook up an illustrative operation to be pumped through Aha:
@@ -52,7 +52,7 @@ int userfun(int x)
 }
 ```
 
-We'll build the Aha binary, linking in our user function (it's quick to build):
+We'll build the Aha binary, linking in our user function (with only a few source files it's quick to build):
 
 ```
 $ make EXAMPLE=test aha
@@ -289,7 +289,7 @@ See [this article](https://hbfs.wordpress.com/2008/08/05/branchless-equivalents-
 
 ### Coerce to boolean
 
-To calculate `!!x`, try:
+To calculate `!!x` (which coerces a variable to a bool), try:
 
 * `(-(x) | x) >>u 31`, or
 * `((x >>u 1) - x) >>u 31`
@@ -315,12 +315,13 @@ To calculate `x ? -1 : 0`, try:
 * `((x >>u 1) - x) >>s 31`
 
 
-## References & Links
+## References
 
 * [Aha's manual](http://www.hackersdelight.org/aha/aha.pdf) (Henry Warren, 2008)
 * [Branchless Equivalents of Simple Functions](https://hbfs.wordpress.com/2008/08/05/branchless-equivalents-of-simple-functions/) (Steven Pigeon, 2008)
+
+## Links
+
 * [ARM's `divc.c` optimal divide-by-constant code generator](http://www.ic.unicamp.br/~celio/mc404-2013/arm-examples/division/div.c) (ARM, 1994)
-
-## Changes
-
-* v0.01 - First version.
+* [Interactive compiler](http://gcc.godbolt.org/) (Matt Godbolt)
+* [Superoptimizing Compilers - feasibility study](http://superoptimization.org/wiki/Superoptimizing_Compilers) (Embecosm)
