@@ -34,7 +34,8 @@ I maintain [a version of Aha on Github](https://github.com/dpt/Aha) which includ
 First, clone and enter the Aha repo:
 
 ```
-$ git clone git@github.com:dpt/Aha.git$ cd Aha
+$ git clone git@github.com:dpt/Aha.git
+$ cd Aha
 ```
 
 Let's cook up an illustrative operation to be pumped through Aha:
