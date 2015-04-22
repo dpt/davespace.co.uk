@@ -14,7 +14,9 @@ icon: home
     {{ . }}
     {{ end }}
     {{ end }}
-    <p class="readarticle"><a href="{{ $.Rel .Url }}">Read article...</a></p>
+    <div class="summary-post">
+      <p><a href="{{ $.Rel .Url }}">Read article...</a></p>
+    </div>
   </section>
 </article>
 {{ end }}
