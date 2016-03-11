@@ -23,7 +23,7 @@ e.g. `ADD R0,R1,R2`.
 
 `Rn` is used directly but `Rm` is passed through the *barrel shifter*; a functional unit which can rotate and shift values. The result of this is called *Operand2*.
 
-![Organisation diagram.](img/dia/org.png)
+<img alt="Organisation diagram." src="img/dia/org.png" srcset="img/dia/org@2x.png 2x, img/dia/org@3x.png 3x">
 
 The two operands are processed by the ALU and the result written to `Rd`.
   

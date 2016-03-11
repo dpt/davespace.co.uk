@@ -16,7 +16,7 @@ previous: operand2
 * You can’t fit an arbitrary 32-bit value into a 32-bit instruction word.
 * ARM data processing instructions have 12 bits of space for values in their instruction word. This is arranged as a four-bit rotate value and an eight-bit immediate value:
 
-![Immediate values.](img/dia/immediate.png)
+<img alt="Immediate values." src="img/dia/immediate.png" srcset="img/dia/immediate@2x.png 2x, img/dia/immediate@3x.png 3x">
 
 The 4-bit rotate value stored in bits 11-8 is multiplied by two giving a range of 0-30 in steps of two.
 

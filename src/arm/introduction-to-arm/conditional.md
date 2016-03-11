@@ -40,7 +40,7 @@ loop
 
 The top end of the program status register looks like this:
 
-![Flags diagram showing N, Z, C and V flag bits.](img/dia/nzcv.png)
+<img alt="Flags diagram showing N, Z, C and V flag bits." src="img/dia/nzcv.png" srcset="img/dia/nzcv@2x.png 2x, img/dia/nzcv@3x.png 3x">
 
 When an ALU operation changes the flags:
 

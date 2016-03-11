@@ -15,11 +15,11 @@ previous: instruction-sets
 
 ARM has sixteen registers visible at any one time. They are named R0 to R15. All are 32 bits wide.
 
-![Register names diagram.](img/dia/regs.png)
+<img alt="Register name diagram." src="img/dia/regs.png" srcset="img/dia/regs@2x.png 2x, img/dia/regs@3x.png 3x">
 
 The registers may also be referred to by the following aliases:
 
-![Register aliases diagram.](img/dia/regaliases.png)
+<img alt="Register aliases diagram." src="img/dia/regaliases.png" srcset="img/dia/regaliases@2x.png 2x, img/dia/regaliases@3x.png 3x">
 
 All of the registers are general purpose, save for:
 
@@ -32,7 +32,7 @@ All of the registers are general purpose, save for:
 
 In addition to the main registers there is also a status register:
 
-![Status register diagram.](img/dia/regpsr.png)
+<img alt="Status register diagram." src="img/dia/regpsr.png" srcset="img/dia/regpsr@2x.png 2x, img/dia/regpsr@3x.png 3x">
 
 CPSR is the *current program status register*. This holds flags: results of arithmetic and logical operations.
 

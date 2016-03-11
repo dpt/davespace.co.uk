@@ -13,7 +13,7 @@ previous: stack
   
 ## A Call Chain
 
-![Diagram showing call operation.](img/dia/call.png)
+<img alt="Diagram showing call operation." src="img/dia/call.png" srcset="img/dia/call@2x.png 2x, img/dia/call@3x.png 3x">
 
 1. Routine A branches with link (`BL`) to routine B.
   * This saves its return address, the address of the next instruction, into R14 and then jumps to the routine B’s first instruction.

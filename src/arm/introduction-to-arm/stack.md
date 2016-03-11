@@ -36,8 +36,8 @@ Anything but a full descending stack is rare!
 
 `STMFD r13!, {r4-r7}` – Push R4,R5,R6 and R7 onto the stack.
 
-![Diagram showing STMFD operation.](img/dia/stmfd.png)
+<img alt="Diagram showing STMFD operation." src="img/dia/stmfd.png" srcset="img/dia/stmfd@2x.png 2x, img/dia/stmfd@3x.png 3x">
 
 `LDMFD r13!, {r4-r7}` – Pop R4,R5,R6 and R7 from the stack.
 
-![Diagram showing LDMFD operation.](img/dia/ldmfd.png)
+<img alt="Diagram showing LDMFD operation." src="img/dia/ldmfd.png" srcset="img/dia/ldmfd@2x.png 2x, img/dia/ldmfd@3x.png 3x">

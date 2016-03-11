@@ -19,7 +19,7 @@ The *barrel shifter* is a functional unit which can be used in a number of diffe
 
 Example: Logical Shift Left by 4.
 
-![LSL diagram.](img/dia/barrel-lsl.png)
+<img alt="LSL diagram." src="img/dia/barrel-lsl.png" srcset="img/dia/barrel-lsl@2x.png 2x, img/dia/barrel-lsl@3x.png 3x">
 
 Equivalent to `<<` in C.
 
@@ -27,7 +27,7 @@ Equivalent to `<<` in C.
 
 Example: Logical Shift Right by 4.
 
-![LSR diagram.](img/dia/barrel-lsr.png)
+<img alt="LSR diagram." src="img/dia/barrel-lsr.png" srcset="img/dia/barrel-lsr@2x.png 2x, img/dia/barrel-lsr@3x.png 3x">
 
 Equivalent to `>>` in C. i.e. unsigned division by a power of 2.
 
@@ -35,11 +35,11 @@ Equivalent to `>>` in C. i.e. unsigned division by a power of 2.
 
 Example: Arithmetic Shift Right by 4, positive value.
 
-![ASR shifting in 0 diagram.](img/dia/barrel-asr0.png)
+<img alt="ASR shifting in zero diagram." src="img/dia/barrel-asr0.png" srcset="img/dia/barrel-asr0@2x.png 2x, img/dia/barrel-asr0@3x.png 3x">
 
 Example: Arithmetic Shift Right by 4, negative value.
 
-![ASR shifting in 1 diagram.](img/dia/barrel-asr1.png)
+<img alt="ASR shifting in one diagram." src="img/dia/barrel-asr1.png" srcset="img/dia/barrel-asr1@2x.png 2x, img/dia/barrel-asr1@3x.png 3x">
 
 Equivalent to `>>` in C. i.e. signed division by a power of 2.
 
@@ -47,7 +47,7 @@ Equivalent to `>>` in C. i.e. signed division by a power of 2.
 
 Example: Rotate Right by 4.
 
-![ROR diagram.](img/dia/barrel-ror.png)
+<img alt="ROR diagram." src="img/dia/barrel-ror.png" srcset="img/dia/barrel-ror@2x.png 2x, img/dia/barrel-ror@3x.png 3x">
 
 Bit rotate with wrap-around.	
 
@@ -55,7 +55,7 @@ Bit rotate with wrap-around.
 
 Example: Rotate Right Extended.
 
-![RRX diagram.](img/dia/barrel-rrx.png)
+<img alt="RRX diagram." src="img/dia/barrel-rrx.png" srcset="img/dia/barrel-rrx@2x.png 2x, img/dia/barrel-rrx@3x.png 3x">
 
 33-bit rotate with wrap-around through carry bit.
   
