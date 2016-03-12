@@ -45,7 +45,7 @@ struct
 
 It is laid out in memory like this:
 
-![Structure layout in memory - before.](img/dia/padding1.png)
+<img alt="Structure layout in memory - before." src="img/dia/padding1.png" srcset="img/dia/padding1@2x.png 2x, img/dia/padding1@3x.png 3x">
 
 But if we sort the structure members by size, largest to smallest:
 
@@ -58,6 +58,6 @@ struct
 }
 ```
 
-![Structure layout in memory - after.](img/dia/padding2.png)
+<img alt="Structure layout in memory - after." src="img/dia/padding2.png" srcset="img/dia/padding2@2x.png 2x, img/dia/padding2@3x.png 3x">
 
 The padding can be removed and the structure reduces by four bytes (a third).
