@@ -8,8 +8,8 @@ DIR=generated
 
 # set permissions
 #
-find $DIR \( -type d -not -name CVS -print0 \) | xargs -0 chmod 755
-find $DIR \( -type d -name CVS -prune \) -or \( -type f -print0 \) | xargs -0 chmod 644
+find $DIR \( -type d -not -name .hg -print0 \) | xargs -0 chmod 755
+find $DIR \( -type d -name .hg -prune \) -or \( -type f -print0 \) | xargs -0 chmod 644
 find $DIR \( -type f -name "*.sh" -print0 \) | xargs -0 chmod 755
 
 # -C        auto-ignore files in the same way CVS does
