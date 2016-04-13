@@ -9,8 +9,8 @@ icon: home
   {{ template "meta" . }}
   {{/* .Process runs here in case only feed changed */}}
   <section class="summarised-content">
-    {{ with cut .Process.Content "<section class=\"content\">" "</section>" }}
-    {{ with cut . "<!-- begin summary -->" "<!-- end summary -->" }}
+    {{ with cut "<section class=\"content\">" "</section>" .Process.Content }}
+    {{ with cut "<!-- begin summary -->" "<!-- end summary -->" . }}
     {{ . }}
     {{ end }}
     {{ end }}

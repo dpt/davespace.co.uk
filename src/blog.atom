@@ -21,8 +21,8 @@
   {{ end }}
   <link href="{{ .Site.Other.Url }}{{ .Url }}" rel="alternate"></link>
   <content type="html"><![CDATA[
-    {{ with cut .Process.Content "<section class=\"content\">" "</section>" }}
-    {{ with cut . "<!-- begin summary -->" "<!-- end summary -->" }}
+    {{ with cut "<section class=\"content\">" "</section>" .Process.Content }}
+    {{ with cut "<!-- begin summary -->" "<!-- end summary -->" . }}
     {{ . }}
     {{ end }}
     {{ end }}
