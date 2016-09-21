@@ -12,4 +12,4 @@ Dependencies:
 Includes:
 * Font Awesome: https://fortawesome.github.io/Font-Awesome/
 * LESS Elements: http://lesselements.com
-* Pojoaque styke for Pygments: http://web-cms-designs.com/ftopict-10-pojoaque-style-for-highlight-js-code-highlighter.html
+* Pojoaque style for Pygments: http://web-cms-designs.com/ftopict-10-pojoaque-style-for-highlight-js-code-highlighter.html
