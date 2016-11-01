@@ -1,7 +1,6 @@
-# davespace.co.uk
-Source of www.davespace.co.uk
+# Source of www.davespace.co.uk
 
-This is a static site generated using a modified version of gostatic.
+This is a static site generated using my [modified version of gostatic](https://github.com/dpt/gostatic).
 
 The design is based on fonts of 16px on a 20px line height and images are ousted in favour of scalable Font Awesome icons.
 
