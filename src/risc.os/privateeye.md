@@ -2,7 +2,7 @@ section: RISC OS
 title: PrivateEye
 subtitle: Image viewer with some editing features.
 icon: search
-date: 2013-04-07
+date: 2017-02-08
 tags: RISC OS, PrivateEye
 layout: page
 pageOrder: 20
@@ -64,15 +64,15 @@ Tigger the cat demonstrates the interactive rotation dialogue. (First appeared i
 
 ## Download
 
-Current version: 2.99 (05-Feb-2012)
+Current version: 3.00 (08-Feb-2017)
 
-* [Download](../software/privateeye299.zip) (242k Zip)
-* [Manual](../software/privateeye299manual.pdf) (343k PDF)
+* [Download](../software/privateeye300.zip) (242k Zip)
+* [Manual](../software/privateeye300.pdf) (343k PDF)
 * [Screenshot](../software/eyesnap4.png) (333k PNG)
 
 ## Source Code
 
-The PrivateEye source lives at [svn://svn.riscos.info/privateeye](svn://svn.riscos.info/privateeye).
+The PrivateEye source lives at riscos.info at [svn://svn.riscos.info/privateeye](svn://svn.riscos.info/privateeye) and on github at [https://github.com/dpt/PrivateEye](https://github.com/dpt/PrivateEye).
 
 Use http://www.riscos.info/websvn/listing.php?repname=privateeye for the web-based repository viewer.
 
