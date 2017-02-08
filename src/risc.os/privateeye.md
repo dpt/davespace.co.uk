@@ -66,9 +66,9 @@ Tigger the cat demonstrates the interactive rotation dialogue. (First appeared i
 
 Current version: 3.00 (08-Feb-2017)
 
-* [Download](../software/privateeye300.zip) (242k Zip)
-* [Manual](../software/privateeye300.pdf) (343k PDF)
-* [Screenshot](../software/eyesnap4.png) (333k PNG)
+* [Download](../software/privateeye300.zip) (233K Zip)
+* [Manual](../software/privateeye300manual.pdf) (1.2M PDF)
+* [Screenshot](../software/eyesnap4.png) (332k PNG)
 
 ## Source Code
 
