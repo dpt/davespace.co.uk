@@ -20,7 +20,7 @@ for line in sys.stdin:
         print '<div class="%s">' % (match.group(1).lower())
         inside = 1
     else:
-        sys.stdout.write(line);
+        sys.stdout.write(line)
 
 if inside:
     print '</div>'
