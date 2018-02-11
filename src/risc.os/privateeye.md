@@ -2,7 +2,7 @@ section: RISC OS
 title: PrivateEye
 subtitle: Image viewer with some editing features.
 icon: search
-date: 2017-02-08
+date: 2018-02-08
 tags: RISC OS, PrivateEye
 layout: page
 pageOrder: 20
@@ -64,9 +64,9 @@ Tigger the cat demonstrates the interactive rotation dialogue. (First appeared i
 
 ## Download
 
-Current version: 3.00 (08-Feb-2017)
+Current version: 3.01 (19-Jan-2018)
 
-* [Download](../software/privateeye300.zip) (233K Zip)
+* [Download](../software/privateeye301.zip) (233K Zip)
 * [Manual](../software/privateeye300manual.pdf) (1.2M PDF)
 * [Screenshot](../software/eyesnap4.png) (332k PNG)
 
