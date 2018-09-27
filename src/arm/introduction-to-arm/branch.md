@@ -73,11 +73,9 @@ calc               ; function body
 
 Branches are PC-relative. +/-32M range (24 bits × 4 bytes).
 
-Since ARM’s branch instructions are PC-relative the code produced is position independent — it can execute from any address in memory. Certain systems such as BREW use this.
+Since ARM’s branch instructions are PC-relative the code produced is position independent — it can execute from any address in memory. Certain systems such as BREW take advantage of this to avoid the need for an MMU.
 
-How can we perform longer branches which access the full 32-bit address space?
-
-You can set up the LR manually if needed, then load into PC:
+How can we perform longer branches which access the full 32-bit address space? You can set up the LR manually if needed, then load into PC:
 
 ``` arm
 MOV lr,pc
