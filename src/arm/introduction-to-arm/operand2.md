@@ -24,26 +24,26 @@ previous: barrel-shifter
 
 %% Examples
 
-## Examples
+## Examples of Operand2
 
-### Immediate values
+Immediate values
 
-  * `MOV r0, #42`
-    * *move the value 42 into register R0*
-  * `ORR r1, r1, #0xFF00`
-    * *OR the value 0xFF00 with register R1 then put the result in register R1*
+``` arm
+MOV r0, #42                 ; Move the value 42 into R0
+ORR r1, r1, #0xFF00         ; OR the value 0xFF00 with R1
+```
 
-### Registers shifted by values
+Registers shifted by values
 
-  * `MOV r2, r2, LSR #1`
-    * *shift register R2 right by a bit*
-  * `RSB r10, r5, r14, ASR #14`
-    * *take register 14 and shift it right by 14 bits while sign extending, then subtract register R5 from that. put the result in register R10* (reverse subtract)
+``` arm
+MOV r2, r2, LSR #1          ; Shift R2 right by one bit
+RSB r10, r5, r14, ASR #14   ; Shift R14 right by 14 bits while sign extending, then subtract R5 from that. Put the result in R10. (RSB = Reverse Subtract)
+```
 
-### Registers shifted by registers
+Registers shifted by registers
 
-  * `BIC r11, r11, r1, LSL r0`
-    * *take register R1 and shift it left by register R0, then use that as a mask to clear bits in register R11. put the result in register R11*
-  * `CMP r9, r8, ROR r0`
-    * *take register R8 and rotate it right by register R0, then compare that with register R9. the result is the processor flags*
+``` arm
+BIC r11, r11, r1, LSL r0    ; Take R1 and shift it left by R0, then use that as a mask to clear bits in R11. Put the result in R11
+CMP r9, r8, ROR r0          ; Take R8 and rotate it right by R0, then compare that with R9. The result is the processor flags
+```
 
