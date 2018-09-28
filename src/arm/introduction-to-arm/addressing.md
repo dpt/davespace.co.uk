@@ -32,7 +32,7 @@ Pre-indexed writeback denoted by `{!}` causes the final address generated to be 
 
 %% Examples
 
-## Examples
+## Examples of Addressing Modes
 
 * `LDR r0,[r1,#4]`
   * Load word addressed by R1+4.

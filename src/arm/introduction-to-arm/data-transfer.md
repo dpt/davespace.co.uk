@@ -35,7 +35,7 @@ previous: multiply
 
 %% Examples
 
-## Examples
+## Examples of Single Register Data Transfer
 
 * `LDR r0,[r1]`
   * Load word addressed by R1 into R0.

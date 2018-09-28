@@ -24,7 +24,7 @@ previous: organisation
   
 %% Examples
   
-## Examples
+## Examples of Movement Instructions
 
 * `MOV r0, #42`
   * Move the constant 42 into register R0.

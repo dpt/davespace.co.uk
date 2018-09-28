@@ -30,7 +30,7 @@ Comparisons produce no results – they just set condition codes. Ordinary instr
 
 %% Examples
   
-## Examples
+## Examples of Compare Instructions
 
 * `CMP r0, #42`
   * Compare R0 to 42.

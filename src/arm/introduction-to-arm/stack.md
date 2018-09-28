@@ -32,7 +32,7 @@ Anything but a full descending stack is rare!
   
 %% Examples
   
-## Examples
+## Example Stack Entry & Exit
 
 `STMFD r13!, {r4-r7}` – Push R4,R5,R6 and R7 onto the stack.
 

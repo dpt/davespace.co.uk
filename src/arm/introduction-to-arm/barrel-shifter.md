@@ -61,7 +61,7 @@ Example: Rotate Right Extended.
   
 %% Examples
   
-## Examples
+## Examples of Barrel Shifting
 
 * `MOV r0, r0, LSL #1`
   * Multiply R0 by two.

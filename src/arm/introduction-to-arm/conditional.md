@@ -21,7 +21,7 @@ By default the data processing instructions do not affect the condition code fla
 
 %% Examples
   
-## Examples
+## Example: Looping
 
 The following code fragment is a loop which runs until the counter in R1 hits zero, at which point the condition code `NE` (not equal to zero) controlling the branch becomes false.
 
@@ -81,7 +81,7 @@ The (omitted from slide) `NV` condition code is deprecated. Though it originally
 
 %% Examples
   
-## Examples
+## Examples of Conditional Execution
 
 Use a sequence of several conditional instructions:
 

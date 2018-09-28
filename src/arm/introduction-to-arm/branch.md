@@ -34,7 +34,7 @@ or
 
 %% Examples
 
-## Examples
+## Examples of Branch Instructions
 
 Branching forward, to skip over some code:
 

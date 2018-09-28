@@ -28,7 +28,7 @@ previous: arithmetic
 
 %% Examples
   
-## Examples
+## Examples of Logical Instructions
 
 * `AND r8, r7, r2`
   * R8 = R7 & R2

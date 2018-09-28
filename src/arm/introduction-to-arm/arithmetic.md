@@ -32,7 +32,7 @@ previous: movement
 
 %% Examples
 
-## Examples
+## Examples of Arithmetic Instructions
 
 * `ADD r0, r1, r2`
   * R0 = R1 + R2

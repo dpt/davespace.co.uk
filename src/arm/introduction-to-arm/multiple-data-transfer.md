@@ -33,7 +33,7 @@ previous: addressing
   
 %% Examples
   
-## Examples
+## Examples of Multiple Register Data Transfer Instructions
 
 * `LDMIA r0, {r3,r7}`
   * Load words addressed by R0 into R3 and R7.
