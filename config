@@ -14,7 +14,7 @@ URL = http://www.davespace.co.uk/
 TITLE = DaveSpace
 AUTHOR = David Thomas
 KEYWORDS = DaveSpace, David Thomas, Dave Thomas
-COPYRIGHT = Copyright © David Thomas, 2005-2017
+COPYRIGHT = Copyright © David Thomas, 2005-2018
 
 blog/*.md:
 	config
