@@ -34,10 +34,10 @@ Anything but a full descending stack is rare!
   
 ## Example Stack Entry & Exit
 
-`STMFD r13!, {r4-r7}` – Push R4,R5,R6 and R7 onto the stack.
+`STMFD r13!, {r4-r7}` – Pushes R4,R5,R6 and R7 onto the stack.
 
 <img alt="Diagram showing STMFD operation." src="img/dia/stmfd.png" srcset="img/dia/stmfd@2x.png 2x, img/dia/stmfd@3x.png 3x">
 
-`LDMFD r13!, {r4-r7}` – Pop R4,R5,R6 and R7 from the stack.
+`LDMFD r13!, {r4-r7}` – Pops R4,R5,R6 and R7 from the stack.
 
 <img alt="Diagram showing LDMFD operation." src="img/dia/ldmfd.png" srcset="img/dia/ldmfd@2x.png 2x, img/dia/ldmfd@3x.png 3x">

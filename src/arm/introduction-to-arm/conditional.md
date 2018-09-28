@@ -23,7 +23,7 @@ By default the data processing instructions do not affect the condition code fla
   
 ## Example: Looping
 
-The following code fragment is a loop which runs until the counter in R1 hits zero, at which point the condition code `NE` (not equal to zero) controlling the branch becomes false.
+The following code fragment is a do-while loop which runs until the counter in R1 hits zero, at which point the condition code `NE` (not equal to zero) controlling the branch becomes false.
 
 ``` arm
 	MOV   r1, #10
@@ -36,7 +36,7 @@ loop
 
 %% Slide
   
-## Flags
+## Processor Flags
 
 The top end of the program status register looks like this:
 
@@ -111,7 +111,7 @@ Use conditional compare instructions:
     MOVEQ r1, #1   ;   y = 1;
 ```
 
-A sequence which doesn’t use conditional execution:
+A sequence which **doesn’t** use conditional execution:
 
 ``` arm
     CMP   r3, #0
@@ -122,7 +122,7 @@ next
 ...
 ```
 
-By transforming the sequence with conditional execution an instruction can be
+By transforming the sequence with conditional execution the `BEQ` instruction can be
 removed:
 
 ``` arm
