@@ -1,6 +1,6 @@
 section: ARM,Efficient C for ARM
 title: Start
-icon: rocket
+icon: microchip
 date: 2012-03-03
 tags: ARM, EfficientC
 layout: page

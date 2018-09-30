@@ -1,6 +1,6 @@
 section: ARM
 title: Overview
-icon: rocket
+icon: microchip
 date: 2012-03-03
 tags: ARM
 layout: page

@@ -1,6 +1,6 @@
 section: ARM,Introduction to ARM
 title: Thumb-2
-icon: compass
+icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
 layout: page

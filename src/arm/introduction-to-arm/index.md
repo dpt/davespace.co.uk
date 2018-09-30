@@ -1,6 +1,6 @@
 section: ARM,Introduction to ARM
 title: Start
-icon: compass
+icon: microchip
 date: 2012-03-03
 tags: ARM, IntroductionToARM
 layout: page

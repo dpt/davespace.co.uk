@@ -1,6 +1,6 @@
 section: ARM,Efficient C for ARM
 title: Register Allocation
-icon: rocket
+icon: microchip
 date: 2012-03-03
 layout: page
 tags: ARM, EfficientC, Slide, TargetedOptimisation

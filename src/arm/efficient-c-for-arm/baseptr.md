@@ -1,6 +1,6 @@
 section: ARM,Efficient C for ARM
 title: Base Pointer Optimisation
-icon: rocket
+icon: microchip
 date: 2012-03-03
 layout: page
 tags: ARM, EfficientC, TargetedOptimisation

@@ -1,5 +1,5 @@
 title: Branchless code sequences
-icon: rocket
+icon: microchip
 layout: post
 date: 2015-01-31
 tags: Aha, GitHub, Project, EfficientC
