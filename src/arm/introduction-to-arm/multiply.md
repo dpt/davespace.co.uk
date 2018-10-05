@@ -24,7 +24,7 @@ previous: conditional
 
 The multiply instructions produce the same result for both signed and unsigned values.
 
-Specifying the same register for Rm and Rs has UNPREDICTABLE results. UNPREDICTABLE means that the result of an instruction cannot be relied upon.
+Historical note: Prior to ARMv4 specifying the same register for Rd and Rm had potentially unpredictable results.
   
 %% Slide
   
