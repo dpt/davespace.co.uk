@@ -1,7 +1,7 @@
 section: RISC OS
 title: QuickFiler
 subtitle: Adds keyboard shortcuts to the Filer.
-icon: keyboard-o
+icon: keyboard
 date: 2013-04-07
 tags: RISC OS, QuickFiler
 layout: page
