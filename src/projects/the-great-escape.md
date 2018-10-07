@@ -3,7 +3,7 @@ title: The Great Escape
 subtitle: Reverse engineering and rebuilding the ZX Spectrum 48K classic game from 1986.
 icon: bell
 date: 2013-04-10
-tags: Project, Game, TheGreatEscape
+tags: GitHub, Project, Game, TheGreatEscape
 layout: page
 pageOrder: 1020
 ----

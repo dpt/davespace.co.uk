@@ -3,7 +3,7 @@ title: Motion Masks
 subtitle: Bitmap compositing driven by RLE-compressed alpha masks.
 icon: star
 date: 2013-03-24
-tags: Project, MotionMasks
+tags: GitHub, Project, MotionMasks
 layout: page
 pageOrder: 1010
 ----
