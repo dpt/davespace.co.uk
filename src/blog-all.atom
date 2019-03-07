@@ -10,6 +10,7 @@
   <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
 
 {{ range .Site.Pages.Children "blog/" }}
+{{ if .UrlMatches ".*\\.html" }}
 <entry>
   <id>{{ .Url }}</id>
   <author><name>{{ or .Other.Author .Site.Other.Author }}</name></author>
@@ -27,5 +28,6 @@
     {{ end }}
   ]]></content>
 </entry>
+{{ end }}
 {{ end }}
 </feed>

@@ -11,6 +11,7 @@
 
 {{ with .Site.Pages.Children "blog/" }}
 {{ range .Slice 0 5 }}
+{{ if .UrlMatches ".*\\.html" }}
 <entry>
   <id>{{ .Url }}</id>
   <author><name>{{ or .Other.Author .Site.Other.Author }}</name></author>
@@ -28,6 +29,7 @@
     {{ end }}
   ]]></content>
 </entry>
+{{ end }}
 {{ end }}
 {{ end }}
 </feed>
