@@ -196,7 +196,7 @@ ARTICLE
 		}
 	}
 
-	H1 { .heading2; text-transform: none; }
+	H1 { .heading2; }
 	H2 { .heading3; }
 	H3 { .heading4; }
 
@@ -217,13 +217,13 @@ ARTICLE
 // Summarised articles have reduced font sizes.
 ARTICLE.summarised
 {
-	H1 { .heading3; text-transform: none; }
+	H1 { .heading3; }
 	H2 { .heading4; }
 
 	.summary-post { .font(14px); }
 }
 
-H1, H2, H3, H4, H5
+H1, H2, H3
 {
 	padding-left:		10pt;
 	padding-right:		10pt;
@@ -233,8 +233,16 @@ H1, H2, H3, H4, H5
 	font-family:		@headingfontfamily;
 }
 
+H4, H5, H6
+{
+	padding-left:		10pt;
+	padding-right:		10pt;
+}
+
 // Main site heading
-H1 { .heading1; text-transform: lowercase; }
+H1 { .heading1; }
+// Main site subheading (used by "Recent Posts")
+H2 { .heading2; }
 
 P
 {
@@ -377,6 +385,11 @@ CODE, KBD, SAMP
 
 // USER ELEMENTS
 
+#header
+{
+	H1 { text-transform: lowercase; }
+}
+
 #nav
 {
 	margin-left:		-@left + @grid;
@@ -387,8 +400,8 @@ CODE, KBD, SAMP
 	left:			0;
 	width:			160px;
 
-	H4 { .heading4; }
-	H5 { .heading5; }
+	H1 { .heading4; }
+	H2 { .heading5; }
 
 	P
 	{

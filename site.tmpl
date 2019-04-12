@@ -33,14 +33,14 @@
 
 {{ define "nav-section" }}
 {{ if .Section }}
-<h4>{{ .SectionName ":<br/>" }}</h4>
+<h1>{{ .SectionName ":<br/>" }}</h1>
 <ul class="fa-ul">
   {{ range .Site.Pages.ChildrenInSection .GetSection }}
   <li><i class="fa-li fa fa-{{ if .Is $.Url }}dot-{{ end }}circle-o"></i> <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
 {{ else }}
-<h4>Recent Posts</h4>
+<h1>Recent Posts</h1>
 <ul class="fa-ul">
   {{ with .Site.Pages.Children "blog/" }}
   {{ range .Slice 0 5 }}
@@ -56,7 +56,7 @@
 {{ end }}
 
 {{ define "nav-categories" }}
-<h4>Categories</h4>
+<h1>Categories</h1>
 <ul class="fa-ul">
   <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/arm/" }}">ARM</a></li>
   <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="{{ .Rel "/doodles/" }}">Doodles</a></li>
@@ -67,27 +67,27 @@
 {{ end }}
 
 {{ define "nav-tags" }}
-<h4>Tags</h4>
+<h1>Tags</h1>
 <p>{{ range .Site.Pages.Children "tags/" }}<a href="{{ $.Rel .Url }}">{{ .Title }}</a> {{ end }}</p>
 {{ end }}
 
 
 {{ define "about" }}
-<h4>About me</h4>
+<h1>About me</h1>
 <ul class="fa-ul">
   <li><i class="fa-li fa fa-male"></i> David Thomas</li>
   <li><i class="fa-li fa fa-wrench"></i> Software Engineer</li>
   <li><i class="fa-li fa fa-location-arrow"></i> Glasgow, Scotland</li>
 </ul>
 
-<h5>Contact</h5>
+<h2>Contact</h2>
 <ul class="fa-ul">
   <li><i class="fa-li fa fa-envelope"></i> Email<br/> <a href="mailto:dave@davespace.co.uk">dave@davespace.co.uk</a></li>
   <li><i class="fa-li fab fa-twitter"></i> Twitter<br/> <a href="https://twitter.com/bagospanners">@bagospanners</a></li>
   <li><i class="fa-li fa fa-users"></i> IRC<br/> <em>spanners</em> on <a href="http://freenode.net/">Freenode</a></li>
 </ul>
 
-<h5>Tasty Links</h5>
+<h2>Tasty Links</h2>
 <ul class="fa-ul">
   <li><i class="fa-li fab fa-github"></i> <a href="https://github.com/dpt">dpt on GitHub</a><br/>
   – my projects</li>
