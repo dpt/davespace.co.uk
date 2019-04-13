@@ -94,9 +94,12 @@
 	.font(72px, @spacing: -0.02em);
 	.whiteonslate;
 	.textshadow;
+	.rounded(6pt);
 
 	padding-bottom:		12px;
 	padding-top:		8px; // manual adjustment
+
+	text-transform:		lowercase;
 
 	A
 	{
@@ -110,9 +113,16 @@
 	.font(28px);
 	.whiteonblue;
 	.textshadow(@shadow);
+	.rounded(6pt);
 
 	padding-top:		8px; // manual adjustment
 	padding-bottom:		12px;
+
+	A
+	{
+		.undecoratedlink;
+		color:		white;
+	}
 }
 
 .heading3
@@ -120,6 +130,7 @@
 	.font(20px);
 	.whiteonmidblue;
 	.textshadow(@shadow);
+	.rounded(6pt);
 
 	padding-top:		9px; // manual adjustment
 	padding-bottom:		11px;
@@ -130,6 +141,7 @@
 	.font;
 	.whiteonslate;
 	.textshadow(@shadow);
+	.rounded(6pt);
 
 	padding-top:		9px; // manual adjustment
 	padding-bottom:		11px;
@@ -223,26 +235,12 @@ ARTICLE.summarised
 	.summary-post { .font(14px); }
 }
 
-H1, H2, H3
+H1, H2, H3, H4, H5, H6
 {
-	padding-left:		10pt;
-	padding-right:		10pt;
-
-	.rounded(6pt);
-	color:			white;
 	font-family:		@headingfontfamily;
-}
-
-H4, H5, H6
-{
 	padding-left:		10pt;
 	padding-right:		10pt;
 }
-
-// Main site heading
-H1 { .heading1; }
-// Main site subheading (used by "Recent Posts")
-H2 { .heading2; }
 
 P
 {
@@ -385,10 +383,11 @@ CODE, KBD, SAMP
 
 // USER ELEMENTS
 
-#header
-{
-	H1 { text-transform: lowercase; }
-}
+// Main site heading
+#header H1 { .heading1; }
+
+// Main site subheading (used by "Recent Posts")
+BODY > H2 { .heading2; }
 
 #nav
 {
