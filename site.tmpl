@@ -33,7 +33,7 @@
 
 {{ define "nav-section" }}
 {{ if .Section }}
-<h1>{{ .SectionName ":<br/>" }}</h1>
+<h1>{{ .SectionName " &gt; <br/>" }}</h1>
 <ul class="fa-ul">
   {{ range .Site.Pages.ChildrenInSection .GetSection }}
   <li><i class="fa-li fa fa-{{ if .Is $.Url }}dot-{{ end }}circle-o"></i> <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
