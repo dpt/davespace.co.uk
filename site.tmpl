@@ -36,7 +36,7 @@
 <h1>{{ .SectionName " &gt; <br/>" }}</h1>
 <ul class="fa-ul">
   {{ range .Site.Pages.ChildrenInSection .GetSection }}
-  <li><i class="fa-li fa fa-{{ if .Is $.Url }}dot-{{ end }}circle-o"></i> <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
+  <li><i class="fa-li {{ if .Is $.Url }}fa fa-circle{{ else}}far fa-circle{{ end }}"></i> <a href="{{ $.Rel .Url }}">{{ .Title }}</a></li>
   {{ end }}
 </ul>
 {{ else }}
