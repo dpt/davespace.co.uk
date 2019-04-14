@@ -96,6 +96,10 @@
 	.textshadow;
 	.rounded(6pt);
 
+	font-family:		@headingfontfamily;
+
+	padding-left:		10pt;
+	padding-right:		10pt;
 	padding-bottom:		12px;
 	padding-top:		8px; // manual adjustment
 
@@ -115,6 +119,10 @@
 	.textshadow(@shadow);
 	.rounded(6pt);
 
+	font-family:		@headingfontfamily;
+
+	padding-left:		10pt;
+	padding-right:		10pt;
 	padding-top:		8px; // manual adjustment
 	padding-bottom:		12px;
 
@@ -132,6 +140,10 @@
 	.textshadow(@shadow);
 	.rounded(6pt);
 
+	font-family:		@headingfontfamily;
+
+	padding-left:		10pt;
+	padding-right:		10pt;
 	padding-top:		9px; // manual adjustment
 	padding-bottom:		11px;
 }
@@ -139,10 +151,14 @@
 .heading4
 {
 	.font;
-	.whiteonslate;
+	.whiteonmidblue;
 	.textshadow(@shadow);
 	.rounded(6pt);
 
+	font-family:		@headingfontfamily;
+
+	padding-left:		10pt;
+	padding-right:		10pt;
 	padding-top:		9px; // manual adjustment
 	padding-bottom:		11px;
 }
@@ -151,6 +167,11 @@
 {
 	.font(14px);
 	color:			@slate;
+
+	font-family:		@headingfontfamily;
+
+	padding-left:		10pt;
+	padding-right:		10pt;
 }
 
 .textshadow (@alpha: 1.0)
@@ -210,7 +231,6 @@ ARTICLE
 
 	H1 { .heading2; }
 	H2 { .heading3; }
-	H3 { .heading4; }
 
 	// Insert a "cog" signature following article sections.
 	> SECTION::after
@@ -233,13 +253,6 @@ ARTICLE.summarised
 	H2 { .heading4; }
 
 	.summary-post { .font(14px); }
-}
-
-H1, H2, H3, H4, H5, H6
-{
-	font-family:		@headingfontfamily;
-	padding-left:		10pt;
-	padding-right:		10pt;
 }
 
 P
