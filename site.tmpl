@@ -182,23 +182,36 @@
 <!-- end flip -->
 {{ end }}
 
-{{/* Ugh. Because there's no equality operator I have to use UrlMatches and feed it a regexp concatenated using printf. There must be a better way than this. */}}
-{{/* urlmatches gets multiple matches here for 'index'... */}}
-
 {{ define "titleofprev" }}
-{{ range .Site.Pages.Children "arm/" }}
-  {{ if .UrlMatches (printf "/%s\\.html" $.Other.Previous) }}
-  {{ .Title }}
+  {{ if eq $.Other.Previous "index" }}
+    {{ range .Site.Pages.ChildrenInSection .GetSection }}
+      {{- if .UrlMatches "/$" -}}
+        {{- .Title -}}
+      {{- end -}}
+    {{ end }}
+  {{ else }}
+    {{ range .Site.Pages.ChildrenInSection .GetSection }}
+      {{- if .UrlMatches (printf "/%s\\.html$" $.Other.Previous) -}}
+        {{- .Title -}}
+      {{- end -}}
+    {{ end }}
   {{ end }}
-{{ end }}
 {{ end }}
 
 {{ define "titleofnext" }}
-{{ range .Site.Pages.Children "arm/" }}
-  {{ if .UrlMatches (printf "/%s\\.html" $.Other.Next) }}
-  {{ .Title }}
+  {{ if eq $.Other.Next "index" }}
+    {{ range .Site.Pages.ChildrenInSection .GetSection }}
+      {{- if .UrlMatches "/$" -}}
+        {{- .Title -}}
+      {{- end -}}
+    {{ end }}
+  {{ else }}
+    {{ range .Site.Pages.ChildrenInSection .GetSection }}
+      {{- if .UrlMatches (printf "/%s\\.html$" $.Other.Next) -}}
+        {{- .Title -}}
+      {{- end -}}
+    {{ end }}
   {{ end }}
-{{ end }}
 {{ end }}
 
 
