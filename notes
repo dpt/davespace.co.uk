@@ -91,3 +91,11 @@ DONE
 - need an index for the ARM courses
   - tags page alone is not sufficient
 
+
+
+.Url $.Url what's the difference?
+
+{{ .Rel "favicon.ico" }}    -- relative path to favicon.ico from here
+{{ $.Rel .Url }}            -- when in a range, "$.foo" runs the func foo on the outer scope. so this outputs the relative path to URL from the outer scope.
+
+
