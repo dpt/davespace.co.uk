@@ -36,6 +36,16 @@ arm/*/*.md:
 	template post
 	template page
 
+# The Great Escape uses mkcontents.py
+projects/the-great-escape.md:
+	config
+	ext .html
+	tags tags/*.tag
+	:python3 scripts/mkcontents.py
+	markdown
+	template post
+	template page
+
 doodles/index.html: doodles/*.md
 	config
 	inner-template

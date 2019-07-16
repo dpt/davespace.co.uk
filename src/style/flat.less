@@ -232,6 +232,13 @@ ARTICLE
 	H1 { .heading2; }
 	H2 { .heading3; }
 
+	// Images in content sections are limited in size.
+	SECTION.content IMG
+	{
+		max-width: 544px;
+		max-height: 408px;
+	}
+
 	// Insert a "cog" signature following article sections.
 	> SECTION::after
 	{
