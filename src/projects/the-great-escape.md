@@ -117,6 +117,10 @@ mariuszw [ported](https://atariage.com/forums/topic/239167-new-game-great-escape
 
 ![Screenshot of The Great Escape running in Altirra](tge/atari.png)
 
+(July 2019)
+
+Elysium saw that the Commodore 64 version of The Great Escape was dog slow and set about tuning it for more speed. The result is a 15% faster version entitled [The Great Escape 115%](https://csdb.dk/release/?id=178037&show=notes). A comparison video is [here](https://www.youtube.com/watch?v=n0Fr2EZzf-4).
+
 
 ## More to Come in Part 2
 
