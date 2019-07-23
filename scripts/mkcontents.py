@@ -40,7 +40,8 @@ def gencontents(indices, contents):
         print(" " * (len(indices) - 1) * 4, end="")
         print("%d." % indices[-1], end="")
         print(" [%s](#%s)" % (c[0], buildID(c[0])))
-        gencontents(indices + [1], c[1])
+        # don't do subsections for now
+        # gencontents(indices + [1], c[1])
         indices[-1] += 1
 
 # Insert the generated contents before the first "## Heading"
