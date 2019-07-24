@@ -136,7 +136,7 @@ For The Great Escape, I located the graphics in the game binary by using [the Wi
 
 Finding graphics in game binaries is a process of scrolling up and down in an ripping tool like SGE while looking for the "stripes" which give away the presence of graphics data. Since we don't know the width of the graphics we can then try various common widths like 16 or 24 pixels wide. Once the correct width is found the image will snap into focus, albeit possibly offset. None of this is a hard and fast rule however - game authors are free to encode their graphics in whatever form they choose.
 
-Once located, each graphic's offset and dimensions will need to be recorded. However, sometimes it's a bit tricky to decide exactly where the image starts if there is an amount of unused space at the top of an image, which could equally be space allocated to a previous.
+Once located, each graphic's offset and dimensions will need to be recorded. However, sometimes it's a bit tricky to decide exactly where the image starts if there is an amount of unused space at the top of an image, which could equally be space allocated to a previous graphic.
 
 ### Other Clues
 
