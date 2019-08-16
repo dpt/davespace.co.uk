@@ -3,7 +3,6 @@ title: Organisation
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1070
 next: movement
 previous: syntax

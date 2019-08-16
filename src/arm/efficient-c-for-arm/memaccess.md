@@ -2,7 +2,6 @@ section: ARM,Efficient C for ARM
 title: Memory Access
 icon: microchip
 date: 2012-03-03
-layout: page
 tags: ARM, EfficientC, Slide, TargetedOptimisation
 pageOrder: 2200
 next: localvar

@@ -3,7 +3,6 @@ title: Early Architectures
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1350
 next: arm-arch4
 previous: arm-arch

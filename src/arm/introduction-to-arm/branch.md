@@ -3,7 +3,6 @@ title: Branch Instructions
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1150
 next: conditional
 previous: immediates

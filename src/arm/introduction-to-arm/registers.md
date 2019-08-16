@@ -3,7 +3,6 @@ title: Registers
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1040
 next: pc
 previous: instruction-sets

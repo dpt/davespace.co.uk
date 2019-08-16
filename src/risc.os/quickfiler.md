@@ -4,7 +4,6 @@ subtitle: Adds keyboard shortcuts to the Filer.
 icon: keyboard
 date: 2013-04-07
 tags: RISC OS, QuickFiler
-layout: page
 pageOrder: 30
 ----
 

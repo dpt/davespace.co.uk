@@ -3,7 +3,6 @@ title: resetjpegdpi.py
 subtitle: Resets the header of a set of JPEGs.
 date: 2013-04-07
 tags: Script, Python
-layout: page
 pageOrder: 1020
 ----
 

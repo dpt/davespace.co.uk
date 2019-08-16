@@ -3,7 +3,6 @@ title: Replace an Iyonix’s Case
 icon: wrench
 date: 2013-04-07
 tags: RISC OS, Hardware, Iyonix
-layout: page
 pageOrder: 500
 ----
 

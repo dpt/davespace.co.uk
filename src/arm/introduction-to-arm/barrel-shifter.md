@@ -3,7 +3,6 @@ title: Barrel Shifter
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1120
 next: operand2
 previous: compare

@@ -1,6 +1,5 @@
 title: Survey of ARM cores used in iOS devices
 icon: cogs
-layout: post
 date: 2013-11-11
 tags: ARM, iOS
 ----

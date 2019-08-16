@@ -3,7 +3,6 @@ title: rerename.py
 subtitle: Allows you to rename files using regular expressions.
 date: 2013-04-07
 tags: Script, Python
-layout: page
 pageOrder: 1010
 ----
 

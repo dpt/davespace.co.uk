@@ -3,7 +3,6 @@ title: Architecture 7
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1390
 next: arm-cores
 previous: arm-arch6

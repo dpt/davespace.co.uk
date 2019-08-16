@@ -3,7 +3,6 @@ title: Start
 icon: microchip
 date: 2012-03-03
 tags: ARM, IntroductionToARM
-layout: page
 pageOrder: 1000
 next: why-learn
 ----

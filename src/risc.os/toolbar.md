@@ -4,7 +4,6 @@ subtitle: Application launcher.
 icon: bolt
 date: 2013-04-07
 tags: RISC OS, Toolbar
-layout: page
 pageOrder: 40
 ----
 

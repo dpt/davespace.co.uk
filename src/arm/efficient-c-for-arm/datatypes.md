@@ -2,7 +2,6 @@ section: ARM,Efficient C for ARM
 title: C Data Types
 icon: microchip
 date: 2012-03-03
-layout: page
 tags: ARM, EfficientC, Slide, TargetedOptimisation
 pageOrder: 2190
 next: memaccess

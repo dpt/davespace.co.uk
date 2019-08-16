@@ -3,7 +3,6 @@ title: What’s inside various devices?
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1410
 next: arm-test
 previous: arm-cores

@@ -1,6 +1,5 @@
 title: New project: Containers
 icon: truck
-layout: post
 date: 2011-07-11
 tags: Containers, GitHub
 ----

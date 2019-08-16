@@ -3,3 +3,6 @@
 Thumbs.db
 generated
 tmp
+*.bak
+package-lock.json
+src/the.great.escape/tge/watermarked/*

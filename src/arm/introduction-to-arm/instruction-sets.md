@@ -3,7 +3,6 @@ title: Instruction Sets
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1030
 next: registers
 previous: not-trivial

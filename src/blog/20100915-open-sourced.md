@@ -1,6 +1,5 @@
 title: PhotoFiler and PrivateEye are now open source
 icon: search
-layout: post
 date: 2010-09-15
 tags: RISC OS, PhotoFiler, PrivateEye
 ----

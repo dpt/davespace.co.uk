@@ -3,7 +3,6 @@ title: Task Two
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1250
 next: thumb
 previous: task-one-answers

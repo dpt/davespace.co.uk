@@ -4,7 +4,6 @@ subtitle: from J. Scott Campbell’s Danger Girl
 icon: pencil-alt
 date: 2013-10-29
 tags: Doodle, Trace
-layout: page
 pageOrder: 1000
 ----
 

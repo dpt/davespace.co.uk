@@ -2,7 +2,6 @@ section: ARM,Efficient C for ARM
 title: Division and Modulus
 icon: microchip
 date: 2012-03-03
-layout: page
 tags: ARM, EfficientC, Slide
 pageOrder: 2070
 next: unaligned

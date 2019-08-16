@@ -1,6 +1,8 @@
 # davespace.co.uk config for gostatic
 #
 # by dpt
+#
+# vim: noet:
 
 # I can't seem to add a dependency on site.tmpl and have it update those files.
 
@@ -15,6 +17,10 @@ TITLE = DaveSpace
 AUTHOR = David Thomas
 KEYWORDS = DaveSpace, David Thomas, Dave Thomas
 COPYRIGHT = Copyright © David Thomas, 2005-2019
+
+#
+# PAGES WHICH NEED EXTRA PROCESSING
+#
 
 blog/*.md:
 	config
@@ -37,7 +43,7 @@ arm/*/*.md:
 	template page
 
 # The Great Escape uses mkcontents.py
-projects/the-great-escape.md:
+the.great.escape/*.md:
 	config
 	ext .html
 	tags tags/*.tag
@@ -46,10 +52,46 @@ projects/the-great-escape.md:
 	template post
 	template page
 
+#
+# INDEX PAGES
+#
+
+# arm/index.md: doesn't generate so doesn't depend on anything
+# all the others depend on .md's in the same dir
+
 doodles/index.html: doodles/*.md
 	config
 	inner-template
+	template post
 	template page
+
+projects/index.html: projects/*.md
+	config
+	inner-template
+	template post
+	template page
+
+python/index.html: python/*.md
+	config
+	inner-template
+	template post
+	template page
+
+risc.os/index.html: risc.os/*.md
+	config
+	inner-template
+	template post
+	template page
+
+the.great.escape/index.html: the.great.escape/*.md
+	config
+	inner-template
+	template post
+	template page
+
+#
+# GLOBAL RULES
+#
 
 *.md:
 	config
@@ -61,7 +103,7 @@ doodles/index.html: doodles/*.md
 
 # Special rule to output pages for the tags formed in 'tags ...' processes of above rules.
 # Dependencies seem to need to be fully specified here (x/y/z/*.md).
-*.tag: blog/*.md arm/*/*.md python/*.md *.md
+*.tag: blog/*.md arm/*/*.md doodles/*.md projects/*.md python/*.md risc.os/*.md the.great.escape/*.md *.md
 	ext .html
 	template tag
 	template page

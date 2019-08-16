@@ -3,7 +3,6 @@ title: Task One
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1230
 next: task-two
 previous: chain

@@ -2,7 +2,6 @@ section: ARM,Efficient C for ARM
 title: Stuff That’s Slow on ARM
 icon: microchip
 date: 2012-03-03
-layout: page
 tags: ARM, EfficientC, Slide
 pageOrder: 2050
 next: fp

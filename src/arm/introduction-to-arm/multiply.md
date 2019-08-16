@@ -3,7 +3,6 @@ title: Multiply Instructions
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1170
 next: data-transfer
 previous: conditional

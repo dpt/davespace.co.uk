@@ -2,7 +2,6 @@ section: ARM,Efficient C for ARM
 title: Hoisting
 icon: microchip
 date: 2012-03-03
-layout: page
 tags: ARM, EfficientC, Slide, BasicOptimisation
 pageOrder: 2120
 next: datadrive

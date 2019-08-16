@@ -3,7 +3,6 @@ title: ARM Ltd.
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1310
 next: arm-tools
 previous: thumb-2

@@ -3,7 +3,6 @@ title: A Call Chain
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1220
 next: task-one
 previous: stack

@@ -2,7 +2,6 @@ section: ARM,Efficient C for ARM
 title: Padding
 icon: microchip
 date: 2012-03-03
-layout: page
 tags: ARM, EfficientC, Slide, BasicOptimisation
 pageOrder: 2110
 next: hoisting

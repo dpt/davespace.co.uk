@@ -4,7 +4,6 @@ subtitle: Turns the RISC OS Filer into an image thumbnailing tool.
 icon: camera
 date: 2013-04-07
 tags: RISC OS, PhotoFiler
-layout: page
 pageOrder: 10
 ----
 

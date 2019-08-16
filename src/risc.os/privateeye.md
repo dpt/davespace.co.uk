@@ -4,7 +4,6 @@ subtitle: Image viewer with some editing features.
 icon: search
 date: 2018-02-08
 tags: RISC OS, PrivateEye
-layout: page
 pageOrder: 20
 ----
 

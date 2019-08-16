@@ -2,7 +2,6 @@ section: ARM,Efficient C for ARM
 title: Avoid Array Indexing
 icon: microchip
 date: 2012-03-03
-layout: page
 tags: ARM, EfficientC, Slide, BasicOptimisation
 pageOrder: 2140
 next: aliasing

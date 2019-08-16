@@ -3,7 +3,6 @@ title: Addressing Modes
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1190
 next: multiple-data-transfer
 previous: data-transfer

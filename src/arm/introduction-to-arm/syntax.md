@@ -3,7 +3,6 @@ title: Instruction Syntax
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1060
 next: organisation
 previous: pc

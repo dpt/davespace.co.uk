@@ -3,7 +3,6 @@ title: Operand2
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1130
 next: immediates
 previous: barrel-shifter

@@ -4,7 +4,6 @@ subtitle: Associative arrays implemented using binary trees.
 icon: truck
 date: 2013-04-10
 tags: GitHub, Project, Containers
-layout: page
 pageOrder: 1000
 ----
 

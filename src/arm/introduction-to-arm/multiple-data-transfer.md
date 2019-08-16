@@ -3,7 +3,6 @@ title: Multiple Register Data Transfer
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1200
 next: stack
 previous: addressing

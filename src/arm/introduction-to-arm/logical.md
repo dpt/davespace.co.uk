@@ -3,7 +3,6 @@ title: Logical Instructions
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1100
 next: compare
 previous: arithmetic

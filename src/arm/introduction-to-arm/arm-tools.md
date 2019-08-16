@@ -3,7 +3,6 @@ title: Tools
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1320
 next: arm-apps
 previous: arm-ltd

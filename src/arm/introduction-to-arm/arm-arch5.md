@@ -3,7 +3,6 @@ title: Architecture 5
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1370
 next: arm-arch6
 previous: arm-arch4

@@ -345,13 +345,18 @@ IMG
 {
 	.center;
 
-	// Vague rule to handle hyperlinked captions.
-	+ A[href]
+	// Anything wrapped in <a></a> becomes a caption.
+	+ A
 	{
 		.font(14px);
 		.center;
 		margin-top: -@grid;
 	}
+}
+
+IFRAME
+{
+	.center;
 }
 
 TABLE

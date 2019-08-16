@@ -3,7 +3,6 @@ title: Not a Trivial Mapping
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1020
 next: instruction-sets
 previous: why-learn

@@ -3,7 +3,6 @@ title: Thumb Example
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1290
 next: thumb-2
 previous: interworking

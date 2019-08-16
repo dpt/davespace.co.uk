@@ -3,7 +3,6 @@ title: Conditional Execution
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1160
 next: multiply
 previous: branch

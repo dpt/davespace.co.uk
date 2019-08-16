@@ -3,7 +3,6 @@ title: Overview
 icon: microchip
 date: 2012-03-03
 tags: ARM
-layout: page
 pageOrder: 0
 ----
 

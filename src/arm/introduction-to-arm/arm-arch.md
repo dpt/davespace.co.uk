@@ -3,7 +3,6 @@ title: ARM Architecture
 icon: microchip
 date: 2012-03-03
 tags: ARM,IntroductionToARM,Slide
-layout: page
 pageOrder: 1340
 next: arm-arch123
 previous: arm-apps
