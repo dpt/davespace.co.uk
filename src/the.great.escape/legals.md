@@ -29,7 +29,7 @@ So sites like http://www.abandonia.com/ can host many abandoned games that aren'
 
 But if someone decides that acquiring a bunch of old retro games might be profitable they might suddenly un-abandon the game at which point they might start issuing threats to people infringing on their newly-acquired rights.
 
-April 2018: The DOS version of The Great Escape is now [sold on Steam](https://kotaku.com/the-sad-story-behind-a-dead-pc-game-that-cant-come-back-1688358811) as part of an Ocean bundle.
+April 2018: The DOS version of The Great Escape is now [sold on Steam](https://store.steampowered.com/app/814570/The_Great_Escape/) as part of an Ocean bundle.
 
 ### Ownership & Rights
 
