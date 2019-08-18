@@ -40,7 +40,7 @@ Aside from the graphics, what other clues can we find?
 
 We can hunt through the binary for text we recognise. For The Great Escape I knew that it must contain the strings for the input devices (KEYBOARD, KEMPSTON, SINCLAIR, ...) we see on the main menu. Also the news bulletins that appear at the bottom left of the screen when events happen in the game. However upon inspection I could find no ASCII strings in the binary...
 
-When I located the font data the reason for this became apparent: to save space the font omits to keep a separate glyph for letter "O". This saves 8 bytes, but means that all text has to be encoded to match the font data. "KEYBOARD" = $14,$0E,$21,$0B,$00,$0A,$1A,$0D [where $ denotes hex]. So once decoded to ASCII it looks like `KEYB0ARD`.
+When I located the font data the reason for this became apparent: to save space the font omits the glyph for letter "O" and re-uses the glyph for zero. This saves 8 bytes, but means that all text has to be encoded to match the font data. So "KEYBOARD" is $14,$0E,$21,$0B,$00,$0A,$1A,$0D (where $ denotes hex). Once decoded to ASCII it looks like `KEYB0ARD`.
 
 ### Other Patterns
 
