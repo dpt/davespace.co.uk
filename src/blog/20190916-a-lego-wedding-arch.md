@@ -10,6 +10,6 @@ Last year I build a custom LEGO wedding arch set to commemorate a friends' weddi
 
 ![LEGO wedding arch closeup.](../projects/lego/closeup.jpg)
 
-[Read about it here.](../projects/lego-wedding.html)
+[Read about it here.](../projects/lego-wedding-arch.html)
 
 <!-- end summary -->
