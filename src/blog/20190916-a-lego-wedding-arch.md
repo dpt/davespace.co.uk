@@ -6,10 +6,10 @@ tags: Project, LEGO, Wedding
 
 <!-- begin summary -->
 
-Last year I build a custom LEGO wedding arch set to commemorate a friends' wedding.
+Last year I built a custom LEGO® wedding arch set to celebrate a friends' wedding.
 
 ![LEGO wedding arch closeup.](../projects/lego/closeup.jpg)
 
-[Read about it here.](../projects/lego-wedding-arch.html)
+[Here's an article all about it.](../projects/lego-wedding-arch.html)
 
 <!-- end summary -->
