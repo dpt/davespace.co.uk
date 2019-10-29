@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bagospanners
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.davespace.co.uk
+  * I am bagospanners (https://keybase.io/bagospanners) on keybase.
+  * I have a public key ASBjo2t-xDNw1qkpfC8Ez96JpKYo3o27Q4MdB7G5LGRhcgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012068f12aa14d5370f0b27f18297f4f45ec4f6d0d914f437d8d27046298c204428c0a",
+      "host": "keybase.io",
+      "kid": "012063a36b7ec43370d6a9297c2f04cfde89a4a628de8dbb43831d07b1b92c6461720a",
+      "uid": "f45352735fc22c51dcd7c40d8daeeb19",
+      "username": "bagospanners"
+    },
+    "merkle_root": {
+      "ctime": 1572380817,
+      "hash": "0aff4aa762bab02377fd63d02e938ee0f58d32a89bb9343f961efa61b3f36a6c26dac13edcce859d5f4581fc1880e0575c41f8e2350df63f8be360382614ab13",
+      "hash_meta": "dd2c19dbf5900e8f368d08229a40d6a00cf1ed0cea4fcbbdbe82078dd6d7e187",
+      "seqno": 8502552
+    },
+    "service": {
+      "entropy": "0/X8aLJJZgmo/CULtrIeEyaR",
+      "hostname": "www.davespace.co.uk",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.7.2"
+  },
+  "ctime": 1572380824,
+  "expire_in": 504576000,
+  "prev": "bf5af8e7e34ecfe9adb6da59c1ea22cd4b306cb162e16e5177e67a00e8d64863",
+  "seqno": 46,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgY6NrfsQzcNapKXwvBM/eiaSmKN6Nu0ODHQexuSxkYXIKp3BheWxvYWTESpcCLsQgv1r45+NOz+mtttpZweoizUswbLFi4W5Rd+Z6AOjWSGPEIPN+NxHsmDzhN7EPeGa3uKJzh/qqAmo83UU99yAYUBcWAgHCo3NpZ8RAi6EXKgwDZAJuGtl0D25oPcQkqX8y7o2aieWWBwO+FGP8h0i2odHMXblzwTmnOW3QB4suVbJZx1RBGwITLPMuB6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEILNqyrIVGWQKfJDQgdNFY0rg92M2XzZ+ocNM8Pf51HOlo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bagospanners
+
+==================================================================
