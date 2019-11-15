@@ -21,8 +21,8 @@
 
 @import "src/style/elements.less";
 
-@import url('//fonts.googleapis.com/css?family=Asap:400,700,400italic,700italic');
-@import url('//fonts.googleapis.com/css?family=Cabin:700');
+@import url('//fonts.googleapis.com/css?family=Raleway:400,400italic,500,600,700,700italic,800');
+@import url('//fonts.googleapis.com/css?family=Supermercado+One:400');
 @import url('syntax.css');
 
 // COLOURS
@@ -36,8 +36,8 @@
 @shadow:		0.333333;
 
 // TYPOGRAPHY
-@bodyfontfamily:	'Asap', Calibri, Helvetica, Arial, sans-serif;
-@headingfontfamily:	'Cabin', Corbel, Helvetica, Arial, sans-serif;
+@bodyfontfamily:	'Raleway', Calibri, Helvetica, Arial, sans-serif;
+@headingfontfamily:	'Supermercado One', Corbel, Helvetica, Arial, sans-serif;
 @monofontfamily:	Menlo, 'Lucida Console', Courier, 'Courier New', monospace;
 
 @bodyfontsize:		16px;
@@ -97,6 +97,7 @@
 	.rounded(6pt);
 
 	font-family:		@headingfontfamily;
+	font-weight:		700;
 
 	padding-left:		10pt;
 	padding-right:		10pt;
@@ -119,7 +120,8 @@
 	.textshadow(@shadow);
 	.rounded(6pt);
 
-	font-family:		@headingfontfamily;
+	font-family:		@bodyfontfamily;
+	font-weight:		800;
 
 	padding-left:		10pt;
 	padding-right:		10pt;
@@ -140,7 +142,8 @@
 	.textshadow(@shadow);
 	.rounded(6pt);
 
-	font-family:		@headingfontfamily;
+	font-family:		@bodyfontfamily;
+	font-weight:		800;
 
 	padding-left:		10pt;
 	padding-right:		10pt;
@@ -155,7 +158,8 @@
 	.textshadow(@shadow);
 	.rounded(6pt);
 
-	font-family:		@headingfontfamily;
+	font-family:		@bodyfontfamily;
+	font-weight:		800;
 
 	padding-left:		10pt;
 	padding-right:		10pt;
@@ -168,7 +172,8 @@
 	.font(14px);
 	color:			@slate;
 
-	font-family:		@headingfontfamily;
+	font-family:		@bodyfontfamily;
+	font-weight:		800;
 
 	padding-left:		10pt;
 	padding-right:		10pt;
@@ -223,9 +228,9 @@ ARTICLE
 {
 	.meta
 	{
-		P
+		SPAN, TIME
 		{
-				.font(14px);
+			font-weight:	600;
 		}
 	}
 
@@ -349,8 +354,9 @@ IMG
 	+ A
 	{
 		.font(14px);
+		font-weight:	500;
 		.center;
-		margin-top: -@grid;
+		margin-top:	-@grid;
 	}
 }
 
@@ -476,6 +482,8 @@ BODY > H2 { .heading2; }
 	LI
 	{
 		display:	inline;
+
+		font-weight:	700;
 
 		padding:	0.25em 0.5em;
 
