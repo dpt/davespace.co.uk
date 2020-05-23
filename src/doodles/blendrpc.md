@@ -27,6 +27,9 @@ The main use is in rendering pretty pictures like these:
 ![Acorn Risc PC model](blendrpc.png)
 <a>The current version has this orange backdrop (spot the accidental hole in the back).</a>
 
+![Acorn Risc PC model - left hand view](blendrpcleft.png)
+<a>Left-hand view.</a>
+
 #### Logos
 
 To get the rendering of the Acorn logo and the "Risc PC 600" type on the front panels looking super sharp I recreated them in a vector format using Affinity Designer.
@@ -50,7 +53,8 @@ In some ways this is a return to my 1995 Make-A-Risc PC app:
 #### Downloads
 
 * [Blender 3D Model (2MB)](blendrpc.blend)
-* [Orange backdrop style render in PNG format @ 2048x2048 pixels (3MB)](blendrpc.2048.png)
+* [Orange backdrop style render in PNG format @ 2048x2048 pixels - right hand view (3MB)](blendrpc.2048.png)
+* [Orange backdrop style render in PNG format @ 2048x2048 pixels - left hand view (3MB)](blendrpcleft.2048.png)
 
 #### Thanks
 
