@@ -7,11 +7,15 @@ tags: Doodle, Trace
 pageOrder: 1010
 ----
 
-This is my recreated vector version of the logo from Acorn's Archimedes range of computers.
+I have recreated the logo from Acorn's Archimedes range of computers:
 
 ![Acorn Archimedes logo](archimedes.png)
 
-I traced this from a scan of the original and by matching the fonts. The original seems to have marginally thicker letterforms, but it's a pretty good match otherwise.
+I traced this from a scan of the original and matched the fonts. The original seems to have marginally thicker letterforms (although that perhaps could be an artefact of the printing process) but it's a pretty good match otherwise.
+
+But why? To make custom mouse mats of course!
+
+![Acorn Archimedes mouse mats](archimedes.mouse.mats.jpg)
 
 Download:
 [PDF](archimedes.pdf) |
