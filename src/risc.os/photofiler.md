@@ -55,7 +55,7 @@ An example of a typical directory enhanced with custom directory sprites. Sprite
 
 Current version: 2.10 (12-Jun-2020)
 
-* [Download](../software/photofiler208.zip) (84k Zip)
+* [Download](../software/photofiler210-2.zip) (84k Zip)
 * [Download](../software/photospr.zip) Example directory sprites – RISC OS 3 style (15k Zip)
 
 PhotoFiler can also be installed via [PackMan](https://www.riscosopen.org/wiki/documentation/show/PackMan%20User%27s%20Guide).
