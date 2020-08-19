@@ -2,7 +2,7 @@ section: RISC OS
 title: PhotoFiler
 subtitle: Turns the RISC OS Filer into an image thumbnailing tool.
 icon: camera
-date: 2013-04-07
+date: 2020-08-19
 tags: RISC OS, PhotoFiler
 pageOrder: 10
 ----
@@ -53,10 +53,12 @@ An example of a typical directory enhanced with custom directory sprites. Sprite
 
 ## Download
 
-Current version: 2.08 (05-Feb-2008)
+Current version: 2.10 (12-Jun-2020)
 
-* [Download](../software/photofiler208.zip) (71k Zip)
+* [Download](../software/photofiler208.zip) (84k Zip)
 * [Download](../software/photospr.zip) Example directory sprites – RISC OS 3 style (15k Zip)
+
+PhotoFiler can also be installed via [PackMan](https://www.riscosopen.org/wiki/documentation/show/PackMan%20User%27s%20Guide).
 
 ## Heritage
 
@@ -66,6 +68,4 @@ Current version: 2.08 (05-Feb-2008)
 
 ## Source Code
 
-The PhotoFiler source lives at [svn://svn.riscos.info/photofiler](svn://svn.riscos.info/photofiler).
-
-Use [http://www.riscos.info/websvn/listing.php?repname=photofiler](http://www.riscos.info/websvn/listing.php?repname=photofiler) for the web-based repository viewer.
+The PhotoFiler source code lives at [https://github.com/dpt/PhotoFiler](https://github.com/dpt/PhotoFiler).
