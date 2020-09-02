@@ -8,9 +8,9 @@ tags: Optimisation, EfficientC, GitHub, Project, Aha
 
 <!-- begin summary -->
 
-Sometimes when low level programming we need to tune a small portion of code which is critical to an implementation. For example an graphics inner loop may involve a pixel-bashing operation which dominates the program's overall performance. If this operation uses a comparison, and that results in the compiled code branching, it may hurt performance on pipelined CPUs. It might be better to find a branch-free alternative even if it appears to make the code slightly more complex.
+Sometimes when low-level programming we need to tune a small code sequence which is critical to an implementation. For example, an inner loop in a graphics routine may involve a pixel-bashing operation that dominates the program's overall performance. If this operation uses a comparison that results in the compiled code branching it may hurt performance on pipelined CPUs. It might offer higher performance to replace the sequence with a branch-free alternative, even if it makes the code more complicated.
 
-But how do we find these branch-free alternatives? Sufficiently small sequences can be discovered with a _superoptimiser_ program. Superoptimisers are not as clever as the name might suggest: they are typically an exhaustive search through a (possibly virtual) instruction set, which tries every conceivable permutation of instructions until it finds one which works for the given input values.
+But how do we find these branch-free alternatives? Sufficiently small sequences can be discovered with a _superoptimiser_ program. Superoptimisers are not as clever as the name might suggest: they are typically an exhaustive search through an (often virtual) instruction set. The superoptimiser will try every conceivable permutation of instructions from its instruction set until it finds a sequence which works for the values under test.
 
 Two examples of this are [GNU superopt](http://directory.fsf.org/wiki/Superopt) (1995) and [Aha! - A Hacker's Assistant](http://www.hackersdelight.org/) (2008). In this article I'll discuss Aha.
 
@@ -19,11 +19,11 @@ Two examples of this are [GNU superopt](http://directory.fsf.org/wiki/Superopt) 
 
 ### A Hacker's Assistant
 
-Aha exhaustively tries all reasonable combinations of instructions from a customisable set. The instruction set corresponds to no real CPU but is sufficiently general and RISC-like to be applicable to most CPUs. It simulates 32-bit calculations only and knows nothing about processor flags.
-
 Aha was written by Henry S. Warren, Jr. author of the indispensable book on bit twiddling: [Hacker's Delight](http://www.amazon.co.uk/gp/product/0321842685/).
 
-I maintain [a version of Aha on Github](https://github.com/dpt/Aha) which includes a couple of straightforward tweaks to make it more interesting for ARM CPUs. Additions I've made to its repertoire include adding an equivalent of ARM's *bitwise clear* `BIC` instruction (equivalent to `AND NOT`) and *reverse subtract* `RSB`.
+Aha exhaustively tries all reasonable combinations of instructions from a customisable set. The instruction set corresponds to no real CPU but is sufficiently general and RISC-like to be applicable to most CPUs. It simulates 32-bit calculations only and knows nothing about processor flags.
+
+I maintain [a version of Aha on Github](https://github.com/dpt/Aha) which includes a couple of straightforward tweaks to make it more interesting for 32-bit mode ARM CPUs. Additions I've made to its repertoire include adding an equivalent of ARM's *bitwise clear* `BIC` instruction (equivalent to `AND NOT`) and *reverse subtract* `RSB`.
 
 
 ### An example
@@ -35,7 +35,9 @@ $ git clone git@github.com:dpt/Aha.git
 $ cd Aha
 ```
 
-Let's cook up a perhaps useless, but illustrative, operation to be pumped through Aha:
+Let's cook up an illustrative although perhaps useless operation to be built into Aha for testing. The operation must be ‘pure’: having no side effects or reliance on global state.
+
+Our test operation will return one if `x` is zero. If `x` is one, it will return two. Otherwise it will return zero.
 
 ``` c
 /* test.frag.c */
@@ -50,7 +52,7 @@ int userfun(int x)
 }
 ```
 
-We'll build the Aha binary, linking in our user function. With only a few source files it's quick to build:
+We'll build the Aha binary, linking in our user function by specifying `EXAMPLE=test`. With only a few source files it's quick to build:
 
 ```
 $ make EXAMPLE=test aha
@@ -59,7 +61,7 @@ gcc -c -O2 -Wall -Wno-unused-variable -MMD -I. -DINC=\"test.frag.c\" -DOFILE=\"t
 gcc -O2 -Wall -Wno-unused-variable -MMD -I. -DINC=\"test.frag.c\" -DOFILE=\"test.out\" -o aha aha.o simulator.o
 ```
 
-We invoke aha with the number of Aha instructions to use. For our first attempt let's see if there are any programs which can calculate our illustrative operation in three Aha instructions:
+We invoke Aha with the length of instruction sequence to trial. For our first attempt let's see if there are any programs which can calculate our illustrative operation in three Aha operations:
 
 ```
 $ ./aha 3
@@ -116,7 +118,7 @@ Great! This run has given us four suggested solutions:
 
 Observe that Aha's notation uses `>>u` to denote unsigned right shifts. It will also emit `>>s` for signed right shifts.
 
-The first two suggestions are `(((x + -2) & ~x) >>u 31) << x` and `(((x - 2) & ~x) >>u 31) << x` which only differ by the subexpressions (x + -2) and (x - 2). These are of course the same thing, but since instruction-wise they're different operations to Aha it outputs them both. This was valuable to me when I was generating random equivalent instruction sequences for software anti-tampering in a previous job.
+The first two suggestions are `(((x + -2) & ~x) >>u 31) << x` and `(((x - 2) & ~x) >>u 31) << x` which only differ by the subexpressions (x + -2) and (x - 2). These are of course the same thing, but since instruction-wise they're different operations to Aha it outputs them both. (You might discard these variations immediately when approaching from an optimisation perspective but they were actually valuable to me when I was generating random equivalent instruction sequences for anti-tamper software in a former role.)
 
 
 ### It's not *exhaustively* exhaustive
@@ -133,9 +135,9 @@ To verify that a sequence works Aha runs it against a limited set of constants. 
                0x000F0000, 0x00F00000, 0x0F000000, 0xF0000000}
 ```
 
-You could make Aha more accurate by adding to this list, but extending it too much will slow things down. Conversely you could remove elements here if you only care about your solution working for a subset of integers, such as bytes.
+You could make Aha more accurate by adding to this list, but extending it too much will slow things down. Conversely you could remove some trial values from here if you only care about your solution working for a subset of integers, such as bytes.
 
-While Aha performs an exhaustive *search* for answers it does **not** perform an exhaustive *test* of its suggestions. If you want a generated program to be proven working for all possible 32-bit input values (or for the subset of input values that matter to you) then you'll need to write a small test program yourself.
+While Aha performs an exhaustive *search* for answers it does **not** perform an exhaustive *test* of its suggestions. If you want a generated program to be proven working for all possible input values (e.g. all 32-bit integers, or the subset of integer values that matter to you) then you'll need to write a small test program yourself.
 
 So let's build that small test program in C and verify that each of the suggested programs works for every possible 32-bit integer:
 
@@ -265,7 +267,7 @@ starting test 3
 all ok!
 ```
 
-Everything works. Cool!
+Everything works. Cool! Now you get to plug it into your code to see if it speeds things up.
 
 
 ## Some useful sequences I've found using Aha
@@ -323,8 +325,11 @@ To calculate `x ? -1 : 0`, try:
 * [ARM's `divc.c` optimal divide-by-constant code generator](http://www.ic.unicamp.br/~celio/mc404-2013/arm-examples/division/div.c) (ARM, 1994)
 * [Interactive compiler](http://gcc.godbolt.org/) (Matt Godbolt)
 * [Superoptimizing Compilers - feasibility study](http://superoptimization.org/wiki/Superoptimizing_Compilers) (Embecosm)
+* [Z3 Code Generator](https://github.com/nickgildea/z3_codegen)
 
 ## Changelog
 
+* 2020-0802
+  * Fix a glaring typo, various edits
 * 2019-11-19
   * Edits for readability
