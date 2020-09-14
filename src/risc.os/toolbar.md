@@ -2,7 +2,7 @@ section: RISC OS
 title: Toolbar
 subtitle: Application launcher.
 icon: bolt
-date: 2020-08-21
+date: 2020-09-14
 tags: RISC OS, Toolbar
 pageOrder: 40
 ----
@@ -26,8 +26,8 @@ This version includes an uncrunched `!RunImage`.
 
 ## Downloads
 
-Current version: 1.22 (21-Aug-2020)
+Current version: 1.23 (14-Sep-2020)
 
-* <download><a href="../software/toolbar122-1.zip">Download</a> (18k Zip)</download>
+* <download><a href="../software/toolbar123-1.zip">Download</a> (18k Zip)</download>
 * <download><a href="../software/toolsnap1.png">Screenshot</a> (258k <acronym>PNG</acronym>)</download>
 
