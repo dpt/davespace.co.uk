@@ -9,8 +9,8 @@ pageOrder: 1060
 
 Here's an attempt to draw the main The Simpsons characters, and a selection of the others, as RISC OS desktop icons.
 
-Thanks to the strong yellow in the [RISC OS desktop palette](https://lospec.com/palette-list/risc-os) it suits them well, in the main. The lack of resolution affects Bart's hair though and prevents some of the more subtle shaping.
+![Simpsons pixel art](icons/simpsons25.png)
 
-![Simpsons](icons/simpsons24.png)
+Thanks to the strong yellow in the [RISC OS desktop palette](https://lospec.com/palette-list/risc-os) it suits them well, in the main. The lack of resolution affects Bart's hair though and prevents some of the more subtle shaping.
 
 I've also attempted [Futurama](futurama-icons.html).
