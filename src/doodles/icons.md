@@ -13,7 +13,7 @@ This presents a challenge since despite the apparent simplicity of the cartoon d
 
 I started with the intention of using the 16-colour [RISC OS desktop palette](https://lospec.com/palette-list/risc-os) for all of these, but that became too restrictive and I moved onto using the 16-colour [PICO-8 palette](https://lospec.com/palette-list/pico-8) too.
 
-## The Simpsons
+### The Simpsons
 
 <img src="icons/simpsons29.png" alt="Simpsons pixel art" width="640" style="image-rendering: crisp-edges; max-width: 640px; max-height: none;">
 
@@ -23,7 +23,7 @@ Thanks to the strong yellow in the RISC OS desktop palette it suits them well. T
 
 Favourite bit: the 'Duff' logo on Duffman's hat.
 
-## Futurama
+### Futurama
 
 <img src="icons/futurama19.png" alt="Futurama pixel art" width="640" style="image-rendering: crisp-edges; max-width: 640px; max-height: none;">
 
@@ -37,7 +37,7 @@ Ahhh, much better.
 
 Favourite bit: Scruffy's eyes.
 
-### Videos
+#### Videos
 
 I made a few recordings of the drawing process. Here's me drawing Leela:
 
@@ -51,7 +51,7 @@ and Nibbler:
 <iframe width="544" height="408" src="https://www.youtube.com/embed/5Reqyl40rXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-## Disenchantment
+### Disenchantment
 
 I carried straight on with the PICO-8 palette for my attempts at drawing the characters of Disenchantment:
 
@@ -62,4 +62,9 @@ Shown here at 2x native scale.
 In this set I left the outlines in place underneath the original.
 
 Favourite bit: King Zøg.
+
+
+### Downloads
+
+* [Icons in RISC OS Sprite format (27kB)](icons/groenicons.zip)
 
