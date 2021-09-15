@@ -41,6 +41,11 @@ It requires RISC OS 3.6 or later and a Boot sequence with the Nested Wimp and a 
   
 ## Screenshots
 
+![Screenshot](../software/thumbs/eyesnap5.png)
+[Enlarge](../software/eyesnap5.png)
+
+Improved JPEG format information. (First appeared in version 3.10)
+
 ![Screenshot](../software/thumbs/eyesnap4.png)
 [Enlarge](../software/eyesnap4.png)
 
@@ -63,17 +68,13 @@ Tigger the cat demonstrates the interactive rotation dialogue. (First appeared i
 
 ## Download
 
-Current version: 3.01 (19-Jan-2018)
+Current version: 3.10 (12-Sep-2021)
 
-* [Download](../software/privateeye301.zip) (233K Zip)
-* [Manual](../software/privateeye300manual.pdf) (1.2M PDF)
+* [Download](../software/privateeye310-1.zip) (556K Zip)
+* [Manual](../software/privateeye310manual.pdf) (1.2M PDF)
 * [Screenshot](../software/eyesnap4.png) (332k PNG)
 
 ## Source Code
 
-The PrivateEye source lives at riscos.info at [svn://svn.riscos.info/privateeye](svn://svn.riscos.info/privateeye) and on github at [https://github.com/dpt/PrivateEye](https://github.com/dpt/PrivateEye).
-
-Use http://www.riscos.info/websvn/listing.php?repname=privateeye for the web-based repository viewer.
-
-Intructions about how to build PrivateEye are at http://www.riscos.info/websvn/filedetails.php?repname=privateeye&path=%2Ftrunk%2Fdocs%2Fprivateeye%2FBuilding
+The PrivateEye source lives on github at [https://github.com/dpt/PrivateEye](https://github.com/dpt/PrivateEye).
 
