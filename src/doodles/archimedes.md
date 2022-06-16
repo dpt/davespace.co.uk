@@ -9,20 +9,20 @@ pageOrder: 1010
 
 I have recreated the logo from Acorn's Archimedes range of computers:
 
-![Acorn Archimedes logo](archimedes.png)
+![Acorn Archimedes logo](archimedes/archimedes.png)
 
 I traced this from a scan of the original and matched the fonts. The original seems to have marginally thicker letterforms (although that perhaps could be an artefact of the printing process) and a slightly different slope on the end of the 'r'. It's a pretty good match otherwise.
 
 Why do this? To make custom mouse mats of course!
 
-![Acorn Archimedes mouse mats](archimedes.mouse.mats.jpg)
+![Acorn Archimedes mouse mats](archimedes/archimedes.mouse.mats.jpg)
 
 ### Downloads
 
-* [PDF](archimedes.pdf)
-* [SVG](archimedes.svg)
-* [PNG @ 1920x1200 with shadow effect](archimedes.1920x1200.png)
-* [PNG @ 1920x1200 with shadow+emboss effect](archimedes.1920x1200.3d.png)
+* [PDF](archimedes/archimedes.pdf)
+* [SVG](archimedes/archimedes.svg)
+* [PNG @ 1920x1200 with shadow effect](archimedes/archimedes.1920x1200.png)
+* [PNG @ 1920x1200 with shadow+emboss effect](archimedes/archimedes.1920x1200.3d.png)
 
 ### License
 
