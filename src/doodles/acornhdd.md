@@ -11,7 +11,7 @@ pageOrder: 1030
 
 Perhaps then the diagram in the user guide would look something like this:
 
-![Acorn themed EIDE/PATA hard disc](acornhdd.v6t.png)
+![Acorn themed EIDE/PATA hard disc](acornhdd/acornhdd.v6t.png)
 
 Like most perfectly normal people, I've always enjoyed a good diagram. So in an attempt to learn or mimic the style I drew this hard disc in [Affinity Designer](https://affinity.serif.com/en-gb/designer/) using its isometric mode.
 
@@ -23,15 +23,15 @@ Continuing the experiment I decided to attempt a diagram that shows the correct 
 
 The ghost hard disc lets us see through to the IDE socket to the Risc PC main board:
 
-![Acorn hard disc cable diagram](acornhddcable-outt.png)
+![Acorn hard disc cable diagram](acornhdd/acornhddcable-outt.png)
 
 And then with the cable installed:
 
-![Acorn hard disc cable diagram](acornhddcable-int.png)
+![Acorn hard disc cable diagram](acornhdd/acornhddcable-int.png)
 
 ## Huge Ones
 
-Download: [Green hard disc, PNG format @ 4096 pixels wide](acornhdd.v6.png)  
-Download: [IDE cable disconnected, PNG format @ 4096 pixels wide](acornhddcable-out.png)  
-Download: [IDE cable connected, PNG format @ 4096 pixels wide](acornhddcable-in.png)
+Download: [Green hard disc, PNG format @ 4096 pixels wide](acornhdd/acornhdd.v6.png)  
+Download: [IDE cable disconnected, PNG format @ 4096 pixels wide](acornhdd/acornhddcable-out.png)  
+Download: [IDE cable connected, PNG format @ 4096 pixels wide](acornhdd/acornhddcable-in.png)
 
