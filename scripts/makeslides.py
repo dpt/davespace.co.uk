@@ -14,14 +14,14 @@ for line in sys.stdin:
     match = start.match(line)
     if match:
         if inside:
-            print '</div>'
-            print '</section>'
-        print '<section>'
-        print '<div class="%s">' % (match.group(1).lower())
+            print('</div>')
+            print('</section>')
+        print('<section>')
+        print('<div class="%s">' % (match.group(1).lower()))
         inside = 1
     else:
         sys.stdout.write(line)
 
 if inside:
-    print '</div>'
-    print '</section>'
+    print('</div>')
+    print('</section>')

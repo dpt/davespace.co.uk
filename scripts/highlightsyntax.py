@@ -99,11 +99,12 @@ for index, chunk in enumerate(chunks):
 			p = subprocess.Popen(['pygmentize', '-f','html', '-l',language],
 				stdin=subprocess.PIPE,
 				stdout=subprocess.PIPE,
-				stderr=subprocess.PIPE)
+				stderr=subprocess.PIPE,
+				universal_newlines=True)
 			stdout, stderr = p.communicate(fragment)
 
 			if stderr:
-				print stderr
+				print(stderr)
 
 		chunks[index] = cache[chunk] = stdout
 

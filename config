@@ -26,7 +26,7 @@ blog/*.md:
 	config
 	ext .html
 	tags tags/*.tag
-	:python scripts/highlightsyntax.py
+	:python3 scripts/highlightsyntax.py
 	markdown
 	template post
 	template page
@@ -36,9 +36,9 @@ arm/*/*.md:
 	config
 	ext .html
 	tags tags/*.tag
-	:python scripts/highlightsyntax.py
+	:python3 scripts/highlightsyntax.py
 	markdown
-	:python scripts/makeslides.py
+	:python3 scripts/makeslides.py
 	template post
 	template page
 
