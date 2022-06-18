@@ -344,6 +344,14 @@ PRE
 	margin:			0 0 @grid 0;
 }
 
+.caption
+{
+	.font(14px);
+	font-weight:		500;
+	.center;
+	margin-top:		-@grid;
+}
+
 // Images must be manually resized to a multiple of @grid vertically in order
 // for the grid alignment to work.
 IMG
@@ -353,10 +361,18 @@ IMG
 	// Anything wrapped in <a></a> becomes a caption.
 	+ A
 	{
-		.font(14px);
-		font-weight:	500;
-		.center;
-		margin-top:	-@grid;
+		.caption;
+	}
+}
+
+// Using vague matching here to spot captions. The alternative is to embed
+// <figure> blocks in the Markdown.
+A:link, A:visited
+{
+	// Anything wrapped in <a></a> becomes a caption.
+	+ A:not([href])
+	{
+		.caption;
 	}
 }
 
