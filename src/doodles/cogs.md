@@ -52,6 +52,6 @@ IMG { border-radius: 1em; }
 
 ## License & Credits
 
-The images are free for personal use. For any commercial use, customisations or comissions please contact me.
+The images are free for personal use. For any commercial use, customisations or commissions please contact me.
 
 Many of the shaders used are from the [Sanctus Library Addon](https://blendermarket.com/products/sanctus-library-addon---procedural-shaders-collection-for-blender).
