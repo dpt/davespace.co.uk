@@ -1,5 +1,5 @@
 section: Doodles
-title: Cogs
+title: Rendered Cogs
 subtitle: backdrops
 icon: pencil-alt
 date: 2022-06-17
@@ -53,5 +53,7 @@ IMG { border-radius: 1em; }
 ## License & Credits
 
 The images are free for personal use. For any commercial use, customisations or commissions please contact me.
+
+The [RISC OS Cog](http://www.riscos.com/the_archive/rol/logos/cogwheel.htm) was designed by Richard Hallas.
 
 Many of the shaders used are from the [Sanctus Library Addon](https://blendermarket.com/products/sanctus-library-addon---procedural-shaders-collection-for-blender).

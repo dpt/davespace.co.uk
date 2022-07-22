@@ -1,5 +1,5 @@
 section: Doodles
-title: Nuts
+title: Rendered Nuts
 subtitle: backdrops
 icon: pencil-alt
 date: 2022-07-03
@@ -41,5 +41,7 @@ IMG { border-radius: 1em; }
 ## License & Credits
 
 The images are free for personal use. For any commercial use, customisations or commissions please contact me.
+
+ARM and the ARM Powered logo are property of ARM Ltd. As for the others... goodness only knows.
 
 Many of the shaders used are from the [Sanctus Library Addon](https://blendermarket.com/products/sanctus-library-addon---procedural-shaders-collection-for-blender).
