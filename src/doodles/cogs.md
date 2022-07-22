@@ -7,9 +7,9 @@ tags: Doodle, 3D, Blender
 pageOrder: 1080
 ----
 
-Cogs! Here are some RISC OS themed backdrops made in [Blender](https://www.blender.org/).
+Here are some RISC OS themed backdrops (and animations) made in [Blender](https://www.blender.org/).
 
-Click for **huge** (in RISC OS terms) 1920x1200 PNG format versions (rendered for sRGB colour space).
+Click for **big** 1920x1200 PNG format versions (rendered for sRGB colour space).
 
 <style type="text/css" rel="stylesheet">
 IMG, VIDEO { border-radius: 1em; }
@@ -44,6 +44,9 @@ IMG, VIDEO { border-radius: 1em; }
 
 [![Image](cogs/thumbs/81-srgb.png)](cogs/81-srgb.png)
 <a>Silver cog.</a>
+
+[![Image](cogs/thumbs/newsupercog2-srgb.png)](cogs/newsupercog2-srgb.png)
+<a>Super cog.</a>
 
 ## Animated
 

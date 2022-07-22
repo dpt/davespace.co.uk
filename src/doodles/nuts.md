@@ -7,9 +7,9 @@ tags: Doodle, 3D, Blender
 pageOrder: 1090
 ----
 
-Nuts! Here are some more Acorn themed backdrops made in [Blender](https://www.blender.org/).
+Here are some Acorn themed backdrops (and animations) made in [Blender](https://www.blender.org/).
 
-Click for **huge** (in RISC OS terms) 1920x1200 PNG format versions (rendered for sRGB colour space).
+Click for **huge** 1920x1200 PNG format versions (rendered for sRGB colour space).
 
 <style type="text/css" rel="stylesheet">
 IMG, VIDEO { border-radius: 1em; }
