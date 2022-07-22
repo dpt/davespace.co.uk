@@ -12,7 +12,7 @@ Cogs! Here are some RISC OS themed backdrops made in [Blender](https://www.blend
 Click for **huge** (in RISC OS terms) 1920x1200 PNG format versions (rendered for sRGB colour space).
 
 <style type="text/css" rel="stylesheet">
-IMG { border-radius: 1em; }
+IMG, VIDEO { border-radius: 1em; }
 </style>
 
 [![Image](cogs/thumbs/resincog-srgb.png)](cogs/resincog-srgb.png)
@@ -50,7 +50,7 @@ IMG { border-radius: 1em; }
 [![Image](cogs/rotocog.png)](cogs/rotocog.mp4)
 <a>A rotating cog. The above image is an animated PNG (APNG). Click for an MP4 version with a chequered background.</a>
 
-## License & Credits
+## License, Trademarks & Credits
 
 The images are free for personal use. For any commercial use, customisations or commissions please contact me.
 

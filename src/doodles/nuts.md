@@ -12,11 +12,20 @@ Nuts! Here are some more Acorn themed backdrops made in [Blender](https://www.bl
 Click for **huge** (in RISC OS terms) 1920x1200 PNG format versions (rendered for sRGB colour space).
 
 <style type="text/css" rel="stylesheet">
-IMG { border-radius: 1em; }
+IMG, VIDEO { border-radius: 1em; }
 </style>
 
 [![Image](nuts/thumbs/acorn73-srgb.png)](nuts/acorn73-srgb.png)
-<a>The Acorn logo rendered as 3D.</a>
+<a>The later Acorn logo rendered as 3D.</a>
+
+[![Image](nuts/thumbs/bbc-micro-owl.png)](nuts/bbc-micro-owl.png)
+<a>The BBC Micro Owl logo rendered as 3D.</a>
+
+[![Image](nuts/thumbs/acorn-electron.png)](nuts/acorn-electron.png)
+<a>The Acorn Electron logo rendered as 3D.</a>
+
+<video src="nuts/acorn-electron.mp4"></video>
+<a>Animated version.</a>
 
 [![Image](nuts/thumbs/a5-srgb.png)](nuts/a5-srgb.png)
 <a>The Archimedes "A" logo rendered as 3D.</a>
@@ -38,10 +47,11 @@ IMG { border-radius: 1em; }
 [![Image](nuts/thumbs/armboing2.gif)](nuts/armboing2.mp4)
 <a>The ARM Powered® logo rendered as 3D. Click for an MP4 version.</a>
 
-## License & Credits
+## License, Trademarks & Credits
 
 The images are free for personal use. For any commercial use, customisations or commissions please contact me.
 
-ARM and the ARM Powered logo are property of ARM Ltd. As for the others... goodness only knows.
+ARM and the ARM Powered logo are property of ARM Ltd.  
+As for the others... goodness only knows (I did go looking but gave up).
 
 Many of the shaders used are from the [Sanctus Library Addon](https://blendermarket.com/products/sanctus-library-addon---procedural-shaders-collection-for-blender).
