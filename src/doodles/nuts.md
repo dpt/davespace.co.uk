@@ -42,6 +42,9 @@ IMG, VIDEO { border-radius: 1em; }
 [![Image](nuts/thumbs/armchoc2-srgb.png)](nuts/armchoc2-srgb.png)
 <a>...and transformed into delicious chocolate cake.</a>
 
+[![Image](nuts/thumbs/risc-pc-logo.png)](nuts/risc-pc-logo.png)
+<a>My recreation of the Risc PC logo.</a>
+
 ## Animations
 
 [![Image](nuts/thumbs/a3.gif)](nuts/a3.mp4)
@@ -58,3 +61,8 @@ ARM and the ARM Powered logo are property of ARM Ltd.
 As for the others... goodness only knows (I did go looking but gave up).
 
 Many of the shaders used are from the [Sanctus Library Addon](https://blendermarket.com/products/sanctus-library-addon---procedural-shaders-collection-for-blender).
+
+## Changelog
+
+- 2022-09-11: Added Risc PC logo recreation.
+
