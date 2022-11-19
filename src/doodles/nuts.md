@@ -3,7 +3,7 @@ title: Rendered Nuts
 subtitle: backdrops
 icon: pencil-alt
 date: 2022-07-03
-tags: Doodle, 3D, Blender
+tags: Doodle, 3D, Blender, Acorn, BBC Micro, Electron, Archimedes, ARM, RISC OS
 pageOrder: 1090
 ----
 
@@ -27,8 +27,13 @@ IMG, VIDEO { border-radius: 1em; }
 <video src="nuts/acorn-electron.mp4"></video>
 <a>Animated version.</a>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jSa6zL9iSKY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [![Image](nuts/thumbs/a5-srgb.png)](nuts/a5-srgb.png)
 <a>The Archimedes "A" logo, rendered as 3D.</a>
+
+[![Image](nuts/thumbs/a3.gif)](nuts/a3.mp4)
+<a>Spinning Archimedes "A" logo. Click for an MP4 version.</a>
 
 [![Image](nuts/thumbs/arcchoc3-srgb.png)](nuts/arcchoc3-srgb.png)
 <a>...and transformed into a delicious jaffa cake.</a>
@@ -36,22 +41,24 @@ IMG, VIDEO { border-radius: 1em; }
 [![Image](nuts/thumbs/arc3d-new-srgb.png)](nuts/arc3d-new-srgb.png)
 <a>Another take on the Archimedes logo, rendered as 3D.</a>
 
-[![Image](nuts/thumbs/armpowered2-srgb.png)](nuts/armpowered2-srgb.png)
-<a>The ARM Powered® logo, rendered as 3D.</a>
+[![Image](nuts/thumbs/welcome.png)](nuts/welcome.png)
+<a>RISC OS 3.1 desktop welcome banner.</a>
 
-[![Image](nuts/thumbs/armchoc2-srgb.png)](nuts/armchoc2-srgb.png)
-<a>...and transformed into delicious chocolate cake.</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aqGFNqfGr-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [![Image](nuts/thumbs/risc-pc-logo.png)](nuts/risc-pc-logo.png)
 <a>My recreation of the Risc PC logo.</a>
 
-## Animations
+<iframe width="560" height="315" src="https://www.youtube.com/embed/abweOP2aWYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[![Image](nuts/thumbs/a3.gif)](nuts/a3.mp4)
-<a>Spinning Archimedes "A" logo. Click for an MP4 version.</a>
+[![Image](nuts/thumbs/armpowered2-srgb.png)](nuts/armpowered2-srgb.png)
+<a>The ARM Powered® logo, rendered as 3D.</a>
 
 [![Image](nuts/thumbs/armboing2.gif)](nuts/armboing2.mp4)
 <a>The ARM Powered® logo, rendered as 3D. Click for an MP4 version.</a>
+
+[![Image](nuts/thumbs/armchoc2-srgb.png)](nuts/armchoc2-srgb.png)
+<a>...and transformed into delicious chocolate cake.</a>
 
 ## License, Trademarks & Credits
 
@@ -64,5 +71,5 @@ Many of the shaders used are from the [Sanctus Library Addon](https://blendermar
 
 ## Changelog
 
+- 2022-11-19: Added RISC OS 3 welcome banner. Added links to YouTube videos.
 - 2022-09-11: Added Risc PC logo recreation.
-

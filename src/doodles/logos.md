@@ -58,3 +58,8 @@ Many of the shaders used are from the [Sanctus Library Addon](https://blendermar
 ## Footnotes
 
 † [My terrible music](https://youtube.com/playlist?list=PLfK7vkQLImGmcc5swQd0QlfSaAK3cMq7M).
+
+## Changelog
+
+- 2022-11-19: Added Ocean, Sinclair and Spectrum Next renders.
+
