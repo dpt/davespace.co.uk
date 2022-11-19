@@ -41,6 +41,11 @@ It requires RISC OS 3.6 or later and a Boot sequence with the Nested Wimp and a 
   
 ## Screenshots
 
+![Screenshot](../software/thumbs/eyesnap7.png)
+[Enlarge](../software/eyesnap7.png)
+
+Paper style document backgrounds. (First appeared in version 3.20)
+
 ![Screenshot](../software/thumbs/eyesnap5.png)
 [Enlarge](../software/eyesnap5.png)
 
@@ -68,10 +73,9 @@ Tigger the cat demonstrates the interactive rotation dialogue. (First appeared i
 
 ## Download
 
-Current version: 3.14 (19-Aug-2022)
+Current version: 3.20 (18 Nov 2022)
 
-* [Download](../software/privateeye314-4.zip) (507K Zip)
-* [Manual](../software/privateeye310manual.pdf) (1.2M PDF)
+* [Download](../software/privateeye320-4.zip) (840K Zip)
 
 ## Source Code
 
