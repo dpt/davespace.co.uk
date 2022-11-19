@@ -33,6 +33,18 @@ IMG, VIDEO { border-radius: 1em; }
 [![Image](logos/thumbs/otto2.png)](logos/otto2.png)
 <a>A different rendering of the logo I use for my terrible music†, rendered as 3D.</a>
 
+[![Image](logos/thumbs/ocean-sea.png)](logos/ocean-sea.png)
+<a>My first attempt at recreating the Ocean Software logo. There's a definite polo mint feel to it. </a>
+
+[![Image](logos/thumbs/ocean-metal.png)](logos/ocean-metal.png)
+<a>My second attempt at the Ocean logo. Which looks great but is lacking the whole 'sea' theme.</a>
+
+[![Image](logos/thumbs/sinclair-noir.png)](logos/sinclair-noir.png)
+<a>Sinclair logo recreation - drawing on the 48K+/toastrack style, with a bit of film noir.</a>
+
+[![Image](logos/thumbs/specnext.png)](logos/specnext.png)
+<a>The more rounded Spectrum Next variant of the Sinclair logo.</a>
+
 ## License, Trademarks & Credits
 
 The images are free for personal use. For any commercial use, customisations or commissions please contact me.
