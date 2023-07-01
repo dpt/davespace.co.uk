@@ -10,7 +10,7 @@ Want to clean a mucky computer or TV screen? Read on.
 
 You will need:
 
-* Some warm water
+* Some clean warm water
   * e.g. cooled boiled water
 * A squirt of dish liquid
 * Soft-strong paper towels
@@ -24,7 +24,7 @@ Method:
 
 <!-- end summary -->
 
-First, clean your cloths *even if* they already appear clean. Shake them off somewhere away from where you're going to be doing your cleaning. Repeatedly apply the sticky tape to the cloth to get rid of any old dust and particles. The aim is to remove any potentiall abrasive particles, before we go dragging the cloth all over the screen.
+First, clean your cloths *even if* they already appear clean. Shake them off somewhere away from where you're going to be doing your cleaning. Repeatedly apply the sticky tape to the cloth to get rid of any old dust and particles. The aim is to remove any potentially abrasive particles, before we go dragging the cloth all over the screen.
 
 ## First Pass: Remove the Grease
 
