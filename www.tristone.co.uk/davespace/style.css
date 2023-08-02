@@ -1,0 +1,42 @@
+body {
+  font-family:		Helvetica, sans-serif;
+  font-size:		medium;
+
+  color:		black;
+  background-color:	white;
+  
+  text-align:		justify;
+}
+
+a:link {
+  background:		transparent;
+  color:		red;
+}
+
+a:visited {
+  background:		transparent;
+  color:		darkred;
+}
+
+a:active {
+  background:		transparent;
+  color:		black;
+}
+
+a:hover {
+  background:		transparent;
+  color:		blue;
+}
+
+small {
+  font-size:		80%;
+}
+
+big {
+  font-size:		120%;
+}
+
+/* Absolutely require this, for some strange reason. */
+hr {
+  text-align:		center;
+}

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:thr="http://purl.org/syndication/thread/1.0">
+  <id>http://www.davespace.co.uk/</id>
+  <title>DaveSpace</title>
+  
+  <updated>2023-07-01T00:00:00Z</updated>
+  
+  <author><name>David Thomas</name></author>
+  <link href="http://www.davespace.co.uk/" rel="alternate"></link>
+  <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
+
+
+
+
+<entry>
+  <id>blog/20230701-screen-cleaning.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">Dr. Dave&#39;s Patented Screen Cleaning Method*</title>
+  <published>2023-07-01T00:00:00Z</published>
+  
+  <category term="Tip"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20230701-screen-cleaning.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p>Want to clean a mucky computer or TV screen? Read on.</p>
+
+<p>You will need:</p>
+
+<ul>
+<li>Some clean warm water
+
+<ul>
+<li>e.g. cooled boiled water</li>
+</ul></li>
+<li>A squirt of dish liquid</li>
+<li>Soft-strong paper towels
+
+<ul>
+<li>e.g. a decent quality kitchen paper towel</li>
+</ul></li>
+<li>A soft, clean microfibre cloth
+
+<ul>
+<li>I use the small black screen cloth I received with a MacBook</li>
+</ul></li>
+<li>A piece of sticky tape, or a sticky clothes roller</li>
+<li>Windex, Windolene or similar glass cleaning spray</li>
+</ul>
+
+<p>Method:</p>
+
+
+    
+    
+  ]]></content>
+</entry>
+
+
+
+<entry>
+  <id>blog/20230524-chase-hq-disassembly.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">Chase H.Q. disassembly project</title>
+  <published>2023-05-24T00:00:00Z</published>
+  
+  <category term="Retro"></category>
+  
+  <category term="Spectrum"></category>
+  
+  <category term="Disassembly"></category>
+  
+  <category term="Chase H.Q."></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20230524-chase-hq-disassembly.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p>It&rsquo;s been ten years since I started <a href="/the.great.escape/">reverse engineering The Great Escape</a>. I didn&rsquo;t really intend to start another disassembly project but after trying out SkoolKit&rsquo;s new <a href="https://skoolkit.ca/posts/2023/02/loads-more-simulation/">tape loading and Z80 simulation</a> magic I found myself with a new one on my hands. This time I&rsquo;m <a href="https://github.com/dpt/ChaseHQ">pulling apart the Spectrum version of Chase H.Q.</a>!</p>
+
+<p><img src="https://raw.githubusercontent.com/dpt/ChaseHQ/develop/ChaseHQ.png" alt="Screenshot of Chase H.Q. being disassembled."></p>
+
+<p>Here&rsquo;s the current state of the disassembly: <a href="https://dpt.github.io/ChaseHQ/">https://dpt.github.io/ChaseHQ/</a> and the related thread on Spectrum Computing: <a href="https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562">https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562</a></p>
+
+<p>See you in ten years!</p>
+
+
+    
+    
+  ]]></content>
+</entry>
+
+
+
+<entry>
+  <id>blog/20221119-new-logos.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">New logo renders</title>
+  <published>2022-11-20T00:00:00Z</published>
+  
+  <category term="Doodle"></category>
+  
+  <category term="3D"></category>
+  
+  <category term="Blender"></category>
+  
+  <category term="Sinclair"></category>
+  
+  <category term="Ocean"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20221119-new-logos.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p>I&rsquo;ve made a few new logo renders:</p>
+
+<p><img src="../doodles/logos/thumbs/sinclair-noir.png" alt="Sinclair">
+<img src="../doodles/logos/thumbs/specnext.png" alt="Sinclair">
+<img src="../doodles/logos/thumbs/ocean-sea.png" alt="Ocean">
+<img src="../doodles/logos/thumbs/ocean-metal.png" alt="Ocean"></p>
+
+<p>If you&rsquo;re bothered, there are downloads over on the <a href="../doodles/logos.html">logos</a> page.</p>
+
+
+    
+    
+  ]]></content>
+</entry>
+
+
+
+<entry>
+  <id>blog/20221119-privateeye-320.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">PrivateEye 3.20 has StrongHelp</title>
+  <published>2022-11-19T00:00:00Z</published>
+  
+  <category term="RISC OS"></category>
+  
+  <category term="PrivateEye"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20221119-privateeye-320.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p><a href="/risc.os/privateeye.html">PrivateEye</a> 3.20 is now available. PrivateEye is a viewer for Sprites, DrawFiles, JPEGs, ArtWorks, GIFs and PNGs. It also has editing features including bitmap effects and rotation. It runs on RISC OS.</p>
+
+<p>Here&rsquo;s a screenshot of it running in RISC OS 4 via RPCEmu:</p>
+
+<p><a href="/software/eyesnap7.png"><img src="/software/thumbs/eyesnap7.png" alt="Screenshot of PrivateEye showing a recreation of the Ocean Software logo."></a></p>
+
+<p>Version 3.20 has had quite a few changes. The main thrust of the work has been to reduce the reliance on the Tinct module, that&rsquo;s used to render alpha channel sprites, and to replace the PDF format user guide with a StrongHelp one. I&rsquo;ll break the changes down into sections:</p>
+
+
+    
+    
+  ]]></content>
+</entry>
+
+
+
+<entry>
+  <id>blog/20220911-risc-pc-logo.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">Risc PC logo</title>
+  <published>2022-09-11T00:00:00Z</published>
+  
+  <category term="Doodle"></category>
+  
+  <category term="3D"></category>
+  
+  <category term="Blender"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20220911-risc-pc-logo.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p>I&rsquo;ve recreated the <a href="https://chrisacorns.computinghistory.org.uk/docs/Acorn/Brochures/Acorn_APP678_RiscPC600.pdf">original plexiglass-in-mid-air Risc PC logo</a>:</p>
+
+<p><img src="../doodles/nuts/thumbs/risc-pc-logo.png" alt="Risc PC logo"></p>
+
+<p>Grab a copy over here on the <a href="../doodles/nuts.html">Nuts</a> page.</p>
+
+
+    
+    
+  ]]></content>
+</entry>
+
+
+
+</feed>

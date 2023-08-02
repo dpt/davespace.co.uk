@@ -1,0 +1,279 @@
+
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="David Thomas">
+  <meta name="keywords" content="DaveSpace, David Thomas, Dave Thomas">
+  <meta name="description" content="David Thomas's website.">
+
+  <title>The Great Escape: Reverse Engineering | DaveSpace</title>
+
+  <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
+  <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
+
+  <link rel="stylesheet" type="text/css" href="../style/flat.css">
+
+  <link rel="alternate" type="application/atom+xml" title="DaveSpace feed" href="../blog.atom">
+
+  <script src="https://kit.fontawesome.com/9bf331e7d1.js" crossorigin="anonymous"></script>
+</head>
+<body id="thegreatescape">
+
+  <div id="header">
+    <h1><i class="fas fa-user-astronaut"></i> <a href="../">DaveSpace</a></h1>
+  </div>
+
+  <div id="nav">
+    
+
+<h1>The Great Escape</h1>
+<ul class="fa-ul">
+  
+  <li><i class="fa-li far fa-circle"></i> <a href="../the.great.escape/">Overview</a></li>
+  
+  <li><i class="fa-li far fa-circle"></i> <a href="../the.great.escape/intro.html">Introduction</a></li>
+  
+  <li><i class="fa-li fa fa-circle"></i> <a href="../the.great.escape/reversing.html">Reverse Engineering</a></li>
+  
+  <li><i class="fa-li far fa-circle"></i> <a href="../the.great.escape/discoveries.html">Discoveries</a></li>
+  
+  <li><i class="fa-li far fa-circle"></i> <a href="../the.great.escape/c.html">C Port</a></li>
+  
+  <li><i class="fa-li far fa-circle"></i> <a href="../the.great.escape/legals.html">Legals</a></li>
+  
+  <li><i class="fa-li far fa-circle"></i> <a href="../the.great.escape/links.html">Links</a></li>
+  
+</ul>
+
+
+    
+<h1>Categories</h1>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="../arm/">ARM</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="../doodles/">Doodles</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="../projects/">Projects</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="../python/">Python</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="../risc.os/">RISC&nbsp;OS</a></li>
+  <li><i class="fa-li fa fa-chevron-circle-right"></i> <a href="../the.great.escape/">The&nbsp;Great&nbsp;Escape</a></li>
+</ul>
+
+    
+<h1>Tags</h1>
+<p><a href="../tags/RISC OS.html">RISC OS</a> <a href="../tags/PrivateEye.html">PrivateEye</a> <a href="../tags/IntroductionToARM.html">IntroductionToARM</a> <a href="../tags/PhotoFiler.html">PhotoFiler</a> <a href="../tags/Geminus.html">Geminus</a> <a href="../tags/Toolbar.html">Toolbar</a> <a href="../tags/Site.html">Site</a> <a href="../tags/Containers.html">Containers</a> <a href="../tags/GitHub.html">GitHub</a> <a href="../tags/Hardware.html">Hardware</a> <a href="../tags/iOS.html">iOS</a> <a href="../tags/Optimisation.html">Optimisation</a> <a href="../tags/Project.html">Project</a> <a href="../tags/Aha.html">Aha</a> <a href="../tags/Retro.html">Retro</a> <a href="../tags/Links.html">Links</a> <a href="../tags/Dump.html">Dump</a> <a href="../tags/Spectrum.html">Spectrum</a> <a href="../tags/Risc PC.html">Risc PC</a> <a href="../tags/The Great Escape.html">The Great Escape</a> <a href="../tags/LEGO.html">LEGO</a> <a href="../tags/Wedding.html">Wedding</a> <a href="../tags/Acorn.html">Acorn</a> <a href="../tags/Doodle.html">Doodle</a> <a href="../tags/Blender.html">Blender</a> <a href="../tags/3D.html">3D</a> <a href="../tags/Isometric.html">Isometric</a> <a href="../tags/2D.html">2D</a> <a href="../tags/Article.html">Article</a> <a href="../tags/Sinclair.html">Sinclair</a> <a href="../tags/Ocean.html">Ocean</a> <a href="../tags/ARM.html">ARM</a> <a href="../tags/TargetedOptimisation.html">TargetedOptimisation</a> <a href="../tags/Disassembly.html">Disassembly</a> <a href="../tags/Chase H.Q..html">Chase H.Q.</a> <a href="../tags/Tip.html">Tip</a> <a href="../tags/BasicOptimisation.html">BasicOptimisation</a> <a href="../tags/Trace.html">Trace</a> <a href="../tags/Hard Disc.html">Hard Disc</a> <a href="../tags/Vector.html">Vector</a> <a href="../tags/Pixel Art.html">Pixel Art</a> <a href="../tags/Groening.html">Groening</a> <a href="../tags/Simpsons.html">Simpsons</a> <a href="../tags/Futurama.html">Futurama</a> <a href="../tags/Disenchantment.html">Disenchantment</a> <a href="../tags/BBC Micro.html">BBC Micro</a> <a href="../tags/Electron.html">Electron</a> <a href="../tags/Archimedes.html">Archimedes</a> <a href="../tags/Slide.html">Slide</a> <a href="../tags/EfficientC.html">EfficientC</a> <a href="../tags/MotionMasks.html">MotionMasks</a> <a href="../tags/Script.html">Script</a> <a href="../tags/Python.html">Python</a> <a href="../tags/Iyonix.html">Iyonix</a> <a href="../tags/QuickFiler.html">QuickFiler</a> <a href="../tags/Game.html">Game</a> </p>
+
+
+    
+<h1>About me</h1>
+<ul class="fa-ul">
+  <li><i class="fa-li fas fa-user-astronaut"></i> David Thomas</li>
+  <li><i class="fa-li fa fa-wrench"></i> Software Engineer</li>
+  <li><i class="fa-li fas fa-map-pin"></i> Glasgow, Scotland</li>
+</ul>
+
+<h2>Contact</h2>
+<ul class="fa-ul">
+  <li><i class="fa-li fa fa-envelope"></i> Email<br/> <a href="mailto:dave@davespace.co.uk">dave@davespace.co.uk</a></li>
+  <li><i class="fa-li fab fa-github"></i> GitHub<br/> <a href="https://github.com/dpt">dpt</a></li>
+  <li><i class="fa-li fab fa-youtube"></i> YouTube<br/> <a href="https://www.youtube.com/@bagospanners">@bagospanners</a></li>
+  <li><i class="fa-li fab fa-soundcloud"></i> SoundCloud<br/> <a href="https://soundcloud.com/bagospanners">bagospanners</a></li>
+</ul>
+
+  </div>
+
+<!-- start page -->
+
+<!-- start post -->
+<article>
+  <header>
+    <!-- start post header -->
+    <h1><i class="fa fa-dna"></i> The Great Escape > Reverse Engineering</h1>
+    
+<!-- start meta -->
+<div class="meta">
+  by <span class="author">David Thomas</span> on <time datetime="2019-07-15T00:00:00Z">15 July 2019</time> &mdash;
+  <ul>
+    <li><i class="fa fa-tag"></i> <a href="../tags/GitHub.html">GitHub</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/Project.html">Project</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/Game.html">Game</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/The Great Escape.html">The Great Escape</a></li>
+
+  </ul>
+</div>
+<!-- end meta -->
+
+    <!-- end post header -->
+  </header>
+
+  
+  <!-- start post content -->
+  <section class="content">
+    <h2>Table of Contents</h2>
+
+<ol>
+<li><a href="#rippity-doo-dah-starting-to-pull-the-game-apart">Rippity Doo-Dah: Starting to Pull the Game Apart</a></li>
+<li><a href="#commence-disassemblifications">Commence Disassemblifications</a></li>
+<li><a href="#discovering-skoolkit">Discovering SkoolKit</a></li>
+<li><a href="#reversing">Reversing</a></li>
+<li><a href="#now-rewrite-it-all">Now Rewrite it All&hellip;</a></li>
+</ol>
+
+<h2>Rippity Doo-Dah: Starting to Pull the Game Apart</h2>
+
+<p>Ideally we want to transform a dump of the original game&rsquo;s memory into a fully-commented assembly language listing that we can use to rebuild the game. First, is that even possible? Fortunately The Great Escape is self-contained: the game loads everything it needs then runs. If it was a multi-load game, where individual levels need to load from tape, or a 128K-only game, which uses bank switching to get around the Z80&rsquo;s 64K address space limit, then things would be considerably more difficult.</p>
+
+<p>How do we get started?</p>
+
+<ul>
+<li><p>First we need to dump the game memory out to an <a href="http://www.zx-modules.de/fileformats/snaformat.html">SNA</a> format snapshot file. SNA&rsquo;s are uncompressed which makes poking around inside them that bit easier. Aside from a short header we can load them into disassemblers and graphics ripping tools directly and rely on the offsets within the file being valid. In comparison <a href="http://www.zx-modules.de/fileformats/z80format.html">Z80</a> format snapshots may use a weak compression scheme which can mangle graphics.</p></li>
+
+<li><p>With the binary snapshot dumped we can load it into a graphics ripper tool and begin to map the game&rsquo;s memory by locating bitmaps, masks, fonts, lookup tables and anything else which doesn&rsquo;t look like code. We&rsquo;ll take a note of these addresses for later.</p></li>
+
+<li><p>We can then run an RZX (a recording of a game) through an emulator which supports profiling. This will capture a list of all addresses executed by the CPU. This gets us a a hit count of every executed instruction - anything not hit is data, or unused bytes.</p></li>
+</ul>
+
+<h3>Locating Graphics</h3>
+
+<p>For The Great Escape, I located the graphics in the game binary by using <a href="http://retrospec.sgn.net/game/sge">the Windows version of SGE</a> (Spectrum Graphics Editor) by <a href="https://twitter.com/EricRetro">Richard Jordan</a>. (Richard created the Skool Daze tribute/remake called <a href="http://retrospec.sgn.net/game/ko99">Klass of &lsquo;99</a> and is now working on an isometric Atic Atac remake called <a href="https://retroeric.itch.io/melkhiors-mansion">Melkhior&rsquo;s Mansion</a>.)</p>
+
+<p><img src="tge/winsge2.png" alt="WinSGE analysing Chase HQ, Where Time Stood Still and Batman"></p>
+
+<p>Finding graphics in game binaries is a process of scrolling up and down in an ripping tool like SGE while looking for the &ldquo;stripes&rdquo; which give away the presence of graphics data. Since we don&rsquo;t know the width of the graphics we can then try various common widths like 16 or 24 pixels wide. Once the correct width is found the image will snap into focus, albeit possibly offset. None of this is a hard and fast rule however - game authors are free to encode their graphics in whatever form they choose.</p>
+
+<p>Once located, each graphic&rsquo;s offset and dimensions will need to be recorded. Sometimes it&rsquo;s a little difficult to decide exactly where the image starts and ends if there is an amount of unused space at the top or bottom of an image, which could equally be space allocated to an adjacent graphic.</p>
+
+<h3>Other Clues</h3>
+
+<p>Aside from the graphics, what other clues can we find?</p>
+
+<h4>Strings of Text</h4>
+
+<p>We can hunt through the binary for text we recognise. For The Great Escape I knew that it must contain the strings for the input devices (KEYBOARD, KEMPSTON, SINCLAIR, &hellip;) we see on the main menu. Also the news bulletins that appear at the bottom left of the screen when events happen in the game. However upon inspection I could find no ASCII strings in the binary&hellip;</p>
+
+<p>When I located the font data the reason for this became apparent: to save space the font omits the glyph for letter &ldquo;O&rdquo; and re-uses the glyph for zero. This saves 8 bytes, but means that all text has to be encoded to match the font data. So &ldquo;KEYBOARD&rdquo; is $14,$0E,$21,$0B,$00,$0A,$1A,$0D (where $ denotes hex). Once decoded to ASCII it looks like <code>KEYB0ARD</code>.</p>
+
+<h3>Other Patterns</h3>
+
+<p>Sometimes when scrolling through the graphics we&rsquo;ll see regular patterns of data which we can&rsquo;t resolve into any recognisable graphic. For instance, commonly needed is a table of 256 bit-reversed bytes, which are used for flipping characters left-right. This can be spotted when dumping graphics. Anything seen in the binary like this could be data, like maps, masks or lookup tables. Anything which looks like random noise is <em>probably</em> going to be instructions. I&rsquo;ll write below about a better way of establishing which locations contain real instructions.</p>
+
+<h2>Commence Disassemblifications</h2>
+
+<p>With the binary roughly mapped out we can start disassembling the game&rsquo;s instructions.</p>
+
+<p>For my initial disassembly I used <a href="https://www.hex-rays.com/products/ida/index.shtml">IDA Pro</a>. IDA Pro is an interactive disassembler - an eye wateringly expensive one. Although more commonly used these days for reversing malware it can handle many different CPUs including the Spectrum&rsquo;s Z80. Fortunately my (then) employer had a licensed copy that I could use.</p>
+
+<p><img src="tge/ida.png" alt="IDA Pro disassembling The Great Escape"></p>
+
+<p>IDA can be nimble up to a point, but I quickly got annoyed with it repeatedly crashing and not having undo. I wrote an IDAPython script to automate the marking up of the known parts of the executable so I could start from scratch each time it assploded.</p>
+
+<h3>Identifying Instructions</h3>
+
+<p>We&rsquo;ve now got a semi-opaque binary. We know what <em>some</em> locations contain, but even with IDA Pro&rsquo;s code analysis it&rsquo;s still unclear: which of the remaining locations contains genuine instructions, and which are data? I used the <a href="https://sourceforge.net/projects/fuse-emulator/">Free Unix Spectrum Emulator</a> (FUSE) with profiling output enabled to see which locations really are instructions. To have a representative run of the game I ran an RZX recording of the game from <a href="http://www.rzxarchive.co.uk/">http://www.rzxarchive.co.uk/</a> in the emulator to capture the profile. The RZX recording ran the game all the way to completion. This is important for coverage: we want to make sure that every instruction in the game gets executed.</p>
+
+<p>I captured this profile and pulled it into IDA Pro as comments (look at the &ldquo;Hits: &hellip;&rdquo; comments in the screenshot). This took me down routes like:</p>
+
+<ul>
+<li>Some of the graphics data I identified earlier is getting executed&hellip; wtf?</li>
+<li>Aha! Some of the graphics data, once plotted to the screen, isn&rsquo;t ever needed again, so it gets overwritten with a joystick input handling routine.</li>
+</ul>
+
+<p>This is typical for a space-constrained game. Once the graphics are on-screen they&rsquo;re never modified again and don&rsquo;t ever have to be re-plotted, so we can reclaim that valuable space in RAM for buffers. Later on we see that the same is true of anything on the main menu - the title music plays once and is never heard again, for example, so its space becomes one of the various rendering buffers. Likewise the input handling routines can only be chosen once so are copied into place once chosen, then gets reused as a buffer.</p>
+
+<h3>I/O</h3>
+
+<p>Some of the earliest functions I spotted were those which talk to hardware. These are easy to spot due to the Z80&rsquo;s <code>IN</code> and <code>OUT</code> mnemonics making it obvious. This includes:</p>
+
+<ul>
+<li>Keyboard input</li>
+<li>Joystick input (Kempston, Sinclair, Protek, Fuller)</li>
+<li>Sound output</li>
+<li>Setting the screen border colour</li>
+</ul>
+
+<h2>Discovering SkoolKit</h2>
+
+<p>By this point IDA Pro was <strong>really</strong> starting to grate. I started looking for an alternative Z80 diassembler and discovered that the guy who reverse engineered the Spectrum classics <a href="https://en.wikipedia.org/wiki/Skool_Daze">Skool Daze</a>, <a href="https://en.wikipedia.org/wiki/Back_to_Skool">Back to Skool</a> and <a href="https://en.wikipedia.org/wiki/Contact_Sam_Cruise">Contact Sam Cruise</a> (and rewrote them in Python) had built a toolkit called <em>SkoolKit</em> to assist in pulling apart and documenting these games.</p>
+
+<p>SkoolKit is a meta-assembler of sorts. You build your disassembly in a Z80 assembly listing-like file called a <code>.skool</code> file. This can then be transformed into either a listing for assembly into a working game, or into a cross-referenced HTML format disassembly.</p>
+
+<p>We can also supplement the disassembly with Python scripts to decode data structures from a snapshot of the game&rsquo;s RAM. We can use this to generate images of game maps, sprites, rooms, and decode other data like the routes the characters take.</p>
+
+<p>I immediately switched allegiance.</p>
+
+<h3>The Great Escape &amp; Skool Daze</h3>
+
+<p>There is much in common between Skool Daze and The Great Escape. Both feature an open world with free roaming, automatic characters with &ldquo;AI&rdquo; and take a sequence of steps to complete the game.</p>
+
+<h3>SkoolKit&rsquo;s .ctls, .skools &amp; .sfts</h3>
+
+<p>SkoolKit offers three formats (though since version 7.2 one format is now deprecated).</p>
+
+<p>The <code>.ctl</code> is a <em>control</em> file which is a way to annotate addresses, but not include any of the original game data (important if you want to avoid redistributing copyrighted data&hellip;)</p>
+
+<p>The <code>.skool</code> file is the full-fat version which includes everything necessary to rebuild asm files and HTML disassemblies.</p>
+
+<p>The third option is a <code>.sft</code> file which is a Skool File Template. These are deprecated now that .ctls can do just about everything .sfts can do - which wasn&rsquo;t always the case.</p>
+
+<p><a href="https://skoolkit.ca/docs/skoolkit/diy.html">The SkoolKit workflow</a> is to start with a .ctl file, and start annotating addresses as each memory location&rsquo;s purpose is decoded. Past some threshold the idea is that the ctl becomes awkward and you move onto using a skool file full-time. I struggled with that and tried to stick with .ctl files for ages.</p>
+
+<h3>Pseudocode</h3>
+
+<p>Knowing that I wanted to create a portable C language version of the game I decided to not write plain English comments on the assembly but to instead use a C-styled pseudocode.</p>
+
+<p>This was valuable up to a point, but caused problems when SkoolKit&rsquo;s use of braces conflicted with C&rsquo;s. I ended up bending the notation and it became quite awkward. In the previous year I have rewritten the entire disassembly in plain English.</p>
+
+<h2>Reversing</h2>
+
+<p>With Skoolkit setup, from here on the job is mainly to slog away, pulling each function apart and decoding the game&rsquo;s data formats.</p>
+
+<p>When stuck on something we can open up FUSE and (attempt to) use its <a href="http://manpages.ubuntu.com/manpages/precise/man1/fuse.1.html">debugger</a>, or sometimes just poke values into game snapshots to see what happens.</p>
+
+<p>It&rsquo;s a scatty approach: discoveries in one function can impact elsewhere in the code. That in turn can impact elsewhere. You can end up hopping around the disassembly making notes but risk ending up with a giant set of diffs with little cohesion - a hairball patch - then having to spend time splitting the patch up into meaningful commits.</p>
+
+<h3>Complications</h3>
+
+<p>Function boundaries aren&rsquo;t always clear in this type of code. Some functions have multiple entry points. Some fall through into the following function. Some have a function buried in their middle. In one case a routine had its <code>RET</code> return instruction missing so (harmlessly) fell into another. Even late on in the process I was changing my mind about what constituted a routine.</p>
+
+<p>The game uses some self-modifying code which is a pain in the bum, but often worse was trying to follow register use across code which switches between the Z80&rsquo;s two register banks.</p>
+
+<h2>Now Rewrite it All&hellip;</h2>
+
+<p>By January 2016 the diassembly was sufficient to reassemble the original game. This was useful for making experimental tweaks to the original game, but the disassembly commentary really wasn&rsquo;t up to scratch. My original choice to write it in a C-style pseudocode proved to be awkward. In 2018 I embarked on a rewrite of every single function in the disassembly. It took about a year to rewrite it all in plain English prose.</p>
+
+  </section>
+  <!-- end post content -->
+
+  
+<!-- start flip -->
+
+<div class="flip">
+  <div class="previous">
+    <i class="fa fa-arrow-alt-circle-left"></i> Previous topic: <a href="intro.html"> 
+  
+    Introduction
+  
+</a>
+  </div>
+  <div class="next">
+    <i class="fa fa-arrow-alt-circle-right"></i> Next topic: <a href="discoveries.html">
+  
+    Discoveries
+  
+</a>
+  </div>
+</div>
+
+<!-- end flip -->
+
+</article>
+<!-- end post -->
+
+<!-- end page -->
+
+  <div id="footer">
+    Copyright © David Thomas, 2005-2022<br/>
+    Built using <i class="fab fa-github"></i> <a href="https://github.com/piranha/gostatic">gostatic</a> and <i class="fab fa-font-awesome-flag"></i> <a href="http://fontawesome.io/">Font Awesome</a>
+  </div>
+</body>
+</html>
+

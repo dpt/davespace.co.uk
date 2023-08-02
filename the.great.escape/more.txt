@@ -1,0 +1,109 @@
+section: The Great Escape
+title: Sargasso
+subtitle: More content to be organised
+icon: star
+date: 2019-07-27
+tags: GitHub, Project, Game, The Great Escape
+pageOrder: 9999
+vim: wrap linebreak textwidth=0 wrapmargin=0 breakindent
+----
+
+## Sargasso
+
+[write about strategy for avoiding copyright infringements]
+
+[ vagueness - `called_from_xxx` type func names ]
+
+show Reversing routines / a routine
+
+Add stats! e.g. ~22K of code Z80 sizes of buffers, how many spare bytes in the game?
+
+self modifying code
+de-banking
+
+wrestling with C syntax in CTL files
+
+how many games have lost their sources forever?
+add general blah about software preservation, loss of sources (and build envs... sources which only build properly on certain toolchains etc.)
+
+
+
+- https://www.youtube.com/user/rzxarchive
+- http://www.rzxarchive.co.uk/
+
+music + sound effects
+
+coordinates
+
+emscripten
+
+Map Points (Processing)
+
+questions: does the game have a level format? [nope]
+
+once the game is self hosting you can hack it, build it, run it, etc. to watch how it reacts
+
+difficulties: 128K games
+
+I had a go at pulling apart the DOS version of the game for comparison. [findings?] Couple of bugs fixed.
+
+[C64 version has graphical glitches?]
+
+screen memory stuff:
+
+The Spectrum's screen takes (256 * 192 / 8) + (32 * 24) = 6,912 bytes of the RAM, leaving 41.25K free for the program and data.
+
+The bottom 32K of address space is [contended](https://en.wikipedia.org/wiki/ZX_Spectrum_Contended_Memory) - shared by the video system - so performance critical code needs to be kept above address $8000.
+
+[this doesn't seem right] * Basic idea is to find all of the known points in the game - IO (keyboard, sound), screen memory accesses and label those then have a second pass which scans for graphics, tables, etc. then whatever is left over is probably code which needs to be disassembled
+
+delay loop
+
+escape conditions
+
+
+Having two versions of the code is somewhat of a PITA. I have to spend time keeping names in sync - something which continues to this day.
+
+
+
+## AI (Route Finding)
+
+The Great Escape's route finding is one of its biggest mysteries. Just how do characters navigate around the game?
+
+routes, targets
+
+...
+
+
+## Software Preservation in General
+
+The trouble with these classic old games is that in many cases the sources aren't around, even if the authors are. It's an issue of software preservation.
+
+
+## Clever Ideas (in Retrospect)
+
+I did the reverse engineering by basically staring a the code until it made sense. Would it have been worth changing tack and trying a different approach? For example would it have been worth writing a dedicated emulator for the game? A hybrid approach would have allowed me to intercepting individual routines and replace them with versions written in C.
+
+Nice idea Dave - only seven years late.
+
+
+## Craig Stevenson's Updated Loading Screen
+
+https://s3.amazonaws.com/media-p.slid.es/uploads/158562/images/2187029/ZXTGE_TimeLapse.gif
+
+Why is this so good?
+
+
+## January 2016
+
+C port starts up but gets into a weird state and goes nuts
+- Hits an assert which Can't Happen(tm)
+- I could well have mis-translated or omitted something
+
+Recently disassembled the PC version using IDA Pro
+- Pretty similar, fixes most bugs I'd spotted
+- There's a German version of the game!
+
+links to l'abadia del crimen, skoolkit, pyskool, all ther other disassembies
+
+
