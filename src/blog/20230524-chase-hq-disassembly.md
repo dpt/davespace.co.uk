@@ -8,7 +8,7 @@ tags: Retro, Spectrum, Disassembly, Chase H.Q.
 
 It's been ten years since I started [reverse engineering The Great Escape](/the.great.escape/). I didn't really intend to start another disassembly project but after trying out SkoolKit's new [tape loading and Z80 simulation](https://skoolkit.ca/posts/2023/02/loads-more-simulation/) magic I found myself with a new one on my hands. This time I'm [pulling apart the Spectrum version of Chase H.Q.](https://github.com/dpt/ChaseHQ)!
 
-![Screenshot of Chase H.Q. being disassembled.](https://raw.githubusercontent.com/dpt/ChaseHQ/develop/ChaseHQ.png)
+![Screenshot of Chase H.Q. being disassembled.](https://raw.githubusercontent.com/dpt/ChaseHQ/develop/static-images/spectrum-analyser.png)
 
 Here's the current state of the disassembly: https://dpt.github.io/ChaseHQ/ and the related thread on Spectrum Computing: https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562
 
