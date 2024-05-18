@@ -3,6 +3,7 @@ icon: suitcase
 
 <h2>All Posts, Ever</h2>
 {{ range .Site.Pages.Children "blog/" }}
+{{ if .UrlMatches ".*\\.html" }}
 <article class="summarised">
   <h1>{{ template "iconforpage" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a></h1>
   {{ template "meta" . }}
@@ -13,7 +14,10 @@ icon: suitcase
     {{ . }}
     {{ end }}
     {{ end }}
-    <p class="readarticle"><a href="{{ $.Rel .Url }}">Read article...</a></p>
+    <div class="summary-post">
+      <p><a href="{{ $.Rel .Url }}">Read this post in full...</a></p>
+    </div>
   </section>
 </article>
+{{ end }}
 {{ end }}
