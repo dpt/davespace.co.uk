@@ -3,11 +3,49 @@
   <id>http://www.davespace.co.uk/</id>
   <title>DaveSpace</title>
   
-  <updated>2023-07-01T00:00:00Z</updated>
+  <updated>2024-05-18T00:00:00Z</updated>
   
   <author><name>David Thomas</name></author>
   <link href="http://www.davespace.co.uk/" rel="alternate"></link>
   <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
+
+
+
+<entry>
+  <id>blog/20240518-marble-run-kit.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">A Marble Run Kit for Blender</title>
+  <published>2024-05-18T00:00:00Z</published>
+  
+  <category term="Project"></category>
+  
+  <category term="Blender"></category>
+  
+  <category term="3D"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20240518-marble-run-kit.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p>I&rsquo;ve made a kit of parts in <a href="https://www.blender.org/">Blender</a> for building marble runs.</p>
+
+<p><img src="../blog/images/marblerunkit/blog.png" alt="Marble Run Kit overhead view"></p>
+
+<p>There are over two hundred types of track to try out, including slides, ramps, tunnels, spirals, splits and bends. I&rsquo;ve also built and included variously coloured terrazzo, granite, metallic and transparent materials for a classy looking track.</p>
+
+<p>It&rsquo;s designed around a basic block size of 4x4x2cm allowing a 2.5cm marble size.</p>
+
+<p>A little demo scene is included.</p>
+
+<p>It&rsquo;s free - Enjoy! Get it from <a href="https://dpt.itch.io/marble-kit">https://dpt.itch.io/marble-kit</a></p>
+
+
+    
+    
+  ]]></content>
+</entry>
 
 
 
@@ -82,7 +120,7 @@
 
 <p>It&rsquo;s been ten years since I started <a href="/the.great.escape/">reverse engineering The Great Escape</a>. I didn&rsquo;t really intend to start another disassembly project but after trying out SkoolKit&rsquo;s new <a href="https://skoolkit.ca/posts/2023/02/loads-more-simulation/">tape loading and Z80 simulation</a> magic I found myself with a new one on my hands. This time I&rsquo;m <a href="https://github.com/dpt/ChaseHQ">pulling apart the Spectrum version of Chase H.Q.</a>!</p>
 
-<p><img src="https://raw.githubusercontent.com/dpt/ChaseHQ/develop/ChaseHQ.png" alt="Screenshot of Chase H.Q. being disassembled."></p>
+<p><img src="https://raw.githubusercontent.com/dpt/ChaseHQ/develop/static-images/spectrum-analyser.png" alt="Screenshot of Chase H.Q. being disassembled."></p>
 
 <p>Here&rsquo;s the current state of the disassembly: <a href="https://dpt.github.io/ChaseHQ/">https://dpt.github.io/ChaseHQ/</a> and the related thread on Spectrum Computing: <a href="https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562">https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562</a></p>
 
@@ -120,10 +158,10 @@
 
 <p>I&rsquo;ve made a few new logo renders:</p>
 
-<p><img src="../doodles/logos/thumbs/sinclair-noir.png" alt="Sinclair">
-<img src="../doodles/logos/thumbs/specnext.png" alt="Sinclair">
-<img src="../doodles/logos/thumbs/ocean-sea.png" alt="Ocean">
-<img src="../doodles/logos/thumbs/ocean-metal.png" alt="Ocean"></p>
+<p><img style="border-radius: 1em" src="../doodles/logos/thumbs/sinclair-noir.png">
+<img style="border-radius: 1em" src="../doodles/logos/thumbs/specnext.png">
+<img style="border-radius: 1em" src=../doodles/logos/thumbs/ocean-sea.png">
+<img style="border-radius: 1em" src=../doodles/logos/thumbs/ocean-metal.png"></p>
 
 <p>If you&rsquo;re bothered, there are downloads over on the <a href="../doodles/logos.html">logos</a> page.</p>
 
@@ -187,7 +225,7 @@
 
 <p>I&rsquo;ve recreated the <a href="https://chrisacorns.computinghistory.org.uk/docs/Acorn/Brochures/Acorn_APP678_RiscPC600.pdf">original plexiglass-in-mid-air Risc PC logo</a>:</p>
 
-<p><img src="../doodles/nuts/thumbs/risc-pc-logo.png" alt="Risc PC logo"></p>
+<p><img style="border-radius: 1em" src="../doodles/nuts/thumbs/risc-pc-logo.png" alt="Risc PC logo"></p>
 
 <p>Grab a copy over here on the <a href="../doodles/nuts.html">Nuts</a> page.</p>
 
@@ -262,11 +300,7 @@
 
 <p>My rendering addiction continues. I&rsquo;ve made another batch of backdrops in <a href="https://www.blender.org/">Blender</a>. This time I&rsquo;m having a go at some logos. We&rsquo;ve got the Half-Life 2 logo, the Planet Express logo from Futurama and a not-the-usual Atari logo.</p>
 
-<style type="text/css" rel="stylesheet">
-IMG { border-radius: 1em; }
-</style>
-
-<p><img src="../doodles/logos/thumbs/planet-express.png" alt="Image"></p>
+<p><img style="border-radius: 1em" src="../doodles/logos/thumbs/planet-express.png"></p>
 
 <p><a href="../doodles/logos.html">Click here for tasty logo goodness</a>.</p>
 
@@ -307,13 +341,9 @@ IMG { border-radius: 1em; }
 
 <p>I&rsquo;ve now got a fancy modern computer (actually from 2013) which doesn&rsquo;t catch fire when rendering images in <a href="https://www.blender.org/">Blender</a>. So for reasons yet to be determined I&rsquo;ve been drawing some backdrops themed around the <a href="https://en.wikipedia.org/wiki/RISC_OS_Open#/media/File:Riscos_rool_logo_cog_svgedit_fitcanvastocontent.svg">RISC OS Cog logo</a>, the <a href="https://www.riscosdev.com/direct/">RISC OS Direct Cog and Arrow logo</a> and the RISC OS 16-colour desktop palette.</p>
 
-<style type="text/css" rel="stylesheet">
-IMG { border-radius: 1em; }
-</style>
-
-<p><img src="../doodles/cogs/thumbs/snowcog.png" alt="Image">
-<img src="../doodles/cogs/thumbs/directagain-srgb.png" alt="Image">
-<img src="../doodles/cogs/thumbs/palettecubes-srgb.png" alt="Image"></p>
+<p><img style="border-radius: 1em" src="../doodles/cogs/thumbs/snowcog.png">
+<img style="border-radius: 1em" src="../doodles/cogs/thumbs/directagain-srgb.png">
+<img style="border-radius: 1em" src="../doodles/cogs/thumbs/palettecubes-srgb.png"></p>
 
 <p><a href="../doodles/cogs.html">Read about it here.</a></p>
 
@@ -343,9 +373,9 @@ IMG { border-radius: 1em; }
 
 <h4>Background</h4>
 
-<p>The Acorn operating system RISC OS is built from a kernel and a collection of software components called <em>relocatable modules</em>. Its native bitmap format is the <em>sprite</em>.</p>
+<p>The Acorn Archimedes operating system RISC OS is built from a kernel and a collection of software components called <em>relocatable modules</em>. Its native bitmap format is the <em>sprite</em>.</p>
 
-<p><img src="images/sprite1.png" alt="Dawn"></p>
+<p><img style="border-radius: 1em" src="../blog/images/sprite1.png" alt="Dawn"></p>
 
 <h4>SpriteExtend</h4>
 
@@ -377,7 +407,7 @@ IMG { border-radius: 1em; }
 
 <p><a href="/risc.os/privateeye.html">PrivateEye</a> 3.10 is now available.</p>
 
-<p><img src="/software/eyesnap5.png" alt="Slightly out-of-date snap"></p>
+<p><img style="border-radius: 1em" src="/software/eyesnap5.png" alt="Slightly out-of-date snap"></p>
 
 <p>PrivateEye is a viewer for Sprites, DrawFiles, JPEGs, ArtWorks, GIFs and PNGs. It also has editing features including bitmap effects and rotation.</p>
 
@@ -411,7 +441,7 @@ IMG { border-radius: 1em; }
     
     
 
-<p><img src="../doodles/sunrise/thumbs/Rabbit Surprise.png" alt="image"></p>
+<p><img style="border-radius: 1em" src="../doodles/sunrise/thumbs/Rabbit Surprise.png" alt="Vector artwork depicting a small fox about to give a rabbit a surprise."></p>
 
 <p>I&rsquo;ve updated the site a few times since my last front-page blog post. So what&rsquo;s happened lately?</p>
 
@@ -453,7 +483,7 @@ IMG { border-radius: 1em; }
     
     
 
-<p><img src="../doodles/acornhdd.png" alt="Acorn branded hard disc"></p>
+<p><img src="../doodles/acornhdd/acornhdd.v6t.png" alt="Acorn branded hard disc"></p>
 
 <p><a href="../doodles/acornhdd.html">Read about it here.</a></p>
 
@@ -491,7 +521,7 @@ IMG { border-radius: 1em; }
 
 <p>I&rsquo;ve been learning how to model 3D objects in <a href="https://www.blender.org/">Blender</a> by recreating the Acorn Risc PC case.</p>
 
-<p><img src="../doodles/blendrpc/blendrpc.wood.544.right.png" alt="Acorn Risc PC model"></p>
+<p><img style="border-radius: 1em" src="../doodles/blendrpc/blendrpc.wood.544.right.png" alt="Acorn Risc PC 3D rendering."></p>
 
 <p><a href="../doodles/blendrpc.html">Read about it here.</a></p>
 
@@ -523,7 +553,7 @@ IMG { border-radius: 1em; }
 
 <p>Last year I built a custom LEGO® wedding arch set to celebrate a friends&rsquo; wedding.</p>
 
-<p><img src="../projects/lego/closeup.jpg" alt="LEGO wedding arch closeup."></p>
+<p><img style="border-radius: 1em" src="../projects/lego/closeup.jpg" alt="LEGO wedding arch closeup."></p>
 
 <p><a href="../projects/lego-wedding-arch.html">Here&rsquo;s an article all about it.</a></p>
 
@@ -585,7 +615,7 @@ IMG { border-radius: 1em; }
 
 <p>If you have a faithful Acorn Risc&nbsp;PC kicking around you might have found that the rubber feet on the bottom of the case have started to crumble, like mine:</p>
 
-<p><img src="/blog/images/bumpons/broken.jpg" alt="broken.jpg"></p>
+<p><img style="border-radius: 1em" src="/blog/images/bumpons/broken.jpg" alt="A close-up picture of the underside of an inverted Risc PC with a crumbling rubber foot."></p>
 
 <p>In some cases the rubber feet can even liquefy and leave you with a wonky computer sitting in a pool of grey goo.</p>
 
@@ -1895,6 +1925,8 @@ IMG { border-radius: 1em; }
     
   ]]></content>
 </entry>
+
+
 
 
 
