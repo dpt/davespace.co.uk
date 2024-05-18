@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>
+      DaveSpace: Notes
+    </title>
+    <link rel="StyleSheet" href="style.css" type="text/css">
+  </head>
+  <body text="black" link="red" alink="black" vlink="darkred" bgcolor="white">
+    <p>
+      <img src="images/notes.gif" alt="[ Notes ]" width="129" height="48">
+    </p>
+    <hr size="1">
+    <center>
+      <table width="75%" border="0" cellspacing="4" cellpadding="4">
+        <tr>
+          <th align="left" colspan="2">
+            <p>
+              <b><big>Steal This Page</big></b>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            &nbsp;
+          </th>
+          <td align="left" colspan="2">
+            <p>
+              This page is going to be an on-line diary type of thing. The difference from other on-line diary type of things being that I won't be telling you what I had for breakfast and how obsessed I am with Helen Rayner. <small>*cackle*</small>
+            </p>
+          </td>
+        </tr>
+        <!-- Netscape's Lack of Entities -->
+        <tr>
+          <th align="left" colspan="2">
+            <p>
+              <b><big>Netscape's Lack of Entities</big>
+              <br>
+               July 1999</b>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            &nbsp;
+          </th>
+          <td>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;After populating the pages of the freshly-revised DaveSpace with lots of lovely &amp;ndash; and &amp;mdash; entities, I find that Netscape 4.6 doesn't understand them. What a crock of shit.
+            </p>
+          </td>
+        </tr>
+        <!-- Browse, GIFs and www.cerilica.com -->
+        <tr>
+          <th align="left" colspan="2">
+            <p>
+              <b><big>Browse, GIFs and www.cerilica.com</big>
+              <br>
+               July 1999</b>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            &nbsp;
+          </th>
+          <td>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;I found <a href="http://www.acorn.com/browser/">Browse</a>'s incompatibility with the <a href="http://www.cerilica.com/">Cerilica</a> site strangely fascinating. Apparently the author of the website didn't have a copy to test the site on, so was unaware of the fact that the images didn't line up in places, making it look all odd like. The site renders just fine on Fresco and Netscape, so why worry?
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;So what was causing it to foul up? I mirrored a page plus its graphics using <a href="http://www.ping.demon.co.uk/acorn/download.html">WebGet</a> and had a look at its &lt;table&gt; HTML. The alignments specified in the table cells was fine, so evidently something else was mucking up.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Reprocessing the GIFs through <a href="http://utter.chaos.org.uk/~pdh/software/intergif.htm">InterGif</a> caused everything to magically work... so my first thought was that the original GIFs were created by an older InterGif with bugs and that the newer version was curing them.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Then I tried it with InterGif's interlacing off and the page went back to not working. hmm.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;So I made up a test page, with interlaced images at the top and non-interlaced at the bottom. The interlaced images aligned and the non-interlaced didn't. Both sets of images worked in Fresco, Netscape and IE.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Ok, so Browse is apparently misbehaving with non-interlaced images. I load the images into PrivateEye <sup>1.</sup> which has its own GIF loader. The images are different sizes! Erk, just what is going on?
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Well, it turned out that the non-interlaced GIF was being cunningly 'trimmed' by InterGif; all transparent edge rows and columns were removed and only the remainder of the image was encoded, saving space. The GIF was then specified as having a background (a logical screen descriptor size, in GIF terminology) of the size of the original image.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Fresco, Netscape and IE are all capable of reconstructing these GIFs correctly. Browse apparently isn't. Marvellous.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;InterGif doesn't try to do this sort of optimisation with interlaced GIFs, as Netscape 4 has bugs which interact badly with this!
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Of course, I would have learnt all this straight away had I read through InterGif's !Help file. RTFM, folks. :-)
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;<sup>1.</sup> PrivateEye is a graphic viewer I'm currently writing. It will be free and available through <a href="http://www.sliced.demon.co.uk/">Sliced Software</a>, assuming it ever gets finished.
+            </p>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <p align="center">
+      <img src="images/stick26.gif" alt="stick99.gif" width="221" height="196">
+    </p>
+    <hr size="1">
+    <p align="center">
+      <small><tt><a href="index2.html">Index</a> - <a href="hello.html">Hello</a> - <a href="new.html">New!</a> - <a href="software/index.html">Software</a> - <a href="basic/index.html">BASIC</a>
+      <br>
+       Notes - <a href="goodbad.html">Good &amp; Bad</a> - <a href="sticks.html">Sticks</a> - <a href="links.html">Links</a> - <a href="copy.html">Copyright</a>
+      <br>
+       <b><font color="red">Dave</font>Space</b></tt></small>
+    </p>
+  </body>
+</html>
+

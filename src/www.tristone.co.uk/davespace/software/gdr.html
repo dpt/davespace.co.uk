@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>
+      DaveSpace: Gordon Rogers' Software for RISC OS
+    </title>
+    <link rel="StyleSheet" href="../style.css" type="text/css">
+  </head>
+  <body text="black" link="red" alink="black" vlink="darkred" bgcolor="white">
+    <p>
+      <img src="images/softgdr.gif" alt="Software by gdr" width="369" height="48">
+    </p>
+    <hr size="1">
+    <center>
+      <table width="75%" border="0" cellpadding="4" cellspacing="3">
+        <tr>
+          <th colspan="2" align="left" valign="middle">
+            <p>
+              <b><big>Gordon's Software</big></b>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            &nbsp;
+          </td>
+          <td>
+            Gordon Rogers is a research student in the <a href="http://www.livjm.ac.uk/astro/">Astrophysics department of Liverpool John Moores University</a>. In his spare time he writes some excellent software and hacks around with the low-levels of the OS. 
+            <p align="center">
+              <a name="pseudomem"><img src="images/pmem.gif" alt="pmem.gif" width="475" height="64"></a>
+            </p>
+            <p>
+              <b><big>What is <dfn>PseudoMem</dfn>?</big></b>
+            </p>
+            <p>
+              <dfn>PseudoMem</dfn> is a simplified alternative to virtual memory. It provides, simply, a means of accessing the contents of files without loading them. You're probably thinking that you can do this with the OS's file handling SWIs anyway, but you can't run BASIC programs or plot sprites without loading them... until now.
+            </p>
+            <p>
+              Unfortunately, because the program makes use of a new (although slightly bugged) feature of RISC OS 3.5+ (even more bugged on RISC OS 3.7, but who cares), it would require much more code to program it on earlier machines. It also makes use of dynamic areas, so there's another modification that would be needed.
+            </p>
+            <p>
+              <b><big>What does <dfn>PseudoMem</dfn> provide?</big></b>
+            </p>
+            <p>
+              A replacement to OS_Find which allows access to a file (via any STR, LDR, STM or LDM instruction - the only exception is SWP which the OS doesn't cater for) in a dynamic memory area. It also corrects the bugs mentioned above. What this means is that anything in the OS which uses any of the 4 main memory access instructions can now access files. This includes the <kbd>*Memory</kbd> commands, sprite access and even running or listing BASIC programs.
+            </p>
+            <p>
+              It's also a very nice little module which tidies up after one of the horrible bugs in SpriteExtend (the one which prevents you from plotting JPEGs from &lt;24K wimpslots). It also provides a convenient command line interface to the main aspects of its SWIs.
+            </p>
+            <p>
+              <b><big>Where can I get it?</big></b>
+            </p>
+            <p>
+              <a href="sw-gdr/pmem017.zip">Click here</a> to retrieve the distribution archive. Full documentation is included, along with the <dfn>PseudoMem</dfn> module itself.
+            </p>
+            <p>
+              &copy; <a href="mailto:gdr@astro.livjm.ac.uk">Gordon Rogers</a>, 1997
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" valign="middle">
+            <p>
+              <img src="../images/stick07.gif" alt="stick07.gif" width="238" height="100">
+            </p>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <hr size="1">
+    <p align="center">
+      <small><tt><a href="../index2.html">Index</a> - <a href="../hello.html">Hello</a> - <a href="../new.html">New!</a> - <a href="index.html">Software</a> [ <a href="dpt.html">dpt</a> - gdr ] - <a href="../basic/index.html">BASIC</a>
+      <br>
+       <a href="../notes.html">Notes</a> - <a href="../goodbad.html">Good &amp; Bad</a> - <a href="../sticks.html">Sticks</a> - <a href="../links.html">Links</a> - <a href="../copy.html">Copyright</a>
+      <br>
+       <b><font color="red">Dave</font>Space</b></tt></small>
+    </p>
+  </body>
+</html>
+

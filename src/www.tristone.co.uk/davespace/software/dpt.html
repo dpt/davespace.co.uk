@@ -1,0 +1,849 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+  <head>
+    <title>
+      DaveSpace: David Thomas's Software for RISC OS
+    </title>
+    <link rel="StyleSheet" href="../style.css" type="text/css">
+  </head>
+  <body text="black" link="red" alink="black" vlink="darkred" bgcolor="white">
+    <p>
+      <img src="images/softdpt.gif" alt="Software by dpt" width="373" height="48">
+    </p>
+    <hr size="1">
+    <center>
+      <table width="75%" border="0" cellpadding="4" cellspacing="4">
+        <tr>
+          <th colspan="2" align="left" valign="middle">
+            <p>
+              <b><big>Copyright</big>
+              <br>
+               (Please Read)</b>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            &nbsp;
+          </td>
+          <td>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Unless otherwise stated, the software provided here is the copyrighted work of David Thomas.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Due to the charge-free nature of the software, it is supplied "as is"; you use it at your own risk. I provide no warranty that the software is fit for any purpose.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;You are free to redistribute these applications, as long as you are not supplying them for personal or commercial profit and as long as they are supplied with all of the software's files complete and unmodified.
+            </p>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;The programs supplied here are not "public domain" programs, they are licensed software subject to the conditions set out above.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2" align="left" valign="middle">
+            <p>
+              <b><big>Downloading the Software</big></b>
+            </p>
+          </th>
+        </tr>
+        <tr>
+          <td>
+            &nbsp;
+          </td>
+          <td>
+            <p>
+              &nbsp;&nbsp;&nbsp;&nbsp;Just click on the icon of the program you want to download and your browser should do the rest.
+            </p>
+            <table border="0" cellpadding="4" cellspacing="4">
+              <tr>
+                <!-- System & Productivity -->
+              </tr>
+              <tr>
+                <th align="center" valign="middle" colspan="2" bgcolor="gainsboro">
+                  <p>
+                    <b><big>System &amp; Productivity</big></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <!-- Detritus -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="detritus"><big>Detritus</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <a href="sw/detritus.zip"><img src="images/icons/module.gif" alt="module.gif" border="0" width="34" height="34">
+                    <br>
+                     1.00
+                    <br>
+                     28&nbsp;Jan&nbsp;1999</a>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    This is a small module which stops <kbd>*Close</kbd> and <kbd>*Shut</kbd> (OS_Find 0,0 and OS_FSControl 22 respectively) having any effect. This stops badly-written programs from closing files they don't own.
+                  </p>
+                  <p>
+                    It also stops mouse movement unblanking the screen when the screensaver is active.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Grab -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="grab"><big>Grab</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/grab.zip"><img src="images/icons/grab.gif" alt="grab.gif" border="0" width="34" height="34">
+                    <br>
+                     2.02
+                    <br>
+                     05&nbsp;Sep&nbsp;1992</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    Grab allows the system sprite pools to be saved to a sprite file. It's useful for checking to see exactly what sprites are being loaded into the system sprite pool.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Makro -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="makro"><big>Makro</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/makro.zip"><img src="images/icons/makro.gif" alt="makro.gif" border="0" width="34" height="34">
+                    <br>
+                     1.57
+                    <br>
+                     02&nbsp;Jul&nbsp;1999</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    Makro is a flexible text macro system. It provides a window where you can store up to 32 named strings, each of which can be programmed to send any string to the caret at the click of a button.
+                  </p>
+                  <p>
+                    Strings can contain references to system variables so you can easily write a macro to show the current time or date.
+                  </p>
+                  <p>
+                    In addition to this, any macro can be a *Command so you can, for example, program Makro to act as an application launcher.
+                  </p>
+                  <p>
+                    Makro allows you to maintain many different sets of macros, so you could use it for an application launcher, an e-mail address book and an aid to report writing, all in one.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- QuickFiler -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="quickfiler"><big>QuickFiler</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/quickfiler.zip"><img src="images/icons/archive.gif" alt="archive.gif" border="0" width="34" height="34">
+                    <br>
+                     1.28
+                    <br>
+                     01&nbsp;Jun&nbsp;1998</a>
+                    <br>
+                     <small>Not fully compatible with RISC OS 4.</small></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    QuickFiler is a very useful utility which allows the Filer to be controlled from the keyboard, adding shortcut keys for many of the common Filer actions (although not <b>all</b> actions.)
+                  </p>
+                  <p>
+                    Requires a Risc PC-style Boot structure.
+                  </p>
+                  <p>
+                    New to version 1.28 is the ability to scroll around directory displays using the cursor keys.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- SysMerge+ -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="sysmergeplus"><big>SysMerge+</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/sysmergeplus.zip"><img src="images/icons/sysmergeplus.gif" alt="sysmergeplus.gif" border="0" width="34" height="34">
+                    <br>
+                     1.00
+                    <br>
+                     14&nbsp;Sep&nbsp;1997</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    Acorn's SysMerge utility updates the System directory based on date stamps rather than actual module versions. This can lead to problems where older modules have been given newer date stamps, thus overwriting newer modules.
+                  </p>
+                  <p>
+                    SysMerge+ works differently from this - it compares each module's version and only the newer module is copied across.
+                  </p>
+                  <p>
+                    It can also be used for updating other module resource directories, such as CCShared.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Toolbar -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="toolbar"><big>Toolbar</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/toolbar.zip"><img src="images/icons/toolbar.gif" alt="toolbar.gif" border="0" width="34" height="34">
+                    <br>
+                     1.08
+                    <br>
+                     31&nbsp;Dec&nbsp;1998</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    Toolbar provides a pull-down button bar which is used to launch applications, run files and open directories. Once an object is launched, it smoothly retracts back into position.
+                  </p>
+                  <p>
+                    It can be configred to reside on either on the top left or right-hand side of the screen and stores the names of up to 32 objects.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- WimpTiles -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="wimptiles"><big>WimpTiles</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/wimptiles.zip"><img src="images/icons/wimptiles.gif" alt="wimptiles.gif" border="0" width="34" height="34">
+                    <br>
+                     1.00
+                    <br>
+                     01&nbsp;Jan&nbsp;1996</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    WimpTiles is a set of 25 new window and pinboard backdrop tiles. I have designed them to fit in with the rest of desktop rather than contrast against it. (Over 400K in size when unpacked.)
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- WinCtrl -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="winctrl"><big>WinCtrl</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/winctrl.zip"><img src="images/icons/winctrl.gif" alt="winctrl.gif" border="0" width="34" height="34">
+                    <br>
+                     1.04
+                    <br>
+                     20&nbsp;Jul&nbsp;1994</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    Some windows don't have gadgets around their borders, or some of the gadgets aren't there. This program attempts to emulate the gadgets of the Wimp so you can move windows without title bars, scroll un-scrollable windows etc. You can even re-size or scroll menus!
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Graphical -->
+              </tr>
+              <tr>
+                <th align="center" valign="middle" colspan="2" bgcolor="gainsboro">
+                  <p>
+                    <b><big>Graphical</big></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <!-- DGamma -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="dgamma"><big>DGamma</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/dgamma.zip"><img src="images/icons/dgamma.gif" alt="dgamma.gif" border="0" width="34" height="34">
+                    <br>
+                     1.10
+                    <br>
+                     06&nbsp;Jul&nbsp;1998</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    DGamma allows you to change the apparent brightness response of your screen display. It can be used to correct for deficiencies in some monitors, or even if you just can't seem to get the colours right with those fiddly dials!
+                  </p>
+                  <p>
+                    DGamma works by altering the colour look-up tables inside the video controller (VIDC) to resemble that of a gamma-curve rather than the usual diagonal line. It should be noted that other programs that try to reprogram the VIDC20 in the same way will not work in conjunction with DGamma.
+                  </p>
+                  <p>
+                    DGamma is mode-independent. It will work in any screen depth and will not affect the current desktop palette.
+                  </p>
+                  <p>
+                    Requires a VIDC20 video controller or compatible. This means any Risc PC or later machine.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- IBrowse -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="ibrowse"><big>IBrowse</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/ibrowse.zip"><img src="images/icons/ibrowse.gif" alt="ibrowse.gif" border="0" width="34" height="34">
+                    <br>
+                     0.31
+                    <br>
+                     13&nbsp;Apr&nbsp;1997</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    IBrowse is a fast and compact sprite and JPEG image viewer written entirely in assembler. It requires the JPEG rendering version of SpriteExtend, as included in RISC OS 3.6.
+                  </p>
+                  <ul>
+                    <li>
+                      Fast
+                    </li>
+                    <li>
+                      Allows control of sprite and JPEG dithering
+                    </li>
+                    <li>
+                      Can load sprites on double-click
+                    </li>
+                    <li>
+                      Provides an 'image information' window
+                    </li>
+                    <li>
+                      Requires only 8K of memory for itself
+                    </li>
+                    <li>
+                      Supports the app-to-app transfer protocol
+                    </li>
+                    <li>
+                      Zoom function
+                    </li>
+                  </ul>
+                  <p>
+                    IBrowse can - optionally - use <a href="gdr.html#pseudomem">Gordon Rogers' PseudoMem module</a> to allow images larger than memory to be viewed.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- GreyToRGB -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="greytorgb"><big>GreyToRGB</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/greytorgb.zip"><img src="images/icons/greytorgb.gif" alt="greytorgb.gif" border="0" width="34" height="34">
+                    <br>
+                     1.04
+                    <br>
+                     10&nbsp;Jan&nbsp;1995</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    GreyToRGB lets you combine three 8bpp (bits per pixel) Clear or AIM files together, representing red, green and blue to produce one 24bpp Clear file. It will also work the other way too, separating out a 24bpp Clear file into a directory ofred, green and blue Clear files.
+                  </p>
+                  <p>
+                    I find this utility useful for applying effects to and creating images and when coupled with AIM you can generate some seriously weird images!
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- MakeJPEG -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="makejpeg"><big>MakeJPEG</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/makejpeg.zip"><img src="images/icons/makejpeg.gif" alt="makejpeg.gif" border="0" width="34" height="34">
+                    <br>
+                     2.04
+                    <br>
+                     23&nbsp;Mar&nbsp;1996</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    MakeJPEG is a JPEG image toolkit using the Independent JPEG Group version 6 utilities, it allows you to compress and decompress JPEG-format images into more ordinary style bitmap images. It also allows you to add comments to JPEGs and to translate between variants of the JPEG format. This version now supports 'progressive' JPEG images.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- SpriteMde -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="spritemde"><big>SpriteMode</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/spritemde.zip"><img src="images/icons/spritemde.gif" alt="spritemde.gif" border="0" width="34" height="34">
+                    <br>
+                     2.00
+                    <br>
+                     14&nbsp;Oct&nbsp;1995</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    SpriteMode allows you to change the screen mode specifier of a Sprite without changing the data contained within. Typically you will want to alter a sprite in this way to change its aspect ratio, but altering the colour depth is also catred for.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Networking -->
+              </tr>
+              <tr>
+                <th align="center" valign="middle" colspan="2" bgcolor="gainsboro">
+                  <p>
+                    <b><big>Networking</big></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <!-- NetFetch -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="netfetch"><big>NetFetch</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/netfetch.zip"><img src="images/icons/archive.gif" alt="archive.gif" border="0" width="34" height="34">
+                    <br>
+                     1.30
+                    <br>
+                     24&nbsp;May&nbsp;1998</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    A small, portable, command line utility program which allows you to fetch files straight off the web by issuing a command such as '*netfetch http://host/page.html page'.
+                  </p>
+                  <p>
+                    Written in C. Source code is included.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- SocketManager -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="socketmgr"><big>SocketManager</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/socketmgr.zip"><img src="images/icons/socketmgr.gif" alt="socketmgr.gif" border="0" width="34" height="34">
+                    <br>
+                     1.11
+                    <br>
+                     22&nbsp;Dec&nbsp;1998</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    SocketManager is a utility which displays all currently active network sockets in a pop-up window. Should an application crash and leave its connections open, SocketManager allows you to close them. Very useful if a server application crashes leaving a standard port unavailable.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Tube -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="tube"><big>Tube</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/tube.zip"><img src="images/icons/archive.gif" alt="archive.gif" border="0" width="34" height="34">
+                    <br>
+                     0.92
+                    <br>
+                     17&nbsp;Jul&nbsp;1999</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    This is a utility which creates a transparent connection between networked computers. This allows a networked computer to share access to those services it can access itself.
+                  </p>
+                  <p>
+                    It can potentially be used to allow access to, say, Internet services over a closed network upon which only a single machine has actual Internet access. (It was written to allow me to properly access news servers - since I can only post news on a couple of my UNIX accounts.)
+                  </p>
+                  <p>
+                    The program itself has been created to be portable between different operating systems. In practice, this means that on RISC OS it runs in a TaskWindow.
+                  </p>
+                  <p>
+                    Written in C. Source code is included.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- More -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><big>More</big></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    More networking software is available from the FreeNet archive at: <a href="http://freenet.barnet.ac.uk/freenet/">http://freenet.barnet.ac.uk/freenet/</a>.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Programming & Reference -->
+              </tr>
+              <tr>
+                <th align="center" valign="middle" colspan="2" bgcolor="gainsboro">
+                  <p>
+                    <b><big>Programming &amp; Reference</big></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <!-- AppEngine -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="appenginemodule"><big>AppEngine Module</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/appenginem.zip"><img src="images/icons/module.gif" alt="module.gif" border="0" width="34" height="34">
+                    <br>
+                     0.10
+                    <br>
+                     03&nbsp;Aug&nbsp;1998</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    AppEngine is the name of my system of programming libraries. The AppEngine module contains some of the most commonly used functions of my libraries, written in assembler for speed.
+                  </p>
+                  <p>
+                    This release of the AppEngine module contains many routines for string manipulation, a routine to locate country-specific resources and a frugal sliding heap manager.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- ProgUtils -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="progutils"><big>ProgUtils</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/progutils.zip"><img src="images/icons/progutils.gif" alt="progutils.gif" border="0" width="34" height="34">
+                    <br>
+                     1.02
+                    <br>
+                     22&nbsp;Jan&nbsp;1996</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    ProgUtils is a combined utility program for programmers. It is a SWI translator, expression evaluator and an ARM instruction decoder all in one.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- SetPaths -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="setpaths"><big>SetPaths</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/setpaths.zip"><img src="images/icons/setpaths.gif" alt="setpaths.gif" border="0" width="34" height="34">
+                    <br>
+                     1.00
+                    <br>
+                     10&nbsp;Feb&nbsp;1996</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    SetPaths is a replacement version of the SetPaths utility for AcornC/C++ users. It automatically scans the Libraries directory and builds up C$Path when booted.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Internet Help -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="int-help"><big>Internet Help</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/int-help.zip"><img src="images/icons/strhlp.gif" alt="strhlp.gif" border="0" width="34" height="34">
+                    <br>
+                     Release&nbsp;1</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    A StrongHelp manual detailing the SWIs for the Internet, InetDB and SysLog modules. Based on the manuals by the respective authors.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- WimpExtension Help -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="wex-help"><big>WimpExtension Help</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/wex-help.zip"><img src="images/icons/strhlp.gif" alt="strhlp.gif" border="0" width="34" height="34">
+                    <br>
+                     Release&nbsp;3</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    A StrongHelp manual detailing Doggysoft's WimpExtension II system and SWIs, based on the manual supplied with the package.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- More -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><big>More</big></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    More manuals are available from the StrongHelp manuals archive at: <a href="http://freenet.barnet.ac.uk/manuals/">http://freenet.barnet.ac.uk/manuals/</a>.
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- Silly Software -->
+              </tr>
+              <tr>
+                <th align="center" valign="middle" colspan="2" bgcolor="gainsboro">
+                  <p>
+                    <b><big>Silly Software</big></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <!-- Make-A-Risc PC -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="makearpc"><big>Make-A-Risc&nbsp;PC</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/makearpc.zip"><img src="images/icons/makearpc.gif" alt="makearpc.gif" border="0" width="51" height="49">
+                    <br>
+                     1.11
+                    <br>
+                     09&nbsp;Jun&nbsp;1996</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    Presented in association with <a href="http://www.thevillage.ndirect.co.uk/justin/">Justin Fletcher</a>.
+                  </p>
+                  <p>
+                    Construct your own fantasy Risc PC, with toaster, microwave, fish tank and amplifier slices! Build the biggest Risc PC you can; be the envy of major governments!
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <!-- NoShade -->
+              </tr>
+              <tr>
+                <th align="right" valign="middle" bgcolor="gainsboro">
+                  <p>
+                    <b><a name="noshade"><big>NoShade</big></a></b>
+                  </p>
+                </th>
+              </tr>
+              <tr>
+                <th align="right" valign="top">
+                  <p>
+                    <b><a href="sw/noshade.zip"><img src="images/icons/noshade.gif" alt="noshade.gif" border="0" width="34" height="34">
+                    <br>
+                     0.01
+                    <br>
+                     13&nbsp;May&nbsp;1996</a></b>
+                  </p>
+                </th>
+                <td align="left" valign="top">
+                  <p>
+                    Hours of desktop mischief! NoShade lets you unshade greyed-out icons and menu entries, allowing you to explore previously unavailable options and menus.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center" valign="middle">
+            <p>
+              <img src="../images/stick17.gif" alt="stick17.gif" width="260" height="241">
+            </p>
+          </td>
+        </tr>
+      </table>
+    </center>
+    <hr size="1">
+    <p align="center">
+      <small><tt><a href="../index2.html">Index</a> - <a href="../hello.html">Hello</a> - <a href="../new.html">New!</a> - <a href="index.html">Software</a> [ dpt - <a href="gdr.html">gdr</a> ] - <a href="../basic/index.html">BASIC</a>
+      <br>
+       <a href="../notes.html">Notes</a> - <a href="../goodbad.html">Good &amp; Bad</a> - <a href="../sticks.html">Sticks</a> - <a href="../links.html">Links</a> - <a href="../copy.html">Copyright</a>
+      <br>
+       <b><font color="red">Dave</font>Space</b></tt></small>
+    </p>
+  </body>
+</html>
+
