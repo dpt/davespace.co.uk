@@ -1,0 +1,25 @@
+section: The Great Escape
+title: Overview
+icon: flag
+date: 2019-06-29
+tags: Project, Game, The Great Escape
+vim: wrap linebreak textwidth=0 wrapmargin=0 breakindent
+----
+
+<h2>Reverse Engineering The Great Escape</h2>
+
+<p>The Great Escape is a classic 1986 prison break game for the <a href="https://en.wikipedia.org/wiki/ZX_Spectrum">48K ZX Spectrum]</a>. I've spent a considerable amount of time reverse engineering its routines and documenting its workings while simultaneously reimplementing it as portable C code. The following pages describe the process I went through.</p>
+
+<img src="tge/diagram.png" width="544">
+
+<p>This is an expanded-upon write-up of some of what I can dimly recall saying while presenting <a href="http://slides.com/dpt/the-great-escape/#/">these slides</a> to my team at INSIDE Secure (formerly Metaforic, now called Verimatrix) in Glasgow at a talk in January 2016.</p>
+
+<ul class="fa-ul">
+  {{/* This captures every file in the hierarchy... so we add a UrlMatches check too. */}}
+  {{ range .Site.Pages.Children "the.great.escape/" }}
+  {{ if .UrlMatches ".*\\.html" }}
+  <li>{{ template "iconforlist" . }} <a href="{{ $.Rel .Url }}">{{ .Title }}</a>{{ if .Other.Subtitle }} – {{ .Other.Subtitle }}{{ end }}</li>
+  {{ end }}
+  {{ end }}
+</ul>
+
