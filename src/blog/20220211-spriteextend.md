@@ -14,7 +14,7 @@ IMG { border-radius: 1em; }
 
 The Acorn operating system RISC OS is built from a kernel and a collection of software components called _relocatable modules_. Its native bitmap format is the _sprite_.
 
-![Dawn](images/sprite1.png)
+<img style="border-radius: 1em" src="../blog/images/sprite1.png" alt="Dawn">
 
 #### SpriteExtend
 
@@ -24,7 +24,7 @@ RISC OS’s most fundamental sprite drawing routines live alongside the other VD
 
 Now, SpriteExtend is a bit of a meta beast. You might expect it to provide a set of routines implementing the extended sprite operations, which it does, but it also contains a **sprite plotting routine generator**. A sort of specialised compiler that can generate any required sprite plotting routine. This is required because RISC OS is very flexible with its bitmap handling. Across the range of RISC OS hardware you can have 1, 2, 4, 8, 16 or 32bpp screen modes (plus variants for different pixel formats). Sprites can be in any of these modes (plus extra formats like CMYK) and _any_ of these sprites can draw into _any_ screen mode. The combinatorial explosion of to’s and from’s would require hundreds of routines to be written and so is better served with a single multiple-case generator.
 
-![Day](images/sprite2.png)
+<img style="border-radius: 1em" src="../blog/images/sprite2.png" alt="Day">
 
 #### It Gets Funner
 
@@ -36,10 +36,10 @@ So an assembly module houses a C routine which generates, then executes, machine
 
 And this is why at the top of one of the main source files it says `DANGER 10000 VOLTS: …` and later on, when it got even scarier, that was supplemented by a `BEWARE 20000 VOLTS: …` warning.
 
-![Dusk](images/sprite3.png)
+<img style="border-radius: 1em" src="../blog/images/sprite3.png" alt="Dusk">
 
 #### One Last Thing
 
 Oh yeah, did I mention that SpriteExtend also has a realtime JPEG renderer in it? _The Aristocrats_.
 
-![Night](images/sprite4.png)
+<img style="border-radius: 1em" src="../blog/images/sprite4.png" alt="Night">

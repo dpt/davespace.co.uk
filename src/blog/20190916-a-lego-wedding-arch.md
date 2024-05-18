@@ -8,7 +8,7 @@ tags: Project, LEGO, Wedding
 
 Last year I built a custom LEGO® wedding arch set to celebrate a friends' wedding.
 
-![LEGO wedding arch closeup.](../projects/lego/closeup.jpg)
+<img style="border-radius: 1em" src="../projects/lego/closeup.jpg" alt="LEGO wedding arch closeup.">
 
 [Here's an article all about it.](../projects/lego-wedding-arch.html)
 

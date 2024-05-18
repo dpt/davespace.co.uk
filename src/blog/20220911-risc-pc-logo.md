@@ -12,7 +12,7 @@ IMG { border-radius: 1em; }
 
 I've recreated the [original plexiglass-in-mid-air Risc PC logo](https://chrisacorns.computinghistory.org.uk/docs/Acorn/Brochures/Acorn_APP678_RiscPC600.pdf):
 
-![Risc PC logo](../doodles/nuts/thumbs/risc-pc-logo.png)
+<img style="border-radius: 1em" src="../doodles/nuts/thumbs/risc-pc-logo.png" alt="Risc PC logo">
 
 Grab a copy over here on the [Nuts](../doodles/nuts.html) page.
 
