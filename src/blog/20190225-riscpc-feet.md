@@ -1,7 +1,7 @@
 title: Fitting Replacement Risc&nbsp;PC Rubber Feet
 icon: search
 date: 2019-03-02
-tags: Hardware, RISC OS, Risc PC
+tags: Blog, Hardware, RISC OS, Risc PC
 ----
 
 <!-- begin summary -->

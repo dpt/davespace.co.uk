@@ -1,7 +1,7 @@
 title: The Great Escape: The Write-Up
 icon: bell
 date: 2019-08-02
-tags: The Great Escape, Spectrum, Retro
+tags: Blog, The Great Escape, Spectrum, Retro
 ----
 
 <!-- begin summary -->

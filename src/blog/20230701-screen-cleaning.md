@@ -1,7 +1,7 @@
 title: Dr. Dave's Patented Screen Cleaning Method*
 icon: spray-can
 date: 2023-07-01
-tags: Tip
+tags: Blog, Article, Tip
 ----
 
 <!-- begin summary -->

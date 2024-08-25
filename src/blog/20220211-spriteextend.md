@@ -1,7 +1,7 @@
 title: "BEWARE 20,000 VOLTS" – The Joy of SpriteExtend
 icon: bolt
 date: 2022-02-11
-tags: RISC OS, Article
+tags: Blog, RISC OS, Article
 ----
 
 <style type="text/css" rel="stylesheet">

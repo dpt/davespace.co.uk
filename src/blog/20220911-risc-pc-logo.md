@@ -1,7 +1,7 @@
 title: Risc PC logo
 icon: pencil-alt
 date: 2022-09-11
-tags: Doodle, 3D, Blender
+tags: Blog, Doodle, 3D, Blender
 ----
 
 <style type="text/css" rel="stylesheet">

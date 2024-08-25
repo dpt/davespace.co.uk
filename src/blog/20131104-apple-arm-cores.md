@@ -1,7 +1,7 @@
 title: Survey of ARM cores used in iOS devices
 icon: cogs
 date: 2013-11-11
-tags: ARM, iOS
+tags: Blog, ARM, iOS
 ----
 
 I recently needed a complete list of ARM cores used in Apple’s iOS kit. [We](http://www.metaforic.com/) were trying to track down a bug which initially appeared to be something processor-dependent. The bug turned out to be something else, but I’d already compiled much of this table anyway. So, here it is for your reference:

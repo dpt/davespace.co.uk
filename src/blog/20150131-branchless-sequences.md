@@ -1,7 +1,7 @@
 title: Branchless Code Sequences
 icon: microchip
 date: 2015-01-31
-tags: Optimisation, EfficientC, GitHub, Project, Aha
+tags: Blog, Optimisation, EfficientC, GitHub, Project, Aha
 ----
 
 ## Overview

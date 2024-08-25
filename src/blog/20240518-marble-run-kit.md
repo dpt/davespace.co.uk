@@ -1,7 +1,7 @@
 title: A Marble Run Kit for Blender
 icon: circle
 date: 2024-05-18
-tags: Project, Blender, 3D
+tags: Blog, Project, Blender, 3D
 ----
 
 <!-- begin summary -->

@@ -1,7 +1,7 @@
 title: Chase H.Q. disassembly project
 icon: car
 date: 2023-05-24
-tags: Retro, Spectrum, Disassembly, Chase H.Q.
+tags: Blog, Retro, Spectrum, Disassembly, Chase H.Q.
 ----
 
 <!-- begin summary -->

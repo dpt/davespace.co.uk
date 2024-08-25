@@ -1,7 +1,7 @@
 title: A Virtual Risc PC
 icon: pencil-alt
 date: 2019-11-01
-tags: Project, Acorn, Risc PC, Doodle, Blender, 3D
+tags: Blog, Project, Acorn, Risc PC, Doodle, Blender, 3D
 ----
 
 <!-- begin summary -->

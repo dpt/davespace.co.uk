@@ -1,7 +1,7 @@
 title: PhotoFiler and PrivateEye are now open source
 icon: search
 date: 2010-09-15
-tags: RISC OS, PhotoFiler, PrivateEye
+tags: Blog, RISC OS, PhotoFiler, PrivateEye
 ----
 
 I’ve noticed in the site’s logs that people were occasionally arriving here after searching for the source code to [PrivateEye](/risc.os/privateeye.html). I’d not generally made its source available as the people who had previously asked for it had received it, then they went all quiet. I presumed that was a bad sign.

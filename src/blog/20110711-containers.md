@@ -1,7 +1,7 @@
 title: New project: Containers
 icon: truck
 date: 2011-07-11
-tags: Containers, GitHub
+tags: Blog, Containers, GitHub, Project
 ----
 
 I’ve been working on a C library called [Containers](https://github.com/dpt/Containers). This implements various different associative array structures, such as arrays, linked lists, binary search trees, tries and crit-bit trees. It’s now hosted on [github](http://github.com/).

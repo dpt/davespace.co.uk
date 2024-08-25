@@ -1,7 +1,7 @@
 title: A LEGO® Wedding Arch
 icon: cheese
 date: 2019-09-16
-tags: Project, LEGO, Wedding
+tags: Blog, Project, LEGO, Wedding
 ----
 
 <!-- begin summary -->
