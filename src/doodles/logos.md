@@ -27,6 +27,8 @@ IMG, VIDEO { border-radius: 1em; }
 <video src="logos/planet-express.mp4"></video>
 <a>Older animated version.</a>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xupgoFj9qHA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 [![Image](logos/thumbs/atari.png)](logos/atari.png)
 <a>The 2002 Atari SA logo (featuring the Fuji lines instead of the middle 'A') rendered as 3D.</a>
 
@@ -57,9 +59,10 @@ Many of the shaders used are from the [Sanctus Library Addon](https://blendermar
 
 ## Footnotes
 
-† [My terrible music](https://youtube.com/playlist?list=PLfK7vkQLImGmcc5swQd0QlfSaAK3cMq7M).
+† [My terrible music](https://youtube.com/playlist?list=PLfK7vkQLImGk-6VtqTNYR04-oJxgMsK2D&feature=shared).
 
 ## Changelog
 
+- 2024-08-26: Fixed music link.
 - 2022-11-19: Added Ocean, Sinclair and Spectrum Next renders.
 
