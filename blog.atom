@@ -18,6 +18,8 @@
   <title type="html">A Marble Run Kit for Blender</title>
   <published>2024-05-18T00:00:00Z</published>
   
+  <category term="Blog"></category>
+  
   <category term="Project"></category>
   
   <category term="Blender"></category>
@@ -55,6 +57,10 @@
   <author><name>David Thomas</name></author>
   <title type="html">Dr. Dave&#39;s Patented Screen Cleaning Method*</title>
   <published>2023-07-01T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Article"></category>
   
   <category term="Tip"></category>
   
@@ -105,6 +111,8 @@
   <title type="html">Chase H.Q. disassembly project</title>
   <published>2023-05-24T00:00:00Z</published>
   
+  <category term="Blog"></category>
+  
   <category term="Retro"></category>
   
   <category term="Spectrum"></category>
@@ -140,6 +148,8 @@
   <author><name>David Thomas</name></author>
   <title type="html">New logo renders</title>
   <published>2022-11-20T00:00:00Z</published>
+  
+  <category term="Blog"></category>
   
   <category term="Doodle"></category>
   
@@ -179,6 +189,8 @@
   <author><name>David Thomas</name></author>
   <title type="html">PrivateEye 3.20 has StrongHelp</title>
   <published>2022-11-19T00:00:00Z</published>
+  
+  <category term="Blog"></category>
   
   <category term="RISC OS"></category>
   
