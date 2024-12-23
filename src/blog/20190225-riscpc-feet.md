@@ -40,5 +40,5 @@ Then you can peel off the new feet/bumpons/tapered squares/_trapezoidal prisms_ 
 
 <img style="border-radius: 1em" src="/blog/images/bumpons/fitted.jpg" alt="The Risc PC on its side showing four new rubber feet fitted.">
 
-END OF MESSAGE
+`END OF MESSAGE`
 

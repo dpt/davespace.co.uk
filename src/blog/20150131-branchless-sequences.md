@@ -118,7 +118,7 @@ Great! This run has given us four suggested solutions:
 
 Observe that Aha's notation uses `>>u` to denote unsigned right shifts. It will also emit `>>s` for signed right shifts.
 
-The first two suggestions are `(((x + -2) & ~x) >>u 31) << x` and `(((x - 2) & ~x) >>u 31) << x` which only differ by the subexpressions (x + -2) and (x - 2). These are of course the same thing, but since instruction-wise they're different operations to Aha it outputs them both. (You might discard these variations immediately when approaching from an optimisation perspective but they were actually valuable to me when I was generating random equivalent instruction sequences for anti-tamper software in a former role.)
+The first two suggestions are `(((x + -2) & ~x) >>u 31) << x` and `(((x - 2) & ~x) >>u 31) << x` which only differ by the sub-expressions (x + -2) and (x - 2). These are of course the same thing, but since instruction-wise they're different operations to Aha it outputs them both. (You might discard these variations immediately when approaching from an optimisation perspective but they were actually valuable to me when I was generating random equivalent instruction sequences for anti-tamper software in a former role.)
 
 
 ### It's not *exhaustively* exhaustive
