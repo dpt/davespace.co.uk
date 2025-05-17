@@ -3,11 +3,83 @@
   <id>http://www.davespace.co.uk/</id>
   <title>DaveSpace</title>
   
-  <updated>2024-05-18T00:00:00Z</updated>
+  <updated>2025-05-17T00:00:00Z</updated>
   
   <author><name>David Thomas</name></author>
   <link href="http://www.davespace.co.uk/" rel="alternate"></link>
   <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
+
+
+
+<entry>
+  <id>blog/20250517-lego-kit.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">A LEGO Kit for Blender</title>
+  <published>2025-05-17T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Project"></category>
+  
+  <category term="Blender"></category>
+  
+  <category term="3D"></category>
+  
+  <category term="LEGO"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20250517-lego-kit.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p>I&rsquo;ve followed up the <a href="/blog/20240518-marble-run-kit.html">Marble Run Kit</a> by making reasonably accurate recreations of some LEGO bricks in <a href="https://www.blender.org/">Blender</a>.</p>
+
+<p><img src="../blog/images/legokit/blog.png" alt="LEGO Kit overhead view"></p>
+
+<p>The pieces are constructed using quads. This enables subdivision surfaces to be applied allowing for very high resolution results.</p>
+
+<p>It&rsquo;s free - Enjoy! Get it from <a href="https://dpt.itch.io/lego-kit">https://dpt.itch.io/lego-kit</a></p>
+
+
+    
+    
+  ]]></content>
+</entry>
+
+
+
+<entry>
+  <id>blog/20241223-archimedes-logo-redux.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">Archimedes Logo Recreation Redux</title>
+  <published>2024-12-23T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Doodle"></category>
+  
+  <category term="Acorn"></category>
+  
+  <category term="Archimedes"></category>
+  
+  <category term="Logo"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20241223-archimedes-logo-redux.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p><img style="border-radius: 1em" src="../doodles/archimedes/archimedes-again.png" alt="Archimedes logo."></p>
+
+<p>I&rsquo;ve redrawn my <a href="../doodles/archimedes.html">Acorn Archimedes logo recreation</a>. It&rsquo;s pretty accurate now.</p>
+
+
+    
+    
+  ]]></content>
+</entry>
 
 
 
@@ -383,9 +455,9 @@
   
   <category term="Blog"></category>
   
-  <category term="RISC OS"></category>
-  
   <category term="Article"></category>
+  
+  <category term="RISC OS"></category>
   
   <link href="http://www.davespace.co.uk/blog/20220211-spriteextend.html" rel="alternate"></link>
   <content type="html"><![CDATA[
@@ -605,11 +677,13 @@
   
   <category term="Blog"></category>
   
+  <category term="Project"></category>
+  
   <category term="The Great Escape"></category>
   
   <category term="Spectrum"></category>
   
-  <category term="Retro"></category>
+  <category term="Reverse Engineering"></category>
   
   <link href="http://www.davespace.co.uk/blog/20190802-the-great-escape-pages.html" rel="alternate"></link>
   <content type="html"><![CDATA[
@@ -619,7 +693,7 @@
 
 <p><img src="../the.great.escape/tge/ida.png" alt="IDA Pro disassembling The Great Escape."></p>
 
-<p>Finally after <strong>many</strong> years of work I&rsquo;ve gotten around to writing all about my The Great Escape reverse engineering project. <a href="../the.great.escape/">There&rsquo;s a whole new section on the site.</a></p>
+<p>Finally after <strong>many</strong> years of work I&rsquo;ve gotten around to writing all about my The Great Escape reverse engineering project. <a href="../the.great.escape/">There&rsquo;s a whole new section here.</a></p>
 
 
     
@@ -907,7 +981,7 @@
 <li><a href="/arm/introduction-to-arm/movement.html">Introduction to ARM &gt; Movement</a>
 
 <ul>
-<li><code>MVN</code> ought to be described as &ldquo;move NOT&rdquo; rather than &ldquo;move negated&rdquo;. (Dan Lewis)</li>
+<li><code>MVN</code> ought to be &ldquo;move NOT&rdquo; rather than &ldquo;move negated&rdquo;. (Dan Lewis)</li>
 </ul></li>
 <li><a href="/arm/introduction-to-arm/conditional.html">Introduction to ARM &gt; Conditional Execution</a>
 
@@ -1275,7 +1349,7 @@
     
     
     
-    <p>I’ve rebuilt DaveSpace because the old version was a bit of a bitch to maintain. Old DaveSpace was built with <a href="https://github.com/mbethke/hsc">hsc</a>, an old and unmaintained (but highly flexible and capable) tool for HTML preprocessing. Essentially the pages were HTML fragments with custom tags which were then wrapped in layers of macros dependent upon which section of the site they were in. The custom HTML formatting made it harder than necessary to maintain.</p>
+    <p>I’ve rebuilt DaveSpace because the old version was a bit of a pain to maintain. Old DaveSpace was built using <a href="https://github.com/mbethke/hsc">hsc</a> an old and unmaintained (but highly flexible and capable) tool for HTML preprocessing. Essentially the pages were HTML fragments with custom tags which were then wrapped in layers of macros dependent upon which section of the site they were in. The custom HTML formatting made it harder than necessary to maintain.</p>
 
 <p><a href="http://www.gerph.org/">Gerph</a> now may well be the last person using hsc. Fair game to the man. He is hardcore.</p>
 
@@ -1367,11 +1441,11 @@
   
   <category term="Blog"></category>
   
+  <category term="Project"></category>
+  
   <category term="RISC OS"></category>
   
   <category term="PrivateEye"></category>
-  
-  <category term="Project"></category>
   
   <link href="http://www.davespace.co.uk/blog/20120205-privateeye-299.html" rel="alternate"></link>
   <content type="html"><![CDATA[
@@ -1381,19 +1455,19 @@
     <p>Here’s <a href="/risc.os/privateeye.html">PrivateEye</a> 2.99 with a selection of small-ish changes:</p>
 
 <ul>
-<li>Rebuilt from the open source codebase for ARMv7 compatibility.</li>
-<li>PrivateEye is now licensed under a BSD license.</li>
-<li>Improved the blur effect.
+<li>Rebuilt from the open source codebase for ARMv7 compatibility</li>
+<li>PrivateEye is now licensed under a BSD license</li>
+<li>Improved the blur effect
 
 <ul>
 <li>You can now select box or gaussian blurs with up to a 47 pixel radius.</li>
 </ul></li>
-<li>‘Midpoint’ curve effect added.</li>
-<li>FFG (TransFSI, TranTIFF+, etc.) import improved.</li>
-<li>libjpeg updated to version 8c.</li>
-<li>Image cache can go up to 256M.</li>
-<li>Wider range of default scale values.</li>
-<li>and various other bits and pieces.</li>
+<li>‘Midpoint’ curve effect added</li>
+<li>FFG (TransFSI, TranTIFF+, etc.) import improved</li>
+<li>libjpeg updated to version 8c</li>
+<li>Image cache can go up to 256M</li>
+<li>Wider range of default scale values</li>
+<li>&hellip;and various other bits and pieces</li>
 </ul>
 
   
@@ -1412,11 +1486,11 @@
   
   <category term="Blog"></category>
   
+  <category term="Project"></category>
+  
   <category term="Containers"></category>
   
   <category term="GitHub"></category>
-  
-  <category term="Project"></category>
   
   <link href="http://www.davespace.co.uk/blog/20110711-containers.html" rel="alternate"></link>
   <content type="html"><![CDATA[
@@ -1734,15 +1808,15 @@
     
     
     
-    <p>After a mere decade’s hiatus here’s <a href="../risc.os/toolbar.html">Toolbar</a> 1.20 with a few tweaks.</p>
+    <p>After a mere <strong>decade’s</strong> hiatus here’s <a href="../risc.os/toolbar.html">Toolbar</a> 1.20 with a few tweaks.</p>
 
 <p><img src="../software/thumbs/toolsnap1.png" alt="Toolbar 1.20 screenshot.">
 <a href="../software/toolsnap1.png">Toolbar earlier today</a></p>
 
 <ul>
-<li>The toolbar now opens and closes independently of desktop speed. So if a greedy process is hogging your desktop, the toolbar will now unfurl and retract in the same amount of time.</li>
-<li>You can have multiple toolbars, if you fire off multiple instances (it’ll use different choices files and position itself independently).</li>
-<li>The <code>!RunImage</code> is no longer squashed.</li>
+<li>The toolbar now opens and closes independently of desktop speed. If a greedy task is hogging your desktop the toolbar will now unfurl and retract in the same amount of time.</li>
+<li>You can have multiple toolbars. If you fire up multiple instances it’ll use different choices files and position itself independently.</li>
+<li>The <code>!RunImage</code> is no longer squashed so you can hack it.</li>
 </ul>
 
   
@@ -1800,7 +1874,7 @@
     <p><a href="/risc.os/privateeye.html">PrivateEye</a> 2.85 with enhanced transparency and PNG support.</p>
 
 <p><img src="/software/thumbs/eyesnap4.png" alt="PrivateEye 2.85 screenshot.">
-<a href="/software/eyesnap4.png">Transparency editing.</a></p>
+<a href="/software/eyesnap4.png">Transparency editing</a></p>
 
 <p>Sprites and PNGs may specify an alpha channel to hold transparency information. PrivateEye can now recognise and display these images using the <a href="http://tinct.net/Downloads/Tinct.aspx">Tinct</a> module.</p>
 
@@ -1808,7 +1882,7 @@
 
 <p>The effect system now knows about alpha channel data and always preserves it. The curve effect has been upgraded to allow editing of the alpha data.</p>
 
-<p>All these changes are mainly in aid of enhanced PNG support. Now all of the images in PngSuite can be loaded and displayed.</p>
+<p>These changes are mainly in aid of enhanced PNG support: all of the images in PngSuite can be loaded and displayed.</p>
 
   
     
@@ -1865,9 +1939,9 @@
     <p><a href="/risc.os/privateeye.html">PrivateEye</a> 2.75 with JPEG metadata display.</p>
 
 <p><img src="/software/thumbs/eyesnap3.png" alt="PrivateEye 2.75 screenshot.">
-<a href="/software/eyesnap3.png">Exif metadata display.</a></p>
+<a href="/software/eyesnap3.png">Exif metadata display</a></p>
 
-<p>The big new feature in this version is interpretation of JPEG metadata, one example of which is <a href="http://www.exif.org/">Exif</a> data. The new version of PrivateEye can decode and present this data in a treeview, so you can view (but not edit) the information stored by digital cameras and image processing applications. It also supports Adobe, IPTC-NAA and JFIF COM data.</p>
+<p>The big new feature in this version is interpretation of JPEG metadata. One example of which is <a href="http://www.exif.org/">Exif</a> data. The new version of PrivateEye can decode and present this data in a tree view, so you can view (but not edit) the information stored by digital cameras and image processing applications. It also supports Adobe, IPTC-NAA and JFIF COM data.</p>
 
 <p>The other new feature is caching. PrivateEye can allocate an amount of memory in which to preserve recently-loaded images. This saves time when flipping back and forth between files.</p>
 
@@ -1928,7 +2002,7 @@
     
     
     <p><img src="/software/thumbs/eyesnap2.png" alt="PrivateEye 2.50 screenshot.">
-<a href="/software/eyesnap2.png">Bitmap effects.</a></p>
+<a href="/software/eyesnap2.png">Bitmap effects</a></p>
 
 <p>Features:</p>
 
@@ -1986,38 +2060,38 @@
     
     
     <p><img src="/software/thumbs/eyesnap1.png" alt="PrivateEye 2.00 screenshot.">
-<a href="/software/eyesnap1.png">Instant rotation.</a></p>
+<a href="/software/eyesnap1.png">Instant rotation</a></p>
 
 <p>Features:</p>
 
 <ul>
-<li>Viewer windows gain input focus.
+<li>Viewer windows gain input focus
 
 <ul>
 <li>Many key-activated functions have been added.</li>
 </ul></li>
-<li>Viewer windows can fill the whole desktop.
+<li>Viewer windows can fill the whole desktop
 
 <ul>
-<li>The image is shown centered within the viewer.</li>
+<li>The image is shown centred within the viewer.</li>
 </ul></li>
-<li>Rotation.
+<li>Rotation
 
 <ul>
 <li>Sprites and JPEGs can now be transformed with any combination of 90 degree rotations and horizontal flips. JPEG transformations are lossless.</li>
 </ul></li>
-<li>Progressive JPEGs can now be loaded and displayed.
+<li>Progressive JPEGs can now be loaded and displayed
 
 <ul>
 <li>JPEGs are now integrity checked when loaded. If they fail the check, they’re passed through an internal version of jpegtran.</li>
 </ul></li>
-<li>New views.
+<li>New views
 
 <ul>
 <li>You can now have multiple views open on the same image.</li>
 </ul></li>
-<li>Luminance histogram window.</li>
-<li>&amp; more&hellip; smooth scrolling, movement through files, Tinct support, autofiletype, FFG support, fit to screen, fit to window, shiny new sprites, all-new PDF manual, &hellip;</li>
+<li>Luminance histogram window</li>
+<li>&amp; more&hellip; Smooth scrolling, Movement through files, Tinct support, Auto filetype, FFG support, Fit to screen, Fit to window, Shiny new sprites, All-new PDF manual, &hellip;</li>
 </ul>
 
   
@@ -2025,6 +2099,8 @@
     
   ]]></content>
 </entry>
+
+
 
 
 

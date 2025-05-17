@@ -3,12 +3,84 @@
   <id>http://www.davespace.co.uk/</id>
   <title>DaveSpace</title>
   
-  <updated>2024-05-18T00:00:00Z</updated>
+  <updated>2025-05-17T00:00:00Z</updated>
   
   <author><name>David Thomas</name></author>
   <link href="http://www.davespace.co.uk/" rel="alternate"></link>
   <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
 
+
+
+
+<entry>
+  <id>blog/20250517-lego-kit.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">A LEGO Kit for Blender</title>
+  <published>2025-05-17T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Project"></category>
+  
+  <category term="Blender"></category>
+  
+  <category term="3D"></category>
+  
+  <category term="LEGO"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20250517-lego-kit.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p>I&rsquo;ve followed up the <a href="/blog/20240518-marble-run-kit.html">Marble Run Kit</a> by making reasonably accurate recreations of some LEGO bricks in <a href="https://www.blender.org/">Blender</a>.</p>
+
+<p><img src="../blog/images/legokit/blog.png" alt="LEGO Kit overhead view"></p>
+
+<p>The pieces are constructed using quads. This enables subdivision surfaces to be applied allowing for very high resolution results.</p>
+
+<p>It&rsquo;s free - Enjoy! Get it from <a href="https://dpt.itch.io/lego-kit">https://dpt.itch.io/lego-kit</a></p>
+
+
+    
+    
+  ]]></content>
+</entry>
+
+
+
+<entry>
+  <id>blog/20241223-archimedes-logo-redux.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">Archimedes Logo Recreation Redux</title>
+  <published>2024-12-23T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Doodle"></category>
+  
+  <category term="Acorn"></category>
+  
+  <category term="Archimedes"></category>
+  
+  <category term="Logo"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20241223-archimedes-logo-redux.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p><img style="border-radius: 1em" src="../doodles/archimedes/archimedes-again.png" alt="Archimedes logo."></p>
+
+<p>I&rsquo;ve redrawn my <a href="../doodles/archimedes.html">Acorn Archimedes logo recreation</a>. It&rsquo;s pretty accurate now.</p>
+
+
+    
+    
+  ]]></content>
+</entry>
 
 
 
@@ -134,81 +206,6 @@
 <p>Here&rsquo;s the current state of the disassembly: <a href="https://dpt.github.io/ChaseHQ/">https://dpt.github.io/ChaseHQ/</a> and the related thread on Spectrum Computing: <a href="https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562">https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562</a></p>
 
 <p>See you in ten years!</p>
-
-
-    
-    
-  ]]></content>
-</entry>
-
-
-
-<entry>
-  <id>blog/20221119-new-logos.html</id>
-  <author><name>David Thomas</name></author>
-  <title type="html">New logo renders</title>
-  <published>2022-11-20T00:00:00Z</published>
-  
-  <category term="Blog"></category>
-  
-  <category term="Doodle"></category>
-  
-  <category term="3D"></category>
-  
-  <category term="Blender"></category>
-  
-  <category term="Sinclair"></category>
-  
-  <category term="Ocean"></category>
-  
-  <link href="http://www.davespace.co.uk/blog/20221119-new-logos.html" rel="alternate"></link>
-  <content type="html"><![CDATA[
-    
-    
-    
-
-<p>I&rsquo;ve made a few new logo renders:</p>
-
-<p><img style="border-radius: 1em" src="../doodles/logos/thumbs/sinclair-noir.png">
-<img style="border-radius: 1em" src="../doodles/logos/thumbs/specnext.png">
-<img style="border-radius: 1em" src=../doodles/logos/thumbs/ocean-sea.png">
-<img style="border-radius: 1em" src=../doodles/logos/thumbs/ocean-metal.png"></p>
-
-<p>If you&rsquo;re bothered, there are downloads over on the <a href="../doodles/logos.html">logos</a> page.</p>
-
-
-    
-    
-  ]]></content>
-</entry>
-
-
-
-<entry>
-  <id>blog/20221119-privateeye-320.html</id>
-  <author><name>David Thomas</name></author>
-  <title type="html">PrivateEye 3.20 has StrongHelp</title>
-  <published>2022-11-19T00:00:00Z</published>
-  
-  <category term="Blog"></category>
-  
-  <category term="RISC OS"></category>
-  
-  <category term="PrivateEye"></category>
-  
-  <link href="http://www.davespace.co.uk/blog/20221119-privateeye-320.html" rel="alternate"></link>
-  <content type="html"><![CDATA[
-    
-    
-    
-
-<p><a href="/risc.os/privateeye.html">PrivateEye</a> 3.20 is now available. PrivateEye is a viewer for Sprites, DrawFiles, JPEGs, ArtWorks, GIFs and PNGs. It also has editing features including bitmap effects and rotation. It runs on RISC OS.</p>
-
-<p>Here&rsquo;s a screenshot of it running in RISC OS 4 via RPCEmu:</p>
-
-<p><a href="/software/eyesnap7.png"><img src="/software/thumbs/eyesnap7.png" alt="Screenshot of PrivateEye showing a recreation of the Ocean Software logo."></a></p>
-
-<p>Version 3.20 has had quite a few changes. The main thrust of the work has been to reduce the reliance on the Tinct module, that&rsquo;s used to render alpha channel sprites, and to replace the PDF format user guide with a StrongHelp one. I&rsquo;ll break the changes down into sections:</p>
 
 
     
