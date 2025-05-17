@@ -88,8 +88,7 @@ On the game screen we can see:
 
 Watch this full walkthrough of the game from [from RZX Archive](http://www.rzxarchive.co.uk/videos/greatescape.php):
 
-<iframe width="544" height="408" src="https://www.youtube.com/embed/YKNzSiiyN8g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="544" height="408" src="https://www.youtube.com/embed/qIyYRyl53d4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Ports to Other Platforms
 
