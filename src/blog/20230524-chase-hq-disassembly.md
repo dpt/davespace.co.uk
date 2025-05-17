@@ -18,4 +18,4 @@ See you in ten years!
 
 Okay, not really, because now we have an amazing new tool to accelerate the process: [Spectrum Analyser](https://colourclash.co.uk/spectrum-analyser/) is an emulator-debugger-interactive-disassembler combo. Here's a short, silent, video of me using it to watch Chase H.Q.'s internal screen buffer being drawn:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/BGVI0TbePsQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZcoFi4T4tsU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
