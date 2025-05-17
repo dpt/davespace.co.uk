@@ -7,7 +7,7 @@
   <meta name="keywords" content="DaveSpace, David Thomas, Dave Thomas">
   <meta name="description" content="David Thomas's website.">
 
-  <title>PrivateEye 3.20 has StrongHelp | DaveSpace</title>
+  <title>New logo renders | DaveSpace</title>
 
   <link rel="icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
   <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="../favicon.ico" />
@@ -88,15 +88,18 @@
 <article>
   <header>
     <!-- start post header -->
-    <h1><i class="fa fa-search"></i> PrivateEye 3.20 has StrongHelp</h1>
+    <h1><i class="fa fa-pencil-alt"></i> New logo renders</h1>
     
 <!-- start meta -->
 <div class="meta">
-  by <span class="author">David Thomas</span> on <time datetime="2022-11-19T00:00:00Z">19 November 2022</time> &mdash;
+  by <span class="author">David Thomas</span> on <time datetime="2022-11-20T00:00:00Z">20 November 2022</time> &mdash;
   <ul>
     <li><i class="fa fa-tag"></i> <a href="../tags/Blog.html">Blog</a></li>
-<li><i class="fa fa-tag"></i> <a href="../tags/RISC OS.html">RISC OS</a></li>
-<li><i class="fa fa-tag"></i> <a href="../tags/PrivateEye.html">PrivateEye</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/Doodle.html">Doodle</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/3D.html">3D</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/Blender.html">Blender</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/Sinclair.html">Sinclair</a></li>
+<li><i class="fa fa-tag"></i> <a href="../tags/Ocean.html">Ocean</a></li>
 
   </ul>
 </div>
@@ -108,84 +111,22 @@
   
   <!-- start post content -->
   <section class="content">
-    <!-- begin summary -->
+    <style type="text/css" rel="stylesheet">
+IMG { border-radius: 1em; }
+</style>
 
-<p><a href="/risc.os/privateeye.html">PrivateEye</a> 3.20 is now available. PrivateEye is a viewer for Sprites, DrawFiles, JPEGs, ArtWorks, GIFs and PNGs. It also has editing features including bitmap effects and rotation. It runs on RISC OS.</p>
+<!-- begin summary -->
 
-<p>Here&rsquo;s a screenshot of it running in RISC OS 4 via <a href="https://www.marutan.net/rpcemu/index.php">RPCEmu</a>:</p>
+<p>I&rsquo;ve made a few new logo renders:</p>
 
-<p><a href="/software/eyesnap7.png"><img src="/software/thumbs/eyesnap7.png" alt="Screenshot of PrivateEye showing a recreation of the Ocean Software logo."></a></p>
+<p><img style="border-radius: 1em" src="../doodles/logos/thumbs/ocean-metal.png">
+<img style="border-radius: 1em" src="../doodles/logos/thumbs/ocean-sea.png">
+<img style="border-radius: 1em" src="../doodles/logos/thumbs/sinclair-noir.png">
+<img style="border-radius: 1em" src="../doodles/logos/thumbs/specnext.png"></p>
 
-<p>Version 3.20 has had quite a few changes. The main goal was to reduce the reliance on the Tinct module—that&rsquo;s used to render alpha channel sprites—and to replace the PDF format user guide with a StrongHelp one. I&rsquo;ll break the changes down into sections:</p>
+<p>If you&rsquo;re bothered, there are downloads over on the <a href="../doodles/logos.html">logos</a> page.</p>
 
 <!-- end summary -->
-
-<h3>User Guide</h3>
-
-<ul>
-<li>To make it quicker and more convenient to read, the user guide has been converted into StrongHelp from its previous PDF format. It now lives inside the app itself rather than being a separate download. This does however make the app about 350K larger.</li>
-<li>The icon bar menu gains a &ldquo;Help&rdquo; menu entry to open up the user guide and the Filer&rsquo;s &ldquo;Help&rdquo; menu entry will launch it too.</li>
-</ul>
-
-<h3>Viewer</h3>
-
-<ul>
-<li>When in &ldquo;Fit to screen&rdquo; mode the viewer windows now draw a paper document style backdrop behind images (see screenshot above). Its redraw technique is optimised to minimise any flicker.</li>
-</ul>
-
-<h3>Sprites</h3>
-
-<ul>
-<li>RISC OS 5.21&rsquo;s extended format sprites are now used wherever possible, e.g. when loading PNGs containing alpha channels on RISC OS 5. This avoids the need to use the Tinct module which, while having provided great service for many years, is now unmaintained.</li>
-<li>The chequerboard drawing code, used to indicate alpha channel transparency, was made common across all viewer windows. It now uses the PlotTiledSprite SpriteOp where available, in preference to Tinct&rsquo;s equivalent.</li>
-<li>The sprite alpha channel detector now treats both &ldquo;all 0&rdquo; and &ldquo;all 255&rdquo; for alpha values as indicating no alpha.</li>
-</ul>
-
-<h3>Image Info</h3>
-
-<ul>
-<li>Sprite alpha channels and alpha masks are now identified in the image info window.
-
-<ul>
-<li>A note on terminology: &ldquo;Alpha channels&rdquo; have alpha data inline amongst the pixels. This is the format that third party RISC OS applications used for years, including Tinct. &ldquo;Alpha masks&rdquo; have alpha data stored separately in the mask: a newer standard that RISC OS Select established. It&rsquo;s theoretically possible to have both present in the same sprite but this is not specified behaviour.</li>
-</ul></li>
-<li>A &ldquo;Format&rdquo; field was added to the image info window. For sprites this shows the screen mode of the display sprite and which OS versions it&rsquo;s compatible with.</li>
-<li>The image info window&rsquo;s &ldquo;Colours&rdquo; field now shows when CMYK format sprites are detected.</li>
-<li>The image info window&rsquo;s &ldquo;Dimensions&rdquo; field shows centimetres in addition to inches.</li>
-</ul>
-
-<h3>Cache</h3>
-
-<ul>
-<li>The cache was rewritten to cope better in low memory situations. All open images are now requested through the cache. There&rsquo;s now a limit of 128 entries in the cache (= total open images). If this is a problem then set &ldquo;cache.entries&rdquo; to a larger value in Choices.</li>
-<li>The cache size value in Choices is now shown in MBytes.</li>
-</ul>
-
-<h3>Misc</h3>
-
-<ul>
-<li>The icon bar&rsquo;s height is now read from the OS rather than being assumed, just in case it ever changes.</li>
-</ul>
-
-<h3>Fixes</h3>
-
-<ul>
-<li>Edits performed in &ldquo;Fit to screen&rdquo; will now refresh just the image area, not the whole window.</li>
-<li>Zoom-to-point (Shift-Click) now works correctly when in &ldquo;Fit to screen&rdquo; mode.</li>
-<li><code>Scale &gt; Fit to screen</code> now respects the cover icon bar flag.</li>
-<li>Sprites which error when rendering will now, like JPEGs, draw the error message to the viewer window rather than causing a crash.</li>
-</ul>
-
-<p>PrivateEye is freeware.</p>
-
-<p>It&rsquo;s available to install via <a href="https://sites.google.com/site/alansriscosstuff/packman">PackMan</a>, or directly from this download link:<br>
-<a href="http://www.davespace.co.uk/software/privateeye320-6.zip">http://www.davespace.co.uk/software/privateeye320-6.zip</a> (840K Zip)</p>
-
-<p>If you want to contribute its source code is hosted on github:<br>
-<a href="https://github.com/dpt/PrivateEye">https://github.com/dpt/PrivateEye</a></p>
-
-<p>And you can raise issues or enhancement requests here:<br>
-<a href="https://github.com/dpt/PrivateEye/issues">https://github.com/dpt/PrivateEye/issues</a></p>
 
   </section>
   <!-- end post content -->
