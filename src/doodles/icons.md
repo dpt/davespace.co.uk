@@ -37,20 +37,6 @@ Ahhh, much better.
 
 Favourite bit: Scruffy's eyes.
 
-#### Videos
-
-I made a few recordings of the drawing process. Here's me drawing Leela:
-
-<iframe width="544" height="408" src="https://www.youtube.com/embed/xkGj6NNoIjQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-Amy:
-
-<iframe width="544" height="408" src="https://www.youtube.com/embed/mAXcJhmlqkc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-and Nibbler:
-<iframe width="544" height="408" src="https://www.youtube.com/embed/5Reqyl40rXk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
 ### Disenchantment
 
 I carried straight on with the PICO-8 palette for my attempts at drawing the characters of Disenchantment:
@@ -62,7 +48,6 @@ Shown here at 2x native scale.
 In this set I left the outlines in place underneath the original.
 
 Favourite bit: King Zøg.
-
 
 ### Downloads
 
