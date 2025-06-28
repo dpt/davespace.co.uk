@@ -16,7 +16,7 @@ This new render is Sinclair ZX Spectrum inspired. Not of a Speccy itself but ins
     <img style="border-radius: 1em" src="../doodles/logos/thumbs/spectrum-stripes-zoomed.png">
 </a>
 
-This time it's a huge 4K (3840x216) render. Click for the huge version.
+This time it's a huge 4K (3840x2160) render. Click for the huge version.
 
 _tata Spec-chums!_
 

@@ -48,7 +48,7 @@ IMG, VIDEO { border-radius: 1em; }
 <a>The more rounded Spectrum Next variant of the Sinclair logo. (1920x1200)</a>
 
 [![Image](logos/thumbs/spectrum-stripes.png)](logos/spectrum-stripes.png)
-<a>ZX Spectrum logo - pulling on the 48K+/toastrack stripes emblem style. (3840x2160)</a>
+<a>ZX Spectrum logo - pulling on the 48K+/128K toastrack stripes emblem style. (3840x2160)</a>
 
 ## License, Trademarks & Credits
 
@@ -66,7 +66,7 @@ Many of the shaders used are from the [Sanctus Library Addon](https://blendermar
 
 ## Changelog
 
-- 2025-06-28: Added ZX Spectrum render.
+- 2025-06-28: Added ZX Spectrum Stripes render.
 - 2024-08-26: Fixed music link.
 - 2022-11-19: Added Ocean, Sinclair and Spectrum Next renders.
 
