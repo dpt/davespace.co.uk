@@ -3,11 +3,59 @@
   <id>http://www.davespace.co.uk/</id>
   <title>DaveSpace</title>
   
-  <updated>2025-05-17T00:00:00Z</updated>
+  <updated>2025-06-28T00:00:00Z</updated>
   
   <author><name>David Thomas</name></author>
   <link href="http://www.davespace.co.uk/" rel="alternate"></link>
   <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
+
+
+
+<entry>
+  <id>blog/20250628-zx-spectrum-stripes.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">&#34;ZX Spectrum Stripes&#34; Render</title>
+  <published>2025-06-28T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Doodle"></category>
+  
+  <category term="3D"></category>
+  
+  <category term="Blender"></category>
+  
+  <category term="Sinclair"></category>
+  
+  <category term="Spectrum"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20250628-zx-spectrum-stripes.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p><a href="../doodles/logos/spectrum-stripes.png">
+    <img style="border-radius: 1em" src="../doodles/logos/thumbs/spectrum-stripes.png">
+</a></p>
+
+<p>This new render is Sinclair ZX Spectrum inspired. Not of a Speccy itself but instead of the lettering and rainbow stripe. The lettering is presented in squidgy rubber grey, hovering over the rainbow stripe set as if a 48K+ or 128K toastrack case.</p>
+
+<p><a href="../doodles/logos/spectrum-stripes.png">
+    <img style="border-radius: 1em" src="../doodles/logos/thumbs/spectrum-stripes-zoomed.png">
+</a></p>
+
+<p>This time it&rsquo;s a huge 4K (3840x2160) render. Click for the huge version.</p>
+
+<p><em>tata Spec-chums!</em></p>
+
+<p><a href="../doodles/logos.html">More logo renders here</a>.</p>
+
+
+    
+    
+  ]]></content>
+</entry>
 
 
 

@@ -3,12 +3,60 @@
   <id>http://www.davespace.co.uk/</id>
   <title>DaveSpace</title>
   
-  <updated>2025-05-17T00:00:00Z</updated>
+  <updated>2025-06-28T00:00:00Z</updated>
   
   <author><name>David Thomas</name></author>
   <link href="http://www.davespace.co.uk/" rel="alternate"></link>
   <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
 
+
+
+
+<entry>
+  <id>blog/20250628-zx-spectrum-stripes.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">&#34;ZX Spectrum Stripes&#34; Render</title>
+  <published>2025-06-28T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Doodle"></category>
+  
+  <category term="3D"></category>
+  
+  <category term="Blender"></category>
+  
+  <category term="Sinclair"></category>
+  
+  <category term="Spectrum"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20250628-zx-spectrum-stripes.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+
+<p><a href="../doodles/logos/spectrum-stripes.png">
+    <img style="border-radius: 1em" src="../doodles/logos/thumbs/spectrum-stripes.png">
+</a></p>
+
+<p>This new render is Sinclair ZX Spectrum inspired. Not of a Speccy itself but instead of the lettering and rainbow stripe. The lettering is presented in squidgy rubber grey, hovering over the rainbow stripe set as if a 48K+ or 128K toastrack case.</p>
+
+<p><a href="../doodles/logos/spectrum-stripes.png">
+    <img style="border-radius: 1em" src="../doodles/logos/thumbs/spectrum-stripes-zoomed.png">
+</a></p>
+
+<p>This time it&rsquo;s a huge 4K (3840x2160) render. Click for the huge version.</p>
+
+<p><em>tata Spec-chums!</em></p>
+
+<p><a href="../doodles/logos.html">More logo renders here</a>.</p>
+
+
+    
+    
+  ]]></content>
+</entry>
 
 
 
@@ -168,44 +216,6 @@
 </ul>
 
 <p>Method:</p>
-
-
-    
-    
-  ]]></content>
-</entry>
-
-
-
-<entry>
-  <id>blog/20230524-chase-hq-disassembly.html</id>
-  <author><name>David Thomas</name></author>
-  <title type="html">Chase H.Q. disassembly project</title>
-  <published>2023-05-24T00:00:00Z</published>
-  
-  <category term="Blog"></category>
-  
-  <category term="Retro"></category>
-  
-  <category term="Spectrum"></category>
-  
-  <category term="Disassembly"></category>
-  
-  <category term="Chase H.Q."></category>
-  
-  <link href="http://www.davespace.co.uk/blog/20230524-chase-hq-disassembly.html" rel="alternate"></link>
-  <content type="html"><![CDATA[
-    
-    
-    
-
-<p>It&rsquo;s been ten years since I started <a href="/the.great.escape/">reverse engineering The Great Escape</a>. I didn&rsquo;t really intend to start another disassembly project but after trying out SkoolKit&rsquo;s new <a href="https://skoolkit.ca/posts/2023/02/loads-more-simulation/">tape loading and Z80 simulation</a> magic I found myself with a new one on my hands. This time I&rsquo;m <a href="https://github.com/dpt/ChaseHQ">pulling apart the Spectrum version of Chase H.Q.</a>!</p>
-
-<p><img src="https://raw.githubusercontent.com/dpt/ChaseHQ/develop/static-images/spectrum-analyser.png" alt="Screenshot of Chase H.Q. being disassembled."></p>
-
-<p>Here&rsquo;s the current state of the disassembly: <a href="https://dpt.github.io/ChaseHQ/">https://dpt.github.io/ChaseHQ/</a> and the related thread on Spectrum Computing: <a href="https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562">https://spectrumcomputing.co.uk/forums/viewtopic.php?p=117562#p117562</a></p>
-
-<p>See you in ten years!</p>
 
 
     
