@@ -1,8 +1,8 @@
+source ~/venv/bin/activate
 nvm use 0
 ulimit -n 1024
 gostatic -w ./config
 
 # python3 -m venv venv   (venv is the dir with the env in it)
-# source venv/bin/activate
 # pip install -r requirements.txt
 
