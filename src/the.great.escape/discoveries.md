@@ -12,25 +12,7 @@ vim: wrap linebreak textwidth=0 wrapmargin=0 breakindent
 
 ## Discoveries & Surprises
 
-So what did I find that was surprising when reversing the game?
-
-### Fuller Joystick Support!
-
-It's in there, but not attached to anything...
-
-### You Can Escape Through the Main Gate!
-
-It was news to me: If you're wearing the guard's uniform and have the papers from the commandant's office, you can 'use' the papers while at the front entrance to be transported outside of the camp.
-
-### There's Nothing Really Higher Up!
-
-The parts of the map you can't normally see are just blank:
-
-![Game's exterior map backdrop](tge/map.png)
-
-### A Double Buffered Screen!
-
-One surprise was to discover that the main game window is double-buffered. This removes flicker and this makes it easier (possible) to build up the screen as well as facilitating smoother scrolling. The buffer is not cheap: it uses 3.3K of RAM.
+So, what did I find that was surprising to me when reverse engineering the game?
 
 ### There's Only Six Prisoners!
 
@@ -38,15 +20,45 @@ The cast of the game consists of:
 
 * Our Hero
 * The Commandant
-* Guards 1..15
-* Guard dogs 1..4
-* Prisoners 1..6
+* Guards 1 to 15
+* Guard dogs 1 to 4
+* Prisoners 1 to 6
 
-Wait. There's _fifteen_ guards, but only _six_ prisoners? With three huts in the camp, and four beds in each hut, there should be at least double that number, right? True, but the topmost hut contains only sleeping prisoners which never move...
+Wait... there's _fifteen_ guards, but only _six_ prisoners? With three huts in the camp, and four beds in each hut, there should be at least double that number, right? True, but creepily the topmost hut contains only sleeping prisoners which never move...
+
+### You Can Escape Through the Main Gate!
+
+It was news to me: if you're wearing the guard's uniform, and have the papers from the commandant's office, you can use the papers while at the front entrance to be transported outside of the camp.
+
+### There's Nothing Really Higher Up!
+
+The parts of the map you can't normally see are just blank tiles:
+
+![Game's exterior map backdrop](tge/map.png)
+
+Clearly [Myrck/Pavero's version of the map](https://maps.speccy.cz/map.php?id=Escape&sort=4&part=7&ath=0) from 2006 cleaned up the real thing a bit for presentation.
+
+Because of this if one were to change the resolution that the game runs at you'd start to see these gaps and the exterior map would need amending.
+
+### Line of Sight!
+
+The guards have a direct line of sight system. You can sneak around behind them without them noticing.
 
 ### Objects are People Too!
 
-The _movable items_ in the game - the two stoves and one crate which can be pushed around - are implemented in the game as characters. A bug means you can bribe these objects, at which point they start cycling through broken visuals and wandering around the room...
+The _movable items_ in the game - the two stoves and one crate which can be pushed around - are implemented in the game as characters. A bug that omits a test means you can bribe these objects, at which point they start cycling through broken visuals and wandering around the room...
+
+### A Double Buffered Screen!
+
+One surprise was to discover that the main game window is double-buffered. This removes flicker and this makes it easier (possible) to build up the screen as well as facilitating smoother scrolling. The buffer is not cheap: it uses 3.3K of RAM.
+
+### Fuller Joystick Support!
+
+It's in there, but not attached to anything...
+
+### The IX Register Goes Unused!
+
+The game never uses the Z80 IX register, but it does use IY.
 
 ## The Exterior Map Backdrop
 
