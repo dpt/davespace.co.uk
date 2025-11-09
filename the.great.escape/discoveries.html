@@ -118,25 +118,7 @@
 
 <h2>Discoveries &amp; Surprises</h2>
 
-<p>So what did I find that was surprising when reversing the game?</p>
-
-<h3>Fuller Joystick Support!</h3>
-
-<p>It&rsquo;s in there, but not attached to anything&hellip;</p>
-
-<h3>You Can Escape Through the Main Gate!</h3>
-
-<p>It was news to me: If you&rsquo;re wearing the guard&rsquo;s uniform and have the papers from the commandant&rsquo;s office, you can &lsquo;use&rsquo; the papers while at the front entrance to be transported outside of the camp.</p>
-
-<h3>There&rsquo;s Nothing Really Higher Up!</h3>
-
-<p>The parts of the map you can&rsquo;t normally see are just blank:</p>
-
-<p><img src="tge/map.png" alt="Game's exterior map backdrop"></p>
-
-<h3>A Double Buffered Screen!</h3>
-
-<p>One surprise was to discover that the main game window is double-buffered. This removes flicker and this makes it easier (possible) to build up the screen as well as facilitating smoother scrolling. The buffer is not cheap: it uses 3.3K of RAM.</p>
+<p>So, what did I find that was surprising to me when reverse engineering the game?</p>
 
 <h3>There&rsquo;s Only Six Prisoners!</h3>
 
@@ -145,16 +127,46 @@
 <ul>
 <li>Our Hero</li>
 <li>The Commandant</li>
-<li>Guards 1..15</li>
-<li>Guard dogs 1..4</li>
-<li>Prisoners 1..6</li>
+<li>Guards 1 to 15</li>
+<li>Guard dogs 1 to 4</li>
+<li>Prisoners 1 to 6</li>
 </ul>
 
-<p>Wait. There&rsquo;s <em>fifteen</em> guards, but only <em>six</em> prisoners? With three huts in the camp, and four beds in each hut, there should be at least double that number, right? True, but the topmost hut contains only sleeping prisoners which never move&hellip;</p>
+<p>Wait&hellip; there&rsquo;s <em>fifteen</em> guards, but only <em>six</em> prisoners? With three huts in the camp, and four beds in each hut, there should be at least double that number, right? True, but creepily the topmost hut contains only sleeping prisoners which never move&hellip;</p>
+
+<h3>You Can Escape Through the Main Gate!</h3>
+
+<p>It was news to me: if you&rsquo;re wearing the guard&rsquo;s uniform, and have the papers from the commandant&rsquo;s office, you can use the papers while at the front entrance to be transported outside of the camp.</p>
+
+<h3>There&rsquo;s Nothing Really Higher Up!</h3>
+
+<p>The parts of the map you can&rsquo;t normally see are just blank tiles:</p>
+
+<p><img src="tge/map.png" alt="Game's exterior map backdrop"></p>
+
+<p>Clearly <a href="https://maps.speccy.cz/map.php?id=Escape&amp;sort=4&amp;part=7&amp;ath=0">Myrck/Pavero&rsquo;s version of the map</a> from 2006 cleaned up the real thing a bit for presentation.</p>
+
+<p>Because of this if one were to change the resolution that the game runs at you&rsquo;d start to see these gaps and the exterior map would need amending.</p>
+
+<h3>Line of Sight!</h3>
+
+<p>The guards have a direct line of sight system. You can sneak around behind them without them noticing.</p>
 
 <h3>Objects are People Too!</h3>
 
-<p>The <em>movable items</em> in the game - the two stoves and one crate which can be pushed around - are implemented in the game as characters. A bug means you can bribe these objects, at which point they start cycling through broken visuals and wandering around the room&hellip;</p>
+<p>The <em>movable items</em> in the game - the two stoves and one crate which can be pushed around - are implemented in the game as characters. A bug that omits a test means you can bribe these objects, at which point they start cycling through broken visuals and wandering around the room&hellip;</p>
+
+<h3>A Double Buffered Screen!</h3>
+
+<p>One surprise was to discover that the main game window is double-buffered. This removes flicker and this makes it easier (possible) to build up the screen as well as facilitating smoother scrolling. The buffer is not cheap: it uses 3.3K of RAM.</p>
+
+<h3>Fuller Joystick Support!</h3>
+
+<p>It&rsquo;s in there, but not attached to anything&hellip;</p>
+
+<h3>The IX Register Goes Unused!</h3>
+
+<p>The game never uses the Z80 IX register, but it does use IY.</p>
 
 <h2>The Exterior Map Backdrop</h2>
 
