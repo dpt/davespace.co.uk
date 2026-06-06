@@ -3,12 +3,45 @@
   <id>http://www.davespace.co.uk/</id>
   <title>DaveSpace</title>
   
-  <updated>2025-06-28T00:00:00Z</updated>
+  <updated>2026-06-06T00:00:00Z</updated>
   
   <author><name>David Thomas</name></author>
   <link href="http://www.davespace.co.uk/" rel="alternate"></link>
   <generator uri="http://github.com/piranha/gostatic/">gostatic</generator>
 
+
+
+
+<entry>
+  <id>blog/20260606-sinclair-o-matic.html</id>
+  <author><name>David Thomas</name></author>
+  <title type="html">The Sinclair-O-Matic</title>
+  <published>2026-06-06T00:00:00Z</published>
+  
+  <category term="Blog"></category>
+  
+  <category term="Sinclair"></category>
+  
+  <category term="Logo"></category>
+  
+  <category term="Toy"></category>
+  
+  <link href="http://www.davespace.co.uk/blog/20260606-sinclair-o-matic.html" rel="alternate"></link>
+  <content type="html"><![CDATA[
+    
+    
+    
+<p>The classic Sinclair computer logo is formed on a highly regular grid. Each glyph is defined by intersections of just two vertical and three horizontal grid lines. The constraint is analogous to seven-segment LED displays: a fixed set of possible positions forces each letterform to its most essential shape.</p>
+<p>I present a <a href="https://dpt.github.io/SinclairLogo/">new toy</a> that provides an interactive page that parameterises that grid - and the path taken around through it - so you can explore and produce variants of the logo in real time:</p>
+<p><img src="../blog/images/sinclairomatic/okcomputer.png" alt="Example 1" />
+<img src="../blog/images/sinclairomatic/fellowkids.png" alt="Example 2" />
+<img src="../blog/images/sinclairomatic/manic.png" alt="Example 3" />
+<img src="../blog/images/sinclairomatic/acorn.png" alt="Example 4" /></p>
+
+    
+    
+  ]]></content>
+</entry>
 
 
 
@@ -35,23 +68,16 @@
     
     
     
-
-<p><a href="../doodles/logos/spectrum-stripes.png">
+<a href="../doodles/logos/spectrum-stripes.png">
     <img style="border-radius: 1em" src="../doodles/logos/thumbs/spectrum-stripes.png">
-</a></p>
-
+</a>
 <p>This new render is Sinclair ZX Spectrum inspired. Not of a Speccy itself but instead of the lettering and rainbow stripe. The lettering is presented in squidgy rubber grey, hovering over the rainbow stripe set as if a 48K+ or 128K toastrack case.</p>
-
-<p><a href="../doodles/logos/spectrum-stripes.png">
+<a href="../doodles/logos/spectrum-stripes.png">
     <img style="border-radius: 1em" src="../doodles/logos/thumbs/spectrum-stripes-zoomed.png">
-</a></p>
-
+</a>
 <p>This time it&rsquo;s a huge 4K (3840x2160) render. Click for the huge version.</p>
-
 <p><em>tata Spec-chums!</em></p>
-
 <p><a href="../doodles/logos.html">More logo renders here</a>.</p>
-
 
     
     
@@ -81,15 +107,10 @@
     
     
     
-
 <p>I&rsquo;ve followed up the <a href="/blog/20240518-marble-run-kit.html">Marble Run Kit</a> by making reasonably accurate recreations of some LEGO bricks in <a href="https://www.blender.org/">Blender</a>.</p>
-
-<p><img src="../blog/images/legokit/blog.png" alt="LEGO Kit overhead view"></p>
-
+<p><img src="../blog/images/legokit/blog.png" alt="LEGO Kit overhead view" /></p>
 <p>The pieces are constructed using quads. This enables subdivision surfaces to be applied allowing for very high resolution results.</p>
-
 <p>It&rsquo;s free - Enjoy! Get it from <a href="https://dpt.itch.io/lego-kit">https://dpt.itch.io/lego-kit</a></p>
-
 
     
     
@@ -119,11 +140,8 @@
     
     
     
-
-<p><img style="border-radius: 1em" src="../doodles/archimedes/archimedes-again.png" alt="Archimedes logo."></p>
-
+<img style="border-radius: 1em" src="../doodles/archimedes/archimedes-again.png" alt="Archimedes logo.">
 <p>I&rsquo;ve redrawn my <a href="../doodles/archimedes.html">Acorn Archimedes logo recreation</a>. It&rsquo;s pretty accurate now.</p>
-
 
     
     
@@ -151,72 +169,12 @@
     
     
     
-
 <p>I&rsquo;ve made a kit of parts in <a href="https://www.blender.org/">Blender</a> for building marble runs.</p>
-
-<p><img src="../blog/images/marblerunkit/blog.png" alt="Marble Run Kit overhead view"></p>
-
+<p><img src="../blog/images/marblerunkit/blog.png" alt="Marble Run Kit overhead view" /></p>
 <p>There are over two hundred types of track to try out, including slides, ramps, tunnels, spirals, splits and bends. I&rsquo;ve also built and included variously coloured terrazzo, granite, metallic and transparent materials for a classy looking track.</p>
-
 <p>It&rsquo;s designed around a basic block size of 4x4x2cm allowing a 2.5cm marble size.</p>
-
 <p>A little demo scene is included.</p>
-
 <p>It&rsquo;s free - Enjoy! Get it from <a href="https://dpt.itch.io/marble-kit">https://dpt.itch.io/marble-kit</a></p>
-
-
-    
-    
-  ]]></content>
-</entry>
-
-
-
-<entry>
-  <id>blog/20230701-screen-cleaning.html</id>
-  <author><name>David Thomas</name></author>
-  <title type="html">Dr. Dave&#39;s Patented Screen Cleaning Method*</title>
-  <published>2023-07-01T00:00:00Z</published>
-  
-  <category term="Blog"></category>
-  
-  <category term="Article"></category>
-  
-  <category term="Tip"></category>
-  
-  <link href="http://www.davespace.co.uk/blog/20230701-screen-cleaning.html" rel="alternate"></link>
-  <content type="html"><![CDATA[
-    
-    
-    
-
-<p>Want to clean a mucky computer or TV screen? Read on.</p>
-
-<p>You will need:</p>
-
-<ul>
-<li>Some clean warm water
-
-<ul>
-<li>e.g. cooled boiled water</li>
-</ul></li>
-<li>A squirt of dish liquid</li>
-<li>Soft-strong paper towels
-
-<ul>
-<li>e.g. a decent quality kitchen paper towel</li>
-</ul></li>
-<li>A soft, clean microfibre cloth
-
-<ul>
-<li>I use the small black screen cloth I received with a MacBook</li>
-</ul></li>
-<li>A piece of sticky tape, or a sticky clothes roller</li>
-<li>Windex, Windolene or similar glass cleaning spray</li>
-</ul>
-
-<p>Method:</p>
-
 
     
     

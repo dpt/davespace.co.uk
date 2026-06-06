@@ -42,7 +42,7 @@ Modified by dpt.
 }
 .highlight {
   color: #dccf8f;
-  background: url(pojoaque.jpg) repeat scroll left top #181914;
+  background: url(./pojoaque.jpg) repeat scroll left top #181914;
 }
 /* tokens seen */
 .highlight .c,
